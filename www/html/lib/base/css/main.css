@@ -1,0 +1,9 @@
+/*Overrides*/
+  hr {
+    height: 1px;
+    opacity: 0.4;
+    margin: 0 0 1rem 0;
+  }
+  .caption {
+    margin: 1.5rem 0 2rem 0;
+  }

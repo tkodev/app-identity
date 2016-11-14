@@ -1,0 +1,56 @@
+/*Theme*/
+  .top-bar, .menu li {
+    background-color: transparent;
+  }
+  .menu {
+    background-color: transparent !important;
+  }
+/*Typography*/
+  .menu {
+    font-family: 'Oswald', sans-serif;
+  }
+  .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #222;
+  }
+  .menu-text {
+    font-weight: 300;
+    padding: 0.2rem;
+  }
+/*Effects*/
+  .menu a {
+    position:relative;
+  }
+  .menu a:before {
+    content: "";
+    position:absolute;
+    left:1rem;
+    width:10px;
+    bottom:0.25rem;
+    border-bottom: none;
+    transition : all 1s linear;
+  }
+  .menu a:hover:before, .menu .active:before {
+    border-bottom:1px solid black;
+  }
+  #nav-sticky .is-stuck {
+    animation-duration: 0.5s;
+    animation-name: fadeInDown;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+/*Overrides*/
+  #nav-bar {
+    background-color: #fff;
+  }
+  #logo-btn {
+    margin-right: 1rem;
+    width: 4.4rem;
+  }
+  #hire-btn {
+    border-radius: 1rem;
+  }
+  #header-section {
+    margin: 3rem 0 3rem 0;
+  }
