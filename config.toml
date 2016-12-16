@@ -1,7 +1,7 @@
 baseurl = "http://localhost:4000/"
 title = "My New Hugo Site"
 languageCode = "en-us"
-theme = "foundation"
+theme = "Hugo-Theme-Foundation6-Blog"
 
 #Bootstrap Theme
 paginate = 5
