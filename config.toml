@@ -1,4 +1,4 @@
-baseurl = "http://localhost:1313/"
+baseurl = "http://localhost:4000/"
 title = "My New Hugo Site"
 languageCode = "en-us"
 theme = "foundation"
@@ -20,11 +20,11 @@ paginate = 5
 
 [params]
   author = "Your Name"
-  description = "A simple Hugo theme based on the Bootstrap v4 blog example."
+  description = "A simple Hugo theme based on the Foundation v6 blog (w/ sidebar) example."
   date_format = "Mon Jan 02, 2006"
 
 [params.sidebar]
-  about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
+  about = "A simple [Hugo](https://gohugo.io) theme based on the [Foundation v6 blog (w/ sidebar) example](http://foundation.zurb.com/templates-previews-sites-f6/blog.html)."
 
 [params.social]
   twitter = "username"
