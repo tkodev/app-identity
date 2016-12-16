@@ -1,5 +1,5 @@
 +++
-title = "(Hu)go Template Primerss"
+title = "(Hu)go Template Primer"
 description = ""
 tags = [
     "go",
@@ -16,7 +16,7 @@ categories = [
 menu = "main"
 +++
 
-Hugos uses the excellent [go][] [html/template][gohtmltemplate] library for
+Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic. In our experience that it is just the right amount of
 logic to be able to create a good static website. If you have used other
