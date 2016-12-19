@@ -1,7 +1,14 @@
-+++
-title = "Contact"
-date = "2014-04-09"
-+++
+---
+type: "page"
+draft: false
+date: "2014-04-09"
+title: "Contact"
+author: ""
+description: ""
+topics:
+tags:
+menu: ""
+---
 
 You can see my custom about-me page [here](http://mmrath.com/page/about-me/)
 

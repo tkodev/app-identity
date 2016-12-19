@@ -1,8 +1,8 @@
 ---
-type: "post"
+type: "folio"
 draft: false
 date: "2014-04-02"
-title: "Getting Started with Hugo"
+title: "Folio - Getting Started with Hugo"
 topics: [
     "Development",
     "golang",

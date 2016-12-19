@@ -1,53 +1,60 @@
 # Metadata
-languageCode = "en-us"
-title = "My Folio Site"
-author = "Tony Ko"
-copyright = "Copyright - Tony Ko. All rights reserved."
+  languageCode = "en-us"
+  title = "Hei Tony Ko"
+  author = "Tony Ko"
+  copyright = "Copyright - Tony Ko. All rights reserved."
 
 # Config
-baseurl = "http://localhost:4000/"
-theme = ""
-canonifyurls = true
-paginate = 3
-disqusShortname = "xxxxxx"
-googleAnalytics = "UA-XXXXXXX-1"
+  baseurl = "http://localhost:4000/"
+  theme = ""
+  canonifyurls = true
+  paginate = 3
+  disqusShortname = "xxxxxx"
+  googleAnalytics = "UA-XXXXXXX-1"
 
-# mmrath
-[[menu.main]]
-  name = "TAGS"
-  pre = "<i class='fa fa-tags'></i>"
-  weight = -110
-  identifier = "tags"
-  url = "/tags/"
+# Params
+  [params]
+    subtitle = "Personal Portfolio"
 
-[[menu.main]]
-  name = "CATEGORIES"
-  pre = "<i class='fa fa-folder-open'></i>"
-  weight = -100
-  identifier = "categories"
-  url = "/categories/"
+  [params.widgets]
+    recent_articles = true
+    tags = true
+    tag_cloud = true
+    topics = true
 
-[[menu.main]]
-  name = "Contact"
-  pre = "<i class='fa fa-info-circle'></i>"
-  weight = -90
-  identifier = "contact"
-  url = "/page/contact"
+# Taxonomies
+  [taxonomies]
+    tag = "tags"
+    topic = "topics"
 
-[[menu.footer]]
-  name = "DISCLAIMER"
-  weight = -110
-  identifier = "disclaimer"
-  url = "/page/disclaimer/"
+# Menus
+  # Main
+    [[menu.main]]
+      name = "Code"
+      pre = "<i class='fa fa-folder-open'></i>"
+      url = "/topics/code/"
 
-[[menu.footer]]
-  name = "LICENSE"
-  weight = -120
-  identifier = "license"
-  url = "/page/license/"
+    [[menu.main]]
+      name = "Interior Design"
+      pre = "<i class='fa fa-folder-open'></i>"
+      url = "/topics/interior design/"
 
-[params.widgets]
-  recent_articles = true
-  categories = true
-  tags = true
-  tag_cloud = true
+    [[menu.main]]
+      name = "Photography"
+      pre = "<i class='fa fa-folder-open'></i>"
+      url = "/topics/photography/"
+
+  # Links
+    [[menu.links]]
+      name = "Contact"
+      pre = "<i class='fa fa-info-circle'></i>"
+      url = "/page/contact/"
+
+  # Footer
+    [[menu.footer]]
+      name = "DISCLAIMER"
+      url = "/page/disclaimer/"
+
+    [[menu.footer]]
+      name = "LICENSE"
+      url = "/page/license/"

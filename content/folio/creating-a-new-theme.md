@@ -1,7 +1,7 @@
 ---
-type: "post"
+type: "folio"
 draft: false
-title: "Creating a New Theme"
+title: "Folio - Creating a New Theme"
 author: "Michael Henderson"
 topics: [
     "Development",

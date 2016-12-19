@@ -1,7 +1,7 @@
 ---
-type: "post"
+type: "folio"
 draft: false
-title: "(Hu)go Template Primer"
+title: "Folio - (Hu)go Template Primer"
 topics: [
     "Development",
     "golang",

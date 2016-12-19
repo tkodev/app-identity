@@ -1,8 +1,8 @@
 ---
-type: "post"
+type: "folio"
 draft: false
 date: "2014-03-10"
-title: "Migrate to Hugo from Jekyll"
+title: "Folio - Migrate to Hugo from Jekyll"
 topics: [
     "Development",
     "golang",
