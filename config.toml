@@ -1,33 +1,53 @@
+# Metadata
 baseurl = "http://localhost:4000/"
-title = "My New Hugo Site"
 languageCode = "en-us"
-theme = "Hugo-Theme-Foundation6-Blog"
+title = "My New Hugo Site"
+author = "Tony Ko"
+copyright = "Copyright - Tony Ko. All rights reserved."
+canonifyurls = true
+paginate = 3
+disqusShortname = "xxxxxx"
+googleAnalytics = "UA-XXXXXXX-1"
 
-#Bootstrap Theme
-paginate = 5
+# Config
+theme = ""
 
-[permalinks]
-  post = "/:year/:month/:title/"
-  page = "/:slug/"
+# mmrath
+[[menu.main]]
+  name = "TAGS"
+  pre = "<i class='fa fa-tags'></i>"
+  weight = -110
+  identifier = "tags"
+  url = "/tags/"
 
-[[menu.sidebar]]
-  name = "Link 1"
-  url = "https://example.com"
+[[menu.main]]
+  name = "CATEGORIES"
+  pre = "<i class='fa fa-folder-open'></i>"
+  weight = -100
+  identifier = "categories"
+  url = "/categories/"
 
-[[menu.sidebar]]
-  name = "Link 2"
-  url = "https://example.org"
+[[menu.main]]
+  name = "Contact"
+  pre = "<i class='fa fa-info-circle'></i>"
+  weight = -90
+  identifier = "contact"
+  url = "/page/contact"
 
-[params]
-  author = "Your Name"
-  description = "A simple Hugo theme based on the Foundation v6 blog (w/ sidebar) example."
-  date_format = "Mon Jan 02, 2006"
+[[menu.footer]]
+  name = "DISCLAIMER"
+  weight = -110
+  identifier = "disclaimer"
+  url = "/page/disclaimer/"
 
-[params.sidebar]
-  about = "A simple [Hugo](https://gohugo.io) theme based on the [Foundation v6 blog (w/ sidebar) example](http://foundation.zurb.com/templates-previews-sites-f6/blog.html)."
+[[menu.footer]]
+  name = "LICENSE"
+  weight = -120
+  identifier = "license"
+  url = "/page/license/"
 
-[params.social]
-  twitter = "username"
-
-[params.sharingicons]
-  hide = false
+[params.widgets]
+  recent_articles = true
+  categories = true
+  tags = true
+  tag_cloud = true
