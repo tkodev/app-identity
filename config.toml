@@ -8,7 +8,7 @@
   baseurl = "http://localhost:4000/"
   theme = ""
   canonifyurls = true
-  paginate = 3
+  paginate = 8
   disqusShortname = "xxxxxx"
   googleAnalytics = "UA-XXXXXXX-1"
 
