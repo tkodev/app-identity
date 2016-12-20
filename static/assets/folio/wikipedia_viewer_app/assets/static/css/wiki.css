@@ -1,0 +1,9 @@
+#wiki-results {
+  padding: 25px 15px 5px 15px;
+}
+#wiki-results .well {
+  padding: 0px 15px 0px 15px;
+}
+.wiki-title {
+  margin-bottom: 2px !important;
+}

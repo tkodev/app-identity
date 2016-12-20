@@ -1,0 +1,29 @@
+/*I made these classes prior to discovering bootstrap's built in classes for pretty elements!*/
+
+body {
+  
+}
+.htko-main {
+  margin-top:60px;
+}
+
+/*
+.htko-jumbo {
+  background-color: #EEEEEE;
+  border-radius: 10px;
+  border-color: #EEEEEE;
+  border: 0px solid;
+  margin:10px;
+}
+
+.htko-img-main {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #DDDDDD;
+  padding:6px;
+}
+
+.htko-caption {
+  margin: 10px;
+}
+*/

@@ -1,0 +1,85 @@
+/* make sidebar nav vertical */
+  @media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+      padding: 0;
+      max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+      float: none;
+      clear: left;
+    }
+    .sidebar-nav .navbar ul:not {
+      display: block;
+    }
+    .sidebar-nav .navbar li {
+      float: none;
+      display: block;
+    }
+    .sidebar-nav .navbar li a {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+/*Theming*/
+  .sidebar-nav .navbar-inverse{
+      background-color: #17141F;
+      border-color: #17141F;
+      color: #797580;
+  }
+  .sidebar-nav .navbar-inverse .navbar-nav > .active,
+  .sidebar-nav .navbar-inverse .navbar-nav > .active > a,
+  .sidebar-nav .navbar-inverse .navbar-nav > .active > a:hover,
+  .sidebar-nav .navbar-inverse .navbar-nav > .active > a:focus {
+      color: white;
+      background-color: #201C2B;
+      border-left: 2px solid #6441A4;
+  }
+
+/*Grid CSS*/
+  #sidebar-info {
+    padding: 15px;
+  }
+  #twitch-results {
+    margin-top: -10px;
+    padding: 0px;
+  }
+
+/*Twitch Results*/
+  .twitch-result .panel{
+    margin:0px;
+  }
+  .twitch-result .panel-body{
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important ;
+    height: 160px;
+  }
+  .twitch-result .panel-footer{
+    height: 110px;
+  }
+  .twitch-logo {
+    width: 3em;
+    height: 3em;
+    display: block;
+    padding: 10px;
+    border-radius:50%;
+    border: 2px solid #DDD;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  .twitch-result {
+    padding: 10px;
+  }
+  .twitch-result h2 {
+    font-weight: 600;
+    font-size: 1em;
+    opacity: 0.75;
+    margin-top: 0px;
+  }
+  .twitch-result p {
+    font-size: 1em;
+    opacity: 0.5;
+    margin: 0px;
+  }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- metainfo -->
+    <title>HTKO - Hei Tony Ko</title>
+    <meta name="description" content="Portfolio Page">
+    <meta name="author" content="Hei Tony Ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+    <!-- <link rel="icon" href=".png"> -->
+  <!-- libraries -->
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans|Open+Sans'>
+    <link rel="stylesheet" type='text/css' href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="static/css/bootstrap.min.css">
+    <script type="text/javascript" src="static/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/handlebars-v4.0.5.js"></script>
+  <!-- Stylesheets -->
+    <link rel="stylesheet" type='text/css' href="static/css/template.css">
+  <!-- Widget Code -->
+    <link rel="stylesheet" type='text/css' href="static/css/twitch.css">
+    <script type="text/javascript" src="static/js/twitch.js"></script>
+  <!-- end -->
+</head>
+<body>
+
+  <!-- widget container -->
+  <div class="container-fluid main" id="main-widget">
+    <a class="anchor" id="a-widget"></a>
+    <div class="container">
+      <!-- Caption -->
+      <div class="row">
+        <div class="col-md-12 title dark">
+          <span class="pull-left">_</span> <span class="pull-right">_ API Widgets | <strong>01</strong></span>
+        </div>
+      </div>
+      <!-- Content -->
+
+        <div class="row">
+          <!-- Start Widget -->
+          <div class="col-md-12">
+            <div id="panel-twitch" class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Twitch Channels App</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="sidebar-nav">
+                      <div class="navbar navbar-inverse" role="navigation">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <span class="navbar-brand">
+                            <img class="widget-logo" src="static/img/Twitch/Twitch_Logo_White.png">
+                          </span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                          <ul class="nav navbar-nav">
+                            <li id="sidebar-info">
+                              <p>
+                                Twitch Channel Viewer
+                              </p>
+                            </li>
+                            <li id="twitch-btn-all" class=""><a>All</a></li>
+                            <li id="twitch-btn-on"  class=""><a>Online</a></li>
+                            <li id="twitch-btn-off" class=""><a>Offline</a></li>
+                          </ul>
+                        </div><!--/.nav-collapse -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div id="twitch-results" class="row">
+                      <!-- Template engine by handlebars.js - see twitch.js -->
+                    </div>
+                    <!-- Start Template for the above div -->
+                      <script id="twitch-template" type="text/x-handlebars-template">
+                        <div class="twitch-result col-md-4 col-sm-6 col-xs-12">
+                          <div class="panel panel-default">
+                            <div class="panel-body" style="background: url('{{banner}}')">
+                              <div class="pull-right twitch-logo" style="background: url('{{logo}}')"></div>
+                            </div>
+                            <div class="panel-footer">
+                              <h2><a href="{{url}}" target='_blank'>{{{channel}}}</a></h2>
+                              <p>{{{game}}}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </script>
+                    <!-- End Template -->
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <a href="http://dev.twitch.tv/" target='_blank'>
+                  <img class="widget-logo" src="static/img/twitch/Twitch_BlackLogoURL.png">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+      <!-- End -->
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- metainfo -->
+    <title>HTKO - Hei Tony Ko</title>
+    <meta name="description" content="Portfolio Page">
+    <meta name="author" content="Hei Tony Ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+    <!-- <link rel="icon" href=".png"> -->
+  <!-- libraries -->
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans|Open+Sans'>
+    <link rel="stylesheet" type='text/css' href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/css' href="static/css/bootstrap.min.css">
+    <script type="text/javascript" src="static/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+  <!-- Stylesheets -->
+    <link rel="stylesheet" type='text/css' href="static/css/template.css">
+  <!-- Widget Code -->
+    <link rel="stylesheet" type='text/css' href="static/css/weather.css">
+    <script type="text/javascript" src="static/js/weather.js"></script>
+  <!-- end -->
+</head>
+<body>
+
+  <!-- widget container -->
+  <div class="container-fluid main" id="main-widget">
+    <a class="anchor" id="a-widget"></a>
+    <div class="container">
+      <!-- Caption -->
+      <div class="row">
+        <div class="col-md-12 title dark">
+          <span class="pull-left">_</span> <span class="pull-right">_ API Widgets | <strong>01</strong></span>
+        </div>
+      </div>
+      <!-- Content -->
+
+        <div class="row">
+          <!-- Start Widget -->
+          <div class="col-md-12">
+            <div id="panel-weather" class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Local Weather App</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-3"></div>
+                  <div class="col-xs-6 text-center">
+                    <a id="weather-btn" href="" target='_blank'>
+                      <img id="weather-icon" class="img-responsive center-block" src="static/img/weather/icons/unknown.svg">
+                    </a>
+                  </div>
+                  <div class="col-xs-3 text-center">
+                    <button id="weather-unit-btn" class="btn btn-default">C/F</button>
+                  </div>
+                </div>
+              </div>
+              <div id="weather-stats" class="panel-footer text-center">
+                <div class="row">
+                  <div class="col-xs-3 text-right">
+                    <h1 id="weather-temp"><span id="weather-val">00</span><img id="weather-unit" src="static/img/weather/general/unit_c.svg"></h1>
+                  </div>
+                  <div class="col-xs-6">
+                    <h2 id="weather-cond">Condition</h2>
+                    <p id="weather-locale">City, State</p>
+                  </div>
+                  <div class="col-xs-3">
+                    <h2 id="date-month">Jan</h2>
+                    <p id="date-day">01</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <a href="https://www.wunderground.com/weather/api/" target='_blank'>
+                      <img class="widget-logo" src="static/img/weather/general/wundergroundLogo_4c_horz.png">
+                    </a>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <a href="http://www.alessioatzeni.com/meteocons/" target='_blank'>
+                      <img class="widget-logo" src="static/img/weather/general/meteocons_bk.png" style="padding-top:4px;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Widget -->
+        </div>
+
+      <!-- End -->
+    </div>
+  </div>
+
+</body>
+</html>
