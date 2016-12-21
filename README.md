@@ -1,5 +1,5 @@
-# htko.ca
-Codebase for personal portfolio.
+# htko
+Codebase for personal portfolio at htko.ca
 
 ## Goals
 I've decided to re-write my portfolio website. 
