@@ -7,7 +7,6 @@ parent: "htko"
 topics:
   - "code"
 tools:
-  - "htko"
   - "hugo"
   - "scss"
   - "jQuery"
