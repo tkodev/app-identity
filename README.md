@@ -2,12 +2,12 @@
 type: "folio"
 draft: false
 date: "2016-12-01"
-title: "HTKO"
-parent: "personal"
+title: "Hugo Codebase"
+parent: "htko"
 topics:
   - "code"
 tools:
-  - "personal"
+  - "htko"
   - "hugo"
   - "scss"
   - "jQuery"
@@ -15,7 +15,7 @@ tools:
 link: "http://www.htko.ca"
 ---
 # Personal Project
-Base for personal portfolio at htko.ca
+Hugo base for personal portfolio at htko.ca
 
 ## Project Criteria:
 * Sass to generate css files.
