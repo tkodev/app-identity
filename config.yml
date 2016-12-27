@@ -46,17 +46,17 @@ menu:
       pre: "<i class='fa fa-bank fa-1x'></i>"
       url: "/topics/interior design/"
       weight: -110
-    - name: "Photography"
-      identifier: "photography"
-      pre: "<i class='fa fa-camera-retro fa-1x'></i>"
-      url: "/topics/photography/"
-      weight: -110
+    # - name: "Photography"
+    #   identifier: "photography"
+    #   pre: "<i class='fa fa-camera-retro fa-1x'></i>"
+    #   url: "/topics/photography/"
+    #   weight: -110
   links:
-    - name: "Blog"
-      identifier: "blog"
-      pre: "<i class='fa fa-bookmark-o fa-1x'></i>"
-      url: "/categories/blog"
-      weight: -110
+    # - name: "Blog"
+    #   identifier: "blog"
+    #   pre: "<i class='fa fa-bookmark-o fa-1x'></i>"
+    #   url: "/categories/blog"
+    #   weight: -110
     - name: "Contact"
       identifier: "contact"
       pre: "<i class='fa fa-user-circle-o fa-1x'></i>"
