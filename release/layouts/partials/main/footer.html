@@ -1,21 +1,25 @@
 <footer id="footer">
   <nav>
-    <div class="row column clearfix" >
-      <ul class="menu float-left">
-        <li>
-          <a class="menu-title" href="#">&copy; {{.Now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}</a>
-        </li>
-        <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
-      </ul>
-      <ul class="menu float-right">
-        <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
-        {{ $currentNode := . }}
-        {{ range .Site.Menus.footer }}
+    <div class="row column align-justify">
+      <div class="small-6 columns">
+        <ul class="menu">
           <li>
-            <a class="{{if $currentNode.IsMenuCurrent "footer" . }}active{{end}}" href="{{.URL}}">{{ .Pre }}<span class="show-for-medium">{{ .Name }}</span></a>
+            <a class="menu-title" href="#">&copy; {{.Now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}</a>
           </li>
-        {{end}}
-      </ul>
+          <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
+        </ul>
+      </div>
+      <div class="small-6 columns">
+        <ul class="menu align-right">
+          <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
+          {{ $currentNode := . }}
+          {{ range .Site.Menus.footer }}
+            <li>
+              <a class="{{if $currentNode.IsMenuCurrent "footer" . }}active{{end}}" href="{{.URL}}">{{ .Pre }}<span class="show-for-medium">{{ .Name }}</span></a>
+            </li>
+          {{end}}
+        </ul>
+      </div>
     </div>
   </nav>
 </footer>

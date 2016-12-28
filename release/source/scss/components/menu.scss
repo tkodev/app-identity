@@ -19,7 +19,8 @@
 
 // Custom
   .menu-img-a {
-    padding: 0 1rem;
+    padding: 0 1rem !important;
+    margin: 0 !important;
   }
   .menu-img-a:hover:before {
     border-bottom: 0 !important;
