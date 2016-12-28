@@ -3,14 +3,16 @@
 <main id="main">
   <div class="row" id="content">
     <div class="large-7 columns text-center">
-
+      <div class="card">
       {{ $currentNode := . }}
-      {{ range .Params.photo }}
-        <div class="card">
-          <img src="assets/{{ $currentNode.Type }}/{{ $currentNode.Params.parent }}/{{lower $currentNode.Title | urlize }}/assets/{{ . }}">
-        </div>
+      {{ if and (isset .Params "photo") .Params.photos }}
+        {{ range .Params.photo }}
+          <img src="{{ .Site.BaseURL }}content/{{ $currentNode.Type }}/{{ index $currentNode.Params.topics 0 }}/{{ $currentNode.Params.parent }}/{{lower $currentNode.Title | urlize }}/assets/{{ . }}">
+        {{ end }}
+      {{ else }}
+        <img src="{{ .Site.BaseURL }}content/default/code/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/mockup-mobile.jpg">
       {{ end }}
-
+      </div>
     </div>
     <div class="large-5 columns" data-sticky-container>
       <div class="sticky" data-sticky data-sticky-on="large" data-anchor="content" data-margin-top="10">
