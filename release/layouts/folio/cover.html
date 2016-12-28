@@ -1,0 +1,16 @@
+<div class="card">
+  {{ $baseurl := .Site.BaseURL }}
+  {{ if and (isset .Params "cover") .Params.cover }}
+    <a href="{{ .Permalink }}">
+      <img src="assets/{{ .Type }}/{{ .Params.parent }}/{{lower .Title | urlize }}/assets/{{ .Params.cover}}">
+    </a>
+  {{ end }}
+  <div class="card-section">
+    <h6>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h6>
+    <p>
+      {{ partial "snippet/tools" . }}
+    </p>
+  </div>
+</div>
