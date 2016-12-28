@@ -5,9 +5,9 @@
     <div class="large-7 columns text-center">
       <div class="card">
       {{ $currentNode := . }}
-      {{ if and (isset .Params "photo") .Params.photos }}
+      {{ if and (isset .Params "photo") .Params.photo }}
         {{ range .Params.photo }}
-          <img src="{{ .Site.BaseURL }}content/{{ $currentNode.Type }}/{{ index $currentNode.Params.topics 0 }}/{{ $currentNode.Params.parent }}/{{lower $currentNode.Title | urlize }}/assets/{{ . }}">
+          <img src="{{ $currentNode.Site.BaseURL }}content/{{ $currentNode.Type }}/{{ index $currentNode.Params.topics 0 }}/{{ $currentNode.Params.parent }}/{{lower $currentNode.Title | urlize }}/assets/{{ . }}">
         {{ end }}
       {{ else }}
         <img src="{{ .Site.BaseURL }}content/default/code/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/mockup-mobile.jpg">
