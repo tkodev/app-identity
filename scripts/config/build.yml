@@ -5,7 +5,7 @@ COMPATIBILITY:
   - "ios >= 7"
 
 # scss-js source directories. Put your foundation sources here
-SOURCES:
+SOURCE:
   # Paths to Sass libraries, which can then be loaded with @import
   scss:
     - "bower_components/foundation-sites/scss"

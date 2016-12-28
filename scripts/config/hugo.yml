@@ -1,23 +1,18 @@
 # Hugo paths
 HUGO:
-  root: "/Users/sysuser/Google Drive/Portfolio/public/code/htko/htko-hugo-codebase"
+  port: 4000
+  root: "/Users/sysuser/Google Drive/folio/public/code/htko/site-base/release"
   public: "/public"
-  watch:
-    - "/static/**/*"
-    - "/themes/**/static/**/*"
-    - "/themes/**/*.html"
-    - "**/*.json"
-    - "**/*.md"
-    - "**/*.toml"
-    - "**/*.yml"
-    - "**/!.**/*"
-    - "**/!.*"
-
-# Theme paths
-THEME:
-  root: "/Users/sysuser/Google Drive/Portfolio/public/code/htko/htko-folio-theme"
   source: "/source"
   static: "/static/static"
-
-# Your project's server will run on localhost:xxxx at this port
-PORT: 4000
+  content: "/static/content"
+  watch:
+    - "/data/**/*"
+    - "/layouts/**/*"
+    - "/static/**/*"
+    - "/*.yml"
+    - "/**/!.**/*"
+    - "/**/!.*"
+  js_filter:
+    - "/js/app.js"
+    - "/js/!(app).js"

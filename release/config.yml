@@ -13,8 +13,6 @@ Paginate: 8
 disqusShortname: "xxxxxx"
 googleAnalytics: "UA-XXXXXXX-1"
 contentDir: "static/assets"
-ignoreFiles:
-  - "\\.html$"
 
 # Params
 params:
