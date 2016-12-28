@@ -9,7 +9,7 @@ copyright: "Copyright - Tony Ko."
 baseUrl: "http://htko-site-base.dev/"
 theme: ""
 canonifyurls: true
-Paginate: 8
+Paginate: 16
 disqusShortname: "xxxxxx"
 googleAnalytics: "UA-XXXXXXX-1"
 contentDir: "static/content"
