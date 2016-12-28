@@ -1,0 +1,15 @@
+{{ partial "core/head" . }}
+
+<main id="main">
+  <div class="row" id="content">
+
+    {{ range first 8 (where .Data.Pages "Type" "folio") }}
+      <div class="small-6 medium-3 columns" >
+        {{ .Render "cover" }}
+      </div>
+    {{ end }}
+
+  </div>
+</main>
+
+{{ partial "core/foot" . }}

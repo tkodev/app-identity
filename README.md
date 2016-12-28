@@ -2,7 +2,7 @@
 type: "folio"
 draft: false
 date: "2016-12-01"
-title: "Hugo Codebase"
+title: "Site Base"
 parent: "htko"
 topics:
   - "code"

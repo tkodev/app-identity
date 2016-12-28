@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <base href="{{ .Site.BaseURL }}">
+
+  <title>{{ .Site.Title }}{{ if eq .Site.Title .Title }} | {{ .Site.Params.subtitle }}{{ else }} | {{ .Title }}{{ end }}</title>
+
+  {{ partial "core/head-meta" . }}
+
+  <link href="{{ .Site.BaseURL }}static/css/app.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/css/animate.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+{{ partial "main/header.html" . }}
+{{ partial "main/hero.html" . }}

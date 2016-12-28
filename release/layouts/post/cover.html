@@ -1,0 +1,12 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ if and (isset .Params "cover") .Params.cover }}
+  <a href="{{ .Permalink }}">
+    <img src="assets/{{ .Type }}/{{lower .Title | urlize }}/assets/{{ .Params.cover}}">
+  </a>
+{{ end }}
+<h6>
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+</h6>
+<p>
+  {{ if (.Params.topics) }}{{ partial "snippet/topics.html" . }}{{ end }}
+</p>

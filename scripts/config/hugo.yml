@@ -1,0 +1,23 @@
+# Hugo paths
+HUGO:
+  root: "/Users/sysuser/Google Drive/Portfolio/public/code/htko/htko-hugo-codebase"
+  public: "/public"
+  watch:
+    - "/static/**/*"
+    - "/themes/**/static/**/*"
+    - "/themes/**/*.html"
+    - "**/*.json"
+    - "**/*.md"
+    - "**/*.toml"
+    - "**/*.yml"
+    - "**/!.**/*"
+    - "**/!.*"
+
+# Theme paths
+THEME:
+  root: "/Users/sysuser/Google Drive/Portfolio/public/code/htko/htko-folio-theme"
+  source: "/source"
+  static: "/static/static"
+
+# Your project's server will run on localhost:xxxx at this port
+PORT: 4000

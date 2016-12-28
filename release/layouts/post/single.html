@@ -1,0 +1,17 @@
+{{ partial "core/head" . }}
+
+<main id="main">
+  <div class="row">
+    <div class="medium-8 columns" id="content">
+      <h4>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</h4>
+      <article>
+        {{ .Content }}
+      </article>
+    </div>
+    <div class="medium-3 columns" data-sticky-container>
+      {{ partial "main/sidebar" . }}
+    </div>
+  </div>
+</main>
+
+{{ partial "core/foot" . }}
