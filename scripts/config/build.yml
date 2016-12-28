@@ -39,3 +39,6 @@ SOURCE:
     - "bower_components/foundation-sites/js/foundation.toggler.js"
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
     - "bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js"
+  js_filter:
+    - "/js/app.js"
+    - "/js/!(app).js"

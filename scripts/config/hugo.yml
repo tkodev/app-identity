@@ -6,13 +6,25 @@ HUGO:
   source: "/source"
   static: "/static/static"
   content: "/static/content"
-  watch:
+  filters:
     - "/data/**/*"
     - "/layouts/**/*"
     - "/static/**/*"
     - "/*.yml"
-    - "/**/!.**/*"
+    - "/**/!.**/**/*"
     - "/**/!.*"
-  js_filter:
-    - "/js/app.js"
-    - "/js/!(app).js"
+
+PROJECTS:
+  root: "/Users/sysuser/Google Drive/folio/public"
+  folio: "/folio"
+  filters:
+    - "/**/README.md"
+    - "/**/assets"
+    - "!**/free-code-camp/* - */**/*"
+    - "!**/prototypes/**/*"
+    - "!**/release/**/*"
+    - "!**/scripts/**/*"
+    - "!**/node_modules/**/*"
+    - "!**/bower_components/**/*"
+    - "!**/.**/**/*"
+    - "!**/.*"

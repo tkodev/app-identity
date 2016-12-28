@@ -1,28 +1,35 @@
 // load-config
   // Import modules
     var gulp              = require("gulp"),
-        fs                = require("fs"),
+        fs                = require("fs-extra"),
         yaml              = require("js-yaml"),
         path              = require("path"),
         yargs             = require("yargs")
   // Init
-    const PRODUCTION      = !!(yargs.argv.production                  );
-    var { PORT, HUGO, THEME       } = loadConfigH();                            // Load hugo config
+    const PRODUCTION      = !!(yargs.argv.production                      );
+    var { PORT, HUGO, THEME, PROJECTS } = loadConfigH();                        // Load hugo config
     function loadConfigH() {
-      let ymlFile = fs.readFileSync( "config/hugo.yml", "utf8"        );
+      let ymlFile = fs.readFileSync( "config/hugo.yml", "utf8"            );
       return yaml.load(ymlFile);
     }
-    var { COMPATIBILITY, SOURCE   } = loadConfigB();                            // Load build config
+    var { COMPATIBILITY, SOURCE       } = loadConfigB();                        // Load build config
     function loadConfigB() {
-      let ymlFile = fs.readFileSync( "config/build.yml", "utf8"       );
+      let ymlFile = fs.readFileSync( "config/build.yml", "utf8"           );
       return yaml.load(ymlFile);
     }
-    HUGO.public           = path.join(  HUGO.root  , HUGO.public      );
-    HUGO.source           = path.join(  HUGO.root  , HUGO.source      );
-    HUGO.static           = path.join(  HUGO.root  , HUGO.static      );
-    HUGO.watch            = HUGO.watch.map(function(v){ return path.join( HUGO.root, v )});
-    SOURCE.js.push(         path.join( HUGO.source, HUGO.js_filter[0] ));
-    SOURCE.js.push(         path.join( HUGO.source, HUGO.js_filter[1] ));
+    HUGO.public           = path.join( HUGO.root    , HUGO.public         );
+    HUGO.source           = path.join( HUGO.root    , HUGO.source         );
+    HUGO.static           = path.join( HUGO.root    , HUGO.static         );
+    HUGO.content          = path.join( HUGO.root    , HUGO.content        );
+    HUGO.filters          = HUGO.filters.map(function(v){
+                            return path.join( HUGO.root, v )
+                          });
+    SOURCE.js.push(         path.join( HUGO.source  , SOURCE.js_filter[0] ));
+    SOURCE.js.push(         path.join( HUGO.source  , SOURCE.js_filter[1] ));
+    PROJECTS.folio        = path.join( HUGO.content , PROJECTS.folio      );
+    PROJECTS.filters[0]   = path.join( PROJECTS.root, PROJECTS.filters[0] );
+    PROJECTS.filters[1]   = path.join( PROJECTS.root, PROJECTS.filters[1] );
+
   // Logging
     console.log("[Gulpfile] `load-config` loaded.");
 
@@ -60,15 +67,34 @@
   // Logging
     console.log("[Gulpfile] `scss-css`    loaded.");
 
-// rimraf
-  // Import modules
-    var rimraf            = require("rimraf")
+// clean
   // Functions
     function clean(done) {
-      rimraf(HUGO.public, done);                                                // rm -rf
+      fs.removeSync(HUGO.public)
+      fs.removeSync(PROJECTS.folio)
+      done();
     }
   // Logging
     console.log("[Gulpfile] `rimraf`      loaded.");
+
+// copy
+  // Import modules
+    var globby            = require("globby"),
+        minimatch         = require("minimatch")
+  // Functions
+    function copy(done) {
+      var paths = globby.sync( PROJECTS.filters );
+      for (i in paths){
+        rootPath          = paths[i];
+        folioPath         = path.join( PROJECTS.folio, path.relative(PROJECTS.root, rootPath ));
+        fs.copySync( rootPath, folioPath, function (file) {
+          return minimatch( file, "**/.*") ? false : true;
+        })
+      }
+      done();
+    }
+  // Logging
+    console.log("[Gulpfile] `copy`        loaded.");
 
 // hugo
   // Import modules
@@ -77,17 +103,17 @@
   // Functions
     gulp.task("hugo_build", (code) => {
       return cp.spawn("hugo", ["-s",HUGO.root], { stdio: "inherit" })
-        .on("error", (error) => gutil.log(gutil.colors.red(error.message)))
+        .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
         .on("close", code);
     })
     gulp.task("hugo_server", (code) => {
       return cp.spawn("hugo", ["server", "-p", PORT, "-s",HUGO.root], { stdio: "inherit" })
-        .on("error", (error) => gutil.log(gutil.colors.red(error.message)))
+        .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
         .on("close", code);
     })
     gulp.task("hugo_watch", (code) => {
       return cp.spawn("hugo", ["-w", "-s",HUGO.root], { stdio: "inherit" })
-        .on("error", (error) => gutil.log(gutil.colors.red(error.message)))
+        .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
         .on("close", code);
     })
   // Logging
@@ -135,18 +161,17 @@
         gulp.watch( path.join( HUGO.source, "/js/**/*.js"      )).on("all", gulp.series( js                     ));
       }
       function watch_server() {
-        gulp.watch( HUGO.watch                    ).on("all", gulp.series( "hugo_build", "lint", browser.reload ));
+        gulp.watch( HUGO.filters                    ).on("all", gulp.series( "hugo_build", "lint", browser.reload ));
       }
   // Logging
     console.log("[Gulpfile] `watch`       loaded.");
 
 // tasks
   // Functions
-    // tasks
     gulp.task("build",        gulp.series( gulp.parallel(scss, js)                                              ));
     gulp.task("build:css",    gulp.series( scss                                                                 ));
     gulp.task("build:js",     gulp.series( js                                                                   ));
-    gulp.task("build:hugo",   gulp.series( clean, "build", "hugo_build", `lint`                                 ));
+    gulp.task("build:hugo",   gulp.series( clean, copy, "build", "hugo_build", `lint`                                 ));
     gulp.task("server:hugo",  gulp.series( "build",              gulp.parallel( "hugo_server", watch_scss_js)   ));
     gulp.task("server:bs",    gulp.series( "build:hugo", server, gulp.parallel( watch_server , watch_scss_js)   ));
   // Logging

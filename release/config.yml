@@ -12,7 +12,7 @@ canonifyurls: true
 Paginate: 8
 disqusShortname: "xxxxxx"
 googleAnalytics: "UA-XXXXXXX-1"
-contentDir: "static/assets"
+contentDir: "static/content"
 
 # Params
 params:
@@ -38,6 +38,11 @@ menu:
       identifier: "code"
       pre: "<i class='fa fa-code fa-1x'></i>"
       url: "/topics/code/"
+      weight: -110
+    - name: "GFX"
+      identifier: "gfx"
+      pre: "<i class='fa fa-code fa-1x'></i>"
+      url: "/topics/gfx/"
       weight: -110
     - name: "Interior Design"
       identifier: "interior-design"

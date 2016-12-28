@@ -14,7 +14,7 @@
     "babel-register": "^6.7.2",
     "browser-sync": "^2.10.0",
     "fs-extra": "^1.0.0",
-    "gray-matter": "^2.1.0",
+    "globby": "^6.1.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.2",
@@ -30,8 +30,6 @@
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.7",
     "js-yaml": "^3.4.6",
-    "rimraf": "^2.4.3",
-    "sanitize-filename": "^1.6.1",
     "yargs": "^3.8.0"
   },
   "main": "gulpfile.js",
