@@ -4,4 +4,4 @@ bower_components/
 npm-debug.log
 prototypes/
 public/
-static/assets/folio/
+release/static/content/folio/
