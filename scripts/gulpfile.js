@@ -6,13 +6,13 @@
         path              = require("path"),
         yargs             = require("yargs")
   // Init
-    const PRODUCTION      = !!(yargs.argv.production);
+    const PRODUCTION      = !!(yargs.argv.production                  );
     var { PORT, HUGO, THEME       } = loadConfigH();                            // Load hugo config
     function loadConfigH() {
       let ymlFile = fs.readFileSync( "config/hugo.yml", "utf8"        );
       return yaml.load(ymlFile);
     }
-    var { COMPATIBILITY, SOURCES  } = loadConfigB();                            // Load build config
+    var { COMPATIBILITY, SOURCE   } = loadConfigB();                            // Load build config
     function loadConfigB() {
       let ymlFile = fs.readFileSync( "config/build.yml", "utf8"       );
       return yaml.load(ymlFile);
@@ -21,9 +21,8 @@
     HUGO.source           = path.join(  HUGO.root  , HUGO.source      );
     HUGO.static           = path.join(  HUGO.root  , HUGO.static      );
     HUGO.watch            = HUGO.watch.map(function(v){ return path.join( HUGO.root, v )});
-    SOURCE.js.push(        path.join( HUGO.source, HUGO.js_filter[0]  );
-    SOURCE.js.push(        path.join( HUGO.source, HUGO.js_filter[1]  );
-
+    SOURCE.js.push(         path.join( HUGO.source, HUGO.js_filter[0] ));
+    SOURCE.js.push(         path.join( HUGO.source, HUGO.js_filter[1] ));
   // Logging
     console.log("[Gulpfile] `load-config` loaded.");
 
@@ -115,9 +114,9 @@
   // Functions
       function server(done) {
         browser.init({
-          server: {
-            baseDir: HUGO.public
-          }, port: HUGO.port
+          server: HUGO.public,
+          port: HUGO.port,
+          open: false
         });
         done();
       }
