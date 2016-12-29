@@ -21,6 +21,8 @@ PROJECTS:
     - "/**/README.md"
     - "/**/assets"
     - "!**/free-code-camp/* - */**/*"
+    - "!**/releases/**/*"
+    - "!**/resume/**/*"
     - "!**/prototypes/**/*"
     - "!**/release/**/*"
     - "!**/scripts/**/*"
