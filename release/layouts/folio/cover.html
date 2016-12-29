@@ -4,7 +4,7 @@
       {{ if and (isset .Params "cover") .Params.cover }}
         <img src="{{ .Site.BaseURL }}content/{{ .Type }}/{{ index .Params.topics 0 }}/{{ .Params.parent }}/{{lower .Title | urlize }}/assets/{{ .Params.cover}}">
       {{ else }}
-        <img src="{{ .Site.BaseURL }}content/default/code/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/cover.png">
+        <img src="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/cover.png">
       {{ end }}
     </a>
   </div>
@@ -14,4 +14,5 @@
   <p>
     {{ partial "snippet/tools" . }}
   </p>
+  <hr>
 </div>

@@ -11,7 +11,7 @@
               <img class="img-responsive" src="{{ $currentNode.Site.BaseURL }}content/{{ $currentNode.Type }}/{{ index $currentNode.Params.topics 0 }}/{{ $currentNode.Params.parent }}/{{lower $currentNode.Title | urlize }}/assets/{{ . }}">
             {{ end }}
           {{ else }}
-            <img class="img-responsive" src="{{ .Site.BaseURL }}content/default/code/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/mockup-mobile.jpg">
+            <img class="img-responsive" src="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/mockup-mobile.jpg">
           {{ end }}
         </div>
       </div>
