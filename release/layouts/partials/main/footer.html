@@ -1,10 +1,13 @@
 <footer id="footer">
   <nav>
-    <div class="row column align-justify">
+    <div class="row column">
       <div class="small-6 columns">
         <ul class="menu">
           <li>
-            <a class="menu-title" href="#">&copy; {{.Now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}</a>
+            &copy;
+          </li>
+          <li>
+            <a class="menu-title" href="#">{{.Now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}</a>
           </li>
           <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
         </ul>

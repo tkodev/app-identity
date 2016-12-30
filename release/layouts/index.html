@@ -1,19 +1,23 @@
 {{ partial "core/head" . }}
 
 <main id="main">
-  <div class="card-section">
-    <div class="row" id="content">
-      {{ range first 4 (where .Data.Pages "Type" "folio") }}
-        <div class="small-6 medium-4 large-3 columns" >
-          {{ .Render "cover" }}
-        </div>
-      {{ end }}
-      {{ range first 8 (shuffle (where .Data.Pages "Type" "folio")) }}
-        <div class="small-6 medium-4 large-3 columns" >
-          {{ .Render "cover" }}
-        </div>
-      {{ end }}
+  <div class="row" id="content">
+    <div class="small-12 columns">
+      <h1>Recent _</h1>
     </div>
+    {{ range first 4 (where .Data.Pages "Type" "folio") }}
+      <div class="small-6 medium-4 large-3 columns" >
+        {{ .Render "cover" }}
+      </div>
+    {{ end }}
+    <div class="small-12 columns">
+      <h1>Randomizer _</h1>
+    </div>
+    {{ range first 8 (shuffle (where .Data.Pages "Type" "folio")) }}
+      <div class="small-6 medium-4 large-3 columns" >
+        {{ .Render "cover" }}
+      </div>
+    {{ end }}
   </div>
 </main>
 
