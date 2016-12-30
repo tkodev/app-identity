@@ -1,15 +1,12 @@
 {{ partial "core/head" . }}
 
 <main id="main">
-  <div class="row">
-    <div class="medium-8 columns" id="content">
-      <h4>{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</h4>
-      <article>
-        {{ .Content }}
-      </article>
-    </div>
-    <div class="medium-3 columns" data-sticky-container>
-      {{ partial "main/sidebar" . }}
+  <div class="card-section">
+    <div class="row" id="content">
+      <div class="small-12 columns">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Content }}</p>
+      </div>
     </div>
   </div>
 </main>
