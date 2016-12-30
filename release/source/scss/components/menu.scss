@@ -6,7 +6,7 @@
     a:before {
       content: "";
       position:absolute;
-      left:1rem;
+      left:1.4rem;
       width:0.8rem;
       bottom:0.25rem;
       border-bottom: none;
@@ -19,7 +19,7 @@
 
 // Custom
   .menu-img-a {
-    padding: 0 1rem !important;
+    padding: 0 !important;
     margin: 0 !important;
   }
   .menu-img-a:hover:before {

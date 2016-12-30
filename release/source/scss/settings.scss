@@ -177,8 +177,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 10px,
-  medium: 10px,
+  small: 0.2rem,
+  medium: 0.2rem,
   // small: 20px,
   // medium: 30px,
 );
@@ -412,9 +412,9 @@ $mediaobject-image-width-stacked: 100%;
 // 22. Menu
 // --------
 
-$menu-margin: 0;
-$menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 1rem;
+$menu-margin: 0.7rem 0;
+$menu-margin-nested: 0;
+$menu-item-padding: 0.7rem 0 0.7rem 1.4rem;
 $menu-icon-spacing: 0.25rem;
 $menu-item-color-active:  ;
 $menu-item-background-active:  ;
@@ -619,7 +619,7 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0;
 $topbar-background: ;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
