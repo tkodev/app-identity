@@ -4,7 +4,7 @@
   <div class="row" id="content">
     <div class="small-12 medium-12 large-6 columns">
       <div data-sticky-container>
-      <div class="sticky folio-gallery" data-sticky data-sticky-on="large" data-anchor="content" data-margin-top="9" >
+      <div class="sticky folio-gallery" data-sticky data-sticky-on="large" data-anchor="content" data-margin-top="8" >
         <div class="card">
           {{ $currentNode := . }}
           {{ if and (isset .Params "photo") .Params.photo }}
@@ -21,7 +21,7 @@
     <div class="small-12 medium-12 large-5 large-offset-1 columns">
       <div class="card-section hide-for-large"></div>
       <div data-sticky-container>
-      <div class="sticky folio-desc" data-sticky data-sticky-on="large" data-anchor="content" data-margin-top="9" >
+      <div class="sticky folio-desc" data-sticky data-sticky-on="large" data-anchor="content" data-margin-top="8" >
         <h1>{{ .Title }} _</h1>
         <hr>
         {{ .Content }}
@@ -39,6 +39,21 @@
           <hr>
           <h6>Code:</h6>
           {{ partial "snippets/code" . }}
+        {{ end }}
+        {{ if .Params.program }}
+          <hr>
+          <h6>Program:</h6>
+          {{ partial "snippets/program" . }}
+        {{ end }}
+        {{ if .Params.course }}
+          <hr>
+          <h6>Course:</h6>
+          {{ partial "snippets/course" . }}
+        {{ end }}
+        {{ if .Params.project }}
+          <hr>
+          <h6>Project:</h6>
+          {{ partial "snippets/project" . }}
         {{ end }}
       </div>
       </div>
