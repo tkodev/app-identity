@@ -1,9 +1,8 @@
 {{ if .Params.topics }}
+  <i class="fa fa-folder fa-1x"></i>
   {{ range $index, $topic := .Params.topics }}
     {{ if gt $index 0 }},
     {{ end }}
-      <a class="capitalize" href="/topics/{{ . | urlize }}">
-        {{ . }}
-      </a>
+    <a class="capitalize" href="/topics/{{ . | urlize }}">{{ . }}</a>
   {{ end }}
 {{ end }}
