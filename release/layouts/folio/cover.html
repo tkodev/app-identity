@@ -1,18 +1,19 @@
-<div class="cover">
-  <div class="card">
+<div class="cover card">
+  <div class="card-header">
     <a href="{{ .Permalink }}">
       {{ if and (isset .Params "cover") .Params.cover }}
         <img src="{{ .Site.BaseURL }}content/{{ .Type }}/{{ index .Params.topics 0 }}/{{ .Params.parent }}/{{lower .Title | urlize }}/assets/{{ .Params.cover}}">
       {{ else }}
-        <img src="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/cover.png">
+        <img class="img-responsive" src="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/cover.png">
       {{ end }}
     </a>
   </div>
-  <h6>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </h6>
-  <p>
-    {{ partial "snippets/tools" . }}
-  </p>
-  <hr>
+  <div class="card-section arrow-up">
+    <h6>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h6>
+    <p>
+      {{ partial "snippets/tools" . }}
+    </p>
+  </div>
 </div>
