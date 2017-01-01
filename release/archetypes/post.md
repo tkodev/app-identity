@@ -4,8 +4,7 @@ draft: true
 date: "2016-12-31"
 title: ""
 author: ""
-description: ""
-topics: ["topic 1"]
+categories: ["topic 1"]
 tags: ["one", "two"]
 cover: "cover.jpg"
 photo:
