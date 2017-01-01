@@ -3,9 +3,8 @@ type: "page"
 draft: false
 date: "2016-12-31"
 title: "About Me"
-cover: "cover.png"
 photo:
-  - "dp.png"
+  - "dp.jpg"
 ---
 I am **Hei Tony Ko**, Front End Web Developer.
 
