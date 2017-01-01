@@ -12,3 +12,13 @@ body {
   animation-duration: 1s;
   animation-name: fadeIn;
 }
+a::before {
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  border-bottom: 1px solid transparent;
+}
+a:hover::before, a.active::before {
+  border-bottom: 1px solid black;
+}

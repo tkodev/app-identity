@@ -9,11 +9,6 @@
       left:1.4rem;
       width:0.8rem;
       bottom:0.25rem;
-      border-bottom: none;
-      transition : all 1s linear;
-    }
-    a:hover:before, a.active:before {
-      border-bottom:1px solid black;
     }
   }
 
