@@ -38,8 +38,9 @@
     "build:prod": "gulp build --production",
     "build:css": "gulp build:css",
     "build:js": "gulp build:js",
-    "build:hugo": "gulp build:hugo",
+    "build:hugo": "gulp build:hugo --production",
     "server:hugo": "gulp server:hugo",
+    "build:bs": "gulp build:bs",
     "server:bs": "gulp server:bs"
   },
   "babel": {

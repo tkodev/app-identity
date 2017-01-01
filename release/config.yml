@@ -6,7 +6,7 @@ author: "Tony Ko"
 copyright: "Copyright - Tony Ko."
 
 # Config
-baseUrl: "http://192.168.1.30:4000/"
+baseUrl: "http://www.htko.ca/"
 theme: ""
 canonifyurls: true
 Paginate: 16

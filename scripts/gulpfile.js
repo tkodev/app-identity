@@ -106,6 +106,11 @@
         .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
         .on("close", code);
     })
+    gulp.task("hugo_build_bs", (code) => {
+      return cp.spawn("hugo", ["-s",HUGO.root,"-b","http://192.168.1.30:4000/"], { stdio: "inherit" })
+        .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
+        .on("close", code);
+    })
     gulp.task("hugo_server", (code) => {
       return cp.spawn("hugo", ["server", "-p", PORT, "-s",HUGO.root], { stdio: "inherit" })
         .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
@@ -161,7 +166,7 @@
         gulp.watch( path.join( HUGO.source, "/js/**/*.js"      )).on("all", gulp.series( js                     ));
       }
       function watch_server() {
-        gulp.watch( HUGO.filters                    ).on("all", gulp.series( "hugo_build", "lint", browser.reload ));
+        gulp.watch( HUGO.filters                    ).on("all", gulp.series( "hugo_build_bs", "lint", browser.reload ));
       }
   // Logging
     console.log("[Gulpfile] `watch`       loaded.");
@@ -171,8 +176,9 @@
     gulp.task("build",        gulp.series( gulp.parallel(scss, js)                                              ));
     gulp.task("build:css",    gulp.series( scss                                                                 ));
     gulp.task("build:js",     gulp.series( js                                                                   ));
-    gulp.task("build:hugo",   gulp.series( clean, copy, "build", "hugo_build", `lint`                                 ));
+    gulp.task("build:hugo",   gulp.series( clean, copy, "build", "hugo_build", `lint`                           ));
     gulp.task("server:hugo",  gulp.series( "build",              gulp.parallel( "hugo_server", watch_scss_js)   ));
-    gulp.task("server:bs",    gulp.series( "build:hugo", server, gulp.parallel( watch_server , watch_scss_js)   ));
+    gulp.task("build:bs",     gulp.series( clean, copy, "build", "hugo_build_bs", `lint`                        ));
+    gulp.task("server:bs",    gulp.series( "build:bs", server,   gulp.parallel( watch_server , watch_scss_js)   ));
   // Logging
     console.log("[Gulpfile] `tasks`       loaded.");
