@@ -6,13 +6,19 @@ author: "Tony Ko"
 copyright: "Copyright - Tony Ko."
 
 # Config
-baseUrl: "http://htko-site-base.dev/"
+baseUrl: "http://192.168.1.30:4000/"
 theme: ""
 canonifyurls: true
 Paginate: 16
 disqusShortname: "xxxxxx"
 googleAnalytics: "UA-XXXXXXX-1"
 contentDir: "static/content"
+ignoreFiles:
+  - "\\.html$"
+  - "\\.png$"
+  - "\\.jpg$"
+  - "\\.jpeg$"
+  - "\\.svg$"
 
 # Params
 params:
@@ -60,10 +66,10 @@ menu:
     #   pre: "<i class='fa fa-bookmark-o fa-1x'></i>"
     #   url: "/categories/blog"
     #   weight: -110
-    - name: "Contact"
-      identifier: "contact"
+    - name: "About Me"
+      identifier: "about-me"
       pre: "<i class='fa fa-user-circle-o fa-1x'></i>"
-      url: "/page/contact/"
+      url: "page/about-me/README/"
       weight: -100
   footer:
     - name: "Linkedin"
