@@ -46,24 +46,26 @@
 // 1. Global
 // ---------
 
-$global-font-size: 100%;
+@import url(https://fonts.googleapis.com/css?family=Roboto|Oswald:300,400,700);
+  $global-font-size: 80%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
-);
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+  $gray: #ccc;
+  $light-gray: #eee;
+  $medium-gray: #666;
+  $dark-gray: #444;
+  $black: #0a0a0a;
+  $white: #fefefe;
+  $foundation-palette: (
+    primary: $black,
+    secondary: $dark-gray,
+    success: #3adb76,
+    warning: #ffae00,
+    alert: #cc4b37,
+  );
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  $body-font-color: $medium-gray;
+  $body-font-family: 'Roboto', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -71,7 +73,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
-$global-flexbox: false;
+  $global-flexbox: true;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
@@ -94,41 +96,43 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: (
-  small: 20px,
-  medium: 30px,
-);
+  $grid-column-gutter: (
+    small: 0.8rem,
+    medium: 0.8rem,
+    // small: 20px,
+    // medium: 30px,
+  );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
 
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+  $header-font-family: 'Oswald', sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
+  $header-color: $black;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
-$header-styles: (
-  small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
-  ),
-  medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
-  ),
-);
+  $header-styles: (
+    small: (
+      'h1': ('font-size': 22),
+      'h2': ('font-size': 20),
+      'h3': ('font-size': 18),
+      'h4': ('font-size': 16),
+      'h5': ('font-size': 14),
+      'h6': ('font-size': 12),
+    ),
+    medium: (
+      'h1': ('font-size': 22),
+      'h2': ('font-size': 20),
+      'h3': ('font-size': 18),
+      'h4': ('font-size': 16),
+      'h5': ('font-size': 14),
+      'h6': ('font-size': 12),
+    ),
+  );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
@@ -139,15 +143,15 @@ $code-color: $black;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
-$code-border: 1px solid $medium-gray;
-$code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+  $code-border: ;
+  $code-padding: 0.2rem 0.4rem;
+$anchor-color: $secondary-color;
+  $anchor-color-hover: scale-color($anchor-color, $lightness: +20%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
-$hr-margin: rem-calc(20) auto;
+  $hr-border: 1px solid $light-gray;
+  $hr-margin: rem-calc(10) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
@@ -292,7 +296,7 @@ $card-border: 1px solid $light-gray;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
-$card-margin: $global-margin;
+  $card-margin: 0;
 
 // 15. Close Button
 // ----------------
@@ -409,12 +413,16 @@ $mediaobject-image-width-stacked: 100%;
 // 22. Menu
 // --------
 
-$menu-margin: 0;
-$menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 1rem;
+  $menu-margin: 0.7rem 0;
+  $menu-margin-nested: 0;
+  $menu-item-padding: 0.7rem 0 0.7rem 1.4rem;
+$menu-icon-spacing: 0.25rem;
+  $menu-item-color-active:  ;
+  $menu-item-background-active:  ;
+  $menu-item-background-hover: ;
+  $menu-border: ;
 $menu-item-color-active: $white;
 $menu-item-background-active: get-color(primary);
-$menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-border: $light-gray;
 
@@ -612,8 +620,8 @@ $tooltip-radius: $global-radius;
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+  $topbar-padding: 0;
+  $topbar-background: ;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
