@@ -24,6 +24,7 @@ PROJECTS:
     - "!**/releases/**/*"
     - "!**/resume/**/*"
     - "!**/prototypes/**/*"
+    - "!**/sources/**/*"
     - "!**/release/**/*"
     - "!**/scripts/**/*"
     - "!**/node_modules/**/*"
