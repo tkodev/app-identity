@@ -17,6 +17,7 @@
       let ymlFile = fs.readFileSync( "config/build.yml", "utf8"           );
       return yaml.load(ymlFile);
     }
+    HUGO.url              = HUGO.base_url;
     HUGO.public           = path.join( HUGO.root    , HUGO.public         );
     HUGO.source           = path.join( HUGO.root    , HUGO.source         );
     HUGO.static           = path.join( HUGO.root    , HUGO.static         );
@@ -67,6 +68,19 @@
   // Logging
     console.log("[Gulpfile] `scss-css`    loaded.");
 
+// url
+  // Functions
+    function base_url(done) {
+      HUGO.url = HUGO.base_url;
+      done();
+    }
+    function temp_url(done) {
+      HUGO.url = HUGO.temp_url;
+      done();
+    }
+  // Logging
+    console.log("[Gulpfile] `url`         loaded.");
+
 // clean
   // Functions
     function clean(done) {
@@ -101,23 +115,18 @@
     var cp                = require("child_process"),
         gutil             = require("gulp-util");
   // Functions
-    gulp.task("hugo_build", (code) => {
-      return cp.spawn("hugo", ["-s",HUGO.root], { stdio: "inherit" })
+    gulp.task("hugo:build", (code) => {
+      return cp.spawn("hugo", ["-s", HUGO.root, "-b", HUGO.url], { stdio: "inherit" })
         .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
         .on("close", code);
     })
-    gulp.task("hugo_build_bs", (code) => {
-      return cp.spawn("hugo", ["-s",HUGO.root,"-b","http://192.168.1.30:4000/"], { stdio: "inherit" })
+    gulp.task("hugo:watch", (code) => {
+      return cp.spawn("hugo", ["-w", "-s",HUGO.root, "-b", HUGO.url], { stdio: "inherit" })
         .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
         .on("close", code);
     })
-    gulp.task("hugo_server", (code) => {
-      return cp.spawn("hugo", ["server", "-p", PORT, "-s",HUGO.root], { stdio: "inherit" })
-        .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
-        .on("close", code);
-    })
-    gulp.task("hugo_watch", (code) => {
-      return cp.spawn("hugo", ["-w", "-s",HUGO.root], { stdio: "inherit" })
+    gulp.task("hugo:server", (code) => {
+      return cp.spawn("hugo", ["server", "-s", HUGO.root, "-b", HUGO.url, "-p", PORT], { stdio: "inherit" })
         .on("error", (error) => gutil.log(gutil.colors.red("[Hugo]"+error.message)))
         .on("close", code);
     })
@@ -162,23 +171,23 @@
   // Functions
     // watch
       function watch_scss_js() {
-        gulp.watch( path.join( HUGO.source, "/scss/**/*.scss"  )).on("all", gulp.series( scss                   ));
-        gulp.watch( path.join( HUGO.source, "/js/**/*.js"      )).on("all", gulp.series( js                     ));
+        gulp.watch( path.join( HUGO.source, "/scss/**/*.scss"  )).on("all", gulp.series( scss                       ));
+        gulp.watch( path.join( HUGO.source, "/js/**/*.js"      )).on("all", gulp.series( js                         ));
       }
       function watch_server() {
-        gulp.watch( HUGO.filters                    ).on("all", gulp.series( "hugo_build_bs", "lint", browser.reload ));
+        gulp.watch( HUGO.filters                    ).on("all", gulp.series( "hugo:build", "lint", browser.reload   ));
       }
   // Logging
     console.log("[Gulpfile] `watch`       loaded.");
 
 // tasks
   // Functions
-    gulp.task("build",        gulp.series( gulp.parallel(scss, js)                                              ));
-    gulp.task("build:css",    gulp.series( scss                                                                 ));
-    gulp.task("build:js",     gulp.series( js                                                                   ));
-    gulp.task("build:hugo",   gulp.series( clean, copy, "build", "hugo_build", `lint`                           ));
-    gulp.task("server:hugo",  gulp.series( "build",              gulp.parallel( "hugo_server", watch_scss_js)   ));
-    gulp.task("build:bs",     gulp.series( clean, copy, "build", "hugo_build_bs", `lint`                        ));
-    gulp.task("server:bs",    gulp.series( "build:bs", server,   gulp.parallel( watch_server , watch_scss_js)   ));
+    // build
+      gulp.task("build:sources", gulp.series( gulp.parallel(scss, js)                                                 ));
+      gulp.task("build",         gulp.series( clean, copy, "build:sources", "hugo:build", `lint`                      ));
+    // serve
+      gulp.task("build:base",    gulp.series( base_url, "build"                                                       ));
+      gulp.task("server:hugo",   gulp.series( temp_url, "build:sources", gulp.parallel( "hugo:server", watch_scss_js) ));
+      gulp.task("server:sync",   gulp.series( temp_url, "build", server, gulp.parallel( watch_server , watch_scss_js) ));
   // Logging
     console.log("[Gulpfile] `tasks`       loaded.");

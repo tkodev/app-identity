@@ -6,8 +6,6 @@ author: "Tony Ko"
 copyright: "Copyright - Tony Ko."
 
 # Config
-baseUrl: "http://www.htko.ca/"
-theme: ""
 canonifyurls: true
 Paginate: 16
 disqusShortname: "xxxxxx"

@@ -34,14 +34,10 @@
   },
   "main": "gulpfile.js",
   "scripts": {
-    "build:debug": "gulp build",
-    "build:prod": "gulp build --production",
-    "build:css": "gulp build:css",
-    "build:js": "gulp build:js",
-    "build:hugo": "gulp build:hugo --production",
-    "server:hugo": "gulp server:hugo",
-    "build:bs": "gulp build:bs",
-    "server:bs": "gulp server:bs"
+    "build:base"  : "gulp build:base",
+    "build:prod"  : "gulp build:base --production",
+    "server:hugo" : "gulp server:hugo",
+    "server:sync" : "gulp server:sync"
   },
   "babel": {
     "presets": [
