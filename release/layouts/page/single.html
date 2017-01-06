@@ -3,7 +3,7 @@
 <main id="main">
   <div class="row" id="content">
     <div class="small-12 medium-12 large-6 columns">
-      <div class="folio-gallery">
+      <div id="folio-gallery">
         <div class="">
           {{ $currentNode := . }}
           {{ if and (isset .Params "photo") .Params.photo }}
@@ -16,29 +16,28 @@
         </div>
       </div>
     </div>
-    <div class="small-12 medium-12 large-5 large-offset-1 columns">
-      <div class="card-section hide-for-large"></div>
-      <div data-sticky-container>
-        <div class="sticky folio-desc" data-sticky-on="large" data-anchor="content" data-margin-top="7">
-          <h1>{{ .Title }} _</h1>
+    <div class="small-12 medium-12 large-5 large-offset-1 columns" data-sticky-container>
+      <div id="folio-desc" class="sticky" data-sticky-on="large" data-anchor="folio-gallery" data-margin-top="7">
+        <div class="card-section hide-for-large"></div>
+        <h1>{{ .Title }} _</h1>
+        <hr>
+        {{ .Content }}
+        {{ if .Params.tools }}
           <hr>
-          {{ .Content }}
-          {{ if .Params.tools }}
-            <hr>
-            <h6>Tools:</h6>
-            {{ partial "snippets/tools" . }}
-          {{ end }}
-          {{ if .Params.link }}
-            <hr>
-            <h6>Link:</h6>
-            {{ partial "snippets/link" . }}
-          {{ end }}
-          {{ if .Params.code }}
-            <hr>
-            <h6>Code:</h6>
-            {{ partial "snippets/code" . }}
-          {{ end }}
-        </div>
+          <h6>Tools:</h6>
+          {{ partial "snippets/tools" . }}
+        {{ end }}
+        {{ if .Params.link }}
+          <hr>
+          <h6>Link:</h6>
+          {{ partial "snippets/link" . }}
+        {{ end }}
+        {{ if .Params.code }}
+          <hr>
+          <h6>Code:</h6>
+          {{ partial "snippets/code" . }}
+        {{ end }}
+        <div class="card-section hide-for-large"></div>
       </div>
     </div>
   </div>
