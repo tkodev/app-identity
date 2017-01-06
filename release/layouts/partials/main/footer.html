@@ -7,7 +7,7 @@
             &copy;
           </li>
           <li>
-            <a class="menu-title" href="#">{{.Now.Format "2006"}} {{ with .Site.Copyright }}{{ . | markdownify}}{{ end }}</a>
+            <a class="menu-title" href="#">{{.Now.Format "2006"}} {{ with .Site.Params.Copyright }}{{ . | markdownify}}{{ end }}</a>
           </li>
           <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
         </ul>

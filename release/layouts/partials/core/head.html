@@ -7,8 +7,6 @@
 
   <base href="{{ .Site.BaseURL }}">
 
-  <title>{{ .Site.Title }}{{ if eq .Site.Title .Title }} | {{ .Site.Params.subtitle }}{{ else }} | {{ .Title }}{{ end }}</title>
-
   {{ partial "core/head-meta" . }}
 
   <link href="{{ .Site.BaseURL }}static/css/app.css" rel="stylesheet">
