@@ -6,6 +6,7 @@ author              : "Hei Tony Ko"
 
 # Params
 params:
+  subtitle          : "Hei Tony Ko"
   copyright         : "Copyright - Tony Ko."
   description       : "Personal Portfolio of Hei Tony Ko, Front End Developer."
   locale            : "en_US"
