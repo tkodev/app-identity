@@ -1,64 +1,8 @@
+<title>{{ .Site.Title }}{{ if .Title }} | {{ .Title }}{{ end }}</title>
+
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/google_news.html" . }}
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
-
-<title>{{ .Site.Title }}{{ if eq .Site.Title .Title }} | {{ .Site.Params.subtitle }}{{ else }} | {{ .Title }}{{ end }}</title>
-<meta property="og:title" content="{{ .Site.Title }}{{ if eq .Site.Title .Title }} | {{ .Site.Params.subtitle }}{{ else }} | {{ .Title }}{{ end }}" />
-<meta property="og:site_name" content="{{ .Site.Title }} | {{ .Site.Params.subtitle }}" />
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
-{{ if not .Date.IsZero }}
-  <meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}"/>
-{{ end }}
-{{ with .Site.Params.locale }}
-  <meta property="og:locale" content="{{ . }}" />
-{{ end }}
-
-{{ if .IsPage }}
-  {{ $currentNode := . }}
-  {{ if .Params.photo }}
-    {{ if .Params.topics }}
-      {{ range .Params.photo }}
-        <meta property="og:image" content="{{ $currentNode.Site.BaseURL }}content/{{ $currentNode.Type }}/{{ index $currentNode.Params.topics 0 }}/{{ $currentNode.Params.parent }}/{{lower $currentNode.Title | urlize }}/assets/{{ . }}" />
-      {{ end }}
-    {{ end }}
-  {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/mockup-mobile.jpg">
-  {{ end }}
-{{ else }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/mockup-mobile.jpg">
-{{ end }}
-
-{{ if .IsPage }}
-  {{ with .Site.Params.facebook }}
-    <meta property="article:author" content="https://www.facebook.com/{{ . }}" />
-    <meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />
-  {{ end }}
-  <meta property="article:published_time" content="{{ .Date }}" />
-  <meta property="article:modified_time" content="{{ .Date }}" />
-  {{ if .Params.topics }}
-    {{ range $index, $topic := .Params.topics }}
-      <meta property="article:section" content="{{ . | urlize }}" />
-    {{ end }}
-  {{ end }}
-  {{ if .Params.tools }}
-    {{ range $index, $topic := .Params.tools }}
-      <meta property="article:tag" content="{{ . | urlize }}" />
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ with .Site.Params.facebook_admin }}
-  <meta property="fb:admins" content="{{ . }}" />
-{{ end }}
-{{ with .Site.Params.facebook_app_id }}
-  <meta property="fb:app_id" content="{{ . }}" />
-{{ end }}
-
-{{ if .Site.Params.google_verify_meta }}
-  <meta name="google-site-verification" content="{{ .Site.Params.google_verify }}" />
-{{ end }}
 
 {{ .Hugo.Generator }}

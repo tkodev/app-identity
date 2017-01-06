@@ -1,13 +1,12 @@
 ---
 # Metadata
 languageCode        : "en-us"
-title               : "Hei Tony Ko"
+title               : "Hei Tony Ko | Personal Portfolio"
 author              : "Hei Tony Ko"
 
 # Params
 params:
   copyright         : "Copyright - Tony Ko."
-  subtitle          : "Personal Portfolio"
   description       : "Personal Portfolio of Hei Tony Ko, Front End Developer."
   locale            : "en_US"
   google_verify     : ""
