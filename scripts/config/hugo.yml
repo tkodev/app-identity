@@ -1,6 +1,6 @@
 # Hugo paths
 HUGO:
-  base_url: "http://www.htko.ca/"
+  base_url: "http://htko.ca/"
   temp_url: "http://192.168.1.30:4000/"
   port: 4000
   root: "/Users/sysuser/Google Drive/folio/public/code/htko/site-base/release"

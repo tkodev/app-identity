@@ -17,7 +17,6 @@
       let ymlFile = fs.readFileSync( "config/build.yml", "utf8"           );
       return yaml.load(ymlFile);
     }
-    HUGO.url              = HUGO.base_url;
     HUGO.public           = path.join( HUGO.root    , HUGO.public         );
     HUGO.source           = path.join( HUGO.root    , HUGO.source         );
     HUGO.static           = path.join( HUGO.root    , HUGO.static         );
