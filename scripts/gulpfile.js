@@ -154,8 +154,7 @@
       function server(done) {
         browser.init({
           server: HUGO.public,
-          port: HUGO.port,
-          open: false
+          port: HUGO.port
         });
         done();
       }
