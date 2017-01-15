@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/lua/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <atom:link href="http://htko.ca/tools/lua/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LUA Language</title>
+      <link>http://htko.ca/folio/code/personal/lua-language/README/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/personal/lua-language/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;
+
+&lt;p&gt;A journal of my learning progress and solutions in the LUA language.&lt;/p&gt;
+
+&lt;h2 id=&#34;self-learning&#34;&gt;Self Learning&lt;/h2&gt;
+
+&lt;p&gt;I am currently using github&amp;rsquo;s version tracking as a way to track my progress through &lt;a href=&#34;http://www.lua.org/pil/contents.html&#34;&gt;Programming in Lua: First Edition&lt;/a&gt; as my guide to learning LUA. Version tracking allows me to show to myself and other the actual progress of my work including revisions to my code. I chose the first edition because it is constant, readily available, and most importantly, free for all to enjoy. I intend this repository to be a learning reference for myself and others.&lt;/p&gt;
+
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Code samples examples are derived and/or paraphrased in my own language from &lt;a href=&#34;http://www.lua.org/pil/contents.html&#34;&gt;Programming in Lua: First Edition&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table Of Contents.&lt;/h2&gt;
+
+&lt;p&gt;Course &lt;code&gt;Parts&lt;/code&gt; are organized as folders, with &lt;code&gt;Chapters&lt;/code&gt; in individual markdown &lt;code&gt;.md&lt;/code&gt; files within for easy reading.&lt;/p&gt;
+
+&lt;h3 id=&#34;part-1-the-language&#34;&gt;Part 1 - The Language&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;Part%201%20-%20The%20Language/01%20-%20Getting%20Started.md&#34;&gt;Complete&lt;/a&gt; - Getting Started&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;1.1 - Chunks&lt;/li&gt;
+  &lt;li&gt;1.2 - Global Variables&lt;/li&gt;
+  &lt;li&gt;1.3 - Some Lexical Conventions&lt;/li&gt;
+  &lt;li&gt;1.4 - The Stand-Alone Interpreter&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;Part%201%20-%20The%20Language/02%20-%20Types%20and%20Values.md&#34;&gt;Complete&lt;/a&gt; - Types and Values&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;2.1 - Nil&lt;/li&gt;
+  &lt;li&gt;2.2 - Booleans&lt;/li&gt;
+  &lt;li&gt;2.3 - Numbers&lt;/li&gt;
+  &lt;li&gt;2.4 - Strings&lt;/li&gt;
+  &lt;li&gt;2.5 - Tables&lt;/li&gt;
+  &lt;li&gt;2.6 - Functions&lt;/li&gt;
+  &lt;li&gt;2.7 - Userdata and Threads&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;Part%201%20-%20The%20Language/03%20-%20Expressions.md&#34;&gt;Complete&lt;/a&gt; - Expressions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;3.1 - Arithmetic Operators&lt;/li&gt;
+  &lt;li&gt;3.2 - Relational Operators&lt;/li&gt;
+  &lt;li&gt;3.3 - Logical Operators&lt;/li&gt;
+  &lt;li&gt;3.4 - Concatenation&lt;/li&gt;
+  &lt;li&gt;3.5 - Precedence&lt;/li&gt;
+  &lt;li&gt;3.6 - Table Constructors&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;Part%201%20-%20The%20Language/04%20-%20Statements.md&#34;&gt;Complete&lt;/a&gt; - Statements&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;4.1 - Assignment&lt;/li&gt;
+  &lt;li&gt;4.2 - Local Variables and Blocks&lt;/li&gt;
+  &lt;li&gt;4.3 - Control Structures&lt;/li&gt;
+  &lt;li&gt;4.3.1 - if then else&lt;/li&gt;
+  &lt;li&gt;4.3.2 - while&lt;/li&gt;
+  &lt;li&gt;4.3.3 - repeat&lt;/li&gt;
+  &lt;li&gt;4.3.4 - Numeric for&lt;/li&gt;
+  &lt;li&gt;4.3.5 - Generic for&lt;/li&gt;
+  &lt;li&gt;4.4 - break and return&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;Part%201%20-%20The%20Language/05%20-%20Functions.md&#34;&gt;Complete&lt;/a&gt; - Functions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;5.1 - Multiple Results&lt;/li&gt;
+  &lt;li&gt;5.2 - Variable Number of Arguments&lt;/li&gt;
+  &lt;li&gt;5.3 - Named Arguments&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;Part%201%20-%20The%20Language/06%20-%20More%20about%20Functions.md&#34;&gt;Complete&lt;/a&gt; - More about Functions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;6.1 - Closures&lt;/li&gt;
+  &lt;li&gt;6.2 - Non-Global Functions&lt;/li&gt;
+  &lt;li&gt;6.3 - Proper Tail Calls&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;07 - &lt;a href=&#34;Part%201%20-%20The%20Language/07%20-%20Iterators%20and%20the%20Generic%20For.md&#34;&gt;Complete&lt;/a&gt; - Iterators and the Generic &lt;code&gt;for&lt;/code&gt;&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;7.1 - Iterators and Closures&lt;/li&gt;
+  &lt;li&gt;7.2 - The Semantics of the Generic for&lt;/li&gt;
+  &lt;li&gt;7.3 - Stateless Iterators&lt;/li&gt;
+  &lt;li&gt;7.4 - Iterators with Complex State&lt;/li&gt;
+  &lt;li&gt;7.5 - True Iterators&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;08 - &lt;a href=&#34;Part%201%20-%20The%20Language/08%20-%20Compilation%2C%20Execution%2C%20and%20Errors.md&#34;&gt;Complete&lt;/a&gt; - Compilation, Execution, and Errors&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;8.1 - The require Function&lt;/li&gt;
+  &lt;li&gt;8.2 - C Packages&lt;/li&gt;
+  &lt;li&gt;8.3 - Errors&lt;/li&gt;
+  &lt;li&gt;8.4 - Error Handling and Exceptions&lt;/li&gt;
+  &lt;li&gt;8.5 - Error Messages and Tracebacks&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;09 - &lt;a href=&#34;Part%201%20-%20The%20Language/09%20-%20Coroutines.md&#34;&gt;Complete&lt;/a&gt; - Coroutines&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;9.1 - Coroutine Basics&lt;/li&gt;
+  &lt;li&gt;9.2 - Pipes and Filters&lt;/li&gt;
+  &lt;li&gt;9.3 - Coroutines as Iterators&lt;/li&gt;
+  &lt;li&gt;9.4 - Non-Preemptive Multithreading&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;10 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Complete Examples&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;10.1 - Data Description&lt;/li&gt;
+  &lt;li&gt;10.2 - Markov Chain Algorithm&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;part-2-tables-and-objects&#34;&gt;Part 2 - Tables and Objects&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;11 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Data Structures&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;11.1 - Arrays&lt;/li&gt;
+  &lt;li&gt;11.2 - Matrices and Multi-Dimensional Arrays&lt;/li&gt;
+  &lt;li&gt;11.3 - Linked Lists&lt;/li&gt;
+  &lt;li&gt;11.4 - Queues and Double Queues&lt;/li&gt;
+  &lt;li&gt;11.5 - Sets and Bags&lt;/li&gt;
+  &lt;li&gt;11.6 - String Buffers&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;12 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Data Files and Persistence&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;12.1 - Serialization&lt;/li&gt;
+  &lt;li&gt;12.1.1 - Saving Tables without Cycles&lt;/li&gt;
+  &lt;li&gt;12.1.2 - Saving Tables with Cycles&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;13 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Metatables and Metamethods&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;13.1 - Arithmetic Metamethods&lt;/li&gt;
+  &lt;li&gt;13.2 - Relational Metamethods&lt;/li&gt;
+  &lt;li&gt;13.3 - Library-Defined Metamethods&lt;/li&gt;
+  &lt;li&gt;13.4 - Table-Access Metamethods&lt;/li&gt;
+  &lt;li&gt;13.4.1 - The &lt;code&gt;__index&lt;/code&gt; Metamethod&lt;/li&gt;
+  &lt;li&gt;13.4.2 - The &lt;code&gt;__newindex&lt;/code&gt; Metamethod&lt;/li&gt;
+  &lt;li&gt;13.4.3 - Tables with Default Values&lt;/li&gt;
+  &lt;li&gt;13.4.4 - Tracking Table Accesses&lt;/li&gt;
+  &lt;li&gt;13.4.5 - Read-Only Tables&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;14 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Environment&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;14.1 - Accessing Global Variables with Dynamic Names&lt;/li&gt;
+  &lt;li&gt;14.2 - Declaring Global Variables&lt;/li&gt;
+  &lt;li&gt;14.3 - Non-Global Environments&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;15 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Packages&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;15.1 - The Basic Approach&lt;/li&gt;
+  &lt;li&gt;15.2 - Privacy&lt;/li&gt;
+  &lt;li&gt;15.3 - Packages and Files&lt;/li&gt;
+  &lt;li&gt;15.4 - Using the Global Table&lt;/li&gt;
+  &lt;li&gt;15.5 - Other Facilities&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;16 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Object-Oriented Programming&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;16.1 - Classes&lt;/li&gt;
+  &lt;li&gt;16.2 - Inheritance&lt;/li&gt;
+  &lt;li&gt;16.3 - Multiple Inheritance&lt;/li&gt;
+  &lt;li&gt;16.4 - Privacy&lt;/li&gt;
+  &lt;li&gt;16.5 - The Single-Method Approach&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;17 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Weak Tables&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;17.1 - Memoize Functions&lt;/li&gt;
+  &lt;li&gt;17.2 - Object Attributes&lt;/li&gt;
+  &lt;li&gt;17.3 - Revisiting Tables with Default Values&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;part-3-the-standard-libraries&#34;&gt;Part 3 - The Standard Libraries&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;18 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Mathematical Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;18 - The Mathematical Library&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;19 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Table Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;19.1 - Array Size&lt;/li&gt;
+  &lt;li&gt;19.2 - Insert and Remove&lt;/li&gt;
+  &lt;li&gt;19.3 - Sort&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;20 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The String Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;20.1 - Pattern-Matching Functions&lt;/li&gt;
+  &lt;li&gt;20.2 - Patterns&lt;/li&gt;
+  &lt;li&gt;20.3 - Captures&lt;/li&gt;
+  &lt;li&gt;20.4 - Tricks of the Trade&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;21 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The I/O Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;21.1 - The Simple I/O Model&lt;/li&gt;
+  &lt;li&gt;21.2 - The Complete I/O Model&lt;/li&gt;
+  &lt;li&gt;21.2.1 - A Small Performance Trick&lt;/li&gt;
+  &lt;li&gt;21.2.2 - Binary Files&lt;/li&gt;
+  &lt;li&gt;21.3 - Other Operations on Files&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;22 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Operating System Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;22.1 - Date and Time&lt;/li&gt;
+  &lt;li&gt;22.2 - Other System Calls&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;23 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Debug Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;23.1 - Introspective Facilities&lt;/li&gt;
+  &lt;li&gt;23.1.1 - Accessing Local Variables&lt;/li&gt;
+  &lt;li&gt;23.1.2 - Accessing Upvalues&lt;/li&gt;
+  &lt;li&gt;23.2 - Hooks&lt;/li&gt;
+  &lt;li&gt;23.3 - Profiles&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;part-4-the-c-api&#34;&gt;Part 4 - The C API&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;24 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - An Overview of the C API&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;24.1 - A First Example&lt;/li&gt;
+  &lt;li&gt;24.2 - The Stack&lt;/li&gt;
+  &lt;li&gt;24.2.1 - Pushing Elements&lt;/li&gt;
+  &lt;li&gt;24.2.2 - Querying Elements&lt;/li&gt;
+  &lt;li&gt;24.2.3 - Other Stack Operations&lt;/li&gt;
+  &lt;li&gt;24.3 - Error Handling with the C API&lt;/li&gt;
+  &lt;li&gt;24.3.1 - Error Handling in Application Code&lt;/li&gt;
+  &lt;li&gt;24.3.2 - Error Handling in Library Code&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;25 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Extending your Application&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;25.1 - Table Manipulation&lt;/li&gt;
+  &lt;li&gt;25.2 - Calling Lua Functions&lt;/li&gt;
+  &lt;li&gt;25.3 - A Generic Call Function&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;26 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Calling C from Lua&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;26.1 - C Functions&lt;/li&gt;
+  &lt;li&gt;26.2 - C Libraries&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;27 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Techniques for Writing C Functions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;27.1 - Array Manipulation&lt;/li&gt;
+  &lt;li&gt;27.2 - String Manipulation&lt;/li&gt;
+  &lt;li&gt;27.3 - Storing State in C Functions&lt;/li&gt;
+  &lt;li&gt;27.3.1 - The Registry&lt;/li&gt;
+  &lt;li&gt;27.3.2 - References&lt;/li&gt;
+  &lt;li&gt;27.3.3 - Upvalues&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;28 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - User-Defined Types in C&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;28.1 - Userdata&lt;/li&gt;
+  &lt;li&gt;28.2 - Metatables&lt;/li&gt;
+  &lt;li&gt;28.3 - Object-Oriented Access&lt;/li&gt;
+  &lt;li&gt;28.4 - Array Access&lt;/li&gt;
+  &lt;li&gt;28.5 - Light Userdata&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;29 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Managing Resources&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;29.1 - A Directory Iterator&lt;/li&gt;
+  &lt;li&gt;29.2 - An XML Parser&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="http://htko.ca/">
+  <title>Hei Tony Ko | Personal Portfolio | FCC Spider</title>
+  <meta property="og:title" content="FCC Spider" />
+  <meta property="og:description" content="Personal Project Built on Scrapy &amp; Python, this tool converts your Free Code Camp challenge profile into JSON data
+Project Install:  These bash scripts are mostly designed to run in a Linux environment, specifically Python 3 container in Docker 1.10&#43; running on Ubuntu 16.04.1. Scrapy is yet to support Python 3 in Windows. Install Python 3, Scrapy&rsquo;s dependencies and Scrapy itself.  apt-get update apt-get install python-pip build-essential libssl-dev libffi-dev python-dev pip install cryptography scrapy  Extract latest version into a directory, say ~/fccSpider, and enter it."
+  />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://htko.ca/folio/code/fcc/fcc-spider/README/" />
+  <meta property="og:updated_time" content="2016-11-24T00:00:00&#43;00:00" />
+  <meta itemprop="name" content="FCC Spider">
+  <meta itemprop="description" content="Personal Project Built on Scrapy &amp; Python, this tool converts your Free Code Camp challenge profile into JSON data
+Project Install:  These bash scripts are mostly designed to run in a Linux environment, specifically Python 3 container in Docker 1.10&#43; running on Ubuntu 16.04.1. Scrapy is yet to support Python 3 in Windows. Install Python 3, Scrapy&rsquo;s dependencies and Scrapy itself.  apt-get update apt-get install python-pip build-essential libssl-dev libffi-dev python-dev pip install cryptography scrapy  Extract latest version into a directory, say ~/fccSpider, and enter it.">
+    <meta itemprop="dateModified" content="2016-11-24T00:00:00&#43;00:00" />
+    <meta itemprop="wordCount" content="197">
+    <meta itemprop="keywords" content="advdupe2,angular,api,architecture,arduino,back-end,bash,bootstrap,c&#43;&#43;,data-vis,docker,expression2,flash,foundation,front-end,graphics,gulp,hand-draft,hugo,identity,industrial-design,infrared,ionic,iot,jquery,json,logo,lua,markdown,model,node.js,photon,php,python,rapid-prototype,raster,revit,sass,scrapy,typography,ui/ux,vector,web-1.0,code,gfx,interior-design,"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FCC Spider" />
+    <meta name="twitter:description" content="Personal Project Built on Scrapy &amp; Python, this tool converts your Free Code Camp challenge profile into JSON data
+Project Install:  These bash scripts are mostly designed to run in a Linux environment, specifically Python 3 container in Docker 1.10&#43; running on Ubuntu 16.04.1. Scrapy is yet to support Python 3 in Windows. Install Python 3, Scrapy&rsquo;s dependencies and Scrapy itself.  apt-get update apt-get install python-pip build-essential libssl-dev libffi-dev python-dev pip install cryptography scrapy  Extract latest version into a directory, say ~/fccSpider, and enter it."
+    />
+    <meta name="generator" content="Hugo 0.17" />
+    <link href="http://htko.ca/static/css/app.css" rel="stylesheet">
+    <link href="http://htko.ca/static/css/animate.css" rel="stylesheet">
+    <link href="http://htko.ca/static/css/font-awesome.min.css" rel="stylesheet"> </head>
+
+<body style="background: url('http://htko.ca/static/img/background.png') center / 60% no-repeat fixed;">
+  <header id="header" data-sticky-container>
+    <nav id="top-bar" class="top-bar sticky" data-sticky data-sticky-on="small" data-margin-top="0" data-anchor="body" style="width:100%">
+      <div class="row column">
+        <div class="small-8 columns">
+          <ul class="menu">
+            <li>
+              <a class="menu-img-a" href="http://htko.ca/"><img class="menu-img" src="http://htko.ca//static/img/htko-10-full.svg"></a>
+            </li>
+            <li> <a class="menu-title " href="http://htko.ca/">Hei Tony Ko</a> </li>
+            <li> <a class="" href="http://htko.ca/topics/code/"><i class='fa fa-code fa-1x'></i><span class="show-for-medium">Code</span></a> </li>
+            <li> <a class="" href="http://htko.ca/topics/gfx/"><i class='fa fa-paint-brush fa-1x'></i><span class="show-for-medium">GFX</span></a> </li>
+            <li> <a class="" href="http://htko.ca/topics/interior-design/"><i class='fa fa-bank fa-1x'></i><span class="show-for-medium">Interior Design</span></a> </li>
+          </ul>
+        </div>
+        <div class="small-4 columns">
+          <ul class="menu align-right">
+            <li>
+              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
+            </li>
+            <li> <a href="page/about-me/README/"><i class='fa fa-user-circle-o fa-1x'></i><span class="show-for-medium">About Me</span></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="row" id="content">
+      <div class="small-12 medium-12 large-6 columns">
+        <div id="folio-gallery">
+          <div class="card"> <img class="img-responsive" src="http://htko.ca/content/folio/code/fcc/fcc-spider/assets/cover.jpg"> </div>
+        </div>
+      </div>
+      <div class="small-12 medium-12 large-5 large-offset-1 columns" data-sticky-container>
+        <div id="folio-desc" class="sticky" data-sticky data-sticky-on="large" data-anchor="folio-gallery" data-margin-top="7">
+          <div class="card-section hide-for-large"></div>
+          <h1>FCC Spider _</h1>
+          <hr>
+          <h1 id="personal-project">Personal Project</h1>
+          <p>Built on <a href="https://scrapy.org/">Scrapy</a> &amp; <a href="https://www.python.org/">Python</a>, this tool converts your Free Code Camp challenge profile into JSON data</p>
+          <h2 id="project-install">Project Install:</h2>
+          <ul>
+            <li>These bash scripts are mostly designed to run in a Linux environment, specifically Python 3 container in Docker 1.10+ running on Ubuntu 16.04.1. Scrapy is yet to support Python 3 in Windows.</li>
+            <li>Install Python 3, Scrapy&rsquo;s dependencies and Scrapy itself. <code>
+apt-get update
+apt-get install python-pip build-essential libssl-dev libffi-dev python-dev
+pip install cryptography scrapy
+</code></li>
+            <li>Extract <a href="https://github.com/htko89/FCC-Spider/releases">latest version</a> into a directory, say <code>~/fccSpider</code>, and enter it.</li>
+            <li>Set executable permissions: <code>
+cd ~/fccSpider
+chmod 755 -R ~/fccSpider
+</code></li>
+          </ul>
+          <h2 id="project-usage">Project Usage:</h2>
+          <ul>
+            <li>Usage: ```</li>
+            <li>Application Comments:</li>
+            <li>Usage : ./fccSpider.sh [username] [action]</li>
+            <li>Example : ./fccSpider.sh htko89 full</li>
+            <li>Actions : See below. ++ full - Download FCC curriculum map &amp; challenge descriptions, personal profile, export results ++ map - Download FCC curriculum map &amp; challenge descriptions. ++ profile - Download &amp; export personal profile.
+              Map must be downloaded or error will occur. ++ empty - Download &amp; export empty profile. Map must be downloaded or error will occur. ++ clear - Deletes all maps and exports. ```</li>
+            <li>Working data output to <code>/common</code>. Export data output to <code>/export</code>.</li>
+            <li>Challenge solution code in URL encoding. Decoder: <a href="http://meyerweb.com/eric/tools/dencoder/">Here</a>.</li>
+          </ul>
+          <hr>
+          <h6>Tools:</h6> <i class="fa fa-tags fa-1x"></i> <a class="capitalize" href="http://htko.ca/tools/scrapy">scrapy</a> , <a class="capitalize" href="http://htko.ca/tools/python">python</a> , <a class="capitalize" href="http://htko.ca/tools/json">json</a>          , <a class="capitalize" href="http://htko.ca/tools/markdown">markdown</a>
+          <hr>
+          <h6>Code:</h6> <i class="fa fa-code-fork fa-1x"></i> <a href="https://github.com/htko89/fcc-spider">
+      https://github.com/htko89/fcc-spider
+    </a>
+          <div class="card-section hide-for-large"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <nav>
+      <div class="row column">
+        <div class="small-6 columns">
+          <ul class="menu">
+            <li> &copy; </li>
+            <li> <a class="menu-title" href="#">2017 Copyright - Tony Ko.</a> </li>
+            <li>
+              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="small-6 columns">
+          <ul class="menu align-right">
+            <li>
+              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
+            </li>
+            <li> <a class="" href="https://www.instagram.com/htkoca"><i class='fa fa-instagram fa-1x'></i><span class="show-for-medium">Instagram</span></a> </li>
+            <li> <a class="" href="https://github.com/htko89"><i class='fa fa-code-fork fa-1x'></i><span class="show-for-medium">Github</span></a> </li>
+            <li> <a class="" href="http://lnked.in/htko89"><i class='fa fa-linkedin fa-1x'></i><span class="show-for-medium">Linkedin</span></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </footer>
+  <foot>
+    <script src="http://htko.ca/static/js/app.js"></script>
+  </foot>
+</body>
+
+</html>

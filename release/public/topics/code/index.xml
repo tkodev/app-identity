@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/topics/code/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <atom:link href="http://htko.ca/topics/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Site Base</title>
+      <link>http://htko.ca/folio/code/htko/site-base/README/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/htko/site-base/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Hugo base for personal portfolio at htko.ca. An experiment in static site generation, using &lt;a href=&#34;http://gohugo.io/&#34;&gt;HUGO&lt;/a&gt; as the engine. Dynamic sites are heavy in resource usage are vulnerable to attacks. Static sites are fast, efficient and most of all, provide minimal avenues of attack. However, they are difficult to maintain, and do not scale well with large sets of data.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; task engine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp-sass&lt;/code&gt;,&lt;code&gt;gulp-cssnano&lt;/code&gt;,&lt;code&gt;gulp-autoprefixer&lt;/code&gt; to compile scss files to css.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;babel&lt;/code&gt;,&lt;code&gt;gulp-concat&lt;/code&gt;,&lt;code&gt;gulp-uglify&lt;/code&gt; to compile js files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp-sourcemaps&lt;/code&gt; for sourcemapping.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;globby&lt;/code&gt;,&lt;code&gt;minimatch&lt;/code&gt;,&lt;code&gt;fs-extra&lt;/code&gt; for portfolio projects compilation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;js-beautify&lt;/code&gt; for linting.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo&lt;/code&gt; (&lt;code&gt;livereload&lt;/code&gt;) or &lt;code&gt;browser-sync&lt;/code&gt; for debug rendering.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo Theme Foundation6 Blog</title>
+      <link>http://htko.ca/folio/code/personal/hugo-theme-foundation6-blog/README/</link>
+      <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/personal/hugo-theme-foundation6-blog/README/</guid>
+      <description>&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;A simple &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; theme based on the &lt;a href=&#34;http://foundation.zurb.com/templates-previews-sites-f6/blog.html&#34;&gt;Foundation 6 blog (w/ sidebar) example&lt;/a&gt;, with scss &amp;amp; js gulp build scripts.&lt;/p&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Responsive design.&lt;/li&gt;
+&lt;li&gt;Basic &lt;a href=&#34;http://ogp.me&#34;&gt;OpenGraph&lt;/a&gt; and &lt;a href=&#34;https://dev.twitter.com/cards/types&#34;&gt;Twitter Card&lt;/a&gt; metadata support.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;robots.txt&lt;/code&gt; linking to XML sitemap (disabled by default, see &lt;a href=&#34;https://gohugo.io/extras/robots-txt/&#34;&gt;Hugo docs&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Basic support for &lt;a href=&#34;https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md&#34;&gt;multi-lingual content&lt;/a&gt; (added in Hugo 0.17).&lt;/li&gt;
+&lt;li&gt;Supports Google, Bing, and Yandex site verification via meta tags.&lt;/li&gt;
+&lt;li&gt;Supports Google Analytics (async version), see &lt;a href=&#34;https://gohugo.io/extras/analytics/&#34;&gt;Hugo docs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Supports Disqus comments, see &lt;a href=&#34;https://gohugo.io/extras/comments/&#34;&gt;Hugo docs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Can show a message about cookie usage to the user, see &lt;a href=&#34;https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/exampleSite/config.toml&#34;&gt;&lt;code&gt;exampleSite/config.toml&lt;/code&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Allow addition of custom &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; code in site&amp;rsquo;s &lt;code&gt;layouts/partial/head-custom.html&lt;/code&gt; (see &lt;a href=&#34;https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17&#34;&gt;#17&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage:&lt;/h2&gt;
+
+&lt;p&gt;Clone the repository to your site&amp;rsquo;s &lt;code&gt;themes&lt;/code&gt; directory. Refer to &lt;a href=&#34;https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/exampleSite/config.toml&#34;&gt;&lt;code&gt;exampleSite/config.toml&lt;/code&gt;&lt;/a&gt; for optional configuration values. A few suggestions to help you get a good looking site quickly:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Keep blog posts in the &lt;code&gt;content/post&lt;/code&gt; directory, for example: &lt;code&gt;content/post/my-first-post.md&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Keep static pages in the &lt;code&gt;content&lt;/code&gt; directory, for example: &lt;code&gt;content/about.md&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Keep media like images in the &lt;code&gt;static&lt;/code&gt; directory, for example: &lt;code&gt;static/2016/10/screenshot.png&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;If you want an image to be shown when you share a post on social media, specify at least one image in the post&amp;rsquo;s front matter, for example: &lt;code&gt;images: [&amp;quot;/2016/10/screenshot.png&amp;quot;]&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;&lt;/code&gt; tag in posts to control how much of a post is shown on summary pages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;building-for-developers-optional&#34;&gt;Building, for developers: (Optional)&lt;/h2&gt;
+
+&lt;p&gt;This theme uses gulp build scripts modified from &lt;a href=&#34;https://github.com/zurb/foundation-zurb-template/&#34;&gt;Foundation Zurb Template&lt;/a&gt;. OS must have &lt;code&gt;node&lt;/code&gt; and &lt;code&gt;bower&lt;/code&gt; installed.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Command&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Install:&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Run from &lt;code&gt;/scripts&lt;/code&gt; directory to download all dependencies.&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Installs node dependencies.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;bower install&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Installs bower dependencies.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Build Tasks:&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Choose one to build from scss / js files in &lt;code&gt;/source&lt;/code&gt; to &lt;code&gt;/static&lt;/code&gt;.&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;npm run build:debug&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Build human readable &lt;code&gt;debug&lt;/code&gt; files.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;npm run build:prod&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Build minified, sourcemapped files.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;npm run build:css&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Builds &lt;code&gt;debug&lt;/code&gt; css only.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;npm run build:js&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Builds &lt;code&gt;debug&lt;/code&gt; js only.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Hugo Tasks:&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Theme must be installed in a working or fresh hugo installation.&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;npm run build:hugo&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Builds &lt;code&gt;debug&lt;/code&gt; css / js, deletes &lt;code&gt;/public&lt;/code&gt;, builds &lt;code&gt;/public&lt;/code&gt;, lint &lt;code&gt;/public&lt;/code&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;npm run server&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Builds &lt;code&gt;debug&lt;/code&gt; css / js, deletes &lt;code&gt;/public&lt;/code&gt;, runs hugo server, start css / js / lint watch task.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing:&lt;/h2&gt;
+
+&lt;p&gt;There are several ways to help with the development of the theme:
+* &lt;a href=&#34;https://github.com/htko89/hugo-theme-foundation6-blog/issues/new&#34;&gt;Open an issue&lt;/a&gt; on GitHub if you have problems or feature requests.
+* Alternatively, tackle one of the &lt;a href=&#34;https://github.com/htko89/hugo-theme-foundation6-blog/issues&#34;&gt;existing issues&lt;/a&gt; on the issue tracker.
+* Fork &lt;a href=&#34;https://github.com/htko89/hugo-theme-foundation6-blog&#34;&gt;the repository&lt;/a&gt; on GitHub, add features on a &amp;ldquo;feature&amp;rdquo; branch like &lt;code&gt;update-bootstrap&lt;/code&gt;, and then send a &lt;a href=&#34;https://github.com/htko89/hugo-theme-foundation6-blog/compare&#34;&gt;pull request&lt;/a&gt; with your changes.&lt;/p&gt;
+
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution:&lt;/h2&gt;
+
+&lt;h3 id=&#34;this-repository-is-maintained-by&#34;&gt;This repository is maintained by:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/htko89&#34;&gt;Tony Ko&lt;/a&gt; - &lt;a href=&#34;https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)&#34;&gt;GPL 3&lt;/a&gt; - &lt;a href=&#34;https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/license.txt&#34;&gt;License file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;this-repository-was-originally-cloned-from&#34;&gt;This repository was originally cloned from:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alanorth/hugo-theme-bootstrap4-blog/&#34;&gt;Alan Orth - hugo-theme-bootstrap4-blog&lt;/a&gt; - &lt;a href=&#34;https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)&#34;&gt;GPL 3&lt;/a&gt; - &lt;a href=&#34;https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/LICENSE.txt&#34;&gt;License file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;this-repository-contains-the-code-of&#34;&gt;This repository contains the code of:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zurb/foundation-zurb-template/&#34;&gt;Foundation Zurb Template&lt;/a&gt; - &lt;a href=&#34;https://tldrlegal.com/license/mit-license&#34;&gt;MIT license&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>LUA Language</title>
+      <link>http://htko.ca/folio/code/personal/lua-language/README/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/personal/lua-language/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;
+
+&lt;p&gt;A journal of my learning progress and solutions in the LUA language.&lt;/p&gt;
+
+&lt;h2 id=&#34;self-learning&#34;&gt;Self Learning&lt;/h2&gt;
+
+&lt;p&gt;I am currently using github&amp;rsquo;s version tracking as a way to track my progress through &lt;a href=&#34;http://www.lua.org/pil/contents.html&#34;&gt;Programming in Lua: First Edition&lt;/a&gt; as my guide to learning LUA. Version tracking allows me to show to myself and other the actual progress of my work including revisions to my code. I chose the first edition because it is constant, readily available, and most importantly, free for all to enjoy. I intend this repository to be a learning reference for myself and others.&lt;/p&gt;
+
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Code samples examples are derived and/or paraphrased in my own language from &lt;a href=&#34;http://www.lua.org/pil/contents.html&#34;&gt;Programming in Lua: First Edition&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table Of Contents.&lt;/h2&gt;
+
+&lt;p&gt;Course &lt;code&gt;Parts&lt;/code&gt; are organized as folders, with &lt;code&gt;Chapters&lt;/code&gt; in individual markdown &lt;code&gt;.md&lt;/code&gt; files within for easy reading.&lt;/p&gt;
+
+&lt;h3 id=&#34;part-1-the-language&#34;&gt;Part 1 - The Language&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;Part%201%20-%20The%20Language/01%20-%20Getting%20Started.md&#34;&gt;Complete&lt;/a&gt; - Getting Started&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;1.1 - Chunks&lt;/li&gt;
+  &lt;li&gt;1.2 - Global Variables&lt;/li&gt;
+  &lt;li&gt;1.3 - Some Lexical Conventions&lt;/li&gt;
+  &lt;li&gt;1.4 - The Stand-Alone Interpreter&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;Part%201%20-%20The%20Language/02%20-%20Types%20and%20Values.md&#34;&gt;Complete&lt;/a&gt; - Types and Values&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;2.1 - Nil&lt;/li&gt;
+  &lt;li&gt;2.2 - Booleans&lt;/li&gt;
+  &lt;li&gt;2.3 - Numbers&lt;/li&gt;
+  &lt;li&gt;2.4 - Strings&lt;/li&gt;
+  &lt;li&gt;2.5 - Tables&lt;/li&gt;
+  &lt;li&gt;2.6 - Functions&lt;/li&gt;
+  &lt;li&gt;2.7 - Userdata and Threads&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;Part%201%20-%20The%20Language/03%20-%20Expressions.md&#34;&gt;Complete&lt;/a&gt; - Expressions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;3.1 - Arithmetic Operators&lt;/li&gt;
+  &lt;li&gt;3.2 - Relational Operators&lt;/li&gt;
+  &lt;li&gt;3.3 - Logical Operators&lt;/li&gt;
+  &lt;li&gt;3.4 - Concatenation&lt;/li&gt;
+  &lt;li&gt;3.5 - Precedence&lt;/li&gt;
+  &lt;li&gt;3.6 - Table Constructors&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;Part%201%20-%20The%20Language/04%20-%20Statements.md&#34;&gt;Complete&lt;/a&gt; - Statements&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;4.1 - Assignment&lt;/li&gt;
+  &lt;li&gt;4.2 - Local Variables and Blocks&lt;/li&gt;
+  &lt;li&gt;4.3 - Control Structures&lt;/li&gt;
+  &lt;li&gt;4.3.1 - if then else&lt;/li&gt;
+  &lt;li&gt;4.3.2 - while&lt;/li&gt;
+  &lt;li&gt;4.3.3 - repeat&lt;/li&gt;
+  &lt;li&gt;4.3.4 - Numeric for&lt;/li&gt;
+  &lt;li&gt;4.3.5 - Generic for&lt;/li&gt;
+  &lt;li&gt;4.4 - break and return&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;Part%201%20-%20The%20Language/05%20-%20Functions.md&#34;&gt;Complete&lt;/a&gt; - Functions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;5.1 - Multiple Results&lt;/li&gt;
+  &lt;li&gt;5.2 - Variable Number of Arguments&lt;/li&gt;
+  &lt;li&gt;5.3 - Named Arguments&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;Part%201%20-%20The%20Language/06%20-%20More%20about%20Functions.md&#34;&gt;Complete&lt;/a&gt; - More about Functions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;6.1 - Closures&lt;/li&gt;
+  &lt;li&gt;6.2 - Non-Global Functions&lt;/li&gt;
+  &lt;li&gt;6.3 - Proper Tail Calls&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;07 - &lt;a href=&#34;Part%201%20-%20The%20Language/07%20-%20Iterators%20and%20the%20Generic%20For.md&#34;&gt;Complete&lt;/a&gt; - Iterators and the Generic &lt;code&gt;for&lt;/code&gt;&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;7.1 - Iterators and Closures&lt;/li&gt;
+  &lt;li&gt;7.2 - The Semantics of the Generic for&lt;/li&gt;
+  &lt;li&gt;7.3 - Stateless Iterators&lt;/li&gt;
+  &lt;li&gt;7.4 - Iterators with Complex State&lt;/li&gt;
+  &lt;li&gt;7.5 - True Iterators&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;08 - &lt;a href=&#34;Part%201%20-%20The%20Language/08%20-%20Compilation%2C%20Execution%2C%20and%20Errors.md&#34;&gt;Complete&lt;/a&gt; - Compilation, Execution, and Errors&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;8.1 - The require Function&lt;/li&gt;
+  &lt;li&gt;8.2 - C Packages&lt;/li&gt;
+  &lt;li&gt;8.3 - Errors&lt;/li&gt;
+  &lt;li&gt;8.4 - Error Handling and Exceptions&lt;/li&gt;
+  &lt;li&gt;8.5 - Error Messages and Tracebacks&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;09 - &lt;a href=&#34;Part%201%20-%20The%20Language/09%20-%20Coroutines.md&#34;&gt;Complete&lt;/a&gt; - Coroutines&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;9.1 - Coroutine Basics&lt;/li&gt;
+  &lt;li&gt;9.2 - Pipes and Filters&lt;/li&gt;
+  &lt;li&gt;9.3 - Coroutines as Iterators&lt;/li&gt;
+  &lt;li&gt;9.4 - Non-Preemptive Multithreading&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;10 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Complete Examples&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;10.1 - Data Description&lt;/li&gt;
+  &lt;li&gt;10.2 - Markov Chain Algorithm&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;part-2-tables-and-objects&#34;&gt;Part 2 - Tables and Objects&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;11 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Data Structures&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;11.1 - Arrays&lt;/li&gt;
+  &lt;li&gt;11.2 - Matrices and Multi-Dimensional Arrays&lt;/li&gt;
+  &lt;li&gt;11.3 - Linked Lists&lt;/li&gt;
+  &lt;li&gt;11.4 - Queues and Double Queues&lt;/li&gt;
+  &lt;li&gt;11.5 - Sets and Bags&lt;/li&gt;
+  &lt;li&gt;11.6 - String Buffers&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;12 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Data Files and Persistence&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;12.1 - Serialization&lt;/li&gt;
+  &lt;li&gt;12.1.1 - Saving Tables without Cycles&lt;/li&gt;
+  &lt;li&gt;12.1.2 - Saving Tables with Cycles&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;13 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Metatables and Metamethods&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;13.1 - Arithmetic Metamethods&lt;/li&gt;
+  &lt;li&gt;13.2 - Relational Metamethods&lt;/li&gt;
+  &lt;li&gt;13.3 - Library-Defined Metamethods&lt;/li&gt;
+  &lt;li&gt;13.4 - Table-Access Metamethods&lt;/li&gt;
+  &lt;li&gt;13.4.1 - The &lt;code&gt;__index&lt;/code&gt; Metamethod&lt;/li&gt;
+  &lt;li&gt;13.4.2 - The &lt;code&gt;__newindex&lt;/code&gt; Metamethod&lt;/li&gt;
+  &lt;li&gt;13.4.3 - Tables with Default Values&lt;/li&gt;
+  &lt;li&gt;13.4.4 - Tracking Table Accesses&lt;/li&gt;
+  &lt;li&gt;13.4.5 - Read-Only Tables&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;14 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Environment&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;14.1 - Accessing Global Variables with Dynamic Names&lt;/li&gt;
+  &lt;li&gt;14.2 - Declaring Global Variables&lt;/li&gt;
+  &lt;li&gt;14.3 - Non-Global Environments&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;15 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Packages&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;15.1 - The Basic Approach&lt;/li&gt;
+  &lt;li&gt;15.2 - Privacy&lt;/li&gt;
+  &lt;li&gt;15.3 - Packages and Files&lt;/li&gt;
+  &lt;li&gt;15.4 - Using the Global Table&lt;/li&gt;
+  &lt;li&gt;15.5 - Other Facilities&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;16 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Object-Oriented Programming&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;16.1 - Classes&lt;/li&gt;
+  &lt;li&gt;16.2 - Inheritance&lt;/li&gt;
+  &lt;li&gt;16.3 - Multiple Inheritance&lt;/li&gt;
+  &lt;li&gt;16.4 - Privacy&lt;/li&gt;
+  &lt;li&gt;16.5 - The Single-Method Approach&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;17 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Weak Tables&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;17.1 - Memoize Functions&lt;/li&gt;
+  &lt;li&gt;17.2 - Object Attributes&lt;/li&gt;
+  &lt;li&gt;17.3 - Revisiting Tables with Default Values&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;part-3-the-standard-libraries&#34;&gt;Part 3 - The Standard Libraries&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;18 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Mathematical Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;18 - The Mathematical Library&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;19 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Table Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;19.1 - Array Size&lt;/li&gt;
+  &lt;li&gt;19.2 - Insert and Remove&lt;/li&gt;
+  &lt;li&gt;19.3 - Sort&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;20 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The String Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;20.1 - Pattern-Matching Functions&lt;/li&gt;
+  &lt;li&gt;20.2 - Patterns&lt;/li&gt;
+  &lt;li&gt;20.3 - Captures&lt;/li&gt;
+  &lt;li&gt;20.4 - Tricks of the Trade&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;21 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The I/O Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;21.1 - The Simple I/O Model&lt;/li&gt;
+  &lt;li&gt;21.2 - The Complete I/O Model&lt;/li&gt;
+  &lt;li&gt;21.2.1 - A Small Performance Trick&lt;/li&gt;
+  &lt;li&gt;21.2.2 - Binary Files&lt;/li&gt;
+  &lt;li&gt;21.3 - Other Operations on Files&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;22 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Operating System Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;22.1 - Date and Time&lt;/li&gt;
+  &lt;li&gt;22.2 - Other System Calls&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;23 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The Debug Library&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;23.1 - Introspective Facilities&lt;/li&gt;
+  &lt;li&gt;23.1.1 - Accessing Local Variables&lt;/li&gt;
+  &lt;li&gt;23.1.2 - Accessing Upvalues&lt;/li&gt;
+  &lt;li&gt;23.2 - Hooks&lt;/li&gt;
+  &lt;li&gt;23.3 - Profiles&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;part-4-the-c-api&#34;&gt;Part 4 - The C API&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;24 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - An Overview of the C API&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;24.1 - A First Example&lt;/li&gt;
+  &lt;li&gt;24.2 - The Stack&lt;/li&gt;
+  &lt;li&gt;24.2.1 - Pushing Elements&lt;/li&gt;
+  &lt;li&gt;24.2.2 - Querying Elements&lt;/li&gt;
+  &lt;li&gt;24.2.3 - Other Stack Operations&lt;/li&gt;
+  &lt;li&gt;24.3 - Error Handling with the C API&lt;/li&gt;
+  &lt;li&gt;24.3.1 - Error Handling in Application Code&lt;/li&gt;
+  &lt;li&gt;24.3.2 - Error Handling in Library Code&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;25 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Extending your Application&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;25.1 - Table Manipulation&lt;/li&gt;
+  &lt;li&gt;25.2 - Calling Lua Functions&lt;/li&gt;
+  &lt;li&gt;25.3 - A Generic Call Function&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;26 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Calling C from Lua&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;26.1 - C Functions&lt;/li&gt;
+  &lt;li&gt;26.2 - C Libraries&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;27 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Techniques for Writing C Functions&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;27.1 - Array Manipulation&lt;/li&gt;
+  &lt;li&gt;27.2 - String Manipulation&lt;/li&gt;
+  &lt;li&gt;27.3 - Storing State in C Functions&lt;/li&gt;
+  &lt;li&gt;27.3.1 - The Registry&lt;/li&gt;
+  &lt;li&gt;27.3.2 - References&lt;/li&gt;
+  &lt;li&gt;27.3.3 - Upvalues&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;28 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - User-Defined Types in C&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;28.1 - Userdata&lt;/li&gt;
+  &lt;li&gt;28.2 - Metatables&lt;/li&gt;
+  &lt;li&gt;28.3 - Object-Oriented Access&lt;/li&gt;
+  &lt;li&gt;28.4 - Array Access&lt;/li&gt;
+  &lt;li&gt;28.5 - Light Userdata&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;29 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Managing Resources&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;29.1 - A Directory Iterator&lt;/li&gt;
+  &lt;li&gt;29.2 - An XML Parser&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FCC Spider</title>
+      <link>http://htko.ca/folio/code/fcc/fcc-spider/README/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/fcc-spider/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Built on &lt;a href=&#34;https://scrapy.org/&#34;&gt;Scrapy&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt;, this tool converts your Free Code Camp challenge profile into JSON data&lt;/p&gt;
+
+&lt;h2 id=&#34;project-install&#34;&gt;Project Install:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;These bash scripts are mostly designed to run in a Linux environment, specifically Python 3 container in Docker 1.10+ running on Ubuntu 16.04.1. Scrapy is yet to support Python 3 in Windows.&lt;/li&gt;
+&lt;li&gt;Install Python 3, Scrapy&amp;rsquo;s dependencies and Scrapy itself.
+&lt;code&gt;
+apt-get update
+apt-get install python-pip build-essential libssl-dev libffi-dev python-dev
+pip install cryptography scrapy
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Extract &lt;a href=&#34;https://github.com/htko89/FCC-Spider/releases&#34;&gt;latest version&lt;/a&gt; into a directory, say &lt;code&gt;~/fccSpider&lt;/code&gt;, and enter it.&lt;/li&gt;
+&lt;li&gt;Set executable permissions:
+&lt;code&gt;
+cd ~/fccSpider
+chmod 755 -R ~/fccSpider
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;project-usage&#34;&gt;Project Usage:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Usage:
+```&lt;/li&gt;
+&lt;li&gt;Application Comments:&lt;/li&gt;
+&lt;li&gt;Usage    : ./fccSpider.sh [username] [action]&lt;/li&gt;
+&lt;li&gt;Example  : ./fccSpider.sh htko89 full&lt;/li&gt;
+&lt;li&gt;Actions  : See below.
+++  full    - Download FCC curriculum map &amp;amp; challenge descriptions, personal profile, export results
+++  map     - Download FCC curriculum map &amp;amp; challenge descriptions.
+++  profile - Download &amp;amp; export personal profile. Map must be downloaded or error will occur.
+++  empty   - Download &amp;amp; export empty profile. Map must be downloaded or error will occur.
+++  clear   - Deletes all maps and exports.
+```&lt;/li&gt;
+&lt;li&gt;Working data output to &lt;code&gt;/common&lt;/code&gt;. Export data output to &lt;code&gt;/export&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Challenge solution code in URL encoding. Decoder: &lt;a href=&#34;http://meyerweb.com/eric/tools/dencoder/&#34;&gt;Here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scripts Bash</title>
+      <link>http://htko.ca/folio/code/personal/scripts-bash/README/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/personal/scripts-bash/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;A collection of &lt;a href=&#34;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&#34;&gt;BASH&lt;/a&gt; scripts used to administrate local server.&lt;/p&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;These bash scripts are mostly designed to run in a Linux environment, specifically Docker 1.10+ running on Ubuntu 16.04.1.&lt;/li&gt;
+&lt;li&gt;Extract &lt;a href=&#34;https://github.com/htko89/Linux-Scripts/releases&#34;&gt;latest version&lt;/a&gt; into a directory, say &lt;code&gt;~/Linux-Scripts&lt;/code&gt;, and enter it.
+&lt;code&gt;
+cd ~/Linux-Scripts
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set executable permissions:
+&lt;code&gt;
+chmod 755 -R ~/Linux-Scripts
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;~/Linux-Scripts&lt;/code&gt; should contain &lt;code&gt;apps&lt;/code&gt;, &lt;code&gt;contents&lt;/code&gt; folders and a &lt;code&gt;launch.sh&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;usage-changelog&#34;&gt;Usage / Changelog&lt;/h2&gt;
+
+&lt;h3 id=&#34;0-1&#34;&gt;0.1&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Usage:
+&lt;code&gt;
+Application Comments: [required] &amp;lt;optional&amp;gt;&amp;quot;
+Usage   : ./cmd.sh [appType] [app] [profile] &amp;lt;commands..&amp;gt;&amp;quot;
+Example : ./cmd.sh docker samba local&amp;quot;
+SUDO access is required for docker file permissions.&amp;quot;
+Available app types are:
+docker, system
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Example:
+&lt;code&gt;
+cd ~/Linux-Scripts
+./launch.sh docker samba local
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Apps that have support files created in &lt;code&gt;contents&lt;/code&gt; folder. (such as a web server&amp;rsquo;s html files)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scripts Legacy</title>
+      <link>http://htko.ca/folio/code/personal/scripts-legacy/README/</link>
+      <pubDate>Mon, 14 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/personal/scripts-legacy/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;A collection of scripts for several esoteric languages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Twitch Channels Widget</title>
+      <link>http://htko.ca/folio/code/fcc/twitch-channels-widget/README/</link>
+      <pubDate>Sat, 13 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/twitch-channels-widget/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/Myvqmo/&#34;&gt;https://codepen.io/FreeCodeCamp/full/Myvqmo/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can see whether Free Code Camp is currently streaming on Twitch.tv.&lt;/li&gt;
+&lt;li&gt;User Story: I can click the status output and be sent directly to the Free Code Camp&amp;rsquo;s Twitch.tv channel.&lt;/li&gt;
+&lt;li&gt;User Story: if a Twitch user is currently streaming, I can see additional details about what they are streaming.&lt;/li&gt;
+&lt;li&gt;User Story: I will see a placeholder notification if a streamer has closed their Twitch account (or the account never existed). You can verify this works by adding brunofin and comster404 to your array of Twitch streamers.&lt;/li&gt;
+&lt;li&gt;UPDATE: Due to a change in conditions on API usage explained here Twitch.tv now requires an API key, but we&amp;rsquo;ve built a workaround. Use &lt;a href=&#34;https://wind-bow.hyperdev.space/twitch-api&#34;&gt;https://wind-bow.hyperdev.space/twitch-api&lt;/a&gt; instead of twitch&amp;rsquo;s API base URL (i.e. &lt;a href=&#34;https://api.twitch.tv/kraken&#34;&gt;https://api.twitch.tv/kraken&lt;/a&gt; ) and you&amp;rsquo;ll still be able to get account information, without needing to sign up for an API key.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wikipedia Viewer Widget</title>
+      <link>http://htko.ca/folio/code/fcc/wikipedia-viewer-widget/README/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/wikipedia-viewer-widget/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/wGqEga/&#34;&gt;https://codepen.io/FreeCodeCamp/full/wGqEga/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.&lt;/li&gt;
+&lt;li&gt;User Story: I can click a button to see a random Wikipedia entry.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local Weather Widget</title>
+      <link>http://htko.ca/folio/code/fcc/local-weather-widget/README/</link>
+      <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/local-weather-widget/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;http://codepen.io/FreeCodeCamp/full/bELRjV/&#34;&gt;http://codepen.io/FreeCodeCamp/full/bELRjV/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can see the weather in my current location.&lt;/li&gt;
+&lt;li&gt;User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.&lt;/li&gt;
+&lt;li&gt;User Story: I can push a button to toggle between Fahrenheit and Celsius.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quote Machine Widget</title>
+      <link>http://htko.ca/folio/code/fcc/quote-machine-widget/README/</link>
+      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/quote-machine-widget/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/ONjoLe/&#34;&gt;https://codepen.io/FreeCodeCamp/full/ONjoLe/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can click a button to show me a new random quote.&lt;/li&gt;
+&lt;li&gt;User Story: I can press a button to tweet out a quote.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Portfolio Template</title>
+      <link>http://htko.ca/folio/code/fcc/portfolio-template/README/</link>
+      <pubDate>Sat, 25 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/portfolio-template/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/YqLyXB/&#34;&gt;https://codepen.io/FreeCodeCamp/full/YqLyXB/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can access all of the portfolio webpage&amp;rsquo;s content just by scrolling.&lt;/li&gt;
+&lt;li&gt;User Story: I can click different buttons that will take me to the portfolio creator&amp;rsquo;s different social media pages.&lt;/li&gt;
+&lt;li&gt;User Story: I can see thumbnail images of different projects the portfolio creator has built (if you haven&amp;rsquo;t built any websites before, use placeholders.)&lt;/li&gt;
+&lt;li&gt;User Story: I navigate to different sections of the webpage by clicking buttons in the navigation.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tribute Page</title>
+      <link>http://htko.ca/folio/code/fcc/tribute-page/README/</link>
+      <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/tribute-page/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/NNvBQW/&#34;&gt;https://codepen.io/FreeCodeCamp/full/NNvBQW/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can view a tribute page with an image and text.&lt;/li&gt;
+&lt;li&gt;User Story: I can click on a link that will take me to an external website with further information on the topic.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Angelfind App</title>
+      <link>http://htko.ca/folio/code/personal/angelfind-app/README/</link>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/personal/angelfind-app/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;hackathon-entry-angelhack&#34;&gt;Hackathon Entry - Angelhack&lt;/h1&gt;
+
+&lt;p&gt;Event recommendation app based on user interest history.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Best use of remote API&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/htko89&#34;&gt;Tony Ko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/raphaelz/&#34;&gt;Raphael Z&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Proton Light Switch</title>
+      <link>http://htko.ca/folio/code/personal/proton-light-switch/README/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/personal/proton-light-switch/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;This is a custom built wifi enabled smart switch I’ve built for personal use. It also is connected to my garage door opener, and has a built in IR blaster. DHT 22 temperature sensor is also present to check for overheating.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Microcontroller: Particle.io (Particle Photon)&lt;/li&gt;
+&lt;li&gt;Garage Door Remote: Craftsman 315mhz Remote&lt;/li&gt;
+&lt;li&gt;Light Switch: 2CH 3.3-5V Relay Kit&lt;/li&gt;
+&lt;li&gt;Temp Sensor: DHT 22&lt;/li&gt;
+&lt;li&gt;IR Emitter: TSAL6100&lt;/li&gt;
+&lt;li&gt;IR Recorder: TSOP34438&lt;/li&gt;
+&lt;li&gt;Pseudo MVC approach: Event Assignment &amp;gt; Events &amp;gt; Action&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Free Code Camp</title>
+      <link>http://htko.ca/folio/code/fcc/free-code-camp/README/</link>
+      <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/fcc/free-code-camp/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;
+
+&lt;p&gt;A journal of my course progress and solutions in Free Code Camp&amp;rsquo;s Full Stack Web Development Certification.&lt;/p&gt;
+
+&lt;h2 id=&#34;self-learning&#34;&gt;Self Learning:&lt;/h2&gt;
+
+&lt;p&gt;I am currently using github&amp;rsquo;s version tracking as a way to track my progress through &lt;a href=&#34;https://www.freecodecamp.com&#34;&gt;Free Code Camp&lt;/a&gt;&amp;rsquo;s Full Stack Web Development Certification. Version tracking allows me to show to myself and other the actual progress of my work including revisions to my code. As Free Code Camp&amp;rsquo;s curriculum changes, you will find that there may be slight differences as the challenges and solutions posted here as I update or complete them.&lt;/p&gt;
+
+&lt;p&gt;If you would like to contribute, I am happy to accept any pull requests that isn&amp;rsquo;t my own code, such as better explanations or good external resources.&lt;/p&gt;
+
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Code solutions here are my own (Tony Ko @htko89), built with guidance from &lt;a href=&#34;https://www.freecodecamp.com&#34;&gt;Free Code Camp&lt;/a&gt;&amp;rsquo;s curriculum.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table Of Contents:&lt;/h2&gt;
+
+&lt;p&gt;Course &lt;code&gt;Sections&lt;/code&gt; are organized as folders, with &lt;code&gt;Chapters&lt;/code&gt; in individual markdown &lt;code&gt;.md&lt;/code&gt; files within for easy reading.&lt;/p&gt;
+
+&lt;h3 id=&#34;section-01-getting-started&#34;&gt;Section 01 - Getting Started&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;https://www.freecodecamp.com&#34;&gt;Complete&lt;/a&gt; - Join the Free Code Camp Community - (15 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Learn how Free Code Camp Works&lt;/li&gt;
+  &lt;li&gt;Create a GitHub Account and Join our Chat Rooms&lt;/li&gt;
+  &lt;li&gt;Configure your Profile&lt;/li&gt;
+  &lt;li&gt;Join a Free Code Camp Group in Your City: &lt;a href=&#34;https://www.facebook.com/groups/free.code.camp.to/&#34;&gt;Toronto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Read Coding News on our Medium Publication&lt;/li&gt;
+  &lt;li&gt;Learn What to Do If You Get Stuck&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;section-02-front-end-development-certification&#34;&gt;Section 02 - Front End Development Certification&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - HTML5 and CSS - (5 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Say Hello to HTML Elements&lt;/li&gt;
+  &lt;li&gt;Headline with the &lt;code&gt;h2&lt;/code&gt; Element&lt;/li&gt;
+  &lt;li&gt;Inform with the Paragraph Element&lt;/li&gt;
+  &lt;li&gt;Uncomment HTML&lt;/li&gt;
+  &lt;li&gt;Comment out HTML&lt;/li&gt;
+  &lt;li&gt;Fill in the Blank with Placeholder Text&lt;/li&gt;
+  &lt;li&gt;Delete HTML Elements&lt;/li&gt;
+  &lt;li&gt;Change the Color of Text&lt;/li&gt;
+  &lt;li&gt;Use CSS Selectors to Style Elements&lt;/li&gt;
+  &lt;li&gt;Use a CSS Class to Style an Element&lt;/li&gt;
+  &lt;li&gt;Style Multiple Elements with a CSS Class&lt;/li&gt;
+  &lt;li&gt;Change the Font Size of an Element&lt;/li&gt;
+  &lt;li&gt;Set the Font Family of an Element&lt;/li&gt;
+  &lt;li&gt;Import a Google Font&lt;/li&gt;
+  &lt;li&gt;Specify How Fonts Should Degrade&lt;/li&gt;
+  &lt;li&gt;Add Images to your Website&lt;/li&gt;
+  &lt;li&gt;Size your Images&lt;/li&gt;
+  &lt;li&gt;Add Borders Around your Elements&lt;/li&gt;
+  &lt;li&gt;Add Rounded Corners with a Border Radius&lt;/li&gt;
+  &lt;li&gt;Make Circular Images with a Border Radius&lt;/li&gt;
+  &lt;li&gt;Link to External Pages with Anchor Elements&lt;/li&gt;
+  &lt;li&gt;Nest an Anchor Element within a Paragraph&lt;/li&gt;
+  &lt;li&gt;Make Dead Links using the Hash Symbol&lt;/li&gt;
+  &lt;li&gt;Turn an Image into a Link&lt;/li&gt;
+  &lt;li&gt;Create a Bulleted Unordered List&lt;/li&gt;
+  &lt;li&gt;Create an Ordered List&lt;/li&gt;
+  &lt;li&gt;Create a Text Field&lt;/li&gt;
+  &lt;li&gt;Add Placeholder Text to a Text Field&lt;/li&gt;
+  &lt;li&gt;Create a Form Element&lt;/li&gt;
+  &lt;li&gt;Add a Submit Button to a Form&lt;/li&gt;
+  &lt;li&gt;Use HTML5 to Require a Field&lt;/li&gt;
+  &lt;li&gt;Create a Set of Radio Buttons&lt;/li&gt;
+  &lt;li&gt;Create a Set of Checkboxes&lt;/li&gt;
+  &lt;li&gt;Check Radio Buttons and Checkboxes by Default&lt;/li&gt;
+  &lt;li&gt;Nest Many Elements within a Single Div Element&lt;/li&gt;
+  &lt;li&gt;Give a Background Color to a Div Element&lt;/li&gt;
+  &lt;li&gt;Set the ID of an Element&lt;/li&gt;
+  &lt;li&gt;Use an ID Attribute to Style an Element&lt;/li&gt;
+  &lt;li&gt;Adjusting the Padding of an Element&lt;/li&gt;
+  &lt;li&gt;Adjust the Margin of an Element&lt;/li&gt;
+  &lt;li&gt;Add a Negative Margin to an Element&lt;/li&gt;
+  &lt;li&gt;Add Different Padding to Each Side of an Element&lt;/li&gt;
+  &lt;li&gt;Add Different Margins to Each Side of an Element&lt;/li&gt;
+  &lt;li&gt;Use Clockwise Notation to Specify the Padding of an Element&lt;/li&gt;
+  &lt;li&gt;Use Clockwise Notation to Specify the Margin of an Element&lt;/li&gt;
+  &lt;li&gt;Style the HTML Body Element&lt;/li&gt;
+  &lt;li&gt;Inherit Styles from the Body Element&lt;/li&gt;
+  &lt;li&gt;Prioritize One Style Over Another&lt;/li&gt;
+  &lt;li&gt;Override Styles in Subsequent CSS&lt;/li&gt;
+  &lt;li&gt;Override Class Declarations by Styling ID Attributes&lt;/li&gt;
+  &lt;li&gt;Override Class Declarations with Inline Styles&lt;/li&gt;
+  &lt;li&gt;Override All Other Styles by using Important&lt;/li&gt;
+  &lt;li&gt;Use Hex Code for Specific Colors&lt;/li&gt;
+  &lt;li&gt;Use Hex Code to Mix Colors&lt;/li&gt;
+  &lt;li&gt;Use Abbreviated Hex Code&lt;/li&gt;
+  &lt;li&gt;Use RGB values to Color Elements&lt;/li&gt;
+  &lt;li&gt;Use RGB to Mix Colors
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Responsive Design with Bootstrap - (5 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Use Responsive Design with Bootstrap Fluid Containers&lt;/li&gt;
+  &lt;li&gt;Make Images Mobile Responsive&lt;/li&gt;
+  &lt;li&gt;Center Text with Bootstrap&lt;/li&gt;
+  &lt;li&gt;Create a Bootstrap Button&lt;/li&gt;
+  &lt;li&gt;Create a Block Element Bootstrap Button&lt;/li&gt;
+  &lt;li&gt;Taste the Bootstrap Button Color Rainbow&lt;/li&gt;
+  &lt;li&gt;Call out Optional Actions with Button Info&lt;/li&gt;
+  &lt;li&gt;Warn your Users of a Dangerous Action&lt;/li&gt;
+  &lt;li&gt;Use the Bootstrap Grid to Put Elements Side By Side&lt;/li&gt;
+  &lt;li&gt;Ditch Custom CSS for Bootstrap&lt;/li&gt;
+  &lt;li&gt;Use Spans for Inline Elements&lt;/li&gt;
+  &lt;li&gt;Create a Custom Heading&lt;/li&gt;
+  &lt;li&gt;Add Font Awesome Icons to our Buttons&lt;/li&gt;
+  &lt;li&gt;Add Font Awesome Icons to all of our Buttons&lt;/li&gt;
+  &lt;li&gt;Responsively Style Radio Buttons&lt;/li&gt;
+  &lt;li&gt;Responsively Style Checkboxes&lt;/li&gt;
+  &lt;li&gt;Style Text Inputs as Form Controls&lt;/li&gt;
+  &lt;li&gt;Line up Form Elements Responsively with Bootstrap&lt;/li&gt;
+  &lt;li&gt;Create a Bootstrap Headline&lt;/li&gt;
+  &lt;li&gt;House our page within a Bootstrap Container Fluid Div&lt;/li&gt;
+  &lt;li&gt;Create a Bootstrap Row&lt;/li&gt;
+  &lt;li&gt;Split your Bootstrap Row&lt;/li&gt;
+  &lt;li&gt;Create Bootstrap Wells&lt;/li&gt;
+  &lt;li&gt;Add Elements within your Bootstrap Wells&lt;/li&gt;
+  &lt;li&gt;Apply the Default Bootstrap Button Style&lt;/li&gt;
+  &lt;li&gt;Create a Class to Target with jQuery Selectors&lt;/li&gt;
+  &lt;li&gt;Add ID Attributes to Bootstrap Elements&lt;/li&gt;
+  &lt;li&gt;Label Bootstrap Wells&lt;/li&gt;
+  &lt;li&gt;Give Each Element a Unique ID&lt;/li&gt;
+  &lt;li&gt;Label Bootstrap Buttons&lt;/li&gt;
+  &lt;li&gt;Use Comments to Clarify Code&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Gear Up for Success - (20 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Join our Forum&lt;/li&gt;
+  &lt;li&gt;Watch Coding Videos on our Youtube Channel&lt;/li&gt;
+  &lt;li&gt;Join our LinkedIn Alumni Network&lt;/li&gt;
+  &lt;li&gt;Commit to a Goal and a Nonprofit&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - jQuery - (3 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Learn how Script Tags and Document Ready Work&lt;/li&gt;
+  &lt;li&gt;Target HTML Elements with Selectors Using jQuery&lt;/li&gt;
+  &lt;li&gt;Target Elements by Class Using jQuery&lt;/li&gt;
+  &lt;li&gt;Target Elements by ID Using jQuery&lt;/li&gt;
+  &lt;li&gt;Delete your jQuery Functions&lt;/li&gt;
+  &lt;li&gt;Target the same element with multiple jQuery Selectors&lt;/li&gt;
+  &lt;li&gt;Remove Classes from an element with jQuery&lt;/li&gt;
+  &lt;li&gt;Change the CSS of an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Disable an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Change Text Inside an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Remove an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Use appendTo to Move Elements with jQuery&lt;/li&gt;
+  &lt;li&gt;Clone an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Target the Parent of an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Target the Children of an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Target a Specific Child of an Element Using jQuery&lt;/li&gt;
+  &lt;li&gt;Target Even Numbered Elements Using jQuery&lt;/li&gt;
+  &lt;li&gt;Use jQuery to Modify the Entire Page&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Basic Front End Development Projects - (50 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Get Set for our Front End Development Projects&lt;/li&gt;
+  &lt;li&gt;Build a Tribute Page&lt;/li&gt;
+  &lt;li&gt;Build a Personal Portfolio Webpage&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Basic Javascript - (10 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Comment your JavaScript Code&lt;/li&gt;
+  &lt;li&gt;Declare JavaScript Variables&lt;/li&gt;
+  &lt;li&gt;Storing Values with the Assignment Operator&lt;/li&gt;
+  &lt;li&gt;Initializing Variables with the Assignment Operator&lt;/li&gt;
+  &lt;li&gt;Understanding Uninitialized Variables&lt;/li&gt;
+  &lt;li&gt;Understanding Case Sensitivity in Variables&lt;/li&gt;
+  &lt;li&gt;Add Two Numbers with JavaScript&lt;/li&gt;
+  &lt;li&gt;Subtract One Number from Another with JavaScript&lt;/li&gt;
+  &lt;li&gt;Multiply Two Numbers with JavaScript&lt;/li&gt;
+  &lt;li&gt;Divide One Number by Another with JavaScript&lt;/li&gt;
+  &lt;li&gt;Increment a Number with JavaScript&lt;/li&gt;
+  &lt;li&gt;Decrement a Number with JavaScript&lt;/li&gt;
+  &lt;li&gt;Create Decimal Numbers with JavaScript&lt;/li&gt;
+  &lt;li&gt;Multiply Two Decimals with JavaScript&lt;/li&gt;
+  &lt;li&gt;Divide one Decimal by Another with JavaScript&lt;/li&gt;
+  &lt;li&gt;Finding a Remainder in JavaScript&lt;/li&gt;
+  &lt;li&gt;Compound Assignment With Augmented Addition&lt;/li&gt;
+  &lt;li&gt;Compound Assignment With Augmented Subtraction&lt;/li&gt;
+  &lt;li&gt;Compound Assignment With Augmented Multiplication&lt;/li&gt;
+  &lt;li&gt;Compound Assignment With Augmented Division&lt;/li&gt;
+  &lt;li&gt;Convert Celsius to Fahrenheit&lt;/li&gt;
+  &lt;li&gt;Declare String Variables&lt;/li&gt;
+  &lt;li&gt;Escaping Literal Quotes in Strings&lt;/li&gt;
+  &lt;li&gt;Quoting Strings with Single Quotes&lt;/li&gt;
+  &lt;li&gt;Escape Sequences in Strings&lt;/li&gt;
+  &lt;li&gt;Concatenating Strings with Plus Operator&lt;/li&gt;
+  &lt;li&gt;Concatenating Strings with the Plus Equals Operator&lt;/li&gt;
+  &lt;li&gt;Constructing Strings with Variables&lt;/li&gt;
+  &lt;li&gt;Appending Variables to Strings&lt;/li&gt;
+  &lt;li&gt;Find the Length of a String&lt;/li&gt;
+  &lt;li&gt;Use Bracket Notation to Find the First Character in a String&lt;/li&gt;
+  &lt;li&gt;Understand String Immutability&lt;/li&gt;
+  &lt;li&gt;Use Bracket Notation to Find the Nth Character in a String&lt;/li&gt;
+  &lt;li&gt;Use Bracket Notation to Find the Last Character in a String&lt;/li&gt;
+  &lt;li&gt;Use Bracket Notation to Find the Nth-to-Last Character in a String&lt;/li&gt;
+  &lt;li&gt;Word Blanks&lt;/li&gt;
+  &lt;li&gt;Store Multiple Values in one Variable using JavaScript Arrays&lt;/li&gt;
+  &lt;li&gt;Nest one Array within Another Array&lt;/li&gt;
+  &lt;li&gt;Access Array Data with Indexes&lt;/li&gt;
+  &lt;li&gt;Modify Array Data With Indexes&lt;/li&gt;
+  &lt;li&gt;Access Multi-Dimensional Arrays With Indexes&lt;/li&gt;
+  &lt;li&gt;Manipulate Arrays With push()&lt;/li&gt;
+  &lt;li&gt;Manipulate Arrays With pop()&lt;/li&gt;
+  &lt;li&gt;Manipulate Arrays With shift()&lt;/li&gt;
+  &lt;li&gt;Manipulate Arrays With unshift()&lt;/li&gt;
+  &lt;li&gt;Shopping List&lt;/li&gt;
+  &lt;li&gt;Write Reusable JavaScript with Functions&lt;/li&gt;
+  &lt;li&gt;Passing Values to Functions with Arguments&lt;/li&gt;
+  &lt;li&gt;Global Scope and Functions&lt;/li&gt;
+  &lt;li&gt;Local Scope and Functions&lt;/li&gt;
+  &lt;li&gt;Global vs. Local Scope in Functions&lt;/li&gt;
+  &lt;li&gt;Return a Value from a Function with Return&lt;/li&gt;
+  &lt;li&gt;Assignment with a Returned Value&lt;/li&gt;
+  &lt;li&gt;Stand in Line&lt;/li&gt;
+  &lt;li&gt;Understanding Boolean Values&lt;/li&gt;
+  &lt;li&gt;Use Conditional Logic with If Statements&lt;/li&gt;
+  &lt;li&gt;Comparison with the Equality Operator&lt;/li&gt;
+  &lt;li&gt;Comparison with the Strict Equality Operator&lt;/li&gt;
+  &lt;li&gt;Comparison with the Inequality Operator&lt;/li&gt;
+  &lt;li&gt;Comparison with the Strict Inequality Operator&lt;/li&gt;
+  &lt;li&gt;Comparison with the Greater Than Operator&lt;/li&gt;
+  &lt;li&gt;Comparison with the Greater Than Or Equal To Operator&lt;/li&gt;
+  &lt;li&gt;Comparison with the Less Than Operator&lt;/li&gt;
+  &lt;li&gt;Comparison with the Less Than Or Equal To Operator&lt;/li&gt;
+  &lt;li&gt;Comparisons with the Logical And Operator&lt;/li&gt;
+  &lt;li&gt;Comparisons with the Logical Or Operator&lt;/li&gt;
+  &lt;li&gt;Introducing Else Statements&lt;/li&gt;
+  &lt;li&gt;Introducing Else If Statements&lt;/li&gt;
+  &lt;li&gt;Logical Order in If Else Statements&lt;/li&gt;
+  &lt;li&gt;Chaining If Else Statements&lt;/li&gt;
+  &lt;li&gt;Golf Code&lt;/li&gt;
+  &lt;li&gt;Selecting from many options with Switch Statements&lt;/li&gt;
+  &lt;li&gt;Adding a default option in Switch statements&lt;/li&gt;
+  &lt;li&gt;Multiple Identical Options in Switch Statements&lt;/li&gt;
+  &lt;li&gt;Replacing If Else Chains with Switch&lt;/li&gt;
+  &lt;li&gt;Returning Boolean Values from Functions&lt;/li&gt;
+  &lt;li&gt;Return Early Pattern for Functions&lt;/li&gt;
+  &lt;li&gt;Counting Cards&lt;/li&gt;
+  &lt;li&gt;Build JavaScript Objects&lt;/li&gt;
+  &lt;li&gt;Accessing Objects Properties with the Dot Operator&lt;/li&gt;
+  &lt;li&gt;Accessing Objects Properties with Bracket Notation&lt;/li&gt;
+  &lt;li&gt;Accessing Objects Properties with Variables&lt;/li&gt;
+  &lt;li&gt;Updating Object Properties&lt;/li&gt;
+  &lt;li&gt;Add New Properties to a JavaScript Object&lt;/li&gt;
+  &lt;li&gt;Delete Properties from a JavaScript Object&lt;/li&gt;
+  &lt;li&gt;Using Objects for Lookups&lt;/li&gt;
+  &lt;li&gt;Testing Objects for Properties&lt;/li&gt;
+  &lt;li&gt;Manipulating Complex Objects&lt;/li&gt;
+  &lt;li&gt;Accessing Nested Objects&lt;/li&gt;
+  &lt;li&gt;Accessing Nested Arrays&lt;/li&gt;
+  &lt;li&gt;Record Collection&lt;/li&gt;
+  &lt;li&gt;Iterate with JavaScript For Loops&lt;/li&gt;
+  &lt;li&gt;Iterate Odd Numbers With a For Loop&lt;/li&gt;
+  &lt;li&gt;Count Backwards With a For Loop&lt;/li&gt;
+  &lt;li&gt;Iterate Through an Array with a For Loop&lt;/li&gt;
+  &lt;li&gt;Nesting For Loops&lt;/li&gt;
+  &lt;li&gt;Iterate with JavaScript While Loops&lt;/li&gt;
+  &lt;li&gt;Profile Lookup&lt;/li&gt;
+  &lt;li&gt;Generate Random Fractions with JavaScript&lt;/li&gt;
+  &lt;li&gt;Generate Random Whole Numbers with JavaScript&lt;/li&gt;
+  &lt;li&gt;Generate Random Whole Numbers within a Range&lt;/li&gt;
+  &lt;li&gt;Sift through Text with Regular Expressions&lt;/li&gt;
+  &lt;li&gt;Find Numbers with Regular Expressions&lt;/li&gt;
+  &lt;li&gt;Find Whitespace with Regular Expressions&lt;/li&gt;
+  &lt;li&gt;Invert Regular Expression Matches with JavaScript&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;07 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Object Oriented and Functional Programming - (2 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Declare JavaScript Objects as Variables&lt;/li&gt;
+  &lt;li&gt;Construct JavaScript Objects with Functions&lt;/li&gt;
+  &lt;li&gt;Make Instances of Objects with a Constructor Function&lt;/li&gt;
+  &lt;li&gt;Make Unique Objects by Passing Parameters to our Constructor&lt;/li&gt;
+  &lt;li&gt;Make Object Properties Private&lt;/li&gt;
+  &lt;li&gt;Iterate over Arrays with .map&lt;/li&gt;
+  &lt;li&gt;Condense arrays with .reduce&lt;/li&gt;
+  &lt;li&gt;Filter Arrays with .filter&lt;/li&gt;
+  &lt;li&gt;Sort Arrays with .sort&lt;/li&gt;
+  &lt;li&gt;Reverse Arrays with .reverse&lt;/li&gt;
+  &lt;li&gt;Concatenate Arrays with .concat&lt;/li&gt;
+  &lt;li&gt;Split Strings with .split&lt;/li&gt;
+  &lt;li&gt;Join Strings with .join&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;08 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Basic Algorithm Scripting - (50 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Get Set for our Algorithm Challenges&lt;/li&gt;
+  &lt;li&gt;Reverse a String&lt;/li&gt;
+  &lt;li&gt;Factorialize a Number&lt;/li&gt;
+  &lt;li&gt;Check for Palindromes&lt;/li&gt;
+  &lt;li&gt;Find the Longest Word in a String&lt;/li&gt;
+  &lt;li&gt;Title Case a Sentence&lt;/li&gt;
+  &lt;li&gt;Return Largest Numbers in Arrays&lt;/li&gt;
+  &lt;li&gt;Confirm the Ending&lt;/li&gt;
+  &lt;li&gt;Repeat a string repeat a string&lt;/li&gt;
+  &lt;li&gt;Truncate a string&lt;/li&gt;
+  &lt;li&gt;Chunky Monkey&lt;/li&gt;
+  &lt;li&gt;Slasher Flick&lt;/li&gt;
+  &lt;li&gt;Mutations&lt;/li&gt;
+  &lt;li&gt;Falsy Bouncer&lt;/li&gt;
+  &lt;li&gt;Seek and Destroy&lt;/li&gt;
+  &lt;li&gt;Where do I belong&lt;/li&gt;
+  &lt;li&gt;Caesars Cipher&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;09 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - JSON APIs and Ajax - (2 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Trigger Click Events with jQuery&lt;/li&gt;
+  &lt;li&gt;Change Text with Click Events&lt;/li&gt;
+  &lt;li&gt;Get JSON with the jQuery getJSON Method&lt;/li&gt;
+  &lt;li&gt;Convert JSON Data to HTML&lt;/li&gt;
+  &lt;li&gt;Render Images from Data Sources&lt;/li&gt;
+  &lt;li&gt;Prefilter JSON&lt;/li&gt;
+  &lt;li&gt;Get Geo-location Data&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;10 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Intermediate Front End Development Projects - (100 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Build a Random Quote Machine&lt;/li&gt;
+  &lt;li&gt;Show the Local Weather&lt;/li&gt;
+  &lt;li&gt;Build a Wikipedia Viewer&lt;/li&gt;
+  &lt;li&gt;Use the Twitch.tv JSON API&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;11 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Intermediate Algorithm Scripting - (50 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Sum All Numbers in a Range&lt;/li&gt;
+  &lt;li&gt;Diff Two Arrays&lt;/li&gt;
+  &lt;li&gt;Roman Numeral Converter&lt;/li&gt;
+  &lt;li&gt;Wherefore art thou&lt;/li&gt;
+  &lt;li&gt;Search and Replace&lt;/li&gt;
+  &lt;li&gt;Pig Latin&lt;/li&gt;
+  &lt;li&gt;DNA Pairing&lt;/li&gt;
+  &lt;li&gt;Missing letters&lt;/li&gt;
+  &lt;li&gt;Boo who&lt;/li&gt;
+  &lt;li&gt;Sorted Union&lt;/li&gt;
+  &lt;li&gt;Convert HTML Entities&lt;/li&gt;
+  &lt;li&gt;Spinal Tap Case&lt;/li&gt;
+  &lt;li&gt;Sum All Odd Fibonacci Numbers&lt;/li&gt;
+  &lt;li&gt;Sum All Primes&lt;/li&gt;
+  &lt;li&gt;Smallest Common Multiple&lt;/li&gt;
+  &lt;li&gt;Finders Keepers&lt;/li&gt;
+  &lt;li&gt;Drop it&lt;/li&gt;
+  &lt;li&gt;Steamroller&lt;/li&gt;
+  &lt;li&gt;Binary Agents&lt;/li&gt;
+  &lt;li&gt;Everything Be True&lt;/li&gt;
+  &lt;li&gt;Arguments Optional&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;12 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Advanced Algorithm Scripting - (50 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Validate US Telephone Numbers&lt;/li&gt;
+  &lt;li&gt;Symmetric Difference&lt;/li&gt;
+  &lt;li&gt;Exact Change&lt;/li&gt;
+  &lt;li&gt;Inventory Update&lt;/li&gt;
+  &lt;li&gt;No repeats please&lt;/li&gt;
+  &lt;li&gt;Friendly Date Ranges&lt;/li&gt;
+  &lt;li&gt;Make a Person&lt;/li&gt;
+  &lt;li&gt;Map the Debris&lt;/li&gt;
+  &lt;li&gt;Pairwise&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;13 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Advanced Front End Development Projects - (150 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Build a JavaScript Calculator&lt;/li&gt;
+  &lt;li&gt;Build a Pomodoro Clock&lt;/li&gt;
+  &lt;li&gt;Build a Tic Tac Toe Game&lt;/li&gt;
+  &lt;li&gt;Build a Simon Game&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;14 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Claim Your Front End Development Certificate - (5 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Claim Your Front End Development Certificate&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;section-03-data-visualization-certification&#34;&gt;Section 03 - Data Visualization Certification&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Sass - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - React - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - React Projects - (200 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Build a Markdown Previewer&lt;/li&gt;
+  &lt;li&gt;Build a Camper Leaderboard&lt;/li&gt;
+  &lt;li&gt;Build a Recipe Box&lt;/li&gt;
+  &lt;li&gt;Build the Game of Life&lt;/li&gt;
+  &lt;li&gt;Build a Rougelike Dungeon Crawler Game&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - D3 - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Data Visualization Projects - (200 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Visualize Data with a Bar Chart&lt;/li&gt;
+  &lt;li&gt;Visualize Data with a Scatterplot Graph&lt;/li&gt;
+  &lt;li&gt;Visualize Data with a Heat Manipulation* Show National Contiguity with a Force Directed Graph&lt;/li&gt;
+  &lt;li&gt;Map Data Across the Globe&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Claim Your Data Visualization Certificate - (5 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Claim Your Data Visualization Certificate&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;section-04-back-end-development-certification&#34;&gt;Section 04 - Back End Development Certification&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Automated Testing and Debugging - (15 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Use the JavaScript Console&lt;/li&gt;
+  &lt;li&gt;Using typeof&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Node.js and Express.js - (20 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Manage Packages with npm&lt;/li&gt;
+  &lt;li&gt;Start a Node.js Server&lt;/li&gt;
+  &lt;li&gt;Continue working with Node.js Servers&lt;/li&gt;
+  &lt;li&gt;Finish working with Node.js Servers&lt;/li&gt;
+  &lt;li&gt;Build Web Apps with Express.js&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Git - (3 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Save your Code Revisions Forever with Git&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - MongoDB - (3 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Store Data in MongoDB&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - API Projects - (150 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Get Set for our API Development Projects&lt;/li&gt;
+  &lt;li&gt;Timestamp Microservice&lt;/li&gt;
+  &lt;li&gt;Request Header Parse Microservice&lt;/li&gt;
+  &lt;li&gt;URL Shortener Microservice&lt;/li&gt;
+  &lt;li&gt;Image Search Abstraction Layer&lt;/li&gt;
+  &lt;li&gt;File Metadata Microservice&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Dynamic Web Application Projects - (250 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Get Set for our Dynamic Web Application Projects&lt;/li&gt;
+  &lt;li&gt;Build a Voting App&lt;/li&gt;
+  &lt;li&gt;Build a Nightlife Coordination Application&lt;/li&gt;
+  &lt;li&gt;Chart the Stock Market&lt;/li&gt;
+  &lt;li&gt;Manage a Book Trading Club&lt;/li&gt;
+  &lt;li&gt;Build a Pinterest Clone&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;07 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Claim your Back End Development Certificate - (5 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Claim Your Back End Development Certificate&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;section-05-video-challenges&#34;&gt;Section 05 - Video Challenges&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Computer Basics - (2 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Computer Basics: The 4 Basic Parts of a Computer&lt;/li&gt;
+  &lt;li&gt;Computer Basics: More Computer Hardware&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Chips and Moore&amp;rsquo;s Law&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Intro to Binary Code&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Decoding a Binary Number&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Binary Bytes&lt;/li&gt;
+  &lt;li&gt;Computer Basics: How To Measure Data Size&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Measuring Data Speed&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Types of Computers&lt;/li&gt;
+  &lt;li&gt;Computer Basics: More on the Motherboard&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Data Networks&lt;/li&gt;
+  &lt;li&gt;Computer Basics: IP Addresses&lt;/li&gt;
+  &lt;li&gt;Computer Basics: How the Internet Works&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Software&lt;/li&gt;
+  &lt;li&gt;Computer Basics: Content Delivery Networks&lt;/li&gt;
+  &lt;li&gt;Analog vs Digital and File Compression&lt;/li&gt;
+  &lt;li&gt;Routers and Packets&lt;/li&gt;
+  &lt;li&gt;Source Code&lt;/li&gt;
+  &lt;li&gt;Console and Logging&lt;/li&gt;
+  &lt;li&gt;Variables In Code&lt;/li&gt;
+  &lt;li&gt;What Do Programmers Do?&lt;/li&gt;
+  &lt;li&gt;Computer Security&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - The DOM - (30 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;The DOM: What&amp;rsquo;s the Document Object Model?&lt;/li&gt;
+  &lt;li&gt;The DOM: Style in the Header, Script in the Footer&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Javascript Lingo - (1 Hour)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;JavaScript Lingo: MDN and Documentation&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Value Types&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Variables &amp;amp; camelCase&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Arrays &amp;amp; Objects&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Finding and Indexing Data in Arrays&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Manipulating Data&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Math&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Loops&lt;/li&gt;
+  &lt;li&gt;JavaScript Lingo: Regular Expressions&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Chrome Developer Tools - (1 Hour)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Chrome Dev Tools: Elements&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Network&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Sources&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Timeline&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Profiles&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Resources&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Audits&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Console&lt;/li&gt;
+  &lt;li&gt;Chrome Dev Tools: Summary&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Big O Notation - (30 Minutes)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Big O Notation: What It Is and Why You Should Care&lt;/li&gt;
+  &lt;li&gt;Big O Notation: A Few Examples&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Accessibility - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;07 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Agile - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;08 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Computer Science - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;09 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Data Visualization - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;10 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Embedded and Internet of Things - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;11 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Game Development - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;12 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Gamification - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;13 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Machine Learning - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;14 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Math for Programmers - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;15 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Mobile JavaScript Development - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;16 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - DevOps - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;17 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Software Engineering Principles - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;18 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Statistics - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;19 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Tools - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;20 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - User Experience Design - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;21 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Visual Design - (? Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;(Coming Soon)&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;section-06-full-stack-development-certification&#34;&gt;Section 06 - Full Stack Development Certification&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Nonprofit Projects - (800 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Greenfield Nonprofit Project 1&lt;/li&gt;
+  &lt;li&gt;Greenfield Nonprofit Project 2&lt;/li&gt;
+  &lt;li&gt;Legacy Code Nonprofit Project 1&lt;/li&gt;
+  &lt;li&gt;Legacy Code Nonprofit Project 2&lt;/li&gt;
+  &lt;li&gt;Claim your Full Stack Development Certification&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;section-07-coding-interview-preparation&#34;&gt;Section 07 - Coding Interview Preparation&lt;/h3&gt;
+
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Coding Interview Training - (70 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Soft Skill Training&lt;/li&gt;
+  &lt;li&gt;Critical Thinking Training&lt;/li&gt;
+  &lt;li&gt;Whiteboard Coding Training&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;#&#34;&gt;None&lt;/a&gt; - Mock Interviews - (10 Hours)&lt;/summary&gt;
+  &lt;ul&gt;
+  &lt;li&gt;Mock Interview #1&lt;/li&gt;
+  &lt;li&gt;Mock Interview #2&lt;/li&gt;
+  &lt;li&gt;Mock Interview #3&lt;/li&gt;
+  &lt;/ul&gt;&lt;/details&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
