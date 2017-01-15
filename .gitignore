@@ -1,6 +1,5 @@
 # Custom
 /sources/
-/release/public/
 /release/static/content/projects/
 node_modules/
 bower_components/

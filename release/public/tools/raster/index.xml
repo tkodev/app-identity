@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/raster/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <atom:link href="http://htko.ca/tools/raster/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Early Graphical Design</title>
+      <link>http://htko.ca/folio/gfx/personal/early-graphical-design/README/</link>
+      <pubDate>Tue, 08 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/gfx/personal/early-graphical-design/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Early Graphical Design. A small gallery of work stretching back a decade. Spanning from 1999 to 2010, it depicts an era of static design, right before the major shift into web 2.0, responsive UI/UX, and professional work.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-views&#34;&gt;Project Views:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raster and Vector artwork.&lt;/li&gt;
+&lt;li&gt;PHP Nuke, Static Blog, and Retail templates.&lt;/li&gt;
+&lt;li&gt;Personal flair / logo artwork.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

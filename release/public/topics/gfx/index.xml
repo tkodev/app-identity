@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/topics/gfx/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <atom:link href="http://htko.ca/topics/gfx/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Site Base</title>
+      <link>http://htko.ca/folio/code/htko/site-base/README/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/code/htko/site-base/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Hugo base for personal portfolio at htko.ca. An experiment in static site generation, using &lt;a href=&#34;http://gohugo.io/&#34;&gt;HUGO&lt;/a&gt; as the engine. Dynamic sites are heavy in resource usage are vulnerable to attacks. Static sites are fast, efficient and most of all, provide minimal avenues of attack. However, they are difficult to maintain, and do not scale well with large sets of data.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; task engine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp-sass&lt;/code&gt;,&lt;code&gt;gulp-cssnano&lt;/code&gt;,&lt;code&gt;gulp-autoprefixer&lt;/code&gt; to compile scss files to css.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;babel&lt;/code&gt;,&lt;code&gt;gulp-concat&lt;/code&gt;,&lt;code&gt;gulp-uglify&lt;/code&gt; to compile js files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp-sourcemaps&lt;/code&gt; for sourcemapping.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;globby&lt;/code&gt;,&lt;code&gt;minimatch&lt;/code&gt;,&lt;code&gt;fs-extra&lt;/code&gt; for portfolio projects compilation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;js-beautify&lt;/code&gt; for linting.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo&lt;/code&gt; (&lt;code&gt;livereload&lt;/code&gt;) or &lt;code&gt;browser-sync&lt;/code&gt; for debug rendering.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HTKO Identity</title>
+      <link>http://htko.ca/folio/gfx/personal/htko-identity/README/</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/gfx/personal/htko-identity/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Identity design for personal portfolio.&lt;/p&gt;
+
+&lt;h2 id=&#34;logo-specifications&#34;&gt;Logo Specifications:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type: Modified from &lt;a href=&#34;http://www.emmeranrichard.fr/portfolio/blanka-font/&#34;&gt;BLANKA&lt;/a&gt; - &lt;a href=&#34;http://www.emmeranrichard.fr/&#34;&gt;Emmeran Richard&lt;/a&gt; (royalty free).&lt;/li&gt;
+&lt;li&gt;Inspiration: &lt;a href=&#34;http://www.masterdynamic.eu/&#34;&gt;Master &amp;amp; Dynamic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Theme: Strong, Typographic, Geometric.&lt;/li&gt;
+&lt;li&gt;Reflect letters &lt;code&gt;H&lt;/code&gt;, &lt;code&gt;T&lt;/code&gt;, &lt;code&gt;K&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Artboard: &lt;code&gt;600px*600px&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Canvas: &lt;code&gt;400px*400px&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Print media ready.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;card-specification&#34;&gt;Card Specification&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Photo: Toronto, Canada - &lt;a href=&#34;https://unsplash.com/@yourturn?photo=86xXPfp48ec&#34;&gt;Illia Cherednychenko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Prominent logo display&lt;/li&gt;
+&lt;li&gt;Strong use of grids&lt;/li&gt;
+&lt;li&gt;Artboards: &lt;code&gt;3.3in*2.16in&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ABC Cakes</title>
+      <link>http://htko.ca/folio/gfx/personal/abc-cakes/README/</link>
+      <pubDate>Thu, 06 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/gfx/personal/abc-cakes/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;freelance-project&#34;&gt;Freelance Project&lt;/h1&gt;
+
+&lt;p&gt;ABC Cakes is local bakery startup based in Toronto by Beatrice Chau &amp;amp; her sister Alena Chau. ABC Cakes’ identity focuses on a clean timeless design that speaks of the passion, elegance and ingredients of their baked goods &amp;amp; bakery.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Early Graphical Design</title>
+      <link>http://htko.ca/folio/gfx/personal/early-graphical-design/README/</link>
+      <pubDate>Tue, 08 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/folio/gfx/personal/early-graphical-design/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Early Graphical Design. A small gallery of work stretching back a decade. Spanning from 1999 to 2010, it depicts an era of static design, right before the major shift into web 2.0, responsive UI/UX, and professional work.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-views&#34;&gt;Project Views:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raster and Vector artwork.&lt;/li&gt;
+&lt;li&gt;PHP Nuke, Static Blog, and Retail templates.&lt;/li&gt;
+&lt;li&gt;Personal flair / logo artwork.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
