@@ -1,7 +1,7 @@
 # Custom
 /sources/
 /release/public/
-/release/static/content/folio/
+/release/static/content/projects/
 node_modules/
 bower_components/
 npm-debug.log
