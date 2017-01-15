@@ -1,0 +1,14 @@
+.cover {
+  height: 100%;
+  width: 100%;
+}
+.cover .arrow-up {
+  position: relative;
+}
+.cover .arrow-up::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  border: 0.8rem solid transparent;
+  border-bottom-color: $white;
+}

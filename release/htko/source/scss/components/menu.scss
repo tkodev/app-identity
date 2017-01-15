@@ -1,0 +1,29 @@
+// Global
+  .menu {
+    a {
+      position:relative;
+    }
+    a:before {
+      content: "";
+      position:absolute;
+      left:1.4rem;
+      width:0.8rem;
+      bottom:0.25rem;
+    }
+    margin: 0px;
+  }
+
+// Custom
+  .menu-img-a {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .menu-img-a:hover:before {
+    border-bottom: 0 !important;
+  }
+  .menu-img{
+    height: 4rem;
+  }
+  .menu-title {
+    font-weight: 300 !important;
+  }

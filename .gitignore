@@ -1,7 +1,6 @@
 # Custom
 /sources/
-/release/static/content/projects/
+/release/htko/static/content/projects/
 node_modules/
 bower_components/
 npm-debug.log
-*.psd

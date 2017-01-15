@@ -1,8 +1,0 @@
-{{ if .Params.tools }}
-  <i class="fa fa-tags fa-1x"></i>
-  {{ range $index, $topic := .Params.tools }}
-    {{ if gt $index 0 }},
-    {{ end }}
-    <a class="capitalize" href="/tools/{{ . | urlize }}">{{ . }}</a>
-  {{ end }}
-{{ end }}
