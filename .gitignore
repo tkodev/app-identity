@@ -1,6 +1,8 @@
 # Custom
+/sources/
+/release/public/
+/release/static/content/folio/
 node_modules/
 bower_components/
 npm-debug.log
-sources/
-release/static/content/folio/
+*.psd
