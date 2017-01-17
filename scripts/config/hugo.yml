@@ -3,7 +3,7 @@ HUGO:
   base_url: "http://htko.ca/"
   temp_url: "http://192.168.1.30:4000/"
   port: 4000
-  root: "/Users/sysuser/Google Drive/projects/public/code/htko/site-base/release"
+  root: "/Users/sysuser/Google Drive/projects/public/code/htko/site-base/release/htko"
   public: "/public"
   source: "/source"
   static: "/static/static"
@@ -18,7 +18,7 @@ HUGO:
 
 PROJECTS:
   root: "/Users/sysuser/Google Drive/projects/public"
-  folio: "/folio"
+  projects: "/project"
   filters:
     - "/**/README.md"
     - "/**/assets"

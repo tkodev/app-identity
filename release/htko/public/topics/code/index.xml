@@ -10,11 +10,114 @@
     <atom:link href="http://htko.ca/topics/code/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Profile Api</title>
+      <link>http://htko.ca/project/code/fcc/profile-api/README/</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/project/code/fcc/profile-api/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.&lt;/p&gt;
+
+&lt;h2 id=&#34;server-install&#34;&gt;Server Install:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Do the following in a system with node &amp;amp; npm v6.9.4 :
+&lt;code&gt;
+git clone https://github.com/htko89/fcc-profile-api.git
+cd fcc-profile-api/release
+npm install
+node server.js
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;server-usage&#34;&gt;Server Usage:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your installed api server is available at: &lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://localhost:80/?user=your_username&amp;amp;callback=test&#34;&gt;http://localhost:80/?user=your_username&amp;amp;callback=test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://localhost:80/?user=your_username&#34;&gt;http://localhost:80/?user=your_username&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;I also host a server for public use &lt;strong&gt;(be fair!)&lt;/strong&gt; at: &lt;a href=&#34;http://fcc-profile-api.htko.ca/&#34;&gt;http://fcc-profile-api.htko.ca/&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://fcc-profile-api.htko.ca/?user=your_username&amp;amp;callback=&#34;&gt;http://fcc-profile-api.htko.ca/?user=your_username&amp;amp;callback=&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://fcc-profile-api.htko.ca/?user=your_username&#34;&gt;http://fcc-profile-api.htko.ca/?user=your_username&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://fcc-profile-api.htko.ca/&#34;&gt;http://fcc-profile-api.htko.ca/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;data-structure&#34;&gt;Data Structure:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HINT&lt;/strong&gt;: Don&amp;rsquo;t specify a username to see how the curriculum map is organized. (use a linter)&lt;/li&gt;
+&lt;li&gt;Data returned are nested objects: Certification &amp;gt; Chapter &amp;gt; Challenge.&lt;/li&gt;
+&lt;li&gt;Older challenges that have been removed from the FreeCodeCamp curriculum is under &lt;code&gt;Deprecated&lt;/code&gt; key.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;example-shortened-output-http-code-200&#34;&gt;Example shortened output (HTTP code 200).&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;Front End Development Certification&amp;quot;: {
+    &amp;quot;HTML5 and CSS&amp;quot;: {
+      &amp;quot;_time&amp;quot;: &amp;quot;1969-12-31T10:00:00.000Z&amp;quot;,
+      &amp;quot;Inform with the Paragraph Element&amp;quot; : {
+        &amp;quot;_link&amp;quot; : &amp;quot;https://www.freecodecamp.com/challenges/inform-with-the-paragraph-element&amp;quot;,
+        &amp;quot;_dateC&amp;quot; : &amp;quot;May 21, 2016&amp;quot;,
+        &amp;quot;_dateU&amp;quot; : &amp;quot;May 22, 2016&amp;quot;,
+        &amp;quot;_code&amp;quot; : &amp;quot;https://www.freecodecamp.com//challenges/Inform with the Paragraph Element?solution=%0A%3Ch1%3EHello%20World%3C%2Fh1%3E%0A%3Ch2%3ECatPhotoApp%3C%2Fh2%3E%0A%3Cp%3EHello%20Paragraph%3C%2Fp%3E%0A&amp;quot;
+      }
+    }
+  },
+  &amp;quot;Data Visualization Certification&amp;quot;: {
+		&amp;quot;Sass&amp;quot;: {
+			&amp;quot;_time&amp;quot;: &amp;quot;1969-12-31T10:00:00.000Z&amp;quot;,
+			&amp;quot;Learn Sass Challenges&amp;quot;: {
+				&amp;quot;_status&amp;quot;: &amp;quot;Coming Soon&amp;quot;
+			}
+		}
+  },
+  &amp;quot;Coding Interview Preparation&amp;quot;: {
+		&amp;quot;Coding Interview Training&amp;quot;: {
+			&amp;quot;_time&amp;quot;: &amp;quot;1970-01-03T03:00:00.000Z&amp;quot;,
+			&amp;quot;_desc&amp;quot;: &amp;quot;To qualify for this coding interview training, you must first earn all four certifications: Front End, Data Visualization, Back End, and Full Stack&amp;quot;,
+			&amp;quot;Soft Skill Training&amp;quot;: {},
+			&amp;quot;Critical Thinking Training&amp;quot;: {},
+			&amp;quot;Whiteboard Coding Training&amp;quot;: {}
+		}
+  },
+  &amp;quot;Deprecated&amp;quot;: {
+  	&amp;quot;Add Alt Text to an Image for Accessibility&amp;quot;: {
+  		&amp;quot;_dateC&amp;quot;: &amp;quot;May 21, 2016&amp;quot;,
+  		&amp;quot;_code&amp;quot;: &amp;quot;https://www.freecodecamp.com//challenges/Add Alt Text to an Image for Accessibility?solution=...&amp;quot;
+  	}
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;example-error-output-http-code-500&#34;&gt;Example error output (HTTP code 500).&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;Errors&amp;quot;: {
+    &amp;quot;_message&amp;quot;: &amp;quot;Cannot request freeCodeCamp map&amp;quot;,
+    &amp;quot;_error&amp;quot;: {}
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Site Base</title>
-      <link>http://htko.ca/folio/code/htko/site-base/README/</link>
+      <link>http://htko.ca/project/code/htko/site-base/README/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/htko/site-base/README/</guid>
+      <guid>http://htko.ca/project/code/htko/site-base/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -37,10 +140,10 @@
     
     <item>
       <title>Hugo Theme Foundation6 Blog</title>
-      <link>http://htko.ca/folio/code/personal/hugo-theme-foundation6-blog/README/</link>
+      <link>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/personal/hugo-theme-foundation6-blog/README/</guid>
+      <guid>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
       <description>&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
 &lt;p&gt;A simple &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; theme based on the &lt;a href=&#34;http://foundation.zurb.com/templates-previews-sites-f6/blog.html&#34;&gt;Foundation 6 blog (w/ sidebar) example&lt;/a&gt;, with scss &amp;amp; js gulp build scripts.&lt;/p&gt;
@@ -171,10 +274,10 @@
     
     <item>
       <title>LUA Language</title>
-      <link>http://htko.ca/folio/code/personal/lua-language/README/</link>
+      <link>http://htko.ca/project/code/personal/lua-language/README/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/personal/lua-language/README/</guid>
+      <guid>http://htko.ca/project/code/personal/lua-language/README/</guid>
       <description>
 
 &lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;
@@ -425,62 +528,11 @@
     </item>
     
     <item>
-      <title>FCC Spider</title>
-      <link>http://htko.ca/folio/code/fcc/fcc-spider/README/</link>
-      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://htko.ca/folio/code/fcc/fcc-spider/README/</guid>
-      <description>
-
-&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
-
-&lt;p&gt;Built on &lt;a href=&#34;https://scrapy.org/&#34;&gt;Scrapy&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.python.org/&#34;&gt;Python&lt;/a&gt;, this tool converts your Free Code Camp challenge profile into JSON data&lt;/p&gt;
-
-&lt;h2 id=&#34;project-install&#34;&gt;Project Install:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;These bash scripts are mostly designed to run in a Linux environment, specifically Python 3 container in Docker 1.10+ running on Ubuntu 16.04.1. Scrapy is yet to support Python 3 in Windows.&lt;/li&gt;
-&lt;li&gt;Install Python 3, Scrapy&amp;rsquo;s dependencies and Scrapy itself.
-&lt;code&gt;
-apt-get update
-apt-get install python-pip build-essential libssl-dev libffi-dev python-dev
-pip install cryptography scrapy
-&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Extract &lt;a href=&#34;https://github.com/htko89/FCC-Spider/releases&#34;&gt;latest version&lt;/a&gt; into a directory, say &lt;code&gt;~/fccSpider&lt;/code&gt;, and enter it.&lt;/li&gt;
-&lt;li&gt;Set executable permissions:
-&lt;code&gt;
-cd ~/fccSpider
-chmod 755 -R ~/fccSpider
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;project-usage&#34;&gt;Project Usage:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Usage:
-```&lt;/li&gt;
-&lt;li&gt;Application Comments:&lt;/li&gt;
-&lt;li&gt;Usage    : ./fccSpider.sh [username] [action]&lt;/li&gt;
-&lt;li&gt;Example  : ./fccSpider.sh htko89 full&lt;/li&gt;
-&lt;li&gt;Actions  : See below.
-++  full    - Download FCC curriculum map &amp;amp; challenge descriptions, personal profile, export results
-++  map     - Download FCC curriculum map &amp;amp; challenge descriptions.
-++  profile - Download &amp;amp; export personal profile. Map must be downloaded or error will occur.
-++  empty   - Download &amp;amp; export empty profile. Map must be downloaded or error will occur.
-++  clear   - Deletes all maps and exports.
-```&lt;/li&gt;
-&lt;li&gt;Working data output to &lt;code&gt;/common&lt;/code&gt;. Export data output to &lt;code&gt;/export&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Challenge solution code in URL encoding. Decoder: &lt;a href=&#34;http://meyerweb.com/eric/tools/dencoder/&#34;&gt;Here&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Scripts Bash</title>
-      <link>http://htko.ca/folio/code/personal/scripts-bash/README/</link>
+      <link>http://htko.ca/project/code/personal/scripts-bash/README/</link>
       <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/personal/scripts-bash/README/</guid>
+      <guid>http://htko.ca/project/code/personal/scripts-bash/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -528,10 +580,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Scripts Legacy</title>
-      <link>http://htko.ca/folio/code/personal/scripts-legacy/README/</link>
+      <link>http://htko.ca/project/code/personal/scripts-legacy/README/</link>
       <pubDate>Mon, 14 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/personal/scripts-legacy/README/</guid>
+      <guid>http://htko.ca/project/code/personal/scripts-legacy/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -542,10 +594,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Twitch Channels Widget</title>
-      <link>http://htko.ca/folio/code/fcc/twitch-channels-widget/README/</link>
+      <link>http://htko.ca/project/code/fcc/twitch-channels-widget/README/</link>
       <pubDate>Sat, 13 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/fcc/twitch-channels-widget/README/</guid>
+      <guid>http://htko.ca/project/code/fcc/twitch-channels-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -566,10 +618,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Wikipedia Viewer Widget</title>
-      <link>http://htko.ca/folio/code/fcc/wikipedia-viewer-widget/README/</link>
+      <link>http://htko.ca/project/code/fcc/wikipedia-viewer-widget/README/</link>
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/fcc/wikipedia-viewer-widget/README/</guid>
+      <guid>http://htko.ca/project/code/fcc/wikipedia-viewer-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -587,10 +639,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Local Weather Widget</title>
-      <link>http://htko.ca/folio/code/fcc/local-weather-widget/README/</link>
+      <link>http://htko.ca/project/code/fcc/local-weather-widget/README/</link>
       <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/fcc/local-weather-widget/README/</guid>
+      <guid>http://htko.ca/project/code/fcc/local-weather-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -609,10 +661,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Quote Machine Widget</title>
-      <link>http://htko.ca/folio/code/fcc/quote-machine-widget/README/</link>
+      <link>http://htko.ca/project/code/fcc/quote-machine-widget/README/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/fcc/quote-machine-widget/README/</guid>
+      <guid>http://htko.ca/project/code/fcc/quote-machine-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -630,10 +682,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Portfolio Template</title>
-      <link>http://htko.ca/folio/code/fcc/portfolio-template/README/</link>
+      <link>http://htko.ca/project/code/fcc/portfolio-template/README/</link>
       <pubDate>Sat, 25 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/fcc/portfolio-template/README/</guid>
+      <guid>http://htko.ca/project/code/fcc/portfolio-template/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -653,10 +705,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Tribute Page</title>
-      <link>http://htko.ca/folio/code/fcc/tribute-page/README/</link>
+      <link>http://htko.ca/project/code/fcc/tribute-page/README/</link>
       <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/fcc/tribute-page/README/</guid>
+      <guid>http://htko.ca/project/code/fcc/tribute-page/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -674,10 +726,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Angelfind App</title>
-      <link>http://htko.ca/folio/code/personal/angelfind-app/README/</link>
+      <link>http://htko.ca/project/code/personal/angelfind-app/README/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/personal/angelfind-app/README/</guid>
+      <guid>http://htko.ca/project/code/personal/angelfind-app/README/</guid>
       <description>
 
 &lt;h1 id=&#34;hackathon-entry-angelhack&#34;&gt;Hackathon Entry - Angelhack&lt;/h1&gt;
@@ -701,10 +753,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Proton Light Switch</title>
-      <link>http://htko.ca/folio/code/personal/proton-light-switch/README/</link>
+      <link>http://htko.ca/project/code/personal/proton-light-switch/README/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/personal/proton-light-switch/README/</guid>
+      <guid>http://htko.ca/project/code/personal/proton-light-switch/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -727,10 +779,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Free Code Camp</title>
-      <link>http://htko.ca/folio/code/fcc/free-code-camp/README/</link>
+      <link>http://htko.ca/project/code/fcc/free-code-camp/README/</link>
       <pubDate>Fri, 27 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/fcc/free-code-camp/README/</guid>
+      <guid>http://htko.ca/project/code/fcc/free-code-camp/README/</guid>
       <description>
 
 &lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;

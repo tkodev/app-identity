@@ -3,7 +3,7 @@
 <main id="main">
   <div class="row" id="content">
     <div class="small-12 medium-12 large-6 columns">
-      <div id="folio-gallery">
+      <div id="project-gallery">
         <div class="">
           {{ $currentNode := . }}
           {{ if and (isset .Params "photo") .Params.photo }}
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="small-12 medium-12 large-5 large-offset-1 columns" data-sticky-container>
-      <div id="folio-desc" class="sticky" data-sticky-on="large" data-anchor="folio-gallery" data-margin-top="7">
+      <div id="project-desc" class="sticky" data-sticky-on="large" data-anchor="project-gallery" data-margin-top="7">
         <div class="card-section hide-for-large"></div>
         <h1>{{ .Title }} _</h1>
         <hr>

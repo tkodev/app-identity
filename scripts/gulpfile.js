@@ -26,7 +26,7 @@
                           });
     SOURCE.js.push(         path.join( HUGO.source  , SOURCE.js_filter[0] ));
     SOURCE.js.push(         path.join( HUGO.source  , SOURCE.js_filter[1] ));
-    PROJECTS.folio        = path.join( HUGO.content , PROJECTS.folio      );
+    PROJECTS.projects     = path.join( HUGO.content , PROJECTS.projects   );
     PROJECTS.filters[0]   = path.join( PROJECTS.root, PROJECTS.filters[0] );
     PROJECTS.filters[1]   = path.join( PROJECTS.root, PROJECTS.filters[1] );
 
@@ -84,7 +84,7 @@
   // Functions
     function clean(done) {
       fs.removeSync(HUGO.public)
-      fs.removeSync(PROJECTS.folio)
+      fs.removeSync(PROJECTS.projects)
       done();
     }
   // Logging
@@ -99,8 +99,8 @@
       var paths = globby.sync( PROJECTS.filters );
       for (i in paths){
         rootPath          = paths[i];
-        folioPath         = path.join( PROJECTS.folio, path.relative(PROJECTS.root, rootPath ));
-        fs.copySync( rootPath, folioPath, function (file) {
+        projectsPath         = path.join( PROJECTS.projects, path.relative(PROJECTS.root, rootPath ));
+        fs.copySync( rootPath, projectsPath, function (file) {
           return minimatch( file, "**/.*") ? false : true;
         })
       }

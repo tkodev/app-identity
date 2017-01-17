@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="http://htko.ca/">
+  <title>Hei Tony Ko | Personal Portfolio | Profile Api</title>
+  <meta property="og:title" content="Profile Api" />
+  <meta property="og:description" content="Personal Project JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.
+Server Install:  Do the following in a system with node &amp; npm v6.9.4 :  git clone https://github.com/htko89/fcc-profile-api.git cd fcc-profile-api/release npm install node server.js   Server Usage:  Your installed api server is available at: http://localhost:80/  JSONP url, example: http://localhost:80/?user=your_username&amp;callback=test JSON url, example: http://localhost:80/?user=your_username User and callback arguments are optional, example: http://localhost:80/  I also host a server for public use (be fair!"
+  />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://htko.ca/project/code/fcc/profile-api/README/" />
+  <meta property="og:updated_time" content="2017-01-14T00:00:00&#43;00:00" />
+  <meta itemprop="name" content="Profile Api">
+  <meta itemprop="description" content="Personal Project JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.
+Server Install:  Do the following in a system with node &amp; npm v6.9.4 :  git clone https://github.com/htko89/fcc-profile-api.git cd fcc-profile-api/release npm install node server.js   Server Usage:  Your installed api server is available at: http://localhost:80/  JSONP url, example: http://localhost:80/?user=your_username&amp;callback=test JSON url, example: http://localhost:80/?user=your_username User and callback arguments are optional, example: http://localhost:80/  I also host a server for public use (be fair!">
+    <meta itemprop="dateModified" content="2017-01-14T00:00:00&#43;00:00" />
+    <meta itemprop="wordCount" content="295">
+    <meta itemprop="keywords" content="advdupe2,angular,api,architecture,arduino,back-end,bash,bootstrap,c&#43;&#43;,cheerio,data-vis,docker,express.js,expression2,flash,foundation,front-end,graphics,gulp,hand-draft,hugo,identity,industrial-design,infrared,ionic,iot,jquery,logo,lua,model,node.js,photon,php,rapid-prototype,raster,request,rest-api,revit,sass,typography,ui/ux,vector,web-1.0,code,gfx,interior-design,"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Profile Api" />
+    <meta name="twitter:description" content="Personal Project JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.
+Server Install:  Do the following in a system with node &amp; npm v6.9.4 :  git clone https://github.com/htko89/fcc-profile-api.git cd fcc-profile-api/release npm install node server.js   Server Usage:  Your installed api server is available at: http://localhost:80/  JSONP url, example: http://localhost:80/?user=your_username&amp;callback=test JSON url, example: http://localhost:80/?user=your_username User and callback arguments are optional, example: http://localhost:80/  I also host a server for public use (be fair!"
+    />
+    <meta name="generator" content="Hugo 0.17" />
+    <link href="http://htko.ca/static/css/app.css" rel="stylesheet">
+    <link href="http://htko.ca/static/css/animate.css" rel="stylesheet">
+    <link href="http://htko.ca/static/css/font-awesome.min.css" rel="stylesheet"> </head>
+
+<body style="background: url('http://htko.ca/static/img/background.png') center / 60% no-repeat fixed;">
+  <header id="header" data-sticky-container>
+    <nav id="top-bar" class="top-bar sticky" data-sticky data-sticky-on="small" data-margin-top="0" data-anchor="body" style="width:100%">
+      <div class="row column">
+        <div class="small-8 columns">
+          <ul class="menu">
+            <li>
+              <a class="menu-img-a" href="http://htko.ca/"><img class="menu-img" src="http://htko.ca//static/img/htko-10-full.svg"></a>
+            </li>
+            <li> <a class="menu-title " href="http://htko.ca/">Hei Tony Ko</a> </li>
+            <li> <a class="" href="http://htko.ca/topics/code/"><i class='fa fa-code fa-1x'></i><span class="show-for-medium">Code</span></a> </li>
+            <li> <a class="" href="http://htko.ca/topics/gfx/"><i class='fa fa-paint-brush fa-1x'></i><span class="show-for-medium">GFX</span></a> </li>
+            <li> <a class="" href="http://htko.ca/topics/interior-design/"><i class='fa fa-bank fa-1x'></i><span class="show-for-medium">Interior Design</span></a> </li>
+          </ul>
+        </div>
+        <div class="small-4 columns">
+          <ul class="menu align-right">
+            <li>
+              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
+            </li>
+            <li> <a href="page/about-me/README/"><i class='fa fa-user-circle-o fa-1x'></i><span class="show-for-medium">About Me</span></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="row" id="content">
+      <div class="small-12 medium-12 large-6 columns">
+        <div id="project-gallery">
+          <div class="card"> <img class="img-responsive" src="http://htko.ca/content/project/code/fcc/profile-api/assets/cover.jpg"> </div>
+        </div>
+      </div>
+      <div class="small-12 medium-12 large-5 large-offset-1 columns" data-sticky-container>
+        <div id="project-desc" class="sticky" data-sticky data-sticky-on="large" data-anchor="project-gallery" data-margin-top="7">
+          <div class="card-section hide-for-large"></div>
+          <h1>Profile Api _</h1>
+          <hr>
+          <h1 id="personal-project">Personal Project</h1>
+          <p>JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.</p>
+          <h2 id="server-install">Server Install:</h2>
+          <ul>
+            <li>Do the following in a system with node &amp; npm v6.9.4 : <code>
+git clone https://github.com/htko89/fcc-profile-api.git
+cd fcc-profile-api/release
+npm install
+node server.js
+</code></li>
+          </ul>
+          <h2 id="server-usage">Server Usage:</h2>
+          <ul>
+            <li>Your installed api server is available at: <a href="http://localhost:80/">http://localhost:80/</a>
+              <ul>
+                <li><strong>JSONP url</strong>, example: <a href="http://localhost:80/?user=your_username&amp;callback=test">http://localhost:80/?user=your_username&amp;callback=test</a></li>
+                <li><strong>JSON url</strong>, example: <a href="http://localhost:80/?user=your_username">http://localhost:80/?user=your_username</a></li>
+                <li>User and callback arguments are optional, example: <a href="http://localhost:80/">http://localhost:80/</a></li>
+              </ul>
+            </li>
+            <li>I also host a server for public use <strong>(be fair!)</strong> at: <a href="http://fcc-profile-api.htko.ca/">http://fcc-profile-api.htko.ca/</a>
+              <ul>
+                <li><strong>JSONP url</strong>, example: <a href="http://fcc-profile-api.htko.ca/?user=your_username&amp;callback=">http://fcc-profile-api.htko.ca/?user=your_username&amp;callback=</a></li>
+                <li><strong>JSON url</strong>, example: <a href="http://fcc-profile-api.htko.ca/?user=your_username">http://fcc-profile-api.htko.ca/?user=your_username</a></li>
+                <li>User and callback arguments are optional, example: <a href="http://fcc-profile-api.htko.ca/">http://fcc-profile-api.htko.ca/</a></li>
+              </ul>
+            </li>
+          </ul>
+          <h2 id="data-structure">Data Structure:</h2>
+          <ul>
+            <li><strong>HINT</strong>: Don&rsquo;t specify a username to see how the curriculum map is organized. (use a linter)</li>
+            <li>Data returned are nested objects: Certification &gt; Chapter &gt; Challenge.</li>
+            <li>Older challenges that have been removed from the FreeCodeCamp curriculum is under <code>Deprecated</code> key.</li>
+          </ul>
+          <h3 id="example-shortened-output-http-code-200">Example shortened output (HTTP code 200).</h3>
+          <pre><code class="language-json">{
+  &quot;Front End Development Certification&quot;: {
+    &quot;HTML5 and CSS&quot;: {
+      &quot;_time&quot;: &quot;1969-12-31T10:00:00.000Z&quot;,
+      &quot;Inform with the Paragraph Element&quot; : {
+        &quot;_link&quot; : &quot;https://www.freecodecamp.com/challenges/inform-with-the-paragraph-element&quot;,
+        &quot;_dateC&quot; : &quot;May 21, 2016&quot;,
+        &quot;_dateU&quot; : &quot;May 22, 2016&quot;,
+        &quot;_code&quot; : &quot;https://www.freecodecamp.com//challenges/Inform with the Paragraph Element?solution=%0A%3Ch1%3EHello%20World%3C%2Fh1%3E%0A%3Ch2%3ECatPhotoApp%3C%2Fh2%3E%0A%3Cp%3EHello%20Paragraph%3C%2Fp%3E%0A&quot;
+      }
+    }
+  },
+  &quot;Data Visualization Certification&quot;: {
+		&quot;Sass&quot;: {
+			&quot;_time&quot;: &quot;1969-12-31T10:00:00.000Z&quot;,
+			&quot;Learn Sass Challenges&quot;: {
+				&quot;_status&quot;: &quot;Coming Soon&quot;
+			}
+		}
+  },
+  &quot;Coding Interview Preparation&quot;: {
+		&quot;Coding Interview Training&quot;: {
+			&quot;_time&quot;: &quot;1970-01-03T03:00:00.000Z&quot;,
+			&quot;_desc&quot;: &quot;To qualify for this coding interview training, you must first earn all four certifications: Front End, Data Visualization, Back End, and Full Stack&quot;,
+			&quot;Soft Skill Training&quot;: {},
+			&quot;Critical Thinking Training&quot;: {},
+			&quot;Whiteboard Coding Training&quot;: {}
+		}
+  },
+  &quot;Deprecated&quot;: {
+  	&quot;Add Alt Text to an Image for Accessibility&quot;: {
+  		&quot;_dateC&quot;: &quot;May 21, 2016&quot;,
+  		&quot;_code&quot;: &quot;https://www.freecodecamp.com//challenges/Add Alt Text to an Image for Accessibility?solution=...&quot;
+  	}
+  }
+}
+</code></pre>
+          <h3 id="example-error-output-http-code-500">Example error output (HTTP code 500).</h3>
+          <pre><code class="language-json">{
+  &quot;Errors&quot;: {
+    &quot;_message&quot;: &quot;Cannot request freeCodeCamp map&quot;,
+    &quot;_error&quot;: {}
+  }
+}
+</code></pre>
+          <hr>
+          <h6>Tools:</h6> <i class="fa fa-tags fa-1x"></i> <a class="capitalize" href="http://htko.ca/tools/node.js">node.js</a> , <a class="capitalize" href="http://htko.ca/tools/express.js">express.js</a> , <a class="capitalize" href="http://htko.ca/tools/cheerio">cheerio</a>          , <a class="capitalize" href="http://htko.ca/tools/request">request</a> , <a class="capitalize" href="http://htko.ca/tools/rest-api">rest API</a>
+          <hr>
+          <h6>Link:</h6> <i class="fa fa-external-link fa-1x"></i> <a href="http://fcc-profile-api.htko.ca/">
+      http://fcc-profile-api.htko.ca/
+    </a>
+          <hr>
+          <h6>Code:</h6> <i class="fa fa-code-fork fa-1x"></i> <a href="https://github.com/htko89/fcc-profile-api">
+      https://github.com/htko89/fcc-profile-api
+    </a>
+          <div class="card-section hide-for-large"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <nav>
+      <div class="row column">
+        <div class="small-6 columns">
+          <ul class="menu">
+            <li> &copy; </li>
+            <li> <a class="menu-title" href="#">2017 Copyright - Tony Ko.</a> </li>
+            <li>
+              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="small-6 columns">
+          <ul class="menu align-right">
+            <li>
+              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
+            </li>
+            <li> <a class="" href="https://www.instagram.com/htkoca"><i class='fa fa-instagram fa-1x'></i><span class="show-for-medium">Instagram</span></a> </li>
+            <li> <a class="" href="https://github.com/htko89"><i class='fa fa-code-fork fa-1x'></i><span class="show-for-medium">Github</span></a> </li>
+            <li> <a class="" href="http://lnked.in/htko89"><i class='fa fa-linkedin fa-1x'></i><span class="show-for-medium">Linkedin</span></a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </footer>
+  <foot>
+    <script src="http://htko.ca/static/js/app.js"></script>
+  </foot>
+</body>
+
+</html>

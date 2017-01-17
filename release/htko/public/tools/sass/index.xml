@@ -11,10 +11,10 @@
     
     <item>
       <title>Site Base</title>
-      <link>http://htko.ca/folio/code/htko/site-base/README/</link>
+      <link>http://htko.ca/project/code/htko/site-base/README/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/htko/site-base/README/</guid>
+      <guid>http://htko.ca/project/code/htko/site-base/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>Hugo Theme Foundation6 Blog</title>
-      <link>http://htko.ca/folio/code/personal/hugo-theme-foundation6-blog/README/</link>
+      <link>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/folio/code/personal/hugo-theme-foundation6-blog/README/</guid>
+      <guid>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
       <description>&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
 &lt;p&gt;A simple &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; theme based on the &lt;a href=&#34;http://foundation.zurb.com/templates-previews-sites-f6/blog.html&#34;&gt;Foundation 6 blog (w/ sidebar) example&lt;/a&gt;, with scss &amp;amp; js gulp build scripts.&lt;/p&gt;
