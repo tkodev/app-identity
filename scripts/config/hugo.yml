@@ -1,35 +1,37 @@
 # Hugo paths
-HUGO:
-  base_url: "http://htko.ca/"
-  temp_url: "http://192.168.1.30:4000/"
-  port: 4000
-  root: "/Users/sysuser/Google Drive/projects/public/code/htko/site-base/release/htko"
+hugo:
+  baseUrl: "http://htko.ca/"
+  tempUrl: "http://localhost:5678/"
+  port: 5678
   public: "/public"
   source: "/source"
   static: "/static/static"
   content: "/static/content"
-  filters:
-    - "/data/**/*"
-    - "/layouts/**/*"
-    - "/static/**/*"
-    - "/*.yml"
-    - "/**/!.**/**/*"
-    - "/**/!.*"
+  projects: "/static/content/project"
 
-PROJECTS:
-  root: "/Users/sysuser/Google Drive/projects/public"
-  projects: "/project"
-  filters:
-    - "/**/README.md"
-    - "/**/assets"
-    - "!**/free-code-camp/* - */**/*"
-    - "!**/releases/**/*"
+root:
+  hugo: "../release/htko"
+  projects: "../../../../../public"
+
+filters:
+  hugo:
+    - "archetypes/**/*"
+    - "data/**/*"
+    - "layouts/**/*"
+    - "static/**/*"
+    - "config.yml"
+    # - "public/**/*" # feedback loop
+  projects:
+    - "**/README.md"
+    - "!**/free-code-camp/* - */**"
+    - "!**/releases/**"
     - "!**/resume/**/*"
-    - "!**/prototypes/**/*"
-    - "!**/sources/**/*"
-    - "!**/release/**/*"
-    - "!**/scripts/**/*"
-    - "!**/node_modules/**/*"
-    - "!**/bower_components/**/*"
+    - "!**/prototypes/**/*" # standard project folders
+    - "!**/sources/**/*" # standard project folders
+    - "!**/release/**/*" # standard project folders
+    - "!**/scripts/**/*" # standard project folders
+  ignore:
     - "!**/.**/**/*"
     - "!**/.*"
+    - "!**/node_modules/**/*"
+    - "!**/bower_components/**/*"
