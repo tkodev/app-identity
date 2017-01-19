@@ -1,24 +1,24 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2014-03-28"
-title: "1900s Queen St Modernization"
-parent: "ocad"
+date: '2014-03-28'
+title: 1900s Queen St Modernization
 topics:
-  - "interior-design"
+  - interior-design
 tools:
-  - "revit"
-  - "architecture"
-  - "model"
-cover: "cover.jpg"
-photo:
-  - "Overview.jpg"
-  - "Overview-Cutaway-1.jpg"
-  - "Overview-Cutaway-2.jpg"
-  - "Overview-Cutaway-3.jpg"
-program: "Environmental Design"
-course: "ENVR1B02 - Environmental Design 2"
-project: "02 - Work Live Space"
+  - revit
+  - architecture
+  - model
+program: Environmental Design
+course: ENVR1B02 - Environmental Design 2
+project: 02 - Work Live Space
+photos:
+  - cover.jpg
+  - Overview.jpg
+  - Overview-Cutaway-1.jpg
+  - Overview-Cutaway-2.jpg
+  - Overview-Cutaway-3.jpg
+path: interior-design/ocad/1900s-queen-st-modernization
 ---
 # Student Project - OCAD
 The western end of Queen St (sometimes simply referred to as “Queen West“) is now best known as a centre for Canadian broadcasting, music, fashion, performance, and the visual arts. Over the past twenty-five years, gentrification and other facts has caused Queen West to become an international arts centre, and a major tourist attraction in Toronto.

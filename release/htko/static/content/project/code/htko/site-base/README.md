@@ -1,24 +1,24 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2017-01-19"
-title: "Site Base"
-parent: "htko"
+date: '2017-01-19'
+title: Site Base
 topics:
-  - "code"
-  - "gfx"
+  - code
+  - gfx
 tools:
-  - "hugo"
-  - "node.js"
-  - "gulp"
-  - "sass"
-  - "foundation"
-cover: "cover.jpg"
-photo:
-  - "screenshot-ipadpro-landscape.jpg"
-  - "mockup-surface.jpg"
-link: "http://www.htko.ca"
-code: "https://github.com/htko89/htko-site-base"
+  - hugo
+  - node.js
+  - gulp
+  - sass
+  - foundation
+link: 'http://www.htko.ca'
+code: 'https://github.com/htko89/htko-site-base'
+photos:
+  - cover.jpg
+  - screenshot-ipadpro-landscape.jpg
+  - mockup-surface.jpg
+path: code/htko/site-base
 ---
 # Personal Project
 Hugo base for personal portfolio at htko.ca. An experiment in static site generation, using [HUGO](http://gohugo.io/) as the engine. Dynamic sites are heavy in resource usage are vulnerable to attacks. Static sites are fast, efficient and most of all, provide minimal avenues of attack. However, they are difficult to maintain, and do not scale well with large sets of data.
