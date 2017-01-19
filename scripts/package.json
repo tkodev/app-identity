@@ -10,8 +10,8 @@
     "author": "Tony Ko",
     "license": "GPL-3.0",
     "devDependencies": {
-        "fs-extra": "^2.0.0",
         "browser-sync": "^2.10.0",
+        "fs-extra": "^2.0.0",
         "globby": "^6.1.0",
         "gray-matter": "^2.1.0",
         "gulp": "gulpjs/gulp#4.0",
