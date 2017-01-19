@@ -1,21 +1,21 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-12-20"
-title: "HTKO Identity"
-parent: "personal"
+date: '2016-12-20'
+title: HTKO Identity
 topics:
-  - "gfx"
+  - gfx
 tools:
-  - "logo"
-  - "typography"
-  - "identity"
-cover: "cover.jpg"
-photo:
-  - "mockup-cards.jpg"
-  - "mockup-all.jpg"
-link: "http://www.htko.ca"
-version: "1.10.0"
+  - logo
+  - typography
+  - identity
+link: 'http://www.htko.ca'
+version: 1.10.0
+photos:
+  - cover.jpg
+  - mockup-cards.jpg
+  - mockup-all.jpg
+path: gfx/personal/htko-identity
 ---
 # Personal Project
 Identity design for personal portfolio.

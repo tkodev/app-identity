@@ -1,22 +1,22 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-06-18"
-title: "Tribute Page"
-parent: "fcc"
+date: '2016-06-18'
+title: Tribute Page
 topics:
-  - "code"
+  - code
 tools:
-  - "bootstrap"
-cover: "cover.jpg"
-photo:
-  - "screenshot-ipadpro.jpg"
-  - "mockup-tablet.jpg"
-link: "https://htko89.github.io/fcc-tribute-page/release/"
-code: "https://github.com/htko89/fcc-tribute-page"
-program: "01 - Front End Development Certification"
-course: "04 - Basic Front End Development Projects"
-project: "01 - Build a Tribute Page"
+  - bootstrap
+link: 'https://htko89.github.io/fcc-tribute-page/release/'
+code: 'https://github.com/htko89/fcc-tribute-page'
+program: 01 - Front End Development Certification
+course: 04 - Basic Front End Development Projects
+project: 01 - Build a Tribute Page
+photos:
+  - cover.jpg
+  - screenshot-ipadpro.jpg
+  - mockup-tablet.jpg
+path: code/fcc/tribute-page
 ---
 # Student Project - Free Code Camp
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/NNvBQW/

@@ -9,12 +9,12 @@
 
   {{ partial "core/head-meta" . }}
 
-  <link href="{{ .Site.BaseURL }}static/css/app.css" rel="stylesheet">
-  <link href="{{ .Site.BaseURL }}static/css/animate.css" rel="stylesheet">
-  <link href="{{ .Site.BaseURL }}static/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/lib/css/animate-2017-01-19.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/lib/css/bulma-0.3.1.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/lib/css/font-awesome-4.7.0.min.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/default/css/index.css" rel="stylesheet">
 
 </head>
-<body style="background: url('{{ .Site.BaseURL }}static/img/background.png') center / 60% no-repeat fixed;">
+<body style="background: url('{{ .Site.BaseURL }}static/default/img/background.png') center / 60% no-repeat fixed;">
 
 {{ partial "main/header.html" . }}
-{{ partial "main/hero.html" . }}

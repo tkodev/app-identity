@@ -1,23 +1,23 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-12-14"
-title: "Hugo Theme Foundation6 Blog"
-parent: "personal"
+date: '2016-12-14'
+title: Hugo Theme Foundation6 Blog
 topics:
-  - "code"
+  - code
 tools:
-  - "hugo"
-  - "node.js"
-  - "gulp"
-  - "sass"
-  - "foundation"
-cover: "cover.jpg"
-photo:
-  - "screenshot-ipadpro-landscape.jpg"
-  - "mockup-tablet.jpg"
-link: "http://themes.gohugo.io/hugo-theme-foundation6-blog/"
-code: "https://github.com/htko89/hugo-theme-foundation6-blog"
+  - hugo
+  - node.js
+  - gulp
+  - sass
+  - foundation
+link: 'http://themes.gohugo.io/hugo-theme-foundation6-blog/'
+code: 'https://github.com/htko89/hugo-theme-foundation6-blog'
+photos:
+  - cover.jpg
+  - screenshot-ipadpro-landscape.jpg
+  - mockup-tablet.jpg
+path: code/personal/hugo-theme-foundation6-blog
 ---
 # Personal Project
 A simple [Hugo](https://gohugo.io) theme based on the [Foundation 6 blog (w/ sidebar) example](http://foundation.zurb.com/templates-previews-sites-f6/blog.html), with scss & js gulp build scripts.

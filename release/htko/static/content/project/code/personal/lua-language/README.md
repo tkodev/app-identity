@@ -1,17 +1,17 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-11-27"
-title: "LUA Language"
-parent: "personal"
+date: '2016-11-27'
+title: LUA Language
 topics:
-  - "code"
+  - code
 tools:
-  - "lua"
-cover: "cover.jpg"
-photo:
-  - "cover.jpg"
-code: "https://github.com/htko89/lua-language"
+  - lua
+code: 'https://github.com/htko89/lua-language'
+photos:
+  - cover.jpg
+  - cover.jpg
+path: code/personal/lua-language
 ---
 # Journal
 A journal of my learning progress and solutions in the LUA language.

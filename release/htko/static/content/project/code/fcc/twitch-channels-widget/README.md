@@ -1,24 +1,24 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-08-13"
-title: "Twitch Channels Widget"
-parent: "fcc"
+date: '2016-08-13'
+title: Twitch Channels Widget
 topics:
-  - "code"
+  - code
 tools:
-  - "bootstrap"
-  - "jquery"
-  - "API"
-cover: "cover.jpg"
-photo:
-  - "mockup-tablet.jpg"
-  - "mockup-mobile.jpg"
-link: "https://htko89.github.io/fcc-twitch-channels-widget/release/"
-code: "https://github.com/htko89/fcc-twitch-channels-widget"
-program: "01 - Front End Development Certification"
-course: "09 - Intermediate Front End Development Projects"
-project: "03 - Use the Twitchtv JSON API"
+  - bootstrap
+  - jquery
+  - API
+link: 'https://htko89.github.io/fcc-twitch-channels-widget/release/'
+code: 'https://github.com/htko89/fcc-twitch-channels-widget'
+program: 01 - Front End Development Certification
+course: 09 - Intermediate Front End Development Projects
+project: 03 - Use the Twitchtv JSON API
+photos:
+  - cover.jpg
+  - mockup-tablet.jpg
+  - mockup-mobile.jpg
+path: code/fcc/twitch-channels-widget
 ---
 # Student Project - Free Code Camp
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/Myvqmo/

@@ -1,22 +1,22 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2017-01-14"
-title: "Profile Api"
-parent: "fcc"
+date: '2017-01-14'
+title: Profile Api
 topics:
-  - "code"
+  - code
 tools:
-  - "node.js"
-  - "express.js"
-  - "cheerio"
-  - "request"
-  - "rest API"
-cover: "cover.jpg"
-photo:
-  - "cover.jpg"
-link: "http://fcc-profile-api.htko.ca/"
-code: "https://github.com/htko89/fcc-profile-api"
+  - node.js
+  - express.js
+  - cheerio
+  - request
+  - rest API
+link: 'http://api.htko.ca/fcc'
+code: 'https://github.com/htko89/fcc-profile-api'
+photos:
+  - cover.jpg
+  - cover.jpg
+path: code/fcc/profile-api
 ---
 # Personal Project
 JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.
@@ -31,14 +31,14 @@ node server.js
 ```
 
 ## Server Usage:
-* Your installed api server is available at: [http://localhost:80/](http://localhost:80/)
-  * **JSONP url**, example: [http://localhost:80/?user=your_username&callback=test](http://localhost:80/?user=your_username&callback=test)
-  * **JSON url**, example: [http://localhost:80/?user=your_username](http://localhost:80/?user=your_username)
-  * User and callback arguments are optional, example: [http://localhost:80/](http://localhost:80/)
-* I also host a server for public use **(be fair!)** at: http://fcc-profile-api.htko.ca/
-  * **JSONP url**, example: http://fcc-profile-api.htko.ca/?user=your_username&callback=
-  * **JSON url**, example: http://fcc-profile-api.htko.ca/?user=your_username
-  * User and callback arguments are optional, example: http://fcc-profile-api.htko.ca/
+* Your installed api server is available at: [](http://localhost:80/fcc)
+  * **JSONP url**, example: [](http://localhost:80/fcc?user=your_username&callback=test)
+  * **JSON url**, example: [](http://localhost:80/fcc?user=your_username)
+  * User and callback arguments are optional, example: [](http://localhost:80/)
+* I also host a server for public use **(be fair!)** at: http://api.htko.ca/fcc
+  * **JSONP url**, example: http://api.htko.ca/fcc?user=your_username&callback=
+  * **JSON url**, example: http://api.htko.ca/fcc?user=your_username
+  * User and callback arguments are optional, example: http://api.htko.ca/fcc
 
 ## Data Structure:
 * **HINT**: Don't specify a username to see how the curriculum map is organized. (use a linter)
