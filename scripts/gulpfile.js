@@ -26,7 +26,9 @@ gulp.task("copy", function(done) {
 // build function
 gulp.task("build", function(done) {
   build.hugo(conf, done);
-  build.lint(conf);
+});
+gulp.task("lint", function(done) {
+  build.lint(conf, done);
 });
 
 // server function
@@ -39,9 +41,9 @@ gulp.task("reload", function(done) {
 
 // watch function
 gulp.task("watch", function(done) {
-  gulp.watch( conf.filters.hugo ).on("all", gulp.series( "build", "reload"));
+  gulp.watch( conf.filters.hugo ).on("all", gulp.series( "build", "lint", "reload"));
 });
 
 // tasks
-gulp.task("builder", gulp.series("baseUrl", "copy", "build", "serve", "watch"));
-gulp.task("server", gulp.series("tempUrl", "copy", "build", "serve", "watch"));
+gulp.task("builder", gulp.series("baseUrl", "copy", "build", "lint", "serve", "watch"));
+gulp.task("server", gulp.series("tempUrl", "copy", "build", "lint", "serve", "watch"));
