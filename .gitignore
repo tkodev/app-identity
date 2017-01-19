@@ -1,8 +1,8 @@
 # Custom
 /sources/
-/release/htko/static/content/projects/
+/release/htko/static/content/project/
+/release/htko/public
 node_modules/
 bower_components/
 npm-debug.log
 yarn-error.log
-/release/htko/public
