@@ -12,7 +12,7 @@ var prettify = require("gulp-jsbeautifier");
 // hugo function
 function hugo(conf, callback) {
   fs.removeSync(conf.hugo.public);
-  console.log()
+  console.log(conf.hugo.url);
   return cp.spawn("hugo", ["-s", conf.root.hugo, "-b", conf.hugo.url], {
       stdio: "inherit"
     })
@@ -21,13 +21,14 @@ function hugo(conf, callback) {
 }
 
 // lint function
-function lint(conf) {
-  return gulp.src(path.join(conf.hugo.public, "/**/*.html"))
+function lint(conf, done) {
+  gulp.src(path.join(conf.hugo.public, "/**/*.html"))
     .pipe(prettify({
       indent_size: 2,
       preserve_newlines: false
     }))
-    .pipe(gulp.dest(conf.hugo.public));
+    .pipe(gulp.dest(conf.hugo.public))
+    .on("end", done);
 }
 
 // exports
