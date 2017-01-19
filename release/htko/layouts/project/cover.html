@@ -1,5 +1,5 @@
-<div class="cover card">
-  <div class="card-header">
+<div class="card">
+  <div class="card-image">
     <a href="{{ .Permalink }}">
       {{ if and (isset .Params "cover") .Params.cover }}
         <img src="{{ .Site.BaseURL }}content/{{ .Type }}/{{ index .Params.topics 0 }}/{{ .Params.parent }}/{{lower .Title | urlize }}/assets/{{ .Params.cover}}">
@@ -8,12 +8,12 @@
       {{ end }}
     </a>
   </div>
-  <div class="card-section arrow-up">
-    <h6>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h6>
-    <p>
-      {{ partial "snippets/tools" . }}
-    </p>
+  <div class="card-content">
+    <div class="content">
+      <p class="title is-4"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+      <p>
+        {{ partial "snippets/tools" . }}
+      </p>
+    </div>
   </div>
 </div>
