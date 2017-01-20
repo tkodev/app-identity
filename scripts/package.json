@@ -27,7 +27,7 @@
     },
     "main": "gulpfile.js",
     "scripts": {
-        "builder": "gulp builder --production",
+        "builder": "gulp builder",
         "server": "gulp server"
     },
     "private": true
