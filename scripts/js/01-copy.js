@@ -2,7 +2,6 @@
 "use strict";
 
 // global node modules
-var gulp = require("gulp");
 var path = require("path");
 var fs = require("fs-extra");
 var globby = require("globby");
