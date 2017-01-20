@@ -20,7 +20,7 @@ gulp.task("tempUrl", function(done) {
 
 // copy function
 gulp.task("copy", function(done) {
-  copy(conf, done);
+  done(); // copy(conf, done);
 });
 
 // build function
