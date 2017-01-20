@@ -46,10 +46,13 @@ gulp.task("reload", function(done) {
 });
 
 // watch function
-gulp.task("watch", function(done) {
-  gulp.watch( conf.filters.hugo ).on("all", gulp.series( "sass", "build", "lint", "reload"));
+gulp.task("watch:sass", function(done) {
+  gulp.watch(conf.filters.sass).on("all", gulp.series("sass"));
+});
+gulp.task("watch:build", function(done) {
+  gulp.watch(conf.filters.hugo).on("all", gulp.series("build", "lint", "reload"));
 });
 
 // tasks
-gulp.task("builder", gulp.series("baseUrl", "copy", "sass", "build", "lint", "serve", "watch"));
-gulp.task("server", gulp.series("tempUrl", "copy", "sass", "build", "lint", "serve", "watch"));
+gulp.task("builder", gulp.series("baseUrl", "copy", "sass", "build", "lint", "serve", gulp.parallel("watch:sass", "watch:build")));
+gulp.task("server", gulp.series("tempUrl", "copy", "sass", "build", "lint", "serve", gulp.parallel("watch:sass", "watch:build")));
