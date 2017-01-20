@@ -47,7 +47,7 @@ gulp.task("reload", function(done) {
 
 // watch function
 gulp.task("watch", function(done) {
-  gulp.watch(conf.filters.hugo).on("all", gulp.series("sass", "build", "lint", "reload"));
+  gulp.watch(conf.filters.hugo).on("change", gulp.series("sass", "build", "lint", "reload"));
 });
 
 // tasks
