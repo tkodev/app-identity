@@ -12,7 +12,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 // bulma function
 function bulma(conf, done) {
-  fs.removeSync(path.join(conf.hugo.static, "bulma-0.3.1/css"));
+  fs.removeSync(path.join(conf.hugo.static, "bulma-0.3.1/css")); // triggers watch
   gulp.src(path.join(conf.hugo.source, "bulma-0.3.1/bulma.sass"))
     .pipe(rename({
       suffix: '.min'
@@ -23,7 +23,7 @@ function bulma(conf, done) {
     .pipe(sourcemaps.init())
     .pipe(postcss([require('autoprefixer')]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(path.join(conf.hugo.static, "bulma-0.3.1/css")))
+    .pipe(gulp.dest(path.join(conf.hugo.static, "bulma-0.3.1/css"))) // triggers watch x2
     .on("end", done);
 }
 
