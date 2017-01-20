@@ -14,9 +14,8 @@ root:
   projects: "../../../../../public"
 
 filters:
-  sass:
-    - "source/**/*.sass"
   hugo:
+    - "source/**/*.sass"
     - "archetypes/**/*"
     - "data/**/*"
     - "layouts/**/*"

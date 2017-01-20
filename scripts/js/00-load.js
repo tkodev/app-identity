@@ -15,7 +15,7 @@ var {
   filters
 } = loadConfigH(); // Load hugo config
 function loadConfigH() {
-  let ymlFile = fs.readFileSync("config/hugo.yml", "utf8");
+  let ymlFile = fs.readFileSync("config/config.yml", "utf8");
   return yaml.load(ymlFile);
 }
 
@@ -27,7 +27,7 @@ hugo.source = path.join(root.hugo, hugo.source);
 hugo.static = path.join(root.hugo, hugo.static);
 hugo.content = path.join(root.hugo, hugo.content);
 hugo.projects = path.join(root.hugo, hugo.projects);
-var globPrepend = function(prepend, v){
+var globPrepend = function(prepend, v) {
   if (v.charAt(0) === "/") {
     return v;
   } else if (v.charAt(0) === "!") {
@@ -36,13 +36,10 @@ var globPrepend = function(prepend, v){
     return path.join(prepend, v);
   }
 }
-filters.sass = filters.sass.concat(filters.ignore).map(function(v){
+filters.hugo = filters.hugo.concat(filters.ignore).map(function(v) {
   return globPrepend(root.hugo, v);
 });
-filters.hugo = filters.hugo.concat(filters.ignore).map(function(v){
-  return globPrepend(root.hugo, v);
-});
-filters.projects = filters.projects.concat(filters.ignore).map(function(v){
+filters.projects = filters.projects.concat(filters.ignore).map(function(v) {
   return globPrepend(root.projects, v);
 });
 
