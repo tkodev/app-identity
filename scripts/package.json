@@ -16,6 +16,8 @@
         "gray-matter": "^2.1.0",
         "gulp": "gulpjs/gulp#4.0",
         "gulp-jsbeautifier": "^2.0.3",
+        "gulp-postcss": "^6.3.0",
+        "gulp-sourcemaps": "^2.4.0",
         "gulp-util": "^3.0.7",
         "js-yaml": "^3.7.0",
         "yargs": "^6.6.0"

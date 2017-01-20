@@ -5,8 +5,9 @@
 var gulp = require("gulp");
 var conf = require("./js/00-load.js");
 var copy = require("./js/01-copy.js");
-var build = require("./js/02-build.js");
-var serve = require("./js/03-serve.js");
+var sass = require("./js/02-sass.js");
+var build = require("./js/03-build.js");
+var serve = require("./js/04-serve.js");
 
 // url functions
 gulp.task("baseUrl", function(done) {
@@ -21,6 +22,11 @@ gulp.task("tempUrl", function(done) {
 // copy function
 gulp.task("copy", function(done) {
   done(); // copy(conf, done);
+});
+
+// sass function
+gulp.task("sass", function(done) {
+  sass.bulma(conf, done);
 });
 
 // build function
@@ -41,9 +47,9 @@ gulp.task("reload", function(done) {
 
 // watch function
 gulp.task("watch", function(done) {
-  gulp.watch( conf.filters.hugo ).on("all", gulp.series( "build", "lint", "reload"));
+  gulp.watch( conf.filters.hugo ).on("all", gulp.series( "sass", "build", "lint", "reload"));
 });
 
 // tasks
-gulp.task("builder", gulp.series("baseUrl", "copy", "build", "lint", "serve", "watch"));
-gulp.task("server", gulp.series("tempUrl", "copy", "build", "lint", "serve", "watch"));
+gulp.task("builder", gulp.series("baseUrl", "copy", "sass", "build", "lint", "serve", "watch"));
+gulp.task("server", gulp.series("tempUrl", "copy", "sass", "build", "lint", "serve", "watch"));
