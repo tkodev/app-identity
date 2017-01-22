@@ -47,8 +47,8 @@ gulp.task("reload", function(done) {
 
 // watch function
 gulp.task("watch", function(done) {
-  gulp.watch(conf.filters.sass).on("all", gulp.series("build:pre"));
-  gulp.watch(conf.filters.hugo).on("all", gulp.series("build:post", "reload"));
+  gulp.watch(conf.filters.sass).on("change", gulp.series("build:pre"));
+  gulp.watch(conf.filters.hugo).on("change", gulp.series("build:post", "reload"));
 });
 
 // tasks
