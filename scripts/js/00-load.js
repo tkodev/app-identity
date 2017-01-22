@@ -36,6 +36,9 @@ var globPrepend = function(prepend, v) {
     return path.join(prepend, v);
   }
 }
+filters.sass = filters.sass.concat(filters.ignore).map(function(v) {
+  return globPrepend(root.hugo, v);
+});
 filters.hugo = filters.hugo.concat(filters.ignore).map(function(v) {
   return globPrepend(root.hugo, v);
 });
