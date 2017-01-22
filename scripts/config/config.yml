@@ -1,7 +1,7 @@
 # Hugo paths
 hugo:
-  baseUrl: "http://htko.ca/"
-  tempUrl: "http://localhost:5678/"
+  baseUrl: "http://htko.ca"
+  tempUrl: "http://localhost:5678"
   port: 5678
   public: "/public"
   source: "/source"
@@ -16,6 +16,7 @@ root:
 filters:
   sass:
     - "source/**/*.sass"
+    - "source/**/*.scss"
   hugo:
     - "archetypes/**/*"
     - "data/**/*"

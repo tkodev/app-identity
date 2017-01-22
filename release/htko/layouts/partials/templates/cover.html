@@ -1,12 +1,39 @@
-<main id="main">
-  <div class="row" id="content">
-    <div class="small-12 columns">
-      <h1>{{ .Title }} _</h1>
+<section id="main" class="b-section h-section-main">
+  <div class="h-container b-container ">
+
+    <div class="h-header b-columns b-is-mobile">
+      <div class="b-column b-is-narrow">
+        <h6 class="h-light">
+          {{ .Title }} Projects _
+        </h6>
+      </div>
+      <div class="b-column b-has-text-right">
+        <h6 class="h-light">
+          &lt; Gallery &gt;
+        </h6>
+      </div>
     </div>
-    {{ range $index, $page := .Paginator.Pages }}
-      <div class="small-6 medium-4 large-3 columns" >
+
+    <div class="h-gallery b-columns b-is-multiline b-is-mobile">
+      {{ range $index, $page := .Paginator.Pages }}
+      <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
         {{ .Render "cover" }}
       </div>
-    {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="h-header b-columns b-is-mobile">
+      <div class="b-column b-is-narrow">
+        <h6 class="h-light">
+          {{ .Title }} Projects _
+        </h6>
+      </div>
+      <div class="b-column b-has-text-right">
+        <h6 class="h-light">
+          &lt; /Gallery &gt;
+        </h6>
+      </div>
+    </div>
+
   </div>
-</main>
+</section>

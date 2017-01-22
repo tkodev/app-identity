@@ -1,27 +1,43 @@
 {{ partial "core/head" . }}
 
-<section id="main" class="section">
-  <div class="container">
-    <div class="columns is-multiline is-mobile">
-      <!-- <div class="column is-12">
-        <h1>Recent 4 _</h1>
-      </div> -->
-      {{ range first 4 (where .Data.Pages "Type" "project") }}
-        <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop" >
-          {{ .Render "cover" }}
-        </div>
-      {{ end }}
-      <!-- <div class="column is-12">
-        <h1>Random 8 _</h1>
-      </div> -->
+<section id="main" class="b-section h-section-main">
+  <div class="h-container b-container ">
+
+    <div class="h-header b-columns b-is-mobile">
+      <div class="b-column b-is-narrow">
+        <h6 class="h-light">
+          All Projects _
+        </h6>
+      </div>
+      <div class="b-column b-has-text-right">
+        <h6 class="h-light">
+          &lt; Gallery &gt;
+        </h6>
+      </div>
+    </div>
+
+    <div class="h-gallery b-columns b-is-multiline b-is-mobile">
       {{ range first 8 (shuffle (where .Data.Pages "Type" "project")) }}
-        <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop" >
-          {{ .Render "cover" }}
-        </div>
+      <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+        {{ .Render "cover" }}
+      </div>
       {{ end }}
     </div>
+
+    <div class="h-header b-columns b-is-mobile">
+      <div class="b-column b-is-narrow">
+        <h6 class="h-light">
+          All Projects _
+        </h6>
+      </div>
+      <div class="b-column b-has-text-right">
+        <h6 class="h-light">
+          &lt; /Gallery &gt;
+        </h6>
+      </div>
+    </div>
+
   </div>
 </section>
-
 
 {{ partial "core/foot" . }}

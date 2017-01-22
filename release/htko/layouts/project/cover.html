@@ -1,19 +1,10 @@
-<div class="card">
-  <div class="card-image">
-    <a href="{{ .Permalink }}">
-      {{ if and (isset .Params "cover") .Params.cover }}
-        <img src="{{ .Site.BaseURL }}content/{{ .Type }}/{{ index .Params.topics 0 }}/{{ .Params.parent }}/{{lower .Title | urlize }}/assets/{{ .Params.cover}}">
-      {{ else }}
-        <img class="img-responsive" src="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/cover.png">
-      {{ end }}
-    </a>
-  </div>
-  <div class="card-content">
-    <div class="content">
-      <p class="title is-4"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-      <p>
-        {{ partial "snippets/tools" . }}
-      </p>
-    </div>
+{{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
+{{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
+<div class="h-cover" style="background-image: url('{{ .Site.BaseURL }}{{ $img }}')">
+  <div class="h-square"></div>
+  <div class="h-content h-invert b-has-text-centered">
+    <a class="h-link" href="{{ .Permalink }}"><img class="h-logo" src="{{ .Site.BaseURL }}{{ $img }}">
+      <h6 class="h-title">{{ .Title }}</h6></a>
+    <p class="h-list">{{ partial "snippets/tools" . }}</p>
   </div>
 </div>

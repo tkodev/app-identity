@@ -3,7 +3,7 @@
 
 // global node modules
 var path = require("path");
-var fs = require("fs-extra");
+var fs = require("graceful-fs-extra");
 var yargs = require("yargs");
 var yaml = require("js-yaml");
 

@@ -25,17 +25,22 @@ gulp.task("copy", function(done) {
 });
 
 // sass function
-gulp.task("build:pre", function(done) {
+gulp.task("build:pre:bulma", function(done) {
   build_pre.bulma(conf, done);
 });
+gulp.task("build:pre:htko", function(done) {
+  build_pre.htko(conf, done);
+});
+gulp.task("build:pre", gulp.series("build:pre:bulma", "build:pre:htko"));
 
 // build function
-gulp.task("lint", function(done) {
-  build_post.lint(conf, done);
-});
-gulp.task("build:post",  gulp.series('lint'), function(done) {
+gulp.task("build:post:hugo", function(done) {
   build_post.hugo(conf, done);
 });
+gulp.task("build:post:lint", function(done) {
+  build_post.lint(conf, done);
+});
+gulp.task("build:post", gulp.series("build:post:hugo", "build:post:lint"));
 
 // server function
 gulp.task("serve", function(done) {

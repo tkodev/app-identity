@@ -40,49 +40,49 @@ menu:
   main:
     - name          : "Code"
       identifier    : "code"
-      pre           : "<i class='fa fa-code fa-1x'></i>"
+      pre           : "fa-code"
       url           : "/topics/code/"
       weight        : -110
     - name          : "GFX"
       identifier    : "gfx"
-      pre           : "<i class='fa fa-paint-brush fa-1x'></i>"
+      pre           : "fa-paint-brush"
       url           : "/topics/gfx/"
       weight        : -110
     - name          : "Interior Design"
       identifier    : "interior-design"
-      pre           : "<i class='fa fa-bank fa-1x'></i>"
+      pre           : "fa-bank"
       url           : "/topics/interior design/"
       weight        : -110
     # - name          : "Photography"
     #   identifier    : "photography"
-    #   pre           : "<i class='fa fa-camera-retro fa-1x'></i>"
+    #   pre           : "fa-camera-retro"
     #   url           : "/topics/photography/"
     #   weight        : -110
   links:
     # - name          : "Blog"
     #   identifier    : "blog"
-    #   pre           : "<i class='fa fa-bookmark-o fa-1x'></i>"
+    #   pre           : "fa-bookmark-o"
     #   url           : "/categories/blog"
     #   weight        : -110
     - name          : "About Me"
       identifier    : "about-me"
-      pre           : "<i class='fa fa-user-circle-o fa-1x'></i>"
+      pre           : "fa-user-circle-o"
       url           : "page/about-me/README/"
       weight        : -100
   footer:
     - name          : "Linkedin"
       identifier    : "linkedin"
-      pre           : "<i class='fa fa-linkedin fa-1x'></i>"
+      pre           : "fa-linkedin"
       url           : "http://lnked.in/htko89"
       weight        : -100
     - name          : "Github"
       identifier    : "github"
-      pre           : "<i class='fa fa-code-fork fa-1x'></i>"
+      pre           : "fa-code-fork"
       url           : "https://github.com/htko89"
       weight        : -110
     - name          : "Instagram"
       identifier    : "instagram"
-      pre           : "<i class='fa fa-instagram fa-1x'></i>"
+      pre           : "fa-instagram"
       url           : "https://www.instagram.com/htkoca"
       weight        : -120
 ...
