@@ -23,7 +23,7 @@
           {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
           {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
           <div class="h-banner" style="background-image: url('{{ .Site.BaseURL }}{{ $img }}')">
-            <div class="h-content">
+            <div class="h-content h-invert b-has-text-centered">
               <img class="h-logo" src="{{ .Site.BaseURL }}{{ $img }}">
               <h6 class="h-title">{{ .Title }}</h6>
               <p class="h-list">{{ partial "snippets/tools" . }}</p>
@@ -34,14 +34,14 @@
     </div>
 
     <div class="h-article b-columns b-is-multiline b-is-mobile">
-      <div class="h-content b-column b-is-12-mobile b-is-two-thirds-tablet b-is-8-desktop">
+      <div class="h-content b-column b-is-12-mobile b-is-two-5-tablet b-is-8-desktop">
         <h6>Project</h6>
         <hr>
         <div class="b-content">
           {{ .Content }}
         </div>
       </div>
-      <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop">
+      <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-offset-1-tablet b-is-offset-1-desktop">
         <h6>Metadata</h6>
         <hr>
         {{ if .Date }}
