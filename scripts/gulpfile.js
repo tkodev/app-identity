@@ -21,7 +21,8 @@ gulp.task("tempUrl", function(done) {
 
 // copy function
 gulp.task("copy", function(done) {
-  done(); // copy(conf, done);
+  // copy(conf, done);
+  done();
 });
 
 // sass function
