@@ -10,7 +10,7 @@ $control-radius-small: $radius-small !default
   box-shadow: none
   display: inline-flex
   font-size: $size-normal
-  height: 2.285em
+  height: 2.5em
   justify-content: flex-start
   line-height: 1.5
   padding-left: 0.75em
@@ -19,12 +19,12 @@ $control-radius-small: $radius-small !default
   vertical-align: top
   // States
   &:focus,
-  &.is-focused,
+  &.#{$prefix}is-focused,
   &:active,
-  &.is-active
+  &.#{$prefix}is-active
     outline: none
   &[disabled],
-  &.is-disabled
+  &.#{$prefix}is-disabled
     pointer-events: none
 
 // The controls sizes use mixins so they can be used at different breakpoints

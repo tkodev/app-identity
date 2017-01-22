@@ -1,20 +1,30 @@
-<nav class="nav has-shadow">
-  <div class="container">
-    <div class="nav-left">
-      <a class="nav-item">
-        <img class="logo" src="{{ .Site.BaseURL }}/static/default/img/htko-10-full.svg" alt="Bulma logo">
-      </a>
-      <a class="nav-item {{ if .IsHome }}is-active{{ end }}" href="{{ .Site.BaseURL }}">{{ .Site.Params.subtitle | safeHTML }}</a>
-      {{ $currentNode := . }}
-      {{ range .Site.Menus.main }}
-        <a class="nav-item is-tab {{if $currentNode.IsMenuCurrent "main" . }}is-active{{end}}" href="{{.URL}}">{{ .Pre }}<span class="show-for-medium">{{ .Name }}</span></a>
-      {{end}}
-    </div>
-    <div class="nav-right nav-menu is-active">
-      {{ $currentNode := . }}
-      {{ range .Site.Menus.links }}
-        <a class="nav-item is-tab {{if $currentNode.IsMenuCurrent "links" . }}is-active{{end}}" href="{{.URL}}">{{ .Pre }}<span class="show-for-medium">{{ .Name }}</span></a>
-      {{end}}
+<section id="header" class="b-section h-section-header">
+  <div class="b-container">
+    <div class="b-columns b-is-mobile">
+
+      <div class="b-column b-is-narrow">
+        <nav class="h-menu-main">
+          <h6>
+            <a><img class="h-logo" src="{{ .Site.BaseURL }}/static/default/img/htko-10-full.svg"></a>
+            <a class="h-light {{ if .IsHome }}b-is-active{{ end }}" href="{{ .Site.BaseURL }}">Hei<strong>&nbsp;Tony&nbsp;</strong>Ko</a>
+            {{ $currentNode := . }}
+            {{ range .Site.Menus.main }}
+              <a class="{{if $currentNode.IsMenuCurrent "main" . }}b-is-active{{end}}" href="{{.URL}}"><i class='fa {{ .Pre }} fa-1x'></i><span class="b-is-hidden-touch">&nbsp;{{ .Name }}</span></a>
+            {{end}}
+          </h6>
+        </nav>
+      </div>
+      <div class="b-column b-has-text-right">
+        <nav class="h-menu-main">
+          <h6>
+            {{ $currentNode := . }}
+            {{ range .Site.Menus.links }}
+              <a class="{{if $currentNode.IsMenuCurrent "links" . }}b-is-active{{end}}" href="{{.URL}}"><i class='fa {{ .Pre }} fa-1x'></i><span class="b-is-hidden-touch">&nbsp;{{ .Name }}</span></a>
+            {{end}}
+          </h6>
+        </nav>
+      </div>
+
     </div>
   </div>
-</nav>
+</section>

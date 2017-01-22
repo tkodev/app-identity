@@ -1,0 +1,9 @@
+// .#{$prefix}square:before {
+//   content: '';
+//   float: left;
+//   padding-top: 100%;
+// }
+
+.#{$prefix}debug {
+  border: red dashed 1px;
+}

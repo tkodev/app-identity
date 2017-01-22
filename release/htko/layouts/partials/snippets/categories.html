@@ -1,8 +1,3 @@
 {{ if .Params.categories }}
-  <i class="fa fa-folder fa-1x"></i>
-  {{ range $index, $category := .Params.categories }}
-    {{ if gt $index 0 }},
-    {{ end }}
-    <a class="capitalize" href="/categories/{{ . | urlize }}">{{ . }}</a>
-  {{ end }}
+  {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a class="capitalize" href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
 {{ end }}
