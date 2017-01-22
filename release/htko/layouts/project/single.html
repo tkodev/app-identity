@@ -44,6 +44,12 @@
       <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop">
         <h6>Metadata</h6>
         <hr>
+        {{ if .Date }}
+          <div class="h-widget">
+            <h6>Date:</h6>
+            <p class="h-list">{{ partial "snippets/date" . }}<p>
+          </div>
+        {{ end }}
         {{ if .Params.tools }}
           <div class="h-widget">
             <h6>Tools:</h6>
