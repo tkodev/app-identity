@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/industrial-design/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <atom:link href="http://htko.ca/tools/industrial-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mood Light Modulator</title>
+      <link>http://htko.ca/project/interior-design/ocad/mood-light-modulator/README/</link>
+      <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/project/interior-design/ocad/mood-light-modulator/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
+
+&lt;p&gt;A light modulator is an object that interferes with and distorts a beam of light. Often light sources are sharp and harsh on the eyes therefore requiring a well considered and designed casing to be most effective. There are numerous variables to consider when designing a successful light modulator. Some of these factors are location, task, user group, light source, light configuration, surrounding light sources, surrounding materiality, energy source, accessibility and aesthetic qualities.&lt;/p&gt;
+
+&lt;h1 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Safe and structurally sound light modulator.&lt;/li&gt;
+&lt;li&gt;Inspired and driven conceptually by abstract concept: “mysterious”.&lt;/li&gt;
+&lt;li&gt;Derives formal implications from concept.&lt;/li&gt;
+&lt;li&gt;Concept manifestation in shape, material, light quality, texture, colour, size and fabrication.&lt;/li&gt;
+&lt;li&gt;LED light source.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

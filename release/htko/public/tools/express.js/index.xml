@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/express.js/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <atom:link href="http://htko.ca/tools/express.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Profile Api</title>
+      <link>http://htko.ca/project/code/fcc/profile-api/README/</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/project/code/fcc/profile-api/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.&lt;/p&gt;
+
+&lt;h2 id=&#34;server-install&#34;&gt;Server Install:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Do the following in a system with node &amp;amp; npm v6.9.4 :
+&lt;code&gt;
+git clone https://github.com/htko89/fcc-profile-api.git
+cd fcc-profile-api/release
+npm install
+node server.js
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;server-usage&#34;&gt;Server Usage:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your installed api server is available at: [](&lt;a href=&#34;http://localhost:80/fcc&#34;&gt;http://localhost:80/fcc&lt;/a&gt;)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: [](&lt;a href=&#34;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&#34;&gt;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: [](&lt;a href=&#34;http://localhost:80/fcc?user=your_username&#34;&gt;http://localhost:80/fcc?user=your_username&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;User and callback arguments are optional, example: [](&lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;I also host a server for public use &lt;strong&gt;(be fair!)&lt;/strong&gt; at: &lt;a href=&#34;http://api.htko.ca/fcc&#34;&gt;http://api.htko.ca/fcc&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://api.htko.ca/fcc?user=your_username&amp;amp;callback=&#34;&gt;http://api.htko.ca/fcc?user=your_username&amp;amp;callback=&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://api.htko.ca/fcc?user=your_username&#34;&gt;http://api.htko.ca/fcc?user=your_username&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://api.htko.ca/fcc&#34;&gt;http://api.htko.ca/fcc&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;data-structure&#34;&gt;Data Structure:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HINT&lt;/strong&gt;: Don&amp;rsquo;t specify a username to see how the curriculum map is organized. (use a linter)&lt;/li&gt;
+&lt;li&gt;Data returned are nested objects: Certification &amp;gt; Chapter &amp;gt; Challenge.&lt;/li&gt;
+&lt;li&gt;Older challenges that have been removed from the FreeCodeCamp curriculum is under &lt;code&gt;Deprecated&lt;/code&gt; key.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;example-shortened-output-http-code-200&#34;&gt;Example shortened output (HTTP code 200).&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;Front End Development Certification&amp;quot;: {
+    &amp;quot;HTML5 and CSS&amp;quot;: {
+      &amp;quot;_time&amp;quot;: &amp;quot;1969-12-31T10:00:00.000Z&amp;quot;,
+      &amp;quot;Inform with the Paragraph Element&amp;quot; : {
+        &amp;quot;_link&amp;quot; : &amp;quot;https://www.freecodecamp.com/challenges/inform-with-the-paragraph-element&amp;quot;,
+        &amp;quot;_dateC&amp;quot; : &amp;quot;May 21, 2016&amp;quot;,
+        &amp;quot;_dateU&amp;quot; : &amp;quot;May 22, 2016&amp;quot;,
+        &amp;quot;_code&amp;quot; : &amp;quot;https://www.freecodecamp.com//challenges/Inform with the Paragraph Element?solution=%0A%3Ch1%3EHello%20World%3C%2Fh1%3E%0A%3Ch2%3ECatPhotoApp%3C%2Fh2%3E%0A%3Cp%3EHello%20Paragraph%3C%2Fp%3E%0A&amp;quot;
+      }
+    }
+  },
+  &amp;quot;Data Visualization Certification&amp;quot;: {
+		&amp;quot;Sass&amp;quot;: {
+			&amp;quot;_time&amp;quot;: &amp;quot;1969-12-31T10:00:00.000Z&amp;quot;,
+			&amp;quot;Learn Sass Challenges&amp;quot;: {
+				&amp;quot;_status&amp;quot;: &amp;quot;Coming Soon&amp;quot;
+			}
+		}
+  },
+  &amp;quot;Coding Interview Preparation&amp;quot;: {
+		&amp;quot;Coding Interview Training&amp;quot;: {
+			&amp;quot;_time&amp;quot;: &amp;quot;1970-01-03T03:00:00.000Z&amp;quot;,
+			&amp;quot;_desc&amp;quot;: &amp;quot;To qualify for this coding interview training, you must first earn all four certifications: Front End, Data Visualization, Back End, and Full Stack&amp;quot;,
+			&amp;quot;Soft Skill Training&amp;quot;: {},
+			&amp;quot;Critical Thinking Training&amp;quot;: {},
+			&amp;quot;Whiteboard Coding Training&amp;quot;: {}
+		}
+  },
+  &amp;quot;Deprecated&amp;quot;: {
+  	&amp;quot;Add Alt Text to an Image for Accessibility&amp;quot;: {
+  		&amp;quot;_dateC&amp;quot;: &amp;quot;May 21, 2016&amp;quot;,
+  		&amp;quot;_code&amp;quot;: &amp;quot;https://www.freecodecamp.com//challenges/Add Alt Text to an Image for Accessibility?solution=...&amp;quot;
+  	}
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;example-error-output-http-code-500&#34;&gt;Example error output (HTTP code 500).&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+  &amp;quot;Errors&amp;quot;: {
+    &amp;quot;_message&amp;quot;: &amp;quot;Cannot request freeCodeCamp map&amp;quot;,
+    &amp;quot;_error&amp;quot;: {}
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
