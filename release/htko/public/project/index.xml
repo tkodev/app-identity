@@ -20,18 +20,19 @@
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
-&lt;p&gt;Hugo base for personal portfolio at htko.ca. An experiment in static site generation, using &lt;a href=&#34;http://gohugo.io/&#34;&gt;HUGO&lt;/a&gt; as the engine. Dynamic sites are heavy in resource usage are vulnerable to attacks. Static sites are fast, efficient and most of all, provide minimal avenues of attack. However, they are difficult to maintain, and do not scale well with large sets of data.&lt;/p&gt;
+&lt;p&gt;Hugo base for personal portfolio at htko.ca. An experiment in static site generation, using &lt;a href=&#34;http://gohugo.io/&#34;&gt;&lt;strong&gt;Hugo&lt;/strong&gt;&lt;/a&gt; as the engine. Dynamic sites are heavy in resource usage are vulnerable to attacks. Static sites are fast, efficient and most of all, provide minimal avenues of attack. However, they are difficult to maintain, and do not scale well with large sets of data.&lt;/p&gt;
+
+&lt;p&gt;I have selected &lt;a href=&#34;http://bulma.io/&#34;&gt;&lt;strong&gt;Bulma&lt;/strong&gt;&lt;/a&gt; as my css framework of choice as it is CSS only, unopinionated, fast &lt;strong&gt;(&amp;lt;200KB!)&lt;/strong&gt;, yet supports all modern flexbox grid conventions. I also created a mini CSS framework of my own, to supplement Bulma. My build process builds the css, pulls from my local portfolio directory the needed projects, then builds it with hugo, and renders it with &lt;strong&gt;BrowserSync&lt;/strong&gt;. I deploy using &lt;strong&gt;Git&lt;/strong&gt; on &lt;strong&gt;DigitalOcean&lt;/strong&gt; because it does delta updates, which is especially important when dealing with hugo&amp;rsquo;s large output.&lt;/p&gt;
 
 &lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; task engine&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gulp-sass&lt;/code&gt;,&lt;code&gt;gulp-cssnano&lt;/code&gt;,&lt;code&gt;gulp-autoprefixer&lt;/code&gt; to compile scss files to css.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;babel&lt;/code&gt;,&lt;code&gt;gulp-concat&lt;/code&gt;,&lt;code&gt;gulp-uglify&lt;/code&gt; to compile js files.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gulp-sourcemaps&lt;/code&gt; for sourcemapping.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp&lt;/code&gt;, &lt;code&gt;node&lt;/code&gt; task engine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;js-yaml&lt;/code&gt;, &lt;code&gt;gray-matter&lt;/code&gt; for front matter / build configuration processing.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp-sass&lt;/code&gt;,&lt;code&gt;gulp-postcss&lt;/code&gt;,&lt;code&gt;autoprefixer&lt;/code&gt; to compile sass &amp;amp; scss files to css.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;globby&lt;/code&gt;,&lt;code&gt;minimatch&lt;/code&gt;,&lt;code&gt;fs-extra&lt;/code&gt; for portfolio projects compilation.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;js-beautify&lt;/code&gt; for linting.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo&lt;/code&gt; (&lt;code&gt;livereload&lt;/code&gt;) or &lt;code&gt;browser-sync&lt;/code&gt; for debug rendering.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo&lt;/code&gt;, &lt;code&gt;browser-sync&lt;/code&gt; for building and rendering.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -46,7 +47,11 @@
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
-&lt;p&gt;JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.&lt;/p&gt;
+&lt;p&gt;JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request&lt;/p&gt;
+
+&lt;h1 id=&#34;example&#34;&gt;Example&lt;/h1&gt;
+
+&lt;p&gt;An example of this API in use is on the &lt;a href=&#34;http://htko.ca/project/code/fcc/free-code-camp/README/&#34;&gt;FreeCodeCamp&lt;/a&gt; project page.&lt;/p&gt;
 
 &lt;h2 id=&#34;server-install&#34;&gt;Server Install:&lt;/h2&gt;
 
@@ -63,12 +68,12 @@ node server.js
 &lt;h2 id=&#34;server-usage&#34;&gt;Server Usage:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Your installed api server is available at: [](&lt;a href=&#34;http://localhost:80/fcc&#34;&gt;http://localhost:80/fcc&lt;/a&gt;)
+&lt;li&gt;Your installed api server is available at: &lt;a href=&#34;http://localhost:80/fcc&#34;&gt;http://localhost:80/fcc&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: [](&lt;a href=&#34;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&#34;&gt;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: [](&lt;a href=&#34;http://localhost:80/fcc?user=your_username&#34;&gt;http://localhost:80/fcc?user=your_username&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;User and callback arguments are optional, example: [](&lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&#34;&gt;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://localhost:80/fcc?user=your_username&#34;&gt;http://localhost:80/fcc?user=your_username&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;I also host a server for public use &lt;strong&gt;(be fair!)&lt;/strong&gt; at: &lt;a href=&#34;http://api.htko.ca/fcc&#34;&gt;http://api.htko.ca/fcc&lt;/a&gt;
 
