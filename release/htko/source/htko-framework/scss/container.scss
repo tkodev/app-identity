@@ -6,76 +6,19 @@
 
   .#{$prefix}gallery {
     background-color: $grey-dark;
-
-    .#{$prefix}banner {
-      height: 20rem;
-      background: no-repeat center center;
-      background-size: cover;
-
-      .#{$prefix}content {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: column;
-        background-color: rgba(0, 0, 0, 0.4);
-
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.2);
-        }
-
-        .#{$prefix}logo {
-          height: 60%;
-        }
-
-        .#{$prefix}title {
-          margin: 1rem 0 0.5rem;
-        }
-      }
-    }
-
-    .#{$prefix}cover {
-      height: 100%;
-      width: 100%;
-      background: no-repeat center center;
-      background-size: cover;
-
-      .#{$prefix}square:before {
-        content: '';
-        float: left;
-        padding-top: 100%;
-      }
-
-      .#{$prefix}content {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: column;
-        background-color: rgba(0, 0, 0, 0.4);
-
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.2);
-        }
-
-        .#{$prefix}logo {
-          width: 60%;
-        }
-
-        .#{$prefix}title {
-          margin: 1rem 0 0.5rem;
-        }
-      }
-    }
   }
 
   .#{$prefix}article {
-    padding: 2rem;
     background-color: $white-ter;
+    padding: 1rem;
+
+    .#{$prefix}content {
+      padding: 1rem;
+    }
 
     .#{$prefix}metadata {
+      padding: 1rem;
+
       .#{$prefix}widget {
         padding-bottom: 1rem;
       }

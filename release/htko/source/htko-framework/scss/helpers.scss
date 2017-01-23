@@ -3,7 +3,10 @@
 //   float: left;
 //   padding-top: 100%;
 // }
-
+.#{$prefix}stretch {
+  height: 100%;
+  width: 100%;
+}
 .#{$prefix}debug {
   border: red dashed 1px;
 }
