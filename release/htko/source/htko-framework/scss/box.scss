@@ -24,6 +24,12 @@
     }
   }
 
+  .#{$prefix}logo {
+    height: 40%;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
   .#{$prefix}center {
     display: flex;
     align-items: center;
