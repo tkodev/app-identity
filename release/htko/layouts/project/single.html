@@ -3,45 +3,25 @@
 <section id="main" class="b-section h-section-main">
   <div class="h-container b-container">
 
-    <div class="h-header b-columns b-is-mobile">
-      <div class="b-column b-is-half">
-        <h6 class="h-light">
-          {{ .Title }} _
-        </h6>
-      </div>
-      <div class="b-column b-is-half b-has-text-right">
-        <h6 class="h-light">
-          &lt; Project &gt;
-        </h6>
-      </div>
-    </div>
+    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "Project")}}
 
     <div class="h-gallery b-columns b-is-mobile">
-      {{ $currentNode := . }}
-      {{ if .Params.photos }}
-        <div class="b-column b-is-12 b-is-paddingless">
-          {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
-          {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
-          <div class="h-banner" style="background-image: url('{{ .Site.BaseURL }}{{ $img }}')">
-            <div class="h-content h-invert b-has-text-centered">
-              <img class="h-logo" src="{{ .Site.BaseURL }}{{ $img }}">
-              <h6 class="h-title">{{ .Title }}</h6>
-              <p class="h-list">{{ partial "snippets/tools" . }}</p>
-            </div>
-          </div>
-        </div>
-      {{ end }}
+      <div class="b-column b-is-12 b-is-paddingless">
+        {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
+        {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
+        {{ partial "renderer-targets/htko-framework/box/banner" (dict "title" .Title "img" $img "node" . )}}
+      </div>
     </div>
 
     <div class="h-article b-columns b-is-multiline b-is-mobile">
-      <div class="h-content b-column b-is-12-mobile b-is-two-5-tablet b-is-8-desktop">
+      <div class="h-content b-column b-is-12-mobile b-is-two-thirds-tablet b-is-three-quarters-desktop">
         <h6>Content</h6>
         <hr>
         <div class="b-content">
           {{ .Content }}
         </div>
       </div>
-      <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-offset-1-tablet b-is-offset-1-desktop">
+      <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop">
         <h6>Metadata</h6>
         <hr>
         {{ if .Date }}
@@ -89,31 +69,20 @@
       </div>
     </div>
 
-    <div class="h-gallery b-columns b-is-multiline b-is-mobile">
-      {{ $currentNode := . }}
-      {{ if .Params.photos }}
+    {{ if .Params.photos }}
+      <div class="h-gallery b-columns b-is-multiline b-is-mobile">
+        {{ $globalnode := . }}
         {{ range .Params.photos }}
-          {{ $dir := (delimit (slice "content" $currentNode.Type $currentNode.Params.path) "/") }}
-          {{ $img := (delimit (slice $dir "assets" . ) "/") }}
-          <div class="b-column b-is-12-mobile b-is-half-tablet b-is-one-third-desktop b-is-paddingless">
-            <img src="{{ $currentNode.Site.BaseURL }}{{$img}}">
+          <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+            {{ $dir := (delimit (slice "content" $globalnode.Type $globalnode.Params.path) "/") }}
+            {{ $img := (delimit (slice $dir "assets" . ) "/") }}
+            {{ partial "renderer-targets/htko-framework/box/gallery" (dict "img" $img "node" $globalnode )}}
           </div>
         {{ end }}
-      {{ end }}
-    </div>
+      </div>
+    {{ end }}
 
-    <div class="h-header b-columns b-is-mobile">
-      <div class="b-column b-is-half">
-        <h6 class="h-light">
-          {{ .Title }} _
-        </h6>
-      </div>
-      <div class="b-column b-is-half b-has-text-right">
-        <h6 class="h-light">
-          &lt; /Project &gt;
-        </h6>
-      </div>
-    </div>
+    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "/Project")}}
 
   </div>
 </section>
