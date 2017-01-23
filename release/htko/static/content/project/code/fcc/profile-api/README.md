@@ -16,7 +16,10 @@ code: 'https://github.com/htko89/fcc-profile-api'
 path: code/fcc/profile-api
 ---
 # Personal Project
-JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request.
+JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request
+
+# Example
+An example of this API in use is on the [FreeCodeCamp](http://htko.ca/project/code/fcc/free-code-camp/README/) project page.
 
 ## Server Install:
 * Do the following in a system with node & npm v6.9.4 :
@@ -28,10 +31,10 @@ node server.js
 ```
 
 ## Server Usage:
-* Your installed api server is available at: [](http://localhost:80/fcc)
-  * **JSONP url**, example: [](http://localhost:80/fcc?user=your_username&callback=test)
-  * **JSON url**, example: [](http://localhost:80/fcc?user=your_username)
-  * User and callback arguments are optional, example: [](http://localhost:80/)
+* Your installed api server is available at: [http://localhost:80/fcc](http://localhost:80/fcc)
+  * **JSONP url**, example: [http://localhost:80/fcc?user=your_username&callback=test](http://localhost:80/fcc?user=your_username&callback=test)
+  * **JSON url**, example: [http://localhost:80/fcc?user=your_username](http://localhost:80/fcc?user=your_username)
+  * User and callback arguments are optional, example: [http://localhost:80/](http://localhost:80/)
 * I also host a server for public use **(be fair!)** at: http://api.htko.ca/fcc
   * **JSONP url**, example: http://api.htko.ca/fcc?user=your_username&callback=
   * **JSON url**, example: http://api.htko.ca/fcc?user=your_username
