@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/logo/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <atom:link href="http://htko.ca/tools/logo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTKO Identity</title>
+      <link>http://htko.ca/project/gfx/personal/htko-identity/README/</link>
+      <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/project/gfx/personal/htko-identity/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Identity design for personal portfolio.&lt;/p&gt;
+
+&lt;h2 id=&#34;logo-specifications&#34;&gt;Logo Specifications:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Type: Modified from &lt;a href=&#34;http://www.emmeranrichard.fr/portfolio/blanka-font/&#34;&gt;BLANKA&lt;/a&gt; - &lt;a href=&#34;http://www.emmeranrichard.fr/&#34;&gt;Emmeran Richard&lt;/a&gt; (royalty free).&lt;/li&gt;
+&lt;li&gt;Inspiration: &lt;a href=&#34;http://www.masterdynamic.eu/&#34;&gt;Master &amp;amp; Dynamic&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Theme: Strong, Typographic, Geometric.&lt;/li&gt;
+&lt;li&gt;Reflect letters &lt;code&gt;H&lt;/code&gt;, &lt;code&gt;T&lt;/code&gt;, &lt;code&gt;K&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Artboard: &lt;code&gt;600px*600px&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Canvas: &lt;code&gt;400px*400px&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Print media ready.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;card-specification&#34;&gt;Card Specification&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Photo: Toronto, Canada - &lt;a href=&#34;https://unsplash.com/@yourturn?photo=86xXPfp48ec&#34;&gt;Illia Cherednychenko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Prominent logo display&lt;/li&gt;
+&lt;li&gt;Strong use of grids&lt;/li&gt;
+&lt;li&gt;Artboards: &lt;code&gt;3.3in*2.16in&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Page-rsses on Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/page/index.xml</link>
+    <description>Recent content in Page-rsses on Hei Tony Ko | Personal Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright - Tony Ko.</copyright>
+    <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://htko.ca/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Me</title>
+      <link>http://htko.ca/page/about-me/README/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://htko.ca/page/about-me/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
+
+&lt;p&gt;I am &lt;strong&gt;Hei Tony Ko&lt;/strong&gt;, Front End Web Developer.&lt;/p&gt;
+
+&lt;p&gt;I currently specialize in &lt;strong&gt;Front End: JS Frameworks, Node.JS, Responsive CSS and UI&lt;/strong&gt;, but I also often get my hands dirty with back end skills in &lt;strong&gt;Python, Wordpress and Node.JS&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For almost a decade&lt;/strong&gt;, I have been fascinated with the idea of working with front-end technologies, magic and possibilities of HTML / CSS / Javascript.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For the last year&lt;/strong&gt;, I have focused my efforts to fully develop this desire into a complete career.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Previous experience: &lt;strong&gt;Junior Designer (&lt;a href=&#34;http://kosinteriordesign.com/&#34;&gt;Ko&amp;rsquo;s Interior Design&lt;/a&gt;)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Current experience: &lt;strong&gt;Front End Development Certification (&lt;a href=&#34;https://www.freecodecamp.com/&#34;&gt;Free Code Camp&lt;/a&gt;)&lt;/strong&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Career aim: &lt;strong&gt;Data Vis.&lt;/strong&gt;, &lt;strong&gt;Back End&lt;/strong&gt; and &lt;strong&gt;Full Stack Certificates&lt;/strong&gt; in the future.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As a whole, I hope to bring a unique &lt;strong&gt;developer-designer&lt;/strong&gt; perspective to my work.&lt;/p&gt;
+
+&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;C: +1-647-300-9787&lt;/li&gt;
+&lt;li&gt;E: tony@htko.ca&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
