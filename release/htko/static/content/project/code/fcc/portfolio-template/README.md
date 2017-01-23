@@ -1,24 +1,23 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-06-25"
-title: "Portfolio Template"
-parent: "fcc"
+date: '2016-06-25'
+title: Portfolio Template
 topics:
-  - "code"
+  - code
 tools:
-  - "bootstrap"
-  - "jQuery"
-cover: "cover.jpg"
-photo:
-  - "screenshot-ipadpro-landscape.jpg"
-  - "mockup-tablet.jpg"
-  - "mockup-mobile.jpg"
-link: "https://htko89.github.io/fcc-portfolio-template/release/"
-code: "https://github.com/htko89/fcc-portfolio-template"
-program: "01 - Front End Development Certification"
-course: "04 - Basic Front End Development Projects"
-project: "02 - Build a Personal Portfolio Webpage"
+  - bootstrap
+  - jQuery
+link: 'https://htko89.github.io/fcc-portfolio-template/release/'
+code: 'https://github.com/htko89/fcc-portfolio-template'
+program: 01 - Front End Development Certification
+course: 04 - Basic Front End Development Projects
+project: 02 - Build a Personal Portfolio Webpage
+photos:
+  - screenshot-ipadpro-landscape.jpg
+  - mockup-tablet.jpg
+  - mockup-mobile.jpg
+path: code/fcc/portfolio-template
 ---
 # Student Project - Free Code Camp
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/YqLyXB/

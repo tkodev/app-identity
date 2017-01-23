@@ -3,9 +3,11 @@ type: "page"
 draft: false
 date: "2016-12-31"
 title: "About Me"
-photo:
+photos:
   - "dp.jpg"
+path: about-me
 ---
+# About Me
 I am **Hei Tony Ko**, Front End Web Developer.
 
 I currently specialize in **Front End: JS Frameworks, Node.JS, Responsive CSS and UI**, but I also often get my hands dirty with back end skills in **Python, Wordpress and Node.JS**.

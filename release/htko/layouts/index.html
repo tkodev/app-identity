@@ -1,24 +1,21 @@
 {{ partial "core/head" . }}
 
-<main id="main">
-  <div class="row" id="content">
-    <div class="small-12 columns">
-      <h1>Recent 4 _</h1>
-    </div>
-    {{ range first 4 (where .Data.Pages "Type" "project") }}
-      <div class="small-6 medium-4 large-3 columns" >
-        {{ .Render "cover" }}
+<section id="main" class="b-section h-section-main">
+  <div class="h-container b-container">
+
+    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" "8 Recent" "subtitle" "Gallery")}}
+
+    <div class="h-gallery b-columns b-is-multiline b-is-mobile">
+      {{ range first 8 (shuffle (where .Data.Pages "Type" "project")) }}
+      <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+        {{ .Render "box" }}
       </div>
-    {{ end }}
-    <div class="small-12 columns">
-      <h1>Random 8 _</h1>
+      {{ end }}
     </div>
-    {{ range first 8 (shuffle (where .Data.Pages "Type" "project")) }}
-      <div class="small-6 medium-4 large-3 columns" >
-        {{ .Render "cover" }}
-      </div>
-    {{ end }}
+
+    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" "8 Recent" "subtitle" "/Gallery")}}
+
   </div>
-</main>
+</section>
 
 {{ partial "core/foot" . }}

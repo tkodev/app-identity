@@ -1,0 +1,27 @@
+.#{$prefix}container {
+  .#{$prefix}header {
+    background-color: $white-ter;
+    padding: 0 1rem;
+  }
+
+  .#{$prefix}gallery {
+    background-color: $grey-dark;
+  }
+
+  .#{$prefix}article {
+    background-color: $white-ter;
+    padding: 1rem;
+
+    .#{$prefix}content {
+      padding: 1rem;
+    }
+
+    .#{$prefix}metadata {
+      padding: 1rem;
+
+      .#{$prefix}widget {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

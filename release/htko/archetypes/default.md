@@ -1,8 +1,7 @@
 ---
-type: "unknown"
+type: unknown
 draft: true
-date: "2016-12-31"
-title: ""
-author: ""
-description: ""
+date: '2016-06-25'
+title: Page Template
+author:
 ---

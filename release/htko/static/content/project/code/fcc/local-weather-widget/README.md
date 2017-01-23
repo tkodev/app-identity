@@ -1,24 +1,22 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-08-03"
-title: "Local Weather Widget"
-parent: "fcc"
+date: '2016-08-03'
+title: Local Weather Widget
 topics:
-  - "code"
+  - code
 tools:
-  - "bootstrap"
-  - "jquery"
-  - "API"
-cover: "cover.jpg"
-photo:
-  - "cover.jpg"
-  - "mockup-mobile.jpg"
-link: "https://htko89.github.io/fcc-local-weather-widget/release/"
-code: "https://github.com/htko89/fcc-local-weather-widget"
-program: "01 - Front End Development Certification"
-course: "09 - Intermediate Front End Development Projects"
-project: "01 - Show the Local Weather"
+  - bootstrap
+  - jquery
+  - API
+link: 'https://htko89.github.io/fcc-local-weather-widget/release/'
+code: 'https://github.com/htko89/fcc-local-weather-widget'
+program: 01 - Front End Development Certification
+course: 09 - Intermediate Front End Development Projects
+project: 01 - Show the Local Weather
+photos:
+  - mockup-mobile.jpg
+path: code/fcc/local-weather-widget
 ---
 # Student Project - Free Code Camp
 Build an app that is functionally similar to this: http://codepen.io/FreeCodeCamp/full/bELRjV/

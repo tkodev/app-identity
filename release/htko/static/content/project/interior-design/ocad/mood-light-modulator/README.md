@@ -1,23 +1,22 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2014-02-14"
-title: "Mood Light Modulator"
-parent: "ocad"
+date: '2014-02-14'
+title: Mood Light Modulator
 topics:
-  - "interior-design"
+  - interior-design
 tools:
-  - "industrial design"
-  - "model"
-cover: "cover.jpg"
-photo:
-  - "Light.jpg"
-  - "Light-Top.jpg"
-  - "Light-Off.jpg"
-  - "Build-Progress.jpg"
-program: "Environmental Design"
-course: "ENVR1B02 - Environmental Design 2"
-project: "01 - Light"
+  - industrial design
+  - model
+program: Environmental Design
+course: ENVR1B02 - Environmental Design 2
+project: 01 - Light
+photos:
+  - Light.jpg
+  - Light-Top.jpg
+  - Light-Off.jpg
+  - Build-Progress.jpg
+path: interior-design/ocad/mood-light-modulator
 ---
 # Student Project - OCAD
 A light modulator is an object that interferes with and distorts a beam of light. Often light sources are sharp and harsh on the eyes therefore requiring a well considered and designed casing to be most effective. There are numerous variables to consider when designing a successful light modulator. Some of these factors are location, task, user group, light source, light configuration, surrounding light sources, surrounding materiality, energy source, accessibility and aesthetic qualities.

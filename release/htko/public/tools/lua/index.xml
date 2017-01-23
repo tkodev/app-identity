@@ -37,14 +37,14 @@
 
 &lt;h3 id=&#34;part-1-the-language&#34;&gt;Part 1 - The Language&lt;/h3&gt;
 
-&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;Part%201%20-%20The%20Language/01%20-%20Getting%20Started.md&#34;&gt;Complete&lt;/a&gt; - Getting Started&lt;/summary&gt;
+&lt;p&gt;&lt;details&gt;&lt;summary&gt;01 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/01%20-%20Getting%20Started.md&#34;&gt;Complete&lt;/a&gt; - Getting Started&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;1.1 - Chunks&lt;/li&gt;
   &lt;li&gt;1.2 - Global Variables&lt;/li&gt;
   &lt;li&gt;1.3 - Some Lexical Conventions&lt;/li&gt;
   &lt;li&gt;1.4 - The Stand-Alone Interpreter&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;Part%201%20-%20The%20Language/02%20-%20Types%20and%20Values.md&#34;&gt;Complete&lt;/a&gt; - Types and Values&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;02 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/02%20-%20Types%20and%20Values.md&#34;&gt;Complete&lt;/a&gt; - Types and Values&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;2.1 - Nil&lt;/li&gt;
   &lt;li&gt;2.2 - Booleans&lt;/li&gt;
@@ -54,7 +54,7 @@
   &lt;li&gt;2.6 - Functions&lt;/li&gt;
   &lt;li&gt;2.7 - Userdata and Threads&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;Part%201%20-%20The%20Language/03%20-%20Expressions.md&#34;&gt;Complete&lt;/a&gt; - Expressions&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;03 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/03%20-%20Expressions.md&#34;&gt;Complete&lt;/a&gt; - Expressions&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;3.1 - Arithmetic Operators&lt;/li&gt;
   &lt;li&gt;3.2 - Relational Operators&lt;/li&gt;
@@ -63,7 +63,7 @@
   &lt;li&gt;3.5 - Precedence&lt;/li&gt;
   &lt;li&gt;3.6 - Table Constructors&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;Part%201%20-%20The%20Language/04%20-%20Statements.md&#34;&gt;Complete&lt;/a&gt; - Statements&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;04 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/04%20-%20Statements.md&#34;&gt;Complete&lt;/a&gt; - Statements&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;4.1 - Assignment&lt;/li&gt;
   &lt;li&gt;4.2 - Local Variables and Blocks&lt;/li&gt;
@@ -75,19 +75,19 @@
   &lt;li&gt;4.3.5 - Generic for&lt;/li&gt;
   &lt;li&gt;4.4 - break and return&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;Part%201%20-%20The%20Language/05%20-%20Functions.md&#34;&gt;Complete&lt;/a&gt; - Functions&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;05 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/05%20-%20Functions.md&#34;&gt;Complete&lt;/a&gt; - Functions&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;5.1 - Multiple Results&lt;/li&gt;
   &lt;li&gt;5.2 - Variable Number of Arguments&lt;/li&gt;
   &lt;li&gt;5.3 - Named Arguments&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;Part%201%20-%20The%20Language/06%20-%20More%20about%20Functions.md&#34;&gt;Complete&lt;/a&gt; - More about Functions&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;06 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/06%20-%20More%20about%20Functions.md&#34;&gt;Complete&lt;/a&gt; - More about Functions&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;6.1 - Closures&lt;/li&gt;
   &lt;li&gt;6.2 - Non-Global Functions&lt;/li&gt;
   &lt;li&gt;6.3 - Proper Tail Calls&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;07 - &lt;a href=&#34;Part%201%20-%20The%20Language/07%20-%20Iterators%20and%20the%20Generic%20For.md&#34;&gt;Complete&lt;/a&gt; - Iterators and the Generic &lt;code&gt;for&lt;/code&gt;&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;07 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/07%20-%20Iterators%20and%20the%20Generic%20For.md&#34;&gt;Complete&lt;/a&gt; - Iterators and the Generic &lt;code&gt;for&lt;/code&gt;&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;7.1 - Iterators and Closures&lt;/li&gt;
   &lt;li&gt;7.2 - The Semantics of the Generic for&lt;/li&gt;
@@ -95,7 +95,7 @@
   &lt;li&gt;7.4 - Iterators with Complex State&lt;/li&gt;
   &lt;li&gt;7.5 - True Iterators&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;08 - &lt;a href=&#34;Part%201%20-%20The%20Language/08%20-%20Compilation%2C%20Execution%2C%20and%20Errors.md&#34;&gt;Complete&lt;/a&gt; - Compilation, Execution, and Errors&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;08 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/08%20-%20Compilation%2C%20Execution%2C%20and%20Errors.md&#34;&gt;Complete&lt;/a&gt; - Compilation, Execution, and Errors&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;8.1 - The require Function&lt;/li&gt;
   &lt;li&gt;8.2 - C Packages&lt;/li&gt;
@@ -103,7 +103,7 @@
   &lt;li&gt;8.4 - Error Handling and Exceptions&lt;/li&gt;
   &lt;li&gt;8.5 - Error Messages and Tracebacks&lt;/li&gt;
   &lt;/ul&gt;&lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;09 - &lt;a href=&#34;Part%201%20-%20The%20Language/09%20-%20Coroutines.md&#34;&gt;Complete&lt;/a&gt; - Coroutines&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;09 - &lt;a href=&#34;https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/09%20-%20Coroutines.md&#34;&gt;Complete&lt;/a&gt; - Coroutines&lt;/summary&gt;
   &lt;ul&gt;
   &lt;li&gt;9.1 - Coroutine Basics&lt;/li&gt;
   &lt;li&gt;9.2 - Pipes and Filters&lt;/li&gt;

@@ -1,20 +1,28 @@
 ---
-type: "project"
-draft: false
-date: "2016-06-25"
-title: "Portfolio Template"
-author: ""
-description: ""
-parent: "personal"
+type: project
+draft: true
+date: '2016-06-25'
+title: Portfolio Template
+author:
+path: code/htko/releases
 topics:
-  - "interior-design"
+  - interior-design
 tools:
-  - "personal"
-cover: "cover.jpg"
-photo:
-  - "West-Overview.jpg"
-link: ""
-program: ""
-course: ""
-project: ""
+  - personal
+  - revit
+  - architecture
+  - modelling
+photos:
+  - 'cover.jpg'
+  - 'West-Overview.jpg'
+  - 'South-West-Overview.jpg'
+  - 'South-Overview.jpg'
+  - 'photo_04.jpg'
+  - 'photo_05.jpg'
+  - 'photo_06.jpg'
+link:
+code:
+program:
+course:
+project:
 ---

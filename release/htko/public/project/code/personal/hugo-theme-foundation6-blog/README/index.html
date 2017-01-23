@@ -117,187 +117,263 @@ Building, for developers: (Optional)
 
 This theme uses gulp build scripts modified from Foundation Zurb Template. OS must have node and bower installed." />
     <meta name="generator" content="Hugo 0.17" />
-    <link href="http://htko.ca/static/css/app.css" rel="stylesheet">
-    <link href="http://htko.ca/static/css/animate.css" rel="stylesheet">
-    <link href="http://htko.ca/static/css/font-awesome.min.css" rel="stylesheet"> </head>
+    <link href="http://htko.ca/static/animate-2017-01-19/css/animate.css" rel="stylesheet">
+    <link href="http://htko.ca/static/bulma-0.3.1/css/bulma.min.css" rel="stylesheet">
+    <link href="http://htko.ca/static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://htko.ca/static/blueimp-gallery-2.22.0/css/blueimp-gallery.min.css" rel="stylesheet">
+    <link href="http://htko.ca/static/htko-framework/css/htko.min.css" rel="stylesheet">
+    <link href="http://htko.ca/static/default/css/index.css" rel="stylesheet"> </head>
 
-<body style="background: url('http://htko.ca/static/img/background.png') center / 60% no-repeat fixed;">
-  <header id="header" data-sticky-container>
-    <nav id="top-bar" class="top-bar sticky" data-sticky data-sticky-on="small" data-margin-top="0" data-anchor="body" style="width:100%">
-      <div class="row column">
-        <div class="small-8 columns">
-          <ul class="menu">
-            <li>
-              <a class="menu-img-a" href="http://htko.ca/"><img class="menu-img" src="http://htko.ca//static/img/htko-10-full.svg"></a>
-            </li>
-            <li> <a class="menu-title " href="http://htko.ca/">Hei Tony Ko</a> </li>
-            <li> <a class="" href="http://htko.ca/topics/code/"><i class='fa fa-code fa-1x'></i><span class="show-for-medium">Code</span></a> </li>
-            <li> <a class="" href="http://htko.ca/topics/gfx/"><i class='fa fa-paint-brush fa-1x'></i><span class="show-for-medium">GFX</span></a> </li>
-            <li> <a class="" href="http://htko.ca/topics/interior-design/"><i class='fa fa-bank fa-1x'></i><span class="show-for-medium">Interior Design</span></a> </li>
-          </ul>
+<body style="background: url('http://htko.ca/static/default/img/background.png') center / 60% no-repeat fixed;">
+  <section id="header" class="b-section h-section-header">
+    <div class="b-container">
+      <div class="b-columns b-is-mobile">
+        <div class="b-column b-is-narrow">
+          <nav class="h-menu-main">
+            <h6>
+              <a><img class="h-logo" src="http://htko.ca//static/default/img/htko-10-full.svg"></a> <a class="h-light " href="http://htko.ca/">Hei<strong>&nbsp;Tony&nbsp;</strong>Ko</a> <a class="" href="http://htko.ca/topics/code/"><i class='fa fa-code fa-1x'></i><span class="b-is-hidden-touch">&nbsp;Code</span></a>              <a class="" href="http://htko.ca/topics/gfx/"><i class='fa fa-paint-brush fa-1x'></i><span class="b-is-hidden-touch">&nbsp;GFX</span></a> <a class="" href="http://htko.ca/topics/interior-design/"><i class='fa fa-bank fa-1x'></i><span class="b-is-hidden-touch">&nbsp;Interior Design</span></a>              </h6>
+          </nav>
         </div>
-        <div class="small-4 columns">
-          <ul class="menu align-right">
-            <li>
-              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
-            </li>
-            <li> <a href="page/about-me/README/"><i class='fa fa-user-circle-o fa-1x'></i><span class="show-for-medium">About Me</span></a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main id="main">
-    <div class="row" id="content">
-      <div class="small-12 medium-12 large-6 columns">
-        <div id="project-gallery">
-          <div class="card"> <img class="img-responsive" src="http://htko.ca/content/project/code/personal/hugo-theme-foundation6-blog/assets/screenshot-ipadpro-landscape.jpg"> <img class="img-responsive" src="http://htko.ca/content/project/code/personal/hugo-theme-foundation6-blog/assets/mockup-tablet.jpg">            </div>
-        </div>
-      </div>
-      <div class="small-12 medium-12 large-5 large-offset-1 columns" data-sticky-container>
-        <div id="project-desc" class="sticky" data-sticky data-sticky-on="large" data-anchor="project-gallery" data-margin-top="7">
-          <div class="card-section hide-for-large"></div>
-          <h1>Hugo Theme Foundation6 Blog _</h1>
-          <hr>
-          <h1 id="personal-project">Personal Project</h1>
-          <p>A simple <a href="https://gohugo.io">Hugo</a> theme based on the <a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html">Foundation 6 blog (w/ sidebar) example</a>, with scss &amp; js gulp build scripts.</p>
-          <h2 id="features">Features:</h2>
-          <ul>
-            <li>Responsive design.</li>
-            <li>Basic <a href="http://ogp.me">OpenGraph</a> and <a href="https://dev.twitter.com/cards/types">Twitter Card</a> metadata support.</li>
-            <li><code>robots.txt</code> linking to XML sitemap (disabled by default, see <a href="https://gohugo.io/extras/robots-txt/">Hugo docs</a>).</li>
-            <li>Basic support for <a href="https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md">multi-lingual content</a> (added in Hugo 0.17).</li>
-            <li>Supports Google, Bing, and Yandex site verification via meta tags.</li>
-            <li>Supports Google Analytics (async version), see <a href="https://gohugo.io/extras/analytics/">Hugo docs</a>.</li>
-            <li>Supports Disqus comments, see <a href="https://gohugo.io/extras/comments/">Hugo docs</a>.</li>
-            <li>Can show a message about cookie usage to the user, see <a href="https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/exampleSite/config.toml"><code>exampleSite/config.toml</code></a>.</li>
-            <li>Allow addition of custom <code>&lt;head&gt;</code> code in site&rsquo;s <code>layouts/partial/head-custom.html</code> (see <a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17">#17</a>).</li>
-          </ul>
-          <h2 id="usage">Usage:</h2>
-          <p>Clone the repository to your site&rsquo;s <code>themes</code> directory. Refer to <a href="https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/exampleSite/config.toml"><code>exampleSite/config.toml</code></a> for optional configuration
-            values. A few suggestions to help you get a good looking site quickly:</p>
-          <ul>
-            <li>Keep blog posts in the <code>content/post</code> directory, for example: <code>content/post/my-first-post.md</code>.</li>
-            <li>Keep static pages in the <code>content</code> directory, for example: <code>content/about.md</code>.</li>
-            <li>Keep media like images in the <code>static</code> directory, for example: <code>static/2016/10/screenshot.png</code>.</li>
-            <li>If you want an image to be shown when you share a post on social media, specify at least one image in the post&rsquo;s front matter, for example: <code>images: [&quot;/2016/10/screenshot.png&quot;]</code>.</li>
-            <li>Use the <code></code> tag in posts to control how much of a post is shown on summary pages.</li>
-          </ul>
-          <h2 id="building-for-developers-optional">Building, for developers: (Optional)</h2>
-          <p>This theme uses gulp build scripts modified from <a href="https://github.com/zurb/foundation-zurb-template/">Foundation Zurb Template</a>. OS must have <code>node</code> and <code>bower</code> installed.</p>
-          <table>
-            <thead>
-              <tr>
-                <th align="left">Command</th>
-                <th align="left">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td align="left"><strong>Install:</strong></td>
-                <td align="left"><strong>Run from <code>/scripts</code> directory to download all dependencies.</strong></td>
-              </tr>
-              <tr>
-                <td align="left"><code>npm install</code></td>
-                <td align="left">Installs node dependencies.</td>
-              </tr>
-              <tr>
-                <td align="left"><code>bower install</code></td>
-                <td align="left">Installs bower dependencies.</td>
-              </tr>
-              <tr>
-                <td align="left"><strong>Build Tasks:</strong></td>
-                <td align="left"><strong>Choose one to build from scss / js files in <code>/source</code> to <code>/static</code>.</strong></td>
-              </tr>
-              <tr>
-                <td align="left"><code>npm run build:debug</code></td>
-                <td align="left">Build human readable <code>debug</code> files.</td>
-              </tr>
-              <tr>
-                <td align="left"><code>npm run build:prod</code></td>
-                <td align="left">Build minified, sourcemapped files.</td>
-              </tr>
-              <tr>
-                <td align="left"><code>npm run build:css</code></td>
-                <td align="left">Builds <code>debug</code> css only.</td>
-              </tr>
-              <tr>
-                <td align="left"><code>npm run build:js</code></td>
-                <td align="left">Builds <code>debug</code> js only.</td>
-              </tr>
-              <tr>
-                <td align="left"><strong>Hugo Tasks:</strong></td>
-                <td align="left"><strong>Theme must be installed in a working or fresh hugo installation.</strong></td>
-              </tr>
-              <tr>
-                <td align="left"><code>npm run build:hugo</code></td>
-                <td align="left">Builds <code>debug</code> css / js, deletes <code>/public</code>, builds <code>/public</code>, lint <code>/public</code>.</td>
-              </tr>
-              <tr>
-                <td align="left"><code>npm run server</code></td>
-                <td align="left">Builds <code>debug</code> css / js, deletes <code>/public</code>, runs hugo server, start css / js / lint watch task.</td>
-              </tr>
-            </tbody>
-          </table>
-          <h2 id="contributing">Contributing:</h2>
-          <p>There are several ways to help with the development of the theme: * <a href="https://github.com/htko89/hugo-theme-foundation6-blog/issues/new">Open an issue</a> on GitHub if you have problems or feature requests. * Alternatively, tackle one
-            of the <a href="https://github.com/htko89/hugo-theme-foundation6-blog/issues">existing issues</a> on the issue tracker. * Fork <a href="https://github.com/htko89/hugo-theme-foundation6-blog">the repository</a> on GitHub, add features on a
-            &ldquo;feature&rdquo; branch like <code>update-bootstrap</code>, and then send a <a href="https://github.com/htko89/hugo-theme-foundation6-blog/compare">pull request</a> with your changes.</p>
-          <h2 id="attribution">Attribution:</h2>
-          <h3 id="this-repository-is-maintained-by">This repository is maintained by:</h3>
-          <ul>
-            <li><a href="https://github.com/htko89">Tony Ko</a> - <a href="https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)">GPL 3</a> - <a href="https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/license.txt">License file</a></li>
-          </ul>
-          <h3 id="this-repository-was-originally-cloned-from">This repository was originally cloned from:</h3>
-          <ul>
-            <li><a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog/">Alan Orth - hugo-theme-bootstrap4-blog</a> - <a href="https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)">GPL 3</a> - <a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/LICENSE.txt">License file</a></li>
-          </ul>
-          <h3 id="this-repository-contains-the-code-of">This repository contains the code of:</h3>
-          <ul>
-            <li><a href="https://github.com/zurb/foundation-zurb-template/">Foundation Zurb Template</a> - <a href="https://tldrlegal.com/license/mit-license">MIT license</a></li>
-          </ul>
-          <hr>
-          <h6>Tools:</h6> <i class="fa fa-tags fa-1x"></i> <a class="capitalize" href="http://htko.ca/tools/hugo">hugo</a> , <a class="capitalize" href="http://htko.ca/tools/node.js">node.js</a> , <a class="capitalize" href="http://htko.ca/tools/gulp">gulp</a>          , <a class="capitalize" href="http://htko.ca/tools/sass">sass</a> , <a class="capitalize" href="http://htko.ca/tools/foundation">foundation</a>
-          <hr>
-          <h6>Link:</h6> <i class="fa fa-external-link fa-1x"></i> <a href="http://themes.gohugo.io/hugo-theme-foundation6-blog/">
-      http://themes.gohugo.io/hugo-theme-foundation6-blog/
-    </a>
-          <hr>
-          <h6>Code:</h6> <i class="fa fa-code-fork fa-1x"></i> <a href="https://github.com/htko89/hugo-theme-foundation6-blog">
-      https://github.com/htko89/hugo-theme-foundation6-blog
-    </a>
-          <div class="card-section hide-for-large"></div>
+        <div class="b-column b-has-text-right">
+          <nav class="h-menu-main">
+            <h6> <a class="" href="page/about-me/README/"><i class='fa fa-user-circle-o fa-1x'></i><span class="b-is-hidden-touch">&nbsp;About Me</span></a> </h6>
+          </nav>
         </div>
       </div>
     </div>
-  </main>
-  <footer id="footer">
-    <nav>
-      <div class="row column">
-        <div class="small-6 columns">
-          <ul class="menu">
-            <li> &copy; </li>
-            <li> <a class="menu-title" href="#">2017 Copyright - Tony Ko.</a> </li>
-            <li>
-              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
-            </li>
-          </ul>
+  </section>
+  <section id="main" class="b-section h-section-main">
+    <div class="h-container b-container">
+      <div class="h-header b-columns b-is-mobile">
+        <div class="b-column b-is-narrow">
+          <h6 class="h-light"> Hugo Theme Foundation6 Blog _ </h6>
         </div>
-        <div class="small-6 columns">
-          <ul class="menu align-right">
-            <li>
-              <a class="menu-img-a" href="#"><img class="menu-img" src="http://htko.ca//static/img/px.png"></a>
-            </li>
-            <li> <a class="" href="https://www.instagram.com/htkoca"><i class='fa fa-instagram fa-1x'></i><span class="show-for-medium">Instagram</span></a> </li>
-            <li> <a class="" href="https://github.com/htko89"><i class='fa fa-code-fork fa-1x'></i><span class="show-for-medium">Github</span></a> </li>
-            <li> <a class="" href="http://lnked.in/htko89"><i class='fa fa-linkedin fa-1x'></i><span class="show-for-medium">Linkedin</span></a> </li>
-          </ul>
+        <div class="b-column b-has-text-right">
+          <h6 class="h-light"> &lt; Project &gt; </h6>
         </div>
       </div>
-    </nav>
-  </footer>
+      <div class="h-gallery b-columns b-is-mobile">
+        <div class="b-column b-is-12 b-is-paddingless">
+          <div class="h-box h-stretch" style="background-image: url('http://htko.ca/content/default/releases/github-1/assets/cover.png')">
+            <div class="h-bg h-stretch" style="background-image: url('http://htko.ca/content/project/code/personal/hugo-theme-foundation6-blog/assets/cover.jpg')">
+              <figure class="b-image h-banner"> <img class="h-banner" src="http://htko.ca//static/default/img/px.png"> </figure>
+            </div>
+            <div class="h-content h-overlay h-stretch h-invert h-center">
+              <a href="http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/">
+                <h4 class="h-title">Hugo Theme Foundation6 Blog</h4>
+              </a>
+              <p class="h-list"> <a class="capitalize" href="http://htko.ca/tools/hugo">hugo</a>, <a class="capitalize" href="http://htko.ca/tools/node.js">node.js</a>, <a class="capitalize" href="http://htko.ca/tools/gulp">gulp</a>, <a class="capitalize" href="http://htko.ca/tools/sass">sass</a>,
+                <a class="capitalize" href="http://htko.ca/tools/foundation">foundation</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-article b-columns b-is-multiline b-is-mobile">
+        <div class="h-content b-column b-is-12-mobile b-is-two-thirds-tablet b-is-three-quarters-desktop">
+          <h6>Hugo Theme Foundation6 Blog</h6>
+          <hr>
+          <div class="b-content">
+            <h1 id="personal-project">Personal Project</h1>
+            <p>A simple <a href="https://gohugo.io">Hugo</a> theme based on the <a href="http://foundation.zurb.com/templates-previews-sites-f6/blog.html">Foundation 6 blog (w/ sidebar) example</a>, with scss &amp; js gulp build scripts.</p>
+            <h2 id="features">Features:</h2>
+            <ul>
+              <li>Responsive design.</li>
+              <li>Basic <a href="http://ogp.me">OpenGraph</a> and <a href="https://dev.twitter.com/cards/types">Twitter Card</a> metadata support.</li>
+              <li><code>robots.txt</code> linking to XML sitemap (disabled by default, see <a href="https://gohugo.io/extras/robots-txt/">Hugo docs</a>).</li>
+              <li>Basic support for <a href="https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md">multi-lingual content</a> (added in Hugo 0.17).</li>
+              <li>Supports Google, Bing, and Yandex site verification via meta tags.</li>
+              <li>Supports Google Analytics (async version), see <a href="https://gohugo.io/extras/analytics/">Hugo docs</a>.</li>
+              <li>Supports Disqus comments, see <a href="https://gohugo.io/extras/comments/">Hugo docs</a>.</li>
+              <li>Can show a message about cookie usage to the user, see <a href="https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/exampleSite/config.toml"><code>exampleSite/config.toml</code></a>.</li>
+              <li>Allow addition of custom <code>&lt;head&gt;</code> code in site&rsquo;s <code>layouts/partial/head-custom.html</code> (see <a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog/pull/17">#17</a>).</li>
+            </ul>
+            <h2 id="usage">Usage:</h2>
+            <p>Clone the repository to your site&rsquo;s <code>themes</code> directory. Refer to <a href="https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/exampleSite/config.toml"><code>exampleSite/config.toml</code></a> for optional configuration
+              values. A few suggestions to help you get a good looking site quickly:</p>
+            <ul>
+              <li>Keep blog posts in the <code>content/post</code> directory, for example: <code>content/post/my-first-post.md</code>.</li>
+              <li>Keep static pages in the <code>content</code> directory, for example: <code>content/about.md</code>.</li>
+              <li>Keep media like images in the <code>static</code> directory, for example: <code>static/2016/10/screenshot.png</code>.</li>
+              <li>If you want an image to be shown when you share a post on social media, specify at least one image in the post&rsquo;s front matter, for example: <code>images: [&quot;/2016/10/screenshot.png&quot;]</code>.</li>
+              <li>Use the <code></code> tag in posts to control how much of a post is shown on summary pages.</li>
+            </ul>
+            <h2 id="building-for-developers-optional">Building, for developers: (Optional)</h2>
+            <p>This theme uses gulp build scripts modified from <a href="https://github.com/zurb/foundation-zurb-template/">Foundation Zurb Template</a>. OS must have <code>node</code> and <code>bower</code> installed.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th align="left">Command</th>
+                  <th align="left">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left"><strong>Install:</strong></td>
+                  <td align="left"><strong>Run from <code>/scripts</code> directory to download all dependencies.</strong></td>
+                </tr>
+                <tr>
+                  <td align="left"><code>npm install</code></td>
+                  <td align="left">Installs node dependencies.</td>
+                </tr>
+                <tr>
+                  <td align="left"><code>bower install</code></td>
+                  <td align="left">Installs bower dependencies.</td>
+                </tr>
+                <tr>
+                  <td align="left"><strong>Build Tasks:</strong></td>
+                  <td align="left"><strong>Choose one to build from scss / js files in <code>/source</code> to <code>/static</code>.</strong></td>
+                </tr>
+                <tr>
+                  <td align="left"><code>npm run build:debug</code></td>
+                  <td align="left">Build human readable <code>debug</code> files.</td>
+                </tr>
+                <tr>
+                  <td align="left"><code>npm run build:prod</code></td>
+                  <td align="left">Build minified, sourcemapped files.</td>
+                </tr>
+                <tr>
+                  <td align="left"><code>npm run build:css</code></td>
+                  <td align="left">Builds <code>debug</code> css only.</td>
+                </tr>
+                <tr>
+                  <td align="left"><code>npm run build:js</code></td>
+                  <td align="left">Builds <code>debug</code> js only.</td>
+                </tr>
+                <tr>
+                  <td align="left"><strong>Hugo Tasks:</strong></td>
+                  <td align="left"><strong>Theme must be installed in a working or fresh hugo installation.</strong></td>
+                </tr>
+                <tr>
+                  <td align="left"><code>npm run build:hugo</code></td>
+                  <td align="left">Builds <code>debug</code> css / js, deletes <code>/public</code>, builds <code>/public</code>, lint <code>/public</code>.</td>
+                </tr>
+                <tr>
+                  <td align="left"><code>npm run server</code></td>
+                  <td align="left">Builds <code>debug</code> css / js, deletes <code>/public</code>, runs hugo server, start css / js / lint watch task.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="contributing">Contributing:</h2>
+            <p>There are several ways to help with the development of the theme: * <a href="https://github.com/htko89/hugo-theme-foundation6-blog/issues/new">Open an issue</a> on GitHub if you have problems or feature requests. * Alternatively, tackle one
+              of the <a href="https://github.com/htko89/hugo-theme-foundation6-blog/issues">existing issues</a> on the issue tracker. * Fork <a href="https://github.com/htko89/hugo-theme-foundation6-blog">the repository</a> on GitHub, add features on
+              a &ldquo;feature&rdquo; branch like <code>update-bootstrap</code>, and then send a <a href="https://github.com/htko89/hugo-theme-foundation6-blog/compare">pull request</a> with your changes.</p>
+            <h2 id="attribution">Attribution:</h2>
+            <h3 id="this-repository-is-maintained-by">This repository is maintained by:</h3>
+            <ul>
+              <li><a href="https://github.com/htko89">Tony Ko</a> - <a href="https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)">GPL 3</a> - <a href="https://github.com/htko89/hugo-theme-foundation6-blog/blob/master/license.txt">License file</a></li>
+            </ul>
+            <h3 id="this-repository-was-originally-cloned-from">This repository was originally cloned from:</h3>
+            <ul>
+              <li><a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog/">Alan Orth - hugo-theme-bootstrap4-blog</a> - <a href="https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)">GPL 3</a> - <a href="https://github.com/alanorth/hugo-theme-bootstrap4-blog/blob/master/LICENSE.txt">License file</a></li>
+            </ul>
+            <h3 id="this-repository-contains-the-code-of">This repository contains the code of:</h3>
+            <ul>
+              <li><a href="https://github.com/zurb/foundation-zurb-template/">Foundation Zurb Template</a> - <a href="https://tldrlegal.com/license/mit-license">MIT license</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop">
+          <h6>Metadata</h6>
+          <hr>
+          <div class="h-widget">
+            <h6>Date:</h6>
+            <p class="h-list"> 2016-12-14
+              <p>
+          </div>
+          <div class="h-widget">
+            <h6>Tools:</h6>
+            <p class="h-list"> <a class="capitalize" href="http://htko.ca/tools/hugo">hugo</a>, <a class="capitalize" href="http://htko.ca/tools/node.js">node.js</a>, <a class="capitalize" href="http://htko.ca/tools/gulp">gulp</a>, <a class="capitalize" href="http://htko.ca/tools/sass">sass</a>,
+              <a class="capitalize" href="http://htko.ca/tools/foundation">foundation</a>
+              <p>
+          </div>
+          <div class="h-widget">
+            <h6>Link:</h6>
+            <p class="h-list"> <a href="http://themes.gohugo.io/hugo-theme-foundation6-blog/">http://themes.gohugo.io/hugo-theme-foundation6-blog/</a>
+              <p>
+          </div>
+          <div class="h-widget">
+            <h6>Code:</h6>
+            <p class="h-list"> <a href="https://github.com/htko89/hugo-theme-foundation6-blog">https://github.com/htko89/hugo-theme-foundation6-blog</a>
+              <p>
+          </div>
+        </div>
+      </div>
+      <div id="links" class="h-gallery b-columns b-is-multiline b-is-mobile">
+        <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+          <div class="h-box h-stretch" style="background-image: url('http://htko.ca/content/default/releases/github-1/assets/cover.png')">
+            <div class="h-bg h-stretch" style="background-image: url('http://htko.ca/content/project/code/personal/hugo-theme-foundation6-blog/assets/screenshot-ipadpro-landscape.jpg')">
+              <figure class="b-image b-is-1by1"> <img src="http://htko.ca//static/default/img/px.png"> </figure>
+            </div>
+            <div class="h-content h-overlay h-stretch h-invert h-center">
+              <a href="http://htko.ca/content/project/code/personal/hugo-theme-foundation6-blog/assets/screenshot-ipadpro-landscape.jpg">
+                <h4 class="h-title"><i class='fa fa-search-plus  fa-2x'></i></h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+          <div class="h-box h-stretch" style="background-image: url('http://htko.ca/content/default/releases/github-1/assets/cover.png')">
+            <div class="h-bg h-stretch" style="background-image: url('http://htko.ca/content/project/code/personal/hugo-theme-foundation6-blog/assets/mockup-tablet.jpg')">
+              <figure class="b-image b-is-1by1"> <img src="http://htko.ca//static/default/img/px.png"> </figure>
+            </div>
+            <div class="h-content h-overlay h-stretch h-invert h-center">
+              <a href="http://htko.ca/content/project/code/personal/hugo-theme-foundation6-blog/assets/mockup-tablet.jpg">
+                <h4 class="h-title"><i class='fa fa-search-plus  fa-2x'></i></h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3> <a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+      </div>
+      <script>
+        document.getElementById('links').onclick = function(event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {
+              index: link,
+              event: event
+            },
+            links = this.getElementsByTagName('a');
+          blueimp.Gallery(links, options);
+        };
+      </script>
+      <div class="h-header b-columns b-is-mobile">
+        <div class="b-column b-is-narrow">
+          <h6 class="h-light"> Hugo Theme Foundation6 Blog _ </h6>
+        </div>
+        <div class="b-column b-has-text-right">
+          <h6 class="h-light"> &lt; /Project &gt; </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="b-section h-section-footer">
+    <div class="b-container">
+      <div class="b-columns b-is-mobile">
+        <div class="b-column b-is-narrow">
+          <nav class="h-menu-main">
+            <h6> <a class="h-light"><strong>&copy;</strong>&nbsp;2017 Copyright - Tony Ko.</a>
+              <a></a>
+            </h6>
+          </nav>
+        </div>
+        <div class="b-column b-has-text-right">
+          <nav class="h-menu-main">
+            <h6> <a class="" href="https://www.instagram.com/htkoca"><i class='fa fa-instagram fa-1x'></i><span class="b-is-hidden-touch">&nbsp;Instagram</span></a> <a class="" href="https://github.com/htko89"><i class='fa fa-code-fork fa-1x'></i><span class="b-is-hidden-touch">&nbsp;Github</span></a>              <a class="" href="http://lnked.in/htko89"><i class='fa fa-linkedin fa-1x'></i><span class="b-is-hidden-touch">&nbsp;Linkedin</span></a> </h6>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
   <foot>
-    <script src="http://htko.ca/static/js/app.js"></script>
+    <script src="http://htko.ca/static/jquery-3.1.1/js/jquery.min.js"></script>
+    <script src="http://htko.ca/static/blueimp-gallery-2.22.0/js/blueimp-gallery.min.js"></script>
   </foot>
 </body>
 

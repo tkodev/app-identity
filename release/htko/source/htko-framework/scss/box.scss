@@ -1,0 +1,39 @@
+.#{$prefix}box {
+  background: no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  .#{$prefix}bg {
+    background: no-repeat center center;
+    background-size: cover;
+
+    .#{$prefix}banner {
+      height: 20rem;
+      width: 100%;
+    }
+  }
+
+  .#{$prefix}overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .#{$prefix}logo {
+    height: 40%;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
+  .#{$prefix}center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+}

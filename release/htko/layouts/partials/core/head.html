@@ -9,12 +9,15 @@
 
   {{ partial "core/head-meta" . }}
 
-  <link href="{{ .Site.BaseURL }}static/css/app.css" rel="stylesheet">
-  <link href="{{ .Site.BaseURL }}static/css/animate.css" rel="stylesheet">
-  <link href="{{ .Site.BaseURL }}static/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/animate-2017-01-19/css/animate.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/bulma-0.3.1/css/bulma.min.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/blueimp-gallery-2.22.0/css/blueimp-gallery.min.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}static/htko-framework/css/htko.min.css" rel="stylesheet">
+
+  <link href="{{ .Site.BaseURL }}static/default/css/index.css" rel="stylesheet">
 
 </head>
-<body style="background: url('{{ .Site.BaseURL }}static/img/background.png') center / 60% no-repeat fixed;">
+<body style="background: url('{{ .Site.BaseURL }}static/default/img/background.png') center / 60% no-repeat fixed;">
 
-{{ partial "main/header.html" . }}
-{{ partial "main/hero.html" . }}
+{{ partial "core/main/header.html" . }}

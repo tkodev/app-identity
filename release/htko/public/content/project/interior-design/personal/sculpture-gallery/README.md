@@ -1,23 +1,22 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2013-02-06"
-title: "Sculpture Gallery"
-parent: "personal"
+date: '2013-02-06'
+title: Sculpture Gallery
 topics:
-  - "interior-design"
+  - interior-design
 tools:
-  - "revit"
-  - "architecture"
-  - "model"
-cover: "cover.jpg"
-photo:
-  - "West-Overview.jpg"
-  - "South-West-Overview.jpg"
-  - "South-Overview.jpg"
-  - "North-Overview.jpg"
-  - "North-East-Overview.jpg"
-  - "East-Overview.jpg"
+  - revit
+  - architecture
+  - model
+photos:
+  - West-Overview.jpg
+  - South-West-Overview.jpg
+  - South-Overview.jpg
+  - North-Overview.jpg
+  - North-East-Overview.jpg
+  - East-Overview.jpg
+path: interior-design/personal/sculpture-gallery
 ---
 # Personal Project - OCAD Prospective Student Porfolio
 "Alfred Wong" is known for his philanthropist work in the art sector. With his company’s design expertise, "Alfred" wishes to pursue his personal interest in modern design. He is particularly interested in the minimalist style of design. Recently, he acquired 3 famous sculptures and though simple in nature, "Alfred" admires the elegance of these sculptures and wishes to increase public interest via his own personal gallery.

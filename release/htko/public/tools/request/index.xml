@@ -36,19 +36,19 @@ node server.js
 &lt;h2 id=&#34;server-usage&#34;&gt;Server Usage:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Your installed api server is available at: &lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;
+&lt;li&gt;Your installed api server is available at: [](&lt;a href=&#34;http://localhost:80/fcc&#34;&gt;http://localhost:80/fcc&lt;/a&gt;)
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://localhost:80/?user=your_username&amp;amp;callback=test&#34;&gt;http://localhost:80/?user=your_username&amp;amp;callback=test&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://localhost:80/?user=your_username&#34;&gt;http://localhost:80/?user=your_username&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: [](&lt;a href=&#34;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&#34;&gt;http://localhost:80/fcc?user=your_username&amp;amp;callback=test&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: [](&lt;a href=&#34;http://localhost:80/fcc?user=your_username&#34;&gt;http://localhost:80/fcc?user=your_username&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;User and callback arguments are optional, example: [](&lt;a href=&#34;http://localhost:80/&#34;&gt;http://localhost:80/&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;I also host a server for public use &lt;strong&gt;(be fair!)&lt;/strong&gt; at: &lt;a href=&#34;http://fcc-profile-api.htko.ca/&#34;&gt;http://fcc-profile-api.htko.ca/&lt;/a&gt;
+&lt;li&gt;I also host a server for public use &lt;strong&gt;(be fair!)&lt;/strong&gt; at: &lt;a href=&#34;http://api.htko.ca/fcc&#34;&gt;http://api.htko.ca/fcc&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://fcc-profile-api.htko.ca/?user=your_username&amp;amp;callback=&#34;&gt;http://fcc-profile-api.htko.ca/?user=your_username&amp;amp;callback=&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://fcc-profile-api.htko.ca/?user=your_username&#34;&gt;http://fcc-profile-api.htko.ca/?user=your_username&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://fcc-profile-api.htko.ca/&#34;&gt;http://fcc-profile-api.htko.ca/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://api.htko.ca/fcc?user=your_username&amp;amp;callback=&#34;&gt;http://api.htko.ca/fcc?user=your_username&amp;amp;callback=&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://api.htko.ca/fcc?user=your_username&#34;&gt;http://api.htko.ca/fcc?user=your_username&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://api.htko.ca/fcc&#34;&gt;http://api.htko.ca/fcc&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

@@ -1,0 +1,26 @@
+<section id="footer" class="b-section h-section-footer">
+  <div class="b-container">
+    <div class="b-columns b-is-mobile">
+
+      <div class="b-column b-is-narrow">
+        <nav class="h-menu-main">
+          <h6>
+            <a class="h-light"><strong>&copy;</strong>&nbsp;{{.Now.Format "2006"}} {{ with .Site.Params.copyright }}{{ . | markdownify}}{{ end }}</a>
+            <a></a>
+          </h6>
+        </nav>
+      </div>
+      <div class="b-column b-has-text-right">
+        <nav class="h-menu-main">
+          <h6>
+            {{ $currentNode := . }}
+            {{ range .Site.Menus.footer }}
+              <a class="{{if $currentNode.IsMenuCurrent "footer" . }}b-is-active{{end}}" href="{{.URL}}"><i class='fa {{ .Pre }} fa-1x'></i><span class="b-is-hidden-touch">&nbsp;{{ .Name }}</span></a>
+            {{end}}
+          </h6>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+</section>

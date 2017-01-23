@@ -1,61 +1,109 @@
 {{ partial "core/head" . }}
 
-<main id="main">
-  <div class="row" id="content">
-    <div class="small-12 medium-12 large-6 columns">
-      <div id="project-gallery">
-        <div class="card">
-          {{ $currentNode := . }}
-          {{ if and (isset .Params "photo") .Params.photo }}
-            {{ range .Params.photo }}
-              <img class="img-responsive" src="{{ $currentNode.Site.BaseURL }}content/{{ $currentNode.Type }}/{{ index $currentNode.Params.topics 0 }}/{{ $currentNode.Params.parent }}/{{lower $currentNode.Title | urlize }}/assets/{{ . }}">
-            {{ end }}
-          {{ else }}
-            <img class="img-responsive" src="{{ .Site.BaseURL }}content/default/releases/github-{{ index (shuffle (seq 1 3)) 0 }}/assets/mockup-mobile.jpg">
-          {{ end }}
+<section id="main" class="b-section h-section-main">
+  <div class="h-container b-container">
+
+    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "Project")}}
+
+    <div class="h-gallery b-columns b-is-mobile">
+      <div class="b-column b-is-12 b-is-paddingless">
+        {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
+        {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
+        {{ partial "renderer-targets/htko-framework/box/banner" (dict "title" .Title "img" $img "node" . )}}
+      </div>
+    </div>
+
+    <div class="h-article b-columns b-is-multiline b-is-mobile">
+      <div class="h-content b-column b-is-12-mobile b-is-two-thirds-tablet b-is-three-quarters-desktop">
+        <h6>{{ .Title }}</h6>
+        <hr>
+        <div class="b-content">
+          {{ .Content }}
         </div>
       </div>
-    </div>
-    <div class="small-12 medium-12 large-5 large-offset-1 columns" data-sticky-container>
-      <div id="project-desc" class="sticky" data-sticky data-sticky-on="large" data-anchor="project-gallery" data-margin-top="7">
-        <div class="card-section hide-for-large"></div>
-        <h1>{{ .Title }} _</h1>
+      <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop">
+        <h6>Metadata</h6>
         <hr>
-        {{ .Content }}
+        {{ if .Date }}
+          <div class="h-widget">
+            <h6>Date:</h6>
+            <p class="h-list">{{ partial "snippets/date" . }}<p>
+          </div>
+        {{ end }}
         {{ if .Params.tools }}
-          <hr>
-          <h6>Tools:</h6>
-          {{ partial "snippets/tools" . }}
+          <div class="h-widget">
+            <h6>Tools:</h6>
+            <p class="h-list">{{ partial "snippets/tools" . }}<p>
+          </div>
         {{ end }}
         {{ if .Params.link }}
-          <hr>
-          <h6>Link:</h6>
-          {{ partial "snippets/link" . }}
+          <div class="h-widget">
+            <h6>Link:</h6>
+            <p class="h-list">{{ partial "snippets/link" . }}<p>
+          </div>
         {{ end }}
         {{ if .Params.code }}
-          <hr>
-          <h6>Code:</h6>
-          {{ partial "snippets/code" . }}
+          <div class="h-widget">
+            <h6>Code:</h6>
+            <p class="h-list">{{ partial "snippets/code" . }}<p>
+          </div>
         {{ end }}
         {{ if .Params.program }}
-          <hr>
-          <h6>Program:</h6>
-          {{ partial "snippets/program" . }}
+          <div class="h-widget">
+            <h6>Program:</h6>
+            <p class="h-list">{{ partial "snippets/program" . }}<p>
+          </div>
         {{ end }}
         {{ if .Params.course }}
-          <hr>
-          <h6>Course:</h6>
-          {{ partial "snippets/course" . }}
+          <div class="h-widget">
+            <h6>Course:</h6>
+            <p class="h-list">{{ partial "snippets/course" . }}<p>
+          </div>
         {{ end }}
         {{ if .Params.project }}
-          <hr>
-          <h6>Project:</h6>
-          {{ partial "snippets/project" . }}
+          <div class="h-widget">
+            <h6>Project:</h6>
+            <p class="h-list">{{ partial "snippets/project" . }}<p>
+          </div>
         {{ end }}
-        <div class="card-section hide-for-large"></div>
       </div>
     </div>
+
+    {{ if .Params.photos }}
+      <div id="links" class="h-gallery b-columns b-is-multiline b-is-mobile">
+        {{ $globalnode := . }}
+        {{ range .Params.photos }}
+          <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+            {{ $dir := (delimit (slice "content" $globalnode.Type $globalnode.Params.path) "/") }}
+            {{ $img := (delimit (slice $dir "assets" . ) "/") }}
+            {{ partial "renderer-targets/htko-framework/box/gallery" (dict "img" $img "node" $globalnode )}}
+          </div>
+        {{ end }}
+      </div>
+      <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+          <div class="slides"></div>
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+      </div>
+      <script>
+        document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+      </script>
+    {{ end }}
+
+    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "/Project")}}
+
   </div>
-</main>
+</section>
 
 {{ partial "core/foot" . }}

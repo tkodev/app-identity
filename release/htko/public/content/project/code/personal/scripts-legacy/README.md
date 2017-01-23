@@ -1,18 +1,15 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-11-14"
-title: "Scripts Legacy"
-parent: "personal"
+date: '2016-11-14'
+title: Scripts Legacy
 topics:
-  - "code"
+  - code
 tools:
-  - "expression2"
-  - "advdupe2"
-cover: "cover.jpg"
-photo:
-  - "cover.jpg"
-code: "https://github.com/htko89/scripts-legacy"
+  - expression2
+  - advdupe2
+code: 'https://github.com/htko89/scripts-legacy'
+path: code/personal/scripts-legacy
 ---
 # Personal Project
 A collection of scripts for several esoteric languages.

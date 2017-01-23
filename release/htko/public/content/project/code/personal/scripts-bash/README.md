@@ -1,18 +1,15 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-11-15"
-title: "Scripts Bash"
-parent: "personal"
+date: '2016-11-15'
+title: Scripts Bash
 topics:
-  - "code"
+  - code
 tools:
-  - "bash"
-  - "docker"
-cover: "cover.jpg"
-photo:
-  - "cover.jpg"
-code: "https://github.com/htko89/scripts-linux"
+  - bash
+  - docker
+code: 'https://github.com/htko89/scripts-linux'
+path: code/personal/scripts-bash
 ---
 # Personal Project
 A collection of [BASH](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) scripts used to administrate local server.

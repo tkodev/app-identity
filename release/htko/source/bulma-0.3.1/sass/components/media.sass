@@ -1,0 +1,44 @@
+.#{$prefix}media-left,
+.#{$prefix}media-right
+  flex-basis: auto
+  flex-grow: 0
+  flex-shrink: 0
+
+.#{$prefix}media-left
+  margin-right: 1rem
+
+.#{$prefix}media-right
+  margin-left: 1rem
+
+.#{$prefix}media-content
+  flex-basis: auto
+  flex-grow: 1
+  flex-shrink: 1
+  text-align: left
+
+.#{$prefix}media
+  align-items: flex-start
+  display: flex
+  text-align: left
+  .#{$prefix}content:not(:last-child)
+    margin-bottom: 0.75rem
+  .#{$prefix}media
+    border-top: 1px solid rgba($border, 0.5)
+    display: flex
+    padding-top: 0.75rem
+    .#{$prefix}content:not(:last-child),
+    .#{$prefix}control:not(:last-child)
+      margin-bottom: 0.5rem
+    .#{$prefix}media
+      padding-top: 0.5rem
+      & + .#{$prefix}media
+        margin-top: 0.5rem
+  & + .#{$prefix}media
+    border-top: 1px solid rgba($border, 0.5)
+    margin-top: 1rem
+    padding-top: 1rem
+  // Sizes
+  &.#{$prefix}is-large
+    & + .#{$prefix}media
+      margin-top: 1.5rem
+      padding-top: 1.5rem

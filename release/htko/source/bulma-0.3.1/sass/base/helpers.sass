@@ -1,0 +1,107 @@
+// Display
+
+$displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
+
+@each $display in $displays
+  .#{$prefix}is-#{$display}
+    display: #{$display}
+  .#{$prefix}is-#{$display}-mobile
+    +mobile
+      display: #{$display} !important
+  .#{$prefix}is-#{$display}-tablet
+    +tablet
+      display: #{$display} !important
+  .#{$prefix}is-#{$display}-tablet-only
+    +tablet-only
+      display: #{$display} !important
+  .#{$prefix}is-#{$display}-touch
+    +touch
+      display: #{$display} !important
+  .#{$prefix}is-#{$display}-desktop
+    +desktop
+      display: #{$display} !important
+  .#{$prefix}is-#{$display}-desktop-only
+    +desktop-only
+      display: #{$display} !important
+  .#{$prefix}is-#{$display}-widescreen
+    +widescreen
+      display: #{$display} !important
+
+// Float
+
+.#{$prefix}is-clearfix
+  +clearfix
+
+.#{$prefix}is-pulled-left
+  float: left
+
+.#{$prefix}is-pulled-right
+  float: right
+
+// Overflow
+
+.#{$prefix}is-clipped
+  overflow: hidden !important
+
+// Overlay
+
+.#{$prefix}is-overlay
+  +overlay
+
+// Text
+
+.#{$prefix}has-text-centered
+  text-align: center
+
+.#{$prefix}has-text-left
+  text-align: left
+
+.#{$prefix}has-text-right
+  text-align: right
+
+// Visibility
+
+.#{$prefix}is-hidden
+  display: none !important
+
+.#{$prefix}is-hidden-mobile
+  +mobile
+    display: none !important
+
+.#{$prefix}is-hidden-tablet
+  +tablet
+    display: none !important
+
+.#{$prefix}is-hidden-tablet-only
+  +tablet-only
+    display: none !important
+
+.#{$prefix}is-hidden-touch
+  +touch
+    display: none !important
+
+.#{$prefix}is-hidden-desktop
+  +desktop
+    display: none !important
+
+.#{$prefix}is-hidden-desktop-only
+  +desktop-only
+    display: none !important
+
+.#{$prefix}is-hidden-widescreen
+  +widescreen
+    display: none !important
+
+// Other
+
+.#{$prefix}is-disabled
+  pointer-events: none
+
+.#{$prefix}is-marginless
+  margin: 0 !important
+
+.#{$prefix}is-paddingless
+  padding: 0 !important
+
+.#{$prefix}is-unselectable
+  +unselectable

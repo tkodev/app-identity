@@ -1,20 +1,17 @@
 ---
-type: "project"
+type: project
 draft: false
-date: "2016-05-27"
-title: "Free Code Camp"
-parent: "fcc"
+date: '2016-05-27'
+title: Free Code Camp
 topics:
-  - "code"
+  - code
 tools:
-  - "front-end"
-  - "data-vis"
-  - "back-end"
-cover: "cover.jpg"
-photo:
-  - "cover.jpg"
-link: "https://www.freecodecamp.com/htko89"
-code: "https://github.com/htko89/free-code-camp"
+  - front-end
+  - data-vis
+  - back-end
+link: 'https://www.freecodecamp.com/htko89'
+code: 'https://github.com/htko89/free-code-camp'
+path: code/fcc/free-code-camp
 ---
 # Journal
 A journal of my course progress and solutions in Free Code Camp's Full Stack Web Development Certification.
