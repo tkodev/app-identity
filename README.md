@@ -15,7 +15,6 @@ tools:
 link: 'http://www.htko.ca'
 code: 'https://github.com/htko89/htko-site-base'
 photos:
-  - cover.jpg
   - screenshot-ipadpro-landscape.jpg
   - mockup-surface.jpg
 path: code/htko/site-base
