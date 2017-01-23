@@ -42,26 +42,34 @@ function copy(conf, callback) {
 function edit(mdPath, relPath) {
   // console.log(mdPath);
   var mdFile = matter.read(mdPath);
-  if (!mdFile.data.hasOwnProperty("photos")) {
-    mdFile.data.photos = [];
+  if (mdFile.data.hasOwnProperty("photos")) {
+    mdFile.data.photos = mdFile.data.photos.filter(function(val){
+      return !val.includes("cover.");
+    });
+    if (mdFile.data.photos == 0){
+      delete mdFile.data.photos;
+    }
   }
-  if (mdFile.data.hasOwnProperty("cover")) {
-    mdFile.data.photos.push(mdFile.data.cover);
-    delete mdFile.data.cover;
-  }
-  if (mdFile.data.hasOwnProperty("photo")) {
-    mdFile.data.photos = mdFile.data.photos.concat(mdFile.data.photo);
-    delete mdFile.data.photo;
-  }
-  if (mdFile.data.hasOwnProperty("parent")) {
-    mdFile.data.path = relPath;
-    delete mdFile.data.parent;
-  }
+  // if (!mdFile.data.hasOwnProperty("photos")) {
+  //   mdFile.data.photos = [];
+  // }
+  // if (mdFile.data.hasOwnProperty("cover")) {
+  //   mdFile.data.photos.push(mdFile.data.cover);
+  //   delete mdFile.data.cover;
+  // }
+  // if (mdFile.data.hasOwnProperty("photo")) {
+  //   mdFile.data.photos = mdFile.data.photos.concat(mdFile.data.photo);
+  //   delete mdFile.data.photo;
+  // }
+  // if (mdFile.data.hasOwnProperty("parent")) {
+  //   mdFile.data.path = relPath;
+  //   delete mdFile.data.parent;
+  // }
   var mdData = "---\n" + yaml.safeDump(mdFile.data) + "---\n" + mdFile.content;
   // console.log(mdData);
-  fs.writeFileSync(mdPath, mdData, {flag: "w"}, function(err) {
-    if (err) return console.error(err)
-  });
+  // fs.writeFileSync(mdPath, mdData, {flag: "w"}, function(err) {
+  //   if (err) return console.error(err)
+  // });
 }
 
 //exports
