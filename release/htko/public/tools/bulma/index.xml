@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hei Tony Ko | Personal Portfolio</title>
-    <link>http://htko.ca/tools/bulma/index.xml</link>
-    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <title>Bulma on Hei Tony Ko | Personal Portfolio</title>
+    <link>http://localhost:5678/tools/bulma/index.xml</link>
+    <description>Recent content in Bulma on Hei Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="http://htko.ca/tools/bulma/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5678/tools/bulma/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Site Base</title>
-      <link>http://htko.ca/project/code/htko/site-base/README/</link>
+      <link>http://localhost:5678/project/code/htko/site-base/README/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/htko/site-base/README/</guid>
+      <guid>http://localhost:5678/project/code/htko/site-base/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
