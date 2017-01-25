@@ -3,7 +3,7 @@
 <section id="main" class="b-section h-section-main">
   <div class="h-container b-container ">
 
-    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "Gallery")}}
+    {{ partial "renderer-targets/container/header" (dict "title" .Title "subtitle" "Gallery")}}
 
     <div class="h-gallery b-columns b-is-multiline b-is-mobile">
       {{ range $index, $page := .Paginator.Pages }}
@@ -13,7 +13,7 @@
       {{ end }}
     </div>
 
-    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "Gallery")}}
+    {{ partial "renderer-targets/container/header" (dict "title" .Title "subtitle" "Gallery")}}
 
   </div>
 </section>

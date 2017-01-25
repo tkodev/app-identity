@@ -1,3 +1,3 @@
 {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
 {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
-{{ partial "renderer-targets/htko-framework/box/box" (dict "title" .Title "img" $img "node" . )}}
+{{ partial "renderer-targets/box/box" (dict "title" .Title "img" $img "node" . )}}

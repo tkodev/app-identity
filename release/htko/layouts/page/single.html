@@ -3,13 +3,13 @@
 <section id="main" class="b-section h-section-main">
   <div class="h-container b-container">
 
-    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "Page")}}
+    {{ partial "renderer-targets/container/header" (dict "title" .Title "subtitle" "Page")}}
 
     <div class="h-gallery b-columns b-is-mobile">
       <div class="b-column b-is-12 b-is-paddingless">
         {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
         {{ $img := (delimit (slice $dir "assets/dp.png") "/") }}
-        {{ partial "renderer-targets/htko-framework/box/banner" (dict "title" .Title "logo" $img "node" . )}}
+        {{ partial "renderer-targets/box/banner" (dict "title" .Title "logo" $img "node" . )}}
       </div>
     </div>
 
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "/Page")}}
+    {{ partial "renderer-targets/container/header" (dict "title" .Title "subtitle" "/Page")}}
 
   </div>
 </section>
