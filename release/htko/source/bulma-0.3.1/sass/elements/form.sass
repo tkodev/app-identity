@@ -25,15 +25,15 @@ $input-radius:              $radius !default
   border: 1px solid $input-border
   color: $input
   &:hover,
-  &.#{$prefix}is-hovered
+  &.#{$prefix-b}is-hovered
     border-color: $input-hover-border
   &:focus,
-  &.#{$prefix}is-focused,
+  &.#{$prefix-b}is-focused,
   &:active,
-  &.#{$prefix}is-active
+  &.#{$prefix-b}is-active
     border-color: $input-focus-border
   &[disabled],
-  &.#{$prefix}is-disabled
+  &.#{$prefix-b}is-disabled
     background-color: $input-disabled-background
     border-color: $input-disabled-border
     box-shadow: none
@@ -41,8 +41,8 @@ $input-radius:              $radius !default
     +placeholder
       color: rgba($input, 0.3)
 
-.#{$prefix}input,
-.#{$prefix}textarea
+.#{$prefix-b}input,
+.#{$prefix-b}textarea
   +input
   box-shadow: inset 0 1px 2px rgba($black, 0.1)
   max-width: 100%
@@ -52,24 +52,24 @@ $input-radius:              $radius !default
   // Colors
   @each $name, $pair in $colors
     $color: nth($pair, 1)
-    &.#{$prefix}is-#{$name}
+    &.#{$prefix-b}is-#{$name}
       border-color: $color
   // Sizes
-  &.#{$prefix}is-small
+  &.#{$prefix-b}is-small
     +control-small
-  &.#{$prefix}is-medium
+  &.#{$prefix-b}is-medium
     +control-medium
-  &.#{$prefix}is-large
+  &.#{$prefix-b}is-large
     +control-large
   // Modifiers
-  &.#{$prefix}is-fullwidth
+  &.#{$prefix-b}is-fullwidth
     display: block
     width: 100%
-  &.#{$prefix}is-inline
+  &.#{$prefix-b}is-inline
     display: inline
     width: auto
 
-.#{$prefix}textarea
+.#{$prefix-b}textarea
   display: block
   line-height: 1.25
   max-height: 600px
@@ -79,8 +79,8 @@ $input-radius:              $radius !default
   padding: 10px
   resize: vertical
 
-.#{$prefix}checkbox,
-.#{$prefix}radio
+.#{$prefix-b}checkbox,
+.#{$prefix-b}radio
   align-items: center
   cursor: pointer
   display: inline-flex
@@ -93,17 +93,17 @@ $input-radius:              $radius !default
     margin-right: 0.5em
   &:hover
     color: $input-hover
-  &.#{$prefix}is-disabled
+  &.#{$prefix-b}is-disabled
     color: $input-disabled
     pointer-events: none
     input
       pointer-events: none
 
-.#{$prefix}radio
-  & + .#{$prefix}radio
+.#{$prefix-b}radio
+  & + .#{$prefix-b}radio
     margin-left: 0.5em
 
-.#{$prefix}select
+.#{$prefix-b}select
   display: inline-block
   height: 2.5em
   position: relative
@@ -130,37 +130,37 @@ $input-radius:              $radius !default
     &:after
       border-color: $input-hover
   // Sizes
-  &.#{$prefix}is-small
+  &.#{$prefix-b}is-small
     +control-small
-  &.#{$prefix}is-medium
+  &.#{$prefix-b}is-medium
     +control-medium
-  &.#{$prefix}is-large
+  &.#{$prefix-b}is-large
     +control-large
   // Modifiers
-  &.#{$prefix}is-fullwidth
+  &.#{$prefix-b}is-fullwidth
     width: 100%
     select
       width: 100%
 
-.#{$prefix}label
+.#{$prefix-b}label
   color: $input
   display: block
   font-weight: bold
   &:not(:last-child)
     margin-bottom: 0.5em
 
-.#{$prefix}help
+.#{$prefix-b}help
   display: block
   font-size: $size-small
   margin-top: 5px
   @each $name, $pair in $colors
     $color: nth($pair, 1)
-    &.#{$prefix}is-#{$name}
+    &.#{$prefix-b}is-#{$name}
       color: $color
 
 // Containers
 
-.#{$prefix}control-label
+.#{$prefix-b}control-label
   +mobile
     margin-bottom: 0.5em
   +tablet
@@ -171,18 +171,18 @@ $input-radius:              $radius !default
     padding-top: 0.5em
     text-align: right
 
-.#{$prefix}control
+.#{$prefix-b}control
   position: relative
   text-align: left
   &:not(:last-child)
     margin-bottom: 0.75rem
   // Modifiers
-  &.#{$prefix}has-addons
+  &.#{$prefix-b}has-addons
     display: flex
     justify-content: flex-start
-    .#{$prefix}button,
-    .#{$prefix}input,
-    .#{$prefix}select
+    .#{$prefix-b}button,
+    .#{$prefix-b}input,
+    .#{$prefix-b}select
       border-radius: 0
       margin-right: -1px
       width: auto
@@ -199,100 +199,100 @@ $input-radius:              $radius !default
         border-radius: 0 $input-radius $input-radius 0
         select
           border-radius: 0 $input-radius $input-radius 0
-      &.#{$prefix}is-expanded
+      &.#{$prefix-b}is-expanded
         flex-grow: 1
         flex-shrink: 0
-    .#{$prefix}select select
+    .#{$prefix-b}select select
       &:hover
         z-index: 2
       &:focus,
       &:active
         z-index: 3
-    &.#{$prefix}has-addons-centered
+    &.#{$prefix-b}has-addons-centered
       justify-content: center
-    &.#{$prefix}has-addons-right
+    &.#{$prefix-b}has-addons-right
       justify-content: flex-end
-    &.#{$prefix}has-addons-fullwidth
-      .#{$prefix}button,
-      .#{$prefix}input,
-      .#{$prefix}select
+    &.#{$prefix-b}has-addons-fullwidth
+      .#{$prefix-b}button,
+      .#{$prefix-b}input,
+      .#{$prefix-b}select
         flex-grow: 1
         flex-shrink: 0
-  &.#{$prefix}has-icon
-    .#{$prefix}icon
+  &.#{$prefix-b}has-icon
+    .#{$prefix-b}icon
       color: $input-icon
       pointer-events: none
       position: absolute
       top: ($size-normal * 2.5) / 2
       z-index: 4
-    .#{$prefix}input
+    .#{$prefix-b}input
       &:focus
-        & + .#{$prefix}icon
+        & + .#{$prefix-b}icon
           color: $input-icon-active
-      &.#{$prefix}is-small
-        & + .#{$prefix}icon
+      &.#{$prefix-b}is-small
+        & + .#{$prefix-b}icon
           top: ($size-small * 2.5) / 2
-      &.#{$prefix}is-medium
-        & + .#{$prefix}icon
+      &.#{$prefix-b}is-medium
+        & + .#{$prefix-b}icon
           top: ($size-medium * 2.5) / 2
-      &.#{$prefix}is-large
-        & + .#{$prefix}icon
+      &.#{$prefix-b}is-large
+        & + .#{$prefix-b}icon
           top: ($size-large * 2.5) / 2
-    &:not(.#{$prefix}has-icon-right)
-      .#{$prefix}icon
+    &:not(.#{$prefix-b}has-icon-right)
+      .#{$prefix-b}icon
         left: ($size-normal * 2.5) / 2
         transform: translateX(-50%) translateY(-50%)
-      .#{$prefix}input
+      .#{$prefix-b}input
         padding-left: 2.5em
-        &.#{$prefix}is-small
-          & + .#{$prefix}icon
+        &.#{$prefix-b}is-small
+          & + .#{$prefix-b}icon
             left: ($size-small * 2.5) / 2
-        &.#{$prefix}is-medium
-          & + .#{$prefix}icon
+        &.#{$prefix-b}is-medium
+          & + .#{$prefix-b}icon
             left: ($size-medium * 2.5) / 2
-        &.#{$prefix}is-large
-          & + .#{$prefix}icon
+        &.#{$prefix-b}is-large
+          & + .#{$prefix-b}icon
             left: ($size-large * 2.5) / 2
-    &.#{$prefix}has-icon-right
-      .#{$prefix}icon
+    &.#{$prefix-b}has-icon-right
+      .#{$prefix-b}icon
         right: ($size-normal * 2.5) / 2
         transform: translateX(50%) translateY(-50%)
-      .#{$prefix}input
+      .#{$prefix-b}input
         padding-right: 2.5em
-        &.#{$prefix}is-small
-          & + .#{$prefix}icon
+        &.#{$prefix-b}is-small
+          & + .#{$prefix-b}icon
             right: ($size-small * 2.5) / 2
-        &.#{$prefix}is-medium
-          & + .#{$prefix}icon
+        &.#{$prefix-b}is-medium
+          & + .#{$prefix-b}icon
             right: ($size-medium * 2.5) / 2
-        &.#{$prefix}is-large
-          & + .#{$prefix}icon
+        &.#{$prefix-b}is-large
+          & + .#{$prefix-b}icon
             right: ($size-large * 2.5) / 2
-  &.#{$prefix}is-grouped
+  &.#{$prefix-b}is-grouped
     display: flex
     justify-content: flex-start
-    & > .#{$prefix}control
+    & > .#{$prefix-b}control
       flex-basis: 0
       flex-shrink: 0
       &:not(:last-child)
         margin-bottom: 0
         margin-right: 0.75rem
-      &.#{$prefix}is-expanded
+      &.#{$prefix-b}is-expanded
         flex-grow: 1
         flex-shrink: 1
-    &.#{$prefix}is-grouped-centered
+    &.#{$prefix-b}is-grouped-centered
       justify-content: center
-    &.#{$prefix}is-grouped-right
+    &.#{$prefix-b}is-grouped-right
       justify-content: flex-end
-  &.#{$prefix}is-horizontal
+  &.#{$prefix-b}is-horizontal
     +tablet
       display: flex
-      & > .#{$prefix}control
+      & > .#{$prefix-b}control
         display: flex
         flex-basis: 0
         flex-grow: 5
         flex-shrink: 1
-  &.#{$prefix}is-loading
+  &.#{$prefix-b}is-loading
     &:after
       +loader
       position: absolute !important

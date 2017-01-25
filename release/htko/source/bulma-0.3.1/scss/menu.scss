@@ -1,0 +1,18 @@
+nav.#{$prefix-h}menu-main .#{$prefix-h}logo {
+  height: 4rem;
+  width: auto;
+}
+
+nav.#{$prefix-h}menu-main, nav.#{$prefix-h}menu-main * {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav.#{$prefix-h}menu-main a:first-child {
+  margin-left: 0;
+}
+
+nav.#{$prefix-h}menu-main a {
+  margin-left: 1.2rem;
+}

@@ -1,6 +1,6 @@
 $dimensions: 16 24 32 48 64 96 128
 
-.#{$prefix}image
+.#{$prefix-b}image
   display: block
   position: relative
   img
@@ -8,29 +8,29 @@ $dimensions: 16 24 32 48 64 96 128
     height: auto
     width: 100%
   // Ratio
-  &.#{$prefix}is-square,
-  &.#{$prefix}is-1by1,
-  &.#{$prefix}is-4by3,
-  &.#{$prefix}is-3by2,
-  &.#{$prefix}is-16by9,
-  &.#{$prefix}is-2by1
+  &.#{$prefix-b}is-square,
+  &.#{$prefix-b}is-1by1,
+  &.#{$prefix-b}is-4by3,
+  &.#{$prefix-b}is-3by2,
+  &.#{$prefix-b}is-16by9,
+  &.#{$prefix-b}is-2by1
     img
       +overlay
       height: 100%
       width: 100%
-  &.#{$prefix}is-square,
-  &.#{$prefix}is-1by1
+  &.#{$prefix-b}is-square,
+  &.#{$prefix-b}is-1by1
     padding-top: 100%
-  &.#{$prefix}is-4by3
+  &.#{$prefix-b}is-4by3
     padding-top: 75%
-  &.#{$prefix}is-3by2
+  &.#{$prefix-b}is-3by2
     padding-top: 66.6666%
-  &.#{$prefix}is-16by9
+  &.#{$prefix-b}is-16by9
     padding-top: 56.25%
-  &.#{$prefix}is-2by1
+  &.#{$prefix-b}is-2by1
     padding-top: 50%
   // Sizes
   @each $dimension in $dimensions
-    &.#{$prefix}is-#{$dimension}x#{$dimension}
+    &.#{$prefix-b}is-#{$dimension}x#{$dimension}
       height: $dimension * 1px
       width: $dimension * 1px

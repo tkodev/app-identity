@@ -1,19 +1,19 @@
-.#{$prefix}box {
+.#{$prefix-h}box {
   background: no-repeat center center;
   background-size: cover;
   position: relative;
 
-  .#{$prefix}bg {
+  .#{$prefix-h}bg {
     background: no-repeat center center;
     background-size: cover;
 
-    .#{$prefix}banner {
+    .#{$prefix-h}banner {
       height: 20rem;
       width: 100%;
     }
   }
 
-  .#{$prefix}overlay {
+  .#{$prefix-h}overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,13 +24,13 @@
     }
   }
 
-  .#{$prefix}logo {
+  .#{$prefix-h}logo {
     height: 40%;
     width: auto;
     margin-bottom: 1rem;
   }
 
-  .#{$prefix}center {
+  .#{$prefix-h}center {
     display: flex;
     align-items: center;
     justify-content: center;

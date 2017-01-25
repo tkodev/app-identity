@@ -3,105 +3,105 @@
 $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
 
 @each $display in $displays
-  .#{$prefix}is-#{$display}
+  .#{$prefix-b}is-#{$display}
     display: #{$display}
-  .#{$prefix}is-#{$display}-mobile
+  .#{$prefix-b}is-#{$display}-mobile
     +mobile
       display: #{$display} !important
-  .#{$prefix}is-#{$display}-tablet
+  .#{$prefix-b}is-#{$display}-tablet
     +tablet
       display: #{$display} !important
-  .#{$prefix}is-#{$display}-tablet-only
+  .#{$prefix-b}is-#{$display}-tablet-only
     +tablet-only
       display: #{$display} !important
-  .#{$prefix}is-#{$display}-touch
+  .#{$prefix-b}is-#{$display}-touch
     +touch
       display: #{$display} !important
-  .#{$prefix}is-#{$display}-desktop
+  .#{$prefix-b}is-#{$display}-desktop
     +desktop
       display: #{$display} !important
-  .#{$prefix}is-#{$display}-desktop-only
+  .#{$prefix-b}is-#{$display}-desktop-only
     +desktop-only
       display: #{$display} !important
-  .#{$prefix}is-#{$display}-widescreen
+  .#{$prefix-b}is-#{$display}-widescreen
     +widescreen
       display: #{$display} !important
 
 // Float
 
-.#{$prefix}is-clearfix
+.#{$prefix-b}is-clearfix
   +clearfix
 
-.#{$prefix}is-pulled-left
+.#{$prefix-b}is-pulled-left
   float: left
 
-.#{$prefix}is-pulled-right
+.#{$prefix-b}is-pulled-right
   float: right
 
 // Overflow
 
-.#{$prefix}is-clipped
+.#{$prefix-b}is-clipped
   overflow: hidden !important
 
 // Overlay
 
-.#{$prefix}is-overlay
+.#{$prefix-b}is-overlay
   +overlay
 
 // Text
 
-.#{$prefix}has-text-centered
+.#{$prefix-b}has-text-centered
   text-align: center
 
-.#{$prefix}has-text-left
+.#{$prefix-b}has-text-left
   text-align: left
 
-.#{$prefix}has-text-right
+.#{$prefix-b}has-text-right
   text-align: right
 
 // Visibility
 
-.#{$prefix}is-hidden
+.#{$prefix-b}is-hidden
   display: none !important
 
-.#{$prefix}is-hidden-mobile
+.#{$prefix-b}is-hidden-mobile
   +mobile
     display: none !important
 
-.#{$prefix}is-hidden-tablet
+.#{$prefix-b}is-hidden-tablet
   +tablet
     display: none !important
 
-.#{$prefix}is-hidden-tablet-only
+.#{$prefix-b}is-hidden-tablet-only
   +tablet-only
     display: none !important
 
-.#{$prefix}is-hidden-touch
+.#{$prefix-b}is-hidden-touch
   +touch
     display: none !important
 
-.#{$prefix}is-hidden-desktop
+.#{$prefix-b}is-hidden-desktop
   +desktop
     display: none !important
 
-.#{$prefix}is-hidden-desktop-only
+.#{$prefix-b}is-hidden-desktop-only
   +desktop-only
     display: none !important
 
-.#{$prefix}is-hidden-widescreen
+.#{$prefix-b}is-hidden-widescreen
   +widescreen
     display: none !important
 
 // Other
 
-.#{$prefix}is-disabled
+.#{$prefix-b}is-disabled
   pointer-events: none
 
-.#{$prefix}is-marginless
+.#{$prefix-b}is-marginless
   margin: 0 !important
 
-.#{$prefix}is-paddingless
+.#{$prefix-b}is-paddingless
   padding: 0 !important
 
-.#{$prefix}is-unselectable
+.#{$prefix-b}is-unselectable
   +unselectable
