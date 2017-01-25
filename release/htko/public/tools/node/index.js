@@ -87,7 +87,7 @@
   <div class="h-container b-container ">
 
     <div class="h-header b-columns b-is-mobile">
-  <div class="b-column b-is-narrow">
+  <div class="b-column b-is-three-quarters">
     <h6 class="h-light">
       Node.Js _
     </h6>
@@ -151,7 +151,7 @@
     </div>
 
     <div class="h-header b-columns b-is-mobile">
-  <div class="b-column b-is-narrow">
+  <div class="b-column b-is-three-quarters">
     <h6 class="h-light">
       Node.Js _
     </h6>

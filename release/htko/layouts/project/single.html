@@ -3,13 +3,13 @@
 <section id="main" class="b-section h-section-main">
   <div class="h-container b-container">
 
-    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "Project")}}
+    {{ partial "renderer-targets/container/header" (dict "title" .Title "subtitle" "Project")}}
 
     <div class="h-gallery b-columns b-is-mobile">
       <div class="b-column b-is-12 b-is-paddingless">
         {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
         {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
-        {{ partial "renderer-targets/htko-framework/box/banner" (dict "title" .Title "img" $img "node" . )}}
+        {{ partial "renderer-targets/box/banner" (dict "title" .Title "img" $img "node" . )}}
       </div>
     </div>
 
@@ -76,7 +76,7 @@
           <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
             {{ $dir := (delimit (slice "content" $globalnode.Type $globalnode.Params.path) "/") }}
             {{ $img := (delimit (slice $dir "assets" . ) "/") }}
-            {{ partial "renderer-targets/htko-framework/box/gallery" (dict "img" $img "node" $globalnode )}}
+            {{ partial "renderer-targets/box/gallery" (dict "img" $img "node" $globalnode )}}
           </div>
         {{ end }}
       </div>
@@ -101,7 +101,7 @@
       </script>
     {{ end }}
 
-    {{ partial "renderer-targets/htko-framework/container/header" (dict "title" .Title "subtitle" "/Project")}}
+    {{ partial "renderer-targets/container/header" (dict "title" .Title "subtitle" "/Project")}}
 
   </div>
 </section>

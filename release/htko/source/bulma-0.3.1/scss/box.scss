@@ -24,6 +24,10 @@
     }
   }
 
+  .#{$prefix-h}content {
+    padding: 1rem;
+  }
+
   .#{$prefix-h}logo {
     height: 40%;
     width: auto;
