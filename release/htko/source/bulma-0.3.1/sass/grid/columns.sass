@@ -1,209 +1,209 @@
-.#{$prefix}column
+.#{$prefix-b}column
   display: block
   flex-basis: 0
   flex-grow: 1
   flex-shrink: 1
   padding: 0.75rem
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-narrow
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-narrow
     flex: none
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-full
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-full
     flex: none
     width: 100%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-three-quarters
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-three-quarters
     flex: none
     width: 75%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-two-thirds
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-two-thirds
     flex: none
     width: 66.6666%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-half
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-half
     flex: none
     width: 50%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-one-third
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-one-third
     flex: none
     width: 33.3333%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-one-quarter
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-one-quarter
     flex: none
     width: 25%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-offset-three-quarters
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-offset-three-quarters
     margin-left: 75%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-offset-two-thirds
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-offset-two-thirds
     margin-left: 66.6666%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-offset-half
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-offset-half
     margin-left: 50%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-offset-one-third
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-offset-one-third
     margin-left: 33.3333%
-  .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-offset-one-quarter
+  .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-offset-one-quarter
     margin-left: 25%
   @for $i from 1 through 12
-    .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-#{$i}
+    .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-#{$i}
       flex: none
       width: ($i / 12) * 100%
-    .#{$prefix}columns.#{$prefix}is-mobile > &.#{$prefix}is-offset-#{$i}
+    .#{$prefix-b}columns.#{$prefix-b}is-mobile > &.#{$prefix-b}is-offset-#{$i}
       margin-left: ($i / 12) * 100%
   +mobile
-    &.#{$prefix}is-narrow-mobile
+    &.#{$prefix-b}is-narrow-mobile
       flex: none
-    &.#{$prefix}is-full-mobile
+    &.#{$prefix-b}is-full-mobile
       flex: none
       width: 100%
-    &.#{$prefix}is-three-quarters-mobile
+    &.#{$prefix-b}is-three-quarters-mobile
       flex: none
       width: 75%
-    &.#{$prefix}is-two-thirds-mobile
+    &.#{$prefix-b}is-two-thirds-mobile
       flex: none
       width: 66.6666%
-    &.#{$prefix}is-half-mobile
+    &.#{$prefix-b}is-half-mobile
       flex: none
       width: 50%
-    &.#{$prefix}is-one-third-mobile
+    &.#{$prefix-b}is-one-third-mobile
       flex: none
       width: 33.3333%
-    &.#{$prefix}is-one-quarter-mobile
+    &.#{$prefix-b}is-one-quarter-mobile
       flex: none
       width: 25%
-    &.#{$prefix}is-offset-three-quarters-mobile
+    &.#{$prefix-b}is-offset-three-quarters-mobile
       margin-left: 75%
-    &.#{$prefix}is-offset-two-thirds-mobile
+    &.#{$prefix-b}is-offset-two-thirds-mobile
       margin-left: 66.6666%
-    &.#{$prefix}is-offset-half-mobile
+    &.#{$prefix-b}is-offset-half-mobile
       margin-left: 50%
-    &.#{$prefix}is-offset-one-third-mobile
+    &.#{$prefix-b}is-offset-one-third-mobile
       margin-left: 33.3333%
-    &.#{$prefix}is-offset-one-quarter-mobile
+    &.#{$prefix-b}is-offset-one-quarter-mobile
       margin-left: 25%
     @for $i from 1 through 12
-      &.#{$prefix}is-#{$i}-mobile
+      &.#{$prefix-b}is-#{$i}-mobile
         flex: none
         width: ($i / 12) * 100%
-      &.#{$prefix}is-offset-#{$i}-mobile
+      &.#{$prefix-b}is-offset-#{$i}-mobile
         margin-left: ($i / 12) * 100%
   +tablet
-    &.#{$prefix}is-narrow,
-    &.#{$prefix}is-narrow-tablet
+    &.#{$prefix-b}is-narrow,
+    &.#{$prefix-b}is-narrow-tablet
       flex: none
-    &.#{$prefix}is-full,
-    &.#{$prefix}is-full-tablet
+    &.#{$prefix-b}is-full,
+    &.#{$prefix-b}is-full-tablet
       flex: none
       width: 100%
-    &.#{$prefix}is-three-quarters,
-    &.#{$prefix}is-three-quarters-tablet
+    &.#{$prefix-b}is-three-quarters,
+    &.#{$prefix-b}is-three-quarters-tablet
       flex: none
       width: 75%
-    &.#{$prefix}is-two-thirds,
-    &.#{$prefix}is-two-thirds-tablet
+    &.#{$prefix-b}is-two-thirds,
+    &.#{$prefix-b}is-two-thirds-tablet
       flex: none
       width: 66.6666%
-    &.#{$prefix}is-half,
-    &.#{$prefix}is-half-tablet
+    &.#{$prefix-b}is-half,
+    &.#{$prefix-b}is-half-tablet
       flex: none
       width: 50%
-    &.#{$prefix}is-one-third,
-    &.#{$prefix}is-one-third-tablet
+    &.#{$prefix-b}is-one-third,
+    &.#{$prefix-b}is-one-third-tablet
       flex: none
       width: 33.3333%
-    &.#{$prefix}is-one-quarter,
-    &.#{$prefix}is-one-quarter-tablet
+    &.#{$prefix-b}is-one-quarter,
+    &.#{$prefix-b}is-one-quarter-tablet
       flex: none
       width: 25%
-    &.#{$prefix}is-offset-three-quarters,
-    &.#{$prefix}is-offset-three-quarters-tablet
+    &.#{$prefix-b}is-offset-three-quarters,
+    &.#{$prefix-b}is-offset-three-quarters-tablet
       margin-left: 75%
-    &.#{$prefix}is-offset-two-thirds,
-    &.#{$prefix}is-offset-two-thirds-tablet
+    &.#{$prefix-b}is-offset-two-thirds,
+    &.#{$prefix-b}is-offset-two-thirds-tablet
       margin-left: 66.6666%
-    &.#{$prefix}is-offset-half,
-    &.#{$prefix}is-offset-half-tablet
+    &.#{$prefix-b}is-offset-half,
+    &.#{$prefix-b}is-offset-half-tablet
       margin-left: 50%
-    &.#{$prefix}is-offset-one-third,
-    &.#{$prefix}is-offset-one-third-tablet
+    &.#{$prefix-b}is-offset-one-third,
+    &.#{$prefix-b}is-offset-one-third-tablet
       margin-left: 33.3333%
-    &.#{$prefix}is-offset-one-quarter,
-    &.#{$prefix}is-offset-one-quarter-tablet
+    &.#{$prefix-b}is-offset-one-quarter,
+    &.#{$prefix-b}is-offset-one-quarter-tablet
       margin-left: 25%
     @for $i from 1 through 12
-      &.#{$prefix}is-#{$i},
-      &.#{$prefix}is-#{$i}-tablet
+      &.#{$prefix-b}is-#{$i},
+      &.#{$prefix-b}is-#{$i}-tablet
         flex: none
         width: ($i / 12) * 100%
-      &.#{$prefix}is-offset-#{$i},
-      &.#{$prefix}is-offset-#{$i}-tablet
+      &.#{$prefix-b}is-offset-#{$i},
+      &.#{$prefix-b}is-offset-#{$i}-tablet
         margin-left: ($i / 12) * 100%
   +desktop
-    &.#{$prefix}is-narrow-desktop
+    &.#{$prefix-b}is-narrow-desktop
       flex: none
-    &.#{$prefix}is-full-desktop
+    &.#{$prefix-b}is-full-desktop
       flex: none
       width: 100%
-    &.#{$prefix}is-three-quarters-desktop
+    &.#{$prefix-b}is-three-quarters-desktop
       flex: none
       width: 75%
-    &.#{$prefix}is-two-thirds-desktop
+    &.#{$prefix-b}is-two-thirds-desktop
       flex: none
       width: 66.6666%
-    &.#{$prefix}is-half-desktop
+    &.#{$prefix-b}is-half-desktop
       flex: none
       width: 50%
-    &.#{$prefix}is-one-third-desktop
+    &.#{$prefix-b}is-one-third-desktop
       flex: none
       width: 33.3333%
-    &.#{$prefix}is-one-quarter-desktop
+    &.#{$prefix-b}is-one-quarter-desktop
       flex: none
       width: 25%
-    &.#{$prefix}is-offset-three-quarters-desktop
+    &.#{$prefix-b}is-offset-three-quarters-desktop
       margin-left: 75%
-    &.#{$prefix}is-offset-two-thirds-desktop
+    &.#{$prefix-b}is-offset-two-thirds-desktop
       margin-left: 66.6666%
-    &.#{$prefix}is-offset-half-desktop
+    &.#{$prefix-b}is-offset-half-desktop
       margin-left: 50%
-    &.#{$prefix}is-offset-one-third-desktop
+    &.#{$prefix-b}is-offset-one-third-desktop
       margin-left: 33.3333%
-    &.#{$prefix}is-offset-one-quarter-desktop
+    &.#{$prefix-b}is-offset-one-quarter-desktop
       margin-left: 25%
     @for $i from 1 through 12
-      &.#{$prefix}is-#{$i}-desktop
+      &.#{$prefix-b}is-#{$i}-desktop
         flex: none
         width: ($i / 12) * 100%
-      &.#{$prefix}is-offset-#{$i}-desktop
+      &.#{$prefix-b}is-offset-#{$i}-desktop
         margin-left: ($i / 12) * 100%
   +widescreen
-    &.#{$prefix}is-narrow-widescreen
+    &.#{$prefix-b}is-narrow-widescreen
       flex: none
-    &.#{$prefix}is-full-widescreen
+    &.#{$prefix-b}is-full-widescreen
       flex: none
       width: 100%
-    &.#{$prefix}is-three-quarters-widescreen
+    &.#{$prefix-b}is-three-quarters-widescreen
       flex: none
       width: 75%
-    &.#{$prefix}is-two-thirds-widescreen
+    &.#{$prefix-b}is-two-thirds-widescreen
       flex: none
       width: 66.6666%
-    &.#{$prefix}is-half-widescreen
+    &.#{$prefix-b}is-half-widescreen
       flex: none
       width: 50%
-    &.#{$prefix}is-one-third-widescreen
+    &.#{$prefix-b}is-one-third-widescreen
       flex: none
       width: 33.3333%
-    &.#{$prefix}is-one-quarter-widescreen
+    &.#{$prefix-b}is-one-quarter-widescreen
       flex: none
       width: 25%
-    &.#{$prefix}is-offset-three-quarters-widescreen
+    &.#{$prefix-b}is-offset-three-quarters-widescreen
       margin-left: 75%
-    &.#{$prefix}is-offset-two-thirds-widescreen
+    &.#{$prefix-b}is-offset-two-thirds-widescreen
       margin-left: 66.6666%
-    &.#{$prefix}is-offset-half-widescreen
+    &.#{$prefix-b}is-offset-half-widescreen
       margin-left: 50%
-    &.#{$prefix}is-offset-one-third-widescreen
+    &.#{$prefix-b}is-offset-one-third-widescreen
       margin-left: 33.3333%
-    &.#{$prefix}is-offset-one-quarter-widescreen
+    &.#{$prefix-b}is-offset-one-quarter-widescreen
       margin-left: 25%
     @for $i from 1 through 12
-      &.#{$prefix}is-#{$i}-widescreen
+      &.#{$prefix-b}is-#{$i}-widescreen
         flex: none
         width: ($i / 12) * 100%
-      &.#{$prefix}is-offset-#{$i}-widescreen
+      &.#{$prefix-b}is-offset-#{$i}-widescreen
         margin-left: ($i / 12) * 100%
 
-.#{$prefix}columns
+.#{$prefix-b}columns
   margin-left: -0.75rem
   margin-right: -0.75rem
   margin-top: -0.75rem
@@ -212,9 +212,9 @@
   &:not(:last-child)
     margin-bottom: 0.75rem
   // Modifiers
-  &.#{$prefix}is-centered
+  &.#{$prefix-b}is-centered
     justify-content: center
-  &.#{$prefix}is-gapless
+  &.#{$prefix-b}is-gapless
     margin-left: 0
     margin-right: 0
     margin-top: 0
@@ -222,30 +222,30 @@
       margin-bottom: 0
     &:not(:last-child)
       margin-bottom: 1.5rem
-    & > .#{$prefix}column
+    & > .#{$prefix-b}column
       margin: 0
       padding: 0
-  &.#{$prefix}is-grid
+  &.#{$prefix-b}is-grid
     // Responsiveness
     +tablet
       flex-wrap: wrap
-      & > .#{$prefix}column
+      & > .#{$prefix-b}column
         max-width: 33.3333%
         padding: 0.75rem
         width: 33.3333%
-        & + .#{$prefix}column
+        & + .#{$prefix-b}column
           margin-left: 0
-  &.#{$prefix}is-mobile
+  &.#{$prefix-b}is-mobile
     display: flex
-  &.#{$prefix}is-multiline
+  &.#{$prefix-b}is-multiline
     flex-wrap: wrap
-  &.#{$prefix}is-vcentered
+  &.#{$prefix-b}is-vcentered
     align-items: center
   // Responsiveness
   +tablet
-    &:not(.#{$prefix}is-desktop)
+    &:not(.#{$prefix-b}is-desktop)
       display: flex
   +desktop
     // Modifiers
-    &.#{$prefix}is-desktop
+    &.#{$prefix-b}is-desktop
       display: flex

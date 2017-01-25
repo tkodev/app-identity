@@ -1,4 +1,4 @@
-.#{$prefix}tabs
+.#{$prefix-b}tabs
   +block
   +unselectable
   align-items: stretch
@@ -22,7 +22,7 @@
       color: $text-strong
   li
     display: block
-    &.#{$prefix}is-active
+    &.#{$prefix-b}is-active
       a
         border-bottom-color: $primary
         color: $primary
@@ -33,30 +33,30 @@
     flex-grow: 1
     flex-shrink: 0
     justify-content: flex-start
-    &.#{$prefix}is-left
+    &.#{$prefix-b}is-left
       padding-right: 0.75em
-    &.#{$prefix}is-center
+    &.#{$prefix-b}is-center
       flex: none
       justify-content: center
       padding-left: 0.75em
       padding-right: 0.75em
-    &.#{$prefix}is-right
+    &.#{$prefix-b}is-right
       justify-content: flex-end
       padding-left: 0.75em
-  .#{$prefix}icon
+  .#{$prefix-b}icon
     &:first-child
       margin-right: 0.5em
     &:last-child
       margin-left: 0.5em
   // Alignment
-  &.#{$prefix}is-centered
+  &.#{$prefix-b}is-centered
     ul
       justify-content: center
-  &.#{$prefix}is-right
+  &.#{$prefix-b}is-right
     ul
       justify-content: flex-end
   // Styles
-  &.#{$prefix}is-boxed
+  &.#{$prefix-b}is-boxed
     a
       border: 1px solid transparent
       border-radius: $radius $radius 0 0
@@ -64,16 +64,16 @@
         background-color: $background
         border-bottom-color: $border
     li
-      &.#{$prefix}is-active
+      &.#{$prefix-b}is-active
         a
           background-color: $white
           border-color: $border
           border-bottom-color: transparent !important
-  &.#{$prefix}is-fullwidth
+  &.#{$prefix-b}is-fullwidth
     li
       flex-grow: 1
       flex-shrink: 0
-  &.#{$prefix}is-toggle
+  &.#{$prefix-b}is-toggle
     a
       border: 1px solid $border
       margin-bottom: 0
@@ -89,7 +89,7 @@
         border-radius: $radius 0 0 $radius
       &:last-child a
         border-radius: 0 $radius $radius 0
-      &.#{$prefix}is-active
+      &.#{$prefix-b}is-active
         a
           background-color: $primary
           border-color: $primary
@@ -98,9 +98,9 @@
     ul
       border-bottom: none
   // Sizes
-  &.#{$prefix}is-small
+  &.#{$prefix-b}is-small
     font-size: $size-small
-  &.#{$prefix}is-medium
+  &.#{$prefix-b}is-medium
     font-size: $size-medium
-  &.#{$prefix}is-large
+  &.#{$prefix-b}is-large
     font-size: $size-large

@@ -1,44 +1,44 @@
-.#{$prefix}media-left,
-.#{$prefix}media-right
+.#{$prefix-b}media-left,
+.#{$prefix-b}media-right
   flex-basis: auto
   flex-grow: 0
   flex-shrink: 0
 
-.#{$prefix}media-left
+.#{$prefix-b}media-left
   margin-right: 1rem
 
-.#{$prefix}media-right
+.#{$prefix-b}media-right
   margin-left: 1rem
 
-.#{$prefix}media-content
+.#{$prefix-b}media-content
   flex-basis: auto
   flex-grow: 1
   flex-shrink: 1
   text-align: left
 
-.#{$prefix}media
+.#{$prefix-b}media
   align-items: flex-start
   display: flex
   text-align: left
-  .#{$prefix}content:not(:last-child)
+  .#{$prefix-b}content:not(:last-child)
     margin-bottom: 0.75rem
-  .#{$prefix}media
+  .#{$prefix-b}media
     border-top: 1px solid rgba($border, 0.5)
     display: flex
     padding-top: 0.75rem
-    .#{$prefix}content:not(:last-child),
-    .#{$prefix}control:not(:last-child)
+    .#{$prefix-b}content:not(:last-child),
+    .#{$prefix-b}control:not(:last-child)
       margin-bottom: 0.5rem
-    .#{$prefix}media
+    .#{$prefix-b}media
       padding-top: 0.5rem
-      & + .#{$prefix}media
+      & + .#{$prefix-b}media
         margin-top: 0.5rem
-  & + .#{$prefix}media
+  & + .#{$prefix-b}media
     border-top: 1px solid rgba($border, 0.5)
     margin-top: 1rem
     padding-top: 1rem
   // Sizes
-  &.#{$prefix}is-large
-    & + .#{$prefix}media
+  &.#{$prefix-b}is-large
+    & + .#{$prefix-b}media
       margin-top: 1.5rem
       padding-top: 1.5rem

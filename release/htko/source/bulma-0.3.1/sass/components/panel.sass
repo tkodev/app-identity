@@ -1,18 +1,18 @@
-.#{$prefix}panel
+.#{$prefix-b}panel
   font-size: $size-normal
   &:not(:last-child)
     margin-bottom: 1.5rem
 
-.#{$prefix}panel-heading,
-.#{$prefix}panel-tabs,
-.#{$prefix}panel-block
+.#{$prefix-b}panel-heading,
+.#{$prefix-b}panel-tabs,
+.#{$prefix-b}panel-block
   border-bottom: 1px solid $border
   border-left: 1px solid $border
   border-right: 1px solid $border
   &:first-child
     border-top: 1px solid $border
 
-.#{$prefix}panel-heading
+.#{$prefix-b}panel-heading
   background-color: $background
   border-radius: $radius $radius 0 0
   color: $text-strong
@@ -21,7 +21,7 @@
   line-height: 1.25
   padding: 0.5em 0.75em
 
-.#{$prefix}panel-tabs
+.#{$prefix-b}panel-tabs
   align-items: flex-end
   display: flex
   font-size: 0.875em
@@ -31,17 +31,17 @@
     margin-bottom: -1px
     padding: 0.5em
     // Modifiers
-    &.#{$prefix}is-active
+    &.#{$prefix-b}is-active
       border-bottom-color: $link-active-border
       color: $link-active
 
-.#{$prefix}panel-list
+.#{$prefix-b}panel-list
   a
     color: $text
     &:hover
       color: $link
 
-.#{$prefix}panel-block
+.#{$prefix-b}panel-block
   align-items: center
   color: $text-strong
   display: flex
@@ -49,26 +49,26 @@
   padding: 0.5em 0.75em
   input[type="checkbox"]
     margin-right: 0.75em
-  & > .#{$prefix}control
+  & > .#{$prefix-b}control
     flex-grow: 1
     flex-shrink: 1
     width: 100%
-  &.#{$prefix}is-active
+  &.#{$prefix-b}is-active
     border-left-color: $link
     color: $link-active
-    .#{$prefix}panel-icon
+    .#{$prefix-b}panel-icon
       color: $link
 
-a.#{$prefix}panel-block,
-label.#{$prefix}panel-block
+a.#{$prefix-b}panel-block,
+label.#{$prefix-b}panel-block
   cursor: pointer
   &:hover
     background-color: $background
 
-.#{$prefix}panel-icon
+.#{$prefix-b}panel-icon
   +fa(14px, 1em)
   color: $text-light
   margin-right: 0.75em
-  .#{$prefix}fa
+  .#{$prefix-b}fa
     font-size: inherit
     line-height: inherit

@@ -1,19 +1,19 @@
-// .#{$prefix}square:before {
+// .#{$prefix-h}square:before {
 //   content: '';
 //   float: left;
 //   padding-top: 100%;
 // }
 
-.#{$prefix}badge {
+.#{$prefix-h}badge {
   background-color: rgba(35, 35, 35, 0.8);
   border-radius: 4px;
   padding: 0.4rem;
   margin: 0.1rem;
 }
-.#{$prefix}stretch {
+.#{$prefix-h}stretch {
   height: 100%;
   width: 100%;
 }
-.#{$prefix}debug {
+.#{$prefix-h}debug {
   border: red dashed 1px;
 }

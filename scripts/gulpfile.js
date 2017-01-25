@@ -21,18 +21,14 @@ gulp.task("tempUrl", function(done) {
 
 // copy function
 gulp.task("copy", function(done) {
-  copy(conf, done);
-  // done();
+  // copy(conf, done);
+  done();
 });
 
 // sass function
-gulp.task("build:pre:bulma", function(done) {
+gulp.task("build:pre", function(done) {
   build_pre.bulma(conf, done);
 });
-gulp.task("build:pre:htko", function(done) {
-  build_pre.htko(conf, done);
-});
-gulp.task("build:pre", gulp.series("build:pre:bulma", "build:pre:htko"));
 
 // build function
 gulp.task("build:post:hugo", function(done) {

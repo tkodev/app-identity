@@ -1,48 +1,48 @@
-.#{$prefix}level-item
+.#{$prefix-b}level-item
   align-items: center
   display: flex
   flex-basis: auto
   flex-grow: 0
   flex-shrink: 0
   justify-content: center
-  .#{$prefix}title,
-  .#{$prefix}subtitle
+  .#{$prefix-b}title,
+  .#{$prefix-b}subtitle
     margin-bottom: 0
   // Responsiveness
   +mobile
     &:not(:last-child)
       margin-bottom: 0.75rem
 
-.#{$prefix}level-left,
-.#{$prefix}level-right
+.#{$prefix-b}level-left,
+.#{$prefix-b}level-right
   flex-basis: auto
   flex-grow: 0
   flex-shrink: 0
-  .#{$prefix}level-item
+  .#{$prefix-b}level-item
     &:not(:last-child)
       margin-right: 0.75rem
     // Modifiers
-    &.#{$prefix}is-flexible
+    &.#{$prefix-b}is-flexible
       flex-grow: 1
 
-.#{$prefix}level-left
+.#{$prefix-b}level-left
   align-items: center
   justify-content: flex-start
   // Responsiveness
   +mobile
-    & + .#{$prefix}level-right
+    & + .#{$prefix-b}level-right
       margin-top: 1.5rem
   +tablet
     display: flex
 
-.#{$prefix}level-right
+.#{$prefix-b}level-right
   align-items: center
   justify-content: flex-end
   // Responsiveness
   +tablet
     display: flex
 
-.#{$prefix}level
+.#{$prefix-b}level
   +block
   align-items: center
   justify-content: space-between
@@ -52,16 +52,16 @@
     display: inline-block
     vertical-align: top
   // Modifiers
-  &.#{$prefix}is-mobile
+  &.#{$prefix-b}is-mobile
     display: flex
-    & > .#{$prefix}level-item
+    & > .#{$prefix-b}level-item
       &:not(:last-child)
         margin-bottom: 0
-      &:not(.#{$prefix}is-narrow)
+      &:not(.#{$prefix-b}is-narrow)
         flex-grow: 1
   // Responsiveness
   +tablet
     display: flex
-    & > .#{$prefix}level-item
-      &:not(.#{$prefix}is-narrow)
+    & > .#{$prefix-b}level-item
+      &:not(.#{$prefix-b}is-narrow)
         flex-grow: 1

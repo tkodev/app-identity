@@ -1,4 +1,4 @@
-.#{$prefix}tag
+.#{$prefix-b}tag
   align-items: center
   background-color: $background
   border-radius: 290486px
@@ -12,18 +12,18 @@
   padding-right: 0.875em
   vertical-align: top
   white-space: nowrap
-  .#{$prefix}delete
+  .#{$prefix-b}delete
     margin-left: 0.25em
     margin-right: -0.5em
   // Colors
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
-    &.#{$prefix}is-#{$name}
+    &.#{$prefix-b}is-#{$name}
       background-color: $color
       color: $color-invert
   // Sizes
-  &.#{$prefix}is-medium
+  &.#{$prefix-b}is-medium
     font-size: $size-normal
-  &.#{$prefix}is-large
+  &.#{$prefix-b}is-large
     font-size: $size-medium

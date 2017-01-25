@@ -1,25 +1,25 @@
-.#{$prefix}container {
-  .#{$prefix}header {
+.#{$prefix-h}container {
+  .#{$prefix-h}header {
     background-color: $white-ter;
     padding: 0 1rem;
   }
 
-  .#{$prefix}gallery {
+  .#{$prefix-h}gallery {
     background-color: $grey-dark;
   }
 
-  .#{$prefix}article {
+  .#{$prefix-h}article {
     background-color: $white-ter;
     padding: 1rem;
 
-    .#{$prefix}content {
+    .#{$prefix-h}content {
       padding: 1rem;
     }
 
-    .#{$prefix}metadata {
+    .#{$prefix-h}metadata {
       padding: 1rem;
 
-      .#{$prefix}widget {
+      .#{$prefix-h}widget {
         padding-bottom: 1rem;
       }
     }

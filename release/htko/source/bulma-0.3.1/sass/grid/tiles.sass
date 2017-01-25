@@ -1,4 +1,4 @@
-.#{$prefix}tile
+.#{$prefix-b}tile
   align-items: stretch
   display: block
   flex-basis: 0
@@ -6,7 +6,7 @@
   flex-shrink: 1
   min-height: min-content
   // Modifiers
-  &.#{$prefix}is-ancestor
+  &.#{$prefix-b}is-ancestor
     margin-left: -0.75rem
     margin-right: -0.75rem
     margin-top: -0.75rem
@@ -14,19 +14,19 @@
       margin-bottom: -0.75rem
     &:not(:last-child)
       margin-bottom: 0.75rem
-  &.#{$prefix}is-child
+  &.#{$prefix-b}is-child
     margin: 0 !important
-  &.#{$prefix}is-parent
+  &.#{$prefix-b}is-parent
     padding: 0.75rem
-  &.#{$prefix}is-vertical
+  &.#{$prefix-b}is-vertical
     flex-direction: column
-    & > .#{$prefix}tile.#{$prefix}is-child:not(:last-child)
+    & > .#{$prefix-b}tile.#{$prefix-b}is-child:not(:last-child)
       margin-bottom: 1.5rem !important
   // Responsiveness
   +tablet
-    &:not(.#{$prefix}is-child)
+    &:not(.#{$prefix-b}is-child)
       display: flex
     @for $i from 1 through 12
-      &.#{$prefix}is-#{$i}
+      &.#{$prefix-b}is-#{$i}
         flex: none
         width: ($i / 12) * 100%
