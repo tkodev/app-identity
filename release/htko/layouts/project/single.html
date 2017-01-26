@@ -9,63 +9,20 @@
       <div class="b-column b-is-12 b-is-paddingless">
         {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
         {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
-        {{ partial "renderer-targets/box/banner" (dict "title" .Title "img" $img "node" . )}}
+        {{ partial "renderer-targets/gallery/banner" (dict "title" .Title "img" $img "node" . )}}
       </div>
     </div>
 
     <div class="h-article b-columns b-is-multiline b-is-mobile">
       <div class="h-content b-column b-is-12-mobile b-is-two-thirds-tablet b-is-three-quarters-desktop">
-        <h6>{{ .Title }}</h6>
+        <h6>Content</h6>
         <hr>
         <div class="b-content">
           {{ .Content }}
         </div>
       </div>
       <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop">
-        <h6>Metadata</h6>
-        <hr>
-        {{ if .Date }}
-          <div class="h-widget">
-            <h6>Date:</h6>
-            <p class="h-list">{{ partial "snippets/date" . }}<p>
-          </div>
-        {{ end }}
-        {{ if .Params.tools }}
-          <div class="h-widget">
-            <h6>Tools:</h6>
-            <p class="h-list">{{ partial "snippets/tools" . }}<p>
-          </div>
-        {{ end }}
-        {{ if .Params.link }}
-          <div class="h-widget">
-            <h6>Link:</h6>
-            <p class="h-list">{{ partial "snippets/link" . }}<p>
-          </div>
-        {{ end }}
-        {{ if .Params.code }}
-          <div class="h-widget">
-            <h6>Code:</h6>
-            <p class="h-list">{{ partial "snippets/code" . }}<p>
-          </div>
-        {{ end }}
-        {{ if .Params.program }}
-          <div class="h-widget">
-            <h6>Program:</h6>
-            <p class="h-list">{{ partial "snippets/program" . }}<p>
-          </div>
-        {{ end }}
-        {{ if .Params.course }}
-          <div class="h-widget">
-            <h6>Course:</h6>
-            <p class="h-list">{{ partial "snippets/course" . }}<p>
-          </div>
-        {{ end }}
-        {{ if .Params.project }}
-          <div class="h-widget">
-            <h6>Project:</h6>
-            <p class="h-list">{{ partial "snippets/project" . }}<p>
-          </div>
-        {{ end }}
+        {{ partial "widgets/metadata" . }}
       </div>
     </div>
 
@@ -76,7 +33,7 @@
           <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-third-desktop b-is-paddingless">
             {{ $dir := (delimit (slice "content" $globalnode.Type $globalnode.Params.path) "/") }}
             {{ $img := (delimit (slice $dir "assets" . ) "/") }}
-            {{ partial "renderer-targets/box/gallery" (dict "img" $img "node" $globalnode )}}
+            {{ partial "renderer-targets/gallery/gallery" (dict "img" $img "node" $globalnode )}}
           </div>
         {{ end }}
       </div>

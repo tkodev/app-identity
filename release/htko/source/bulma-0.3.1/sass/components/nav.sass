@@ -2,13 +2,13 @@ $nav-height: 3.5rem !default
 
 // Components
 
-.#{$prefix-b}nav-toggle
+.#{$prefix_b}nav-toggle
   +hamburger($nav-height)
   // Responsiveness
   +tablet
     display: none
 
-.#{$prefix-b}nav-item
+.#{$prefix_b}nav-item
   align-items: center
   display: flex
   flex-grow: 0
@@ -21,9 +21,9 @@ $nav-height: 3.5rem !default
     flex-shrink: 0
   img
     max-height: 1.75rem
-  .#{$prefix-b}button + .#{$prefix-b}button
+  .#{$prefix_b}button + .#{$prefix_b}button
     margin-left: 0.75rem
-  .#{$prefix-b}tag
+  .#{$prefix_b}tag
     &:first-child:not(:last-child)
       margin-right: 0.5rem
     &:last-child:not(:first-child)
@@ -32,15 +32,15 @@ $nav-height: 3.5rem !default
   +mobile
     justify-content: flex-start
 
-.#{$prefix-b}nav-item a,
-a.#{$prefix-b}nav-item
+.#{$prefix_b}nav-item a,
+a.#{$prefix_b}nav-item
   color: $text-light
   &:hover
     color: $link-hover
   // Modifiers
-  &.#{$prefix-b}is-active
+  &.#{$prefix_b}is-active
     color: $link-active
-  &.#{$prefix-b}is-tab
+  &.#{$prefix_b}is-tab
     border-bottom: 1px solid transparent
     border-top: 1px solid transparent
     padding-bottom: calc(0.5rem - 1px)
@@ -50,18 +50,18 @@ a.#{$prefix-b}nav-item
     &:hover
       border-bottom-color: $primary
       border-top-color: transparent
-    &.#{$prefix-b}is-active
+    &.#{$prefix_b}is-active
       border-bottom: 3px solid $primary
       color: $primary
       padding-bottom: calc(0.5rem - 3px)
   // Responsiveness
   +desktop
-    &.#{$prefix-b}is-brand
+    &.#{$prefix_b}is-brand
       padding-left: 0
 
 // Containers
 
-.#{$prefix-b}nav-menu
+.#{$prefix_b}nav-menu
   // Responsiveness
   +mobile
     background-color: $white
@@ -71,30 +71,30 @@ a.#{$prefix-b}nav-item
     right: 0
     top: 100%
     position: absolute
-    .#{$prefix-b}nav-item
+    .#{$prefix_b}nav-item
       border-top: 1px solid rgba($border, 0.5)
       padding: 0.75rem
-    &.#{$prefix-b}is-active
+    &.#{$prefix_b}is-active
       display: block
   +tablet-only
     padding-right: 1.5rem
 
 
-.#{$prefix-b}nav-left,
-.#{$prefix-b}nav-right
+.#{$prefix_b}nav-left,
+.#{$prefix_b}nav-right
   align-items: stretch
   flex-basis: 0
   flex-grow: 1
   flex-shrink: 0
 
-.#{$prefix-b}nav-left
+.#{$prefix_b}nav-left
   display: flex
   justify-content: flex-start
   overflow: hidden
   overflow-x: auto
   white-space: nowrap
 
-.#{$prefix-b}nav-center
+.#{$prefix_b}nav-center
   align-items: stretch
   display: flex
   flex-grow: 0
@@ -103,7 +103,7 @@ a.#{$prefix-b}nav-item
   margin-left: auto
   margin-right: auto
 
-.#{$prefix-b}nav-right
+.#{$prefix_b}nav-right
   justify-content: flex-end
   // Responsiveness
   +tablet
@@ -111,7 +111,7 @@ a.#{$prefix-b}nav-item
 
 // Main container
 
-.#{$prefix-b}nav
+.#{$prefix_b}nav
   align-items: stretch
   background-color: $white
   display: flex
@@ -119,11 +119,11 @@ a.#{$prefix-b}nav-item
   position: relative
   text-align: center
   z-index: 2
-  & > .#{$prefix-b}container
+  & > .#{$prefix_b}container
     align-items: stretch
     display: flex
     min-height: $nav-height
     width: 100%
   // Modifiers
-  &.#{$prefix-b}has-shadow
+  &.#{$prefix_b}has-shadow
     box-shadow: 0 2px 3px rgba($black, 0.1)

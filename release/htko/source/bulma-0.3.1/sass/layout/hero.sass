@@ -1,6 +1,6 @@
 // Components
 
-.#{$prefix-b}hero-video
+.#{$prefix_b}hero-video
   +overlay
   overflow: hidden
   video
@@ -11,34 +11,34 @@
     top: 50%
     transform: translate3d(-50%, -50%, 0)
   // Modifiers
-  &.#{$prefix-b}is-transparent
+  &.#{$prefix_b}is-transparent
     opacity: 0.3
   // Responsiveness
   +mobile
     display: none
 
-.#{$prefix-b}hero-buttons
+.#{$prefix_b}hero-buttons
   margin-top: 1.5rem
   // Responsiveness
   +mobile
-    .#{$prefix-b}button
+    .#{$prefix_b}button
       display: flex
       &:not(:last-child)
         margin-bottom: 0.75rem
   +tablet
     display: flex
     justify-content: center
-    .#{$prefix-b}button:not(:last-child)
+    .#{$prefix_b}button:not(:last-child)
       margin-right: 1.5rem
 
 // Containers
 
-.#{$prefix-b}hero-head,
-.#{$prefix-b}hero-foot
+.#{$prefix_b}hero-head,
+.#{$prefix_b}hero-foot
   flex-grow: 0
   flex-shrink: 0
 
-.#{$prefix-b}hero-body
+.#{$prefix_b}hero-body
   flex-grow: 1
   flex-shrink: 0
   padding: 3rem 1.5rem
@@ -49,101 +49,101 @@
 
 // Main container
 
-.#{$prefix-b}hero
+.#{$prefix_b}hero
   align-items: stretch
   background-color: $white
   display: flex
   flex-direction: column
   justify-content: space-between
-  .#{$prefix-b}nav
+  .#{$prefix_b}nav
     background: none
     box-shadow: 0 1px 0 rgba($border, 0.3)
-  .#{$prefix-b}tabs
+  .#{$prefix_b}tabs
     ul
       border-bottom: none
   // Colors
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
-    &.#{$prefix-b}is-#{$name}
+    &.#{$prefix_b}is-#{$name}
       background-color: $color
       color: $color-invert
       a,
       strong
         color: inherit
-      .#{$prefix-b}title
+      .#{$prefix_b}title
         color: $color-invert
-      .#{$prefix-b}subtitle
+      .#{$prefix_b}subtitle
         color: rgba($color-invert, 0.9)
         a,
         strong
           color: $color-invert
-      .#{$prefix-b}nav
+      .#{$prefix_b}nav
         box-shadow: 0 1px 0 rgba($color-invert, 0.2)
-      .#{$prefix-b}nav-menu
+      .#{$prefix_b}nav-menu
         +mobile
           background-color: $color
-      a.#{$prefix-b}nav-item,
-      .#{$prefix-b}nav-item a:not(.#{$prefix-b}button)
+      a.#{$prefix_b}nav-item,
+      .#{$prefix_b}nav-item a:not(.#{$prefix_b}button)
         color: rgba($color-invert, 0.7)
         &:hover,
-        &.#{$prefix-b}is-active
+        &.#{$prefix_b}is-active
           color: $color-invert
-      .#{$prefix-b}tabs
+      .#{$prefix_b}tabs
         a
           color: $color-invert
           opacity: 0.9
           &:hover
             opacity: 1
         li
-          &.#{$prefix-b}is-active a
+          &.#{$prefix_b}is-active a
             opacity: 1
-        &.#{$prefix-b}is-boxed,
-        &.#{$prefix-b}is-toggle
+        &.#{$prefix_b}is-boxed,
+        &.#{$prefix_b}is-toggle
           a
             color: $color-invert
             &:hover
               background-color: rgba($black, 0.1)
-          li.#{$prefix-b}is-active a
+          li.#{$prefix_b}is-active a
             &,
             &:hover
               background-color: $color-invert
               border-color: $color-invert
               color: $color
       // Modifiers
-      &.#{$prefix-b}is-bold
+      &.#{$prefix_b}is-bold
         $gradient-top-left: darken(saturate(adjust-hue($color, -10deg), 10%), 10%)
         $gradient-bottom-right: lighten(saturate(adjust-hue($color, 10deg), 5%), 5%)
         background-image: linear-gradient(141deg, $gradient-top-left 0%, $color 71%, $gradient-bottom-right 100%)
       // Responsiveness
       +mobile
-        .#{$prefix-b}nav-toggle
+        .#{$prefix_b}nav-toggle
           span
             background-color: $color-invert
           &:hover
             background-color: rgba($black, 0.1)
-          &.#{$prefix-b}is-active
+          &.#{$prefix_b}is-active
             span
               background-color: $color-invert
-        .#{$prefix-b}nav-menu
-          .#{$prefix-b}nav-item
+        .#{$prefix_b}nav-menu
+          .#{$prefix_b}nav-item
             border-top-color: rgba($color-invert, 0.2)
   // Sizes
-  &.#{$prefix-b}is-medium
+  &.#{$prefix_b}is-medium
     +tablet
-      .#{$prefix-b}hero-body
+      .#{$prefix_b}hero-body
         padding-bottom: 9rem
         padding-top: 9rem
-  &.#{$prefix-b}is-large
+  &.#{$prefix_b}is-large
     +tablet
-      .#{$prefix-b}hero-body
+      .#{$prefix_b}hero-body
         padding-bottom: 18rem
         padding-top: 18rem
-  &.#{$prefix-b}is-fullheight
+  &.#{$prefix_b}is-fullheight
     min-height: 100vh
-    .#{$prefix-b}hero-body
+    .#{$prefix_b}hero-body
       align-items: center
       display: flex
-      & > .#{$prefix-b}container
+      & > .#{$prefix_b}container
         flex-grow: 1
         flex-shrink: 1

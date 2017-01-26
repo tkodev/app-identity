@@ -11,16 +11,16 @@ $button-focus-border: $link-focus-border !default
 $button-active: $link-active !default
 $button-active-border: $link-active-border !default
 
-$button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
+$button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default
 
 @function buttonIconSpacing($button-font-size, $icon-width)
   // The button font-size value with no unit
   $button-value: removeUnit($button-font-size)
   // The rem height of the button
   // based on a height of 2.5em
-  $button-height: 2.5 * $button-font-size // rem
+  $button-height: 2.5rem * $button-value // rem
   // The rem total horizontal padding of the button
-  $button-horizontal-padding: 2 * 0.75 * $button-font-size // rem
+  $button-horizontal-padding: 2 * 0.75rem * $button-value // rem
   // For the icon center to align with the button center
   // the horizontal padding + the icon width must equal the button height
   // $button-height = $button-horizontal-padding + $icon-width + $difference
@@ -32,7 +32,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
   $normal-offset: buttonIconSpacing($button-font-size, 1.5rem)
   $medium-offset: buttonIconSpacing($button-font-size, 2rem)
   $large-offset: buttonIconSpacing($button-font-size, 3rem)
-  .#{$prefix-b}icon
+  .#{$prefix_b}icon
     &:first-child:not(:last-child)
       margin-left: $normal-offset
       margin-right: $button-font-size / 2
@@ -43,7 +43,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
       // The -1px is to account for the button 1px border
       margin-left: calc(-1px + #{$normal-offset})
       margin-right: calc(-1px + #{$normal-offset})
-    &.#{$prefix-b}is-small
+    &.#{$prefix_b}is-small
       &:first-child:not(:last-child)
         margin-left: $small-offset
       &:last-child:not(:first-child)
@@ -51,7 +51,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
       &:first-child:last-child
         margin-left: calc(-1px + #{$small-offset})
         margin-right: calc(-1px + #{$small-offset})
-    &.#{$prefix-b}is-medium
+    &.#{$prefix_b}is-medium
       &:first-child:not(:last-child)
         margin-left: $medium-offset
       &:last-child:not(:first-child)
@@ -59,7 +59,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
       &:first-child:last-child
         margin-left: calc(-1px + #{$medium-offset})
         margin-right: calc(-1px + #{$medium-offset})
-    &.#{$prefix-b}is-large
+    &.#{$prefix_b}is-large
       &:first-child:not(:last-child)
         margin-left: $large-offset
       &:last-child:not(:first-child)
@@ -80,7 +80,7 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
   font-size: $size-large
   +button-icon($size-large)
 
-.#{$prefix-b}button
+.#{$prefix_b}button
   +control
   +unselectable
   background-color: $button-background
@@ -97,65 +97,65 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
   +button-icon($size-normal)
   // States
   &:hover,
-  &.#{$prefix-b}is-hovered
+  &.#{$prefix_b}is-hovered
     border-color: $button-hover-border
     color: $button-hover
   &:focus,
-  &.#{$prefix-b}is-focused
+  &.#{$prefix_b}is-focused
     border-color: $button-focus-border
     box-shadow: 0 0 0.5em rgba($button-focus-border, 0.25)
     color: $button-focus
   &:active,
-  &.#{$prefix-b}is-active
+  &.#{$prefix_b}is-active
     border-color: $button-active-border
     box-shadow: $button-shadow-inset
     color: $button-active
   // Colors
-  &.#{$prefix-b}is-link
+  &.#{$prefix_b}is-link
     background-color: transparent
     border-color: transparent
     color: $text
     text-decoration: underline
     &:hover,
-    &.#{$prefix-b}is-hovered,
+    &.#{$prefix_b}is-hovered,
     &:focus,
-    &.#{$prefix-b}is-focused,
+    &.#{$prefix_b}is-focused,
     &:active,
-    &.#{$prefix-b}is-active
+    &.#{$prefix_b}is-active
       background-color: $background
       color: $text-strong
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
-    &.#{$prefix-b}is-#{$name}
+    &.#{$prefix_b}is-#{$name}
       background-color: $color
       border-color: transparent
       color: $color-invert
       &:hover,
-      &.#{$prefix-b}is-hovered
+      &.#{$prefix_b}is-hovered
         background-color: darken($color, 2.5%)
         border-color: transparent
         color: $color-invert
       &:focus,
-      &.#{$prefix-b}is-focused
+      &.#{$prefix_b}is-focused
         border-color: transparent
         box-shadow: 0 0 0.5em rgba($color, 0.25)
         color: $color-invert
       &:active,
-      &.#{$prefix-b}is-active
+      &.#{$prefix_b}is-active
         background-color: darken($color, 5%)
         border-color: transparent
         box-shadow: $button-shadow-inset
         color: $color-invert
-      &.#{$prefix-b}is-inverted
+      &.#{$prefix_b}is-inverted
         background-color: $color-invert
         color: $color
         &:hover
           background-color: darken($color-invert, 5%)
-      &.#{$prefix-b}is-loading
+      &.#{$prefix_b}is-loading
         &:after
           border-color: transparent transparent $color-invert $color-invert !important
-      &.#{$prefix-b}is-outlined
+      &.#{$prefix_b}is-outlined
         background-color: transparent
         border-color: $color
         color: $color
@@ -164,7 +164,10 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
           background-color: $color
           border-color: $color
           color: $color-invert
-      &.#{$prefix-b}is-inverted.#{$prefix-b}is-outlined
+      &.#{$prefix_b}is-loading
+        &:after
+          border-color: transparent transparent $color $color !important
+      &.#{$prefix_b}is-inverted.#{$prefix_b}is-outlined
         background-color: transparent
         border-color: $color-invert
         color: $color-invert
@@ -173,20 +176,20 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2)
           background-color: $color-invert
           color: $color
   // Sizes
-  &.#{$prefix-b}is-small
+  &.#{$prefix_b}is-small
     +button-small
-  &.#{$prefix-b}is-medium
+  &.#{$prefix_b}is-medium
     +button-medium
-  &.#{$prefix-b}is-large
+  &.#{$prefix_b}is-large
     +button-large
   // Modifiers
   &[disabled],
-  &.#{$prefix-b}is-disabled
+  &.#{$prefix_b}is-disabled
     opacity: 0.5
-  &.#{$prefix-b}is-fullwidth
+  &.#{$prefix_b}is-fullwidth
     display: flex
     width: 100%
-  &.#{$prefix-b}is-loading
+  &.#{$prefix_b}is-loading
     color: transparent !important
     pointer-events: none
     &:after

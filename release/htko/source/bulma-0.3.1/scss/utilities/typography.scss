@@ -68,17 +68,18 @@ h6 {
   h4,
   h5,
   h6 {
+    font-weight: 300;
     color: $primary;
   }
 }
 
-.#{$prefix-h}list {
+.#{$prefix_h}list {
   text-transform: uppercase;
   font-size: 0.8rem;
   color: $primary;
 }
 
-.#{$prefix-h}invert {
+.#{$prefix_h}invert {
   h1,
   h2,
   h3,
@@ -96,15 +97,19 @@ h6 {
     color: $primary-invert;
   }
 
-  .#{$prefix-h}list {
+  .#{$prefix_h}list {
     color: $primary-invert;
+
+    strong {
+      color: $primary-invert !important;
+    }
   }
 }
 
-.#{$prefix-h}light {
+.#{$prefix_h}light {
   font-weight: 300;
+}
 
-  strong {
-    font-weight: 400;
-  }
+strong {
+  font-weight: 400;
 }
