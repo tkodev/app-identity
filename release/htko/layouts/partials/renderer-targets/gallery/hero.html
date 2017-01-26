@@ -1,0 +1,18 @@
+<div class="h-box h-stretch" style="background-image: url('{{ .Site.BaseURL }}{{ .img }}')">
+  <div class="h-bg h-stretch">
+    {{ if .ratio }}
+      <figure class="b-image {{ .ratio }}"> <img src="{{ .Site.BaseURL }}/static/default/img/px.png"> </figure>
+    {{ end }}
+  </div>
+  <div class="h-content h-overlay h-stretch h-invert h-center b-has-text-centered">
+    <a href="{{ .Site.BaseURL }}{{ .url }}">
+      <h4 class="h-title h-badge">{{ .title }}</h4>
+      {{ if .subtitle }}
+        <p class="h-list h-badge">{{ .subtitle | markdownify }}</p>
+      {{ end }}
+      {{ if .desc }}
+        <p class="h-list h-badge">{{ .desc | markdownify }}</p>
+      {{ end }}
+    </a>
+  </div>
+</div>

@@ -1,9 +1,9 @@
-.#{$prefix-b}modal-background
+.#{$prefix_b}modal-background
   +overlay
   background-color: rgba($black, 0.86)
 
-.#{$prefix-b}modal-content,
-.#{$prefix-b}modal-card
+.#{$prefix_b}modal-content,
+.#{$prefix_b}modal-card
   margin: 0 20px
   max-height: calc(100vh - 160px)
   overflow: auto
@@ -15,7 +15,7 @@
     max-height: calc(100vh - 40px)
     width: 640px
 
-.#{$prefix-b}modal-close
+.#{$prefix_b}modal-close
   +delete
   background: none
   height: 40px
@@ -24,14 +24,14 @@
   top: 20px
   width: 40px
 
-.#{$prefix-b}modal-card
+.#{$prefix_b}modal-card
   display: flex
   flex-direction: column
   max-height: calc(100vh - 40px)
   overflow: hidden
 
-.#{$prefix-b}modal-card-head,
-.#{$prefix-b}modal-card-foot
+.#{$prefix_b}modal-card-head,
+.#{$prefix_b}modal-card-foot
   align-items: center
   background-color: $background
   display: flex
@@ -40,27 +40,27 @@
   padding: 20px
   position: relative
 
-.#{$prefix-b}modal-card-head
+.#{$prefix_b}modal-card-head
   border-bottom: 1px solid $border
   border-top-left-radius: $radius-large
   border-top-right-radius: $radius-large
 
-.#{$prefix-b}modal-card-title
+.#{$prefix_b}modal-card-title
   color: $text-strong
   flex-grow: 1
   flex-shrink: 0
   font-size: $size-4
   line-height: 1
 
-.#{$prefix-b}modal-card-foot
+.#{$prefix_b}modal-card-foot
   border-bottom-left-radius: $radius-large
   border-bottom-right-radius: $radius-large
   border-top: 1px solid $border
-  .#{$prefix-b}button
+  .#{$prefix_b}button
     &:not(:last-child)
       margin-right: 10px
 
-.#{$prefix-b}modal-card-body
+.#{$prefix_b}modal-card-body
   +overflow-touch
   background-color: $white
   flex-grow: 1
@@ -68,7 +68,7 @@
   overflow: auto
   padding: 20px
 
-.#{$prefix-b}modal
+.#{$prefix_b}modal
   +overlay
   align-items: center
   display: none
@@ -77,5 +77,5 @@
   position: fixed
   z-index: 1986
   // Modifiers
-  &.#{$prefix-b}is-active
+  &.#{$prefix_b}is-active
     display: flex

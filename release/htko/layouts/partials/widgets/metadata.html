@@ -1,0 +1,44 @@
+<h6>Metadata</h6>
+<hr>
+{{ if .Date }}
+  <div class="h-widget">
+    <h6>Date:</h6>
+    <p class="h-list">{{ partial "snippets/date" . }}</p>
+  </div>
+{{ end }}
+{{ if .Params.tools }}
+  <div class="h-widget">
+    <h6>Tools:</h6>
+    <p class="h-list">{{ partial "snippets/tools" . }}</p>
+  </div>
+{{ end }}
+{{ if .Params.link }}
+  <div class="h-widget">
+    <h6>Link:</h6>
+    <p class="h-list">{{ partial "snippets/link" . }}</p>
+  </div>
+{{ end }}
+{{ if .Params.code }}
+  <div class="h-widget">
+    <h6>Code:</h6>
+    <p class="h-list">{{ partial "snippets/code" . }}</p>
+  </div>
+{{ end }}
+{{ if .Params.program }}
+  <div class="h-widget">
+    <h6>Program:</h6>
+    <p class="h-list">{{ partial "snippets/program" . }}</p>
+  </div>
+{{ end }}
+{{ if .Params.course }}
+  <div class="h-widget">
+    <h6>Course:</h6>
+    <p class="h-list">{{ partial "snippets/course" . }}</p>
+  </div>
+{{ end }}
+{{ if .Params.project }}
+  <div class="h-widget">
+    <h6>Project:</h6>
+    <p class="h-list">{{ partial "snippets/project" . }}</p>
+  </div>
+{{ end }}

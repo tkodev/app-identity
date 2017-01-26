@@ -1,4 +1,4 @@
-.#{$prefix-b}notification
+.#{$prefix_b}notification
   +block
   background-color: $background
   border-radius: $radius
@@ -9,18 +9,18 @@
     background: $white
   pre code
     background: transparent
-  .#{$prefix-b}delete
+  .#{$prefix_b}delete
     position: absolute
     right: 0.5em
     top: 0.5em
-  .#{$prefix-b}title,
-  .#{$prefix-b}subtitle,
-  .#{$prefix-b}content
+  .#{$prefix_b}title,
+  .#{$prefix_b}subtitle,
+  .#{$prefix_b}content
     color: inherit
   // Colors
   @each $name, $pair in $colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
-    &.#{$prefix-b}is-#{$name}
+    &.#{$prefix_b}is-#{$name}
       background-color: $color
       color: $color-invert
