@@ -73,7 +73,7 @@
       <div id="links" class="h-gallery b-columns b-is-multiline b-is-mobile">
         {{ $globalnode := . }}
         {{ range .Params.photos }}
-          <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+          <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-third-desktop b-is-paddingless">
             {{ $dir := (delimit (slice "content" $globalnode.Type $globalnode.Params.path) "/") }}
             {{ $img := (delimit (slice $dir "assets" . ) "/") }}
             {{ partial "renderer-targets/box/gallery" (dict "img" $img "node" $globalnode )}}
