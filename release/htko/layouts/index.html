@@ -7,7 +7,7 @@
 
     <div class="h-gallery b-columns b-is-multiline b-is-mobile">
       {{ range first 8 (shuffle (where .Data.Pages "Type" "project")) }}
-      <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-quarter-desktop b-is-paddingless">
+      <div class="b-column b-is-half-mobile b-is-one-third-tablet b-is-one-third-desktop b-is-paddingless">
         {{ .Render "box" }}
       </div>
       {{ end }}
