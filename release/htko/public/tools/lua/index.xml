@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lua on Hei Tony Ko | Personal Portfolio</title>
-    <link>http://localhost:5678/tools/lua/index.xml</link>
-    <description>Recent content in Lua on Hei Tony Ko | Personal Portfolio</description>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/lua/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="http://localhost:5678/tools/lua/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://htko.ca/tools/lua/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>LUA Language</title>
-      <link>http://localhost:5678/project/code/personal/lua-language/README/</link>
+      <link>http://htko.ca/project/code/personal/lua-language/README/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:5678/project/code/personal/lua-language/README/</guid>
+      <guid>http://htko.ca/project/code/personal/lua-language/README/</guid>
       <description>
 
 &lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;

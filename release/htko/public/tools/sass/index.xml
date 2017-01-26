@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sass on Hei Tony Ko | Personal Portfolio</title>
-    <link>http://localhost:5678/tools/sass/index.xml</link>
-    <description>Recent content in Sass on Hei Tony Ko | Personal Portfolio</description>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/sass/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="http://localhost:5678/tools/sass/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://htko.ca/tools/sass/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Site Base</title>
-      <link>http://localhost:5678/project/code/htko/site-base/README/</link>
+      <link>http://htko.ca/project/code/htko/site-base/README/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:5678/project/code/htko/site-base/README/</guid>
+      <guid>http://htko.ca/project/code/htko/site-base/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>Hugo Theme Foundation6 Blog</title>
-      <link>http://localhost:5678/project/code/personal/hugo-theme-foundation6-blog/README/</link>
+      <link>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:5678/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
+      <guid>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
       <description>&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
 &lt;p&gt;A simple &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; theme based on the &lt;a href=&#34;http://foundation.zurb.com/templates-previews-sites-f6/blog.html&#34;&gt;Foundation 6 blog (w/ sidebar) example&lt;/a&gt;, with scss &amp;amp; js gulp build scripts.&lt;/p&gt;
