@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Graphics on Hei Tony Ko | Personal Portfolio</title>
-    <link>http://localhost:5678/tools/graphics/index.xml</link>
-    <description>Recent content in Graphics on Hei Tony Ko | Personal Portfolio</description>
+    <title>Hei Tony Ko | Personal Portfolio</title>
+    <link>http://htko.ca/tools/graphics/index.xml</link>
+    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="http://localhost:5678/tools/graphics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://htko.ca/tools/graphics/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ABC Cakes</title>
-      <link>http://localhost:5678/project/gfx/personal/abc-cakes/README/</link>
+      <link>http://htko.ca/project/gfx/personal/abc-cakes/README/</link>
       <pubDate>Thu, 06 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:5678/project/gfx/personal/abc-cakes/README/</guid>
+      <guid>http://htko.ca/project/gfx/personal/abc-cakes/README/</guid>
       <description>
 
 &lt;h1 id=&#34;freelance-project&#34;&gt;Freelance Project&lt;/h1&gt;
