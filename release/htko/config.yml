@@ -6,6 +6,7 @@ author              : "Tony Ko"
 
 # Params
 params:
+  cover             : "content/project/gfx/personal/htko-identity/assets/mockup-cards.jpg"
   subtitle          : "Tony Ko"
   copyright         : "Copyright - Tony Ko."
   description       : "Personal Portfolio of Tony Ko, Front End Developer."
