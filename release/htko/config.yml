@@ -80,14 +80,9 @@ menu:
       pre           : "fa-linkedin"
       url           : "http://lnked.in/htko89"
       weight        : 2
-    - name          : "Indeed"
-      identifier    : "indeed"
-      pre           : "fa-info"
-      url           : "http://www.indeed.com/r/Tony-Ko/efd2964634ca1747"
-      weight        : 3
     - name          : "Resume"
       identifier    : "resume"
       pre           : "fa-id-card-o"
       url           : "http://htko.ca/resume.pdf"
-      weight        : 4
+      weight        : 3
 ...

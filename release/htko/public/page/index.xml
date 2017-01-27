@@ -20,7 +20,7 @@
 
 &lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
 
-&lt;h2 id=&#34;i-am-hei-tony-ko-aspiring-front-end-developer-with-extensive-experience-in-design&#34;&gt;I am Hei &lt;strong&gt;Tony Ko&lt;/strong&gt;, aspiring Front End Developer with extensive experience in design.&lt;/h2&gt;
+&lt;h2 id=&#34;i-am-tony-ko-aspiring-front-end-developer-with-extensive-experience-in-design&#34;&gt;I am &lt;strong&gt;Tony Ko&lt;/strong&gt;, aspiring Front End Developer with extensive experience in design.&lt;/h2&gt;
 
 &lt;p&gt;I currently specialize in &lt;strong&gt;Front End: Gulp.js, Node.js, Express.js, Algorithms, Responsive CSS / Frameworks&lt;/strong&gt;, but I also often get my hands dirty with back end skills in &lt;strong&gt;Hugo static site generation, Node.js, Python, Wordpress and Docker &amp;amp; Linux&lt;/strong&gt;.&lt;/p&gt;
 
@@ -39,7 +39,6 @@
         &lt;h6&gt;
           &lt;a href=&#34;https://github.com/htko89&#34;&gt;&lt;i class=&#34;fa fa-code-fork&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Github&lt;/span&gt;&lt;/a&gt;
           &lt;a href=&#34;http://lnked.in/htko89&#34;&gt;&lt;i class=&#34;fa fa-linkedin&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Linkedin&lt;/span&gt;&lt;/a&gt;
-          &lt;a href=&#34;http://www.indeed.com/r/Tony-Ko/efd2964634ca1747&#34;&gt;&lt;i class=&#34;fa fa-info&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Indeed&lt;/span&gt;&lt;/a&gt;
           &lt;a href=&#34;http://htko.ca/resume.pdf&#34;&gt;&lt;i class=&#34;fa fa-id-card-o&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Resume&lt;/span&gt;&lt;/a&gt;
         &lt;/h6&gt;
       &lt;/nav&gt;
