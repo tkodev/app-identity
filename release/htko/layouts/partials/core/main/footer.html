@@ -13,7 +13,7 @@
           <h6>
             {{ $currentNode := . }}
             {{ range .Site.Menus.footer }}
-              <a class="{{if $currentNode.IsMenuCurrent "footer" . }}b-is-active{{end}}" href="{{.URL}}"><span class="b-icon b-is-small"><i class="fa {{ .Pre }}"></i></span>&nbsp;<span class="b-is-hidden-mobile">&nbsp;{{ .Name }}</span></a>
+              <a href="{{.URL}}"><i class="fa {{ .Pre }}"></i><span class="b-is-hidden-mobile">&nbsp;{{ .Name }}</span></a>
             {{end}}
           </h6> </nav>
       </div>

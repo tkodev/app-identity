@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project-rsses on Hei Tony Ko | Personal Portfolio</title>
-    <link>http://htko.ca/project/index.xml</link>
-    <description>Recent content in Project-rsses on Hei Tony Ko | Personal Portfolio</description>
+    <title>Project-rsses on Tony Ko | Personal Portfolio</title>
+    <link>http://localhost:5678/project/index.xml</link>
+    <description>Recent content in Project-rsses on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
     <lastBuildDate>Thu, 19 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://htko.ca/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5678/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Site Base</title>
-      <link>http://htko.ca/project/code/htko/site-base/README/</link>
+      <link>http://localhost:5678/project/code/htko/site-base/README/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/htko/site-base/README/</guid>
+      <guid>http://localhost:5678/project/code/htko/site-base/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Profile Api</title>
-      <link>http://htko.ca/project/code/fcc/profile-api/README/</link>
+      <link>http://localhost:5678/project/code/fcc/profile-api/README/</link>
       <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/fcc/profile-api/README/</guid>
+      <guid>http://localhost:5678/project/code/fcc/profile-api/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -146,10 +146,10 @@ node server.js
     
     <item>
       <title>HTKO Identity</title>
-      <link>http://htko.ca/project/gfx/personal/htko-identity/README/</link>
+      <link>http://localhost:5678/project/gfx/personal/htko-identity/README/</link>
       <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/gfx/personal/htko-identity/README/</guid>
+      <guid>http://localhost:5678/project/gfx/personal/htko-identity/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -181,10 +181,10 @@ node server.js
     
     <item>
       <title>Hugo Theme Foundation6 Blog</title>
-      <link>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</link>
+      <link>http://localhost:5678/project/code/personal/hugo-theme-foundation6-blog/README/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
+      <guid>http://localhost:5678/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
       <description>&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
 &lt;p&gt;A simple &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; theme based on the &lt;a href=&#34;http://foundation.zurb.com/templates-previews-sites-f6/blog.html&#34;&gt;Foundation 6 blog (w/ sidebar) example&lt;/a&gt;, with scss &amp;amp; js gulp build scripts.&lt;/p&gt;
@@ -315,10 +315,10 @@ node server.js
     
     <item>
       <title>LUA Language</title>
-      <link>http://htko.ca/project/code/personal/lua-language/README/</link>
+      <link>http://localhost:5678/project/code/personal/lua-language/README/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/personal/lua-language/README/</guid>
+      <guid>http://localhost:5678/project/code/personal/lua-language/README/</guid>
       <description>
 
 &lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;
@@ -570,10 +570,10 @@ node server.js
     
     <item>
       <title>Scripts Bash</title>
-      <link>http://htko.ca/project/code/personal/scripts-bash/README/</link>
+      <link>http://localhost:5678/project/code/personal/scripts-bash/README/</link>
       <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/personal/scripts-bash/README/</guid>
+      <guid>http://localhost:5678/project/code/personal/scripts-bash/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -621,10 +621,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Scripts Legacy</title>
-      <link>http://htko.ca/project/code/personal/scripts-legacy/README/</link>
+      <link>http://localhost:5678/project/code/personal/scripts-legacy/README/</link>
       <pubDate>Mon, 14 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/personal/scripts-legacy/README/</guid>
+      <guid>http://localhost:5678/project/code/personal/scripts-legacy/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -635,10 +635,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Twitch Channels Widget</title>
-      <link>http://htko.ca/project/code/fcc/twitch-channels-widget/README/</link>
+      <link>http://localhost:5678/project/code/fcc/twitch-channels-widget/README/</link>
       <pubDate>Sat, 13 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/fcc/twitch-channels-widget/README/</guid>
+      <guid>http://localhost:5678/project/code/fcc/twitch-channels-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -659,10 +659,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Wikipedia Viewer Widget</title>
-      <link>http://htko.ca/project/code/fcc/wikipedia-viewer-widget/README/</link>
+      <link>http://localhost:5678/project/code/fcc/wikipedia-viewer-widget/README/</link>
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/fcc/wikipedia-viewer-widget/README/</guid>
+      <guid>http://localhost:5678/project/code/fcc/wikipedia-viewer-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -680,10 +680,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Local Weather Widget</title>
-      <link>http://htko.ca/project/code/fcc/local-weather-widget/README/</link>
+      <link>http://localhost:5678/project/code/fcc/local-weather-widget/README/</link>
       <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/fcc/local-weather-widget/README/</guid>
+      <guid>http://localhost:5678/project/code/fcc/local-weather-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -702,10 +702,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Quote Machine Widget</title>
-      <link>http://htko.ca/project/code/fcc/quote-machine-widget/README/</link>
+      <link>http://localhost:5678/project/code/fcc/quote-machine-widget/README/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/fcc/quote-machine-widget/README/</guid>
+      <guid>http://localhost:5678/project/code/fcc/quote-machine-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -723,10 +723,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Portfolio Template</title>
-      <link>http://htko.ca/project/code/fcc/portfolio-template/README/</link>
+      <link>http://localhost:5678/project/code/fcc/portfolio-template/README/</link>
       <pubDate>Sat, 25 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/fcc/portfolio-template/README/</guid>
+      <guid>http://localhost:5678/project/code/fcc/portfolio-template/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -746,10 +746,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Tribute Page</title>
-      <link>http://htko.ca/project/code/fcc/tribute-page/README/</link>
+      <link>http://localhost:5678/project/code/fcc/tribute-page/README/</link>
       <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/fcc/tribute-page/README/</guid>
+      <guid>http://localhost:5678/project/code/fcc/tribute-page/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -767,10 +767,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Angelfind App</title>
-      <link>http://htko.ca/project/code/personal/angelfind-app/README/</link>
+      <link>http://localhost:5678/project/code/personal/angelfind-app/README/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/personal/angelfind-app/README/</guid>
+      <guid>http://localhost:5678/project/code/personal/angelfind-app/README/</guid>
       <description>
 
 &lt;h1 id=&#34;hackathon-entry-angelhack&#34;&gt;Hackathon Entry - Angelhack&lt;/h1&gt;
@@ -794,10 +794,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Proton Light Switch</title>
-      <link>http://htko.ca/project/code/personal/proton-light-switch/README/</link>
+      <link>http://localhost:5678/project/code/personal/proton-light-switch/README/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/personal/proton-light-switch/README/</guid>
+      <guid>http://localhost:5678/project/code/personal/proton-light-switch/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;

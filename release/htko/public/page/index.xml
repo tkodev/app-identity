@@ -1,46 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Page-rsses on Hei Tony Ko | Personal Portfolio</title>
-    <link>http://htko.ca/page/index.xml</link>
-    <description>Recent content in Page-rsses on Hei Tony Ko | Personal Portfolio</description>
+    <title>Page-rsses on Tony Ko | Personal Portfolio</title>
+    <link>http://localhost:5678/page/index.xml</link>
+    <description>Recent content in Page-rsses on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
     <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://htko.ca/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5678/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Me</title>
-      <link>http://htko.ca/page/about-me/README/</link>
+      <link>http://localhost:5678/page/about-me/README/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/page/about-me/README/</guid>
+      <guid>http://localhost:5678/page/about-me/README/</guid>
       <description>
 
 &lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
 
-&lt;h2 id=&#34;i-am-hei-tony-ko-front-end-web-developer&#34;&gt;I am Hei &lt;strong&gt;Tony Ko&lt;/strong&gt;, Front End Web Developer.&lt;/h2&gt;
+&lt;h2 id=&#34;i-am-hei-tony-ko-aspiring-front-end-developer-with-extensive-experience-in-design&#34;&gt;I am Hei &lt;strong&gt;Tony Ko&lt;/strong&gt;, aspiring Front End Developer with extensive experience in design.&lt;/h2&gt;
 
-&lt;p&gt;I currently specialize in &lt;strong&gt;Front End: Node.JS, JS Frameworks, Responsive CSS and UI&lt;/strong&gt;, but I also often get my hands dirty with back end skills in &lt;strong&gt;Node.JS, Python, Wordpress and Docker &amp;amp; Linux&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I currently specialize in &lt;strong&gt;Front End: Gulp.js, Node.js, Express.js, Algorithms, Responsive CSS / Frameworks&lt;/strong&gt;, but I also often get my hands dirty with back end skills in &lt;strong&gt;Hugo static site generation, Node.js, Python, Wordpress and Docker &amp;amp; Linux&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;For almost a decade&lt;/strong&gt;, I have been fascinated with the idea of working with front-end technologies, magic and possibilities of HTML / CSS / Javascript.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For almost a decade&lt;/strong&gt;, I have been fascinated with the idea of working with front-end technologies, magic and possibilities of software.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;For the last year&lt;/strong&gt;, I have focused my efforts to fully develop this desire into a complete career. Most of my code is hosted on &lt;a href=&#34;https://github.com/htko89&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Previous experience: &lt;strong&gt;Junior Designer (&lt;a href=&#34;http://kosinteriordesign.com/&#34;&gt;Ko&amp;rsquo;s Interior Design&lt;/a&gt;)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Current experience: &lt;strong&gt;Front End Development Certification (WIP) (&lt;a href=&#34;https://www.freecodecamp.com/&#34;&gt;Free Code Camp&lt;/a&gt;)&lt;/strong&gt;
-
-&lt;ul&gt;
-&lt;li&gt;See current progress dynamically! &lt;a href=&#34;http://htko.ca/project/code/fcc/free-code-camp/README/&#34;&gt;FreeCodeCamp Journal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Career aim: &lt;strong&gt;Data Vis.&lt;/strong&gt;, &lt;strong&gt;Back End&lt;/strong&gt; and &lt;strong&gt;Full Stack Certificates&lt;/strong&gt; in the future.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;For the last year&lt;/strong&gt;, I have focused my efforts to fully develop this desire into a complete career.&lt;/p&gt;
 
 &lt;p&gt;As a whole, I hope to bring a unique &lt;strong&gt;developer-designer&lt;/strong&gt; perspective to my work.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;div class=&#34;b-container&#34;&gt;
+  &lt;div class=&#34;b-columns b-is-mobile&#34;&gt;
+    &lt;div class=&#34;b-column b-is-narrow&#34;&gt;
+      &lt;nav class=&#34;h-menu-main&#34;&gt;
+        &lt;h6&gt;
+          &lt;a href=&#34;https://github.com/htko89&#34;&gt;&lt;i class=&#34;fa fa-code-fork&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Github&lt;/span&gt;&lt;/a&gt;
+          &lt;a href=&#34;http://lnked.in/htko89&#34;&gt;&lt;i class=&#34;fa fa-linkedin&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Linkedin&lt;/span&gt;&lt;/a&gt;
+          &lt;a href=&#34;http://www.indeed.com/r/Tony-Ko/efd2964634ca1747&#34;&gt;&lt;i class=&#34;fa fa-info&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Indeed&lt;/span&gt;&lt;/a&gt;
+          &lt;a href=&#34;http://htko.ca/resume.pdf&#34;&gt;&lt;i class=&#34;fa fa-id-card-o&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Resume&lt;/span&gt;&lt;/a&gt;
+        &lt;/h6&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe class=&#34;h-docs&#34; src=&#34;https://docs.google.com/document/d/1cgeZeHnIXxlozGS-vgqVD-a9QPJ1yf_IKuBoHtJV2yE/pub?embedded=true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     

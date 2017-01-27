@@ -9,19 +9,32 @@ path: about-me
 ---
 # About Me
 
-## I am Hei **Tony Ko**, Front End Web Developer.
+## I am Hei **Tony Ko**, aspiring Front End Developer with extensive experience in design.
 
-I currently specialize in **Front End: Node.JS, JS Frameworks, Responsive CSS and UI**, but I also often get my hands dirty with back end skills in **Node.JS, Python, Wordpress and Docker & Linux**.
+I currently specialize in **Front End: Gulp.js, Node.js, Express.js, Algorithms, Responsive CSS / Frameworks**, but I also often get my hands dirty with back end skills in **Hugo static site generation, Node.js, Python, Wordpress and Docker & Linux**.
 
-**For almost a decade**, I have been fascinated with the idea of working with front-end technologies, magic and possibilities of HTML / CSS / Javascript.
+**For almost a decade**, I have been fascinated with the idea of working with front-end technologies, magic and possibilities of software.
 
-**For the last year**, I have focused my efforts to fully develop this desire into a complete career. Most of my code is hosted on [Github](https://github.com/htko89).
-
-## Experience
-
-* Previous experience: **Junior Designer ([Ko's Interior Design](http://kosinteriordesign.com/))**
-* Current experience: **Front End Development Certification (WIP) ([Free Code Camp](https://www.freecodecamp.com/))**
-  * See current progress dynamically! [FreeCodeCamp Journal](http://htko.ca/project/code/fcc/free-code-camp/README/)
-  * Career aim: **Data Vis.**, **Back End** and **Full Stack Certificates** in the future.
+**For the last year**, I have focused my efforts to fully develop this desire into a complete career.
 
 As a whole, I hope to bring a unique **developer-designer** perspective to my work.
+
+***
+
+<div class="b-container">
+  <div class="b-columns b-is-mobile">
+    <div class="b-column b-is-narrow">
+      <nav class="h-menu-main">
+        <h6>
+          <a href="https://github.com/htko89"><i class="fa fa-code-fork"></i><span class="b-is-hidden-mobile">&nbsp;Github</span></a>
+          <a href="http://lnked.in/htko89"><i class="fa fa-linkedin"></i><span class="b-is-hidden-mobile">&nbsp;Linkedin</span></a>
+          <a href="http://www.indeed.com/r/Tony-Ko/efd2964634ca1747"><i class="fa fa-info"></i><span class="b-is-hidden-mobile">&nbsp;Indeed</span></a>
+          <a href="http://htko.ca/resume.pdf"><i class="fa fa-id-card-o"></i><span class="b-is-hidden-mobile">&nbsp;Resume</span></a>
+        </h6>
+      </nav>
+    </div>
+  </div>
+</div>
+***
+
+<iframe class="h-docs" src="https://docs.google.com/document/d/1cgeZeHnIXxlozGS-vgqVD-a9QPJ1yf_IKuBoHtJV2yE/pub?embedded=true"></iframe>

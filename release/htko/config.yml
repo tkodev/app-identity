@@ -1,14 +1,14 @@
 ---
 # Metadata
 languageCode        : "en-us"
-title               : "Hei Tony Ko | Personal Portfolio"
-author              : "Hei Tony Ko"
+title               : "Tony Ko | Personal Portfolio"
+author              : "Tony Ko"
 
 # Params
 params:
-  subtitle          : "Hei Tony Ko"
+  subtitle          : "Tony Ko"
   copyright         : "Copyright - Tony Ko."
-  description       : "Personal Portfolio of Hei Tony Ko, Front End Developer."
+  description       : "Personal Portfolio of Tony Ko, Front End Developer."
   locale            : "en_US"
   google_verify     : ""
   facebook          : "htko89"
@@ -42,17 +42,17 @@ menu:
       identifier    : "code"
       pre           : "fa-code"
       url           : "/topics/code/"
-      weight        : -110
+      weight        : 1
     - name          : "GFX"
       identifier    : "gfx"
       pre           : "fa-paint-brush"
       url           : "/topics/gfx/"
-      weight        : -110
+      weight        : 2
     - name          : "Interior Design"
       identifier    : "interior-design"
       pre           : "fa-bank"
       url           : "/topics/interior design/"
-      weight        : -110
+      weight        : 3
     # - name          : "Photography"
     #   identifier    : "photography"
     #   pre           : "fa-camera-retro"
@@ -68,21 +68,26 @@ menu:
       identifier    : "about-me"
       pre           : "fa-user-circle-o"
       url           : "page/about-me/README/"
-      weight        : -100
+      weight        : 1
   footer:
-    - name          : "Linkedin"
-      identifier    : "linkedin"
-      pre           : "fa-linkedin"
-      url           : "http://lnked.in/htko89"
-      weight        : -100
     - name          : "Github"
       identifier    : "github"
       pre           : "fa-code-fork"
       url           : "https://github.com/htko89"
-      weight        : -110
-    - name          : "Instagram"
-      identifier    : "instagram"
-      pre           : "fa-instagram"
-      url           : "https://www.instagram.com/htkoca"
-      weight        : -120
+      weight        : 1
+    - name          : "Linkedin"
+      identifier    : "linkedin"
+      pre           : "fa-linkedin"
+      url           : "http://lnked.in/htko89"
+      weight        : 2
+    - name          : "Indeed"
+      identifier    : "indeed"
+      pre           : "fa-info"
+      url           : "http://www.indeed.com/r/Tony-Ko/efd2964634ca1747"
+      weight        : 3
+    - name          : "Resume"
+      identifier    : "resume"
+      pre           : "fa-id-card-o"
+      url           : "http://htko.ca/resume.pdf"
+      weight        : 4
 ...

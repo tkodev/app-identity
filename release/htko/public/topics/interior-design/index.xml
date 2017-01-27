@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hei Tony Ko | Personal Portfolio</title>
-    <link>http://htko.ca/topics/interior-design/index.xml</link>
-    <description>Recent content on Hei Tony Ko | Personal Portfolio</description>
+    <title>Tony Ko | Personal Portfolio</title>
+    <link>http://localhost:5678/topics/interior-design/index.xml</link>
+    <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="http://htko.ca/topics/interior-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:5678/topics/interior-design/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>MOCCA Courtyard Module Rev 2</title>
-      <link>http://htko.ca/project/interior-design/ocad/mocca-courtyard-module-rev-2/README/</link>
+      <link>http://localhost:5678/project/interior-design/ocad/mocca-courtyard-module-rev-2/README/</link>
       <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/ocad/mocca-courtyard-module-rev-2/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/ocad/mocca-courtyard-module-rev-2/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>Art Gallery of Ontario Staircase</title>
-      <link>http://htko.ca/project/interior-design/ocad/art-gallery-of-ontario-staircase/README/</link>
+      <link>http://localhost:5678/project/interior-design/ocad/art-gallery-of-ontario-staircase/README/</link>
       <pubDate>Tue, 04 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/ocad/art-gallery-of-ontario-staircase/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/ocad/art-gallery-of-ontario-staircase/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
@@ -68,10 +68,10 @@
     
     <item>
       <title>Alexandra Park Revitalization</title>
-      <link>http://htko.ca/project/interior-design/ocad/alexandra-park-revitalization/README/</link>
+      <link>http://localhost:5678/project/interior-design/ocad/alexandra-park-revitalization/README/</link>
       <pubDate>Thu, 10 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/ocad/alexandra-park-revitalization/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/ocad/alexandra-park-revitalization/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
@@ -91,10 +91,10 @@
     
     <item>
       <title>1900s Queen St Modernization</title>
-      <link>http://htko.ca/project/interior-design/ocad/1900s-queen-st-modernization/README/</link>
+      <link>http://localhost:5678/project/interior-design/ocad/1900s-queen-st-modernization/README/</link>
       <pubDate>Fri, 28 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/ocad/1900s-queen-st-modernization/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/ocad/1900s-queen-st-modernization/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
@@ -120,10 +120,10 @@
     
     <item>
       <title>Mood Light Modulator</title>
-      <link>http://htko.ca/project/interior-design/ocad/mood-light-modulator/README/</link>
+      <link>http://localhost:5678/project/interior-design/ocad/mood-light-modulator/README/</link>
       <pubDate>Fri, 14 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/ocad/mood-light-modulator/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/ocad/mood-light-modulator/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
@@ -144,10 +144,10 @@
     
     <item>
       <title>MOCCA Courtyard Module Rev 1</title>
-      <link>http://htko.ca/project/interior-design/ocad/mocca-courtyard-module-rev-1/README/</link>
+      <link>http://localhost:5678/project/interior-design/ocad/mocca-courtyard-module-rev-1/README/</link>
       <pubDate>Fri, 29 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/ocad/mocca-courtyard-module-rev-1/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/ocad/mocca-courtyard-module-rev-1/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
@@ -172,10 +172,10 @@
     
     <item>
       <title>Casa Das Canoas Scale Model</title>
-      <link>http://htko.ca/project/interior-design/ocad/casa-das-canoas-scale-model/README/</link>
+      <link>http://localhost:5678/project/interior-design/ocad/casa-das-canoas-scale-model/README/</link>
       <pubDate>Tue, 22 Oct 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/ocad/casa-das-canoas-scale-model/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/ocad/casa-das-canoas-scale-model/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-ocad&#34;&gt;Student Project - OCAD&lt;/h1&gt;
@@ -200,10 +200,10 @@
     
     <item>
       <title>Sculpture Gallery</title>
-      <link>http://htko.ca/project/interior-design/personal/sculpture-gallery/README/</link>
+      <link>http://localhost:5678/project/interior-design/personal/sculpture-gallery/README/</link>
       <pubDate>Wed, 06 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/interior-design/personal/sculpture-gallery/README/</guid>
+      <guid>http://localhost:5678/project/interior-design/personal/sculpture-gallery/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project-ocad-prospective-student-porfolio&#34;&gt;Personal Project - OCAD Prospective Student Porfolio&lt;/h1&gt;
