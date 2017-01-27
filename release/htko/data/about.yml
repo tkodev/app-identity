@@ -5,11 +5,19 @@ contact:
   title: 'Developer * Designer'
 
 proficiency:
-  css: 3 Years
-  css_progress: 90
-  html: 3 Years
-  html_progress: 80
-  js: 1 Year
+  css_html: 3 Years - Extensive
+  css_html_progress: 80
+  js: 1 Year  - Intermediate
   js_progress: 60
-  python: 2 Years
-  python_progress: 40
+  jquery: 6 Months - Intermediate
+  jquery_progress: 50
+  gulp: 6 Months - Intermediate
+  gulp_progress:
+  sass: 6 Months - Intermediate
+  sass_progress:
+  express: 3 Months - Novice
+  express_progress:
+  ionic: 3 Months - Novice
+  ionic_progress:
+  python: 2 Years - Novice
+  python_progress:

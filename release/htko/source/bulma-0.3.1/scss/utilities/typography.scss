@@ -71,6 +71,16 @@ h6 {
     font-weight: 300;
     color: $primary;
   }
+  p {
+    strong {
+      font-weight: bold;
+      margin: 0;
+    }
+    a {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
 }
 
 .#{$prefix_h}list {
