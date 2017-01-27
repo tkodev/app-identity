@@ -9,7 +9,7 @@ path: about-me
 ---
 # About Me
 
-## I am Hei **Tony Ko**, aspiring Front End Developer with extensive experience in design.
+## I am **Tony Ko**, aspiring Front End Developer with extensive experience in design.
 
 I currently specialize in **Front End: Gulp.js, Node.js, Express.js, Algorithms, Responsive CSS / Frameworks**, but I also often get my hands dirty with back end skills in **Hugo static site generation, Node.js, Python, Wordpress and Docker & Linux**.
 
@@ -28,7 +28,6 @@ As a whole, I hope to bring a unique **developer-designer** perspective to my wo
         <h6>
           <a href="https://github.com/htko89"><i class="fa fa-code-fork"></i><span class="b-is-hidden-mobile">&nbsp;Github</span></a>
           <a href="http://lnked.in/htko89"><i class="fa fa-linkedin"></i><span class="b-is-hidden-mobile">&nbsp;Linkedin</span></a>
-          <a href="http://www.indeed.com/r/Tony-Ko/efd2964634ca1747"><i class="fa fa-info"></i><span class="b-is-hidden-mobile">&nbsp;Indeed</span></a>
           <a href="http://htko.ca/resume.pdf"><i class="fa fa-id-card-o"></i><span class="b-is-hidden-mobile">&nbsp;Resume</span></a>
         </h6>
       </nav>
