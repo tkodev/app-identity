@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tony Ko | Personal Portfolio</title>
-    <link>https://htko.ca/tools/c&#43;&#43;/index.xml</link>
+    <link>//htko.ca/tools/c&#43;&#43;/index.xml</link>
     <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="https://htko.ca/tools/c&#43;&#43;/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//htko.ca/tools/c&#43;&#43;/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Proton Light Switch</title>
-      <link>https://htko.ca/project/code/personal/proton-light-switch/README/</link>
+      <link>//htko.ca/project/code/personal/proton-light-switch/README/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://htko.ca/project/code/personal/proton-light-switch/README/</guid>
+      <guid>//htko.ca/project/code/personal/proton-light-switch/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
