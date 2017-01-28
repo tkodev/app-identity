@@ -1,6 +1,6 @@
 # Hugo paths
 hugo:
-  baseUrl: "http://htko.ca"
+  baseUrl: "https://htko.ca"
   tempUrl: "http://localhost:5678"
   port: 5678
   public: "/public"

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tony Ko | Personal Portfolio</title>
-    <link>http://htko.ca/topics/gfx/index.xml</link>
+    <link>https://htko.ca/topics/gfx/index.xml</link>
     <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="http://htko.ca/topics/gfx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://htko.ca/topics/gfx/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Site Base</title>
-      <link>http://htko.ca/project/code/htko/site-base/README/</link>
+      <link>https://htko.ca/project/code/htko/site-base/README/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/code/htko/site-base/README/</guid>
+      <guid>https://htko.ca/project/code/htko/site-base/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>HTKO Identity</title>
-      <link>http://htko.ca/project/gfx/personal/htko-identity/README/</link>
+      <link>https://htko.ca/project/gfx/personal/htko-identity/README/</link>
       <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/gfx/personal/htko-identity/README/</guid>
+      <guid>https://htko.ca/project/gfx/personal/htko-identity/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -73,10 +73,10 @@
     
     <item>
       <title>ABC Cakes</title>
-      <link>http://htko.ca/project/gfx/personal/abc-cakes/README/</link>
+      <link>https://htko.ca/project/gfx/personal/abc-cakes/README/</link>
       <pubDate>Thu, 06 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/gfx/personal/abc-cakes/README/</guid>
+      <guid>https://htko.ca/project/gfx/personal/abc-cakes/README/</guid>
       <description>
 
 &lt;h1 id=&#34;freelance-project&#34;&gt;Freelance Project&lt;/h1&gt;
@@ -87,10 +87,10 @@
     
     <item>
       <title>Early Graphical Design</title>
-      <link>http://htko.ca/project/gfx/personal/early-graphical-design/README/</link>
+      <link>https://htko.ca/project/gfx/personal/early-graphical-design/README/</link>
       <pubDate>Tue, 08 Sep 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/project/gfx/personal/early-graphical-design/README/</guid>
+      <guid>https://htko.ca/project/gfx/personal/early-graphical-design/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;

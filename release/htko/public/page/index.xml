@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page-rsses on Tony Ko | Personal Portfolio</title>
-    <link>http://htko.ca/page/index.xml</link>
+    <link>https://htko.ca/page/index.xml</link>
     <description>Recent content in Page-rsses on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
     <lastBuildDate>Sat, 31 Dec 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://htko.ca/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://htko.ca/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Me</title>
-      <link>http://htko.ca/page/about-me/README/</link>
+      <link>https://htko.ca/page/about-me/README/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://htko.ca/page/about-me/README/</guid>
+      <guid>https://htko.ca/page/about-me/README/</guid>
       <description>
 
 &lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;
