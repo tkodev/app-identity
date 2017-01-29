@@ -5,14 +5,16 @@
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
-{{if .Params.path }}
+{{ if isset .Params "photos" }}
+  {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
+  {{ $img := (delimit (slice $dir "assets" (index .Params.photos 0)) "/") }}
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ $img }}"/>
+{{ else if isset .Params "path" }}
   {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
   {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
   <meta property="og:image" content="{{ .Site.BaseURL }}{{ $img }}"/>
-{{else}}
-   {{if .Site.Params.cover}}
-       <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.cover }}"/>
-   {{end}}
-{{end}}
+{{ else if .Site.Params.cover }}
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.cover }}"/>
+{{ end }}
 
 {{ .Hugo.Generator }}

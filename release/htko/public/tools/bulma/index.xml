@@ -2,36 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tony Ko | Personal Portfolio</title>
-    <link>//htko.ca/tools/bulma/index.xml</link>
+    <link>//localhost:5678/tools/bulma/index.xml</link>
     <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="//htko.ca/tools/bulma/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:5678/tools/bulma/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Site Base</title>
-      <link>//htko.ca/project/code/htko/site-base/README/</link>
+      <title>HTKO.ca Site Base V2</title>
+      <link>//localhost:5678/project/code/htko/site-base-v2/README/</link>
       <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>//htko.ca/project/code/htko/site-base/README/</guid>
+      <guid>//localhost:5678/project/code/htko/site-base-v2/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
-&lt;p&gt;Hugo base for personal portfolio at htko.ca. An experiment in static site generation, using &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as the engine. Dynamic sites are heavy in resource usage are vulnerable to attacks. Static sites are fast, efficient and most of all, provide minimal avenues of attack. However, they are difficult to maintain, and do not scale well with large sets of data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;No paid templates, no third party designs, 100% designed and built by me.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;I have selected &lt;a href=&#34;http://bulma.io/&#34;&gt;Bulma&lt;/a&gt; as my css framework of choice as it is CSS only, unopinionated, fast &lt;strong&gt;(&amp;lt;200KB!)&lt;/strong&gt;, yet supports all modern flexbox grid conventions. I also created a mini CSS framework of my own, to supplement Bulma. My build process builds the css, pulls from my local portfolio directory the needed projects, then builds it with hugo, and renders it with &lt;strong&gt;BrowserSync&lt;/strong&gt;. I deploy using &lt;strong&gt;Git&lt;/strong&gt; on &lt;strong&gt;DigitalOcean&lt;/strong&gt; because it does delta updates, which is especially important when dealing with hugo&amp;rsquo;s large output.&lt;/p&gt;
+&lt;p&gt;This is the code base for my personal portfolio at HTKO.ca.&lt;/p&gt;
+
+&lt;p&gt;Using a heavily modified version of &lt;a href=&#34;http://bulma.io/&#34;&gt;Bulma&lt;/a&gt; to define grid structure; it is CSS only, unopinionated, fast &lt;strong&gt;(&amp;lt;200KB!)&lt;/strong&gt;, yet supports all modern flexbox grid conventions. My &lt;strong&gt;Gulp&lt;/strong&gt; build process then compiles &lt;strong&gt;SASS &amp;amp; SCSS&lt;/strong&gt;, copies portfolio items from my local sources, builds it with &lt;strong&gt;Hugo&lt;/strong&gt;, and renders real-time with &lt;strong&gt;BrowserSync&lt;/strong&gt; for a live editing experience. I deploy using &lt;strong&gt;Git&lt;/strong&gt; on &lt;strong&gt;DigitalOcean&lt;/strong&gt; due to delta updates for all file types, which means &lt;strong&gt;builds deploy in seconds not hours.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;building-for-developers&#34;&gt;Building for developers&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download and install dependencies
+&lt;code&gt;
+git clone https://github.com/htko89/htko-site-base.git
+cd htko-site-base
+npm install
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Build
+&lt;code&gt;
+npm run server # local live editing
+npm run builder # remote live build (!)
+&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;(!) renders only for build confirmation. All linked elements point to htko.ca and load accordingly based on files there.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;gulp&lt;/code&gt;, &lt;code&gt;node&lt;/code&gt; task engine&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;js-yaml&lt;/code&gt;, &lt;code&gt;gray-matter&lt;/code&gt; for front matter / build configuration processing.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;gulp-sass&lt;/code&gt;,&lt;code&gt;gulp-postcss&lt;/code&gt;,&lt;code&gt;autoprefixer&lt;/code&gt; to compile sass &amp;amp; scss files to css.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;globby&lt;/code&gt;,&lt;code&gt;minimatch&lt;/code&gt;,&lt;code&gt;fs-extra&lt;/code&gt; for portfolio projects compilation.&lt;/li&gt;
+&lt;li&gt;100% HTKO design.
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Gulp&lt;/code&gt;, &lt;code&gt;Node.js&lt;/code&gt; task engine.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Style Structure: Custom lightweight base based on &lt;a href=&#34;http://bulma.io/&#34;&gt;Bulma&lt;/a&gt;.
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Gulp-Sass&lt;/code&gt;,&lt;code&gt;Gulp-PostCSS&lt;/code&gt;,&lt;code&gt;AutoPrefixer&lt;/code&gt; to compile sass &amp;amp; scss files to css.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Portfolio Support: Pull from all local sources.
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;JS-Yaml&lt;/code&gt;, &lt;code&gt;Gray-Matter&lt;/code&gt; for front matter / build configuration processing.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Globby&lt;/code&gt;,&lt;code&gt;Minimatch&lt;/code&gt;,&lt;code&gt;FS-Extra&lt;/code&gt; for portfolio projects compilation.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Human ready: Linting, Sourcemapping, Live-editing.
+
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;js-beautify&lt;/code&gt; for linting.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;hugo&lt;/code&gt;, &lt;code&gt;browser-sync&lt;/code&gt; for building and rendering.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tony Ko | Personal Portfolio</title>
-    <link>//htko.ca/tools/flash/index.xml</link>
+    <link>//localhost:5678/tools/flash/index.xml</link>
     <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="//htko.ca/tools/flash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:5678/tools/flash/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Early Graphical Design</title>
-      <link>//htko.ca/project/gfx/personal/early-graphical-design/README/</link>
+      <link>//localhost:5678/project/gfx/personal/early-graphical-design/README/</link>
       <pubDate>Tue, 08 Sep 2009 00:00:00 +0000</pubDate>
       
-      <guid>//htko.ca/project/gfx/personal/early-graphical-design/README/</guid>
+      <guid>//localhost:5678/project/gfx/personal/early-graphical-design/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;

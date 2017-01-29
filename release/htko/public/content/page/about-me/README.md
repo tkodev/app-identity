@@ -4,7 +4,7 @@ draft: false
 date: "2016-12-31"
 title: "About Me"
 photos:
-  - "dp.jpg"
+  - mockup-mobile.jpg
 path: about-me
 ---
 # About Me

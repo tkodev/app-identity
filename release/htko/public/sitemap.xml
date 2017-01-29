@@ -2,142 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>//htko.ca/</loc>
+    <loc>//localhost:5678/</loc>
     <lastmod>2017-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/htko/site-base/README/</loc>
+    <loc>//localhost:5678/project/code/htko/site-base-v2/README/</loc>
     <lastmod>2017-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/profile-api/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/profile-api/README/</loc>
     <lastmod>2017-01-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/page/about-me/README/</loc>
+    <loc>//localhost:5678/page/about-me/README/</loc>
     <lastmod>2016-12-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/gfx/personal/htko-identity/README/</loc>
+    <loc>//localhost:5678/project/gfx/personal/htko-identity/README/</loc>
     <lastmod>2016-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</loc>
+    <loc>//localhost:5678/project/code/personal/hugo-theme-foundation6-blog/README/</loc>
     <lastmod>2016-12-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/personal/lua-language/README/</loc>
+    <loc>//localhost:5678/project/code/personal/lua-language/README/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/personal/scripts-bash/README/</loc>
+    <loc>//localhost:5678/project/code/personal/scripts-bash/README/</loc>
     <lastmod>2016-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/personal/scripts-legacy/README/</loc>
+    <loc>//localhost:5678/project/code/personal/scripts-legacy/README/</loc>
     <lastmod>2016-11-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/twitch-channels-widget/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/twitch-channels-widget/README/</loc>
     <lastmod>2016-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/wikipedia-viewer-widget/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/wikipedia-viewer-widget/README/</loc>
     <lastmod>2016-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/local-weather-widget/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/local-weather-widget/README/</loc>
     <lastmod>2016-08-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/quote-machine-widget/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/quote-machine-widget/README/</loc>
     <lastmod>2016-08-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/portfolio-template/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/portfolio-template/README/</loc>
     <lastmod>2016-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/tribute-page/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/tribute-page/README/</loc>
     <lastmod>2016-06-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/personal/angelfind-app/README/</loc>
+    <loc>//localhost:5678/project/code/personal/angelfind-app/README/</loc>
     <lastmod>2016-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/personal/proton-light-switch/README/</loc>
+    <loc>//localhost:5678/project/code/personal/proton-light-switch/README/</loc>
     <lastmod>2016-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/code/fcc/free-code-camp/README/</loc>
+    <loc>//localhost:5678/project/code/fcc/free-code-camp/README/</loc>
     <lastmod>2016-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/ocad/mocca-courtyard-module-rev-2/README/</loc>
+    <loc>//localhost:5678/project/interior-design/ocad/mocca-courtyard-module-rev-2/README/</loc>
     <lastmod>2014-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/ocad/art-gallery-of-ontario-staircase/README/</loc>
+    <loc>//localhost:5678/project/interior-design/ocad/art-gallery-of-ontario-staircase/README/</loc>
     <lastmod>2014-11-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/ocad/alexandra-park-revitalization/README/</loc>
+    <loc>//localhost:5678/project/interior-design/ocad/alexandra-park-revitalization/README/</loc>
     <lastmod>2014-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/ocad/1900s-queen-st-modernization/README/</loc>
+    <loc>//localhost:5678/project/interior-design/ocad/1900s-queen-st-modernization/README/</loc>
     <lastmod>2014-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/ocad/mood-light-modulator/README/</loc>
+    <loc>//localhost:5678/project/interior-design/ocad/mood-light-modulator/README/</loc>
     <lastmod>2014-02-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/ocad/mocca-courtyard-module-rev-1/README/</loc>
+    <loc>//localhost:5678/project/interior-design/ocad/mocca-courtyard-module-rev-1/README/</loc>
     <lastmod>2013-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/ocad/casa-das-canoas-scale-model/README/</loc>
+    <loc>//localhost:5678/project/interior-design/ocad/casa-das-canoas-scale-model/README/</loc>
     <lastmod>2013-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/gfx/personal/abc-cakes/README/</loc>
+    <loc>//localhost:5678/project/gfx/personal/abc-cakes/README/</loc>
     <lastmod>2013-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/interior-design/personal/sculpture-gallery/README/</loc>
+    <loc>//localhost:5678/project/interior-design/personal/sculpture-gallery/README/</loc>
     <lastmod>2013-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//htko.ca/project/gfx/personal/early-graphical-design/README/</loc>
+    <loc>//localhost:5678/project/gfx/personal/early-graphical-design/README/</loc>
     <lastmod>2009-09-08T00:00:00+00:00</lastmod>
   </url>
   

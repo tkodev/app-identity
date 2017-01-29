@@ -11,7 +11,7 @@ tools:
   - cheerio
   - request
   - rest API
-link: 'http://api.htko.ca/fcc'
+link: 'https://api.htko.ca/fcc'
 code: 'https://github.com/htko89/fcc-profile-api'
 path: code/fcc/profile-api
 ---
@@ -39,6 +39,7 @@ node server.js
   * **JSONP url**, example: http://api.htko.ca/fcc?user=your_username&callback=
   * **JSON url**, example: http://api.htko.ca/fcc?user=your_username
   * User and callback arguments are optional, example: http://api.htko.ca/fcc
+  * HTTPS supported
 
 ## Data Structure:
 * **HINT**: Don't specify a username to see how the curriculum map is organized. (use a linter)
