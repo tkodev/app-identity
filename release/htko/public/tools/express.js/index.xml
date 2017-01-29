@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tony Ko | Personal Portfolio</title>
-    <link>//htko.ca/tools/express.js/index.xml</link>
+    <link>//localhost:5678/tools/express.js/index.xml</link>
     <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="//htko.ca/tools/express.js/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:5678/tools/express.js/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Profile Api</title>
-      <link>//htko.ca/project/code/fcc/profile-api/README/</link>
+      <link>//localhost:5678/project/code/fcc/profile-api/README/</link>
       <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>//htko.ca/project/code/fcc/profile-api/README/</guid>
+      <guid>//localhost:5678/project/code/fcc/profile-api/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -53,6 +53,7 @@ node server.js
 &lt;li&gt;&lt;strong&gt;JSONP url&lt;/strong&gt;, example: &lt;a href=&#34;http://api.htko.ca/fcc?user=your_username&amp;amp;callback=&#34;&gt;http://api.htko.ca/fcc?user=your_username&amp;amp;callback=&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;JSON url&lt;/strong&gt;, example: &lt;a href=&#34;http://api.htko.ca/fcc?user=your_username&#34;&gt;http://api.htko.ca/fcc?user=your_username&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;User and callback arguments are optional, example: &lt;a href=&#34;http://api.htko.ca/fcc&#34;&gt;http://api.htko.ca/fcc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;HTTPS supported&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 

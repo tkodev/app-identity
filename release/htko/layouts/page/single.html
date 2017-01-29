@@ -8,8 +8,14 @@
     <div class="h-gallery b-columns b-is-mobile">
       <div class="b-column b-is-12 b-is-paddingless">
         {{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
-        {{ $img := (delimit (slice $dir "assets/dp.png") "/") }}
-        {{ partial "renderer-targets/gallery/banner" (dict "title" .Title "logo" $img "node" . )}}
+        {{ $logo := (delimit (slice $dir "assets/dp.png") "/") }}
+        {{ if isset .Params "photos" }}
+          {{ $img := (delimit (slice $dir "assets" (index .Params.photos 0)) "/") }}
+          {{ partial "renderer-targets/gallery/banner" (dict "title" .Title "img" $img "logo" $logo "node" . )}}
+        {{ else }}
+          {{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
+          {{ partial "renderer-targets/gallery/banner" (dict "title" .Title "img" $img "logo" $logo  "node" . )}}
+        {{ end }}
       </div>
     </div>
 

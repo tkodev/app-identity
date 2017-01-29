@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tony Ko | Personal Portfolio</title>
-    <link>//htko.ca/tools/ionic/index.xml</link>
+    <link>//localhost:5678/tools/ionic/index.xml</link>
     <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="//htko.ca/tools/ionic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:5678/tools/ionic/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Angelfind App</title>
-      <link>//htko.ca/project/code/personal/angelfind-app/README/</link>
+      <link>//localhost:5678/project/code/personal/angelfind-app/README/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>//htko.ca/project/code/personal/angelfind-app/README/</guid>
+      <guid>//localhost:5678/project/code/personal/angelfind-app/README/</guid>
       <description>
 
 &lt;h1 id=&#34;hackathon-entry-angelhack&#34;&gt;Hackathon Entry - Angelhack&lt;/h1&gt;
