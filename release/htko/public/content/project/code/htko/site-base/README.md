@@ -1,7 +1,7 @@
 ---
 type: project
 draft: false
-date: '2017-01-19'
+date: '2017-01-25'
 title: HTKO.ca Site Base V2
 topics:
   - code
@@ -19,12 +19,12 @@ photos:
   - screenshot-6+.jpg
   - screenshot-ipadpro-landscape.jpg
   - screenshot-ipadpro.jpg
-path: code/htko/site-base-v2
+path: code/htko/site-base
 ---
 # Personal Project
 **No paid templates, no third party designs, 100% designed and built by me.**
 
-This is the code base for my personal portfolio at HTKO.ca.
+This is the code base for my website at HTKO.ca. Complete rewrite version.
 
 Using a heavily modified version of [Bulma](http://bulma.io/) to define grid structure; it is CSS only, unopinionated, fast **(&lt;200KB!)**, yet supports all modern flexbox grid conventions. My **Gulp** build process then compiles **SASS & SCSS**, copies portfolio items from my local sources, builds it with **Hugo**, and renders real-time with **BrowserSync** for a live editing experience. I deploy using **Git** on **DigitalOcean** due to delta updates for all file types, which means **builds deploy in seconds not hours.**
 

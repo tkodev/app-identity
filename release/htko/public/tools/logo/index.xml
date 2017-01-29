@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tony Ko | Personal Portfolio</title>
-    <link>//localhost:5678/tools/logo/index.xml</link>
+    <link>//htko.ca/tools/logo/index.xml</link>
     <description>Recent content on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <atom:link href="//localhost:5678/tools/logo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//htko.ca/tools/logo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTKO Identity</title>
-      <link>//localhost:5678/project/gfx/personal/htko-identity/README/</link>
+      <link>//htko.ca/project/gfx/personal/htko-identity/README/</link>
       <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/gfx/personal/htko-identity/README/</guid>
+      <guid>//htko.ca/project/gfx/personal/htko-identity/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
