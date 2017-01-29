@@ -16,7 +16,6 @@ link: 'http://www.htko.ca'
 code: 'https://github.com/htko89/htko-site-base'
 photos:
   - mockup-desktop.jpg
-  - screenshot-6+.jpg
   - screenshot-ipadpro-landscape.jpg
   - screenshot-ipadpro.jpg
 path: code/htko/site-base
@@ -26,7 +25,7 @@ path: code/htko/site-base
 
 This is the code base for my website at HTKO.ca. Complete rewrite version.
 
-Using a heavily modified version of [Bulma](http://bulma.io/) to define grid structure; it is CSS only, unopinionated, fast **(&lt;200KB!)**, yet supports all modern flexbox grid conventions. My **Gulp** build process then compiles **SASS & SCSS**, copies portfolio items from my local sources, builds it with **Hugo**, and renders real-time with **BrowserSync** for a live editing experience. I deploy using **Git** on **DigitalOcean** due to delta updates for all file types, which means **builds deploy in seconds not hours.**
+Full responsive. Using a heavily modified version of [Bulma](http://bulma.io/) to define grid structure; it is CSS only, unopinionated, fast **(&lt;200KB!)**, yet supports all modern flexbox grid conventions. My **Gulp** build process then compiles **SASS & SCSS**, copies portfolio items from my local sources, builds it with **Hugo**, and renders real-time with **BrowserSync** for a live editing experience. I deploy using **Git** on **DigitalOcean** due to delta updates for all file types, which means **builds deploy in seconds not hours.**
 
 ## Building for developers
 * Download and install dependencies
