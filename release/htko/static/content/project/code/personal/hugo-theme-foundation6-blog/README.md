@@ -7,7 +7,7 @@ topics:
   - code
 tools:
   - hugo
-  - node.js
+  - node
   - gulp
   - sass
   - foundation
