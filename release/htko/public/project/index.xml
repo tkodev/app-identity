@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project-rsses on Tony Ko | Personal Portfolio</title>
-    <link>//localhost:5678/project/index.xml</link>
+    <link>//htko.ca/project/index.xml</link>
     <description>Recent content in Project-rsses on Tony Ko | Personal Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <lastBuildDate>Thu, 19 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:5678/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//htko.ca/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HTKO.ca Site Base V2</title>
-      <link>//localhost:5678/project/code/htko/site-base-v2/README/</link>
-      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      <link>//htko.ca/project/code/htko/site-base/README/</link>
+      <pubDate>Wed, 25 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/htko/site-base-v2/README/</guid>
+      <guid>//htko.ca/project/code/htko/site-base/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;No paid templates, no third party designs, 100% designed and built by me.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This is the code base for my personal portfolio at HTKO.ca.&lt;/p&gt;
+&lt;p&gt;This is the code base for my website at HTKO.ca. Complete rewrite version.&lt;/p&gt;
 
 &lt;p&gt;Using a heavily modified version of &lt;a href=&#34;http://bulma.io/&#34;&gt;Bulma&lt;/a&gt; to define grid structure; it is CSS only, unopinionated, fast &lt;strong&gt;(&amp;lt;200KB!)&lt;/strong&gt;, yet supports all modern flexbox grid conventions. My &lt;strong&gt;Gulp&lt;/strong&gt; build process then compiles &lt;strong&gt;SASS &amp;amp; SCSS&lt;/strong&gt;, copies portfolio items from my local sources, builds it with &lt;strong&gt;Hugo&lt;/strong&gt;, and renders real-time with &lt;strong&gt;BrowserSync&lt;/strong&gt; for a live editing experience. I deploy using &lt;strong&gt;Git&lt;/strong&gt; on &lt;strong&gt;DigitalOcean&lt;/strong&gt; due to delta updates for all file types, which means &lt;strong&gt;builds deploy in seconds not hours.&lt;/strong&gt;&lt;/p&gt;
 
@@ -73,11 +73,37 @@ npm run builder # remote live build (!)
     </item>
     
     <item>
+      <title>HTKO.ca Site Base V1</title>
+      <link>//htko.ca/project/code/htko/site-base-legacy/README/</link>
+      <pubDate>Sun, 15 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//htko.ca/project/code/htko/site-base-legacy/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
+
+&lt;p&gt;Hugo base for personal portfolio at htko.ca. An experiment in static site generation, using &lt;a href=&#34;http://gohugo.io/&#34;&gt;HUGO&lt;/a&gt; as the engine. Dynamic sites are heavy in resource usage are vulnerable to attacks. Static sites are fast, efficient and most of all, provide minimal avenues of attack. However, they are difficult to maintain, and do not scale well with large sets of data.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gulp&lt;/code&gt; task engine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp-sass&lt;/code&gt;,&lt;code&gt;gulp-cssnano&lt;/code&gt;,&lt;code&gt;gulp-autoprefixer&lt;/code&gt; to compile scss files to css.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;babel&lt;/code&gt;,&lt;code&gt;gulp-concat&lt;/code&gt;,&lt;code&gt;gulp-uglify&lt;/code&gt; to compile js files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gulp-sourcemaps&lt;/code&gt; for sourcemapping.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;globby&lt;/code&gt;,&lt;code&gt;minimatch&lt;/code&gt;,&lt;code&gt;fs-extra&lt;/code&gt; for portfolio projects compilation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;js-beautify&lt;/code&gt; for linting.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hugo&lt;/code&gt; (&lt;code&gt;livereload&lt;/code&gt;) or &lt;code&gt;browser-sync&lt;/code&gt; for debug rendering.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Profile Api</title>
-      <link>//localhost:5678/project/code/fcc/profile-api/README/</link>
+      <link>//htko.ca/project/code/fcc/profile-api/README/</link>
       <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/fcc/profile-api/README/</guid>
+      <guid>//htko.ca/project/code/fcc/profile-api/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -182,10 +208,10 @@ node server.js
     
     <item>
       <title>HTKO Identity</title>
-      <link>//localhost:5678/project/gfx/personal/htko-identity/README/</link>
+      <link>//htko.ca/project/gfx/personal/htko-identity/README/</link>
       <pubDate>Tue, 20 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/gfx/personal/htko-identity/README/</guid>
+      <guid>//htko.ca/project/gfx/personal/htko-identity/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -217,10 +243,10 @@ node server.js
     
     <item>
       <title>Hugo Theme Foundation6 Blog</title>
-      <link>//localhost:5678/project/code/personal/hugo-theme-foundation6-blog/README/</link>
+      <link>//htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
+      <guid>//htko.ca/project/code/personal/hugo-theme-foundation6-blog/README/</guid>
       <description>&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
 
 &lt;p&gt;A simple &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; theme based on the &lt;a href=&#34;http://foundation.zurb.com/templates-previews-sites-f6/blog.html&#34;&gt;Foundation 6 blog (w/ sidebar) example&lt;/a&gt;, with scss &amp;amp; js gulp build scripts.&lt;/p&gt;
@@ -351,10 +377,10 @@ node server.js
     
     <item>
       <title>LUA Language</title>
-      <link>//localhost:5678/project/code/personal/lua-language/README/</link>
+      <link>//htko.ca/project/code/personal/lua-language/README/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/personal/lua-language/README/</guid>
+      <guid>//htko.ca/project/code/personal/lua-language/README/</guid>
       <description>
 
 &lt;h1 id=&#34;journal&#34;&gt;Journal&lt;/h1&gt;
@@ -606,10 +632,10 @@ node server.js
     
     <item>
       <title>Scripts Bash</title>
-      <link>//localhost:5678/project/code/personal/scripts-bash/README/</link>
+      <link>//htko.ca/project/code/personal/scripts-bash/README/</link>
       <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/personal/scripts-bash/README/</guid>
+      <guid>//htko.ca/project/code/personal/scripts-bash/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -657,10 +683,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Scripts Legacy</title>
-      <link>//localhost:5678/project/code/personal/scripts-legacy/README/</link>
+      <link>//htko.ca/project/code/personal/scripts-legacy/README/</link>
       <pubDate>Mon, 14 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/personal/scripts-legacy/README/</guid>
+      <guid>//htko.ca/project/code/personal/scripts-legacy/README/</guid>
       <description>
 
 &lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
@@ -671,10 +697,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Twitch Channels Widget</title>
-      <link>//localhost:5678/project/code/fcc/twitch-channels-widget/README/</link>
+      <link>//htko.ca/project/code/fcc/twitch-channels-widget/README/</link>
       <pubDate>Sat, 13 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/fcc/twitch-channels-widget/README/</guid>
+      <guid>//htko.ca/project/code/fcc/twitch-channels-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -695,10 +721,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Wikipedia Viewer Widget</title>
-      <link>//localhost:5678/project/code/fcc/wikipedia-viewer-widget/README/</link>
+      <link>//htko.ca/project/code/fcc/wikipedia-viewer-widget/README/</link>
       <pubDate>Fri, 05 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/fcc/wikipedia-viewer-widget/README/</guid>
+      <guid>//htko.ca/project/code/fcc/wikipedia-viewer-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -716,10 +742,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Local Weather Widget</title>
-      <link>//localhost:5678/project/code/fcc/local-weather-widget/README/</link>
+      <link>//htko.ca/project/code/fcc/local-weather-widget/README/</link>
       <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/fcc/local-weather-widget/README/</guid>
+      <guid>//htko.ca/project/code/fcc/local-weather-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -738,10 +764,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Quote Machine Widget</title>
-      <link>//localhost:5678/project/code/fcc/quote-machine-widget/README/</link>
+      <link>//htko.ca/project/code/fcc/quote-machine-widget/README/</link>
       <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/fcc/quote-machine-widget/README/</guid>
+      <guid>//htko.ca/project/code/fcc/quote-machine-widget/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -759,10 +785,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Portfolio Template</title>
-      <link>//localhost:5678/project/code/fcc/portfolio-template/README/</link>
+      <link>//htko.ca/project/code/fcc/portfolio-template/README/</link>
       <pubDate>Sat, 25 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/fcc/portfolio-template/README/</guid>
+      <guid>//htko.ca/project/code/fcc/portfolio-template/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -782,10 +808,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Tribute Page</title>
-      <link>//localhost:5678/project/code/fcc/tribute-page/README/</link>
+      <link>//htko.ca/project/code/fcc/tribute-page/README/</link>
       <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/fcc/tribute-page/README/</guid>
+      <guid>//htko.ca/project/code/fcc/tribute-page/README/</guid>
       <description>
 
 &lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
@@ -803,10 +829,10 @@ cd ~/Linux-Scripts
     
     <item>
       <title>Angelfind App</title>
-      <link>//localhost:5678/project/code/personal/angelfind-app/README/</link>
+      <link>//htko.ca/project/code/personal/angelfind-app/README/</link>
       <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:5678/project/code/personal/angelfind-app/README/</guid>
+      <guid>//htko.ca/project/code/personal/angelfind-app/README/</guid>
       <description>
 
 &lt;h1 id=&#34;hackathon-entry-angelhack&#34;&gt;Hackathon Entry - Angelhack&lt;/h1&gt;
@@ -824,32 +850,6 @@ cd ~/Linux-Scripts
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/htko89&#34;&gt;Tony Ko&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://bitbucket.org/raphaelz/&#34;&gt;Raphael Z&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Proton Light Switch</title>
-      <link>//localhost:5678/project/code/personal/proton-light-switch/README/</link>
-      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//localhost:5678/project/code/personal/proton-light-switch/README/</guid>
-      <description>
-
-&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
-
-&lt;p&gt;This is a custom built wifi enabled smart switch I’ve built for personal use. It also is connected to my garage door opener, and has a built in IR blaster. DHT 22 temperature sensor is also present to check for overheating.&lt;/p&gt;
-
-&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Microcontroller: Particle.io (Particle Photon)&lt;/li&gt;
-&lt;li&gt;Garage Door Remote: Craftsman 315mhz Remote&lt;/li&gt;
-&lt;li&gt;Light Switch: 2CH 3.3-5V Relay Kit&lt;/li&gt;
-&lt;li&gt;Temp Sensor: DHT 22&lt;/li&gt;
-&lt;li&gt;IR Emitter: TSAL6100&lt;/li&gt;
-&lt;li&gt;IR Recorder: TSOP34438&lt;/li&gt;
-&lt;li&gt;Pseudo MVC approach: Event Assignment &amp;gt; Events &amp;gt; Action&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
