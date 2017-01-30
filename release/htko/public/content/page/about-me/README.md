@@ -34,6 +34,9 @@ As a whole, I hope to bring a unique **developer-designer** perspective to my wo
     </div>
   </div>
 </div>
+
 ***
 
-<iframe class="h-docs" src="https://docs.google.com/document/d/1cgeZeHnIXxlozGS-vgqVD-a9QPJ1yf_IKuBoHtJV2yE/pub?embedded=true"></iframe>
+<div class="h-docs">
+  <iframe class="h-stretch" src="https://docs.google.com/gview?url=https://htko.ca/resume.pdf&embedded=true" frameborder="0"></iframe>
+</div>

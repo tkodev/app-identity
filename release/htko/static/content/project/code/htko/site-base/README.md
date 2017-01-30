@@ -50,5 +50,5 @@ npm run builder # remote live build (!)
   * `JS-Yaml`, `Gray-Matter` for front matter / build configuration processing.
   * `Globby`,`Minimatch`,`FS-Extra` for portfolio projects compilation.
 * Human ready: Linting, Sourcemapping, Live-editing.
-  * `js-beautify` for linting.
-  * `hugo`, `browser-sync` for building and rendering.
+  * `JS-beautify` for linting.
+  * `Hugo`, `BrowserSync` for building and rendering.
