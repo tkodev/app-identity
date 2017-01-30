@@ -28,5 +28,4 @@ If you would like to contribute, I am happy to accept any pull requests that isn
 * The following table of contents is generated dynamically using my profile scraping API! See the project page on my [Portfolio](http://htko.ca/project/code/fcc/profile-api/README/) and also on [GitHub](https://github.com/htko89/fcc-profile-api).
 * Course `Sections` are organized as folders, with `Chapters` in individual markdown `.md` files within for easy reading.
 
-
-<div id="free-code-camp_toc"></div>
+<div id="free-code-camp_toc">Loading... Javascript must be supported!</div>

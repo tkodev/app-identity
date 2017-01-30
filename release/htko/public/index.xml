@@ -238,6 +238,26 @@ node server.js
 &lt;p&gt;&lt;strong&gt;For the last year&lt;/strong&gt;, I have focused my efforts to fully develop this desire into a complete career.&lt;/p&gt;
 
 &lt;p&gt;As a whole, I hope to bring a unique &lt;strong&gt;developer-designer&lt;/strong&gt; perspective to my work.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;div class=&#34;b-container&#34;&gt;
+    &lt;div class=&#34;b-columns b-is-mobile&#34;&gt;
+      &lt;div class=&#34;b-column b-is-narrow&#34;&gt;
+        &lt;nav class=&#34;h-menu-main&#34;&gt;
+          &lt;h6&gt;
+            &lt;a href=&#34;https://github.com/htko89&#34;&gt;&lt;i class=&#34;fa fa-code-fork&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Github&lt;/span&gt;&lt;/a&gt;
+            &lt;a href=&#34;http://lnked.in/htko89&#34;&gt;&lt;i class=&#34;fa fa-linkedin&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Linkedin&lt;/span&gt;&lt;/a&gt;
+            &lt;a href=&#34;http://htko.ca/resume.pdf&#34;&gt;&lt;i class=&#34;fa fa-id-card-o&#34;&gt;&lt;/i&gt;&lt;span class=&#34;b-is-hidden-mobile&#34;&gt;&amp;nbsp;Resume&lt;/span&gt;&lt;/a&gt;
+          &lt;/h6&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&#34;h-docs&#34;&gt;
+  &lt;iframe class=&#34;h-stretch&#34; src=&#34;https://docs.google.com/gview?url=https://htko.ca/resume.pdf&amp;embedded=true&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
