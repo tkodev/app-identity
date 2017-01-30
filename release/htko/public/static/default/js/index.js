@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 function getData(user) { // gets weather
   if ($("#free-code-camp_toc").length) {
-    $.getJSON("http://api.htko.ca/fcc?user=" + user + "&callback=?", function(data) {
+    $.getJSON("https://api.htko.ca/fcc?user=" + user + "&callback=?", function(data) {
       console.log(data);
       var tocHtml = "";
       for (var certIdx in data["_map"]) {
