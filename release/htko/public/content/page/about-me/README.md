@@ -18,25 +18,3 @@ I currently specialize in **Front End: Gulp.js, Node.js, Express.js, Algorithms,
 **For the last year**, I have focused my efforts to fully develop this desire into a complete career.
 
 As a whole, I hope to bring a unique **developer-designer** perspective to my work.
-
-***
-
-<div class="b-container">
-  <div class="b-columns b-is-mobile">
-    <div class="b-column b-is-narrow">
-      <nav class="h-menu-main">
-        <h6>
-          <a href="https://github.com/htko89"><i class="fa fa-code-fork"></i><span class="b-is-hidden-mobile">&nbsp;Github</span></a>
-          <a href="http://lnked.in/htko89"><i class="fa fa-linkedin"></i><span class="b-is-hidden-mobile">&nbsp;Linkedin</span></a>
-          <a href="http://htko.ca/resume.pdf"><i class="fa fa-id-card-o"></i><span class="b-is-hidden-mobile">&nbsp;Resume</span></a>
-        </h6>
-      </nav>
-    </div>
-  </div>
-</div>
-
-***
-
-<div class="h-docs">
-  <iframe class="h-stretch" src="https://docs.google.com/gview?url=https://htko.ca/resume.pdf&embedded=true" frameborder="0"></iframe>
-</div>

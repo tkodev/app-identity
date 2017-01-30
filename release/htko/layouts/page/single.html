@@ -25,6 +25,26 @@
         <hr>
         <div class="b-content">
           {{ .Content }}
+          {{ if in .Title "About Me" }}
+            <hr>
+              <div class="b-container">
+                <div class="b-columns b-is-mobile">
+                  <div class="b-column b-is-narrow">
+                    <nav class="h-menu-main">
+                      <h6>
+                        <a href="https://github.com/htko89"><i class="fa fa-code-fork"></i><span class="b-is-hidden-mobile">&nbsp;Github</span></a>
+                        <a href="http://lnked.in/htko89"><i class="fa fa-linkedin"></i><span class="b-is-hidden-mobile">&nbsp;Linkedin</span></a>
+                        <a href="http://htko.ca/resume.pdf"><i class="fa fa-id-card-o"></i><span class="b-is-hidden-mobile">&nbsp;Resume</span></a>
+                      </h6>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            <hr>
+            <div class="h-docs">
+              <iframe class="h-stretch" src="https://docs.google.com/gview?url=https://htko.ca/resume.pdf&embedded=true" frameborder="0"></iframe>
+            </div>
+          {{ end }}
         </div>
       </div>
       <div class="h-metadata b-column b-is-12-mobile b-is-one-third-tablet b-is-one-quarter-desktop">
