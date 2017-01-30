@@ -65,8 +65,8 @@ npm run builder # remote live build (!)
 &lt;li&gt;Human ready: Linting, Sourcemapping, Live-editing.
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;js-beautify&lt;/code&gt; for linting.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hugo&lt;/code&gt;, &lt;code&gt;browser-sync&lt;/code&gt; for building and rendering.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JS-beautify&lt;/code&gt; for linting.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Hugo&lt;/code&gt;, &lt;code&gt;BrowserSync&lt;/code&gt; for building and rendering.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>

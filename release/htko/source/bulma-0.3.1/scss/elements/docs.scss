@@ -1,4 +1,9 @@
 .#{$prefix_h}docs {
+  position: relative;
   width: 100%;
-  height: 100rem;
+  padding-bottom: 150%;
+
+  iframe {
+    position: absolute;
+  }
 }
