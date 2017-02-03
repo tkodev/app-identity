@@ -26,9 +26,11 @@ filters:
     # - "public/**/*" # feedback loop
   projects:
     - "**/README.md"
-    - "!**/free-code-camp/* - */**"
     - "!**/releases/**"
     - "!**/resume/**/*"
+    - "!**/pomodoro-clock-widget/**"
+    - "!**/tic-tac-toe-widget/**"
+    - "!**/simon-game-widget/**"
     - "!**/prototypes/**/*" # standard project folders
     - "!**/sources/**/*" # standard project folders
     - "!**/release/**/*" # standard project folders

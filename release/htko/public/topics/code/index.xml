@@ -10,6 +10,28 @@
     <atom:link href="//htko.ca/topics/code/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Calculator Widget</title>
+      <link>//htko.ca/project/code/fcc/calculator-widget/README/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//htko.ca/project/code/fcc/calculator-widget/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/rLJZrA/&#34;&gt;https://codepen.io/FreeCodeCamp/full/rLJZrA/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can add, subtract, multiply and divide two numbers.&lt;/li&gt;
+&lt;li&gt;User Story: I can clear the input field with a clear button.&lt;/li&gt;
+&lt;li&gt;User Story: I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>HTKO.ca Site Base V2</title>
       <link>//htko.ca/project/code/htko/site-base/README/</link>
       <pubDate>Wed, 25 Jan 2017 00:00:00 +0000</pubDate>
@@ -827,32 +849,6 @@ cd ~/Linux-Scripts
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/htko89&#34;&gt;Tony Ko&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://bitbucket.org/raphaelz/&#34;&gt;Raphael Z&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Proton Light Switch</title>
-      <link>//htko.ca/project/code/personal/proton-light-switch/README/</link>
-      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//htko.ca/project/code/personal/proton-light-switch/README/</guid>
-      <description>
-
-&lt;h1 id=&#34;personal-project&#34;&gt;Personal Project&lt;/h1&gt;
-
-&lt;p&gt;This is a custom built wifi enabled smart switch I’ve built for personal use. It also is connected to my garage door opener, and has a built in IR blaster. DHT 22 temperature sensor is also present to check for overheating.&lt;/p&gt;
-
-&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Microcontroller: Particle.io (Particle Photon)&lt;/li&gt;
-&lt;li&gt;Garage Door Remote: Craftsman 315mhz Remote&lt;/li&gt;
-&lt;li&gt;Light Switch: 2CH 3.3-5V Relay Kit&lt;/li&gt;
-&lt;li&gt;Temp Sensor: DHT 22&lt;/li&gt;
-&lt;li&gt;IR Emitter: TSAL6100&lt;/li&gt;
-&lt;li&gt;IR Recorder: TSOP34438&lt;/li&gt;
-&lt;li&gt;Pseudo MVC approach: Event Assignment &amp;gt; Events &amp;gt; Action&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
