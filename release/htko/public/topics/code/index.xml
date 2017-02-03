@@ -10,9 +10,36 @@
     <atom:link href="//htko.ca/topics/code/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Pomodoro Clock Widget</title>
+      <link>//htko.ca/project/code/fcc/pomodoro-clock-widget/README/</link>
+      <pubDate>Fri, 03 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//htko.ca/project/code/fcc/pomodoro-clock-widget/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/aNyxXR/&#34;&gt;https://codepen.io/FreeCodeCamp/full/aNyxXR/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed.&lt;/li&gt;
+&lt;li&gt;User Story: I can reset the clock for my next pomodoro.&lt;/li&gt;
+&lt;li&gt;User Story: I can customize the length of each pomodoro.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution&lt;/h2&gt;
+
+&lt;p&gt;Tomato icon made by &lt;a href=&#34;http://www.freepik.com&#34;&gt;Freepik&lt;/a&gt; from &lt;a href=&#34;http://www.flaticon.com&#34;&gt;www.flaticon.com&lt;/a&gt; licensed under &lt;a href=&#34;http://creativecommons.org/licenses/by/3.0/&#34;&gt;CC 3.0 BY&lt;/a&gt;
+Sounds from &lt;a href=&#34;https://source.android.com/source/licenses.html&#34;&gt;Android Open Source Project&lt;/a&gt; licensed under &lt;a href=&#34;http://www.apache.org/licenses/LICENSE-2.0&#34;&gt;Apache 2.0&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Calculator Widget</title>
       <link>//htko.ca/project/code/fcc/calculator-widget/README/</link>
-      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>//htko.ca/project/code/fcc/calculator-widget/README/</guid>
       <description>
@@ -822,33 +849,6 @@ cd ~/Linux-Scripts
 &lt;ul&gt;
 &lt;li&gt;User Story: I can view a tribute page with an image and text.&lt;/li&gt;
 &lt;li&gt;User Story: I can click on a link that will take me to an external website with further information on the topic.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Angelfind App</title>
-      <link>//htko.ca/project/code/personal/angelfind-app/README/</link>
-      <pubDate>Sat, 11 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//htko.ca/project/code/personal/angelfind-app/README/</guid>
-      <description>
-
-&lt;h1 id=&#34;hackathon-entry-angelhack&#34;&gt;Hackathon Entry - Angelhack&lt;/h1&gt;
-
-&lt;p&gt;Event recommendation app based on user interest history.&lt;/p&gt;
-
-&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Best use of remote API&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;attribution&#34;&gt;Attribution:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/htko89&#34;&gt;Tony Ko&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/raphaelz/&#34;&gt;Raphael Z&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

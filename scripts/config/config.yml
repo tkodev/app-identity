@@ -28,7 +28,6 @@ filters:
     - "**/README.md"
     - "!**/releases/**"
     - "!**/resume/**/*"
-    - "!**/pomodoro-clock-widget/**"
     - "!**/tic-tac-toe-widget/**"
     - "!**/simon-game-widget/**"
     - "!**/prototypes/**/*" # standard project folders
