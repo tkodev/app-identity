@@ -28,7 +28,6 @@ filters:
     - "**/README.md"
     - "!**/releases/**"
     - "!**/resume/**/*"
-    - "!**/simon-game-widget/**"
     - "!**/prototypes/**/*" # standard project folders
     - "!**/sources/**/*" # standard project folders
     - "!**/release/**/*" # standard project folders
