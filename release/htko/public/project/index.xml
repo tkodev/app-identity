@@ -7,8 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright - Tony Ko.</copyright>
-    <lastBuildDate>Mon, 06 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="//htko.ca/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Simon Game Widget</title>
+      <link>//htko.ca/project/code/fcc/simon-game-widget/README/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>//htko.ca/project/code/fcc/simon-game-widget/README/</guid>
+      <description>
+
+&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
+
+&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/obYBjE&#34;&gt;https://codepen.io/FreeCodeCamp/full/obYBjE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Story: I am presented with a random series of button presses.&lt;/li&gt;
+&lt;li&gt;User Story: Each time I input a series of button presses correctly, I see the same series of button presses but with an additional step.&lt;/li&gt;
+&lt;li&gt;User Story: I hear a sound that corresponds to each button both when the series of button presses plays, and when I personally press a button.&lt;/li&gt;
+&lt;li&gt;User Story: If I press the wrong button, I am notified that I have done so, and that series of button presses starts again to remind me of the pattern so I can try again.&lt;/li&gt;
+&lt;li&gt;User Story: I can see how many steps are in the current series of button presses.&lt;/li&gt;
+&lt;li&gt;User Story: If I want to restart, I can hit a button to do so, and the game will return to a single step.&lt;/li&gt;
+&lt;li&gt;User Story: I can play in strict mode where if I get a button press wrong, it notifies me that I have done so, and the game restarts at a new random series of button presses.&lt;/li&gt;
+&lt;li&gt;User Story: I can win the game by getting a series of 20 steps correct. I am notified of my victory, then the game starts over.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Tic Tac Toe Widget</title>
@@ -28,6 +55,12 @@
 &lt;li&gt;User Story: I can play a game of Tic Tac Toe with the computer.&lt;/li&gt;
 &lt;li&gt;User Story: My game will reset as soon as it&amp;rsquo;s over so I can play again.&lt;/li&gt;
 &lt;li&gt;User Story: I can choose whether I want to play as X or O.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;attribution&#34;&gt;Attribution&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sounds from &lt;a href=&#34;https://source.android.com/source/licenses.html&#34;&gt;Android Open Source Project&lt;/a&gt; licensed under &lt;a href=&#34;http://www.apache.org/licenses/LICENSE-2.0&#34;&gt;Apache 2.0&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -844,27 +877,6 @@ cd ~/Linux-Scripts
 &lt;li&gt;User Story: I can see the weather in my current location.&lt;/li&gt;
 &lt;li&gt;User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.&lt;/li&gt;
 &lt;li&gt;User Story: I can push a button to toggle between Fahrenheit and Celsius.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Quote Machine Widget</title>
-      <link>//htko.ca/project/code/fcc/quote-machine-widget/README/</link>
-      <pubDate>Tue, 02 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>//htko.ca/project/code/fcc/quote-machine-widget/README/</guid>
-      <description>
-
-&lt;h1 id=&#34;student-project-free-code-camp&#34;&gt;Student Project - Free Code Camp&lt;/h1&gt;
-
-&lt;p&gt;Build an app that is functionally similar to this: &lt;a href=&#34;https://codepen.io/FreeCodeCamp/full/ONjoLe/&#34;&gt;https://codepen.io/FreeCodeCamp/full/ONjoLe/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;project-criteria&#34;&gt;Project Criteria:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;User Story: I can click a button to show me a new random quote.&lt;/li&gt;
-&lt;li&gt;User Story: I can press a button to tweet out a quote.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
