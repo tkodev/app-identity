@@ -8,8 +8,8 @@ topics:
 tools:
   - bulma
   - jquery
-link: 'https://htko89.github.io/fcc-simon-game-widget/release/'
-code: 'https://github.com/htko89/fcc-simon-game-widget'
+link: 'https://htkoca.github.io/fcc-simon-game-widget/release/'
+code: 'https://github.com/htkoca/fcc-simon-game-widget'
 program: 01 - Front End Development Certification
 course: 12 - Advanced Front End Development Projects
 project: 04 - Build a Simon Game

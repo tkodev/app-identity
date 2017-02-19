@@ -8,8 +8,8 @@ topics:
 tools:
   - bulma
   - jquery
-link: 'https://htko89.github.io/fcc-calculator-widget/release/'
-code: 'https://github.com/htko89/fcc-calculator-widget'
+link: 'https://htkoca.github.io/fcc-calculator-widget/release/'
+code: 'https://github.com/htkoca/fcc-calculator-widget'
 program: 01 - Front End Development Certification
 course: 12 - Advanced Front End Development Projects
 project: 01 - Build a JavaScript Calculator

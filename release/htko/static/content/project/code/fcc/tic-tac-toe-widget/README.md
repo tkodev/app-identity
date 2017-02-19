@@ -8,8 +8,8 @@ topics:
 tools:
   - bulma
   - jquery
-link: 'https://htko89.github.io/fcc-tic-tac-toe-widget/release/'
-code: 'https://github.com/htko89/fcc-tic-tac-toe-widget'
+link: 'https://htkoca.github.io/fcc-tic-tac-toe-widget/release/'
+code: 'https://github.com/htkoca/fcc-tic-tac-toe-widget'
 program: 01 - Front End Development Certification
 course: 12 - Advanced Front End Development Projects
 project: 03 - Build a Tic Tac Toe Game

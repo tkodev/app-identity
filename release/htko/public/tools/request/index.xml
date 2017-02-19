@@ -30,7 +30,7 @@
 &lt;ul&gt;
 &lt;li&gt;Do the following in a system with node &amp;amp; npm v6.9.4 :
 &lt;code&gt;
-git clone https://github.com/htko89/fcc-profile-api.git
+git clone https://github.com/htkoca/fcc-profile-api.git
 cd fcc-profile-api/release
 npm install
 node server.js

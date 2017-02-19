@@ -7,8 +7,8 @@ topics:
   - code
 tools:
   - bootstrap
-link: 'https://htko89.github.io/fcc-tribute-page/release/'
-code: 'https://github.com/htko89/fcc-tribute-page'
+link: 'https://htkoca.github.io/fcc-tribute-page/release/'
+code: 'https://github.com/htkoca/fcc-tribute-page'
 program: 01 - Front End Development Certification
 course: 04 - Basic Front End Development Projects
 project: 01 - Build a Tribute Page

@@ -12,7 +12,7 @@ tools:
   - jquery
   - API
 link: 'http://www.hackathon.io/angelfind'
-code: 'https://github.com/htko89/angelfind-app'
+code: 'https://github.com/htkoca/angelfind-app'
 photos:
   - mockup-screens.jpg
   - mockup-mobile.jpg
@@ -25,5 +25,5 @@ Event recommendation app based on user interest history.
 * Best use of remote API
 
 ## Attribution:
-* [Tony Ko](https://github.com/htko89)
+* [Tony Ko](https://github.com/htkoca)
 * [Raphael Z](https://bitbucket.org/raphaelz/)

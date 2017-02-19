@@ -13,7 +13,7 @@ tools:
   - sass
   - bulma
 link: 'http://www.htko.ca'
-code: 'https://github.com/htko89/htko-site-base'
+code: 'https://github.com/htkoca/htko-site-base'
 photos:
   - mockup-desktop.jpg
   - screenshot-ipadpro-landscape.jpg
@@ -30,7 +30,7 @@ Full responsive. Using a heavily modified version of [Bulma](http://bulma.io/) t
 ## Building for developers
 * Download and install dependencies
 ```
-git clone https://github.com/htko89/htko-site-base.git
+git clone https://github.com/htkoca/htko-site-base.git
 cd htko-site-base
 npm install
 ```

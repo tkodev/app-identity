@@ -12,7 +12,7 @@ tools:
   - request
   - rest API
 link: 'http://api.htko.ca/fcc'
-code: 'https://github.com/htko89/fcc-profile-api'
+code: 'https://github.com/htkoca/fcc-profile-api'
 path: code/fcc/profile-api
 ---
 # Personal Project
@@ -24,7 +24,7 @@ An example of this API in use is on the [FreeCodeCamp](http://htko.ca/project/co
 ## Server Install:
 * Do the following in a system with node & npm v6.9.4 :
 ```
-git clone https://github.com/htko89/fcc-profile-api.git
+git clone https://github.com/htkoca/fcc-profile-api.git
 cd fcc-profile-api/release
 npm install
 node server.js

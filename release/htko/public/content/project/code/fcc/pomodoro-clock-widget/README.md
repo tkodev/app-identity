@@ -8,8 +8,8 @@ topics:
 tools:
   - bulma
   - jquery
-link: 'https://htko89.github.io/fcc-pomodoro-clock-widget/release/'
-code: 'https://github.com/htko89/fcc-pomodoro-clock-widget'
+link: 'https://htkoca.github.io/fcc-pomodoro-clock-widget/release/'
+code: 'https://github.com/htkoca/fcc-pomodoro-clock-widget'
 program: 01 - Front End Development Certification
 course: 12 - Advanced Front End Development Projects
 project: 02 - Build a Pomodoro Clock

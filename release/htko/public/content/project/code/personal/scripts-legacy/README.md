@@ -8,7 +8,7 @@ topics:
 tools:
   - expression2
   - advdupe2
-code: 'https://github.com/htko89/scripts-legacy'
+code: 'https://github.com/htkoca/scripts-legacy'
 path: code/personal/scripts-legacy
 ---
 # Personal Project
