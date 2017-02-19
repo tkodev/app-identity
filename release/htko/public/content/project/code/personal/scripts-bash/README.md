@@ -8,7 +8,7 @@ topics:
 tools:
   - bash
   - docker
-code: 'https://github.com/htkoca/scripts-linux'
+code: 'https://github.com/htkoca/scripts-bash'
 path: code/personal/scripts-bash
 ---
 # Personal Project
