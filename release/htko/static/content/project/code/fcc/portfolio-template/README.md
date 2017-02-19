@@ -8,8 +8,8 @@ topics:
 tools:
   - bootstrap
   - jQuery
-link: 'https://htko89.github.io/fcc-portfolio-template/release/'
-code: 'https://github.com/htko89/fcc-portfolio-template'
+link: 'https://htkoca.github.io/fcc-portfolio-template/release/'
+code: 'https://github.com/htkoca/fcc-portfolio-template'
 program: 01 - Front End Development Certification
 course: 04 - Basic Front End Development Projects
 project: 02 - Build a Personal Portfolio Webpage

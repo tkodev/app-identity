@@ -8,7 +8,7 @@ topics:
 tools:
   - bash
   - docker
-code: 'https://github.com/htko89/scripts-linux'
+code: 'https://github.com/htkoca/scripts-linux'
 path: code/personal/scripts-bash
 ---
 # Personal Project
@@ -16,7 +16,7 @@ A collection of [BASH](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) scripts 
 
 ## Install
 * These bash scripts are mostly designed to run in a Linux environment, specifically Docker 1.10+ running on Ubuntu 16.04.1.
-* Extract [latest version](https://github.com/htko89/Linux-Scripts/releases) into a directory, say `~/Linux-Scripts`, and enter it.
+* Extract [latest version](https://github.com/htkoca/Linux-Scripts/releases) into a directory, say `~/Linux-Scripts`, and enter it.
 ```
 cd ~/Linux-Scripts
 ```

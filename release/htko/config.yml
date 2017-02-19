@@ -74,12 +74,12 @@ menu:
     - name          : "Github"
       identifier    : "github"
       pre           : "fa-code-fork"
-      url           : "https://github.com/htko89"
+      url           : "https://github.com/htkoca"
       weight        : 1
     - name          : "Linkedin"
       identifier    : "linkedin"
       pre           : "fa-linkedin"
-      url           : "http://lnked.in/htko89"
+      url           : "http://linkedin.com/in/htkoca"
       weight        : 2
     - name          : "Resume"
       identifier    : "resume"

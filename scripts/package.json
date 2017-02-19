@@ -4,7 +4,7 @@
     "description": "Codebase for personal portfolio at htko.ca",
     "repository": {
         "type": "git",
-        "url": "https://github.com/htko89/htko-site-base.git"
+        "url": "https://github.com/htkoca/htko-site-base.git"
     },
     "keywords": "hugo",
     "author": "Tony Ko",

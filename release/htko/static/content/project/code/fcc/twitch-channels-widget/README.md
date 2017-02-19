@@ -9,8 +9,8 @@ tools:
   - bootstrap
   - jquery
   - API
-link: 'https://htko89.github.io/fcc-twitch-channels-widget/release/'
-code: 'https://github.com/htko89/fcc-twitch-channels-widget'
+link: 'https://htkoca.github.io/fcc-twitch-channels-widget/release/'
+code: 'https://github.com/htkoca/fcc-twitch-channels-widget'
 program: 01 - Front End Development Certification
 course: 09 - Intermediate Front End Development Projects
 project: 03 - Use the Twitchtv JSON API

@@ -9,8 +9,8 @@ tools:
   - bootstrap
   - jquery
   - API
-link: 'https://htko89.github.io/fcc-quote-machine-widget/release/'
-code: 'https://github.com/htko89/fcc-quote-machine-widget'
+link: 'https://htkoca.github.io/fcc-quote-machine-widget/release/'
+code: 'https://github.com/htkoca/fcc-quote-machine-widget'
 program: 01 - Front End Development Certification
 course: 09 - Intermediate Front End Development Projects
 project: 00 - Build a Random Quote Machine

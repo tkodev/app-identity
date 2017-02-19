@@ -7,7 +7,7 @@ topics:
   - code
 tools:
   - lua
-code: 'https://github.com/htko89/lua-language'
+code: 'https://github.com/htkoca/lua-language'
 path: code/personal/lua-language
 ---
 # Journal
@@ -23,14 +23,14 @@ I am currently using github's version tracking as a way to track my progress thr
 Course `Parts` are organized as folders, with `Chapters` in individual markdown `.md` files within for easy reading.
 
 ### Part 1 - The Language
-<details><summary>01 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/01%20-%20Getting%20Started.md) - Getting Started</summary>
+<details><summary>01 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/01%20-%20Getting%20Started.md) - Getting Started</summary>
   <ul>
   <li>1.1 - Chunks</li>
   <li>1.2 - Global Variables</li>
   <li>1.3 - Some Lexical Conventions</li>
   <li>1.4 - The Stand-Alone Interpreter</li>
   </ul></details>
-<details><summary>02 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/02%20-%20Types%20and%20Values.md) - Types and Values</summary>
+<details><summary>02 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/02%20-%20Types%20and%20Values.md) - Types and Values</summary>
   <ul>
   <li>2.1 - Nil</li>
   <li>2.2 - Booleans</li>
@@ -40,7 +40,7 @@ Course `Parts` are organized as folders, with `Chapters` in individual markdown 
   <li>2.6 - Functions</li>
   <li>2.7 - Userdata and Threads</li>
   </ul></details>
-<details><summary>03 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/03%20-%20Expressions.md) - Expressions</summary>
+<details><summary>03 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/03%20-%20Expressions.md) - Expressions</summary>
   <ul>
   <li>3.1 - Arithmetic Operators</li>
   <li>3.2 - Relational Operators</li>
@@ -49,7 +49,7 @@ Course `Parts` are organized as folders, with `Chapters` in individual markdown 
   <li>3.5 - Precedence</li>
   <li>3.6 - Table Constructors</li>
   </ul></details>
-<details><summary>04 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/04%20-%20Statements.md) - Statements</summary>
+<details><summary>04 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/04%20-%20Statements.md) - Statements</summary>
   <ul>
   <li>4.1 - Assignment</li>
   <li>4.2 - Local Variables and Blocks</li>
@@ -61,19 +61,19 @@ Course `Parts` are organized as folders, with `Chapters` in individual markdown 
   <li>4.3.5 - Generic for</li>
   <li>4.4 - break and return</li>
   </ul></details>
-<details><summary>05 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/05%20-%20Functions.md) - Functions</summary>
+<details><summary>05 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/05%20-%20Functions.md) - Functions</summary>
   <ul>
   <li>5.1 - Multiple Results</li>
   <li>5.2 - Variable Number of Arguments</li>
   <li>5.3 - Named Arguments</li>
   </ul></details>
-<details><summary>06 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/06%20-%20More%20about%20Functions.md) - More about Functions</summary>
+<details><summary>06 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/06%20-%20More%20about%20Functions.md) - More about Functions</summary>
   <ul>
   <li>6.1 - Closures</li>
   <li>6.2 - Non-Global Functions</li>
   <li>6.3 - Proper Tail Calls</li>
   </ul></details>
-<details><summary>07 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/07%20-%20Iterators%20and%20the%20Generic%20For.md) - Iterators and the Generic `for`</summary>
+<details><summary>07 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/07%20-%20Iterators%20and%20the%20Generic%20For.md) - Iterators and the Generic `for`</summary>
   <ul>
   <li>7.1 - Iterators and Closures</li>
   <li>7.2 - The Semantics of the Generic for</li>
@@ -81,7 +81,7 @@ Course `Parts` are organized as folders, with `Chapters` in individual markdown 
   <li>7.4 - Iterators with Complex State</li>
   <li>7.5 - True Iterators</li>
   </ul></details>
-<details><summary>08 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/08%20-%20Compilation%2C%20Execution%2C%20and%20Errors.md) - Compilation, Execution, and Errors</summary>
+<details><summary>08 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/08%20-%20Compilation%2C%20Execution%2C%20and%20Errors.md) - Compilation, Execution, and Errors</summary>
   <ul>
   <li>8.1 - The require Function</li>
   <li>8.2 - C Packages</li>
@@ -89,7 +89,7 @@ Course `Parts` are organized as folders, with `Chapters` in individual markdown 
   <li>8.4 - Error Handling and Exceptions</li>
   <li>8.5 - Error Messages and Tracebacks</li>
   </ul></details>
-<details><summary>09 - [Complete](https://github.com/htko89/lua-language/blob/master/Part%201%20-%20The%20Language/09%20-%20Coroutines.md) - Coroutines</summary>
+<details><summary>09 - [Complete](https://github.com/htkoca/lua-language/blob/master/Part%201%20-%20The%20Language/09%20-%20Coroutines.md) - Coroutines</summary>
   <ul>
   <li>9.1 - Coroutine Basics</li>
   <li>9.2 - Pipes and Filters</li>

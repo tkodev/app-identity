@@ -9,8 +9,8 @@ tools:
   - bootstrap
   - jquery
   - API
-link: 'https://htko89.github.io/fcc-wikipedia-viewer-widget/release/'
-code: 'https://github.com/htko89/fcc-wikipedia-viewer-widget'
+link: 'https://htkoca.github.io/fcc-wikipedia-viewer-widget/release/'
+code: 'https://github.com/htkoca/fcc-wikipedia-viewer-widget'
 program: 01 - Front End Development Certification
 course: 09 - Intermediate Front End Development Projects
 project: 03 - Build a Wikipedia Viewer

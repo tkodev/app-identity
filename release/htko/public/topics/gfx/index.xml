@@ -30,7 +30,7 @@
 &lt;ul&gt;
 &lt;li&gt;Download and install dependencies
 &lt;code&gt;
-git clone https://github.com/htko89/htko-site-base.git
+git clone https://github.com/htkoca/htko-site-base.git
 cd htko-site-base
 npm install
 &lt;/code&gt;&lt;/li&gt;

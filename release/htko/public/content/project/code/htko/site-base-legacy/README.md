@@ -13,7 +13,7 @@ tools:
   - sass
   - foundation
 link: 'http://www.htko.ca'
-code: 'https://github.com/htko89/htko-site-base/tree/1.0.0'
+code: 'https://github.com/htkoca/htko-site-base/tree/1.0.0'
 photos:
   - mockup-surface.jpg
   - screenshot-ipadpro-landscape.jpg
