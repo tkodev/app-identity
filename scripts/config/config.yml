@@ -5,6 +5,7 @@ root:
 
 app:
   config: ""
+  config_base: "_config.yml"
   config_server: "_server.yml"
   config_builder: "_builder.yml"
   port: 5678
