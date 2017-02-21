@@ -11,14 +11,14 @@ var yaml = require("js-yaml");
 
 // function
 function copy(conf, callback) {
-  fs.removeSync(conf.hugo.projects);
+  fs.removeSync(conf.app.projects);
   var paths = globby.sync(conf.filters.projects);
   for (var i in paths) {
     var mdPath = paths[i];
     // edit(mdPath, path.dirname(path.relative(conf.root.projects, mdPath)));
-    var mdDestPath = path.join(conf.hugo.projects, path.relative(conf.root.projects, mdPath));
+    var mdDestPath = path.join(conf.app.projects, path.relative(conf.root.projects, mdPath));
     var assetPath = path.join(path.dirname(mdPath), "assets");
-    var assetDestPath = path.join(conf.hugo.projects, path.relative(conf.root.projects, assetPath));
+    var assetDestPath = path.join(conf.app.projects, path.relative(conf.root.projects, assetPath));
     fs.copySync(mdPath, mdDestPath, {
       preserveTimestamps: true,
       filter: function(file) {

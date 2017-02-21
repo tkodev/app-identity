@@ -10,12 +10,12 @@ var build_post = require("./js/03-build_post.js");
 var serve = require("./js/04-serve.js");
 
 // url functions
-gulp.task("baseUrl", function(done) {
-  conf.hugo.url = conf.hugo.baseUrl;
+gulp.task("config_builder", function(done) {
+  conf.app.config = conf.app.config_builder;
   done();
 });
-gulp.task("tempUrl", function(done) {
-  conf.hugo.url = conf.hugo.tempUrl;
+gulp.task("config_server", function(done) {
+  conf.app.config = conf.app.config_server;
   done();
 });
 
@@ -55,5 +55,5 @@ gulp.task("watch", function(done) {
 
 // tasks
 gulp.task("build:all", gulp.series("copy", "build:pre", "build:post"));
-gulp.task("builder", gulp.series("baseUrl", "build:all", "serve", "watch"));
-gulp.task("server", gulp.series("tempUrl", "build:all", "serve", "watch"));
+gulp.task("builder", gulp.series("config_builder", "build:all", "serve", "watch"));
+gulp.task("server", gulp.series("config_server", "build:all", "serve", "watch"));
