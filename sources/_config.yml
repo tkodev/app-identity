@@ -18,8 +18,8 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
-source_dir: source
-public_dir: public
+source_dir: sources
+public_dir: ../release/www
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
