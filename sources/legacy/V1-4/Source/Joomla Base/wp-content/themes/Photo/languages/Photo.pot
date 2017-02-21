@@ -1,0 +1,899 @@
+# Photo
+# Copyright (C) 2014 GavickPro
+# This file is distributed under the same license as the PACKAGE package.
+# GavickPro <info@gavick.com>, 2014.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: 1.0.0\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2014-12-05 12:12+0200\n"
+        "PO-Revision-Date: 2014-12-14 12:12+0200\n"
+        "Last-Translator: Tomasz Dziuda <dziudek@gavick.com>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: image.php:31
+#, php-format
+msgid   "% comments"
+msgstr  ""
+
+#: comments.php:29
+#, php-format
+msgid   "%1$s Comments"
+msgstr  ""
+
+#: addons/class.tgm.php:2059
+#, php-format
+msgid   "%1$s installed and activated successfully."
+msgstr  ""
+
+#: addons/class.tgm.php:2068
+#, php-format
+msgid   "%1$s installed successfully."
+msgstr  ""
+
+#: author.php:34
+#, php-format
+msgid   "%s"
+msgstr  ""
+
+#: comments.php:49
+msgid   "&larr; Older Comments"
+msgstr  ""
+
+#: image.php:31
+msgid   "0 comments"
+msgstr  ""
+
+#: comments.php:25
+msgid   "1 Comment"
+msgstr  ""
+
+#: image.php:31
+msgid   "1 comment"
+msgstr  ""
+
+#: comments.php:27
+msgid   "2 Comments"
+msgstr  ""
+
+#: functions.php:313
+msgid   "<i class=\"fa fa-angle-left\"></i>"
+msgstr  ""
+
+#: functions.php:318
+msgid   "<i class=\"fa fa-angle-right\"></i>"
+msgstr  ""
+
+#: image.php:55
+msgid   "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr  ""
+
+#: addons/class.tgm.php:1312 addons/class.tgm.php:1399
+msgid   "Activate"
+msgstr  ""
+
+#: theme-customizer.php:1303
+msgid   "Add amount of excerpt chars visible on archive pages."
+msgstr  ""
+
+#: category.php:79 category.php:82 index.php:33 index.php:36
+msgid   "All"
+msgstr  ""
+
+#: addons/class.tgm.php:2060
+msgid   "All installations and activations have been completed."
+msgstr  ""
+
+#: addons/class.tgm.php:2069
+msgid   "All installations have been completed."
+msgstr  ""
+
+#: addons/class.tgm.php:179
+#, php-format
+msgid   "All plugins installed and activated successfully. %1$s"
+msgstr  ""
+
+#: functions.php:521
+#, php-format
+msgid   "All plugins installed and activated successfully. %s"
+msgstr  ""
+
+#: addons/class.tgm.php:2066
+#, php-format
+msgid   "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr  ""
+
+#: theme-customizer.php:1130
+msgid   "Animation interval (ms)"
+msgstr  ""
+
+#: functions.php:280
+msgid   "Appears at the bottom of the website"
+msgstr  ""
+
+#: functions.php:270
+msgid   "Appears at the bottom of the website."
+msgstr  ""
+
+#: functions.php:250
+msgid   "Appears at the left/right side of the website."
+msgstr  ""
+
+#: functions.php:260
+msgid   "Appears at the top of the website."
+msgstr  ""
+
+#: theme-customizer.php:103
+msgid   "Archive content"
+msgstr  ""
+
+#: theme-customizer.php:1099
+msgid   "Archives date format"
+msgstr  ""
+
+#: theme-customizer.php:1344 theme-customizer.php:1394
+#: theme-customizer.php:1444
+msgid   "Author archives"
+msgstr  ""
+
+#: template.contact.php:174
+msgid   "Back to the homepage"
+msgstr  ""
+
+#: theme-customizer.php:1142
+msgid   "Background Color"
+msgstr  ""
+
+#: archive.php:45
+msgid   "Blog Archives"
+msgstr  ""
+
+#: theme-customizer.php:805
+msgid   "Body Font"
+msgstr  ""
+
+#: functions.php:268
+msgid   "Bottom I"
+msgstr  ""
+
+#: functions.php:278
+msgid   "Bottom II"
+msgstr  ""
+
+#: theme-customizer.php:1486
+msgid   "Captcha private key"
+msgstr  ""
+
+#: theme-customizer.php:1475
+msgid   "Captcha public key"
+msgstr  ""
+
+#: footer.php:27
+msgid   "Close"
+msgstr  ""
+
+#: comments.php:48
+msgid   "Comment navigation"
+msgstr  ""
+
+#: comments.php:55
+msgid   "Comments are closed."
+msgstr  ""
+
+#: content-header.php:54
+msgid   "Completion Date:"
+msgstr  ""
+
+#: template.contact.php:181
+msgid   "Contact Form"
+msgstr  ""
+
+#: theme-customizer.php:125
+msgid   "Contact Page"
+msgstr  ""
+
+#: theme-customizer.php:1109
+msgid   "Copyright text"
+msgstr  ""
+
+#: theme-customizer.php:999
+msgid   "Creates more narrow version of the page"
+msgstr  ""
+
+#: content-header.php:56
+msgid   "Credits:"
+msgstr  ""
+
+#: archive.php:39
+#, php-format
+msgid   "Daily Archives: %s"
+msgstr  ""
+
+#: theme-customizer.php:1085
+msgid   "Date format"
+msgstr  ""
+
+#: theme-customizer.php:1088
+msgid   "Default theme format"
+msgstr  ""
+
+#: addons/class.tgm.php:180
+msgid   "Dismiss this notice"
+msgstr  ""
+
+#: theme-customizer.php:1509
+msgid   "Display google map"
+msgstr  ""
+
+#: theme-customizer.php:1055
+msgid   "Display related posts"
+msgstr  ""
+
+#: addons/class.tgm.php:1929
+#, php-format
+msgid   "Downloading install package from <span class=\"code\">%s</"
+        "span>&#8230;"
+msgstr  ""
+
+#: template.contact.php:117
+msgid   "E-mail:"
+msgstr  ""
+
+#: comments-template.php:30 comments-template.php:67 content-header.php:107
+msgid   "Edit"
+msgstr  ""
+
+#: theme-customizer.php:1497
+msgid   "Email source"
+msgstr  ""
+
+#: template.contact.php:198
+msgid   "Email:"
+msgstr  ""
+
+#: theme-customizer.php:1542
+msgid   "Enable User Interface on the map"
+msgstr  ""
+
+#: theme-customizer.php:1119
+msgid   "Enable autoanimation"
+msgstr  ""
+
+#: theme-customizer.php:1464
+msgid   "Enable reCaptcha"
+msgstr  ""
+
+#: theme-customizer.php:1035
+msgid   "Enable word-break"
+msgstr  ""
+
+#: theme-customizer.php:1302
+msgid   "Excerpt limit"
+msgstr  ""
+
+#: theme-customizer.php:62
+msgid   "Features"
+msgstr  ""
+
+#: category.php:79 index.php:33
+msgid   "Filter:"
+msgstr  ""
+
+#: theme-customizer.php:44
+msgid   "Font options"
+msgstr  ""
+
+#: template.contact.php:97 template.contact.php:99 template.contact.php:101
+msgid   "From "
+msgstr  ""
+
+#: theme-customizer.php:71 theme-customizer.php:1314 theme-customizer.php:1364
+#: theme-customizer.php:1414
+msgid   "Frontpage"
+msgstr  ""
+
+#: theme-customizer.php:870
+msgid   "Google Font URL for Header"
+msgstr  ""
+
+#: theme-customizer.php:827
+msgid   "Google Font URL for the Body"
+msgstr  ""
+
+#: theme-customizer.php:913
+msgid   "Google Font URL for the other elements"
+msgstr  ""
+
+#: theme-customizer.php:848
+msgid   "Header Font"
+msgstr  ""
+
+#: addons/class.tgm.php:2059 addons/class.tgm.php:2068
+msgid   "Hide Details"
+msgstr  ""
+
+#: theme-customizer.php:1231
+msgid   "Image height (px)"
+msgstr  ""
+
+#: theme-customizer.php:1271
+msgid   "Image height (px) - mobile"
+msgstr  ""
+
+#: theme-customizer.php:1241
+msgid   "Image height (px) - small desktop"
+msgstr  ""
+
+#: theme-customizer.php:1261
+msgid   "Image height (px) - small tablet"
+msgstr  ""
+
+#: theme-customizer.php:1251
+msgid   "Image height (px) - tablet"
+msgstr  ""
+
+#: theme-customizer.php:1282
+msgid   "In advanced layout, you can enable this option to change place and "
+        "size of the title with the date"
+msgstr  ""
+
+#: addons/class.tgm.php:1290 addons/class.tgm.php:1398
+msgid   "Install"
+msgstr  ""
+
+#: addons/class.tgm.php:162 functions.php:505
+msgid   "Install Plugins"
+msgstr  ""
+
+#: addons/class.tgm.php:161 functions.php:506
+msgid   "Install Required Plugins"
+msgstr  ""
+
+#: addons/class.tgm.php:1928
+msgid   "Install package not available."
+msgstr  ""
+
+#: addons/class.tgm.php:1185
+msgid   "Installed But Not Activated"
+msgstr  ""
+
+#: addons/class.tgm.php:2070
+#, php-format
+msgid   "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr  ""
+
+#: addons/class.tgm.php:163 functions.php:507
+#, php-format
+msgid   "Installing Plugin: %s"
+msgstr  ""
+
+#: addons/class.tgm.php:2061
+#, php-format
+msgid   "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr  ""
+
+#: addons/class.tgm.php:1931
+msgid   "Installing the plugin&#8230;"
+msgstr  ""
+
+#: addons/class.gkutils.php:9
+msgid   "Invalid sidebar ID"
+msgstr  ""
+
+#: 404.php:36
+msgid   "It looks like nothing was found at this location. Maybe try a search?"
+msgstr  ""
+
+#: content-none.php:25
+msgid   "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+        "searching can help."
+msgstr  ""
+
+#: theme-customizer.php:1520
+msgid   "Latitude value"
+msgstr  ""
+
+#: content-header.php:59
+msgid   "Launch Project"
+msgstr  ""
+
+#: theme-customizer.php:53
+msgid   "Layout"
+msgstr  ""
+
+#: theme-customizer.php:81
+msgid   "Layout type"
+msgstr  ""
+
+#: theme-customizer.php:92
+msgid   "Layout width"
+msgstr  ""
+
+#: theme-customizer.php:1498
+msgid   "Leave this field empty to use WordPress administrator email adress"
+msgstr  ""
+
+#: theme-customizer.php:987
+msgid   "Left"
+msgstr  ""
+
+#: theme-customizer.php:1553
+msgid   "Level of map zoom (1-20)"
+msgstr  ""
+
+#: theme-customizer.php:1531
+msgid   "Longitude value"
+msgstr  ""
+
+#: functions.php:80
+msgid   "Main Menu"
+msgstr  ""
+
+#: footer.php:27
+msgid   "Menu"
+msgstr  ""
+
+#: template.contact.php:106
+msgid   "Message from"
+msgstr  ""
+
+#: template.contact.php:123 template.contact.php:209
+msgid   "Message:"
+msgstr  ""
+
+#: theme-customizer.php:964
+msgid   "Mobile width (px)"
+msgstr  ""
+
+#: archive.php:41
+#, php-format
+msgid   "Monthly Archives: %s"
+msgstr  ""
+
+#: template.contact.php:110 template.contact.php:186
+msgid   "Name:"
+msgstr  ""
+
+#: theme-customizer.php:998
+msgid   "Narrow width"
+msgstr  ""
+
+#: comments.php:50
+msgid   "Newer Comments &rarr;"
+msgstr  ""
+
+#: image.php:56
+msgid   "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr  ""
+
+#: addons/class.tgm.php:1361
+#, php-format
+msgid   "No plugins to install or activate. <a href=\"%1$s\" title=\"Return "
+        "to the Dashboard\">Return to the Dashboard</a>"
+msgstr  ""
+
+#: 404.php:28
+msgid   "Not Found"
+msgstr  ""
+
+#: addons/class.tgm.php:1183
+msgid   "Not Installed"
+msgstr  ""
+
+#: content-none.php:13
+msgid   "Nothing Found"
+msgstr  ""
+
+#: theme-customizer.php:1221
+msgid   "Number of columns"
+msgstr  ""
+
+#: footer.php:27
+msgid   "Open menu"
+msgstr  ""
+
+#: theme-customizer.php:891
+msgid   "Other Elements Font"
+msgstr  ""
+
+#: theme-customizer.php:1354 theme-customizer.php:1404
+#: theme-customizer.php:1454
+msgid   "Other archive pages"
+msgstr  ""
+
+#: theme-customizer.php:114
+msgid   "Other category options"
+msgstr  ""
+
+#: functions.php:316
+msgid   "Page"
+msgstr  ""
+
+#: functions.php:233
+#, php-format
+msgid   "Page %s"
+msgstr  ""
+
+#: theme-customizer.php:1075
+msgid   "Page Social Icons"
+msgstr  ""
+
+#: image.php:50 content-video.php:24 page.php:34 content-gallery.php:22
+#: content-quote.php:22 content-link.php:22 content.php:26
+#: content-image.php:22 template.noheader.php:38
+msgid   "Pages:"
+msgstr  ""
+
+#: content-footer.php:96
+msgid   "Permanent Link to "
+msgstr  ""
+
+#: comments-template.php:28
+msgid   "Pingback:"
+msgstr  ""
+
+#: addons/class.tgm.php:1377
+msgid   "Plugin"
+msgstr  ""
+
+#: addons/class.tgm.php:177 addons/class.tgm.php:1945 functions.php:520
+msgid   "Plugin activated successfully."
+msgstr  ""
+
+#: addons/class.tgm.php:1944
+msgid   "Plugin activation failed."
+msgstr  ""
+
+#: addons/class.tgm.php:1932
+msgid   "Plugin install failed."
+msgstr  ""
+
+#: addons/class.tgm.php:1933
+msgid   "Plugin installed successfully."
+msgstr  ""
+
+#: theme-customizer.php:1065
+msgid   "Post Social Icons"
+msgstr  ""
+
+#: comments-template.php:36
+msgid   "Post author"
+msgstr  ""
+
+#: functions.php:309
+msgid   "Posts navigation"
+msgstr  ""
+
+#: addons/class.tgm.php:1172
+msgid   "Pre-Packaged"
+msgstr  ""
+
+#: theme-customizer.php:782
+msgid   "Primary Color"
+msgstr  ""
+
+#: addons/class.tgm.php:1169
+msgid   "Private Repository"
+msgstr  ""
+
+#: template.frontpage.php:57 content.php:17
+msgid   "Read more"
+msgstr  ""
+
+#: content-none.php:20
+#, php-format
+msgid   "Ready to publish your first post? <a href=\"%1$s\">Get started here</"
+        "a>."
+msgstr  ""
+
+#: addons/class.tgm.php:1180
+msgid   "Recommended"
+msgstr  ""
+
+#: content-footer.php:91
+msgid   "Related Posts"
+msgstr  ""
+
+#: addons/class.tgm.php:1180
+msgid   "Required"
+msgstr  ""
+
+#: addons/class.tgm.php:175 functions.php:519
+msgid   "Return to Required Plugins Installer"
+msgstr  ""
+
+#: addons/class.tgm.php:534 addons/class.tgm.php:2162
+msgid   "Return to the Dashboard"
+msgstr  ""
+
+#: addons/class.tgm.php:176
+msgid   "Return to the dashboard"
+msgstr  ""
+
+#: theme-customizer.php:988
+msgid   "Right"
+msgstr  ""
+
+#: searchform.php:11 searchform.php:14
+msgid   "Search"
+msgstr  ""
+
+#: search.php:36
+#, php-format
+msgid   "Search Results for: %s"
+msgstr  ""
+
+#: theme-customizer.php:1334 theme-customizer.php:1384
+#: theme-customizer.php:1434
+msgid   "Search archives"
+msgstr  ""
+
+#: theme-customizer.php:794
+msgid   "Secondary Color"
+msgstr  ""
+
+#: theme-customizer.php:1189 theme-customizer.php:1200
+#: theme-customizer.php:1211
+msgid   "Select categories"
+msgstr  ""
+
+#: theme-customizer.php:94
+msgid   "Selected archive pages and categories will have fullwidth layout, "
+        "the rest will have layout width specified in the Theme Layout section"
+msgstr  ""
+
+#: theme-customizer.php:83
+msgid   "Selected archive pages and categories will have grid layout, the "
+        "rest will have layout width margins between articles"
+msgstr  ""
+
+#: theme-customizer.php:105
+msgid   "Selected archive pages and categories will have simple content with "
+        "title and dark overlay only, the rest will have advanced content "
+        "with light overlay"
+msgstr  ""
+
+#: theme-customizer.php:838
+msgid   "Selectors for the body font"
+msgstr  ""
+
+#: theme-customizer.php:880
+msgid   "Selectors for the header font"
+msgstr  ""
+
+#: theme-customizer.php:923
+msgid   "Selectors for the other elements font"
+msgstr  ""
+
+#: template.contact.php:223
+msgid   "Send copy of the message to yourself"
+msgstr  ""
+
+#: template.contact.php:244
+msgid   "Send message"
+msgstr  ""
+
+#: addons/class.tgm.php:2059 addons/class.tgm.php:2068
+msgid   "Show Details"
+msgstr  ""
+
+#: theme-customizer.php:1177
+msgid   "Show pagination"
+msgstr  ""
+
+#: theme-customizer.php:1292
+msgid   "Show post excerpt"
+msgstr  ""
+
+#: theme-customizer.php:1166
+msgid   "Show title block"
+msgstr  ""
+
+#: theme-customizer.php:984
+msgid   "Sidebar position"
+msgstr  ""
+
+#: functions.php:248
+msgid   "Sidebar widget area"
+msgstr  ""
+
+#: theme-customizer.php:974
+msgid   "Sidebar width (%)"
+msgstr  ""
+
+#: content-header.php:52
+msgid   "Size:"
+msgstr  ""
+
+#: header.php:46
+msgid   "Skip to content"
+msgstr  ""
+
+#: theme-customizer.php:954
+msgid   "Small tablet width (px)"
+msgstr  ""
+
+#: functions.php:81
+msgid   "Social Menu"
+msgstr  ""
+
+#: functions.php:508
+msgid   "Something went wrong with the plugin API."
+msgstr  ""
+
+#: addons/class.tgm.php:164
+msgid   "Something went wrong."
+msgstr  ""
+
+#: template.contact.php:178
+msgid   "Sorry, an error occured."
+msgstr  ""
+
+#: content-none.php:22
+msgid   "Sorry, but nothing matched your search terms. Please try again with "
+        "some different keywords."
+msgstr  ""
+
+#: addons/class.tgm.php:1378
+msgid   "Source"
+msgstr  ""
+
+#: searchform.php:12
+msgid   "Start typing..."
+msgstr  ""
+
+#: addons/class.tgm.php:1380
+msgid   "Status"
+msgstr  ""
+
+#: theme-customizer.php:1281
+msgid   "Switch title with the date"
+msgstr  ""
+
+#: theme-customizer.php:944
+msgid   "Tablet width (px)"
+msgstr  ""
+
+#: tag.php:37
+#, php-format
+msgid   "Tag Archives: %s"
+msgstr  ""
+
+#: theme-customizer.php:1324 theme-customizer.php:1374
+#: theme-customizer.php:1424
+msgid   "Tag archives"
+msgstr  ""
+
+#: addons/class.tgm.php:178
+msgid   "The following plugin was activated successfully:"
+msgstr  ""
+
+#: addons/class.tgm.php:2058
+msgid   "The installation and activation process is starting. This process "
+        "may take a while on some hosts, so please be patient."
+msgstr  ""
+
+#: addons/class.tgm.php:2067
+#, php-format
+msgid   "The installation of %1$s failed."
+msgstr  ""
+
+#: addons/class.tgm.php:2065
+msgid   "The installation process is starting. This process may take a while "
+        "on some hosts, so please be patient."
+msgstr  ""
+
+#: template.contact.php:84
+msgid   "The reCAPTCHA wasn't entered correctly. Go back and try it again."
+msgstr  ""
+
+#: theme-customizer.php:934
+msgid   "Theme width (px)"
+msgstr  ""
+
+#: template.frontpage.php:83
+msgid   "There are no available slides, please add subpages (with featured "
+        "images) into your frontpage template."
+msgstr  ""
+
+#: theme-customizer.php:116
+msgid   "These options are common for all category layouts"
+msgstr  ""
+
+#: theme-customizer.php:127
+msgid   "These options are visible only on the contact template page."
+msgstr  ""
+
+#: 404.php:35
+msgid   "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr  ""
+
+#: comments.php:13
+msgid   "This post is password protected. Enter the password to view any "
+        "comments."
+msgstr  ""
+
+#: functions.php:258
+msgid   "Top widget area"
+msgstr  ""
+
+#: addons/class.tgm.php:1379
+msgid   "Type"
+msgstr  ""
+
+#: addons/class.tgm.php:1930
+msgid   "Unpacking the package&#8230;"
+msgstr  ""
+
+#: theme-customizer.php:1010
+msgid   "Upload an image logo for the bottom menu"
+msgstr  ""
+
+#: theme-customizer.php:1023
+msgid   "Upload top image logo"
+msgstr  ""
+
+#: theme-customizer.php:1045
+msgid   "Use Scroll Reveal"
+msgstr  ""
+
+#: theme-customizer.php:1155
+msgid   "Use dark color scheme"
+msgstr  ""
+
+#: content-archive.php:56 content-header.php:71 content-category.php:62
+#, php-format
+msgid   "View all posts by %s"
+msgstr  ""
+
+#: author.php:45
+msgid   "Website URL:"
+msgstr  ""
+
+#: theme-customizer.php:1089
+msgid   "WordPress Date Format"
+msgstr  ""
+
+#: addons/class.tgm.php:1177
+msgid   "WordPress Repository"
+msgstr  ""
+
+#: archive.php:43
+#, php-format
+msgid   "Yearly Archives: %s"
+msgstr  ""
+
+#: header.php:22
+msgid   "You're using an unsupported version of Internet Explorer. Please <a "
+        "href=\"http://windows.microsoft.com/en-us/internet-explorer/products/"
+        "ie/home\">upgrade your browser</a> for the best user experience on "
+        "our site. Thank you."
+msgstr  ""
+
+#: comments-template.php:58
+msgid   "Your comment is awaiting moderation."
+msgstr  ""
+
+#: template.contact.php:173
+msgid   "Your message was sent to us successfully."
+msgstr  ""
+
+#: functions.php:316
+msgid   "of"
+msgstr  ""
+
+#: template.contact.php:66
+msgid   "please enter a text of the message."
+msgstr  ""
+
+#: template.contact.php:58
+msgid   "please enter correct email address."
+msgstr  ""
+
+#: template.contact.php:49
+msgid   "please enter your name"
+msgstr  ""

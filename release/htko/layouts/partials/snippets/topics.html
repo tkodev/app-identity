@@ -1,3 +1,0 @@
-{{ if .Params.topics }}
-  {{ range $index, $topic := .Params.topics }}{{ if gt $index 0 }}, {{ end }}<a class="capitalize" href="/topics/{{ . | urlize }}">{{ . }}</a>{{ end }}
-{{ end }}

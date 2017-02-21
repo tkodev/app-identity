@@ -1,0 +1,10 @@
+<nav>
+  <h4>Recents</h4>
+  <ul>
+    {{ range first 5 (where .Site.Pages "Type" "post") }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>

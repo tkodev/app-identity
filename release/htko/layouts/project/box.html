@@ -1,3 +1,0 @@
-{{ $dir := (delimit (slice "content" .Type .Params.path) "/") }}
-{{ $img := (delimit (slice $dir "assets/cover.jpg") "/") }}
-{{ partial "renderer-targets/gallery/box" (dict "title" .Title "img" $img "node" . )}}

@@ -1,0 +1,14 @@
+{{ if .Site.Params.widgets.tag_cloud }}
+  {{ if isset .Site.Taxonomies "tags" }}
+    {{ if not (eq (len .Site.Taxonomies.tags) 0) }}
+      <nav>
+        <h4>Tag Cloud</h4>
+        <p>
+          {{ range $name, $items := .Site.Taxonomies.tags }}
+            <a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize | lower  }}">{{ $name }}</a>
+          {{ end }}
+        </p>
+      </nav>
+    {{ end }}
+  {{ end }}
+{{ end }}
