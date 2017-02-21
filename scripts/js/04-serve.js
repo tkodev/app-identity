@@ -2,18 +2,18 @@
 "use strict";
 
 // global node modules
-var browser = require("browser-sync");
+var browser = require( "browser-sync" );
 
 // functions
-function launch(conf, callback) {
-  browser.init({
+function launch( conf, callback ) {
+  browser.init( {
     server: conf.app.release,
     port: conf.app.port
-  });
+  } );
   callback();
 }
 
-function reload(callback) {
+function reload( callback ) {
   browser.reload();
   callback();
 }
