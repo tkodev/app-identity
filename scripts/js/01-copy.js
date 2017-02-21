@@ -3,7 +3,7 @@
 
 // global node modules
 var path = require("path");
-var fs = require("graceful-fs-extra");
+var fs = require("fs-extra");
 var globby = require("globby");
 var minimatch = require("minimatch")
 var matter = require('gray-matter');

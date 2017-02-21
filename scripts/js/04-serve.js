@@ -7,8 +7,8 @@ var browser = require("browser-sync");
 // functions
 function launch(conf, callback) {
   browser.init({
-    server: conf.hugo.public,
-    port: conf.hugo.port
+    server: conf.app.release,
+    port: conf.app.port
   });
   callback();
 }

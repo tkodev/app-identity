@@ -27,17 +27,17 @@ gulp.task("copy", function(done) {
 
 // sass function
 gulp.task("build:pre", function(done) {
-  build_pre.bulma(conf, done);
+  // build_pre.bulma(conf, done);
 });
 
 // build function
-gulp.task("build:post:hugo", function(done) {
-  build_post.hugo(conf, done);
+gulp.task("build:post:app", function(done) {
+  build_post.app(conf, done);
 });
 gulp.task("build:post:lint", function(done) {
   build_post.lint(conf, done);
 });
-gulp.task("build:post", gulp.series("build:post:hugo", "build:post:lint"));
+gulp.task("build:post", gulp.series("build:post:app", "build:post:lint"));
 
 // server function
 gulp.task("serve", function(done) {
@@ -50,7 +50,7 @@ gulp.task("reload", function(done) {
 // watch function
 gulp.task("watch", function(done) {
   gulp.watch(conf.filters.sass).on("change", gulp.series("build:pre"));
-  gulp.watch(conf.filters.hugo).on("change", gulp.series("build:post", "reload"));
+  gulp.watch(conf.filters.app).on("change", gulp.series("build:post", "reload"));
 });
 
 // tasks
