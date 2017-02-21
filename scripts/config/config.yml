@@ -1,29 +1,23 @@
 # Hugo paths
-hugo:
-  baseUrl: "//htko.ca"
-  tempUrl: "//localhost:5678"
+app:
   port: 5678
-  public: "/public"
-  source: "/source"
-  static: "/static/static"
-  content: "/static/content"
-  projects: "/static/content/project"
+  release: "../release/www"
+  sources: "/sources"
+  projects: "/sources/_projects"
 
 root:
-  hugo: "../release/htko"
+  app: "../sources"
   projects: "../../../../../public"
 
 filters:
   sass:
-    - "source/**/*.sass"
-    - "source/**/*.scss"
-  hugo:
-    - "archetypes/**/*"
-    - "data/**/*"
-    - "layouts/**/*"
-    - "static/**/*"
-    - "config.yml"
-    # - "public/**/*" # feedback loop
+    - "sources/**/*.sass"
+    - "sources/**/*.scss"
+  app:
+    - "scaffolds/**/*"
+    - "sources/**/*"
+    - "themes/**/*"
+    - "_*.yml"
   projects:
     - "**/README.md"
     - "!**/releases/**"
