@@ -4,29 +4,25 @@
 // global node modules
 var path = require("path");
 var fs = require("graceful-fs-extra");
-var yargs = require("yargs");
 var yaml = require("js-yaml");
 
 // load config
-const prod = !!(yargs.argv.production);
 var {
-  hugo,
   root,
+  app,
   filters
-} = loadConfigH(); // Load hugo config
+} = loadConfigH(); // Load app config
 function loadConfigH() {
   let ymlFile = fs.readFileSync("config/config.yml", "utf8");
   return yaml.load(ymlFile);
 }
 
 // logic
-root.hugo = path.join(__dirname, "../", root.hugo);
+root.app = path.join(__dirname, "../", root.app);
 root.projects = path.join(__dirname, "../", root.projects);
-hugo.public = path.join(root.hugo, hugo.public);
-hugo.source = path.join(root.hugo, hugo.source);
-hugo.static = path.join(root.hugo, hugo.static);
-hugo.content = path.join(root.hugo, hugo.content);
-hugo.projects = path.join(root.hugo, hugo.projects);
+app.release = path.join(root.app, app.release);
+app.sources = path.join(root.app, app.sources);
+app.projects = path.join(root.app, app.projects);
 var globPrepend = function(prepend, v) {
   if (v.charAt(0) === "/") {
     return v;
@@ -37,10 +33,10 @@ var globPrepend = function(prepend, v) {
   }
 }
 filters.sass = filters.sass.concat(filters.ignore).map(function(v) {
-  return globPrepend(root.hugo, v);
+  return globPrepend(root.app, v);
 });
-filters.hugo = filters.hugo.concat(filters.ignore).map(function(v) {
-  return globPrepend(root.hugo, v);
+filters.app = filters.app.concat(filters.ignore).map(function(v) {
+  return globPrepend(root.app, v);
 });
 filters.projects = filters.projects.concat(filters.ignore).map(function(v) {
   return globPrepend(root.projects, v);
@@ -48,9 +44,8 @@ filters.projects = filters.projects.concat(filters.ignore).map(function(v) {
 
 // export
 var conf = {
-  "prod": prod,
-  "hugo": hugo,
   "root": root,
+  "app": app,
   "filters": filters,
 }
 module.exports = conf;
