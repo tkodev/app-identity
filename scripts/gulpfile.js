@@ -9,16 +9,6 @@ var build_pre = require( "./js/02-build_pre.js" );
 var build_post = require( "./js/03-build_post.js" );
 var serve = require( "./js/04-serve.js" );
 
-// url functions
-gulp.task( "config_builder", function( done ) {
-  conf.app.config = conf.app.config_builder;
-  done();
-} );
-gulp.task( "config_server", function( done ) {
-  conf.app.config = conf.app.config_server;
-  done();
-} );
-
 // copy function
 gulp.task( "copy", function( done ) {
   copy( conf, done );
@@ -56,5 +46,5 @@ gulp.task( "watch", function( done ) {
 
 // tasks
 gulp.task( "build:all", gulp.series( "copy", "build:pre", "build:post" ) );
-gulp.task( "builder", gulp.series( "config_builder", "build:all", "serve", "watch" ) );
-gulp.task( "server", gulp.series( "config_server", "build:all", "serve", "watch" ) );
+gulp.task( "builder", gulp.series( "build:all", "serve", "watch" ) );
+gulp.task( "server", gulp.series( "build:all", "serve", "watch" ) );

@@ -12,8 +12,7 @@ var prettify = require( "gulp-jsbeautifier" );
 // hexo function
 function app( conf, done ) {
   fs.removeSync( conf.app.release );
-  console.log( conf.app.config );
-  return cp.spawn( "hexo", [ "--cwd", conf.root.app, "--config", conf.app.config_base, 'generate' ], {
+  return cp.spawn( "hexo", [ "--cwd", conf.root.app, 'generate' ], {
       stdio: "inherit"
     } )
     .on( "error", ( error ) => gutil.log( gutil.colors.red( "[Hexo]" + error.message ) ) )
