@@ -903,11 +903,11 @@ hexo-renderer-marked@^0.2.10:
     object-assign "^4.1.0"
     strip-indent "^1.0.1"
 
-hexo-renderer-sass@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/hexo-renderer-sass/-/hexo-renderer-sass-0.2.0.tgz#1ada71611e460645a5c6a828532b873ac7ed9a10"
+hexo-renderer-scss@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hexo-renderer-scss/-/hexo-renderer-scss-1.0.2.tgz#a17561740101272df86863e89749e821263ca697"
   dependencies:
-    node-sass "^3.2.2"
+    node-sass "^3.8.0"
 
 hexo-renderer-stylus@^0.3.1:
   version "0.3.1"
@@ -1477,7 +1477,7 @@ node-pre-gyp@^0.6.29:
     tar "~2.2.1"
     tar-pack "~3.3.0"
 
-node-sass@^3.2.2:
+node-sass@^3.8.0:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-3.13.1.tgz#7240fbbff2396304b4223527ed3020589c004fc2"
   dependencies:
