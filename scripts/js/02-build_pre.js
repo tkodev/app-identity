@@ -12,11 +12,10 @@ var postcss = require( 'gulp-postcss' );
 
 // bulma function
 function scss( conf, done ) {
-  fs.removeSync( path.join( conf.app.sass_target, "bulma-0.3.1" ) ); // triggers watch
-  gulp.src( path.join( conf.app.sass_source, "bulma-0.3.1/css/custom.sass" ) )
+  fs.removeSync( path.join( conf.app.sass_target, "css" ) ); // triggers watch
+  gulp.src( path.join( conf.app.sass_source, "css/custom.sass" ) )
     .pipe( rename( {
-      basename: "bulma",
-      suffix: '.min'
+      basename: "index"
     } ) )
     .pipe( sass( {
       outputStyle: 'compressed'
@@ -24,7 +23,7 @@ function scss( conf, done ) {
     // .pipe(sourcemaps.init()) // triggers watch (?)
     .pipe( postcss( [ require( 'autoprefixer' ) ] ) )
     // .pipe(sourcemaps.write('.')) // triggers watch
-    .pipe( gulp.dest( path.join( conf.app.sass_target, "bulma-0.3.1/css" ) ) ) // triggers watch
+    .pipe( gulp.dest( path.join( conf.app.sass_target, "css" ) ) ) // triggers watch
     .on( "end", done );
 }
 

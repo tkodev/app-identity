@@ -2,48 +2,52 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
-  <!-- init -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- meta -->
-  <%
-  var title = page.title;
+    <!-- init -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- meta -->
+    <%
+    var title = page.title;
 
-  if (is_archive()){
-    title = 'Archives';
+    if (is_archive()){
+      title = 'Archives';
 
-    if (is_month()){
-      title += ': ' + page.year + '/' + page.month;
-    } else if (is_year()){
-      title += ': ' + page.year;
+      if (is_month()){
+        title += ': ' + page.year + '/' + page.month;
+      } else if (is_year()){
+        title += ': ' + page.year;
+      }
+    } else if (is_category()){
+      title = 'Category: ' + page.category;
+    } else if (is_tag()){
+      title = 'Tag: ' + page.tag;
     }
-  } else if (is_category()){
-    title = 'Category: ' + page.category;
-  } else if (is_tag()){
-    title = 'Tag: ' + page.tag;
-  }
-  %>
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-  <meta name="description" content="Free Code Camp Project - Tic Tac Toe Widget">
-  <meta name="author" content="Tony Ko">
-  <!-- seo -->
-  <%- open_graph({twitter_id: theme.twitter_id, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-  <% if (theme.rss){ %>
-    <link rel="alternate" href="<%- url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
-  <% } %>
-  <!-- favicon -->
-  <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- url_for(theme.favicon) %>">
-  <% } %>
-  <!-- external -->
-  <% if (config.highlight.enable){ %>
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <% } %>
-  <!-- css -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-  <!-- js -->
-  <!-- <script type="text/javascript" src="static/js/index.js"></script> -->
+    %>
+    <title>
+      <% if (title){ %><%= title %>
+        |
+      <% } %><%= config.title %></title>
+    <meta name="description" content="Free Code Camp Project - Tic Tac Toe Widget">
+    <meta name="author" content="Tony Ko">
+    <!-- seo -->
+    <%- open_graph({twitter_id: theme.twitter_id, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+    <% if (theme.rss){ %>
+      <link rel="alternate" href="<%- url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
+    <!-- favicon -->
+    <% if (theme.favicon){ %>
+      <link rel="icon" href="<%- url_for(theme.favicon) %>">
+    <% } %>
+    <!-- external -->
+    <% if (config.highlight.enable){ %>
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <% } %>
+    <!-- css -->
+    <%- css(['lib/framework/css/index.css']) %>
+    <!-- js -->
+    <%- js(['lib/framework/js/index.js']) %>
 
-</head>
+  </head>
+  <body>
