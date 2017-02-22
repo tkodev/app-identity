@@ -8,7 +8,6 @@ var yaml = require( "js-yaml" );
 
 // load config
 var {
-  root,
   app,
   filters
 } = loadConfigH(); // Load app config
@@ -18,11 +17,13 @@ function loadConfigH() {
 }
 
 // logic
-root.app = path.join( __dirname, "../", root.app );
-root.projects = path.join( __dirname, "../", root.projects );
-app.release = path.join( root.app, app.release );
-app.sources = path.join( root.app, app.sources );
-app.projects = path.join( root.app, app.projects );
+app.root = path.join( __dirname, "../", app.root );
+app.release = path.join( app.root, app.release );
+app.sources = path.join( app.root, app.sources );
+app.sass_source = path.join( app.root, app.sass_source );
+app.sass_target = path.join( app.root, app.sass_target );
+app.projects_source = path.join( __dirname, "../", app.projects_source );
+app.projects_target = path.join( app.root, app.projects_target );
 var globPrepend = function( prepend, v ) {
   if ( v.charAt( 0 ) === "/" ) {
     return v;
@@ -33,20 +34,19 @@ var globPrepend = function( prepend, v ) {
   }
 }
 filters.sass = filters.sass.concat( filters.ignore ).map( function( v ) {
-  return globPrepend( root.app, v );
+  return globPrepend( app.root, v );
 } );
 filters.app = filters.app.concat( filters.ignore ).map( function( v ) {
-  return globPrepend( root.app, v );
+  return globPrepend( app.root, v );
 } );
 filters.projects = filters.projects.concat( filters.ignore ).map( function( v ) {
-  return globPrepend( root.projects, v );
+  return globPrepend( app.projects_source, v );
 } );
 
 // export
 var conf = {
-  "root": root,
   "app": app,
-  "filters": filters,
+  "filters": filters
 }
 
 module.exports = conf;
