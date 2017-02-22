@@ -1,0 +1,300 @@
+$input:                     $grey-darker !default
+$input-background:          $white !default
+$input-border:              $grey-lighter !default
+
+$input-hover:               $grey-darker !default
+$input-hover-border:        $grey-light !default
+
+$input-focus:               $grey-darker !default
+$input-focus-border:        $link !default
+
+$input-disabled:            $text-light !default
+$input-disabled-background: $background !default
+$input-disabled-border:     $background !default
+
+$input-arrow:               $link !default
+
+$input-icon:                $grey-lighter !default
+$input-icon-active:         $grey !default
+
+$input-radius:              $radius !default
+
+=input
+  +control
+  background-color: $input-background
+  border: 1px solid $input-border
+  color: $input
+  &:hover,
+  &.#{$prefix_b}is-hovered
+    border-color: $input-hover-border
+  &:focus,
+  &.#{$prefix_b}is-focused,
+  &:active,
+  &.#{$prefix_b}is-active
+    border-color: $input-focus-border
+  &[disabled],
+  &.#{$prefix_b}is-disabled
+    background-color: $input-disabled-background
+    border-color: $input-disabled-border
+    box-shadow: none
+    color: $input-disabled
+    +placeholder
+      color: rgba($input, 0.3)
+
+.#{$prefix_b}input,
+.#{$prefix_b}textarea
+  +input
+  box-shadow: inset 0 1px 2px rgba($black, 0.1)
+  max-width: 100%
+  width: 100%
+  &[type="search"]
+    border-radius: 290486px
+  // Colors
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    &.#{$prefix_b}is-#{$name}
+      border-color: $color
+  // Sizes
+  &.#{$prefix_b}is-small
+    +control-small
+  &.#{$prefix_b}is-medium
+    +control-medium
+  &.#{$prefix_b}is-large
+    +control-large
+  // Modifiers
+  &.#{$prefix_b}is-fullwidth
+    display: block
+    width: 100%
+  &.#{$prefix_b}is-inline
+    display: inline
+    width: auto
+
+.#{$prefix_b}textarea
+  display: block
+  line-height: 1.25
+  max-height: 600px
+  max-width: 100%
+  min-height: 120px
+  min-width: 100%
+  padding: 10px
+  resize: vertical
+
+.#{$prefix_b}checkbox,
+.#{$prefix_b}radio
+  align-items: center
+  cursor: pointer
+  display: inline-flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  position: relative
+  vertical-align: top
+  input
+    cursor: pointer
+    margin-right: 0.5em
+  &:hover
+    color: $input-hover
+  &.#{$prefix_b}is-disabled
+    color: $input-disabled
+    pointer-events: none
+    input
+      pointer-events: none
+
+.#{$prefix_b}radio
+  & + .#{$prefix_b}radio
+    margin-left: 0.5em
+
+.#{$prefix_b}select
+  display: inline-block
+  height: 2.5em
+  position: relative
+  vertical-align: top
+  &:after
+    +arrow($input-arrow)
+    margin-top: -0.375em
+    right: 1.125em
+    top: 50%
+    z-index: 4
+  select
+    +input
+    cursor: pointer
+    display: block
+    font-size: 1em
+    outline: none
+    padding-right: 2.5em
+    &:hover
+      border-color: $input-hover-border
+    &::ms-expand
+      display: none
+  // States
+  &:hover
+    &:after
+      border-color: $input-hover
+  // Sizes
+  &.#{$prefix_b}is-small
+    +control-small
+  &.#{$prefix_b}is-medium
+    +control-medium
+  &.#{$prefix_b}is-large
+    +control-large
+  // Modifiers
+  &.#{$prefix_b}is-fullwidth
+    width: 100%
+    select
+      width: 100%
+
+.#{$prefix_b}label
+  color: $input
+  display: block
+  font-weight: bold
+  &:not(:last-child)
+    margin-bottom: 0.5em
+
+.#{$prefix_b}help
+  display: block
+  font-size: $size-small
+  margin-top: 5px
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    &.#{$prefix_b}is-#{$name}
+      color: $color
+
+// Containers
+
+.#{$prefix_b}control-label
+  +mobile
+    margin-bottom: 0.5em
+  +tablet
+    flex-basis: 0
+    flex-grow: 1
+    flex-shrink: 0
+    margin-right: 1.5em
+    padding-top: 0.5em
+    text-align: right
+
+.#{$prefix_b}control
+  position: relative
+  text-align: left
+  &:not(:last-child)
+    margin-bottom: 0.75rem
+  // Modifiers
+  &.#{$prefix_b}has-addons
+    display: flex
+    justify-content: flex-start
+    .#{$prefix_b}button,
+    .#{$prefix_b}input,
+    .#{$prefix_b}select
+      border-radius: 0
+      margin-right: -1px
+      width: auto
+      &:hover
+        z-index: 2
+      &:focus,
+      &:active
+        z-index: 3
+      &:first-child
+        border-radius: $input-radius 0 0 $input-radius
+        select
+          border-radius: $input-radius 0 0 $input-radius
+      &:last-child
+        border-radius: 0 $input-radius $input-radius 0
+        select
+          border-radius: 0 $input-radius $input-radius 0
+      &.#{$prefix_b}is-expanded
+        flex-grow: 1
+        flex-shrink: 0
+    .#{$prefix_b}select select
+      &:hover
+        z-index: 2
+      &:focus,
+      &:active
+        z-index: 3
+    &.#{$prefix_b}has-addons-centered
+      justify-content: center
+    &.#{$prefix_b}has-addons-right
+      justify-content: flex-end
+    &.#{$prefix_b}has-addons-fullwidth
+      .#{$prefix_b}button,
+      .#{$prefix_b}input,
+      .#{$prefix_b}select
+        flex-grow: 1
+        flex-shrink: 0
+  &.#{$prefix_b}has-icon
+    .#{$prefix_b}icon
+      color: $input-icon
+      pointer-events: none
+      position: absolute
+      top: ($size-normal * 2.5) / 2
+      z-index: 4
+    .#{$prefix_b}input
+      &:focus
+        & + .#{$prefix_b}icon
+          color: $input-icon-active
+      &.#{$prefix_b}is-small
+        & + .#{$prefix_b}icon
+          top: ($size-small * 2.5) / 2
+      &.#{$prefix_b}is-medium
+        & + .#{$prefix_b}icon
+          top: ($size-medium * 2.5) / 2
+      &.#{$prefix_b}is-large
+        & + .#{$prefix_b}icon
+          top: ($size-large * 2.5) / 2
+    &:not(.#{$prefix_b}has-icon-right)
+      .#{$prefix_b}icon
+        left: ($size-normal * 2.5) / 2
+        transform: translateX(-50%) translateY(-50%)
+      .#{$prefix_b}input
+        padding-left: 2.5em
+        &.#{$prefix_b}is-small
+          & + .#{$prefix_b}icon
+            left: ($size-small * 2.5) / 2
+        &.#{$prefix_b}is-medium
+          & + .#{$prefix_b}icon
+            left: ($size-medium * 2.5) / 2
+        &.#{$prefix_b}is-large
+          & + .#{$prefix_b}icon
+            left: ($size-large * 2.5) / 2
+    &.#{$prefix_b}has-icon-right
+      .#{$prefix_b}icon
+        right: ($size-normal * 2.5) / 2
+        transform: translateX(50%) translateY(-50%)
+      .#{$prefix_b}input
+        padding-right: 2.5em
+        &.#{$prefix_b}is-small
+          & + .#{$prefix_b}icon
+            right: ($size-small * 2.5) / 2
+        &.#{$prefix_b}is-medium
+          & + .#{$prefix_b}icon
+            right: ($size-medium * 2.5) / 2
+        &.#{$prefix_b}is-large
+          & + .#{$prefix_b}icon
+            right: ($size-large * 2.5) / 2
+  &.#{$prefix_b}is-grouped
+    display: flex
+    justify-content: flex-start
+    & > .#{$prefix_b}control
+      flex-basis: 0
+      flex-shrink: 0
+      &:not(:last-child)
+        margin-bottom: 0
+        margin-right: 0.75rem
+      &.#{$prefix_b}is-expanded
+        flex-grow: 1
+        flex-shrink: 1
+    &.#{$prefix_b}is-grouped-centered
+      justify-content: center
+    &.#{$prefix_b}is-grouped-right
+      justify-content: flex-end
+  &.#{$prefix_b}is-horizontal
+    +tablet
+      display: flex
+      & > .#{$prefix_b}control
+        display: flex
+        flex-basis: 0
+        flex-grow: 5
+        flex-shrink: 1
+  &.#{$prefix_b}is-loading
+    &:after
+      +loader
+      position: absolute !important
+      right: 0.75em
+      top: 0.75em

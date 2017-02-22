@@ -4,10 +4,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Tony Ko
+subtitle: Personal Profile
 description:
-author: John Doe
+author: Tony Ko
 language:
 timezone:
 
@@ -19,8 +19,8 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
-source_dir: sources
-public_dir: ../release/www
+source_dir: source
+public_dir: ../release
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
