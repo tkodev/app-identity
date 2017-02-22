@@ -1,0 +1,19 @@
+.#{$prefix_h}button.#{$prefix_h}to-top {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 6rem;
+  right: 3rem;
+  display: none;
+  border-radius: 100%;
+  background-color: rgba(255,255,255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid $grey-light;
+}
+
+.#{$prefix_h}to-top:hover {
+  text-decoration: none;
+}

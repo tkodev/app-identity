@@ -1,0 +1,36 @@
+$dimensions: 16 24 32 48 64 96 128
+
+.#{$prefix_b}image
+  display: block
+  position: relative
+  img
+    display: block
+    height: auto
+    width: 100%
+  // Ratio
+  &.#{$prefix_b}is-square,
+  &.#{$prefix_b}is-1by1,
+  &.#{$prefix_b}is-4by3,
+  &.#{$prefix_b}is-3by2,
+  &.#{$prefix_b}is-16by9,
+  &.#{$prefix_b}is-2by1
+    img
+      +overlay
+      height: 100%
+      width: 100%
+  &.#{$prefix_b}is-square,
+  &.#{$prefix_b}is-1by1
+    padding-top: 100%
+  &.#{$prefix_b}is-4by3
+    padding-top: 75%
+  &.#{$prefix_b}is-3by2
+    padding-top: 66.6666%
+  &.#{$prefix_b}is-16by9
+    padding-top: 56.25%
+  &.#{$prefix_b}is-2by1
+    padding-top: 50%
+  // Sizes
+  @each $dimension in $dimensions
+    &.#{$prefix_b}is-#{$dimension}x#{$dimension}
+      height: $dimension * 1px
+      width: $dimension * 1px
