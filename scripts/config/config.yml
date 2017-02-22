@@ -9,7 +9,7 @@ app:
   config_server: "_server.yml"
   config_builder: "_builder.yml"
   port: 5678
-  release: "../release/www"
+  release: "../release"
   sources: "/sources"
   projects: "/sources/_projects"
 
