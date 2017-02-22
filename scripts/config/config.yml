@@ -1,4 +1,3 @@
-# Hugo paths
 root:
   app: "../sources"
   projects: "../../../../../public"
@@ -10,16 +9,16 @@ app:
   config_builder: "_builder.yml"
   port: 5678
   release: "../release"
-  sources: "/sources"
-  projects: "/sources/_projects"
+  sources: "/source"
+  projects: "/source/_projects"
 
 filters:
   sass:
-    - "sources/**/*.sass"
-    - "sources/**/*.scss"
+    - "source/**/*.sass"
+    - "source/**/*.scss"
   app:
     - "scaffolds/**/*"
-    - "sources/**/*"
+    - "source/**/*"
     - "themes/**/*"
     - "_*.yml"
   projects:
