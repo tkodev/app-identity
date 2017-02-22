@@ -23,7 +23,6 @@
         "gulp-sass": "^3.1.0",
         "gulp-sourcemaps": "^2.4.0",
         "gulp-util": "^3.0.7",
-        "hexo": "^3.2.2",
         "js-yaml": "^3.7.0",
         "yargs": "^6.6.0"
     },
