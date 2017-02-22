@@ -9,14 +9,13 @@ app:
   projects_target: "source/_projects"
 
 filters:
-  sass:
-    - "source/**/*.sass"
-    - "source/**/*.scss"
   app:
     - "scaffolds/**/*"
     - "source/**/*"
     - "themes/**/*"
     - "_*.yml"
+    - "!themes/**/*.css"
+    - "!themes/**/*.map"
   projects:
     - "**/README.md"
     - "!**/releases/**"

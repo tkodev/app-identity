@@ -1,7 +1,27 @@
-.#{$prefix_h}header {
-  background-color: $white-bis;
-  padding: 0 1rem;
-  .#{$prefix_h}desc {
-    background-color: $white-ter;
+#header {
+  nav {
+    .#{$prefix_b}column {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+      font-family: $family-header;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+    }
+    #logo {
+      img {
+        min-height: 4rem;
+        min-width: 4rem;
+      }
+    }
+    #name {
+      a {
+        font-size: $h-size-1;
+        line-height: 1em;
+      }
+    }
   }
 }

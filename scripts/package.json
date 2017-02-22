@@ -17,6 +17,7 @@
         "graceful-fs-extra": "^2.0.0",
         "gray-matter": "^2.1.0",
         "gulp": "gulpjs/gulp#4.0",
+        "gulp-if": "^2.0.2",
         "gulp-jsbeautifier": "^2.0.3",
         "gulp-postcss": "^6.3.0",
         "gulp-rename": "^1.2.2",
