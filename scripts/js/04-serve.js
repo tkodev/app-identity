@@ -5,17 +5,17 @@
 var browser = require( "browser-sync" );
 
 // functions
-function launch( conf, callback ) {
+function launch( conf, done ) {
   browser.init( {
     server: conf.app.release,
     port: conf.app.port
   } );
-  callback();
+  done();
 }
 
-function reload( callback ) {
+function reload( done ) {
   browser.reload();
-  callback();
+  done();
 }
 
 // export
