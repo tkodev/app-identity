@@ -11,9 +11,9 @@ var postcss = require( 'gulp-postcss' );
 // var sourcemaps = require('gulp-sourcemaps');
 
 // bulma function
-function bulma( conf, done ) {
-  fs.removeSync( path.join( conf.hugo.static, "bulma-0.3.1/css" ) ); // triggers watch
-  gulp.src( path.join( conf.hugo.source, "bulma-0.3.1/custom.sass" ) )
+function scss( conf, done ) {
+  fs.removeSync( path.join( conf.app.sass_target, "bulma-0.3.1" ) ); // triggers watch
+  gulp.src( path.join( conf.app.sass_source, "bulma-0.3.1/css/custom.sass" ) )
     .pipe( rename( {
       basename: "bulma",
       suffix: '.min'
@@ -24,9 +24,9 @@ function bulma( conf, done ) {
     // .pipe(sourcemaps.init()) // triggers watch (?)
     .pipe( postcss( [ require( 'autoprefixer' ) ] ) )
     // .pipe(sourcemaps.write('.')) // triggers watch
-    .pipe( gulp.dest( path.join( conf.hugo.static, "bulma-0.3.1/css" ) ) ) // triggers watch
+    .pipe( gulp.dest( path.join( conf.app.sass_target, "bulma-0.3.1/css" ) ) ) // triggers watch
     .on( "end", done );
 }
 
 // exports
-module.exports.bulma = bulma;
+module.exports.scss = scss;

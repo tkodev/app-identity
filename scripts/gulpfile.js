@@ -17,8 +17,7 @@ gulp.task( "copy", function( done ) {
 
 // sass function
 gulp.task( "build:pre", function( done ) {
-  // build_pre.bulma(conf, done);
-  done();
+  build_pre.scss(conf, done);
 } );
 
 // build function

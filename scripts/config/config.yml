@@ -1,16 +1,12 @@
-root:
-  app: "../sources"
-  projects: "../../../../../public"
-
 app:
-  config: ""
-  config_base: "_config.yml"
-  config_server: "_server.yml"
-  config_builder: "_builder.yml"
   port: 5678
+  root: "../sources"
   release: "../release"
-  sources: "/source"
-  projects: "/source/_projects"
+  sources: "source"
+  sass_source: "themes/www/code/lib"
+  sass_target: "themes/www/source/lib"
+  projects_source: "../../../../../public"
+  projects_target: "source/_projects"
 
 filters:
   sass:
