@@ -1,5 +1,5 @@
 #header {
-  nav {
+  .#{$prefix_b}columns {
     .#{$prefix_b}column {
       display: inline-flex;
       flex-direction: column;
@@ -10,17 +10,34 @@
       text-transform: uppercase;
       display: inline-flex;
       align-items: center;
+      line-height: 1.6em;
     }
     #logo {
       img {
-        min-height: 4rem;
-        min-width: 4rem;
+        height: 4rem;
+        width: 4rem;
       }
     }
     #name {
       a {
         font-size: $h-size-1;
         line-height: 1em;
+      }
+      p {
+        padding-top: 0.2rem;
+        font-family: $family-header;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    }
+    #menu {
+      i {
+        width: 1.8rem;
+      }
+    }
+    #links {
+      span {
+        width: 4.8rem;
       }
     }
   }
