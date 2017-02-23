@@ -1,0 +1,23 @@
+#main {
+  #hero {
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url("http://htko.ca/content/project/gfx/personal/htko-identity/assets/mockup-cards.jpg");
+    height: 40rem;
+
+    .#{$prefix_b}column {
+      display: flex;
+      align-items: center;
+    }
+
+    .content {
+      h1, h5 {
+        mix-blend-mode: difference;
+        color: white;
+      }
+      h1 {
+        font-weight: 400;
+      }
+    }
+  }
+}
