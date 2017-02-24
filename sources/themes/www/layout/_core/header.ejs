@@ -10,12 +10,12 @@
       </div>
       <nav id="menu" class="b-column" role="menu">
         <% for (var i in theme.menu){ %>
-          <a href="<%- url_for(theme.menu[i].url) %>" role="menuitem"> <i class="fa <%= theme.menu[i].icon %>" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile"><%= theme.menu[i].title %></span> </a>
+          <a href="<%- url_for(theme.menu[i].link) %>" role="menuitem"> <i class="fa <%= theme.menu[i].icon %>" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile"><%= theme.menu[i].title %></span> </a>
         <% } %>
       </nav>
       <nav id="links" class="b-column b-is-narrow " role="menu">
         <% for (var i in theme.links){ %>
-          <a href="<%= theme.links[i].url %>" role="menuitem"> <span class="b-is-hidden-mobile"><%= theme.links[i].title %></span> &nbsp; <i class="fa <%= theme.links[i].icon %>" aria-hidden="true"></i> </a>
+          <a href="<%= theme.links[i].link %>" role="menuitem"> <span class="b-is-hidden-mobile"><%= theme.links[i].title %></span> &nbsp; <i class="fa <%= theme.links[i].icon %>" aria-hidden="true"></i> </a>
         <% } %>
       </nav>
     </div>
