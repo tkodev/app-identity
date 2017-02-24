@@ -6,7 +6,7 @@ app:
   sass_source: "themes/www/code/lib/framework"
   sass_target: "themes/www/source/lib/framework"
   projects_source: "../../../../../public"
-  projects_target: "source/_projects"
+  projects_target: "source/_posts"
 
 filters:
   app:

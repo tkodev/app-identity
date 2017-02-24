@@ -26,9 +26,13 @@
     }
     %>
     <title>
-      <% if (title){ %><%= title %>
-        |
-      <% } %><%= config.title %></title>
+      <%= config.title %> |
+      <% if (title){ %>
+        <%= title %>
+      <% } else{ %>
+        <%= config.subtitle %> |
+      <% } %>
+    </title>
     <meta name="description" content="Free Code Camp Project - Tic Tac Toe Widget">
     <meta name="author" content="Tony Ko">
     <!-- seo -->
