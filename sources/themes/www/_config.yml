@@ -2,28 +2,28 @@
 menu:
   code:
     title: Code
-    url: code/
+    link: code/
     icon: fa-code
   gfx:
     title: GFX
-    url: gfx/
+    link: gfx/
     icon: fa-paint-brush
   interior-design:
     title: Interior Design
-    url: interior-design/
+    link: interior-design/
     icon: fa-university
 links:
   github:
     title: GitHub
-    url: github/
+    link: github/
     icon: fa-code-fork
   linkedin:
     title: LinkedIn
-    url: linkedin/
+    link: linkedin/
     icon: fa-linkedin
   about-me:
     title: About Me
-    url: about-me/
+    link: about-me/
     icon: fa-id-card-o
 
 rss: /atom.xml
