@@ -1,23 +1,23 @@
 <header id="header" class="b-section">
   <div class="b-container">
-    <nav class="b-columns b-is-gapless b-is-mobile" role="menu">
+    <div class="b-columns b-is-gapless b-is-mobile">
       <div id="logo" class="b-column b-is-3-mobile b-is-1-tablet">
-        <a href="#" role="menuitem"><img src="lib/base/img/logo/logo.svg" alt="Tony Ko's Portfolio Logo"></a>
+        <a href="<%- config.root %>"><img src="lib/base/img/logo/logo.svg" alt="Tony Ko's Portfolio Logo"></a>
       </div>
       <div id="name" class="b-column b-is-7-mobile b-is-5-tablet">
-        <a href="#" role="menuitem">Tony Ko</a>
-        <p>Front End Developer * Designer</p>
+        <a href="<%- config.root %>"><%= config.title %></a>
+        <p><% if (config.subtitle){ %><%= config.subtitle %><% } %></p>
       </div>
-      <div id="menu" class="b-column">
-        <a href="#" role="menuitem"> <i class="fa fa-code" aria-hidden="true"></i>        &nbsp; <span class="b-is-hidden-mobile">Code</span>            </a>
-        <a href="#" role="menuitem"> <i class="fa fa-paint-brush" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile">GFX</span>             </a>
-        <a href="#" role="menuitem"> <i class="fa fa-university" aria-hidden="true"></i>  &nbsp; <span class="b-is-hidden-mobile">Interior Design</span> </a>
-      </div>
-      <div id="links" class="b-column b-is-narrow ">
-        <a href="#" role="menuitem"> <span class="b-is-hidden-mobile">GitHub</span>   &nbsp; <i class="fa fa-code-fork" aria-hidden="true"></i> </a>
-        <a href="#" role="menuitem"> <span class="b-is-hidden-mobile">LinkedIn</span> &nbsp; <i class="fa fa-linkedin" aria-hidden="true"></i>  </a>
-        <a href="#" role="menuitem"> <span class="b-is-hidden-mobile">About Me</span> &nbsp; <i class="fa fa-id-card-o" aria-hidden="true"></i> </a>
-      </div>
-    </nav>
+      <nav id="menu" class="b-column" role="menu">
+        <% for (var i in theme.menu){ %>
+          <a href="<%- url_for(theme.menu[i].url) %>" role="menuitem"> <i class="fa <%= theme.menu[i].icon %>" aria-hidden="true"></i> &nbsp; <span class="b-is-hidden-mobile"><%= theme.menu[i].title %></span> </a>
+        <% } %>
+      </nav>
+      <nav id="links" class="b-column b-is-narrow " role="menu">
+        <% for (var i in theme.links){ %>
+          <a href="<%= theme.links[i].url %>" role="menuitem"> <span class="b-is-hidden-mobile"><%= theme.links[i].title %></span> &nbsp; <i class="fa <%= theme.links[i].icon %>" aria-hidden="true"></i> </a>
+        <% } %>
+      </nav>
+    </div>
   </div>
 </header>
