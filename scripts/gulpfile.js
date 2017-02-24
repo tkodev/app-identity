@@ -12,7 +12,6 @@ var serve = require( "./js/04-serve.js" );
 // copy function
 gulp.task( "copy", function( done ) {
   copy( conf, done );
-  // done();
 } );
 
 // sass function
@@ -43,6 +42,5 @@ gulp.task( "watch", function( done ) {
 } );
 
 // tasks
-gulp.task( "build:all", gulp.series( "copy", "build:pre", "build:post" ) );
+gulp.task( "build:all", gulp.series( "build:pre", "build:post" ) );
 gulp.task( "builder", gulp.series( "build:all", "serve", "watch" ) );
-gulp.task( "server", gulp.series( "build:all", "serve", "watch" ) );
