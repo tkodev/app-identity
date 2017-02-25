@@ -11,6 +11,6 @@ categories:
 tags:
   -
 cover: cover.jpg
-photos:
+images:
   -
 ---

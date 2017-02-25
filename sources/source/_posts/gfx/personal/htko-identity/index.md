@@ -9,7 +9,7 @@ tags:
   - typography
   - identity
 cover: cover.jpg
-photos:
+images:
   - mockup-cards.jpg
   - mockup-all.jpg
 ---

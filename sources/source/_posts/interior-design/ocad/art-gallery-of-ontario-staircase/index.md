@@ -11,7 +11,7 @@ tags:
   - architecture
   - model
 cover: cover.jpg
-photos:
+images:
   - axonometric-models.jpg
   - floor-plan-&-cross-section.jpg
 ---

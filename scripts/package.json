@@ -29,7 +29,8 @@
     },
     "main": "gulpfile.js",
     "scripts": {
-        "builder": "gulp builder"
+        "build": "gulp build",
+        "copy": "gulp copy"
     },
     "private": true
 }

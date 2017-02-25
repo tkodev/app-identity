@@ -7,6 +7,7 @@ categories:
 tags:
   - bash
   - docker
+cover: cover.jpg
 ---
 # Personal Project
 A collection of [BASH](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) scripts used to administrate local server.

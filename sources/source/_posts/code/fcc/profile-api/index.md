@@ -11,6 +11,7 @@ tags:
   - cheerio
   - request
   - rest API
+cover: cover.jpg
 ---
 # Personal Project
 JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request

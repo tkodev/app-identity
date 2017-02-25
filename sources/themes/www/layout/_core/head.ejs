@@ -1,7 +1,7 @@
-<%- partial('_misc/art') %>
+<%- partial('_elements/art') %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 
     <!-- init -->
@@ -49,9 +49,12 @@
       <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
     <% } %>
     <!-- css -->
-    <%- css(["lib/framework/css/index.css","lib/font-awesome-4.7.0/css/font-awesome-4.7.0.min.css"]) %>
+    <%- css("lib/framework/css/index.css") %>
+    <%- css("lib/font-awesome-4.7.0/css/font-awesome-4.7.0.min.css") %>
+    <%- css("lib/blueimp-gallery-2.22.0/css/blueimp-gallery.min.css") %>
     <!-- js -->
-    <%- js(["lib/framework/js/index.js"]) %>
+    <%- js("lib/framework/js/index.js") %>
+    <%- js("lib/blueimp-gallery-2.22.0/js/blueimp-gallery.min.js") %>
 
   </head>
   <body>

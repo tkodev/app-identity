@@ -1,0 +1,29 @@
+#main {
+  #hero {
+    .#{$prefix_h}bg {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: no-repeat center center;
+      background-size: cover;
+      background-color: rgba(0,0,0,0.2);
+      background-blend-mode: darken;
+    }
+
+    .#{$prefix_h}content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 36rem;
+
+      h1,
+      h5 {
+        color: white;
+      }
+
+      h1 {
+        font-weight: 400;
+      }
+    }
+  }
+}

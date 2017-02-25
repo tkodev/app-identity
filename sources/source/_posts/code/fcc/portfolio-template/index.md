@@ -12,7 +12,7 @@ tags:
   - bootstrap
   - jQuery
 cover: cover.jpg
-photos:
+images:
   - screenshot-ipadpro-landscape.jpg
   - mockup-tablet.jpg
   - mockup-mobile.jpg

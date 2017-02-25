@@ -11,7 +11,7 @@ categories:
 tags:
   - bootstrap
 cover: cover.jpg
-photos:
+images:
   - screenshot-ipadpro.jpg
   - mockup-tablet.jpg
 ---

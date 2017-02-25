@@ -12,7 +12,7 @@ tags:
   - bulma
   - jquery
 cover: cover.jpg
-photos:
+images:
   - mockup-mobile-m.jpg
   - mockup-mobile-game-m.jpg
 ---

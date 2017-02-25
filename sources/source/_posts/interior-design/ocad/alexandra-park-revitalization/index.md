@@ -11,7 +11,7 @@ tags:
   - architecture
   - model
 cover: cover.jpg
-photos:
+images:
   - Overview.jpg
   - Overview-2.jpg
   - Street-View.jpg

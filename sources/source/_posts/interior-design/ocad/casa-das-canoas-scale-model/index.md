@@ -11,7 +11,7 @@ tags:
   - architecture
   - model
 cover: cover.jpg
-photos:
+images:
   - East-Overview.jpg
   - Overview.jpg
   - North-East-Overview.jpg

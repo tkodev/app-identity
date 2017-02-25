@@ -1,0 +1,32 @@
+.#{$prefix_b}column {
+  transition: 1s ease;
+}
+
+#main {
+  #category {
+    .#{$prefix_h}bg {
+      .#{$prefix_h}content {
+        transition: .5s ease;
+        opacity: 0;
+      }
+    }
+    .#{$prefix_h}bg:hover {
+      .#{$prefix_h}content {
+        opacity: 1;
+      }
+    }
+  }
+  #gallery {
+    .#{$prefix_h}bg {
+      .#{$prefix_h}content {
+        transition: .5s ease;
+        opacity: 0;
+      }
+    }
+    .#{$prefix_h}bg:hover {
+      .#{$prefix_h}content {
+        opacity: 0.4;
+      }
+    }
+  }
+}
