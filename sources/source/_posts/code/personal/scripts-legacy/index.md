@@ -7,6 +7,7 @@ categories:
 tags:
   - expression2
   - advdupe2
+cover: cover.jpg
 ---
 # Personal Project
 A collection of scripts for several esoteric languages.

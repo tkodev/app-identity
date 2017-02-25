@@ -6,6 +6,7 @@ categories:
   - code
 tags:
   - lua
+cover: cover.jpg
 ---
 # Journal
 A journal of my learning progress and solutions in the LUA language.

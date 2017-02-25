@@ -5,7 +5,6 @@ link: 'http://www.htko.ca'
 code: 'https://github.com/htkoca/htko-site-base'
 categories:
   - code
-  - gfx
 tags:
   - hugo
   - node
@@ -13,7 +12,7 @@ tags:
   - sass
   - bulma
 cover: cover.jpg
-photos:
+images:
   - mockup-desktop.jpg
   - screenshot-ipadpro-landscape.jpg
   - screenshot-ipadpro.jpg

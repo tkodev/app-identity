@@ -10,7 +10,7 @@ tags:
   - industrial design
   - model
 cover: cover.jpg
-photos:
+images:
   - Light.jpg
   - Light-Top.jpg
   - Light-Off.jpg

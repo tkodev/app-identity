@@ -13,7 +13,7 @@ tags:
   - jquery
   - API
 cover: cover.jpg
-photos:
+images:
   - screenshot-ipadpro.jpg
   - mockup-tablet.jpg
   - mockup-mobile.jpg

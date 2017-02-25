@@ -43,4 +43,4 @@ gulp.task( "watch", function( done ) {
 
 // tasks
 gulp.task( "build:all", gulp.series( "build:pre", "build:post" ) );
-gulp.task( "builder", gulp.series( "build:all", "serve", "watch" ) );
+gulp.task( "build", gulp.series( "build:all", "serve", "watch" ) );

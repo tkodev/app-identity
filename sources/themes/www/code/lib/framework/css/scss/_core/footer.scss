@@ -1,0 +1,39 @@
+#footer {
+  #menu {
+    .#{$prefix_b}column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      font-family: $family-header;
+      text-transform: uppercase;
+    }
+    .#{$prefix_h}logo {
+      img {
+        height: 1rem;
+        width: 1rem;
+        opacity: 0.6;
+      }
+    }
+    .#{$prefix_h}name {
+      p {
+        font-family: $family-header;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    }
+    .#{$prefix_h}menu {
+      i {
+        width: 1.8rem;
+      }
+    }
+    .#{$prefix_h}links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}

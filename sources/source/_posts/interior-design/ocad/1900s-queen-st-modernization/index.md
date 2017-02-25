@@ -11,7 +11,7 @@ tags:
   - architecture
   - model
 cover: cover.jpg
-photos:
+images:
   - Overview.jpg
   - Overview-Cutaway-1.jpg
   - Overview-Cutaway-2.jpg

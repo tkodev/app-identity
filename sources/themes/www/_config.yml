@@ -2,33 +2,32 @@
 menu:
   code:
     title: Code
-    link: code/
+    link: code.html
     icon: fa-code
   gfx:
     title: GFX
-    link: gfx/
+    link: gfx.html
     icon: fa-paint-brush
   interior-design:
     title: Interior Design
-    link: interior-design/
+    link: interior-design.html
     icon: fa-university
 links:
   github:
     title: GitHub
-    link: github/
+    link: https://github.com/htkoca/
     icon: fa-code-fork
   linkedin:
     title: LinkedIn
-    link: linkedin/
+    link: https://linkedin.com/in/htkoca/
     icon: fa-linkedin
   about-me:
     title: About Me
-    link: about-me/
+    link: about-me.html
     icon: fa-id-card-o
 
-rss: /atom.xml
-
 # Miscellaneous
+rss: /atom.xml
 google_analytics:
 favicon:
 twitter_id:

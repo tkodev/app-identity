@@ -12,7 +12,7 @@ tags:
   - sass
   - foundation
 cover: cover.jpg
-photos:
+images:
   - screenshot-ipadpro-landscape.jpg
   - mockup-tablet.jpg
 ---

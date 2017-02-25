@@ -11,7 +11,7 @@ tags:
   - architecture
   - model
 cover: cover.jpg
-photos:
+images:
   - Final-1.jpg
   - Final-2.jpg
   - Final-3.jpg

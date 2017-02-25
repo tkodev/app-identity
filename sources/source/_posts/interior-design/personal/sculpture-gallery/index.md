@@ -8,7 +8,7 @@ tags:
   - architecture
   - model
 cover: cover.jpg
-photos:
+images:
   - West-Overview.jpg
   - South-West-Overview.jpg
   - South-Overview.jpg

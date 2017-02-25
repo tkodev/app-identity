@@ -9,6 +9,7 @@ tags:
   - front-end
   - data-vis
   - back-end
+cover: cover.jpg
 ---
 # Journal
 A journal of my course progress and solutions in Free Code Camp's Full Stack Web Development Certification.

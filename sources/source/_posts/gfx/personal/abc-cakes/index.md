@@ -8,7 +8,7 @@ tags:
   - graphics
   - identity
 cover: cover.jpg
-photos:
+images:
   - Business-Card-Render.jpg
   - Branding-Mockup.jpg
 ---

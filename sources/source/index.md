@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: _pages/index
 ---
 # Hi, I'm Tony Ko
 

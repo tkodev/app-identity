@@ -11,7 +11,7 @@ tags:
   - architecture
   - model
 cover: cover.jpg
-photos:
+images:
   - Interior-View.jpg
   - Interior-View-2.jpg
   - Interior-View-3.jpg

@@ -54,7 +54,7 @@ function rewrite( mdPath ) {
   appendProp( mdFile.data, mdData, "categories");
   appendProp( mdFile.data, mdData, "tags");
   appendProp( mdFile.data, mdData, "cover");
-  appendProp( mdFile.data, mdData, "photos" );
+  appendProp( mdFile.data, mdData, "images" );
   mdData = "---\n" + yaml.safeDump( mdData ) + "---\n" + mdFile.content;
   console.log( mdData );
   fs.writeFileSync( mdPath, mdData, {
