@@ -36,9 +36,7 @@
     }
     .#{$prefix_h}bg.empty {
       border: 1px solid $grey-lighter;
-      a {
-        font-size: $h-size-2;
-      }
+      font-size: $h-size-2;
     }
   }
 }

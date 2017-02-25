@@ -3,9 +3,9 @@
     <section class="b-columns">
 
       <header id="hero" class="b-column b-is-12">
-        <div class="h-bg b-columns b-is-gapless b-is-mobile" style="background-image: url('http://htko.ca/content/project/gfx/personal/htko-identity/assets/mockup-cards.jpg');">
+        <div class="h-bg b-columns b-is-gapless b-is-mobile" style="background-image: url('<%- url_for( page.cover ) %>');">
           <div class="b-column b-is-3-mobile b-is-1-tablet"></div>
-          <div class="h-content b-column">
+          <div class="h-content b-column b-is-6-mobile b-is-10-tablet">
             <%- page.content %>
           </div>
           <div class="b-column b-is-3-mobile b-is-1-tablet"></div>

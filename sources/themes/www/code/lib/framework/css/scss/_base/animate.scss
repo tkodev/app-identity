@@ -18,12 +18,17 @@
   }
   #gallery {
     .#{$prefix_h}bg {
+      transition: .5s ease;
+      background-color: rgba(0,0,0,0.2);
+      background-blend-mode: darken;
       .#{$prefix_h}content {
         transition: .5s ease;
         opacity: 0;
       }
     }
     .#{$prefix_h}bg:hover {
+      transition: .5s ease;
+      background-color: rgba(0,0,0,0);
       .#{$prefix_h}content {
         opacity: 0.4;
       }

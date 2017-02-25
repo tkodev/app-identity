@@ -18,7 +18,8 @@
           </div>
           <div class="h-links b-column b-is-1-mobile b-is-3-tablet">
             <% for (var i in theme.links){ %>
-              <a href="<%- url_for(theme.links[i].link) %>" role="menuitem"> <span class="b-is-hidden-mobile"><%= theme.links[i].title %></span> &nbsp; <i class="fa <%= theme.links[i].icon %>" aria-hidden="true"></i> </a>
+              <% var target = ( theme.links[i].title === 'About Me' ? '_self' : '_blank' )%>
+              <a href="<%- url_for(theme.links[i].link) %>" target="<%- target %>" role="menuitem"> <span class="b-is-hidden-mobile"><%= theme.links[i].title %></span> &nbsp; <i class="fa <%= theme.links[i].icon %>" aria-hidden="true"></i> </a>
             <% } %>
           </div>
         </div>

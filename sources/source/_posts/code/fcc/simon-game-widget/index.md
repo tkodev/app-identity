@@ -14,6 +14,7 @@ tags:
 cover: cover.jpg
 images:
   - mockup-mobile.jpg
+  - screenshot-6+.jpg
 ---
 # Student Project - Free Code Camp
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/obYBjE.

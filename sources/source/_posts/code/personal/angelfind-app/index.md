@@ -13,8 +13,8 @@ tags:
   - API
 cover: cover.jpg
 images:
-  - mockup-screens.jpg
   - mockup-mobile.jpg
+  - mockup-screens.jpg
 ---
 # Hackathon Entry - Angelhack
 Event recommendation app based on user interest history.

@@ -13,8 +13,8 @@ tags:
   - foundation
 cover: cover.jpg
 images:
-  - screenshot-ipadpro-landscape.jpg
   - mockup-tablet.jpg
+  - screenshot-ipadpro-landscape.jpg
 ---
 # Personal Project
 A simple [Hugo](https://gohugo.io) theme based on the [Foundation 6 blog (w/ sidebar) example](http://foundation.zurb.com/templates-previews-sites-f6/blog.html), with scss & js gulp build scripts.
