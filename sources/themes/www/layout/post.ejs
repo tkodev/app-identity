@@ -1,15 +1,45 @@
 <main id="main" class="b-section">
   <div class="b-container">
-
     <section class="b-columns b-is-multiline">
+
       <header id="hero" class="b-column b-is-12">
         <% var cover = ( page.images ? page.images[0] : page.cover ) %>
         <div class="h-bg b-columns b-is-gapless b-is-mobile" style="background-image: url('<%- url_for( page.path+'/'+cover ) %>');">
           <div class="b-column b-is-1"></div>
-          <div class="h-content b-column">
+          <div class="h-content b-column b-is-10">
             <h1><%- page.title %></h1>
-            <p><%- page.date.format( 'MMMM Do YYYY' ) %></p>
-            <h5></h5>
+            <p>
+              <time><%- page.date.format( 'MMMM Do YYYY' ) %></time>
+            </p>
+            <p>
+              <% if (page.link){ %>
+                <a class="b-button b-is-medium" href="<%= page.link %>" target="_blank"><i class="fa fa-external-link fa-1x" aria-hidden="true"></i> Link</a>
+              <% } %>
+              <% if (page.code){ %>
+                <a class="b-button b-is-medium" href="<%= page.code %>" target="_blank"><i class="fa fa-code-fork fa-1x" aria-hidden="true"></i> Code</a>
+              <% } %>
+            </p>
+            <p>
+              <% if ( page.tags && page.tags.length ){ %>
+                <% page.tags.forEach( function( tag ){ %>
+                  <span class="b-tag"><%= tag.name %></span>
+                <% }) %>
+              <% } %>
+            </p>
+            <p>
+              <% if (page.program){ %>
+                <h5><span class="h-title">Program:</span></h5>
+                <p><%= page.program %></p>
+              <% } %>
+              <% if (page.course){ %>
+                <h5><span class="h-title">Course:</span></h5>
+                <p><%= page.course %></p>
+              <% } %>
+              <% if (page.project){ %>
+                <h5><span class="h-title">Project:</span></h5>
+                <p><%= page.project %></p>
+              <% } %>
+            </p>
           </div>
           <div class="b-column b-is-1"></div>
         </div>
@@ -29,10 +59,20 @@
         <div class="b-columns b-is-multiline">
           <% if ( page.images ){ %>
             <% for (i = 0; i < page.images.length; i++){ %>
-              <div class="b-column b-is-6">
+              <% var width = ( i === page.images.length-1 && i === 0 ? 12 : 6) %>
+              <div class="b-column b-is-<%- width %>">
                 <div class="h-bg" style="background-image: url('<%- url_for( page.path+'/'+page.images[i] ) %>');">
                   <div class="h-content">
                     <a href="<%- url_for( page.path+'/'+page.images[i] ) %>"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            <% } %>
+            <% if ( page.images.length > 1 && page.images.length % 2 ){ %>
+              <div class="b-column b-is-6 b-is-hidden-mobile">
+                <div class="h-bg empty">
+                  <div class="h-content">
+                    <a href="<%- url_for('lib/framework/img/ratio/1x1.png') %>">+</a>
                   </div>
                 </div>
               </div>

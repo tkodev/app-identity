@@ -12,8 +12,8 @@ tags:
   - bootstrap
 cover: cover.jpg
 images:
-  - screenshot-ipadpro.jpg
   - mockup-tablet.jpg
+  - screenshot-ipadpro.jpg
 ---
 # Student Project - Free Code Camp
 Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/NNvBQW/

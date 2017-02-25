@@ -6,6 +6,7 @@
       height: 20rem;
       background: no-repeat center center;
       background-size: cover;
+      background-color: rgba(0,0,0,0.2);
     }
     .#{$prefix_h}content {
       position: absolute;
@@ -23,6 +24,11 @@
       text-align: center;
       width: 100%;
       height: 100%;
+    }
+    .#{$prefix_h}bg.empty {
+      border: 1px solid $grey-lighter;
+      background-color: rgba(0,0,0,0.0);
+      font-size: $h-size-2;
     }
   }
 }

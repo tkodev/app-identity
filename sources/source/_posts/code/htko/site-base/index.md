@@ -14,7 +14,6 @@ tags:
 cover: cover.jpg
 images:
   - mockup-desktop.jpg
-  - screenshot-ipadpro-landscape.jpg
   - screenshot-ipadpro.jpg
 ---
 # Personal Project
