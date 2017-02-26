@@ -48,24 +48,27 @@
       }
     %>
     <%- open_graph({twitter_id: theme.twitter_id, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id, type: 'profile', image: htko_image}) %>
-    <% if (theme.rss){ %>
-      <link rel="alternate" href="<%- url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
-    <% } %>
     <!-- favicon -->
-    <% if (theme.favicon){ %>
-      <link rel="icon" href="<%- url_for(theme.favicon) %>">
-    <% } %>
+    <link rel="apple-touch-icon" sizes="180x180" href="/lib/framework/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/lib/framework/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/lib/framework/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/lib/framework/img/favicon/manifest.json">
+    <link rel="mask-icon" href="/lib/framework/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/lib/framework/img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/lib/framework/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- external -->
     <% if (config.highlight.enable){ %>
       <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
     <% } %>
     <!-- css -->
-    <%- css("lib/framework/css/index.css") %>
     <%- css("lib/font-awesome-4.7.0/css/font-awesome-4.7.0.min.css") %>
     <%- css("lib/blueimp-gallery-2.22.0/css/blueimp-gallery.min.css") %>
+    <%- css("lib/framework/css/index.css") %>
     <!-- js -->
-    <%- js("lib/framework/js/index.js") %>
+    <%- js("lib/jquery-3.1.1/js/jquery.min.js") %>
     <%- js("lib/blueimp-gallery-2.22.0/js/blueimp-gallery.min.js") %>
+    <%- js("lib/framework/js/index.js") %>
 
   </head>
   <body>

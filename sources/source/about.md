@@ -13,3 +13,5 @@ I currently specialize in **Front End: Gulp.js, Node.js, Express.js, Algorithms,
 **For the last year**, I have focused my efforts to fully develop this desire into a complete career.
 
 As a whole, I hope to bring a unique **developer-designer** perspective to my work.
+
+Want to get in contact? Feel free to call or send an email!
