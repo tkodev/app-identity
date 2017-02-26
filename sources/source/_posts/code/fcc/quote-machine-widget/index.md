@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Quote Machine Widget
 date: '2016-08-02'
 link: 'https://htkoca.github.io/fcc-quote-machine-widget/release/'

@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Angelfind App
 date: '2016-06-11'
 link: 'http://www.hackathon.io/angelfind'

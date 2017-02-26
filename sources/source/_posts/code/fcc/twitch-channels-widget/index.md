@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Twitch Channels Widget
 date: '2016-08-13'
 link: 'https://htkoca.github.io/fcc-twitch-channels-widget/release/'

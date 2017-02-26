@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: 1900s Queen St Modernization
 date: '2014-03-28'
 program: Environmental Design

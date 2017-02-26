@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Art Gallery of Ontario Staircase
 date: '2014-11-04'
 program: Environmental Design

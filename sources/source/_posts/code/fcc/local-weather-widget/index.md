@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Local Weather Widget
 date: '2016-08-03'
 link: 'https://htkoca.github.io/fcc-local-weather-widget/release/'

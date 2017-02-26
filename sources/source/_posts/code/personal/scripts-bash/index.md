@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Scripts Bash
 date: '2016-11-15'
 code: 'https://github.com/htkoca/scripts-bash'

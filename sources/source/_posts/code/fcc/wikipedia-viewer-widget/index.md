@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Wikipedia Viewer Widget
 date: '2016-08-05'
 link: 'https://htkoca.github.io/fcc-wikipedia-viewer-widget/release/'

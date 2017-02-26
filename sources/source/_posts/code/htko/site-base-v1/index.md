@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: HTKO.ca Site Base V1
 date: '2017-01-15'
 link: 'http://www.htko.ca'

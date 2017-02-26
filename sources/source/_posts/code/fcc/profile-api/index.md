@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Profile Api
 date: '2017-01-14'
 link: 'http://api.htko.ca/fcc'

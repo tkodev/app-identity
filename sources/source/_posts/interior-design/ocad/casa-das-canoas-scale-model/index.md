@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Casa Das Canoas Scale Model
 date: '2013-10-22'
 program: Environmental Design

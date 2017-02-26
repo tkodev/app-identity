@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Tic Tac Toe Widget
 date: '2017-02-06'
 link: 'https://htkoca.github.io/fcc-tic-tac-toe-widget/release/'

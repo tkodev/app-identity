@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Alexandra Park Revitalization
 date: '2014-04-10'
 program: Environmental Design
