@@ -31,13 +31,13 @@ deploy:
     - add-to-known_hosts:
       hostname: htko.ca
     - mktemp:
-      envvar: private_key_path
+      envvar: ssh_key_path
     - create-file:
       name: write key
-      filename: private_key_path
-      content: private_key
+      filename: ssh_key_path
+      content: ssh_key
       overwrite: true
       hide-from-log: true
     - script:
       name: git pull
-      code: ssh -i $private_key_path -l sysuser -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
+      code: ssh -i $ssh_key_path -l $ssh_user -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
