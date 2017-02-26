@@ -26,6 +26,8 @@ build:
           echo "Start Deployment !"
 deploy:
   steps:
+    - install-packages:
+      packages: openssh-client
     - add-to-known_hosts:
       hostname: htko.ca
     - mktemp:
