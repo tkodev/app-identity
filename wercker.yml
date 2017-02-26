@@ -1,0 +1,6 @@
+box: debian
+build:
+  - script:
+        name: echo
+        code: |
+          echo "Start deployment immediately!"
