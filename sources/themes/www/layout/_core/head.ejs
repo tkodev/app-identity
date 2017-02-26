@@ -33,10 +33,21 @@
         <%= config.subtitle %> |
       <% } %>
     </title>
-    <meta name="description" content="Free Code Camp Project - Tic Tac Toe Widget">
+    <meta name="description" content="<%= config.description %>">
     <meta name="author" content="Tony Ko">
     <!-- seo -->
-    <%- open_graph({twitter_id: theme.twitter_id, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+    <% var htko_image = "";
+      if ( page.cover ){
+        if ( page.images && page.images.length ){
+          htko_image = page.images[0];
+        } else {
+          htko_image = page.cover;
+        }
+      } else {
+        htko_image = url_for( 'gfx/personal/htko-identity/index/mockup-cards.jpg' );
+      }
+    %>
+    <%- open_graph({twitter_id: theme.twitter_id, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id, type: 'profile', image: htko_image}) %>
     <% if (theme.rss){ %>
       <link rel="alternate" href="<%- url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
