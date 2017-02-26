@@ -5,8 +5,6 @@ build:
         name: Init
         code: |
           echo "Start Deployment !"
-    # - install-packages:
-    #   packages: openssh-client
     - add-to-known_hosts:
       hostname: htko.ca
     - mktemp:
@@ -17,6 +15,10 @@ build:
       content: ssh_key
       overwrite: true
       hide-from-log: true
+    - script:
+        name: Show key path
+        code: |
+          echo #ssh_key_path
     - script:
       name: connect to server
       code: ssh -v -i $ssh_key_path -l $ssh_user -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
