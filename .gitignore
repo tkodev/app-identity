@@ -1,5 +1,4 @@
 # Custom
-release/
 node_modules/
 bower_components/
 .deploy*/
