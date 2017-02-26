@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Sculpture Gallery
 date: '2013-02-06'
 categories:

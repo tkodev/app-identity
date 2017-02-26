@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: ABC Cakes
 date: '2013-06-06'
 link: 'https://www.facebook.com/abc.cakes.to/'

@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Portfolio Template
 date: '2016-06-25'
 link: 'https://htkoca.github.io/fcc-portfolio-template/release/'

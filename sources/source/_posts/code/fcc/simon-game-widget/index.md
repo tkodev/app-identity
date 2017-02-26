@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Simon Game Widget
 date: '2017-02-11'
 link: 'https://htkoca.github.io/fcc-simon-game-widget/release/'

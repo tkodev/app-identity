@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Hugo Theme Foundation6 Blog
 date: '2016-12-14'
 link: 'http://themes.gohugo.io/hugo-theme-foundation6-blog/'

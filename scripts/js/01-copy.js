@@ -44,6 +44,7 @@ function rewrite( mdPath ) {
   console.log( mdPath );
   var mdFile = matter.read( mdPath );
   var mdData = {};
+  appendProp( mdFile.data, mdData, "layout" );
   appendProp( mdFile.data, mdData, "title" );
   appendProp( mdFile.data, mdData, "date" );
   appendProp( mdFile.data, mdData, "link" );

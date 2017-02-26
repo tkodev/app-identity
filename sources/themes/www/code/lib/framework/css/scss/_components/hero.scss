@@ -34,24 +34,25 @@
       .#{$prefix_b}tag {
         background-color: transparent;
         border: 1px solid $grey-lighter;
+        margin: 0.2rem 0;
       }
 
-      .#{$prefix_h}title {
+      .#{$prefix_h}title, h1 {
         font-weight: 400;
-        width: 6rem;
+      }
+
+      .#{$prefix_h}subtitle {
+        margin-bottom: 0.2rem;
+        font-weight: 400;
       }
 
       .#{$prefix_b}button {
         margin-bottom: 0.2rem;
         background-color: transparent;
         padding: 0 2rem;
-        &:hover, &:active {
+        &:hover, &:active, &:visited {
           border: 1px solid $grey-lighter;
         }
-      }
-
-      h1 {
-        font-weight: 400;
       }
     }
   }

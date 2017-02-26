@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Tribute Page
 date: '2016-06-18'
 link: 'https://htkoca.github.io/fcc-tribute-page/release/'

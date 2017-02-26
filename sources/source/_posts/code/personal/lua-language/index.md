@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: LUA Language
 date: '2016-11-27'
 code: 'https://github.com/htkoca/lua-language'

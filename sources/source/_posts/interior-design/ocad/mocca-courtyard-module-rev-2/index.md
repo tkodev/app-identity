@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: MOCCA Courtyard Module Rev 2
 date: '2014-12-03'
 program: Environmental Design

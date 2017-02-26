@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Pomodoro Clock Widget
 date: '2017-02-03'
 link: 'https://htkoca.github.io/fcc-pomodoro-clock-widget/release/'

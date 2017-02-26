@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Early Graphical Design
 date: '2009-09-08'
 categories:

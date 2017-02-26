@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Calculator Widget
 date: '2017-02-02'
 link: 'https://htkoca.github.io/fcc-calculator-widget/release/'

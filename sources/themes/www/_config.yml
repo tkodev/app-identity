@@ -21,9 +21,9 @@ links:
     title: LinkedIn
     link: https://linkedin.com/in/htkoca/
     icon: fa-linkedin
-  about-me:
+  about:
     title: About Me
-    link: about-me.html
+    link: about.html
     icon: fa-id-card-o
 
 # Miscellaneous

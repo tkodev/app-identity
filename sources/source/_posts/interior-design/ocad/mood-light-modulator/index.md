@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Mood Light Modulator
 date: '2014-02-14'
 program: Environmental Design

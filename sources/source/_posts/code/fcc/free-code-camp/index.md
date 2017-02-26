@@ -1,4 +1,5 @@
 ---
+layout: _pages/post
 title: Free Code Camp
 date: '2016-05-27'
 link: 'https://www.freecodecamp.com/htko89'
