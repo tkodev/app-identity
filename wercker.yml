@@ -2,7 +2,7 @@
 # Docker Hub https://registry.hub.docker.com/_/debian/
 # Read more about containers on our dev center
 # http://devcenter.wercker.com/docs/containers/index.html
-box: debian
+box: kroniak/ssh-client
 # You can also use services such as databases. Read more on our dev center:
 # http://devcenter.wercker.com/docs/services/index.html
 # services:
@@ -21,13 +21,11 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     - script:
-        name: echo
+        name: Init
         code: |
           echo "Start Deployment !"
-deploy:
-  steps:
-    - install-packages:
-      packages: openssh-client
+    # - install-packages:
+    #   packages: openssh-client
     - add-to-known_hosts:
       hostname: htko.ca
     - mktemp:
@@ -39,5 +37,5 @@ deploy:
       overwrite: true
       hide-from-log: true
     - script:
-      name: git pull
+      name: connect to server
       code: ssh -i $ssh_key_path -l $ssh_user -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
