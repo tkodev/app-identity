@@ -16,7 +16,7 @@ cover: cover.jpg
 A journal of my course progress and solutions in Free Code Camp's Full Stack Web Development Certification.
 
 ## Self Learning:
-I am currently using github's version tracking as a way to track my progress through [Free Code Camp](https://www.freecodecamp.com)'s Full Stack Web Development Certification. Version tracking allows me to show to myself and other the actual progress of my work including revisions to my code. As Free Code Camp's curriculum changes, you will find that there may be slight differences as the challenges and solutions posted here as I update or complete them.
+I am currently using my freeCodeCamp Profile Api (unofficial) as a way to track my progress through [Free Code Camp](https://www.freecodecamp.com)'s Full Stack Web Development Certification. This allows me to update in realtime my actual progress of my work including live links to my code solutions. As Free Code Camp's curriculum changes, you will find that there may be slight differences as the challenges and solutions posted here as I update or complete them.
 
 If you would like to contribute, I am happy to accept any pull requests that isn't my own code, such as better explanations or good external resources.
 

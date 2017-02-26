@@ -9,9 +9,6 @@
           <div class="h-content b-column b-is-10">
             <h1><%- page.title %></h1>
             <p>
-              <time><%- page.date.format( 'MMMM Do YYYY' ) %></time>
-            </p>
-            <p>
               <a class="b-button b-is-medium" href="<%= theme.links.github.link %>" target="_blank"><i class="fa <%= theme.links.github.icon %>" aria-hidden="true"></i> <%= theme.links.github.title %></a>
               <a class="b-button b-is-medium" href="<%= theme.links.linkedin.link %>" target="_blank"><i class="fa <%= theme.links.linkedin.icon %>" aria-hidden="true"></i> <%= theme.links.linkedin.title %></a>
               <a class="b-button b-is-medium" href="//htko.ca/resume.pdf" target="_blank"><i class="fa <%= theme.links.about.icon %>" aria-hidden="true"></i> Resume</a>
@@ -32,6 +29,9 @@
               <span class="b-tag">Express.js</span>
               <span class="b-tag">Python</span>
             </p>
+            <h5 class="h-subtitle">Contact:</h5>
+            <p>C: +1-647-300-9787</p>
+            <p>E: <%- mail_to('tony@htko.ca', 'tony@htko.ca', {subject: 'HTKO.ca: '}) %></p>
           </div>
           <div class="b-column b-is-1"></div>
         </div>

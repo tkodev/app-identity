@@ -20,6 +20,7 @@ filters:
     - "**/README.md"
     - "!**/releases/**"
     - "!**/resume/**/*"
+    - "!**/site-base-local/**/*"
     - "!**/prototypes/**/*" # standard project folders
     - "!**/sources/**/*" # standard project folders
     - "!**/release/**/*" # standard project folders
