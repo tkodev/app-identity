@@ -4,7 +4,7 @@ title: About Me
 cover: lib/framework/img/about/illia-cherednychenko-170516.jpg
 image: lib/framework/img/about/tony.jpg
 ---
-## I am **Tony Ko**, aspiring Front End Developer with extensive experience in design.
+## I am **Tony Ko**, Front End Developer with experience in design.
 
 I currently specialize in **Front End: Gulp.js, Node.js, Express.js, Algorithms, Responsive CSS / Frameworks**, but I also often get my hands dirty with back end skills in **Hugo static site generation, Node.js, Python, Wordpress and Docker & Linux**.
 
