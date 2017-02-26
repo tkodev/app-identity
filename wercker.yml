@@ -18,7 +18,7 @@ build:
     - script:
         name: Show key path
         code: |
-          echo #ssh_key_path
+          echo $ssh_key_path
     - script:
       name: connect to server
-      code: ssh -v -i $ssh_key_path -l $ssh_user -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
+      code: ssh -v -i ${ssh_key_path} -l ${ssh_user} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ${ssh_user}@htko.ca ''touch /srv/test.txt''
