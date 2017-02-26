@@ -49,10 +49,17 @@
 
       <footer id="gallery" class="b-column ">
         <div class="b-columns b-is-multiline">
-          <div class="b-column b-is-12">
+          <div class="b-column b-is-6">
             <div class="h-bg" style="background-image: url('<%- url_for( page.cover ) %>');">
               <div class="h-content">
                 <a href="<%- url_for( page.cover ) %>"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="b-column b-is-6">
+            <div class="h-bg" style="background-image: url('<%- url_for( page.image ) %>');">
+              <div class="h-content">
+                <a href="<%- url_for( page.image) %>"><i class="fa fa-search-plus fa-2x" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
