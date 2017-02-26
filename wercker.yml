@@ -19,4 +19,4 @@ build:
       hide-from-log: true
     - script:
       name: connect to server
-      code: ssh -i $ssh_key_path -l $ssh_user -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
+      code: ssh -v -i $ssh_key_path -l $ssh_user -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
