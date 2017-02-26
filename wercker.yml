@@ -23,7 +23,7 @@ build:
     - script:
         name: echo
         code: |
-          echo "Start Deployment!"
+          echo "Start Deployment !"
 deploy:
   steps:
     - add-to-known_hosts:
