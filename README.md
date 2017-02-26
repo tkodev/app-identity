@@ -1,7 +1,7 @@
 ---
 layout: _pages/post
 title: HTKO.ca Site Base V3
-date: '2017-01-25'
+date: '2017-02-25'
 link: 'http://www.htko.ca'
 code: 'https://github.com/htkoca/htko-site-base'
 categories:
@@ -26,7 +26,7 @@ images:
 
 This is the code base for my website at HTKO.ca. Complete rewrite version 3.
 
-Full responsive. Using a heavily modified version of [Bulma](http://bulma.io/) to define grid structure; it is CSS only, unopinionated, fast **(&lt;200KB!)**, yet supports all modern flexbox grid conventions. My **Gulp** build process then compiles **SASS & SCSS**, copies portfolio items from my local sources, builds it with **Hexo**, and renders real-time with **BrowserSync** for a live editing experience. I deploy using **Travis CI** and **Git** on **DigitalOcean** due to delta updates for all file types, which means **builds deploy in seconds not hours.**
+Full responsive. Using a heavily modified version of [Bulma](http://bulma.io/) to define grid structure; it is CSS only, unopinionated, fast **(&lt;200KB!)**, yet supports all modern flexbox grid conventions. My **Gulp** build process then compiles **SASS & SCSS**, copies portfolio items from my local sources, builds it with **Hexo**, and renders real-time with **BrowserSync** for a live editing experience. I deploy using **Wercker** and **Git** on **DigitalOcean** due to delta updates for all file types, which means **builds deploy in seconds not hours.**
 
 ## Building for developers
 * Download and install dependencies
