@@ -4,6 +4,6 @@ cover: gfx/personal/htko-identity/index/mockup-cards.jpg
 ---
 # Hi, I'm Tony Ko
 
-##### Passionate about web development,
+##### Passionate about Front End Development
 
-##### progressive apps, and everything design
+##### Progressive Applications, and Everything Design
