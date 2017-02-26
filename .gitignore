@@ -1,6 +1,7 @@
 # Custom
-/sources/
 node_modules/
 bower_components/
-npm-debug.log
-yarn-error.log
+.deploy*/
+db.json
+*.log
+.DS_Store

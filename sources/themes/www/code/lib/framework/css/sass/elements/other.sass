@@ -1,0 +1,56 @@
+.#{$prefix_b}block
+  +block
+
+.#{$prefix_b}container
+  position: relative
+  +desktop
+    margin: 0 auto
+    max-width: $desktop - 40px // 1152px
+    // Modifiers
+    &.#{$prefix_b}is-fluid
+      margin: 0 20px
+      max-width: none
+  +widescreen
+    max-width: $widescreen - 40px // 1440px
+
+.#{$prefix_b}delete
+  +delete
+
+.#{$prefix_b}fa
+  font-size: 21px
+  text-align: center
+  vertical-align: top
+
+.#{$prefix_b}heading
+  display: block
+  font-size: 11px
+  letter-spacing: 1px
+  margin-bottom: 5px
+  text-transform: uppercase
+
+.#{$prefix_b}highlight
+  +block
+  font-weight: $weight-normal
+  max-width: 100%
+  overflow: hidden
+  padding: 0
+  pre
+    overflow: auto
+    max-width: 100%
+
+.#{$prefix_b}loader
+  +loader
+
+.#{$prefix_b}number
+  align-items: center
+  background-color: $background
+  border-radius: 290486px
+  display: inline-flex
+  font-size: $size-medium
+  height: 2em
+  justify-content: center
+  margin-right: 1.5rem
+  min-width: 2.5em
+  padding: 0.25rem 0.5rem
+  text-align: center
+  vertical-align: top

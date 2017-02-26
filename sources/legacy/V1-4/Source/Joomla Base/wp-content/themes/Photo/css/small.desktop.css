@@ -1,0 +1,132 @@
+/* CSS for the small desktop devices */
+/*
+#------------------------------------------------------------------------
+# Photo - #8 2014 Joomla! template (for Joomla 2.5)
+#
+# Copyright (C) 2007-2014 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* Big screens */
+@media (max-width: 1920px) {
+  .gk-half-page {
+    max-width: 49%!important;
+  }
+  .site {
+    max-width: 98%!important;
+  }
+  #primary #content .bigtitle,
+  #primary #content .author-info  {
+    margin: 0 auto;
+    max-width: 98%;
+  }
+  #primary.site #content .bigtitle,
+  #primary.site #content .author-info {
+    max-width: 100%;
+  }
+  .gk-is-wrapper-gk-photo figcaption {
+    max-width: 98%;
+  }
+  .gk-overlay-menu > ul > li {
+    font-size: 64px;
+  }
+  .single .item-info {
+    margin-bottom: 0;
+  }
+  .blog-grid .item-info {
+    margin-bottom: 0;
+    padding: 80px 50px 60px;
+  }
+  .item-image-block > h2 {
+    padding: 50px;
+  }
+  .gk-image-caption {
+    right: 50px;
+  }
+  .portfolio .item-list[data-cols="3"] .item-info,
+  .portfolio .item-list[data-cols="4"] .item-info {
+    padding: 30px 25px 30px;
+  }
+  .item-list[data-cols="3"] .item-image-block > h2 ,
+  .item-list[data-cols="4"] .item-image-block > h2  {
+    padding: 25px;
+  }
+  .blog-grid .item-list[data-cols="3"] .item-info > span > a,
+  .blog-grid .item-list[data-cols="4"] .item-info > span > a {
+    height: 50px;
+    margin-right: 20px;
+    width: 50px;
+  }
+  .blog-grid .item-list[data-cols="3"] .item-info > time,
+  .blog-grid .item-list[data-cols="4"] .item-info > time {
+    font-size: 24px;
+  }
+  .blog-grid .item-list[data-cols="3"] .item-info > h2,
+  .blog-grid .item-list[data-cols="4"] .item-info > h2 {
+    font-size: 12px;
+  }
+  .single .entry-header > sup,
+  .item-image-block > sup {
+    right: 32px;
+    top: 32px;
+  }
+  .item-image-block .format {
+    left: 50px;
+    top: 50px;
+  }
+  #gk-bg .gk-wide-image img {
+    max-width: 1920px!important;
+  }
+}
+
+/* Bigger screens */
+@media (max-width: 1600px) {
+  .gk-overlay-menu > ul > li {
+    font-size: 54px;
+  }
+  .gk-is-wrapper-gk-photo figcaption h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .gk-is-wrapper-gk-photo figcaption p {
+    font-size: 36px;
+    margin: 0 0 30px 0;
+  }
+  .single blockquote,
+  .page blockquote {
+    margin: 90px -50px;
+    padding: 60px 150px;
+  }
+  .single blockquote:before,
+  .page blockquote:before {
+    left: 50px;
+  }
+  .single blockquote:after,
+  .page blockquote:after {
+    right: 50px;
+  }
+  #gk-bg .gk-wide-image img {
+    max-width: 1600px!important;
+  }
+}
+
+/* Typical screens */
+@media (max-width: 1400px) { 
+  .gk-overlay-menu > ul > li {
+    font-size: 48px;
+  }
+  #gk-bg .gk-wide-image img {
+    max-width: 1400px!important;
+  }
+}
+
+/* Small height */
+@media (max-height: 480px) {
+  .gk-logo-wrap .gk-logo,
+  .gk-logo-wrap .gk-logo-text {
+    margin-top: 25px!important; 
+  }
+}
+

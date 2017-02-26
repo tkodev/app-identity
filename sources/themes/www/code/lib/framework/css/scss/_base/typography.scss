@@ -1,0 +1,41 @@
+i.fa {
+  width: 1rem;
+}
+
+h1, #{$prefix_b}content h1 {
+  font-size: $h-size-1;
+}
+h2, #{$prefix_b}content h2 {
+  font-size: $h-size-2;
+}
+h3, #{$prefix_b}content h3 {
+  font-size: $h-size-3;
+}
+h4, #{$prefix_b}content h4 {
+  font-size: $h-size-4;
+}
+h5, #{$prefix_b}content h5 {
+  font-size: $h-size-5;
+}
+h6, #{$prefix_b}content h6 {
+  font-size: $h-size-6;
+}
+
+h1, #{$prefix_b}content h1,
+h2, #{$prefix_b}content h2,
+h3, #{$prefix_b}content h3,
+h4, #{$prefix_b}content h4,
+h5, #{$prefix_b}content h5,
+h6, #{$prefix_b}content h6  {
+  font-family: $family-header;
+  text-transform: uppercase;
+  font-weight: 300;
+  strong {
+    font-weight: 400;
+  }
+}
+
+.invert-effect {
+  mix-blend-mode: difference;
+  color: white;
+}

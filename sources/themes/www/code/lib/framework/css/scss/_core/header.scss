@@ -1,0 +1,42 @@
+#header {
+  #menu {
+    .#{$prefix_b}column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      font-family: $family-header;
+      text-transform: uppercase;
+      line-height: 1.6em;
+    }
+    .#{$prefix_h}logo {
+      img {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+    .#{$prefix_h}name {
+      a {
+        font-size: $h-size-1;
+        line-height: 1em;
+      }
+      p {
+        padding-top: 0.2rem;
+        font-family: $family-header;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    }
+    .#{$prefix_h}links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      span {
+        width: 4.8rem;
+      }
+    }
+  }
+}

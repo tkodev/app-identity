@@ -1,3 +1,0 @@
-{{ if .Params.tools }}
-  {{ range $index, $topic := .Params.tools }}{{ if gt $index 0 }}, {{ end }}<a class="capitalize" href="/tools/{{ . | urlize }}">{{ . }}</a>{{ end }}
-{{ end }}

@@ -1,3 +1,0 @@
-{{ if .Params.categories }}
-  {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a class="capitalize" href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}
-{{ end }}

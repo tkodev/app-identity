@@ -1,0 +1,17 @@
+.gk-fake-checkbox {
+	display: none;
+}
+.gk-category-checklist {
+	min-height: 42px;
+	max-height: 200px;
+	overflow: auto;
+	padding: .9em;
+	border: 1px solid #dfdfdf;
+	background-color: #fdfdfd;
+}
+.gk-category-checklist .children {
+	padding: 5px 0;
+}
+.gk-category-checklist .children li {
+	padding-left: 20px;
+}

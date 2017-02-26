@@ -2,74 +2,74 @@
 "use strict";
 
 // global node modules
-var path = require("path");
-var fs = require("graceful-fs-extra");
-var globby = require("globby");
-var minimatch = require("minimatch")
-var matter = require('gray-matter');
-var yaml = require("js-yaml");
+var path = require( "path" );
+var fs = require( "fs-extra" );
+var globby = require( "globby" );
+var minimatch = require( "minimatch" )
+var matter = require( 'gray-matter' );
+var yaml = require( "js-yaml" );
 
 // function
-function copy(conf, callback) {
-  fs.removeSync(conf.hugo.projects);
-  var paths = globby.sync(conf.filters.projects);
-  for (var i in paths) {
-    var mdPath = paths[i];
-    // edit(mdPath, path.dirname(path.relative(conf.root.projects, mdPath)));
-    var mdDestPath = path.join(conf.hugo.projects, path.relative(conf.root.projects, mdPath));
-    var assetPath = path.join(path.dirname(mdPath), "assets");
-    var assetDestPath = path.join(conf.hugo.projects, path.relative(conf.root.projects, assetPath));
-    fs.copySync(mdPath, mdDestPath, {
+function copy( conf, callback ) {
+  fs.removeSync( conf.app.projects_target );
+  var paths = globby.sync( conf.filters.projects );
+  for ( var i in paths ) {
+    var mdPath = paths[ i ];
+    var assetPath = path.join( path.dirname( mdPath ), "assets" );
+    var relPath = path.relative( conf.app.projects_source, path.dirname( mdPath ) );
+    var mdDestPath = path.join( conf.app.projects_target, relPath, "index.md" );
+    var assetDestPath = path.join( conf.app.projects_target, relPath, "index" );
+    // rewrite(mdPath);
+    fs.copySync( mdPath, mdDestPath, {
       preserveTimestamps: true,
-      filter: function(file) {
-        return minimatch(file, "**/.*") ? false : true;
+      filter: function( file ) {
+        return minimatch( file, "**/.*" ) ? false : true;
       }
-    }, function(err) {
-      if (err) return console.error(err)
-    })
-    fs.copySync(assetPath, assetDestPath, {
+    }, function( err ) {
+      if ( err ) return console.error( err )
+    } )
+    fs.copySync( assetPath, assetDestPath, {
       preserveTimestamps: true,
-      filter: function(file) {
-        return minimatch(file, "**/.*") ? false : true;
+      filter: function( file ) {
+        return minimatch( file, "**/.*" ) ? false : true;
       }
-    }, function(err) {
-      if (err) return console.error(err)
-    })
+    }, function( err ) {
+      if ( err ) return console.error( err )
+    } )
   }
   callback();
 };
 
-function edit(mdPath, relPath) {
-  // console.log(mdPath);
-  var mdFile = matter.read(mdPath);
-  if (mdFile.data.hasOwnProperty("photos")) {
-    mdFile.data.photos = mdFile.data.photos.filter(function(val){
-      return !val.includes("cover.");
-    });
-    if (mdFile.data.photos == 0){
-      delete mdFile.data.photos;
-    }
+function rewrite( mdPath ) {
+  console.log( mdPath );
+  var mdFile = matter.read( mdPath );
+  var mdData = {};
+  appendProp( mdFile.data, mdData, "layout" );
+  appendProp( mdFile.data, mdData, "title" );
+  appendProp( mdFile.data, mdData, "date" );
+  appendProp( mdFile.data, mdData, "link" );
+  appendProp( mdFile.data, mdData, "code" );
+  appendProp( mdFile.data, mdData, "program" );
+  appendProp( mdFile.data, mdData, "course" );
+  appendProp( mdFile.data, mdData, "project" );
+  appendProp( mdFile.data, mdData, "categories");
+  appendProp( mdFile.data, mdData, "tags");
+  appendProp( mdFile.data, mdData, "cover");
+  appendProp( mdFile.data, mdData, "images" );
+  mdData = "---\n" + yaml.safeDump( mdData ) + "---\n" + mdFile.content;
+  console.log( mdData );
+  fs.writeFileSync( mdPath, mdData, {
+    flag: "w"
+  }, function( err ) {
+    if ( err ) return console.error( err )
+  } );
+}
+
+function appendProp( curArr, tarArr, prop ) {
+  if ( curArr.hasOwnProperty( prop ) ) {
+    var newProp = prop;
+    tarArr[ newProp ] = curArr[ prop ];
   }
-  // if (!mdFile.data.hasOwnProperty("photos")) {
-  //   mdFile.data.photos = [];
-  // }
-  // if (mdFile.data.hasOwnProperty("cover")) {
-  //   mdFile.data.photos.push(mdFile.data.cover);
-  //   delete mdFile.data.cover;
-  // }
-  // if (mdFile.data.hasOwnProperty("photo")) {
-  //   mdFile.data.photos = mdFile.data.photos.concat(mdFile.data.photo);
-  //   delete mdFile.data.photo;
-  // }
-  // if (mdFile.data.hasOwnProperty("parent")) {
-  //   mdFile.data.path = relPath;
-  //   delete mdFile.data.parent;
-  // }
-  var mdData = "---\n" + yaml.safeDump(mdFile.data) + "---\n" + mdFile.content;
-  // console.log(mdData);
-  // fs.writeFileSync(mdPath, mdData, {flag: "w"}, function(err) {
-  //   if (err) return console.error(err)
-  // });
 }
 
 //exports

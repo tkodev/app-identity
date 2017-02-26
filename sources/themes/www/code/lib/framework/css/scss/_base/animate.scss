@@ -1,0 +1,37 @@
+.#{$prefix_b}column {
+  transition: all 1s ease;
+}
+
+#main {
+  #category {
+    .#{$prefix_h}bg {
+      .#{$prefix_h}content {
+        transition: .5s ease;
+        opacity: 0;
+      }
+    }
+    .#{$prefix_h}bg:hover {
+      .#{$prefix_h}content {
+        opacity: 1;
+      }
+    }
+  }
+  #gallery {
+    .#{$prefix_h}bg {
+      transition: .5s ease;
+      background-color: rgba(0,0,0,0.2);
+      background-blend-mode: darken;
+      .#{$prefix_h}content {
+        transition: .5s ease;
+        opacity: 0;
+      }
+    }
+    .#{$prefix_h}bg:hover {
+      transition: .5s ease;
+      background-color: rgba(0,0,0,0);
+      .#{$prefix_h}content {
+        opacity: 0.4;
+      }
+    }
+  }
+}
