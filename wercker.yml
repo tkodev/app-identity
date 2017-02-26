@@ -38,4 +38,4 @@ deploy:
       hide-from-log: true
     - script:
       name: git pull
-      code: ssh -i $private_key_path -l sysuser -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca touch /srv/test.txt
+      code: ssh -i $private_key_path -l sysuser -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no htko.ca ''touch /srv/test.txt''
