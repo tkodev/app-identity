@@ -6,4 +6,4 @@ cover: gfx/personal/htko-identity/index/mockup-cards.jpg
 ---
 # Code Portfolio
 
-##### Everything Code
+##### Responsive, Interactive and focused on User Experience
