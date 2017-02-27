@@ -7,4 +7,4 @@ build:
       hostname: www.htko.ca
     - script:
       name: connect to www.htko.ca
-      code: ssh ${ssh_user}@www.htko.ca ''cd /srv/projects/code/htko/site-base && git pull''
+      code: ssh ${ssh_user}@www.htko.ca "cd /srv/projects/code/htko/site-base && git pull"
