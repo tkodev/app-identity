@@ -1,14 +1,10 @@
 box: kroniak/ssh-client
 build:
   steps:
-    - script:
-        name: Init
-        code: |
-          echo "Start Deployment !"
     - add-ssh-key:
-        keyname: ssh_key
+      keyname: ssh_key
     - add-to-known_hosts:
-      hostname: htko.ca
+      hostname: www.htko.ca
     - script:
-      name: connect to server
-      code: ssh -v ${ssh_user}@htko.ca ''touch /srv/tests.txt''
+      name: connect to www.htko.ca
+      code: ssh ${ssh_user}@www.htko.ca ''cd /srv/projects/code/htko/site-base && git pull''
