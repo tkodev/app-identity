@@ -11,4 +11,4 @@ build:
       hostname: htko.ca
     - script:
       name: connect to server
-      code: ssh -v ${ssh_user}@htko.ca ''touch /srv/test.txt''
+      code: ssh -v ${ssh_user}@htko.ca ''touch /srv/tests.txt''
