@@ -6,4 +6,4 @@ cover: interior-design/ocad/casa-das-canoas-scale-model/index/East-Overview.jpg
 ---
 # Interior Design
 
-##### Everything Interior Design
+##### Modern Architecture, Interior Design, Conceptualization
