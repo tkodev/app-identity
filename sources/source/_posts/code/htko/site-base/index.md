@@ -31,16 +31,18 @@ Full responsive. Using a heavily modified version of [Bulma](http://bulma.io/) t
 ## Building for developers
 * Download and install dependencies
 ```
+npm install hexo-cli -g
 git clone https://github.com/htkoca/htko-site-base.git
-cd htko-site-base
+cd htko-site-base/sources
+npm install
+cd ../scripts
 npm install
 ```
 * Build
 ```
-npm run server # local live editing
-npm run builder # remote live build (!)
+npm run copy  # copy files from project folder defined in `scripts/config/config.yml`
+npm run build # live build
 ```
-* (!) renders only for build confirmation. All linked elements point to htko.ca and load accordingly based on files there.
 
 ## Project Criteria:
 * 100% HTKO design.
