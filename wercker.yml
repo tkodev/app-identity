@@ -5,20 +5,10 @@ build:
         name: Init
         code: |
           echo "Start Deployment !"
+    - add-ssh-key:
+        keyname: ssh_key
     - add-to-known_hosts:
       hostname: htko.ca
-    - mktemp:
-      envvar: ssh_key_path
-    - create-file:
-      name: write key
-      filename: ssh_key_path
-      content: ssh_key
-      overwrite: true
-      hide-from-log: true
-    - script:
-        name: Debug
-        code: |
-          echo $ssh_key
     - script:
       name: connect to server
-      code: ssh -v -i ${ssh_key_path} -l ${ssh_user} -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ${ssh_user}@htko.ca ''touch /srv/test.txt''
+      code: ssh -v ${ssh_user}@htko.ca ''touch /srv/test.txt''
