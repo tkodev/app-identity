@@ -1,9 +1,9 @@
 ---
 layout: _pages/post
-title: HTKO.ca Site Base V3
+title: HTKO.ca Site V3
 date: '2017-02-25'
 link: 'http://www.htko.ca'
-code: 'https://github.com/htkoca/htko-site-base'
+code: 'https://github.com/htkoca/htko-site'
 categories:
   - code
 tags:
@@ -20,6 +20,7 @@ images:
 - screenshot-ipadpro-code-landscape.jpg
 - screenshot-ipadpro-landscape.jpg
 - screenshot-ipadpro-xo-landscape.jpg
+- screenshot-concept.jpg
 ---
 # Personal Project
 **No paid templates, no third party designs, 100% designed and built by me.**
