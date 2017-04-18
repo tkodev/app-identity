@@ -20,7 +20,13 @@ filters:
     - "**/README.md"
     - "!**/releases/**"
     - "!**/resume/**/*"
-    - "!**/site-base-local/**/*"
+    - "!**/htko-site-local/**/*"
+    - "!**/hack-vuevision-app/**/*"
+    - "!**/hack-dementia-app/**/*"
+    - "!**/htko-knowledge-base/**/*"
+    - "!**/htko-portfolio-manager/**/*"
+    - "!**/fcc-markdown-previewer/**/*"
+    - "!**/examples/**/*"
     - "!**/prototypes/**/*" # standard project folders
     - "!**/sources/**/*" # standard project folders
     - "!**/release/**/*" # standard project folders
