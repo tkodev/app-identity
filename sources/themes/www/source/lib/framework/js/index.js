@@ -1,6 +1,6 @@
 $(document).ready(function() {
   backToTop();
-  getData("htko89");
+  getData("htkoca");
 });
 
 function getData(user) { // gets weather
