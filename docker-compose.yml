@@ -1,0 +1,10 @@
+version: '2'
+services:
+  code-htko-site:
+    image: nginx:1.15.2
+    restart: always
+    network_mode: bridge
+    volumes:
+      - ./release:/usr/share/nginx/html:ro
+    labels:
+      - "traefik.frontend.rule=Host:htko.ca"
