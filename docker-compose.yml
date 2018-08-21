@@ -1,14 +1,14 @@
 version: '2'
 services:
-	code-htko-site:
-		container_name: code-htko-site
-		image: nginx:1.15.2
-		restart: always
-		network_mode: bridge
-		volumes:
-			- ./release:/usr/share/nginx/html:ro
-		labels:
-			- "traefik.enable=true"
-			- "traefik.frontend.rule=Host:htko.ca,www.htko.ca"
-			- "traefik.frontend.redirect.regex=^https?://www.htko.ca/(.*)"
-			- "traefik.frontend.redirect.replacement=https://htko.ca/$${1}"
+  code-htko-site:
+    container_name: code-htko-site
+    image: nginx:1.15.2
+    restart: always
+    network_mode: bridge
+    volumes:
+      - ./release:/usr/share/nginx/html:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:htko.ca,www.htko.ca"
+      - "traefik.frontend.redirect.regex=^https?://www.htko.ca/(.*)"
+      - "traefik.frontend.redirect.replacement=https://htko.ca/$${1}"
