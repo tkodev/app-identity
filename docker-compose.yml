@@ -10,6 +10,5 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.frontend.rule=Host:htko.ca,www.htko.ca"
-      - "traefik.frontend.redirect.regex=^(https://www.|http://(www.)?)htko.ca/(.*)"
-      - "traefik.frontend.redirect.entryPoint=https"
+      - "traefik.frontend.redirect.regex=^(https://(www.)|http://(www.)?)htko.ca/(.*)"
       - "traefik.frontend.redirect.replacement=https://htko.ca/$${2}"
