@@ -11,5 +11,5 @@ services:
       - "traefik.enable=true"
       - "traefik.port=80"
       - "traefik.frontend.rule=Host:htko.ca,www.htko.ca"
-      - "traefik.frontend.redirect.regex=^(http://(www.)?|https://( )?)htko.ca/(.*)"
-      - "traefik.frontend.redirect.replacement=https://www.htko.ca/$${3}"
+      - "traefik.frontend.redirect.regex=^(https://|http://(www.)?)htko.ca/(<path>.*)"
+      - "traefik.frontend.redirect.replacement=https://www.htko.ca/$${path}"
