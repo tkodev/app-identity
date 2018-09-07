@@ -2,7 +2,8 @@ if: branch = master
 language: bash
 
 addons:
-  ssh_known_hosts: htko.ca
+  ssh_known_hosts: 
+    - htko.ca:8022
 
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_fc6c684849e9_key -iv $encrypted_fc6c684849e9_iv -in id_rsa_travis.enc -out /tmp/id_rsa_travis -d

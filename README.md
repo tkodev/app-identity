@@ -12,7 +12,8 @@ if: branch = master
 language: bash
 
 addons:
-	ssh_known_hosts: <deploy-host>
+  ssh_known_hosts: 
+    - <deploy-host>:<deploy-port>
 
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_<...>_key -iv $encrypted_<...>_iv -in id_rsa_travis.enc -out /tmp/id_rsa_travis -d
@@ -23,7 +24,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/<dir> <ssh-user>@<deploy-host>:path/to/files
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/<dir> <deploy-user>@<deploy-host>:path/to/files
   on:
     branch: master
 ```
