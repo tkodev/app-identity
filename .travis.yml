@@ -1,3 +1,5 @@
+language: bash
+
 addons:
   ssh_known_hosts: <deploy-host>
 
