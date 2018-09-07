@@ -14,6 +14,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: false
-  script: ssh sysuser@htko.ca -p 8022 "cd ~/portfolio/site-htko && git pull && docker restart site-htko && docker-compose up -d"
+  script: ssh sysuser@htko.ca -p 8022 "cd ~/portfolio/site-htko && git pull && docker-compose up -d --force-recreate"
   on:
     branch: master
