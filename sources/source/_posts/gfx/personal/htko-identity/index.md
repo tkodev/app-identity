@@ -2,7 +2,7 @@
 layout: _pages/post
 title: HTKO Identity
 date: '2016-12-20'
-link: 'http://www.htko.ca'
+link: 'https://www.htko.ca/'
 categories:
   - gfx
 tags:
