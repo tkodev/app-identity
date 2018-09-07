@@ -1,0 +1,3 @@
+before_install:
+- openssl aes-256-cbc -K $encrypted_fc6c684849e9_key -iv $encrypted_fc6c684849e9_iv
+  -in id_rsa_travis.enc -out ~\/.ssh/id_rsa_travis -d
