@@ -18,7 +18,7 @@ cover: cover.jpg
 JSON(P) API for FreeCodeCamp profile and curriculum map. Built with Node, Express, Cheerio, and Request
 
 # Example
-An example of this API in use is on the [FreeCodeCamp](http://htko.ca/project/code/fcc/free-code-camp/README/) project page.
+An example of this API in use is on the [FreeCodeCamp](https://www.htko.ca/project/code/fcc/free-code-camp/README/) project page.
 
 ## Server Install:
 * Do the following in a system with node & npm v6.9.4 :

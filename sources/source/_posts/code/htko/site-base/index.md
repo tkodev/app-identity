@@ -2,7 +2,7 @@
 layout: _pages/post
 title: HTKO.ca Site Base V3
 date: '2017-02-25'
-link: 'http://www.htko.ca'
+link: 'https://www.htko.ca/'
 code: 'https://github.com/htkoca/htko-site-base'
 categories:
   - code
