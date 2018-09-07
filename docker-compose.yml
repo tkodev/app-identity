@@ -1,7 +1,7 @@
 version: '2'
 services:
-  code-htko-site:
-    container_name: code-htko-site
+  site-htko:
+    container_name: site-htko
     image: nginx:1.15.2
     restart: always
     network_mode: bridge
