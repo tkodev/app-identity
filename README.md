@@ -8,6 +8,9 @@
 - it happens after the script stage: we then avoid any possibility for third party scripts to leak active keys (npm worm, remember?);
 - the build will fail if the deploy setup is incorrect.
 ```yml
+if: branch = master
+language: bash
+
 addons:
 	ssh_known_hosts: <deploy-host>
 
