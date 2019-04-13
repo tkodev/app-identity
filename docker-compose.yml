@@ -13,6 +13,7 @@ services:
       traefik.port: '80'
       traefik.frontend.rule: 'Host:www.htko.ca'
   site-htko-redirect:
+    container_name: site-htko-redirect:
     image: schmunk42/nginx-redirect
     restart: always
     networks:
