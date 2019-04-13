@@ -12,7 +12,7 @@ services:
     labels:
       traefik.enable: 'true'
       traefik.port: '80'
-      traefik.frontend.rule: 'www.htko.ca'
+      traefik.frontend.rule: 'Host:www.htko.ca'
 
 networks:
   frontend:
