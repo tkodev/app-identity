@@ -1,15 +1,19 @@
-version: '2'
+version: '3.5'
+
 services:
   site-htko:
     container_name: site-htko
     image: nginx:1.15.2
     restart: always
-    network_mode: bridge
+    networks:
+      - frontend
     volumes:
       - ./release:/usr/share/nginx/html:ro
     labels:
-      - "traefik.enable=true"
-      - "traefik.port=80"
-      - "traefik.frontend.rule=Host:htko.ca,www.htko.ca"
-      - "traefik.frontend.redirect.regex=^(https://|http://(www.)?)htko.ca(?P<path>.*)"
-      - "traefik.frontend.redirect.replacement=https://www.htko.ca$${path}"
+      traefik.enable: 'true'
+      traefik.port: '80'
+      traefik.frontend.rule: 'www.htko.ca'
+
+networks:
+  frontend:
+    external: true
