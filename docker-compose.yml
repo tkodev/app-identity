@@ -5,6 +5,8 @@ services:
     container_name: site-htko
     image: nginx:1.15.2
     restart: always
+    depends_on:
+      - site-htko-redirect
     networks:
       - frontend
     volumes:
