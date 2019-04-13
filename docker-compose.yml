@@ -10,9 +10,19 @@ services:
     volumes:
       - ./release:/usr/share/nginx/html:ro
     labels:
-      traefik.enable: 'true'
       traefik.port: '80'
       traefik.frontend.rule: 'Host:www.htko.ca'
+  site-htko-redirect:
+    image: schmunk42/nginx-redirect
+    restart: always
+    networks:
+      - frontend
+    labels:
+      traefik.port: '80'
+      traefik.frontend.rule: 'Host:htko.ca'
+    environment:
+      SERVER_REDIRECT: 'www.htko.ca'
+      SERVER_REDIRECT_SCHEME: 'https'
 
 networks:
   frontend:
