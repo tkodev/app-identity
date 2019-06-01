@@ -1,0 +1,36 @@
+version: '3.5'
+
+services:
+  site-htko:
+    container_name: site-htko
+    image: node:10.16.0-alpine
+    restart: always
+    depends_on:
+      - site-htko-redirect
+    networks:
+      - frontend
+    working_dir: /home/node/app
+    volumes:
+      - ./sources:/home/node/app
+    environment:
+      NODE_ENV: production
+    labels:
+      traefik.port: '80'
+      traefik.frontend.rule: 'Host:www.htko.ca'
+    command: npm install && npm start
+  site-htko-redirect:
+    container_name: site-htko-redirect
+    image: schmunk42/nginx-redirect
+    restart: always
+    networks:
+      - frontend
+    labels:
+      traefik.port: '80'
+      traefik.frontend.rule: 'Host:htko.ca'
+    environment:
+      SERVER_REDIRECT: 'www.htko.ca'
+      SERVER_REDIRECT_SCHEME: 'https'
+
+networks:
+  frontend:
+    external: true

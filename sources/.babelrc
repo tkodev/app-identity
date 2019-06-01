@@ -1,0 +1,5 @@
+// allows use of es6 in node and gulp build / transpile
+{
+  "presets": ['@babel/preset-env'],
+  "compact": true
+}
