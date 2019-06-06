@@ -24,7 +24,7 @@
         "gulp-sass": "^3.1.0",
         "gulp-sourcemaps": "^2.4.0",
         "gulp-util": "^3.0.7",
-        "js-yaml": "^3.7.0",
+        "js-yaml": "^3.13.1",
         "yargs": "^6.6.0"
     },
     "main": "gulpfile.js",
