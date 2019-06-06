@@ -21,7 +21,7 @@ module.exports = function(env, argv) {
 
   // init settings
   const appEnv = argv.mode || 'development';
-  console.log(`Webpack in ${appEnv} mode.`)
+  console.log(`｢webpack｣:`, `Webpack in ${appEnv} mode.`)
 
   // init config
   return {
@@ -46,10 +46,7 @@ module.exports = function(env, argv) {
       }, {
         test: /\.vue$/,
         use: [{
-          loader: 'vue-loader',
-          options: {
-            plugins: () => [autoprefixer]
-          }
+          loader: 'vue-loader'
         }]
       }, {
         test: /\.(sa|sc|c)ss$/,
@@ -59,6 +56,9 @@ module.exports = function(env, argv) {
           loader: 'css-loader'
         }, {
           loader: 'postcss-loader',
+          options: {
+            plugins: () => [autoprefixer]
+          }
         }, {
           loader: 'sass-loader'
         }]
@@ -95,9 +95,12 @@ module.exports = function(env, argv) {
       filename: 'js/index.js'
     },
     devServer: {
-      contentBase: path.resolve('./public'),
+      host: 'localhost',
+      port: 8080,
       open: true,
-      port: 8080
+      proxy: {
+        '/api/': 'http://localhost/api/'
+      }
     },
     performance: { hints: false },
     stats: appEnv === 'development' ? 'minimal' : true,

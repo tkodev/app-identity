@@ -24,7 +24,7 @@ const koaRouter = require('koa-router')();
 
 // app front end
 koaRouter.get('/', async (ctx) => {
-  await ctx.render('app/index');
+  await ctx.render('/index');
 });
 
 
