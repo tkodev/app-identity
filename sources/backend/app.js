@@ -6,6 +6,7 @@
 'use strict';
 
 // dependencies
+const env = require('dotenv');
 const Koa = require('koa');
 const koaBodyParser = require('koa-bodyparser');
 const koaHelmet = require('koa-helmet');
@@ -13,15 +14,16 @@ const koaJson = require('koa-json');
 const koaSslify = require('koa-sslify').default;
 const koaStatic = require('koa-static');
 const koaViews = require('koa-views');
-const router = require('./router.js');
+const appRouter = require('./router/app.js');
 
 // init settings
+const envData = env.config({ path: '../.env' });
 const appEnv = process.env.NODE_ENV || 'development';
 
 // init instances
 const app = new Koa();
 app.proxy = true;
-console.log(`｢server｣`, `Server in ${appEnv} mode.`);
+console.log(`ℹ ｢server｣:`, `Server in ${appEnv} mode.`);
 
 
 // ****************************************************************************************************
@@ -41,7 +43,7 @@ app.use(koaHelmet.noSniff()) // tells browsers to only use server mime types
 app.use(koaHelmet.xssFilter()) // tells browsers to check for query string xss attacks
 app.use(koaBodyParser()); // parses request body to json
 app.use(koaJson()); // sets response body to json
-app.use(koaViews(`${__dirname}/public`, { extension: 'pug' })) // template renderer
+app.use(koaViews('../frontend/dist', { extension: 'html' })) // template renderer
 
 // ctx state - used in template rendering, front end window variables, routes logic
 app.use(async (ctx, next) => {
@@ -51,8 +53,8 @@ app.use(async (ctx, next) => {
 })
 
 // routes - main
-app.use(router.routes()).use(router.allowedMethods());
-app.use(koaStatic(`${__dirname}/public`));
+app.use(appRouter.routes()).use(appRouter.allowedMethods());
+app.use(koaStatic(`../frontend/dist`));
 
 // routes - 404 
 app.use(async (ctx, next) => {
@@ -69,4 +71,4 @@ app.use(async (ctx, next) => {
 
 // init server
 app.listen(80);
-console.log(`｢server｣`, `Ready on port: 80`)
+console.log(`ℹ ｢server｣:`, `Ready on port: 80`)

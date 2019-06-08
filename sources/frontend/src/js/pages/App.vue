@@ -2,7 +2,10 @@
   export default {
     data () {
       return {
-        msg: 'FirstRoute'
+        msg: 'FirstRoute',
+        test: () => {
+          return 'hello'
+        }
       }
     }
   } 
@@ -14,8 +17,7 @@
     p hello
 </template>
 
-<style lang="scss" scoped>
-  h1 {
+<style lang="sass" scoped>
+  h1
     color: red
-  }
 </style>

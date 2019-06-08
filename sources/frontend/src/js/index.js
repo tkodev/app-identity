@@ -1,14 +1,14 @@
 // dependencies
 import Vue from 'vue';
-import router from '@/js/router.js';
+import appRouter from '@/js/routes/app.js';
 
 // components
-import App from '@/js/organisms/App.vue';
+import App from '@/js/pages/App.vue';
 
 // init vue
 new Vue({
   el: '#vue-root',
-  router,
+  appRouter,
   render (h) {
     return h(App);
   }
