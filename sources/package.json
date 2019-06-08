@@ -4,13 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd ./backend && node app.js",
     "build": "cd ./frontend && webpack --mode=production",
-    "watch": "cd ./frontend && webpack --mode=development -w",
-    "dev-client": "cd ./frontend && nodemon --exec 'webpack-dev-server --mode=development' -w ./webpack.config.js",
-    "dev-server": "cd ./backend && nodemon app.js -w ./ -e js,env",
-    "dev": "npm-run-all --parallel dev-server dev-client"
+    "watch": "cd ./frontend && webpack --mode=production -w",
+    "dev-frontend": "cd ./frontend && nodemon --exec 'webpack-dev-server --mode=development' -w ./webpack.config.js",
+    "dev-backend": "cd ./backend && nodemon app.js -w ./ -e js,env",
+    "dev": "npm-run-all --parallel dev-backend dev-frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

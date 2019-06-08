@@ -51,7 +51,7 @@ module.exports = function(env, argv) {
   };
   config.context = paths.src;
 
-  // set up path resolvers - aliases and extensions to search
+  // set up path resolvers - path aliases and extensions to search
   config.resolve = {
     alias: {
       '@': paths.src,
@@ -85,7 +85,7 @@ module.exports = function(env, argv) {
         { loader: appEnv === 'development' ? 'vue-style-loader' : MiniCssExtractPlugin.loader },
         { loader: 'css-loader'},
         { loader: 'postcss-loader', options: { plugins: () => [autoprefixer] } },
-        { loader: 'sass-loader' }
+        { loader: 'sass-loader', options: { data: '@import @/css/bootstrap/core.sass', } }
       ]
     }, {
       test: /\.sass$/,
@@ -93,7 +93,7 @@ module.exports = function(env, argv) {
         { loader: appEnv === 'development' ? 'vue-style-loader' : MiniCssExtractPlugin.loader },
         { loader: 'css-loader'},
         { loader: 'postcss-loader', options: { plugins: () => [autoprefixer] } },
-        { loader: 'sass-loader', options: { indentedSyntax: true }}
+        { loader: 'sass-loader', options: { data: '@import @/css/bootstrap/core.sass', indentedSyntax: true }}
       ]
     }, {
       test: /\.(svg|png|jpg|gif|txt)$/,
