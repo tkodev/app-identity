@@ -1,0 +1,18 @@
+{
+  "extends": ["wesbos", "plugin:vue/recommended"],
+  "rules": {
+    "no-new": 0,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./sources/frontend/src"],
+          ["~", "./sources/node_modules"]
+        ],
+        "extensions": [".scss", ".sass", ".js", ".jsx", ".vue", ".json"]
+      }
+    }
+  }
+}
