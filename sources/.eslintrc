@@ -1,6 +1,7 @@
 {
-  "extends": ["wesbos", "plugin:vue/recommended"],
+  "extends": ["wesbos", "plugin:vue/recommended", "prettier/vue"],
   "rules": {
+    "vue/component-name-in-template-casing": ["error", "PascalCase"],
     "no-new": 0,
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   },
