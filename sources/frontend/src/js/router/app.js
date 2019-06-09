@@ -1,21 +1,13 @@
 // dependencies
-import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router';
 
 // components
-// import Hello from '@/components/Hello'
-
-// init vue
-Vue.use(Router)
+import Index from '@/js/components/pages/Index.vue';
 
 // export
-export default new Router({
+export default new VueRouter({
   mode: 'history',
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'Hello',
-    //   component: Hello
-    // }
+    { path: '/', component: Index }
   ]
 })

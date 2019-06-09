@@ -1,0 +1,11 @@
+// custom
+@import '@/css/custom/variables.scss';
+
+// stock bootstrap
+@import "~/bootstrap/scss/_functions.scss";
+@import "~/bootstrap/scss/_variables.scss";
+@import "~/bootstrap/scss/_mixins.scss";
+
+// stock bootstrap-vue
+@import "~/bootstrap-vue/src/_variables.scss";
+@import "~/bootstrap-vue/src/_utilities.scss";

@@ -1,0 +1,11 @@
+// display helper
+.d-mobile {
+  @include media-breakpoint-up(md){
+    display: none;
+  }
+}
+.d-desktop {
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
+}

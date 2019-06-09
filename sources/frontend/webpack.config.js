@@ -55,7 +55,8 @@ module.exports = function(env, argv) {
   config.resolve = {
     alias: {
       '@': paths.src,
-      '~': paths.modules
+      '~': paths.modules,
+      vue$: 'vue/dist/vue.runtime.esm.js' // ensure all instances of vue use the right js file
     },
     extensions: ['.scss', '.sass', '.js', '.vue', '.json']
   };
@@ -80,20 +81,12 @@ module.exports = function(env, argv) {
         { loader: 'pug-plain-loader' }
       ]
     }, {
-      test: /\.(sc|c)ss$/,
+      test: /\.(sa|sc|c)ss$/,
       use: [
         { loader: appEnv === 'development' ? 'vue-style-loader' : MiniCssExtractPlugin.loader },
         { loader: 'css-loader'},
         { loader: 'postcss-loader', options: { plugins: () => [autoprefixer] } },
-        { loader: 'sass-loader', options: { data: '@import @/css/bootstrap/core.sass', } }
-      ]
-    }, {
-      test: /\.sass$/,
-      use: [
-        { loader: appEnv === 'development' ? 'vue-style-loader' : MiniCssExtractPlugin.loader },
-        { loader: 'css-loader'},
-        { loader: 'postcss-loader', options: { plugins: () => [autoprefixer] } },
-        { loader: 'sass-loader', options: { data: '@import @/css/bootstrap/core.sass', indentedSyntax: true }}
+        { loader: 'sass-loader', options: { data: '@import "@/css/bootstrap/core.scss";', } }
       ]
     }, {
       test: /\.(svg|png|jpg|gif|txt)$/,
