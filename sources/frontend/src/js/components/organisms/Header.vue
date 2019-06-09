@@ -7,10 +7,10 @@
     components: { BContainer },
     data () {
       return {
-        
-      }
+
+      };
     }
-  } 
+  };
 </script>
 
 <template lang="pug">

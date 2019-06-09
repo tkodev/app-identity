@@ -4,10 +4,10 @@
     components: { },
     data () {
       return {
-        
-      }
+
+      };
     }
-  } 
+  };
 </script>
 
 <template lang="pug">

@@ -10,4 +10,4 @@ export default new VueRouter({
   routes: [
     { path: '/', component: Index }
   ]
-})
+});

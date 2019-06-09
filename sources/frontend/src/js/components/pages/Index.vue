@@ -3,10 +3,10 @@
   export default {
     data () {
       return {
-        
-      }
+
+      };
     }
-  } 
+  };
 </script>
 
 <template lang="pug">
@@ -15,5 +15,5 @@
 </template>
 
 <style lang="scss">
-  
+
 </style>

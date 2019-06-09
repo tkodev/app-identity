@@ -1,5 +1,5 @@
 // css
-import '@/css/index.scss'
+import '@/css/index.scss';
 
 // js
-import '@/js/index.js'
+import '@/js/index.js';

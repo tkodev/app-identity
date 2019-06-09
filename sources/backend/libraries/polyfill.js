@@ -1,15 +1,15 @@
 if (!Array.prototype.flat) {
   Array.prototype.flat = function(depth) {
-    var flattened = [];
+    const flattened = [];
     (function flat(array, depth) {
-      for (let el of array) {
+      for (const el of array) {
         if (Array.isArray(el) && depth > 0) {
-          flat(el, depth - 1); 
+          flat(el, depth - 1);
         } else {
           flattened.push(el);
         }
       }
-    })(this, Math.floor(depth) || 1);
+    }(this, Math.floor(depth) || 1));
     return flattened;
   };
 }

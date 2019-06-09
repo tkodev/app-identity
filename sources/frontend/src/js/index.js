@@ -7,5 +7,5 @@ import App from '@/js/components/pages/App.vue';
 // init vue
 new Vue({
   el: '#vue-root',
-  render: h => h(App)
-})
+  render: (h) => h(App)
+});
