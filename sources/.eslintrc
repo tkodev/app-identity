@@ -1,9 +1,18 @@
 {
-  "extends": ["wesbos", "plugin:vue/recommended", "prettier/vue"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": ["airbnb-base", "plugin:vue/recommended"],
   "rules": {
-    "vue/component-name-in-template-casing": ["error", "PascalCase"],
+    "no-console": "off",
     "no-new": 0,
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/extensions": ["error", "ignorePackages"]
   },
   "settings": {
     "import/resolver": {
