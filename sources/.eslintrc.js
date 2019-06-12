@@ -5,9 +5,9 @@ const path = require('path');
 module.exports = {
   "root": true,
   "extends": [
-    // "plugin:prettier/recommended",
     "airbnb-base",
-    "plugin:vue/recommended"
+    "plugin:vue/recommended",
+    // "plugin:prettier/recommended",
   ],
   "parserOptions": {
     "parser": "babel-eslint",
@@ -54,7 +54,7 @@ module.exports = {
     "vue/script-indent": [2, 2, { "baseIndent": 1 }],
     "no-shadow": [2, {"hoist": "all", "allow": ["resolve", "reject", "done", "next", "err", "error"]}],
     "quotes": [2, "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
-    // "prettier/prettier": [2, {"trailingComma": "es5", "singleQuote": true, "printWidth": 80, "vueIndentScriptAndStyle": true, "arrowParens": "always"}]
+    // "prettier/prettier": [2, {"trailingComma": "es5", "singleQuote": true, "printWidth": 80, "vueIndentScriptAndStyle": true, "arrowParens": "always"}],
   },
   "settings": {
     "import/resolver": {
