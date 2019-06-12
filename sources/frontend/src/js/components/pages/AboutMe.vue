@@ -1,7 +1,5 @@
 <script>
-  // init vue
   export default {
-    components: { },
     data () {
       return {
 
@@ -12,9 +10,9 @@
 
 <template lang="pug">
   div
-    slot
+    p test
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>

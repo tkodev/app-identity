@@ -6,7 +6,7 @@
 const env = require('dotenv');
 const KoaRouter = require('koa-router');
 const axios = require('axios');
-const polyfill = require('../libraries/polyfill.js');
+const polyfill = require('./libraries/polyfill.js');
 
 // init instances
 const envData = env.config({ path: '../../.env' });

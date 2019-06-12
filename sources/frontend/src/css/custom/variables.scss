@@ -2,20 +2,53 @@
 // Colors
 // ****************************************************************************************************
 
-// new colors
-$red: #DE4C71;
+// grayscale
+$white:    hsl(0, 0, 100%);
+$gray-100: hsl(0, 0, 90%);
+$gray-200: hsl(0, 0, 80%);
+$gray-300: hsl(0, 0, 70%);
+$gray-400: hsl(0, 0, 60%);
+$gray-500: hsl(0, 0, 50%);
+$gray-600: hsl(0, 0, 40%);
+$gray-700: hsl(0, 0, 30%);
+$gray-800: hsl(0, 0, 20%);
+$gray-900: hsl(0, 0, 10%);
+$black:    hsl(0, 0, 0%);
 
-// add to bootstrap color map
-$colors: ();
+// palette
+$red: #DE4C71;
+$yellow: #FBD57D;
+
+// palette map
+$colors: (
+  // "warm": $warm
+);
+
+// theme colors
+$primary: $yellow;
+
+// body colors
+$body-bg: $gray-900;
+$body-color: $gray-400;
+
+// aux colors
+$link-color: $gray-200;
+$link-hover-color: rgba($primary, 0.75);
+$border-color: $body-color;
 
 
 // ****************************************************************************************************
 // Fonts
 // ****************************************************************************************************
 
-// override fonts
+// font family
 $font-family-sans-serif:  'Open Sans', sans-serif;
 $headings-font-family:    'Roboto Condensed', sans-serif;
+
+// font size
+$font-size-base:              1rem;
+$font-size-sm:                $font-size-base * 0.85;
+$font-size-lg:                $font-size-base * 1.25;
 
 
 // ****************************************************************************************************
@@ -39,4 +72,4 @@ $spacers: (
 // ****************************************************************************************************
 
 // custom variables
-$header-height: 5rem;
+$header-height: 6rem;

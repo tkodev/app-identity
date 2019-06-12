@@ -1,5 +1,4 @@
 <script>
-  // init vue
   export default {
     data () {
       return {

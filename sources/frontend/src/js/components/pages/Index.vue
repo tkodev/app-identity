@@ -1,5 +1,4 @@
 <script>
-  // init vue
   export default {
     data () {
       return {
@@ -10,8 +9,9 @@
 </script>
 
 <template lang="pug">
-  div
-    p test
+  Main
+    Section.section-hero
+      p test
 </template>
 
 <style lang="scss">

@@ -9,9 +9,8 @@
 </script>
 
 <template lang="pug">
-  footer.footer
-    BContainer(fluid)
-      slot
+  div
+    p test
 </template>
 
 <style lang="scss">

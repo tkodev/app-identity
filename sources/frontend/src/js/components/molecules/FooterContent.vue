@@ -1,5 +1,4 @@
 <script>
-  // init vue
   export default {
     data () {
       return {
@@ -10,7 +9,7 @@
 </script>
 
 <template lang="pug">
-  div
+  .footer-content
     slot
 </template>
 

@@ -1,5 +1,10 @@
 <script>
+  // components
+  import { } from 'bootstrap-vue';
+
+  // init vue
   export default {
+    components: { },
     data () {
       return {
 
@@ -9,11 +14,10 @@
 </script>
 
 <template lang="pug">
-  footer.footer
-    BContainer(fluid)
-      slot
+  .example
+    slot
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>

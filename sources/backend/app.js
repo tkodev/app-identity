@@ -14,7 +14,7 @@ const koaJson = require('koa-json');
 const koaSslify = require('koa-sslify').default;
 const koaStatic = require('koa-static');
 const koaViews = require('koa-views');
-const appRouter = require('./router/app.js');
+const appRouter = require('./router.js');
 
 // init settings
 env.config({ path: '../.env' });
