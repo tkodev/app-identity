@@ -23,7 +23,7 @@
             span About Me
           HeaderItem.ml-3.px-2
             FontAwesomeIcon(:icon="['far', 'search']")
-          HeaderItem.d-mobile.ml-3.px-2(v-b-modal="'modal-menu'")
+          HeaderItem.d-mobile.ml-3.px-2
             FontAwesomeIcon(:icon="['far', 'bars']")
 </template>
 

@@ -4,14 +4,15 @@
       href: {
         type: String,
         default: ''
-      },
-      external: {
-        type: Boolean,
-        default: false
       }
     },
     data () {
       return {};
+    },
+    computed: {
+      external () {
+        return this.href && this.href.includes('//');
+      }
     }
   };
 </script>
@@ -21,7 +22,7 @@
     slot
   a.header-item(v-else-if="href && external", v-bind:href="href", target="_blank")
       slot
-  button.btn.header-item(v-else)
+  button.btn.header-item(v-else, type="button")
     slot
 </template>
 

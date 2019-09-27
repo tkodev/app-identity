@@ -9,9 +9,9 @@
 </script>
 
 <template lang="pug">
-  header.header
-    BContainer(fluid)
-      slot
+  transition(name="header-fade", appear)
+    header.header
+      BContainer(fluid)
         HeaderContent
 </template>
 
@@ -23,5 +23,11 @@
     width: 100%;
     height: $header-height;
     background-color: rgba($black, 0.1);
+  }
+  .header-fade-enter-active, .header-fade-leave-active {
+    transition: opacity .5s;
+  }
+  .header-fade-enter, .header-fade-leave-to {
+    opacity: 0;
   }
 </style>

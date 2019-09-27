@@ -9,9 +9,8 @@
 </script>
 
 <template lang="pug">
-  Main
-    Section.section-hero
-      //- p test
+  .menu-content
+    slot
 </template>
 
 <style lang="scss">

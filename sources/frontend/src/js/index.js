@@ -14,17 +14,18 @@ import App from '@/js/components/pages/App.vue';
 import Header from '@/js/components/organisms/Header.vue';
 import Footer from '@/js/components/organisms/Footer.vue';
 import Main from '@/js/components/organisms/Main.vue';
-import Modals from '@/js/components/organisms/Modals.vue';
+import Menu from '@/js/components/organisms/Menu.vue';
 import Section from '@/js/components/organisms/Section.vue';
 import HeaderContent from '@/js/components/molecules/HeaderContent.vue';
 import FooterContent from '@/js/components/molecules/FooterContent.vue';
+import MenuContent from '@/js/components/molecules/MenuContent.vue';
 import HeaderLogo from '@/js/components/atoms/HeaderLogo.vue';
 import HeaderItem from '@/js/components/atoms/HeaderItem.vue';
 
 // modules - init
 Vue.use(VueRouter);
-library.add(faSearch, faBars, faTimes);
 Vue.directive('b-modal', VBModal);
+library.add(faSearch, faBars, faTimes);
 
 // components - init
 Vue.component('FontAwesomeIcon', FontAwesomeIcon);
@@ -36,10 +37,11 @@ Vue.component('BButton', BButton);
 Vue.component('Header', Header);
 Vue.component('Footer', Footer);
 Vue.component('Main', Main);
-Vue.component('Modals', Modals);
+Vue.component('Menu', Menu);
 Vue.component('Section', Section);
 Vue.component('HeaderContent', HeaderContent);
 Vue.component('FooterContent', FooterContent);
+Vue.component('MenuContent', MenuContent);
 Vue.component('HeaderLogo', HeaderLogo);
 Vue.component('HeaderItem', HeaderItem);
 
