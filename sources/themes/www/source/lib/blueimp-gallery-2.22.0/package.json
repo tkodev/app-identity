@@ -33,7 +33,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "clean-css": "3.4.21",
+    "clean-css": "4.2.3",
     "standard": "8.6.0",
     "uglify-js": "2.7.4"
   },
