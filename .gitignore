@@ -1,7 +1,0 @@
-# Custom
-node_modules/
-bower_components/
-.deploy*/
-db.json
-*.log
-.DS_Store
