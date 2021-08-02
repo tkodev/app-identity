@@ -1,0 +1,33 @@
+<header id="header" data-sticky-container>
+  <nav id="top-bar" class="top-bar sticky" data-sticky data-sticky-on="small" data-margin-top="0" data-anchor="body" style="width:100%">
+    <div class="row column">
+      <div class="small-8 columns">
+        <ul class="menu">
+          <li>
+            <a class="menu-img-a" href="{{ .Site.BaseURL }}"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/htko-10-full.svg"></a>
+          </li>
+          <li>
+            <a class="menu-title {{ if .IsHome }}active{{ end }}" href="{{ .Site.BaseURL }}">{{ .Site.Params.subtitle | safeHTML }}</a>
+          </li>
+          {{ $currentNode := . }}
+          {{ range .Site.Menus.main }}
+            <li>
+              <a class="{{if $currentNode.IsMenuCurrent "main" . }}active{{end}}" href="{{.URL}}">{{ .Pre }}<span class="show-for-medium">{{ .Name }}</span></a>
+            </li>
+          {{end}}
+        </ul>
+      </div>
+      <div class="small-4 columns">
+        <ul class="menu align-right">
+          <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
+          {{ $currentNode := . }}
+          {{ range .Site.Menus.links }}
+            <li>
+              <a href="{{.URL}}">{{ .Pre }}<span class="show-for-medium">{{ .Name }}</span></a>
+            </li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

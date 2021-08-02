@@ -1,0 +1,28 @@
+<footer id="footer">
+  <nav>
+    <div class="row column">
+      <div class="small-6 columns">
+        <ul class="menu">
+          <li>
+            &copy;
+          </li>
+          <li>
+            <a class="menu-title" href="#">{{.Now.Format "2006"}} {{ with .Site.Params.copyright }}{{ . | markdownify}}{{ end }}</a>
+          </li>
+          <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
+        </ul>
+      </div>
+      <div class="small-6 columns">
+        <ul class="menu align-right">
+          <li><a class="menu-img-a" href="#"><img class="menu-img" src="{{ .Site.BaseURL }}/static/img/px.png"></a></li>
+          {{ $currentNode := . }}
+          {{ range .Site.Menus.footer }}
+            <li>
+              <a class="{{if $currentNode.IsMenuCurrent "footer" . }}active{{end}}" href="{{.URL}}">{{ .Pre }}<span class="show-for-medium">{{ .Name }}</span></a>
+            </li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</footer>

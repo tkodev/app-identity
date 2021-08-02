@@ -1,0 +1,88 @@
+---
+# Metadata
+languageCode        : "en-us"
+title               : "Hei Tony Ko | Personal Portfolio"
+author              : "Hei Tony Ko"
+
+# Params
+params:
+  subtitle          : "Hei Tony Ko"
+  copyright         : "Copyright - Tony Ko."
+  description       : "Personal Portfolio of Hei Tony Ko, Front End Developer."
+  locale            : "en_US"
+  google_verify     : ""
+  facebook          : "htko89"
+  facebook_admin    : "htko89"
+  facebook_app_id   : ""
+
+# Config
+canonifyurls        : true
+Paginate            : 16
+disqusShortname     : "xxxxxx"
+googleAnalytics     : "UA-XXXXXXX-1"
+contentDir          : "static/content"
+ignoreFiles:
+  - "\\.html$"
+  - "\\.png$"
+  - "\\.jpg$"
+  - "\\.jpeg$"
+  - "\\.svg$"
+
+# Taxonomies
+taxonomies:
+  topic             : "topics"
+  tool              : "tools"
+  category          : "categories"
+  tag               : "tags"
+
+# Menus
+menu:
+  main:
+    - name          : "Code"
+      identifier    : "code"
+      pre           : "<i class='fa fa-code fa-1x'></i>"
+      url           : "/topics/code/"
+      weight        : -110
+    - name          : "GFX"
+      identifier    : "gfx"
+      pre           : "<i class='fa fa-paint-brush fa-1x'></i>"
+      url           : "/topics/gfx/"
+      weight        : -110
+    - name          : "Interior Design"
+      identifier    : "interior-design"
+      pre           : "<i class='fa fa-bank fa-1x'></i>"
+      url           : "/topics/interior design/"
+      weight        : -110
+    # - name          : "Photography"
+    #   identifier    : "photography"
+    #   pre           : "<i class='fa fa-camera-retro fa-1x'></i>"
+    #   url           : "/topics/photography/"
+    #   weight        : -110
+  links:
+    # - name          : "Blog"
+    #   identifier    : "blog"
+    #   pre           : "<i class='fa fa-bookmark-o fa-1x'></i>"
+    #   url           : "/categories/blog"
+    #   weight        : -110
+    - name          : "About Me"
+      identifier    : "about-me"
+      pre           : "<i class='fa fa-user-circle-o fa-1x'></i>"
+      url           : "page/about-me/README/"
+      weight        : -100
+  footer:
+    - name          : "Linkedin"
+      identifier    : "linkedin"
+      pre           : "<i class='fa fa-linkedin fa-1x'></i>"
+      url           : "http://lnked.in/htko89"
+      weight        : -100
+    - name          : "Github"
+      identifier    : "github"
+      pre           : "<i class='fa fa-code-fork fa-1x'></i>"
+      url           : "https://github.com/htko89"
+      weight        : -110
+    - name          : "Instagram"
+      identifier    : "instagram"
+      pre           : "<i class='fa fa-instagram fa-1x'></i>"
+      url           : "https://www.instagram.com/htkoca"
+      weight        : -120
+...

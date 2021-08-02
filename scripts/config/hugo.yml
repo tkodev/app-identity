@@ -1,0 +1,35 @@
+# Hugo paths
+HUGO:
+  base_url: "http://htko.ca/"
+  temp_url: "http://192.168.1.30:4000/"
+  port: 4000
+  root: "/Users/sysuser/Google Drive/projects/public/code/htko/site-base/release/htko"
+  public: "/public"
+  source: "/source"
+  static: "/static/static"
+  content: "/static/content"
+  filters:
+    - "/data/**/*"
+    - "/layouts/**/*"
+    - "/static/**/*"
+    - "/*.yml"
+    - "/**/!.**/**/*"
+    - "/**/!.*"
+
+PROJECTS:
+  root: "/Users/sysuser/Google Drive/projects/public"
+  projects: "/project"
+  filters:
+    - "/**/README.md"
+    - "/**/assets"
+    - "!**/free-code-camp/* - */**/*"
+    - "!**/releases/**/*"
+    - "!**/resume/**/*"
+    - "!**/prototypes/**/*"
+    - "!**/sources/**/*"
+    - "!**/release/**/*"
+    - "!**/scripts/**/*"
+    - "!**/node_modules/**/*"
+    - "!**/bower_components/**/*"
+    - "!**/.**/**/*"
+    - "!**/.*"

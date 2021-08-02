@@ -1,0 +1,8 @@
+{{ if .Params.tags }}
+  <i class="fa fa-tags fa-1x"></i>
+  {{ range $index, $category := .Params.tags }}
+    {{ if gt $index 0 }},
+    {{ end }}
+    <a class="capitalize" href="/tags/{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+{{ end }}
