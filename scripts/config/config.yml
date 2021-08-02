@@ -1,0 +1,39 @@
+# Hugo paths
+hugo:
+  baseUrl: "//htko.ca"
+  tempUrl: "//localhost:5678"
+  port: 5678
+  public: "/public"
+  source: "/source"
+  static: "/static/static"
+  content: "/static/content"
+  projects: "/static/content/project"
+
+root:
+  hugo: "../release/htko"
+  projects: "../../../../../public"
+
+filters:
+  sass:
+    - "source/**/*.sass"
+    - "source/**/*.scss"
+  hugo:
+    - "archetypes/**/*"
+    - "data/**/*"
+    - "layouts/**/*"
+    - "static/**/*"
+    - "config.yml"
+    # - "public/**/*" # feedback loop
+  projects:
+    - "**/README.md"
+    - "!**/releases/**"
+    - "!**/resume/**/*"
+    - "!**/prototypes/**/*" # standard project folders
+    - "!**/sources/**/*" # standard project folders
+    - "!**/release/**/*" # standard project folders
+    - "!**/scripts/**/*" # standard project folders
+  ignore:
+    - "!**/.**/**/*"
+    - "!**/.*"
+    - "!**/node_modules/**/*"
+    - "!**/bower_components/**/*"
