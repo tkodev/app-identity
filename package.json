@@ -29,6 +29,7 @@
     "@material-ui/lab": "^4.0.0-alpha.60",
     "axios": "^0.21.1",
     "clsx": "^1.1.1",
+    "contentful": "^8.4.2",
     "lodash": "^4.17.21",
     "next": "^11.0.1",
     "react": "^17.0.2",
