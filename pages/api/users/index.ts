@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { sampleUserData } from '../../../utils/sample-data'
+import { sampleUserData } from '@/shared/constants/sample-data'
 
+// page
 const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   try {
     if (!Array.isArray(sampleUserData)) {
@@ -13,4 +14,5 @@ const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   }
 }
 
+// export
 export default handler

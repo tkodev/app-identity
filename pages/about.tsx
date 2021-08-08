@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import { Layout } from '@/frontend/components/layout'
 
+// page
 const AboutPage = () => (
   <Layout title="About | Next.js + TypeScript Example">
     <h1>About</h1>
@@ -13,4 +14,5 @@ const AboutPage = () => (
   </Layout>
 )
 
+// export
 export default AboutPage
