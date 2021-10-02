@@ -30,6 +30,7 @@
     "@fortawesome/pro-regular-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@mui/material": "^5.0.1",
+    "@mui/styles": "^5.0.1",
     "axios": "^0.21.4",
     "clsx": "^1.1.1",
     "contentful": "^9.0.0",
