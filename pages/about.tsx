@@ -1,8 +1,9 @@
+import { NextPage } from 'next'
 import Link from 'next/link'
 import { Layout } from '@/frontend/components/layout'
 
 // page
-const AboutPage = () => (
+const AboutPage: NextPage = () => (
   <Layout title="About | Next.js + TypeScript Example">
     <h1>About</h1>
     <p>This is the about page</p>

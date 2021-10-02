@@ -1,4 +1,4 @@
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { GetStaticProps, GetStaticPaths, NextPage } from 'next'
 
 import { User } from '@/shared/types'
 import { sampleUserData } from '@/shared/constants/sample-data'
@@ -12,7 +12,8 @@ type UserPageProps = {
 }
 
 // page
-const UserPage = ({ item, errors }: UserPageProps) => {
+const UserPage: NextPage<UserPageProps> = (props) => {
+  const { item, errors } = props
   if (errors) {
     return (
       <Layout title="Error | Next.js + TypeScript Example">

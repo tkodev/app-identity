@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { FC } from 'react'
 import Link from 'next/link'
 
 import { User } from '@/shared/types'
@@ -17,30 +17,39 @@ type ListProps = {
 }
 
 // components
-const ListItem = ({ data }: ListItemProps) => (
-  <Link href="/users/[id]" as={`/users/${data.id}`}>
-    <a>
-      {data.id}: {data.name}
-    </a>
-  </Link>
-)
+const ListItem: FC<ListItemProps> = (props) => {
+  const { data } = props
+  return (
+    <Link href="/users/[id]" as={`/users/${data.id}`}>
+      <a>
+        {data.id}: {data.name}
+      </a>
+    </Link>
+  )
+}
 
-const ListDetail = ({ item: user }: ListDetailProps) => (
-  <div>
-    <h1>Detail for {user.name}</h1>
-    <p>ID: {user.id}</p>
-  </div>
-)
+const ListDetail: FC<ListDetailProps> = (props) => {
+  const { item: user } = props
+  return (
+    <div>
+      <h1>Detail for {user.name}</h1>
+      <p>ID: {user.id}</p>
+    </div>
+  )
+}
 
-const List = ({ items }: ListProps) => (
-  <ul>
-    {items.map((item) => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
-    ))}
-  </ul>
-)
+const List: FC<ListProps> = (props) => {
+  const { items } = props
+  return (
+    <ul>
+      {items.map((item) => (
+        <li key={item.id}>
+          <ListItem data={item} />
+        </li>
+      ))}
+    </ul>
+  )
+}
 
 // export
 export { List, ListDetail, ListItem }

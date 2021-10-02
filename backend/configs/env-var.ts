@@ -1,11 +1,11 @@
 // app vars
-const MODE = process.env.NODE_ENV || 'development'
+const MODE = String(process.env.NODE_ENV) || 'development'
 
 // contentful vars
-const CONTENTFUL_TOKEN = process.env.CONTENTFUL_TOKEN || ''
-const CONTENTFUL_SPACE = process.env.CONTENTFUL_SPACE || ''
-const CONTENTFUL_ENV = process.env.CONTENTFUL_ENV || 'main'
-const CONTENTFUL_SOURCE = process.env.CONTENTFUL_SOURCE || 'cdn.contentful.com'
+const CONTENTFUL_TOKEN = String(process.env.CONTENTFUL_TOKEN) || ''
+const CONTENTFUL_SPACE = String(process.env.CONTENTFUL_SPACE) || ''
+const CONTENTFUL_ENV = String(process.env.CONTENTFUL_ENV) || 'main'
+const CONTENTFUL_SOURCE = String(process.env.CONTENTFUL_SOURCE) || 'cdn.contentful.com'
 
 // export
 export {

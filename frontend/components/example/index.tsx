@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { FC } from 'react'
 
 // types
 type ExampleProps = {
@@ -6,9 +6,12 @@ type ExampleProps = {
 }
 
 // components
-const Example = ({ title }: ExampleProps) => (
-  <p>{title}</p>
-)
+const Example: FC<ExampleProps> = (props) => {
+  const { title }= props
+  return (
+    <p>{title}</p>
+  )
+}
 
 // export
 export { Example }

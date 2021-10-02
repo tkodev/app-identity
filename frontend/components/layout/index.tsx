@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
@@ -9,7 +9,9 @@ type LayoutProps = {
 }
 
 // components
-const Layout = ({ children, title = 'This is the default title' }: LayoutProps) => (
+const Layout: FC<LayoutProps> = (props) => {
+  const { children, title = 'This is the default title' } = props
+  return (
   <div>
     <Head>
       <title>{title}</title>
@@ -29,7 +31,6 @@ const Layout = ({ children, title = 'This is the default title' }: LayoutProps) 
         <Link href="/users">
           <a>Users List</a>
         </Link>{' '}
-        | <a href="/api/users">Users API</a>
       </nav>
     </header>
     {children}
@@ -38,7 +39,7 @@ const Layout = ({ children, title = 'This is the default title' }: LayoutProps) 
       <span>I&apos;m here to stay (Footer)</span>
     </footer>
   </div>
-)
+)}
 
 // export
 export { Layout }
