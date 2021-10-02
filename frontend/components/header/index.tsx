@@ -3,26 +3,27 @@ import { makeStyles, createStyles } from '@mui/styles';
 import { Theme } from '@mui/material/styles';
 
 // types
-type ExampleProps = {
-  title?: string
-}
+type HeaderProps = {}
 
 // styles
 const useStyles = makeStyles((theme: Theme) => createStyles({
-  root: {},
+  root: {
+    gridColumn: '1 / -1',
+  },
 }));
 
 // components
-const Example: FC<ExampleProps> = (props) => {
-  const { title } = props
+const Header: FC<HeaderProps> = (props) => {
+  const { children } = props
   const styles = useStyles(props)
 
   return (
-    <div className={styles.root}>
-      {title}
-    </div>
+    <header className={styles.root}>
+      Header
+      {children}
+    </header>
   )
 }
 
 // export
-export { Example }
+export { Header }

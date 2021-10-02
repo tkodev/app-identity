@@ -1,43 +1,42 @@
-import { FC, ReactNode } from 'react'
-import Link from 'next/link'
+import { FC } from 'react'
 import Head from 'next/head'
+import { makeStyles, createStyles } from '@mui/styles';
+import { Theme } from '@mui/material/styles';
 
 // types
 type LayoutProps = {
-  children?: ReactNode
   title?: string
 }
 
+// styles
+const useStyles = makeStyles((theme: Theme) => createStyles({
+  root: {
+    height: 'calc(100vh - 10px)',
+    display: 'grid',
+    gridTemplateColumns: 'minmax(10px, 1fr) minmax(10px, 3fr)',
+    gridTemplateRows: 'min-content min-content 1fr min-content',
+    [theme.breakpoints.down('sm')]: {
+      gridTemplateColumns: '100%',
+      gridTemplateRows: 'auto',
+      '> *': {
+        gridColumn: '1 / -1 !important',
+        gridRow: 'auto !important',
+      }
+    }
+  },
+}));
+
 // components
 const Layout: FC<LayoutProps> = (props) => {
-  const { children, title = 'This is the default title' } = props
+  const { title, children } = props
+  const styles = useStyles(props)
+
   return (
-  <div>
+  <div className={styles.root}>
     <Head>
-      <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      {title && <title>{title}</title>}
     </Head>
-    <header>
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-      </nav>
-    </header>
     {children}
-    <footer>
-      <hr />
-      <span>I&apos;m here to stay (Footer)</span>
-    </footer>
   </div>
 )}
 

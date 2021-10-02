@@ -21,6 +21,7 @@ const MyApp: FC<MyAppProps> = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
         <Head>
+          <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
         </Head>
         <CssBaseline />
