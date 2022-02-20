@@ -1,6 +1,6 @@
 {
-  "name": "site-juno",
-  "description": "⚡ Codebase for Tony Ko's personal dashboard",
+  "name": "site-tkodev",
+  "description": "⚡ Codebase for Tony Ko's personal portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
