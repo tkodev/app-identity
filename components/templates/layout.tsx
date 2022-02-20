@@ -3,14 +3,14 @@ import Head from 'next/head'
 import { Header } from '@/components/organisms/header'
 import { Footer } from '@/components/organisms/footer'
 import { Main } from '@/components/organisms/main'
-import { makeStyles } from '@mui/styles'
+import { Box } from '@mui/material'
 
 type LayoutProps = {
   title?: string
   desc?: string
 }
 
-const useStyles = makeStyles({
+const useSx = (props: LayoutProps) => ({
   root: {
     display: 'grid',
     height: '100vh',
@@ -20,10 +20,10 @@ const useStyles = makeStyles({
 
 const Layout: React.FC<LayoutProps> = (props) => {
   const { title, desc, children } = props
-  const styles = useStyles(props)
+  const styles = useSx(props)
 
   return (
-    <div className={styles.root}>
+    <Box sx={styles.root}>
       <Head>
         {title && <title>{title}</title>}
         {desc && <meta name="description" content={desc} />}
@@ -32,7 +32,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
       <Main>{children}</Main>
       <Footer />
       layout
-    </div>
+    </Box>
   )
 }
 

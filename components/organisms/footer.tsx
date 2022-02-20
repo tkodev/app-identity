@@ -1,21 +1,23 @@
 import React from 'react'
-import { makeStyles } from '@mui/styles'
+import { Box } from '@mui/material'
 
-const useStyles = makeStyles({
+type FooterProps = {}
+
+const useSx = (props: FooterProps) => ({
   root: {
     gridRow: 3
   }
 })
 
-const Footer: React.FC = (props) => {
+const Footer: React.FC<FooterProps> = (props) => {
   const { children } = props
-  const styles = useStyles(props)
+  const styles = useSx(props)
 
   return (
-    <footer className={styles.root}>
+    <Box component="footer" sx={styles.root}>
       footer
       {children}
-    </footer>
+    </Box>
   )
 }
 

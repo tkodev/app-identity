@@ -1,7 +1,9 @@
 import React from 'react'
-import { makeStyles } from '@mui/styles'
+import { Box } from '@mui/material'
 
-const useStyles = makeStyles({
+type MainProps = {}
+
+const useSx = (props: MainProps) => ({
   root: {
     gridRow: 2
   }
@@ -9,13 +11,13 @@ const useStyles = makeStyles({
 
 const Main: React.FC = (props) => {
   const { children } = props
-  const styles = useStyles(props)
+  const styles = useSx(props)
 
   return (
-    <main className={styles.root}>
+    <Box component="main" sx={styles.root}>
       main
       {children}
-    </main>
+    </Box>
   )
 }
 

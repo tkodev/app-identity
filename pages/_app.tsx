@@ -5,14 +5,15 @@ import CssBaseline from '@mui/material/CssBaseline'
 import { CacheProvider, EmotionCache } from '@emotion/react'
 import { theme, createEmotionCache } from '@/shared/configs/theme'
 
-type MyAppProps = {
+type NextAppProps = {
   emotionCache?: EmotionCache
 } & AppProps
 
 const clientSideCache = createEmotionCache()
 
-const MyApp = (props: MyAppProps) => {
+const NextApp = (props: NextAppProps) => {
   const { Component, emotionCache = clientSideCache, pageProps } = props
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -26,4 +27,4 @@ const MyApp = (props: MyAppProps) => {
   )
 }
 
-export default MyApp
+export default NextApp
