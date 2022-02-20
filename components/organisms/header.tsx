@@ -11,10 +11,10 @@ const useSx = (props: HeaderProps) => ({
 
 const Header: React.FC = (props) => {
   const { children } = props
-  const styles = useSx(props)
+  const sx = useSx(props)
 
   return (
-    <Box component="header" sx={styles.root}>
+    <Box component="header" sx={sx.root}>
       header
       {children}
     </Box>

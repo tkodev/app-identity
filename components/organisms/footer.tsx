@@ -11,10 +11,10 @@ const useSx = (props: FooterProps) => ({
 
 const Footer: React.FC<FooterProps> = (props) => {
   const { children } = props
-  const styles = useSx(props)
+  const sx = useSx(props)
 
   return (
-    <Box component="footer" sx={styles.root}>
+    <Box component="footer" sx={sx.root}>
       footer
       {children}
     </Box>

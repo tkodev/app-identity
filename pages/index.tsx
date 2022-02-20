@@ -1,14 +1,11 @@
 import { NextPage } from 'next'
-import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
-import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
-import { Link } from '@/components/atoms/link'
-import { Layout } from '@/components/templates/layout'
+import { Box, Button, Typography, Container } from '@mui/material'
+import { Link } from '@/components/atoms'
+import { Page } from '@/components/templates'
 
 const Home: NextPage = () => {
   return (
-    <Layout title="Home" desc="Home">
+    <Page title="Home" desc="Home">
       <Container maxWidth="lg">
         <Box
           sx={{
@@ -29,7 +26,7 @@ const Home: NextPage = () => {
           </Box>
         </Box>
       </Container>
-    </Layout>
+    </Page>
   )
 }
 

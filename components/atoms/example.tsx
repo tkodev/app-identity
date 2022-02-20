@@ -1,21 +1,23 @@
 import React from 'react'
-import { makeStyles } from '@mui/styles'
+import { Box } from '@mui/material'
 
-const useStyles = makeStyles({
+type ExampleProps = {}
+
+const useSx = (props: ExampleProps) => ({
   root: {
     gridRow: 3
   }
 })
 
-const Example: React.FC = (props) => {
+const Example: React.FC<ExampleProps> = (props) => {
   const { children } = props
-  const styles = useStyles(props)
+  const sx = useSx(props)
 
   return (
-    <div className={styles.root}>
+    <Box sx={sx.root}>
       example
       {children}
-    </div>
+    </Box>
   )
 }
 

@@ -1,11 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import nextConnect from 'next-connect'
 
-type Data = {
-  name: string
-}
-
-const handler = (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  res.status(200).json({ name: 'John Doe' })
-}
+const handler = nextConnect<NextApiRequest, NextApiResponse>()
+  .use()
+  .get(async (req, res) => {
+    res.status(200).json({ name: 'John Doe' })
+  })
 
 export default handler

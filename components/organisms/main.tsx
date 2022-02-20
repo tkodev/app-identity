@@ -11,10 +11,10 @@ const useSx = (props: MainProps) => ({
 
 const Main: React.FC = (props) => {
   const { children } = props
-  const styles = useSx(props)
+  const sx = useSx(props)
 
   return (
-    <Box component="main" sx={styles.root}>
+    <Box component="main" sx={sx.root}>
       main
       {children}
     </Box>

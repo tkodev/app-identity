@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import { Link } from '@/components/atoms/link'
-import { Layout } from '@/components/templates/layout'
+import { Layout } from '@/components/templates/page'
 
 const About: NextPage = () => {
   return (
