@@ -1,9 +1,10 @@
 import React from 'react'
 import { Box } from '@mui/material'
+import { Sx } from '@/shared/types'
 
 type MainProps = {}
 
-const useSx = (props: MainProps) => ({
+const useSx = (props: MainProps): Sx => ({
   root: {
     gridRow: 2
   }

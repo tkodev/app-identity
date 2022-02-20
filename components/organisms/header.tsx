@@ -1,9 +1,10 @@
 import React from 'react'
 import { Box } from '@mui/material'
+import { Sx } from '@/shared/types'
 
 type HeaderProps = {}
 
-const useSx = (props: HeaderProps) => ({
+const useSx = (props: HeaderProps): Sx => ({
   root: {
     gridRow: 1
   }

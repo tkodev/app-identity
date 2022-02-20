@@ -1,16 +1,15 @@
 import React from 'react'
 import Head from 'next/head'
-import { Header } from '@/components/organisms/header'
-import { Footer } from '@/components/organisms/footer'
-import { Main } from '@/components/organisms/main'
+import { Header, Main, Footer } from '@/components/organisms'
 import { Box } from '@mui/material'
+import { Sx } from '@/shared/types'
 
 type PageProps = {
   title?: string
   desc?: string
 }
 
-const useSx = (props: PageProps) => ({
+const useSx = (props: PageProps): Sx => ({
   root: {
     display: 'grid',
     height: '100vh',
