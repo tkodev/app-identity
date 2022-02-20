@@ -30,7 +30,6 @@ const Page: React.FC<PageProps> = (props) => {
       <Header />
       <Main>{children}</Main>
       <Footer />
-      Page
     </Box>
   )
 }
