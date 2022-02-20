@@ -11,7 +11,7 @@ const createEmotionCache = () => {
 const createEmotionTags = (emotionCache: EmotionCache, html: string) => {
   const { extractCriticalToChunks } = createEmotionServer(emotionCache)
   const emotionStyles = extractCriticalToChunks(html)
-  const emotionTags = emotionsx.sx.map((style) => (
+  const emotionTags = emotionStyles.styles.map((style) => (
     <style
       data-emotion={`${style.key} ${style.ids.join(' ')}`}
       key={style.key}
