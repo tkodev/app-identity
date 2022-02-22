@@ -24,6 +24,14 @@ const createEmotionTags = (emotionCache: EmotionCache, html: string) => {
 const theme = createTheme({
   palette: {
     mode: 'dark'
+  },
+  typography: {
+    fontSize: 12,
+    fontFamily: '"Roboto Mono", monospace',
+    fontWeightLight: 300, // Design Guide Typography 'Light'
+    fontWeightRegular: 400, // Design Guide Typography 'Regular'
+    fontWeightMedium: 500, // Design Guide Typography 'Semibold'
+    fontWeightBold: 600 // Design Guide Typography 'Semibold' - applies to <strong> and <b> tags
   }
 })
 

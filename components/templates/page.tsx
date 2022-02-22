@@ -12,7 +12,7 @@ type PageProps = {
 const useSx = (props: PageProps): Sx => ({
   root: {
     display: 'grid',
-    height: '100vh',
+    minHeight: '100vh',
     gridTemplateRows: 'min-content 1fr min-content'
   }
 })
