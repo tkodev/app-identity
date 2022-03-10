@@ -1,13 +1,11 @@
 import React from 'react'
 import Head from 'next/head'
-import { Header, Main, Footer } from '@/components/organisms'
+import { Header, Main, Footer, SectionBasic } from '@/components/organisms'
+import { Sections } from '@/components/templates'
 import { Box } from '@mui/material'
-import { Sx } from '@/shared/types'
+import { Sx, CmsPage } from '@/shared/types'
 
-type PageProps = {
-  title?: string
-  desc?: string
-}
+type PageProps = {} & Partial<CmsPage>
 
 const useSx = (props: PageProps): Sx => ({
   root: {
@@ -18,7 +16,7 @@ const useSx = (props: PageProps): Sx => ({
 })
 
 const Page: React.FC<PageProps> = (props) => {
-  const { title, desc, children } = props
+  const { title, desc, sections, children } = props
   const sx = useSx(props)
 
   return (
@@ -28,7 +26,10 @@ const Page: React.FC<PageProps> = (props) => {
         {desc && <meta name="description" content={desc} />}
       </Head>
       <Header />
-      <Main>{children}</Main>
+      <Main>
+        <Sections sections={sections} />
+        <SectionBasic>{children}</SectionBasic>
+      </Main>
       <Footer />
     </Box>
   )

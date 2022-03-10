@@ -6,9 +6,7 @@ type MainProps = {}
 
 const useSx = (props: MainProps): Sx => ({
   root: {
-    gridRow: 2,
-    paddingTop: 1,
-    paddingBottom: 1
+    gridRow: 2
   }
 })
 

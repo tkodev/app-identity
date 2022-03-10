@@ -1,3 +1,3 @@
-const headerHeight = 68
+const headerHeight = 64
 
 export { headerHeight }

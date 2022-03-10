@@ -13,11 +13,15 @@ const useSx = (props: HeaderProps): Sx => ({
   root: {
     position: 'fixed',
     width: '100%',
-    minHeight: headerHeight,
+    height: headerHeight,
     backdropFilter: 'blur(10px)',
-    gridRow: 1,
-    paddingTop: 2,
-    paddingBottom: 2
+    gridRow: 1
+  },
+  container: {
+    height: '100%'
+  },
+  grid: {
+    height: '100%'
   },
   logo: {
     height: '100%',
@@ -56,20 +60,20 @@ const Header: React.FC = (props) => {
 
   return (
     <Box component="header" sx={sx.root}>
-      <Container fixed>
-        <Grid container spacing={1}>
-          <Grid item xs={2} md={1} sx={sx.logo}>
+      <Container fixed sx={sx.container}>
+        <Grid container sx={sx.grid}>
+          <Grid item xs={2} md={2} sx={sx.logo}>
             <Button>
-              <Image src="/images/logo-dark-crop@2x.png" alt="Logo" height="24px" fit="contain" />
+              <Image src="/images/logo-dark-crop@2x.png" alt="Logo" height="18px" fit="contain" />
             </Button>
           </Grid>
-          <Grid item xs={10} md={11} sx={sx.mobile}>
+          <Grid item xs={10} md={10} sx={sx.mobile}>
             <Box sx={sx.sep}>|</Box>
             <IconButton sx={sx.icon} aria-label="Menu">
               <FontAwesomeIcon icon={faBars} />
             </IconButton>
           </Grid>
-          <Grid item xs={10} md={11} sx={sx.desktop}>
+          <Grid item xs={10} md={10} sx={sx.desktop}>
             <Button sx={sx.nav}>01 - Works</Button>
             <Button sx={sx.nav}>02 - Blog</Button>
             <Button sx={sx.nav}>03 - About</Button>

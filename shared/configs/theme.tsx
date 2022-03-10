@@ -28,10 +28,14 @@ const theme = createTheme({
   typography: {
     fontSize: 12,
     fontFamily: '"Roboto Mono", monospace',
-    fontWeightLight: 300, // Design Guide Typography 'Light'
-    fontWeightRegular: 400, // Design Guide Typography 'Regular'
-    fontWeightMedium: 500, // Design Guide Typography 'Semibold'
-    fontWeightBold: 600 // Design Guide Typography 'Semibold' - applies to <strong> and <b> tags
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold: 600,
+    button: {
+      fontSize: 10,
+      letterSpacing: 2.5
+    }
   }
 })
 
