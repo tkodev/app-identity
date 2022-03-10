@@ -5,7 +5,9 @@ import { Sections } from '@/components/templates'
 import { Box } from '@mui/material'
 import { Sx, CmsPage } from '@/shared/types'
 
-type PageProps = {} & Partial<CmsPage>
+type PageProps = {
+  page?: CmsPage
+}
 
 const useSx = (props: PageProps): Sx => ({
   root: {
@@ -16,7 +18,8 @@ const useSx = (props: PageProps): Sx => ({
 })
 
 const Page: React.FC<PageProps> = (props) => {
-  const { title, desc, sections, children } = props
+  const { page, children } = props
+  const { title, desc, sections } = page ?? {}
   const sx = useSx(props)
 
   return (

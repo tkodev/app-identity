@@ -5,7 +5,7 @@ import { Page } from '@/components/templates'
 
 const Home: NextPage = () => {
   return (
-    <Page title="Home" desc="Home">
+    <Page>
       <Container maxWidth="lg">
         <Box
           sx={{
