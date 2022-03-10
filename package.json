@@ -3,6 +3,7 @@
   "description": "⚡ Codebase for Tony Ko's personal portfolio",
   "private": true,
   "scripts": {
+    "postinstall": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -45,6 +46,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-testing-library": "^5.0.5",
+    "husky": "^7.0.4",
     "jest": "^27.4.5",
     "jest-axe": "^5.0.1",
     "prettier": "^2.5.1",
