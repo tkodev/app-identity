@@ -1,4 +1,4 @@
-import { HelloStr } from '@/shared/types/hello'
+import { HelloStr } from '@/shared/types'
 
 const getHello = (helloStr: HelloStr) => helloStr
 

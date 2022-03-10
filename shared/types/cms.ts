@@ -1,3 +1,11 @@
+type CmsEntryParams = {
+  include: number
+}
+type CmsEntriesParams = {
+  include: number
+  limit: number
+}
+
 type CmsEntry = {
   uid: string
   title: string
@@ -19,4 +27,4 @@ type CmsPage = {
   sections: CmsSectionBasic[]
 } & CmsEntry
 
-export type { CmsPage, CmsSectionBasic, CmsSectionHome }
+export type { CmsEntryParams, CmsEntriesParams, CmsPage, CmsSectionBasic, CmsSectionHome }

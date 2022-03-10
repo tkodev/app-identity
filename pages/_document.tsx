@@ -1,5 +1,6 @@
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document'
-import { theme, createEmotionCache, createEmotionTags } from '@/shared/configs/theme'
+import { createEmotionCache, createEmotionTags } from '@/shared/configs'
+import { theme } from '@/shared/constants'
 
 type NextDocumentProps = {
   emotionTags?: JSX.Element[]
