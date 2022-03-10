@@ -5,7 +5,7 @@ import { Page } from '@/components/templates'
 
 const About: NextPage = () => {
   return (
-    <Page title="About" desc="About">
+    <Page>
       <Container maxWidth="lg">
         <Box
           sx={{
