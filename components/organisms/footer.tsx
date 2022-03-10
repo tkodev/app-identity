@@ -16,7 +16,6 @@ const Footer: React.FC<FooterProps> = (props) => {
 
   return (
     <Box component="footer" sx={sx.root}>
-      footer
       {children}
     </Box>
   )

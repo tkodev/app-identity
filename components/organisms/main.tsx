@@ -16,7 +16,6 @@ const Main: React.FC = (props) => {
 
   return (
     <Box component="main" sx={sx.root}>
-      main
       {children}
     </Box>
   )

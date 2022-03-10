@@ -17,7 +17,7 @@ type CmsSectionBasic = {
 } & CmsEntry
 
 type CmsSectionHome = {
-  //
+  showHeaderPadding?: number
 } & CmsSectionBasic
 
 type CmsPage = {
