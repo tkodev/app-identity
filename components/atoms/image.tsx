@@ -3,7 +3,6 @@ import { round as _round } from 'lodash'
 import { Box } from '@mui/material'
 import { Sx } from '@/shared/types'
 
-// types
 type ImageProps = {
   src: string
   alt: string
@@ -14,7 +13,6 @@ type ImageProps = {
   blockDownload?: boolean
 }
 
-// styles
 const useSx = (props: ImageProps): Sx => {
   const { width, height, aspectRatio, fit, blockDownload } = props
   return {
@@ -50,7 +48,6 @@ const useSx = (props: ImageProps): Sx => {
   }
 }
 
-// helpers
 const ratioToPercentStr = (aspectRatio: string) => {
   const ratio =
     aspectRatio
@@ -62,7 +59,6 @@ const ratioToPercentStr = (aspectRatio: string) => {
   return percent
 }
 
-// component
 const Image: React.VFC<ImageProps> = (props) => {
   const {
     src,
@@ -87,5 +83,4 @@ const Image: React.VFC<ImageProps> = (props) => {
   )
 }
 
-// export
 export { Image }

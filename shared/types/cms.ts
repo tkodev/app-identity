@@ -1,10 +1,11 @@
-type CmsEntryParams = {
-  include: number
+type CmsBasicParams = {
+  locale?: string
+  content_type?: string
+  include?: number
+  limit?: number
 }
-type CmsEntriesParams = {
-  include: number
-  limit: number
-}
+type CmsEntryParams = Omit<CmsBasicParams, 'limit'>
+type CmsEntriesParams = CmsBasicParams
 
 type CmsEntry = {
   uid: string
