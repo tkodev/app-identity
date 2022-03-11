@@ -4,10 +4,10 @@ import { Link } from '@/components/atoms'
 import { Page } from '@/components/templates'
 import { CmsPage } from '@/shared/types'
 import { axiosClient } from '@/shared/configs'
-import { Entry } from 'contentful'
+import { Entry, EntryCollection } from 'contentful'
 
 type HomePageProps = {
-  page?: CmsPage
+  page: CmsPage | null
 }
 
 const HomePage: NextPage<HomePageProps> = (props) => {
@@ -42,11 +42,15 @@ const HomePage: NextPage<HomePageProps> = (props) => {
 const getServerSideProps = async () => {
   const params = {
     content_type: 'page',
-    entryId: 'pageHome'
+    'fields.uid': 'pageHome'
   }
 
-  const pageEntry = await axiosClient.get<Entry<CmsPage>>('/cms/get-entry', { params }).then(({ data }) => data)
-  const page = pageEntry?.fields
+  const pageEntry = await axiosClient
+    .get<Entry<CmsPage>>('/cms/get-entry', { params })
+    .then(({ data }) => data)
+    .catch((err) => {})
+
+  const page = pageEntry?.fields ?? null
   const props: HomePageProps = { page }
 
   return { props }

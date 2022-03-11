@@ -15,7 +15,9 @@ const useSx = (props: HeaderProps): Sx => ({
     width: '100%',
     height: headerHeight,
     backdropFilter: 'blur(10px)',
-    gridRow: 1
+    gridRow: 1,
+    paddingTop: 2,
+    paddingBottom: 2
   },
   container: {
     height: '100%'

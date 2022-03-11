@@ -1,25 +1,27 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { getEntry as getEntryService, getEntries as getEntriesService } from '@/conductors/services'
+import { getEntries as getEntriesService } from '@/conductors/services'
 import { logClient } from '@/shared/configs'
+import { CONTENTFUL_MAX_DEPTH, CONTENTFUL_ENTRIES_LIMIT } from '@/shared/constants'
 
 const getEntry = () => async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const { rawEntryId, ...params } = req.query ?? {}
-    const entryId = String(rawEntryId ?? '')
+    const { ...params } = req.query ?? {}
 
-    const allParams = {
+    const fullParams = {
+      include: CONTENTFUL_MAX_DEPTH,
+      limit: 1,
       ...params
     }
 
-    const response = await getEntryService<any>({
-      params: allParams,
-      entryId
-    })
+    const response = await getEntriesService<any>({
+      params: fullParams
+    }).then(({ items }) => items?.[0])
 
     return res.json(response)
-  } catch (err) {
-    logClient.error('getEntries controller', err)
-    return res.status(500).json({ error: `Unable to getEntries: ${JSON.stringify(req.query)}` })
+  } catch (err: any) {
+    const code = err?.status || err?.sys?.id === 'NotFound' ? 404 : 500
+    logClient.error('getEntry controller', { code, err })
+    return res.status(code).json({ error: `Unable to getEntries: ${JSON.stringify(req.query)}` })
   }
 }
 
@@ -27,18 +29,21 @@ const getEntries = () => async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const params = req.query ?? {}
 
-    const allParams = {
+    const fullParams = {
+      include: CONTENTFUL_MAX_DEPTH,
+      limit: CONTENTFUL_ENTRIES_LIMIT,
       ...params
     }
 
     const response = await getEntriesService<any>({
-      params: allParams
+      params: fullParams
     })
 
     return res.json(response)
-  } catch (err) {
-    logClient.error('getEntries controller', err)
-    return res.status(500).json({ error: `Unable to getEntries: ${JSON.stringify(req.query)}` })
+  } catch (err: any) {
+    const code = err?.status || err?.sys?.id === 'NotFound' ? 404 : 500
+    logClient.error('getEntries controller', { code, err })
+    return res.status(code).json({ error: `Unable to getEntries: ${JSON.stringify(req.query)}` })
   }
 }
 

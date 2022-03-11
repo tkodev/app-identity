@@ -6,7 +6,7 @@ import { Box } from '@mui/material'
 import { Sx, CmsPage } from '@/shared/types'
 
 type PageProps = {
-  page?: CmsPage
+  page?: CmsPage | null
 }
 
 const useSx = (props: PageProps): Sx => ({

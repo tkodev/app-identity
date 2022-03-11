@@ -2,9 +2,10 @@ import React from 'react'
 import { Box } from '@mui/material'
 import { Sx, CmsSectionBasic } from '@/shared/types'
 import { SectionHome } from '@/components/organisms'
+import { Entry } from 'contentful'
 
 type SectionsProps = {
-  sections?: CmsSectionBasic[]
+  sections?: Entry<CmsSectionBasic>[]
 }
 
 const useSx = (props: SectionsProps): Sx => ({
@@ -19,11 +20,12 @@ const Sections: React.VFC<SectionsProps> = (props) => {
 
   return (
     <Box sx={sx.root}>
-      {sections?.map((section) => {
-        if (section.type === 'basic') {
+      {sections?.map(({ sys, fields: section }) => {
+        const contentType = sys.contentType.sys.id
+        if (contentType === 'sectionBasic') {
           return <SectionHome section={section} />
         }
-        if (section.type === 'home') {
+        if (contentType === 'sectionHome') {
           return <SectionHome section={section} />
         }
       })}

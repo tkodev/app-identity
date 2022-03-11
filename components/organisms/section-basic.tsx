@@ -17,7 +17,7 @@ const useSx = (props: SectionBasicProps): Sx => ({
 
 const SectionBasic: React.FC<SectionBasicProps> = (props) => {
   const { section, children } = props
-  const { title, desc, type } = section ?? {}
+  const { title, desc } = section ?? {}
   const sx = useSx(props)
 
   return (

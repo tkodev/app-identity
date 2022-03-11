@@ -12,4 +12,4 @@ const cmsConfig = {
 
 const cmsClient = createClient(cmsConfig)
 
-export { cmsClient }
+export { cmsClient, cmsConfig }

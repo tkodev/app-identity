@@ -9,9 +9,9 @@ type SectionHomeProps = {
 
 const useSx = (props: SectionHomeProps): Sx => ({
   root: {
-    paddingTop: props.section?.showHeaderPadding ? headerHeight : 0,
-    minHeight: 1080,
-    height: '80vh',
+    paddingTop: props.section?.isBehindHeader ? headerHeight : 0,
+    minHeight: '80vh',
+    height: '1080px',
     maxHeight: '100vh'
   },
   container: {
@@ -23,7 +23,8 @@ const useSx = (props: SectionHomeProps): Sx => ({
 
 const SectionHome: React.VFC<SectionHomeProps> = (props) => {
   const { section } = props
-  const { title, desc, type } = section ?? {}
+  const { title, desc } = section ?? {}
+
   const sx = useSx(props)
 
   return (

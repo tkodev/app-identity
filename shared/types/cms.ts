@@ -1,11 +1,11 @@
-type CmsBasicParams = {
+import { Entry } from 'contentful'
+
+type CmsEntriesParams = {
+  include: number
+  limit: number
   locale?: string
   content_type?: string
-  include?: number
-  limit?: number
 }
-type CmsEntryParams = Omit<CmsBasicParams, 'limit'>
-type CmsEntriesParams = CmsBasicParams
 
 type CmsEntry = {
   uid: string
@@ -14,18 +14,15 @@ type CmsEntry = {
 }
 
 type CmsSectionBasic = {
-  type: string
+  //
 } & CmsEntry
 
 type CmsSectionHome = {
-  showHeaderPadding?: number
-} & CmsSectionBasic
-
-type CmsPage = {
-  uid: string
-  title: string
-  desc: string
-  sections: CmsSectionBasic[]
+  isBehindHeader?: number
 } & CmsEntry
 
-export type { CmsEntryParams, CmsEntriesParams, CmsPage, CmsSectionBasic, CmsSectionHome }
+type CmsPage = {
+  sections: Entry<CmsSectionBasic>[]
+} & CmsEntry
+
+export type { CmsEntriesParams, CmsPage, CmsSectionBasic, CmsSectionHome }
