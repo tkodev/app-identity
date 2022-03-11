@@ -23,10 +23,10 @@ const Sections: React.VFC<SectionsProps> = (props) => {
       {sections?.map(({ sys, fields: section }) => {
         const contentType = sys.contentType.sys.id
         if (contentType === 'sectionBasic') {
-          return <SectionHome section={section} />
+          return <SectionHome section={section} key={section.uid} />
         }
         if (contentType === 'sectionHome') {
-          return <SectionHome section={section} />
+          return <SectionHome section={section} key={section.uid} />
         }
       })}
     </Box>

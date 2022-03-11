@@ -9,10 +9,17 @@ type SectionHomeProps = {
 
 const useSx = (props: SectionHomeProps): Sx => ({
   root: {
-    paddingTop: props.section?.isBehindHeader ? headerHeight : 0,
     minHeight: '80vh',
     height: '1080px',
-    maxHeight: '100vh'
+    maxHeight: '100vh',
+    display: 'grid',
+    gridTemplateRows: 'min-content 1fr'
+  },
+  spacer: {
+    height: props.section?.isBehindHeader ? headerHeight : 0
+  },
+  content: {
+    gridRow: 2
   },
   container: {
     height: '100%',
@@ -23,15 +30,18 @@ const useSx = (props: SectionHomeProps): Sx => ({
 
 const SectionHome: React.VFC<SectionHomeProps> = (props) => {
   const { section } = props
-  const { title, desc } = section ?? {}
+  const { title, desc, isBehindHeader } = section ?? {}
 
   const sx = useSx(props)
 
   return (
     <Box sx={sx.root}>
-      <Container fixed sx={sx.container}>
-        test
-      </Container>
+      <Box sx={sx.spacer} />
+      <Box sx={sx.content}>
+        <Container fixed sx={sx.container}>
+          test
+        </Container>
+      </Box>
     </Box>
   )
 }
