@@ -6,14 +6,15 @@ const theme = createTheme({
   },
   typography: {
     fontSize: 12,
-    fontFamily: '"Roboto Mono", monospace',
-    fontWeightLight: 300,
-    fontWeightRegular: 400,
-    fontWeightMedium: 500,
-    fontWeightBold: 600,
+    fontFamily: '"Carbon", monospace',
+    fontWeightLight: 'thin',
+    fontWeightRegular: 'normal',
+    fontWeightMedium: 'bold',
+    fontWeightBold: 'bold',
     button: {
-      fontSize: 10,
-      letterSpacing: 2.5
+      fontSize: 12,
+      letterSpacing: 2.5,
+      fontWeight: 'normal'
     }
   }
 })
