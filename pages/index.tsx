@@ -2,10 +2,19 @@ import { NextPage } from 'next'
 import { Box, Button, Typography, Container } from '@mui/material'
 import { Link } from '@/components/atoms'
 import { Page } from '@/components/templates'
+import { CmsPage } from '@/shared/types'
+import { axiosClient } from '@/shared/configs'
+import { Entry } from 'contentful'
 
-const Home: NextPage = () => {
+type HomePageProps = {
+  page?: CmsPage
+}
+
+const HomePage: NextPage<HomePageProps> = (props) => {
+  const { page } = props
+
   return (
-    <Page>
+    <Page page={page}>
       <Container maxWidth="lg">
         <Box
           sx={{
@@ -30,4 +39,18 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+const getServerSideProps = async () => {
+  const params = {
+    content_type: 'page',
+    entryId: 'pageHome'
+  }
+
+  const pageEntry = await axiosClient.get<Entry<CmsPage>>('/cms/get-entry', { params }).then(({ data }) => data)
+  const page = pageEntry?.fields
+  const props: HomePageProps = { page }
+
+  return { props }
+}
+
+export { getServerSideProps }
+export default HomePage

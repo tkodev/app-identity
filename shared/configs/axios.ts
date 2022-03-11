@@ -1,9 +1,8 @@
 import axios from 'axios'
+import { API_HOST } from '@/shared/constants'
 
 const axiosClient = axios.create({
-  // baseURL: 'https://some-domain.com/api/',
-  // timeout: 1000,
-  // headers: {'X-Custom-Header': 'foobar'}
+  baseURL: API_HOST
 })
 
 export { axiosClient }

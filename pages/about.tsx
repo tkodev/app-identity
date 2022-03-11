@@ -3,7 +3,7 @@ import { Box, Button, Typography, Container } from '@mui/material'
 import { Link } from '@/components/atoms'
 import { Page } from '@/components/templates'
 
-const About: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <Page>
       <Container maxWidth="lg">
@@ -30,4 +30,4 @@ const About: NextPage = () => {
   )
 }
 
-export default About
+export default AboutPage

@@ -11,7 +11,7 @@ const getEntry = () => async (req: NextApiRequest, res: NextApiResponse) => {
       ...params
     }
 
-    const response = await getEntryService({
+    const response = await getEntryService<any>({
       params: allParams,
       entryId
     })
@@ -31,7 +31,7 @@ const getEntries = () => async (req: NextApiRequest, res: NextApiResponse) => {
       ...params
     }
 
-    const response = await getEntriesService({
+    const response = await getEntriesService<any>({
       params: allParams
     })
 
