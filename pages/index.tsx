@@ -2,9 +2,9 @@ import { NextPage } from 'next'
 import { Box, Button, Typography, Container } from '@mui/material'
 import { Link } from '@/components/atoms'
 import { Page } from '@/components/templates'
-import { CmsPage } from '@/shared/types'
-import { axiosClient } from '@/shared/configs'
-import { Entry, EntryCollection } from 'contentful'
+import { CmsPage } from '@/types'
+import { axiosClient } from '@/utils'
+import { Entry } from 'contentful'
 
 type HomePageProps = {
   page: CmsPage | null

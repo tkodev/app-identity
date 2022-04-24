@@ -1,21 +1,19 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { getEntries as getEntriesService } from '@/conductors/services'
-import { logClient } from '@/shared/configs'
-import { CONTENTFUL_MAX_DEPTH, CONTENTFUL_ENTRIES_LIMIT } from '@/shared/constants'
+import { logClient, cmsClient } from '@/utils'
+import { CONTENTFUL_MAX_DEPTH, CONTENTFUL_ENTRIES_LIMIT } from '@/utils/env'
+import { CmsEntriesRequest } from '@/types'
 
 const getEntry = () => async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const { ...params } = req.query ?? {}
 
-    const fullParams = {
+    const fullParams: CmsEntriesRequest = {
       include: CONTENTFUL_MAX_DEPTH,
       limit: 1,
       ...params
     }
 
-    const response = await getEntriesService<any>({
-      params: fullParams
-    }).then(({ items }) => items?.[0])
+    const response = await cmsClient.getEntries<any>(fullParams).then(({ items }) => items?.[0])
 
     return res.json(response)
   } catch (err: any) {
@@ -29,15 +27,13 @@ const getEntries = () => async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const params = req.query ?? {}
 
-    const fullParams = {
+    const fullParams: CmsEntriesRequest = {
       include: CONTENTFUL_MAX_DEPTH,
       limit: CONTENTFUL_ENTRIES_LIMIT,
       ...params
     }
 
-    const response = await getEntriesService<any>({
-      params: fullParams
-    })
+    const response = await cmsClient.getEntries<any>(fullParams)
 
     return res.json(response)
   } catch (err: any) {

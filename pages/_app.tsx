@@ -3,8 +3,8 @@ import { AppProps } from 'next/app'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import { CacheProvider, EmotionCache } from '@emotion/react'
-import { createEmotionCache } from '@/shared/configs'
-import { theme } from '@/shared/constants'
+import { createEmotionCache } from '@/utils'
+import { theme } from '@/utils/theme'
 
 type NextAppProps = {
   emotionCache?: EmotionCache

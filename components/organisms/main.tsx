@@ -1,16 +1,20 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { Sx } from '@/shared/types'
+import { makeSx } from '@/queries'
 
-type MainProps = {}
+type MainProps = {
+  //
+}
 
-const useSx = (props: MainProps): Sx => ({
-  root: {
-    gridRow: 2
+const useSx = makeSx<MainProps>((props) => {
+  return {
+    root: {
+      gridRow: 2
+    }
   }
 })
 
-const Main: React.FC = (props) => {
+const Main: React.FC<MainProps> = (props) => {
   const { children } = props
   const sx = useSx(props)
 

@@ -1,12 +1,16 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { Sx } from '@/shared/types'
+import { makeSx } from '@/queries'
 
-type FooterProps = {}
+type FooterProps = {
+  //
+}
 
-const useSx = (props: FooterProps): Sx => ({
-  root: {
-    gridRow: 3
+const useSx = makeSx<FooterProps>(() => {
+  return {
+    root: {
+      gridRow: 3
+    }
   }
 })
 

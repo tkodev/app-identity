@@ -1,19 +1,22 @@
 import React from 'react'
 import Head from 'next/head'
-import { Header, Main, Footer, SectionBasic } from '@/components/organisms'
+import { Header, Main, Footer, Section } from '@/components/organisms'
 import { Sections } from '@/components/templates'
 import { Box } from '@mui/material'
-import { Sx, CmsPage } from '@/shared/types'
+import { CmsPage } from '@/types'
+import { makeSx } from '@/queries'
 
 type PageProps = {
   page?: CmsPage | null
 }
 
-const useSx = (props: PageProps): Sx => ({
-  root: {
-    minHeight: '100vh',
-    display: 'grid',
-    gridTemplateRows: 'min-content 1fr min-content'
+const useSx = makeSx<PageProps>(() => {
+  return {
+    root: {
+      minHeight: '100vh',
+      display: 'grid',
+      gridTemplateRows: 'min-content 1fr min-content'
+    }
   }
 })
 
@@ -31,7 +34,7 @@ const Page: React.FC<PageProps> = (props) => {
       <Header />
       <Main>
         <Sections sections={sections} />
-        <SectionBasic>{children}</SectionBasic>
+        <Section>{children}</Section>
       </Main>
       <Footer />
     </Box>

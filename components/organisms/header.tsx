@@ -1,63 +1,67 @@
 import React from 'react'
 import { Box, Container, Grid, Button, IconButton } from '@mui/material'
 import { Image } from '@/components/atoms'
-import { Sx } from '@/shared/types'
+import { makeSx } from '@/queries'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { headerHeight } from '@/shared/constants'
 
-type HeaderProps = {}
+type HeaderProps = {
+  headerHeight?: number
+}
 
-const useSx = (props: HeaderProps): Sx => ({
-  root: {
-    position: 'fixed',
-    width: '100%',
-    height: headerHeight,
-    backdropFilter: 'blur(10px)',
-    gridRow: 1
-  },
-  container: {
-    height: '100%',
-    paddingTop: 2,
-    paddingBottom: 2
-  },
-  grid: {
-    height: '100%'
-  },
-  logo: {
-    height: '100%',
-    display: 'flex',
-    alignItems: 'center'
-  },
-  mobile: {
-    height: '100%',
-    display: { xs: 'flex', sm: 'none' },
-    alignItems: 'center',
-    justifyContent: 'flex-end'
-  },
-  desktop: {
-    height: '100%',
-    display: { xs: 'none', sm: 'flex' },
-    alignItems: 'center',
-    justifyContent: 'flex-end'
-  },
-  nav: {
-    marginLeft: 1,
-    textTransform: 'uppercase',
-    color: 'white'
-  },
-  sep: {
-    marginRight: 2,
-    marginLeft: 2,
-    marginTop: '-2px'
-  },
-  icon: {
-    textTransform: 'uppercase'
+const useSx = makeSx<HeaderProps>((props) => {
+  const { headerHeight } = props
+  return {
+    root: {
+      position: 'fixed',
+      width: '100%',
+      height: headerHeight,
+      backdropFilter: 'blur(10px)',
+      gridRow: 1
+    },
+    container: {
+      height: '100%',
+      paddingTop: 2,
+      paddingBottom: 2
+    },
+    grid: {
+      height: '100%'
+    },
+    logo: {
+      height: '100%',
+      display: 'flex',
+      alignItems: 'center'
+    },
+    mobile: {
+      height: '100%',
+      display: { xs: 'flex', sm: 'none' },
+      alignItems: 'center',
+      justifyContent: 'flex-end'
+    },
+    desktop: {
+      height: '100%',
+      display: { xs: 'none', sm: 'flex' },
+      alignItems: 'center',
+      justifyContent: 'flex-end'
+    },
+    nav: {
+      marginLeft: 1,
+      textTransform: 'uppercase',
+      color: 'white'
+    },
+    sep: {
+      marginRight: 2,
+      marginLeft: 2,
+      marginTop: '-2px'
+    },
+    icon: {
+      textTransform: 'uppercase'
+    }
   }
 })
 
-const Header: React.FC = (props) => {
+const Header: React.FC<HeaderProps> = (props) => {
   const sx = useSx(props)
 
   return (

@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-css-tags */
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document'
-import { createEmotionCache, createEmotionTags } from '@/shared/configs'
-import { theme } from '@/shared/constants'
+import { createEmotionCache, createEmotionTags } from '@/utils'
+import { theme } from '@/utils/theme'
 
 type NextDocumentProps = {
   emotionTags?: JSX.Element[]
@@ -21,7 +22,6 @@ const NextDocument = (props: NextDocumentProps = {}) => {
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,400&display=swap"
         />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-        {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="/fonts/carbon/index.css" />
         {emotionTags}
       </Head>

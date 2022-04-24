@@ -1,7 +1,7 @@
 import React from 'react'
-import { round as _round } from 'lodash'
 import { Box } from '@mui/material'
-import { Sx } from '@/shared/types'
+import { makeSx } from '@/queries'
+import { ratioToPercentStr } from '@/utils'
 
 type ImageProps = {
   src: string
@@ -13,7 +13,7 @@ type ImageProps = {
   blockDownload?: boolean
 }
 
-const useSx = (props: ImageProps): Sx => {
+const useSx = makeSx<ImageProps>((props) => {
   const { width, height, aspectRatio, fit, blockDownload } = props
   return {
     root: {
@@ -46,18 +46,7 @@ const useSx = (props: ImageProps): Sx => {
       zIndex: !blockDownload ? -1 : 'auto'
     }
   }
-}
-
-const ratioToPercentStr = (aspectRatio: string) => {
-  const ratio =
-    aspectRatio
-      .split(':')
-      .map(Number)
-      .reduce((prev, cur) => cur / prev) || 0
-  const decimal = _round(ratio, 4)
-  const percent = `${decimal * 100}%`
-  return percent
-}
+})
 
 const Image: React.VFC<ImageProps> = (props) => {
   const {
