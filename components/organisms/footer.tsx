@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { makeSx } from '@/queries'
+import { createSx } from '@/conductors/hooks'
 
 type FooterProps = {
   //
 }
 
-const useSx = makeSx<FooterProps>(() => {
+const useSx = createSx<FooterProps>(() => {
   return {
     root: {
       gridRow: 3

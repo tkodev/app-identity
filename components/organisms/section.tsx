@@ -1,13 +1,14 @@
 import React from 'react'
+import { Entry } from 'contentful'
 import { Box, Container } from '@mui/material'
-import { CmsSection } from '@/types'
-import { makeSx } from '@/queries'
+import { CmsSection } from '@/conductors/types'
+import { createSx } from '@/conductors/hooks'
 
 type SectionProps = {
-  section?: CmsSection
+  section?: Entry<CmsSection>
 }
 
-const useSx = makeSx<SectionProps>(() => {
+const useSx = createSx<SectionProps>(() => {
   return {
     root: {},
     container: {
@@ -20,6 +21,8 @@ const useSx = makeSx<SectionProps>(() => {
 
 const Section: React.FC<SectionProps> = (props) => {
   const { section, children } = props
+  const { fields } = section ?? {}
+  const { title, desc, type, image, attributes } = fields ?? {}
   const sx = useSx(props)
 
   return (

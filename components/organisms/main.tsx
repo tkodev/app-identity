@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { makeSx } from '@/queries'
+import { createSx } from '@/conductors/hooks'
 
 type MainProps = {
   //
 }
 
-const useSx = makeSx<MainProps>((props) => {
+const useSx = createSx<MainProps>((props) => {
   return {
     root: {
       gridRow: 2

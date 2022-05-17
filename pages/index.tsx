@@ -2,12 +2,12 @@ import { NextPage } from 'next'
 import { Box, Button, Typography, Container } from '@mui/material'
 import { Link } from '@/components/atoms'
 import { Page } from '@/components/templates'
-import { CmsPage } from '@/types'
-import { axiosClient } from '@/utils'
+import { CmsPage } from '@/conductors/types'
 import { Entry } from 'contentful'
+import { getCmsEntries } from '@/conductors/queries'
 
 type HomePageProps = {
-  page: CmsPage | null
+  page: Entry<CmsPage> | null
 }
 
 const HomePage: NextPage<HomePageProps> = (props) => {
@@ -41,16 +41,13 @@ const HomePage: NextPage<HomePageProps> = (props) => {
 
 const getServerSideProps = async () => {
   const params = {
-    content_type: 'page',
+    contentType: 'page',
     'fields.uid': 'pageHome'
   }
 
-  const pageEntry = await axiosClient
-    .get<Entry<CmsPage>>('/cms/get-entry', { params })
-    .then(({ data }) => data)
-    .catch((err) => {})
+  const pages = await getCmsEntries<CmsPage>(params)
+  const page = pages.items[0]
 
-  const page = pageEntry?.fields ?? null
   const props: HomePageProps = { page }
 
   return { props }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Container, Grid, Button, IconButton } from '@mui/material'
 import { Image } from '@/components/atoms'
-import { makeSx } from '@/queries'
+import { createSx } from '@/conductors/hooks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,7 @@ type HeaderProps = {
   headerHeight?: number
 }
 
-const useSx = makeSx<HeaderProps>((props) => {
+const useSx = createSx<HeaderProps>((props) => {
   const { headerHeight } = props
   return {
     root: {

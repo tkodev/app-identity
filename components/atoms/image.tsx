@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { makeSx } from '@/queries'
-import { ratioToPercentStr } from '@/utils'
+import { createSx } from '@/conductors/hooks'
+import { ratioToPercentStr } from '@/conductors/utils'
 
 type ImageProps = {
   src: string
@@ -13,7 +13,7 @@ type ImageProps = {
   blockDownload?: boolean
 }
 
-const useSx = makeSx<ImageProps>((props) => {
+const useSx = createSx<ImageProps>((props) => {
   const { width, height, aspectRatio, fit, blockDownload } = props
   return {
     root: {

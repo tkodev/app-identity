@@ -1,15 +1,15 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { CmsSection } from '@/types'
-import { Section } from '@/components/organisms'
 import { Entry } from 'contentful'
-import { makeSx } from '@/queries'
+import { CmsSection, CmsSectionGroup } from '@/conductors/types'
+import { Section } from '@/components/organisms'
+import { createSx } from '@/conductors/hooks'
 
 type SectionsProps = {
-  sections?: Entry<CmsSection>[]
+  sectionGroup?: Entry<CmsSectionGroup> | null
 }
 
-const useSx = makeSx<SectionsProps>(() => {
+const useSx = createSx<SectionsProps>(() => {
   return {
     root: {
       //
@@ -18,15 +18,21 @@ const useSx = makeSx<SectionsProps>(() => {
 })
 
 const Sections: React.VFC<SectionsProps> = (props) => {
-  const { sections } = props
+  const { sectionGroup } = props
+  const { fields } = sectionGroup ?? {}
+  const { sections } = fields ?? {}
   const sx = useSx(props)
 
   return (
     <Box sx={sx.root}>
-      {sections?.map(({ sys, fields: section }) => {
-        const contentType = sys.contentType.sys.id
+      {sections?.items.map((item) => {
+        const contentType = item.sys.contentType.sys.id
         if (contentType === 'section') {
-          return <Section section={section} key={sys.id} />
+          return <Section section={item as Entry<CmsSection>} key={item.sys.id} />
+        }
+        if (contentType === 'sectionGroup') {
+          // todo: use section carousel instead of section group
+          return <Sections sectionGroup={item as Entry<CmsSectionGroup>} key={item.sys.id} />
         }
       })}
     </Box>

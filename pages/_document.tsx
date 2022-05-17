@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-css-tags */
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document'
-import { createEmotionCache, createEmotionTags } from '@/utils'
-import { theme } from '@/utils/theme'
+import { createEmotionCache, createEmotionTags } from '@/conductors/utils'
+import { theme } from '@/conductors/utils/theme'
 
 type NextDocumentProps = {
   emotionTags?: JSX.Element[]

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { makeSx } from '@/queries'
+import { createSx } from '@/conductors/hooks'
 
 type ExampleProps = {
   //
 }
 
-const useSx = makeSx<ExampleProps>((props, theme) => {
+const useSx = createSx<ExampleProps>((props, theme) => {
   return {
     root: {
       color: 'red'
