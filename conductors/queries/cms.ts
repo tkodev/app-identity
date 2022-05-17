@@ -16,7 +16,7 @@ type CmsEntriesResponse<T = any> = EntryCollection<T>
 
 const getCmsEntries = async <T = CmsEntry>(params: CmsEntriesRequest) => {
   return axiosClient
-    .get<CmsEntriesResponse<T>>(`/api/cms/get-entries`, {
+    .get<CmsEntriesResponse<T>>(`/api/get-cms-entries`, {
       params
     })
     .then(({ data }) => data)
