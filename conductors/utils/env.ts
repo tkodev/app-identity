@@ -1,6 +1,4 @@
 const NODE_ENV = String(process.env.NODE_ENV || 'development')
-const API_HOST = String(process.env.NEXT_PUBLIC_API_HOST || 'http://localhost:3000/api')
-
 const CONTENTFUL_HOST = String(process.env.CONTENTFUL_HOST || 'https://cdn.contentful.com')
 const CONTENTFUL_SPACE = String(process.env.CONTENTFUL_SPACE || '1234567890')
 const CONTENTFUL_ENV = String(process.env.CONTENTFUL_ENV || 'main')
@@ -11,7 +9,6 @@ const CONTENTFUL_LOCALE = String(process.env.CONTENTFUL_LOCALE || 'en-ca')
 
 export {
   NODE_ENV,
-  API_HOST,
   CONTENTFUL_HOST,
   CONTENTFUL_SPACE,
   CONTENTFUL_ENV,
