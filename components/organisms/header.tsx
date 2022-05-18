@@ -56,6 +56,8 @@ const useSx = createSx<HeaderProps>((props, theme) => {
       marginTop: '-2px'
     },
     icon: {
+      width: 36,
+      height: 36,
       textTransform: 'uppercase'
     }
   }
