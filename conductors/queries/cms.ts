@@ -30,7 +30,7 @@ const useCmsEntries = <T = CmsEntry>(params: CmsEntriesRequest) => {
   })
 }
 
-const ssrCmsEntries = async <T = CmsEntry>(params: CmsEntriesRequest, queryClient: QueryClient) => {
+const ssrCmsEntries = <T = CmsEntry>(params: CmsEntriesRequest, queryClient: QueryClient) => {
   const cacheKey = createCacheKey(params)
 
   return queryClient.prefetchQuery([QUERY_KEY_CMS_ENTRIES, cacheKey], () => {
