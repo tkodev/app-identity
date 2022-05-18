@@ -26,7 +26,7 @@ type CmsSection = CmsEntry<{
   attributes: Record<string, string>
 }>
 type CmsSectionGroup = CmsEntry<{
-  sections: EntryCollection<CmsSection | CmsSectionGroup>
+  sections: Entry<CmsSection | CmsSectionGroup>[]
 }>
 
 // pages and sites

@@ -1,3 +1,8 @@
+const NODE_ENV = String(process.env.NODE_ENV || 'development')
+
+const APP_HOST = String(process.env.REACT_APP_APP_HOST ?? '') || 'https://localhost:3000'
+const API_HOST = String(process.env.REACT_APP_API_HOST ?? '') || 'https://localhost:3000/api'
+
 const CONTENTFUL_HOST = String(process.env.CONTENTFUL_HOST ?? '') || 'https://cdn.contentful.com'
 const CONTENTFUL_SPACE = String(process.env.CONTENTFUL_SPACE ?? '') || '1234567890'
 const CONTENTFUL_ENV = String(process.env.CONTENTFUL_ENV ?? '') || 'main'
@@ -6,15 +11,15 @@ const CONTENTFUL_ENTRIES_LIMIT = Number(process.env.CONTENTFUL_ENTRIES_LIMIT) ||
 const CONTENTFUL_MAX_DEPTH = Number(process.env.CONTENTFUL_MAX_DEPTH) || 10
 const CONTENTFUL_LOCALE = String(process.env.CONTENTFUL_LOCALE ?? '') || 'en-ca'
 
-const API_HOST = String(process.env.REACT_APP_API_HOST ?? '') || 'https://localhost:3000/api'
-
 export {
+  NODE_ENV,
+  APP_HOST,
+  API_HOST,
   CONTENTFUL_HOST,
   CONTENTFUL_SPACE,
   CONTENTFUL_ENV,
   CONTENTFUL_TOKEN,
   CONTENTFUL_ENTRIES_LIMIT,
   CONTENTFUL_MAX_DEPTH,
-  CONTENTFUL_LOCALE,
-  API_HOST
+  CONTENTFUL_LOCALE
 }

@@ -7,11 +7,11 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 type HeaderProps = {
-  headerHeight?: number
+  //
 }
 
-const useSx = createSx<HeaderProps>((props) => {
-  const { headerHeight } = props
+const useSx = createSx<HeaderProps>((props, theme) => {
+  const { headerHeight } = theme.options
   return {
     root: {
       position: 'fixed',

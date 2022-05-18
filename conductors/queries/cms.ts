@@ -1,4 +1,4 @@
-import { useQuery } from 'react-query'
+import { QueryClient, useQuery } from 'react-query'
 import { axiosClient, createCacheKey } from '@/conductors/utils'
 import { EntryCollection } from 'contentful'
 import { CmsEntry } from '@/conductors/types'
@@ -16,19 +16,27 @@ type CmsEntriesResponse<T = any> = EntryCollection<T>
 
 const getCmsEntries = async <T = CmsEntry>(params: CmsEntriesRequest) => {
   return axiosClient
-    .get<CmsEntriesResponse<T>>(`/api/get-cms-entries`, {
+    .get<CmsEntriesResponse<T>>(`/get-cms-entries`, {
       params
     })
     .then(({ data }) => data)
 }
 
-function useCmsEntries(params: CmsEntriesRequest) {
+const useCmsEntries = <T = CmsEntry>(params: CmsEntriesRequest) => {
   const cacheKey = createCacheKey(params)
 
   return useQuery([QUERY_KEY_CMS_ENTRIES, cacheKey], () => {
-    return getCmsEntries(params)
+    return getCmsEntries<T>(params)
   })
 }
 
-export { QUERY_KEY_CMS_ENTRIES, getCmsEntries, useCmsEntries }
+const ssrCmsEntries = async <T = CmsEntry>(params: CmsEntriesRequest, queryClient: QueryClient) => {
+  const cacheKey = createCacheKey(params)
+
+  return queryClient.prefetchQuery([QUERY_KEY_CMS_ENTRIES, cacheKey], () => {
+    return getCmsEntries<T>(params)
+  })
+}
+
+export { QUERY_KEY_CMS_ENTRIES, getCmsEntries, useCmsEntries, ssrCmsEntries }
 export type { CmsEntriesRequest, CmsEntriesResponse }

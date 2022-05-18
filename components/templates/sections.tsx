@@ -17,24 +17,24 @@ const useSx = createSx<SectionsProps>(() => {
   }
 })
 
-const Sections: React.VFC<SectionsProps> = (props) => {
-  const { sectionGroup } = props
-  const { fields } = sectionGroup ?? {}
-  const { sections } = fields ?? {}
+const Sections: React.FC<SectionsProps> = (props) => {
+  const { sectionGroup, children } = props
+  const { sections } = sectionGroup?.fields ?? {}
   const sx = useSx(props)
 
   return (
     <Box sx={sx.root}>
-      {sections?.items.map((item) => {
-        const contentType = item.sys.contentType.sys.id
+      {sections?.map((section, sectionIndex) => {
+        const contentType = section.sys.contentType.sys.id
         if (contentType === 'section') {
-          return <Section section={item as Entry<CmsSection>} key={item.sys.id} />
+          return <Section section={section as Entry<CmsSection>} sectionIndex={sectionIndex} key={section.sys.id} />
         }
         if (contentType === 'sectionGroup') {
           // todo: use section carousel instead of section group
-          return <Sections sectionGroup={item as Entry<CmsSectionGroup>} key={item.sys.id} />
+          return <Sections sectionGroup={section as Entry<CmsSectionGroup>} key={section.sys.id} />
         }
       })}
+      {children && <Section>{children}</Section>}
     </Box>
   )
 }

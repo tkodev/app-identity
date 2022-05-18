@@ -1,5 +1,18 @@
 import { createTheme } from '@mui/material/styles'
 
+declare module '@mui/material/styles' {
+  interface Theme {
+    options: {
+      headerHeight: string
+    }
+  }
+  interface ThemeOptions {
+    options: {
+      headerHeight: string
+    }
+  }
+}
+
 const theme = createTheme({
   palette: {
     mode: 'dark'
@@ -16,6 +29,9 @@ const theme = createTheme({
       letterSpacing: 2.5,
       fontWeight: 'normal'
     }
+  },
+  options: {
+    headerHeight: '70px'
   }
 })
 

@@ -2,19 +2,27 @@ import { NextPage } from 'next'
 import { Box, Button, Typography, Container } from '@mui/material'
 import { Link } from '@/components/atoms'
 import { Page } from '@/components/templates'
-import { CmsPage } from '@/conductors/types'
-import { Entry } from 'contentful'
-import { getCmsEntries } from '@/conductors/queries'
+import { CmsPage, CmsSite } from '@/conductors/types'
+import { useCmsEntries, ssrCmsEntries } from '@/conductors/queries'
+import { ssrQueryClient } from '@/conductors/utils/query'
 
-type HomePageProps = {
-  page: Entry<CmsPage> | null
+const pageParams = {
+  contentType: 'page',
+  'fields.alias': 'page-home'
+}
+const siteParams = {
+  contentType: 'site',
+  'fields.alias': 'site-tkodev'
 }
 
-const HomePage: NextPage<HomePageProps> = (props) => {
-  const { page } = props
+const HomePage: NextPage = () => {
+  const { data: pages } = useCmsEntries<CmsPage>(pageParams)
+  const { data: sites } = useCmsEntries<CmsSite>(siteParams)
+  const page = pages?.items[0]
+  const site = sites?.items[0]
 
   return (
-    <Page page={page}>
+    <Page page={page} site={site}>
       <Container maxWidth="lg">
         <Box
           sx={{
@@ -40,17 +48,16 @@ const HomePage: NextPage<HomePageProps> = (props) => {
 }
 
 const getServerSideProps = async () => {
-  const params = {
-    contentType: 'page',
-    'fields.uid': 'pageHome'
+  const dehydratedState = await ssrQueryClient(async (queryClient) => {
+    await ssrCmsEntries<CmsSite>(siteParams, queryClient)
+    await ssrCmsEntries<CmsPage>(pageParams, queryClient)
+  })
+
+  return {
+    props: {
+      dehydratedState
+    }
   }
-
-  const pages = await getCmsEntries<CmsPage>(params)
-  const page = pages.items[0]
-
-  const props: HomePageProps = { page }
-
-  return { props }
 }
 
 export { getServerSideProps }

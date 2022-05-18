@@ -4,6 +4,8 @@ import { CONTENTFUL_MAX_DEPTH, CONTENTFUL_ENTRIES_LIMIT, CONTENTFUL_LOCALE } fro
 import { snakeCase } from 'change-case'
 import { CmsEntriesRequest, CmsEntriesResponse } from '@/conductors/queries'
 
+const snakeKeys = ['contentType']
+
 const getCmsEntries = () => async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const params = mapObjBy(req.query ?? {}, (val) => String(val))
@@ -13,7 +15,9 @@ const getCmsEntries = () => async (req: NextApiRequest, res: NextApiResponse) =>
       limit: CONTENTFUL_ENTRIES_LIMIT,
       ...params
     }
-    const snakeParams = keyObjBy(fullParams, (_, key) => snakeCase(key))
+    const snakeParams = keyObjBy(fullParams, (_, key) => {
+      return snakeKeys.includes(key) ? snakeCase(key) : key
+    })
 
     const response: CmsEntriesResponse = await cmsClient.getEntries(snakeParams)
 

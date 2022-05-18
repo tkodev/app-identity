@@ -32,7 +32,7 @@ const createCacheKey = (obj: Record<string, any>): string => {
   const cacheKeys = Object.keys(obj)
     .sort((a, b) => a.localeCompare(b))
     .map((key) => {
-      const newKey = `"${JSON.stringify(key)}"`
+      const newKey = JSON.stringify(key)
       const newVal = typeof obj[key] === 'object' ? createCacheKey(obj[key]) : JSON.stringify(obj[key])
       const cacheKey = `${newKey}:${newVal}`
       return cacheKey
