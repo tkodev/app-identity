@@ -1,10 +1,10 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { logClient, cmsClient, keyObjBy, mapObjBy } from '@/conductors/utils'
 import { CONTENTFUL_MAX_DEPTH, CONTENTFUL_ENTRIES_LIMIT, CONTENTFUL_LOCALE } from '@/conductors/utils/env'
-import { snakeCase } from 'change-case'
+import { snakeCase, dotCase } from 'change-case'
 import { CmsEntriesRequest, CmsEntriesResponse } from '@/conductors/queries'
 
-const snakeKeys = ['contentType']
+const dotCasePrefixes = ['fields.']
 
 const getCmsEntries = () => async (req: NextApiRequest, res: NextApiResponse) => {
   try {
@@ -15,11 +15,13 @@ const getCmsEntries = () => async (req: NextApiRequest, res: NextApiResponse) =>
       limit: CONTENTFUL_ENTRIES_LIMIT,
       ...params
     }
-    const snakeParams = keyObjBy(fullParams, (_, key) => {
-      return snakeKeys.includes(key) ? snakeCase(key) : key
+    const casedParams = keyObjBy(fullParams, (_, key) => {
+      const dotCasedKey = dotCase(key)
+      const shouldUseDotCase = dotCasePrefixes.some((prefix) => dotCasedKey.startsWith(prefix))
+      return shouldUseDotCase ? dotCase(key) : snakeCase(key)
     })
 
-    const response: CmsEntriesResponse = await cmsClient.getEntries(snakeParams)
+    const response: CmsEntriesResponse = await cmsClient.getEntries(casedParams)
 
     return res.json(response)
   } catch (err: any) {

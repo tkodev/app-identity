@@ -8,11 +8,11 @@ import { ssrQueryClient } from '@/conductors/utils/query'
 
 const pageParams = {
   contentType: 'page',
-  'fields.alias': 'page-home'
+  fieldsAlias: 'page-home'
 }
 const siteParams = {
   contentType: 'site',
-  'fields.alias': 'site-tkodev'
+  fieldsAlias: 'site-tkodev'
 }
 
 const HomePage: NextPage = () => {

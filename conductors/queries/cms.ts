@@ -10,7 +10,7 @@ type CmsEntriesRequest = {
   include?: number
   limit?: number
   contentType?: string
-  'fields.uid'?: string
+  fieldsAlias?: string
 }
 type CmsEntriesResponse<T = any> = EntryCollection<T>
 
