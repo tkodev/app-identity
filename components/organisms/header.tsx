@@ -1,7 +1,8 @@
 import React from 'react'
 import { Box, Container, Grid, Button, IconButton } from '@mui/material'
 import { Image } from '@/components/atoms'
-import { createSx } from '@/conductors/hooks'
+import { HeaderItems, HeaderModal, HeaderBar } from '@/components/molecules'
+import { createSx, useModalState } from '@/conductors/hooks'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Entry } from 'contentful'
@@ -13,20 +14,7 @@ type HeaderProps = {
 }
 
 const useSx = createSx<HeaderProps>((props, theme) => {
-  const { headerHeight } = theme.options
   return {
-    root: {
-      position: 'fixed',
-      width: '100%',
-      height: headerHeight,
-      backdropFilter: 'blur(10px)',
-      gridRow: 1
-    },
-    container: {
-      height: '100%',
-      paddingTop: 2,
-      paddingBottom: 2
-    },
     grid: {
       height: '100%'
     },
@@ -47,20 +35,10 @@ const useSx = createSx<HeaderProps>((props, theme) => {
       alignItems: 'center',
       justifyContent: 'flex-end'
     },
-    nav: {
-      marginLeft: 1,
-      textTransform: 'uppercase',
-      color: 'white'
-    },
-    sep: {
-      marginRight: 2,
-      marginLeft: 2,
-      marginTop: '-2px'
-    },
     icon: {
+      margin: 1,
       width: 36,
-      height: 36,
-      textTransform: 'uppercase'
+      height: 36
     }
   }
 })
@@ -68,12 +46,11 @@ const useSx = createSx<HeaderProps>((props, theme) => {
 const Header: React.FC<HeaderProps> = (props) => {
   const { headerMenu, socialMenu } = props
   const sx = useSx(props)
-
-  console.log({ headerMenu, socialMenu })
+  const { modalState, handleModalState } = useModalState()
 
   return (
-    <Box component="header" sx={sx.root}>
-      <Container fixed sx={sx.container}>
+    <>
+      <HeaderBar>
         <Grid container sx={sx.grid}>
           <Grid item xs={2} md={2} sx={sx.logo}>
             <Button>
@@ -82,32 +59,24 @@ const Header: React.FC<HeaderProps> = (props) => {
           </Grid>
           <Grid item xs={10} md={10} sx={sx.mobile}>
             <Box sx={sx.sep}>|</Box>
-            <IconButton sx={sx.icon} aria-label="Menu">
+            <IconButton sx={sx.icon} onClick={handleModalState()} aria-label="Toggle Menu">
               <FontAwesomeIcon icon={faBars} />
             </IconButton>
           </Grid>
           <Grid item xs={10} md={10} sx={sx.desktop}>
-            {headerMenu?.fields.navs.map((nav) => {
-              const { alias, title } = nav.fields
-              return (
-                <Button key={alias} sx={sx.nav}>
-                  {title}
-                </Button>
-              )
-            })}
-            <Box sx={sx.sep}>|</Box>
-            {socialMenu?.fields.navs.map((nav) => {
-              const { alias, title, icon } = nav.fields
-              return (
-                <IconButton key={alias} sx={sx.icon} aria-label={title}>
-                  <FontAwesomeIcon icon={['fab', icon]} />
-                </IconButton>
-              )
-            })}
+            <HeaderItems headerMenu={headerMenu} socialMenu={socialMenu} />
           </Grid>
         </Grid>
-      </Container>
-    </Box>
+      </HeaderBar>
+      <HeaderModal
+        open={modalState}
+        onClose={handleModalState(false)}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <HeaderItems headerMenu={headerMenu} socialMenu={socialMenu} flow="column" />
+      </HeaderModal>
+    </>
   )
 }
 

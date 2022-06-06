@@ -1,6 +1,8 @@
 import { SxProps, Theme, useTheme } from '@mui/material/styles'
 
-const createSx = <T>(styles: (props: T, theme: Theme) => Record<string, SxProps<Theme>>) => {
+type Sx = Record<string, SxProps<Theme>>
+
+const createSx = <T>(styles: (props: T, theme: Theme) => Sx) => {
   const useSx = (props: T) => {
     const theme = useTheme()
     return styles(props, theme)
@@ -9,3 +11,4 @@ const createSx = <T>(styles: (props: T, theme: Theme) => Record<string, SxProps<
 }
 
 export { createSx }
+export type { Sx }
