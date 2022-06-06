@@ -7,6 +7,12 @@ import { CacheProvider, EmotionCache } from '@emotion/react'
 import { createEmotionCache } from '@/conductors/utils'
 import { theme } from '@/conductors/utils/theme'
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { faGithub, faLinkedinIn, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
+config.autoAddCss = false
+library.add(faGithub, faLinkedinIn, faInstagram, faTwitter)
 
 type NextAppProps = {
   emotionCache?: EmotionCache

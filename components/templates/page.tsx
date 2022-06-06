@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { Entry } from 'contentful'
-import { Header, Main, Footer, Section } from '@/components/organisms'
+import { Header, Main, Footer } from '@/components/organisms'
 import { Sections } from '@/components/templates'
 import { Box } from '@mui/material'
 import { CmsPage, CmsSite } from '@/conductors/types'
@@ -34,11 +34,11 @@ const Page: React.FC<PageProps> = (props) => {
         <title>{pageTitle || pageDesc}</title>
         <meta name="description" content={pageDesc || siteDesc} />
       </Head>
-      <Header />
+      <Header headerMenu={site?.fields.headerMenu} socialMenu={site?.fields.socialMenu} />
       <Main>
         <Sections sectionGroup={sectionGroup}>{children}</Sections>
       </Main>
-      <Footer />
+      <Footer footerMenu={site?.fields.footerMenu} socialMenu={site?.fields.socialMenu} />
     </Box>
   )
 }
