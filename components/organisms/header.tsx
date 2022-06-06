@@ -37,13 +37,13 @@ const useSx = createSx<HeaderProps>((props, theme) => {
     },
     mobile: {
       height: '100%',
-      display: { xs: 'flex', sm: 'none' },
+      display: { xs: 'flex', md: 'none' },
       alignItems: 'center',
       justifyContent: 'flex-end'
     },
     desktop: {
       height: '100%',
-      display: { xs: 'none', sm: 'flex' },
+      display: { xs: 'none', md: 'flex' },
       alignItems: 'center',
       justifyContent: 'flex-end'
     },
