@@ -1,6 +1,6 @@
 import React from 'react'
 import { createSx } from '@/conductors/hooks'
-import { AppBar, Box, Container, Grid, Button, IconButton } from '@mui/material'
+import { AppBar, Container } from '@mui/material'
 
 type HeaderBarProps = {
   //
@@ -22,31 +22,6 @@ const useSx = createSx<HeaderBarProps>((props, theme) => {
       height: '100%',
       paddingTop: 2,
       paddingBottom: 2
-    },
-    grid: {
-      height: '100%'
-    },
-    logo: {
-      height: '100%',
-      display: 'flex',
-      alignItems: 'center'
-    },
-    mobile: {
-      height: '100%',
-      display: { xs: 'flex', md: 'none' },
-      alignItems: 'center',
-      justifyContent: 'flex-end'
-    },
-    desktop: {
-      height: '100%',
-      display: { xs: 'none', md: 'flex' },
-      alignItems: 'center',
-      justifyContent: 'flex-end'
-    },
-    icon: {
-      margin: 1,
-      width: 36,
-      height: 36
     }
   }
 })
