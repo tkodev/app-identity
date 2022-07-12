@@ -1,0 +1,5 @@
+{
+  "extends": "@tkodev/ts-config/src/base.json",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

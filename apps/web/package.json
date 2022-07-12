@@ -1,0 +1,49 @@
+{
+  "name": "site-tkodev",
+  "description": "⚡ Codebase for Tony Ko's personal portfolio",
+  "private": true,
+  "scripts": {
+    "postinstall": "echo 'postinstall'",
+    "build": "next build",
+    "prebuild": "echo 'prebuild'",
+    "start": "next start",
+    "dev": "next dev",
+    "lint": "next lint",
+    "reset": "rimraf ./node_modules"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@fortawesome/fontawesome-svg-core": "~1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.17",
+    "@mui/material": "^5.2.6",
+    "axios": "^0.24.0",
+    "change-case": "^4.1.2",
+    "contentful": "^9.1.13",
+    "lodash": "^4.17.21",
+    "next": "^12.1.0",
+    "next-connect": "^0.12.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.3",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-query": "^3.39.0",
+    "swr": "^1.1.2"
+  },
+  "devDependencies": {
+    "@tkodev/eslint-config": "*",
+    "@tkodev/ts-config": "*",
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^17.0.18",
+    "@types/react": "^17.0.39",
+    "eslint": "^8.9.0",
+    "next-transpile-modules": "9.0.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}

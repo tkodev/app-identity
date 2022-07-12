@@ -1,0 +1,29 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/develop",
+  "pipeline": {
+    "build": {
+      "cache": true,
+      "dependsOn": ["prebuild", "^build"],
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "prebuild": {
+      "cache": false,
+      "outputs": ["assets/**"]
+    },
+    "start": {
+      "cache": true,
+      "dependsOn": ["prebuild", "^build"]
+    },
+    "dev": {
+      "cache": false
+    },
+    "lint": {
+      "cache": false,
+      "outputs": []
+    },
+    "reset": {
+      "cache": false
+    }
+  }
+}

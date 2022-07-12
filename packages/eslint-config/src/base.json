@@ -1,0 +1,19 @@
+{
+  "extends": ["next", "prettier"],
+  "rules": {
+    "prefer-const": "error",
+    
+    "semi": ["off"],
+    "quotes": ["off"],
+    "comma-dangle": ["off"],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "printWidth": 125
+      }
+    ]
+  }
+}

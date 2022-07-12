@@ -1,36 +1,57 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
+# Secrets
+*.jks
+*.p8
+*.p12
 *.pem
+*.key
+*.mobileprovision
+*.orig.*
+.env*
+!.env.sample
 
-# debug
+# OS
+.DS_Store
+desktop.ini
+.vscode
+
+# Typescript
+.tsbuildinfo
+
+# Testing
+.jest/
+coverage
+
+# Turbo
+.turbo
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Yarn - only root yarn.lock allowed
+package-lock.json
+apps/*/yarn.lock
+packages/*/yarn.lock
+
+# Node
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
-.env*
-!.env.example
+# Next.js Artifacts
+.next/
+.vercel/
+out/
+build
 
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
+# Plasmo Artifacts
+.plasmo
