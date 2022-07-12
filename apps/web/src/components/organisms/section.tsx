@@ -1,6 +1,7 @@
 import React from 'react'
 import { Entry } from 'contentful'
-import { Box, Container } from '@mui/material'
+import { Box } from '@mui/material'
+import { Container } from '~/components/atoms'
 import { createSx } from '~/conductors/hooks'
 import { CmsSection } from '~/conductors/types'
 

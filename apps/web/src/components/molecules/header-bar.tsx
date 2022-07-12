@@ -1,5 +1,6 @@
 import React from 'react'
-import { AppBar, Container } from '@mui/material'
+import { AppBar } from '@mui/material'
+import { Container } from '~/components/atoms'
 import { createSx } from '~/conductors/hooks'
 
 type HeaderBarProps = {
@@ -12,7 +13,7 @@ const useSx = createSx<HeaderBarProps>((props, theme) => {
   return {
     root: {
       boxShadow: 'none',
-      minHeight: barHeight,
+      height: barHeight,
       backgroundColor: 'rgba(18, 18, 18, 0.25)',
       backgroundImage: 'none',
       backdropFilter: 'blur(10px)',

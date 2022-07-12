@@ -1,7 +1,8 @@
 import React from 'react'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Box, Container, Fade, IconButton, Modal } from '@mui/material'
+import { Box, Fade, IconButton, Modal } from '@mui/material'
+import { Container } from '~/components/atoms'
 import { createSx } from '~/conductors/hooks'
 
 type NavModalProps = {

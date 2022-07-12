@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
-import { Box, Button, Container, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
+import { Container } from '~/components/atoms'
 import { Link } from '~/components/atoms'
 import { Page } from '~/components/templates'
 import { ssrCmsEntries, useCmsEntries } from '~/conductors/queries'
