@@ -3,13 +3,15 @@ import { ContainerProps, Container as MuiContainer } from '@mui/material'
 import { createSx } from '~/conductors/hooks'
 
 const useSx = createSx<ContainerProps>((props, theme) => {
-  const { sx } = props
+  const { sx, disableGutters } = props
 
   return {
     root: {
       ...sx,
-      paddingLeft: 3,
-      paddingRight: 3
+      ...(!disableGutters && {
+        paddingLeft: 3,
+        paddingRight: 3
+      })
     }
   }
 })
