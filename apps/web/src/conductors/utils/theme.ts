@@ -3,12 +3,12 @@ import { createTheme } from '@mui/material/styles'
 declare module '@mui/material/styles' {
   interface Theme {
     options: {
-      headerHeight: string
+      barHeight: string
     }
   }
   interface ThemeOptions {
     options: {
-      headerHeight: string
+      barHeight: string
     }
   }
 }
@@ -31,7 +31,7 @@ const theme = createTheme({
     }
   },
   options: {
-    headerHeight: '70px'
+    barHeight: '70px'
   }
 })
 

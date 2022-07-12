@@ -11,12 +11,12 @@ type SectionProps = {
 
 const useSx = createSx<SectionProps>((props, theme) => {
   const { sectionIndex } = props
-  const { headerHeight } = theme.options
+  const { barHeight } = theme.options
   return {
     root: {},
     container: {
       height: '100%',
-      paddingTop: sectionIndex === 0 ? headerHeight : 2,
+      paddingTop: sectionIndex === 0 ? barHeight : 2,
       paddingBottom: 2
     }
   }

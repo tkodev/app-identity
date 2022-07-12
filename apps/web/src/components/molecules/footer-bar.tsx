@@ -7,14 +7,14 @@ type FooterBarProps = {
 }
 
 const useSx = createSx<FooterBarProps>((props, theme) => {
-  const { headerHeight } = theme.options
+  const { barHeight } = theme.options
 
   return {
     root: {
-      backgroundColor: 'transparent',
-      backgroundImage: 'none',
       boxShadow: 'none',
-      height: headerHeight,
+      minHeight: barHeight,
+      backgroundColor: 'rgba(18, 18, 18, 0.25)',
+      backgroundImage: 'none',
       backdropFilter: 'blur(10px)',
       gridRow: 3
     },

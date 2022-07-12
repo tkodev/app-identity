@@ -12,7 +12,7 @@ type NavModalProps = {
 const useSx = createSx<NavModalProps>((props, theme) => {
   return {
     root: {
-      backgroundColor: theme.palette.background.default,
+      backgroundColor: 'rgba(18, 18, 18, 0.5)',
       backdropFilter: 'blur(10px)',
       padding: 2,
       height: '100vh'
