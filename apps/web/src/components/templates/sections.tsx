@@ -1,9 +1,9 @@
 import React from 'react'
-import { Box } from '@mui/material'
 import { Entry } from 'contentful'
-import { CmsSection, CmsSectionGroup } from '~/conductors/types'
+import { Box } from '@mui/material'
 import { Section } from '~/components/organisms'
 import { createSx } from '~/conductors/hooks'
+import { CmsSection, CmsSectionGroup } from '~/conductors/types'
 
 type SectionsProps = {
   sectionGroup?: Entry<CmsSectionGroup> | null

@@ -1,11 +1,11 @@
-import React from 'react'
 import Head from 'next/head'
+import React from 'react'
 import { Entry } from 'contentful'
-import { Header, Main, Footer } from '~/components/organisms'
-import { Sections } from '~/components/templates'
 import { Box } from '@mui/material'
-import { CmsPage, CmsSite } from '~/conductors/types'
+import { Footer, Header, Main } from '~/components/organisms'
+import { Sections } from '~/components/templates'
 import { createSx } from '~/conductors/hooks'
+import { CmsPage, CmsSite } from '~/conductors/types'
 
 type PageProps = {
   page?: Entry<CmsPage> | null

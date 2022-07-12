@@ -9,6 +9,7 @@
     "reset": "rimraf ./node_modules"
   },
   "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",

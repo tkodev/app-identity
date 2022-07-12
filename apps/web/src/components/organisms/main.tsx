@@ -19,7 +19,7 @@ const Main: React.FC<MainProps> = (props) => {
   const sx = useSx(props)
 
   return (
-    <Box component="main" sx={sx.root}>
+    <Box sx={sx.root} component="main">
       {children}
     </Box>
   )

@@ -1,18 +1,19 @@
 import React from 'react'
-import { createSx } from '~/conductors/hooks'
-import { Box, Container, IconButton, Modal, Fade } from '@mui/material'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Box, Container, Fade, IconButton, Modal } from '@mui/material'
+import { createSx } from '~/conductors/hooks'
 
-type HeaderModalProps = {
+type NavModalProps = {
   open: boolean
   onClose: () => void
 }
 
-const useSx = createSx<HeaderModalProps>((props, theme) => {
+const useSx = createSx<NavModalProps>((props, theme) => {
   return {
     root: {
       backgroundColor: theme.palette.background.default,
+      backdropFilter: 'blur(10px)',
       padding: 2,
       height: '100vh'
     },
@@ -23,7 +24,8 @@ const useSx = createSx<HeaderModalProps>((props, theme) => {
       paddingBottom: 2,
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      flexFlow: 'column'
     },
     closeIcon: {
       position: 'absolute',
@@ -35,7 +37,7 @@ const useSx = createSx<HeaderModalProps>((props, theme) => {
   }
 })
 
-const HeaderModal: React.FC<HeaderModalProps> = (props) => {
+const NavModal: React.FC<NavModalProps> = (props) => {
   const { open, onClose, children } = props
   const sx = useSx(props)
 
@@ -55,4 +57,4 @@ const HeaderModal: React.FC<HeaderModalProps> = (props) => {
   )
 }
 
-export { HeaderModal }
+export { NavModal }

@@ -1,11 +1,11 @@
 import React from 'react'
-import { useTheme, useMediaQuery, Box, Grid, Button, IconButton } from '@mui/material'
-import { Image } from '~/components/atoms'
-import { HeaderItems, HeaderModal, HeaderBar } from '~/components/molecules'
-import { createSx, useModalState } from '~/conductors/hooks'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Entry } from 'contentful'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Box, Button, Grid, IconButton } from '@mui/material'
+import { Image, NavSeparator } from '~/components/atoms'
+import { HeaderBar, NavMenu, NavModal } from '~/components/molecules'
+import { createSx, useModalState } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
 type HeaderProps = {
@@ -36,7 +36,7 @@ const useSx = createSx<HeaderProps>((props, theme) => {
       height: '100%',
       display: { xs: 'none', md: 'flex' }
     },
-    icon: {
+    navIcon: {
       margin: 1,
       width: 36,
       height: 36
@@ -47,7 +47,6 @@ const useSx = createSx<HeaderProps>((props, theme) => {
 const Header: React.FC<HeaderProps> = (props) => {
   const { site } = props
   const sx = useSx(props)
-  const theme = useTheme()
   const { modalState, handleModalState } = useModalState()
 
   return (
@@ -61,24 +60,28 @@ const Header: React.FC<HeaderProps> = (props) => {
           </Grid>
           <Grid item xs={10} sx={sx.gridMenu}>
             <Box sx={sx.mobile}>
-              <IconButton sx={sx.icon} onClick={handleModalState()} aria-label="Toggle Menu">
+              <IconButton sx={sx.navIcon} onClick={handleModalState()} aria-label="Toggle Menu">
                 <FontAwesomeIcon icon={faBars} />
               </IconButton>
             </Box>
             <Box sx={sx.desktop}>
-              <HeaderItems site={site} />
+              <NavMenu navMenu={site?.fields.headerMenu} flow="row" />
+              <NavSeparator flow="row" />
+              <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
             </Box>
           </Grid>
         </Grid>
       </HeaderBar>
-      <HeaderModal
+      <NavModal
         open={modalState}
         onClose={handleModalState(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <HeaderItems site={site} flow="column" />
-      </HeaderModal>
+        <NavMenu navMenu={site?.fields.headerMenu} flow="column" />
+        <NavSeparator flow="column" />
+        <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
+      </NavModal>
     </>
   )
 }

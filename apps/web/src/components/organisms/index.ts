@@ -1,4 +1,4 @@
 export * from './footer'
 export * from './header'
-export * from './main'
 export * from './section'
+export * from './main'

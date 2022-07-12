@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import Head from 'next/head'
 import { AppProps } from 'next/app'
-import { ThemeProvider } from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline'
-import { CacheProvider, EmotionCache } from '@emotion/react'
-import { createEmotionCache } from '~/conductors/utils'
-import { theme } from '~/conductors/utils/theme'
+import Head from 'next/head'
+import { useState } from 'react'
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query'
+import { CacheProvider, EmotionCache } from '@emotion/react'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { faGithub, faLinkedinIn, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import CssBaseline from '@mui/material/CssBaseline'
+import { ThemeProvider } from '@mui/material/styles'
+import { createEmotionCache } from '~/conductors/utils'
+import { theme } from '~/conductors/utils/theme'
 
 config.autoAddCss = false
 library.add(faGithub, faLinkedinIn, faInstagram, faTwitter)

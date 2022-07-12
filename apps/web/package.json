@@ -25,6 +25,7 @@
     "axios": "^0.24.0",
     "change-case": "^4.1.2",
     "contentful": "^9.1.13",
+    "dayjs": "^1.11.3",
     "lodash": "^4.17.21",
     "next": "^12.1.0",
     "next-connect": "^0.12.2",

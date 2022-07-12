@@ -1,57 +1,57 @@
 import React from 'react'
-import { createSx } from '~/conductors/hooks'
 import { Entry } from 'contentful'
-import { CmsNavMenu, CmsSite } from '~/conductors/types'
-import { FooterBar, DisplayIf } from '~/components/molecules'
-import { Box, Grid, Button, IconButton } from '@mui/material'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import dayjs from 'dayjs'
+import { Button, Grid } from '@mui/material'
 import { Image } from '~/components/atoms'
-import { HeaderItems } from '~/components/molecules'
+import { FooterBar } from '~/components/molecules'
+import { createSx } from '~/conductors/hooks'
+import { CmsSite } from '~/conductors/types'
 
 type FooterProps = {
   site?: Entry<CmsSite> | null
-  footerMenu?: Entry<CmsNavMenu>
-  socialMenu?: Entry<CmsNavMenu>
 }
 
-const useSx = createSx<FooterProps>(() => {
+const useSx = createSx<FooterProps>((props, theme) => {
   return {
-    //
+    gridContainer: {
+      height: '100%'
+    },
+    gridLogo: {
+      height: '100%',
+      display: 'flex',
+      alignItems: 'center'
+    },
+    gridMenu: {
+      height: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'flex-end'
+    }
   }
 })
 
 const Footer: React.FC<FooterProps> = (props) => {
   const { site } = props
-  const { footerMenu, socialMenu } = site?.fields ?? {}
   const sx = useSx(props)
 
+  const year = dayjs().year().toString()
+  const copyright = site?.fields.copyright.replace('<year>', year)
+
   return (
-    <FooterBar>
-      <Grid container sx={sx.grid}>
-        <Grid item xs={2} md={2} sx={sx.logo}>
-          <Button>
-            <Image src="/images/logo-dark-crop@2x.png" alt="Logo" height="18px" fit="contain" />
-          </Button>
+    <>
+      <FooterBar>
+        <Grid container sx={sx.gridContainer}>
+          <Grid item xs={2} sx={sx.gridLogo}>
+            <Button>
+              <Image src="/images/logo-dark-crop@2x.png" alt="Logo" height="18px" fit="contain" />
+            </Button>
+          </Grid>
+          <Grid item xs={10} sx={sx.gridMenu}>
+            {copyright}
+          </Grid>
         </Grid>
-        <Grid item xs={10} sx={sx.grid}>
-          <Box sx={sx.mobile}>
-            <IconButton sx={sx.icon} onClick={handleModalState()} aria-label="Toggle Menu">
-              <FontAwesomeIcon icon={faBars} />
-            </IconButton>
-          </Box>
-          <Box sx={sx.desktop}>
-            {socialMenu?.fields.navs.map((nav) => {
-              const { alias, title, icon } = nav.fields
-              return (
-                <IconButton key={alias} sx={sx.icon} aria-label={title}>
-                  <FontAwesomeIcon icon={['fab', icon]} />
-                </IconButton>
-              )
-            })}
-          </Box>
-        </Grid>
-      </Grid>
-    </FooterBar>
+      </FooterBar>
+    </>
   )
 }
 

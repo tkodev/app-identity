@@ -1,8 +1,8 @@
 import React from 'react'
 import { Entry } from 'contentful'
 import { Box, Container } from '@mui/material'
-import { CmsSection } from '~/conductors/types'
 import { createSx } from '~/conductors/hooks'
+import { CmsSection } from '~/conductors/types'
 
 type SectionProps = {
   section?: Entry<CmsSection>

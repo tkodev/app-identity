@@ -1,9 +1,9 @@
 import { NextPage } from 'next'
-import { Box, Button, Typography, Container } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import { Link } from '~/components/atoms'
 import { Page } from '~/components/templates'
+import { ssrCmsEntries, useCmsEntries } from '~/conductors/queries'
 import { CmsPage, CmsSite } from '~/conductors/types'
-import { useCmsEntries, ssrCmsEntries } from '~/conductors/queries'
 import { ssrQueryClient } from '~/conductors/utils/query'
 
 const siteParams = {
