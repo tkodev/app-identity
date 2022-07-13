@@ -1,5 +1,5 @@
 {
-  "name": "site-tkodev",
+  "name": "@tkodev/web",
   "description": "⚡ Codebase for Tony Ko's personal portfolio",
   "private": true,
   "scripts": {
