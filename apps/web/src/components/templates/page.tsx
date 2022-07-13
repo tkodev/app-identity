@@ -31,7 +31,7 @@ const Page: React.VFC<PageProps> = (props) => {
 
   return (
     <Box sx={sx.root}>
-      {isLoading && (
+      {!isLoading && (
         <Head>
           <title>
             {pageTitle} | {siteTitle}
