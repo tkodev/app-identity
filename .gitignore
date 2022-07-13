@@ -9,7 +9,7 @@
 *.mobileprovision
 *.orig.*
 .env*
-!.env.sample
+!.env.example
 
 # OS
 .DS_Store

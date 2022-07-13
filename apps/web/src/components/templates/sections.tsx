@@ -7,6 +7,7 @@ import { CmsSection, CmsSectionGroup } from '~/conductors/types'
 
 type SectionsProps = {
   sectionGroup?: Entry<CmsSectionGroup> | null
+  isLoading?: boolean
 }
 
 const useSx = createSx<SectionsProps>(() => {
@@ -17,8 +18,8 @@ const useSx = createSx<SectionsProps>(() => {
   }
 })
 
-const Sections: React.FC<SectionsProps> = (props) => {
-  const { sectionGroup, children } = props
+const Sections: React.VFC<SectionsProps> = (props) => {
+  const { sectionGroup, isLoading } = props
   const { sections } = sectionGroup?.fields ?? {}
   const sx = useSx(props)
 
@@ -34,7 +35,7 @@ const Sections: React.FC<SectionsProps> = (props) => {
           return <Sections sectionGroup={section as Entry<CmsSectionGroup>} key={section.sys.id} />
         }
       })}
-      {children && <Section>{children}</Section>}
+      {isLoading && 'isLoading'}
     </Box>
   )
 }
