@@ -15,23 +15,32 @@ declare module '@mui/material/styles' {
 
 const theme = createTheme({
   palette: {
-    mode: 'dark'
+    mode: 'dark',
+    primary: {
+      main: '#F8A51B'
+    }
   },
   typography: {
-    fontSize: 12,
+    fontSize: 16,
     fontFamily: '"Carbon", monospace',
     fontWeightLight: 'thin',
     fontWeightRegular: 'normal',
     fontWeightMedium: 'bold',
     fontWeightBold: 'bold',
+    body1: {
+      fontSize: 16
+    },
+    body2: {
+      fontSize: 16
+    },
     button: {
-      fontSize: 12,
-      letterSpacing: 2.5,
+      fontSize: 14,
+      letterSpacing: 2,
       fontWeight: 'normal'
     }
   },
   options: {
-    barHeight: '70px'
+    barHeight: '100px'
   }
 })
 

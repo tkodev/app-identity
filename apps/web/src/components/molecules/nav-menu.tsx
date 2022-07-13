@@ -11,23 +11,23 @@ type NavMenuProps = {
   showIcons?: boolean
 }
 
-const useSx = createSx<NavMenuProps>((props) => {
+const useSx = createSx<NavMenuProps>((props, theme) => {
   const { flow } = props
 
   return {
     root: {
       display: 'flex',
+      alignItems: 'center',
       flexFlow: flow === 'row' ? 'row' : 'column'
     },
     navItem: {
-      margin: 0.5,
-      textTransform: 'uppercase',
-      color: 'white'
+      margin: 0.25
     },
     navIcon: {
-      margin: 0.5,
-      width: 36,
-      height: 36
+      fontSize: theme.typography.button.fontSize,
+      margin: 0.25,
+      width: 32,
+      height: 32
     }
   }
 })

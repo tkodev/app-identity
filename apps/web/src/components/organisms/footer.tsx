@@ -47,7 +47,7 @@ const Footer: React.FC<FooterProps> = (props) => {
             </Button>
           </Grid>
           <Grid item xs={10} sx={sx.gridMenu}>
-            {copyright}
+            <Button>{copyright}</Button>
           </Grid>
         </Grid>
       </FooterBar>

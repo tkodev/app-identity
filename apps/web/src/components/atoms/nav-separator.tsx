@@ -10,6 +10,8 @@ const useSx = createSx<NavSeparatorProps>((props, theme) => {
   const { flow = 'row' } = props
   return {
     root: {
+      display: 'flex',
+      alignItems: 'center',
       margin: 1,
       transform: flow === 'row' ? 'none' : 'rotate(90deg)'
     }
