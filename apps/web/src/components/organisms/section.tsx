@@ -1,7 +1,8 @@
 import React from 'react'
 import { Entry } from 'contentful'
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { Container } from '~/components/atoms'
+import { RenderMarkdown } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
 import { CmsSection } from '~/conductors/types'
 
@@ -23,15 +24,18 @@ const useSx = createSx<SectionProps>((props, theme) => {
   }
 })
 
-const Section: React.FC<SectionProps> = (props) => {
-  const { section, children } = props
+const Section: React.VFC<SectionProps> = (props) => {
+  const { section } = props
   const { title, desc, type, image, attributes } = section?.fields ?? {}
   const sx = useSx(props)
 
   return (
     <Box sx={sx.root}>
       <Container fixed sx={sx.container}>
-        {children || <p>{title}</p>}
+        <Typography variant="body1" component="p">
+          {title}
+        </Typography>
+        <RenderMarkdown>{desc}</RenderMarkdown>
       </Container>
     </Box>
   )
