@@ -1,27 +1,38 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { createSx } from '~/conductors/hooks'
+import { Sx, createSx } from '~/conductors/hooks'
 import { ratioToPercentStr } from '~/conductors/utils'
 
 type ImageProps = {
   src: string
   alt: string
+  sx?: Sx
   width?: string
   height?: string
   aspectRatio?: string
   fit?: 'fill' | 'contain' | 'cover' | 'none' | 'scale-down'
+  borderRadius?: string
   blockDownload?: boolean
 }
 
 const makeSx = createSx<ImageProps>((props) => {
-  const { width, height, aspectRatio, fit, blockDownload } = props
+  const {
+    sx,
+    width = '100%', // ex: 100%, 80px, etc
+    height = 'auto', // ex: 100%, 80px, auto, etc
+    aspectRatio = '', // ex: 16:9, 4:3, etc
+    fit = 'fill', // fill, contain, cover, none, scale-down
+    borderRadius = '0',
+    blockDownload = false // whether div covers img tag or not.
+  } = props
   return {
     root: {
       display: 'inline-block',
       position: 'relative',
       width,
       height,
-      lineHeight: 0
+      lineHeight: 0,
+      ...sx
     },
     ratio: {
       width: '100%',
@@ -35,7 +46,8 @@ const makeSx = createSx<ImageProps>((props) => {
       left: '0',
       width: '100%',
       height: '100%',
-      objectFit: fit
+      objectFit: fit,
+      borderRadius
     },
     blocker: {
       position: 'absolute',
@@ -49,16 +61,8 @@ const makeSx = createSx<ImageProps>((props) => {
 })
 
 const Image: React.VFC<ImageProps> = (props) => {
-  const {
-    src,
-    alt,
-    width = '100%', // ex: 100%, 80px, etc
-    height = 'auto', // ex: 100%, 80px, auto, etc
-    aspectRatio = '', // ex: 16:9, 4:3, etc
-    fit = 'fill', // fill, contain, cover, none, scale-down
-    blockDownload = false // whether div covers img tag or not.
-  } = props
-  const sx = makeSx({ src, alt, width, height, aspectRatio, fit, blockDownload })
+  const { src, alt } = props
+  const sx = makeSx(props)
 
   return (
     <Box sx={sx.root}>

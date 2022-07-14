@@ -7,11 +7,11 @@ const makeSx = createSx<ContainerProps>((props, theme) => {
 
   return {
     root: {
-      ...sx,
       ...(!disableGutters && {
         paddingLeft: 3,
         paddingRight: 3
-      })
+      }),
+      ...sx
     }
   }
 })

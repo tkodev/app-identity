@@ -39,10 +39,11 @@ type CmsSectionGroup = CmsEntry<{
   sections: Entry<CmsSection | CmsSectionGroup>[]
 }>
 type CmsSection = CmsEntry<{
+  variant: 'hero' | 'split'
   bgImage: Asset
   bgColor: string
   image: Asset
-  nav: Entry<CmsNav>
+  navMenu: Entry<CmsNavMenu>
 }>
 
 export type { CmsEntry, CmsNav, CmsNavMenu, CmsSection, CmsSectionGroup, CmsPage, CmsSite }

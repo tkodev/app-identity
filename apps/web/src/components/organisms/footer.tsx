@@ -43,7 +43,12 @@ const Footer: React.FC<FooterProps> = (props) => {
         <Grid container sx={sx.gridContainer}>
           <Grid item xs={2} sx={sx.gridLogo}>
             <Button href="/#top">
-              <Image src={site?.fields.logo.fields.file.url || ''} alt="Logo" height="18px" fit="contain" />
+              <Image
+                src={site?.fields.logo.fields.file.url || ''}
+                alt={site?.fields.logo.fields.title || ''}
+                height="18px"
+                fit="contain"
+              />
             </Button>
           </Grid>
           <Grid item xs={10} sx={sx.gridMenu}>

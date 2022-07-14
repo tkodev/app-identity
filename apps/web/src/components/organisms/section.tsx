@@ -1,7 +1,7 @@
 import React from 'react'
 import { Entry } from 'contentful'
 import { Box, Button, Grid, Typography } from '@mui/material'
-import { Container } from '~/components/atoms'
+import { Container, Image } from '~/components/atoms'
 import { RenderMarkdown } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
 import { CmsSection } from '~/conductors/types'
@@ -19,12 +19,11 @@ const makeSx = createSx<SectionProps>((props, theme) => {
 
   return {
     root: {
-      background: bgImageSx ?? bgColor,
-      minHeight: '720px',
-      height: '100vh'
+      background: bgImageSx ?? bgColor
     },
     container: {
-      height: '100%',
+      minHeight: '100vh',
+      height: 'auto',
       paddingTop: sectionIndex === 0 ? barHeight : 2,
       paddingBottom: 2,
       display: 'grid',
@@ -46,13 +45,17 @@ const makeSx = createSx<SectionProps>((props, theme) => {
     },
     button: {
       marginTop: 4
+    },
+    image: {
+      padding: 4,
+      textAlign: 'center'
     }
   }
 })
 
 const Section: React.VFC<SectionProps> = (props) => {
   const { section } = props
-  const { title, desc, nav } = section?.fields ?? {}
+  const { title, desc, variant, image, navMenu } = section?.fields ?? {}
   const sx = makeSx(props)
 
   return (
@@ -64,16 +67,42 @@ const Section: React.VFC<SectionProps> = (props) => {
           </Typography>
         </Box>
         <Box sx={sx.sectionMain}>
-          <Grid container>
-            <Grid item xs={12} md={6}>
-              <RenderMarkdown>{desc}</RenderMarkdown>
-              {nav && (
-                <Button sx={sx.button} variant="outlined" href={nav.fields.path}>
-                  {nav.fields.title}
-                </Button>
-              )}
+          {variant === 'hero' && (
+            <Grid container>
+              <Grid item xs={12} sm={10} md={8} lg={6}>
+                <RenderMarkdown>{desc}</RenderMarkdown>
+                {navMenu &&
+                  navMenu.fields.navs.map((nav) => (
+                    <Button sx={sx.button} variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
+                      {nav.fields.title}
+                    </Button>
+                  ))}
+              </Grid>
             </Grid>
-          </Grid>
+          )}
+          {variant === 'split' && (
+            <Grid container>
+              <Grid item xs={12} md={6} order={{ xs: 1, sm: 0 }}>
+                <RenderMarkdown>{desc}</RenderMarkdown>
+                {navMenu &&
+                  navMenu.fields.navs.map((nav) => (
+                    <Button sx={sx.button} variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
+                      {nav.fields.title}
+                    </Button>
+                  ))}
+              </Grid>
+              <Grid item xs={12} md={6} sx={sx.image}>
+                <Image
+                  src={image?.fields.file.url || ''}
+                  alt={image?.fields.title || ''}
+                  width="75%"
+                  aspectRatio="1:1"
+                  fit="cover"
+                  borderRadius="100%"
+                />
+              </Grid>
+            </Grid>
+          )}
         </Box>
         <Box sx={sx.sectionFooter} />
       </Container>
