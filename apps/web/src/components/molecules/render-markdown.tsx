@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import RemarkGfm from 'remark-gfm'
-import { Typography } from '@mui/material'
+import { Divider, Typography } from '@mui/material'
 
 const RenderMarkdown: React.FC = (props) => {
   const { children } = props
@@ -17,7 +17,9 @@ const RenderMarkdown: React.FC = (props) => {
         h5: ({ node, ...props }) => <Typography variant="h5" component="h5" {...props} />,
         h6: ({ node, ...props }) => <Typography variant="h6" component="h6" {...props} />,
         p: ({ node, ...props }) => <Typography variant="body1" component="p" {...props} />,
-        code: ({ node, ...props }) => <Typography variant="body1" component="code" {...props} />
+        code: ({ node, ...props }) => <Typography variant="body1" component="code" {...props} />,
+        hr: ({ node, ...props }) => <Divider sx={{ marginTop: 2, marginBottom: 2 }} {...props} />,
+        ul: ({ node, ...props }) => <Typography variant="body1" component="ul" sx={{ paddingInlineStart: 2 }} {...props} />
       }}
     >
       {children?.toString() || ''}

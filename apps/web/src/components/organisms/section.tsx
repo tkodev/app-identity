@@ -1,6 +1,6 @@
 import React from 'react'
 import { Entry } from 'contentful'
-import { Box, Typography } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import { Container } from '~/components/atoms'
 import { RenderMarkdown } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
@@ -12,30 +12,45 @@ type SectionProps = {
 }
 
 const useSx = createSx<SectionProps>((props, theme) => {
-  const { sectionIndex } = props
+  const { sectionIndex, section } = props
+  const { bgImage, bgColor } = section?.fields ?? {}
   const { barHeight } = theme.options
+  const bgImageSx = bgImage && `${theme.options.bgTint}, url("${bgImage?.fields.file.url}") center / cover no-repeat`
+
   return {
-    root: {},
+    root: {
+      background: bgImageSx ?? bgColor,
+      minHeight: '720px',
+      height: '100vh'
+    },
     container: {
       height: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      flexFlow: 'column',
       paddingTop: sectionIndex === 0 ? barHeight : 2,
       paddingBottom: 2
+    },
+    gridItem: {
+      height: '100%',
+      position: 'relative'
     }
   }
 })
 
 const Section: React.VFC<SectionProps> = (props) => {
   const { section } = props
-  const { title, desc, type, image, attributes } = section?.fields ?? {}
+  const { title, desc } = section?.fields ?? {}
   const sx = useSx(props)
 
   return (
     <Box sx={sx.root}>
       <Container fixed sx={sx.container}>
-        <Typography variant="body1" component="p">
-          {title}
-        </Typography>
-        <RenderMarkdown>{desc}</RenderMarkdown>
+        <Grid container>
+          <Grid item xs={12} sm={6} sx={sx.gridItem}>
+            <RenderMarkdown>{desc}</RenderMarkdown>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   )

@@ -14,8 +14,7 @@ const useSx = createSx<HeaderBarProps>((props, theme) => {
     root: {
       boxShadow: 'none',
       height: barHeight,
-      backgroundColor: 'rgba(18, 18, 18, 0.25)',
-      backgroundImage: 'none',
+      background: theme.options.bgTint,
       backdropFilter: 'blur(10px)',
       gridRow: 1
     },
