@@ -12,7 +12,7 @@ type HeaderProps = {
   site?: Entry<CmsSite> | null
 }
 
-const useSx = createSx<HeaderProps>((props, theme) => {
+const makeSx = createSx<HeaderProps>((props, theme) => {
   return {
     gridContainer: {
       height: '100%'
@@ -46,7 +46,7 @@ const useSx = createSx<HeaderProps>((props, theme) => {
 
 const Header: React.FC<HeaderProps> = (props) => {
   const { site } = props
-  const sx = useSx(props)
+  const sx = makeSx(props)
   const { modalState, handleModalState } = useModalState()
 
   return (
@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         <Grid container sx={sx.gridContainer}>
           <Grid item xs={2} sx={sx.gridLogo}>
             <Button href="/#top">
-              <Image src="/images/logo-dark-crop@2x.png" alt="Logo" height="18px" fit="contain" />
+              <Image src={site?.fields.logo.fields.file.url || ''} alt="Logo" height="18px" fit="contain" />
             </Button>
           </Grid>
           <Grid item xs={10} sx={sx.gridMenu}>

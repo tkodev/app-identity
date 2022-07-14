@@ -60,7 +60,7 @@ const theme = createTheme({
     }
   },
   options: {
-    barHeight: '100px',
+    barHeight: '80px',
     bgTint: `linear-gradient(rgba(18, 18, 18, 0.25), rgba(18, 18, 18, 0.25))`
   }
 })

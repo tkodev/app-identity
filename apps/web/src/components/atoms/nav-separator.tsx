@@ -6,7 +6,7 @@ type NavSeparatorProps = {
   flow?: 'row' | 'column'
 }
 
-const useSx = createSx<NavSeparatorProps>((props, theme) => {
+const makeSx = createSx<NavSeparatorProps>((props, theme) => {
   const { flow = 'row' } = props
   return {
     root: {
@@ -19,7 +19,7 @@ const useSx = createSx<NavSeparatorProps>((props, theme) => {
 })
 
 const NavSeparator: React.VFC<NavSeparatorProps> = (props) => {
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return <Box sx={sx.root}>|</Box>
 }

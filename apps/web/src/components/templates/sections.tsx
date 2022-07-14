@@ -10,7 +10,7 @@ type SectionsProps = {
   isLoading?: boolean
 }
 
-const useSx = createSx<SectionsProps>(() => {
+const makeSx = createSx<SectionsProps>(() => {
   return {
     root: {
       //
@@ -21,7 +21,7 @@ const useSx = createSx<SectionsProps>(() => {
 const Sections: React.VFC<SectionsProps> = (props) => {
   const { sectionGroup, isLoading } = props
   const { sections } = sectionGroup?.fields ?? {}
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <Box sx={sx.root}>

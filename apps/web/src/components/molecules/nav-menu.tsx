@@ -11,7 +11,7 @@ type NavMenuProps = {
   showIcons?: boolean
 }
 
-const useSx = createSx<NavMenuProps>((props, theme) => {
+const makeSx = createSx<NavMenuProps>((props, theme) => {
   const { flow } = props
 
   return {
@@ -34,18 +34,21 @@ const useSx = createSx<NavMenuProps>((props, theme) => {
 
 const NavMenu: React.VFC<NavMenuProps> = (props) => {
   const { navMenu, showIcons = false } = props
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <Box sx={sx.root} component="nav">
       {navMenu?.fields.navs.map((nav) => {
-        const { alias, title, icon, path } = nav.fields
-        return showIcons ? (
-          <IconButton sx={sx.navIcon} href={path} key={alias} aria-label={title}>
-            <FontAwesomeIcon icon={['fab', icon]} />
+        const { alias, title, iconType, icon, path, file } = nav.fields
+        const renderIcon = showIcons && !!iconType && !!icon
+        const href = file?.fields.file.url || path || ''
+
+        return renderIcon ? (
+          <IconButton sx={sx.navIcon} href={href} key={alias} aria-label={title}>
+            <FontAwesomeIcon icon={[iconType, icon]} />
           </IconButton>
         ) : (
-          <Button sx={sx.navItem} href={path} key={alias}>
+          <Button sx={sx.navItem} href={href} key={alias}>
             {title}
           </Button>
         )

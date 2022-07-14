@@ -10,7 +10,7 @@ type NavModalProps = {
   onClose: () => void
 }
 
-const useSx = createSx<NavModalProps>((props, theme) => {
+const makeSx = createSx<NavModalProps>((props, theme) => {
   return {
     root: {
       backgroundColor: 'rgba(18, 18, 18, 0.5)',
@@ -40,7 +40,7 @@ const useSx = createSx<NavModalProps>((props, theme) => {
 
 const NavModal: React.FC<NavModalProps> = (props) => {
   const { open, onClose, children } = props
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <Modal open={open} onClose={onClose}>

@@ -7,7 +7,7 @@ type HeaderBarProps = {
   //
 }
 
-const useSx = createSx<HeaderBarProps>((props, theme) => {
+const makeSx = createSx<HeaderBarProps>((props, theme) => {
   const { barHeight } = theme.options
 
   return {
@@ -28,7 +28,7 @@ const useSx = createSx<HeaderBarProps>((props, theme) => {
 
 const HeaderBar: React.FC<HeaderBarProps> = (props) => {
   const { children } = props
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <AppBar position="fixed" component="header" sx={sx.root}>

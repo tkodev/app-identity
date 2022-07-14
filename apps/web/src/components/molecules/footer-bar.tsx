@@ -7,7 +7,7 @@ type FooterBarProps = {
   //
 }
 
-const useSx = createSx<FooterBarProps>((props, theme) => {
+const makeSx = createSx<FooterBarProps>((props, theme) => {
   const { barHeight } = theme.options
 
   return {
@@ -30,7 +30,7 @@ const useSx = createSx<FooterBarProps>((props, theme) => {
 
 const FooterBar: React.FC<FooterBarProps> = (props) => {
   const { children } = props
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <AppBar position="static" component="footer" sx={sx.root}>

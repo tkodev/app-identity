@@ -1,6 +1,5 @@
 import { Asset, Entry } from 'contentful'
-import { IconName } from '@fortawesome/fontawesome-common-types'
-import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome'
+import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types'
 
 // templates
 type CmsEntry<T = {}> = {
@@ -29,9 +28,10 @@ type CmsNavMenu = CmsEntry<{
   navs: Entry<CmsNav>[]
 }>
 type CmsNav = CmsEntry<{
-  icon: IconName
-  path: string
-  file: Asset
+  iconType?: IconPrefix
+  icon?: IconName
+  path?: string
+  file?: Asset
 }>
 
 // 05-06 - section groups and sections

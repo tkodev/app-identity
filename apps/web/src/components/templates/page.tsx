@@ -13,7 +13,7 @@ type PageProps = {
   isLoading?: boolean
 }
 
-const useSx = createSx<PageProps>(() => {
+const makeSx = createSx<PageProps>(() => {
   return {
     root: {
       minHeight: '100vh',
@@ -27,7 +27,7 @@ const Page: React.VFC<PageProps> = (props) => {
   const { page, site, isLoading } = props
   const { title: pageTitle, desc: pageDesc, sectionGroup } = page?.fields ?? {}
   const { title: siteTitle, desc: siteDesc } = site?.fields ?? {}
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <Box sx={sx.root}>

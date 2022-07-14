@@ -6,13 +6,14 @@ import { CacheProvider, EmotionCache } from '@emotion/react'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { faGithub, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import CssBaseline from '@mui/material/CssBaseline'
 import { ThemeProvider } from '@mui/material/styles'
 import { createEmotionCache } from '~/conductors/utils'
 import { theme } from '~/conductors/utils/theme'
 
 config.autoAddCss = false
-library.add(faGithub, faLinkedinIn, faInstagram, faTwitter)
+library.add(faGithub, faLinkedinIn, faInstagram, faTwitter, faAddressCard)
 
 type NextAppProps = {
   emotionCache?: EmotionCache

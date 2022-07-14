@@ -11,7 +11,7 @@ type SectionProps = {
   sectionIndex?: number
 }
 
-const useSx = createSx<SectionProps>((props, theme) => {
+const makeSx = createSx<SectionProps>((props, theme) => {
   const { sectionIndex, section } = props
   const { bgImage, bgColor } = section?.fields ?? {}
   const { barHeight } = theme.options
@@ -44,7 +44,7 @@ const useSx = createSx<SectionProps>((props, theme) => {
 const Section: React.VFC<SectionProps> = (props) => {
   const { section } = props
   const { title, desc, nav } = section?.fields ?? {}
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <Box sx={sx.root}>

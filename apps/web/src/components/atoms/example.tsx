@@ -6,7 +6,7 @@ type ExampleProps = {
   //
 }
 
-const useSx = createSx<ExampleProps>((props, theme) => {
+const makeSx = createSx<ExampleProps>((props, theme) => {
   return {
     root: {
       color: 'red'
@@ -16,7 +16,7 @@ const useSx = createSx<ExampleProps>((props, theme) => {
 
 const Example: React.FC<ExampleProps> = (props) => {
   const { children } = props
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <Box sx={sx.root}>

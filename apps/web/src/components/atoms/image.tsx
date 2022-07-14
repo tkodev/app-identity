@@ -13,7 +13,7 @@ type ImageProps = {
   blockDownload?: boolean
 }
 
-const useSx = createSx<ImageProps>((props) => {
+const makeSx = createSx<ImageProps>((props) => {
   const { width, height, aspectRatio, fit, blockDownload } = props
   return {
     root: {
@@ -58,7 +58,7 @@ const Image: React.VFC<ImageProps> = (props) => {
     fit = 'fill', // fill, contain, cover, none, scale-down
     blockDownload = false // whether div covers img tag or not.
   } = props
-  const sx = useSx({ src, alt, width, height, aspectRatio, fit, blockDownload })
+  const sx = makeSx({ src, alt, width, height, aspectRatio, fit, blockDownload })
 
   return (
     <Box sx={sx.root}>

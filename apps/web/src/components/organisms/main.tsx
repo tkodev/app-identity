@@ -6,7 +6,7 @@ type MainProps = {
   //
 }
 
-const useSx = createSx<MainProps>((props) => {
+const makeSx = createSx<MainProps>((props) => {
   return {
     root: {
       gridRow: 2
@@ -16,7 +16,7 @@ const useSx = createSx<MainProps>((props) => {
 
 const Main: React.FC<MainProps> = (props) => {
   const { children } = props
-  const sx = useSx(props)
+  const sx = makeSx(props)
 
   return (
     <Box sx={sx.root} component="main">

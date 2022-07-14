@@ -1,13 +1,13 @@
-import { SxProps, Theme, useTheme } from '@mui/material/styles'
+import { SxProps, Theme } from '@mui/material/styles'
+import { theme } from '~/conductors/utils/theme'
 
 type Sx = Record<string, SxProps<Theme>>
 
 const createSx = <T>(styles: (props: T, theme: Theme) => Sx) => {
-  const useSx = (props: T) => {
-    const theme = useTheme()
+  const makeSx = (props: T) => {
     return styles(props, theme)
   }
-  return useSx
+  return makeSx
 }
 
 export { createSx }
