@@ -42,12 +42,12 @@ const Footer: React.FC<FooterProps> = (props) => {
       <FooterBar>
         <Grid container sx={sx.gridContainer}>
           <Grid item xs={2} sx={sx.gridLogo}>
-            <Button>
+            <Button href="/#top">
               <Image src="/images/logo-dark-crop@2x.png" alt="Logo" height="18px" fit="contain" />
             </Button>
           </Grid>
           <Grid item xs={10} sx={sx.gridMenu}>
-            <Button>{copyright}</Button>
+            <Button href="/#top">{copyright}</Button>
           </Grid>
         </Grid>
       </FooterBar>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Entry } from 'contentful'
-import { Box, Grid } from '@mui/material'
+import { Box, Button, Grid } from '@mui/material'
 import { Container } from '~/components/atoms'
 import { RenderMarkdown } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
@@ -34,13 +34,16 @@ const useSx = createSx<SectionProps>((props, theme) => {
     gridItem: {
       height: '100%',
       position: 'relative'
+    },
+    button: {
+      marginTop: 4
     }
   }
 })
 
 const Section: React.VFC<SectionProps> = (props) => {
   const { section } = props
-  const { title, desc } = section?.fields ?? {}
+  const { title, desc, nav } = section?.fields ?? {}
   const sx = useSx(props)
 
   return (
@@ -49,6 +52,11 @@ const Section: React.VFC<SectionProps> = (props) => {
         <Grid container>
           <Grid item xs={12} sm={6} sx={sx.gridItem}>
             <RenderMarkdown>{desc}</RenderMarkdown>
+            {nav && (
+              <Button sx={sx.button} variant="outlined" href={nav.fields.path}>
+                {nav.fields.title}
+              </Button>
+            )}
           </Grid>
         </Grid>
       </Container>

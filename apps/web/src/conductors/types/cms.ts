@@ -42,6 +42,7 @@ type CmsSection = CmsEntry<{
   bgImage: Asset
   bgColor: string
   image: Asset
+  nav: Entry<CmsNav>
 }>
 
 export type { CmsEntry, CmsNav, CmsNavMenu, CmsSection, CmsSectionGroup, CmsPage, CmsSite }

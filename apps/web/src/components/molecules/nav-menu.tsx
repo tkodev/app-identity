@@ -39,13 +39,13 @@ const NavMenu: React.VFC<NavMenuProps> = (props) => {
   return (
     <Box sx={sx.root} component="nav">
       {navMenu?.fields.navs.map((nav) => {
-        const { alias, title, icon } = nav.fields
+        const { alias, title, icon, path } = nav.fields
         return showIcons ? (
-          <IconButton sx={sx.navIcon} key={alias} aria-label={title}>
+          <IconButton sx={sx.navIcon} href={path} key={alias} aria-label={title}>
             <FontAwesomeIcon icon={['fab', icon]} />
           </IconButton>
         ) : (
-          <Button sx={sx.navItem} key={alias}>
+          <Button sx={sx.navItem} href={path} key={alias}>
             {title}
           </Button>
         )

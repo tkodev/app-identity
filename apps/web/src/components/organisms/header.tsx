@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = (props) => {
       <HeaderBar>
         <Grid container sx={sx.gridContainer}>
           <Grid item xs={2} sx={sx.gridLogo}>
-            <Button>
+            <Button href="/#top">
               <Image src="/images/logo-dark-crop@2x.png" alt="Logo" height="18px" fit="contain" />
             </Button>
           </Grid>
