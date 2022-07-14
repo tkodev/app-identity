@@ -55,7 +55,8 @@ const theme = createTheme({
       opacity: 0.5
     },
     body1: {
-      fontSize: 16
+      fontSize: 16,
+      marginBottom: 16
     },
     button: {
       fontSize: 12,

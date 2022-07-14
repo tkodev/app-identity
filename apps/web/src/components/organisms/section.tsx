@@ -44,7 +44,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       paddingTop: 4
     },
     button: {
-      marginTop: 4
+      marginTop: 2
     },
     image: {
       padding: 4,
