@@ -21,7 +21,7 @@ const makeSx = createSx<NavSeparatorProps>((props, theme) => {
 const NavSeparator: React.VFC<NavSeparatorProps> = (props) => {
   const sx = makeSx(props)
 
-  return <Box sx={sx.root}>|</Box>
+  return <Box sx={sx.root}>/</Box>
 }
 
 export { NavSeparator }

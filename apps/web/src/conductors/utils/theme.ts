@@ -29,12 +29,6 @@ const theme = createTheme({
     fontWeightRegular: 'normal',
     fontWeightMedium: 'bold',
     fontWeightBold: 'bold',
-    body1: {
-      fontSize: 16
-    },
-    body2: {
-      fontSize: 16
-    },
     h1: {
       lineHeight: 1.0
     },
@@ -53,10 +47,21 @@ const theme = createTheme({
     h6: {
       lineHeight: 1.0
     },
+    subtitle1: {
+      fontSize: 12,
+      letterSpacing: 2,
+      fontWeight: 'normal',
+      textTransform: 'uppercase',
+      opacity: 0.5
+    },
+    body1: {
+      fontSize: 16
+    },
     button: {
       fontSize: 12,
       letterSpacing: 2,
-      fontWeight: 'normal'
+      fontWeight: 'normal',
+      textTransform: 'uppercase'
     }
   },
   options: {

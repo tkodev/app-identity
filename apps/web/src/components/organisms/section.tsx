@@ -1,6 +1,6 @@
 import React from 'react'
 import { Entry } from 'contentful'
-import { Box, Button, Grid } from '@mui/material'
+import { Box, Button, Grid, Typography } from '@mui/material'
 import { Container } from '~/components/atoms'
 import { RenderMarkdown } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
@@ -25,15 +25,20 @@ const makeSx = createSx<SectionProps>((props, theme) => {
     },
     container: {
       height: '100%',
+      paddingTop: sectionIndex === 0 ? barHeight : 2,
+      paddingBottom: 2,
+      display: 'grid',
+      gridTemplateRows: 'min-content 1fr'
+    },
+    sectionHeader: {
+      gridRow: 1,
+      paddingTop: 4
+    },
+    sectionMain: {
+      gridRow: 2,
       display: 'flex',
       justifyContent: 'center',
-      flexFlow: 'column',
-      paddingTop: sectionIndex === 0 ? barHeight : 2,
-      paddingBottom: 2
-    },
-    gridItem: {
-      height: '100%',
-      position: 'relative'
+      flexFlow: 'column'
     },
     button: {
       marginTop: 4
@@ -49,16 +54,23 @@ const Section: React.VFC<SectionProps> = (props) => {
   return (
     <Box sx={sx.root}>
       <Container fixed sx={sx.container}>
-        <Grid container>
-          <Grid item xs={12} sm={6} sx={sx.gridItem}>
-            <RenderMarkdown>{desc}</RenderMarkdown>
-            {nav && (
-              <Button sx={sx.button} variant="outlined" href={nav.fields.path}>
-                {nav.fields.title}
-              </Button>
-            )}
+        <Box sx={sx.sectionHeader}>
+          <Typography variant="subtitle1" component="h2" sx={sx.title}>
+            &gt; {title} / ※
+          </Typography>
+        </Box>
+        <Box sx={sx.sectionMain}>
+          <Grid container>
+            <Grid item xs={12} sm={6}>
+              <RenderMarkdown>{desc}</RenderMarkdown>
+              {nav && (
+                <Button sx={sx.button} variant="outlined" href={nav.fields.path}>
+                  {nav.fields.title}
+                </Button>
+              )}
+            </Grid>
           </Grid>
-        </Grid>
+        </Box>
       </Container>
     </Box>
   )
