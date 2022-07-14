@@ -2,8 +2,8 @@ import React from 'react'
 import { Entry } from 'contentful'
 import dayjs from 'dayjs'
 import { Button, Grid } from '@mui/material'
-import { Image } from '~/components/atoms'
-import { FooterBar } from '~/components/molecules'
+import { Image, NavSeparator } from '~/components/atoms'
+import { FooterBar, NavMenu } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
@@ -48,6 +48,8 @@ const Footer: React.FC<FooterProps> = (props) => {
           </Grid>
           <Grid item xs={10} sx={sx.gridMenu}>
             <Button href="/#top">{copyright}</Button>
+            <NavSeparator flow="row" />
+            <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
           </Grid>
         </Grid>
       </FooterBar>

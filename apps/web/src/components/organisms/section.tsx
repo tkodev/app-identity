@@ -28,7 +28,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       paddingTop: sectionIndex === 0 ? barHeight : 2,
       paddingBottom: 2,
       display: 'grid',
-      gridTemplateRows: 'min-content 1fr'
+      gridTemplateRows: 'min-content 1fr min-content'
     },
     sectionHeader: {
       gridRow: 1,
@@ -39,6 +39,10 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       display: 'flex',
       justifyContent: 'center',
       flexFlow: 'column'
+    },
+    sectionFooter: {
+      gridRow: 3,
+      paddingTop: 4
     },
     button: {
       marginTop: 4
@@ -61,7 +65,7 @@ const Section: React.VFC<SectionProps> = (props) => {
         </Box>
         <Box sx={sx.sectionMain}>
           <Grid container>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} md={6}>
               <RenderMarkdown>{desc}</RenderMarkdown>
               {nav && (
                 <Button sx={sx.button} variant="outlined" href={nav.fields.path}>
@@ -71,6 +75,7 @@ const Section: React.VFC<SectionProps> = (props) => {
             </Grid>
           </Grid>
         </Box>
+        <Box sx={sx.sectionFooter} />
       </Container>
     </Box>
   )
