@@ -23,7 +23,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontSize: 16,
+    fontSize: 12,
     fontFamily: '"Carbon", monospace',
     fontWeightLight: 'thin',
     fontWeightRegular: 'normal',
@@ -54,7 +54,7 @@ const theme = createTheme({
       lineHeight: 1.0
     },
     button: {
-      fontSize: 14,
+      fontSize: 12,
       letterSpacing: 2,
       fontWeight: 'normal'
     }
