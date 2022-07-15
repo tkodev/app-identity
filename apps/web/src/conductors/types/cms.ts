@@ -1,7 +1,7 @@
 import { Asset, Entry } from 'contentful'
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types'
 
-// templates
+// base
 type CmsEntry<T = {}> = {
   alias: string
   title: string

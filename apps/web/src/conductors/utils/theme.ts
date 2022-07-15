@@ -24,30 +24,37 @@ const theme = createTheme({
   },
   typography: {
     fontSize: 12,
-    fontFamily: '"Carbon", monospace',
+    fontFamily: '"Noto Sans", sans-serif',
     fontWeightLight: 'thin',
     fontWeightRegular: 'normal',
     fontWeightMedium: 'bold',
     fontWeightBold: 'bold',
     h1: {
+      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h2: {
+      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h3: {
+      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h4: {
+      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h5: {
+      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h6: {
+      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     subtitle1: {
+      fontFamily: '"Carbon", monospace',
       fontSize: 12,
       letterSpacing: 2,
       fontWeight: 'normal',
@@ -55,10 +62,11 @@ const theme = createTheme({
       opacity: 0.5
     },
     body1: {
-      fontSize: 16,
+      fontSize: 12,
       marginBottom: 16
     },
     button: {
+      fontFamily: '"Carbon", monospace',
       fontSize: 12,
       letterSpacing: 2,
       fontWeight: 'normal',

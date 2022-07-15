@@ -21,7 +21,7 @@ const makeSx = createSx<NavMenuProps>((props, theme) => {
       flexFlow: flow === 'row' ? 'row' : 'column'
     },
     navItem: {
-      margin: 0.25
+      m: 0.25
     },
     navIcon: {
       fontSize: theme.typography.button.fontSize,

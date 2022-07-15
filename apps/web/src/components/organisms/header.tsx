@@ -3,7 +3,7 @@ import { Entry } from 'contentful'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Box, Button, Grid, IconButton } from '@mui/material'
-import { Image, NavSeparator } from '~/components/atoms'
+import { Image, Splitter } from '~/components/atoms'
 import { HeaderBar, NavMenu, NavModal } from '~/components/molecules'
 import { createSx, useModalState } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
@@ -37,9 +37,9 @@ const makeSx = createSx<HeaderProps>((props, theme) => {
       display: { xs: 'none', md: 'flex' }
     },
     navIcon: {
-      margin: 1,
       width: 36,
-      height: 36
+      height: 36,
+      m: 1
     }
   }
 })
@@ -71,7 +71,7 @@ const Header: React.FC<HeaderProps> = (props) => {
             </Box>
             <Box sx={sx.desktop}>
               <NavMenu navMenu={site?.fields.headerMenu} flow="row" />
-              <NavSeparator flow="row" />
+              <Splitter flow="row" />
               <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
             </Box>
           </Grid>
@@ -84,7 +84,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         aria-describedby="modal-modal-description"
       >
         <NavMenu navMenu={site?.fields.headerMenu} flow="column" />
-        <NavSeparator flow="column" />
+        <Splitter flow="column" />
         <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
       </NavModal>
     </>

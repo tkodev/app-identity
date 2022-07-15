@@ -15,18 +15,17 @@ const makeSx = createSx<NavModalProps>((props, theme) => {
     root: {
       backgroundColor: 'rgba(18, 18, 18, 0.5)',
       backdropFilter: 'blur(10px)',
-      padding: 2,
-      height: '100vh'
+      height: '100vh',
+      p: 2
     },
     container: {
       position: 'relative',
       height: '100%',
-      paddingTop: 2,
-      paddingBottom: 2,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      flexFlow: 'column'
+      flexFlow: 'column',
+      py: 2
     },
     closeIcon: {
       position: 'absolute',

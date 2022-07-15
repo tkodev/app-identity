@@ -24,14 +24,14 @@ const makeSx = createSx<SectionProps>((props, theme) => {
     container: {
       minHeight: '100vh',
       height: 'auto',
-      paddingTop: sectionIndex === 0 ? barHeight : 2,
-      paddingBottom: 2,
       display: 'grid',
-      gridTemplateRows: 'min-content 1fr min-content'
+      gridTemplateRows: 'min-content 1fr min-content',
+      pt: sectionIndex === 0 ? barHeight : 2,
+      pb: 2
     },
     sectionHeader: {
       gridRow: 1,
-      paddingTop: 4
+      pt: 4
     },
     sectionMain: {
       gridRow: 2,
@@ -43,12 +43,15 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       gridRow: 3,
       paddingTop: 4
     },
-    button: {
-      marginTop: 2
+    title: {
+      mb: 2
+    },
+    desc: {
+      mb: 2
     },
     image: {
-      padding: 4,
-      textAlign: 'center'
+      textAlign: 'center',
+      p: 4
     }
   }
 })
@@ -70,7 +73,7 @@ const Section: React.VFC<SectionProps> = (props) => {
           {variant === 'hero' && (
             <Grid container>
               <Grid item xs={12} sm={10} md={8} lg={6}>
-                <RenderMarkdown>{desc}</RenderMarkdown>
+                <RenderMarkdown sx={sx.desc}>{desc}</RenderMarkdown>
                 {navMenu &&
                   navMenu.fields.navs.map((nav) => (
                     <Button sx={sx.button} variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
@@ -81,17 +84,17 @@ const Section: React.VFC<SectionProps> = (props) => {
             </Grid>
           )}
           {variant === 'split' && (
-            <Grid container>
-              <Grid item xs={12} md={6} order={{ xs: 1, sm: 0 }}>
+            <Grid container alignItems="center">
+              <Grid item xs={12} md={6} order={{ xs: 1, md: 0 }}>
                 <RenderMarkdown>{desc}</RenderMarkdown>
                 {navMenu &&
                   navMenu.fields.navs.map((nav) => (
-                    <Button sx={sx.button} variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
+                    <Button variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
                       {nav.fields.title}
                     </Button>
                   ))}
               </Grid>
-              <Grid item xs={12} md={6} sx={sx.image}>
+              <Grid item sx={sx.image} xs={12} md={6}>
                 <Image
                   src={image?.fields.file.url || ''}
                   alt={image?.fields.title || ''}

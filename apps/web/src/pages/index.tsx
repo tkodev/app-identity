@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-import { Page } from '~/components/templates'
+import { Page } from '~/components/species'
 import { ssrCmsEntries, useCmsEntries } from '~/conductors/queries'
 import { CmsPage, CmsSite } from '~/conductors/types'
 import { ssrQueryClient } from '~/conductors/utils/query'

@@ -3,7 +3,7 @@ import React from 'react'
 import { Entry } from 'contentful'
 import { Box } from '@mui/material'
 import { Footer, Header, Main } from '~/components/organisms'
-import { Sections } from '~/components/templates'
+import { Sections } from '~/components/species'
 import { createSx } from '~/conductors/hooks'
 import { CmsPage, CmsSite } from '~/conductors/types'
 

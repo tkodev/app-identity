@@ -20,10 +20,8 @@ const makeSx = createSx<FooterBarProps>((props, theme) => {
     },
     container: {
       height: '100%',
-      paddingTop: 2,
-      paddingBottom: 2,
-      paddingLeft: 4,
-      paddingRight: 4
+      py: 2,
+      px: 4
     }
   }
 })

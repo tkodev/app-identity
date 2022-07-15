@@ -20,8 +20,7 @@ const makeSx = createSx<HeaderBarProps>((props, theme) => {
     },
     container: {
       height: '100%',
-      paddingTop: 2,
-      paddingBottom: 2
+      py: 2
     }
   }
 })

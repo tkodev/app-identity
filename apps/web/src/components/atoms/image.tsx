@@ -37,8 +37,8 @@ const makeSx = createSx<ImageProps>((props) => {
     ratio: {
       width: '100%',
       height: aspectRatio ? 0 : height,
-      paddingBottom: aspectRatio ? ratioToPercentStr(aspectRatio) : 0,
-      opacity: 0
+      opacity: 0,
+      pb: aspectRatio ? ratioToPercentStr(aspectRatio) : 0
     },
     image: {
       position: 'absolute',
