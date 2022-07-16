@@ -38,7 +38,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
           "intro intro" min-content
           "content image" 1fr
           "outro outro" min-content /
-          ${isSplit ? '1fr 1fr' : '60% 40%'}
+          minmax(0, 55%) minmax(0, 45%)
         `
       },
       placeItems: 'center start',
@@ -53,7 +53,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       gridArea: 'image',
       placeSelf: 'center center',
       display: isSplit ? 'block' : 'none',
-      width: { xs: '60%', md: '75%' },
+      width: { xs: '60%', md: '75%', lg: '60%' },
       textAlign: 'center'
     },
     content: {
