@@ -23,46 +23,53 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontSize: 14,
+    fontSize: 12,
     fontFamily: '"Industry", sans-serif',
     fontWeightLight: 'thin',
     fontWeightRegular: 'normal',
     fontWeightMedium: 'bold',
     fontWeightBold: 'bold',
     h1: {
-      lineHeight: 1.0
+      letterSpacing: 2,
+      lineHeight: 1
     },
     h2: {
-      lineHeight: 1.0
+      letterSpacing: 2,
+      lineHeight: 1
     },
     h3: {
-      lineHeight: 1.0
+      letterSpacing: 2,
+      lineHeight: 1
     },
     h4: {
-      lineHeight: 1.0
+      letterSpacing: 2,
+      lineHeight: 1
     },
     h5: {
-      lineHeight: 1.0
+      letterSpacing: 2,
+      lineHeight: 1
     },
     h6: {
-      lineHeight: 1.0
+      letterSpacing: 2,
+      lineHeight: 1
     },
     subtitle1: {
-      fontSize: '0.6rem',
+      fontSize: 10,
       letterSpacing: 2,
       fontWeight: 'normal',
       textTransform: 'uppercase',
       opacity: 0.5
     },
-    body1: {
-      fontSize: '1rem',
-      marginBottom: 16
-    },
     button: {
-      fontSize: '0.6rem',
+      fontSize: 10,
       letterSpacing: 2,
       fontWeight: 'normal',
       textTransform: 'uppercase'
+    },
+    body1: {
+      fontSize: 14,
+      letterSpacing: 0.25,
+      marginBottom: 16
     }
   },
   options: {

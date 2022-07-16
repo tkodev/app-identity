@@ -23,9 +23,6 @@ const NextDocument = (props: NextDocumentProps = {}) => {
         <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#333333" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         {/* fonts */}
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" /> */}
         <link rel="stylesheet" href="/fonts/industry/index.css" />
         {emotionTags}
       </Head>
