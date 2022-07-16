@@ -23,51 +23,43 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontSize: 12,
-    fontFamily: '"Noto Sans", sans-serif',
+    fontSize: 14,
+    fontFamily: '"Industry", sans-serif',
     fontWeightLight: 'thin',
     fontWeightRegular: 'normal',
     fontWeightMedium: 'bold',
     fontWeightBold: 'bold',
     h1: {
-      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h2: {
-      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h3: {
-      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h4: {
-      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h5: {
-      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     h6: {
-      fontFamily: '"Carbon", monospace',
       lineHeight: 1.0
     },
     subtitle1: {
-      fontFamily: '"Carbon", monospace',
-      fontSize: 12,
+      fontSize: '0.6rem',
       letterSpacing: 2,
       fontWeight: 'normal',
       textTransform: 'uppercase',
       opacity: 0.5
     },
     body1: {
-      fontSize: 12,
+      fontSize: '1rem',
       marginBottom: 16
     },
     button: {
-      fontFamily: '"Carbon", monospace',
-      fontSize: 12,
+      fontSize: '0.6rem',
       letterSpacing: 2,
       fontWeight: 'normal',
       textTransform: 'uppercase'
