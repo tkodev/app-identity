@@ -2,8 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import { Entry } from 'contentful'
 import { Box } from '@mui/material'
-import { Footer, Header, Main } from '~/components/organisms'
-import { Sections } from '~/components/species'
+import { Footer, Header, Main, RenderSections } from '~/components/organisms'
 import { createSx } from '~/conductors/hooks'
 import { CmsPage, CmsSite } from '~/conductors/types'
 
@@ -18,7 +17,11 @@ const makeSx = createSx<PageProps>(() => {
     root: {
       minHeight: '100vh',
       display: 'grid',
-      gridTemplateRows: 'min-content 1fr min-content'
+      gridTemplate: `
+        "header" min-content
+        "main" 1fr
+        "footer" min-content
+      `
     }
   }
 })
@@ -41,7 +44,7 @@ const Page: React.VFC<PageProps> = (props) => {
       )}
       <Header site={site} />
       <Main>
-        <Sections sectionGroup={sectionGroup} isLoading={isLoading} />
+        <RenderSections sectionGroup={sectionGroup} isLoading={isLoading} />
       </Main>
       <Footer site={site} />
     </Box>

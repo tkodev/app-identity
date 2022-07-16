@@ -4,8 +4,8 @@ import { Sx, createSx } from '~/conductors/hooks'
 import { ratioToPercentStr } from '~/conductors/utils'
 
 type ImageProps = {
-  src: string
-  alt: string
+  src?: string
+  alt?: string
   sx?: Sx
   width?: string
   height?: string
@@ -66,12 +66,13 @@ const Image: React.VFC<ImageProps> = (props) => {
 
   return (
     <Box sx={sx.root}>
-      {/* image aspect ratio sizer */}
-      <Box component="img" sx={sx.ratio} src={src} alt={alt} crossOrigin="anonymous" />
-      {/* image render */}
-      <Box component="img" sx={sx.image} src={src} alt={alt} crossOrigin="anonymous" />
-      {/* image download blocker */}
-      <Box sx={sx.blocker} />
+      <Box component={src ? 'img' : 'div'} sx={sx.ratio} src={src} crossOrigin="anonymous" />
+      {src && (
+        <>
+          <Box component="img" sx={sx.image} src={src} alt={alt} crossOrigin="anonymous" />
+          <Box sx={sx.blocker} />
+        </>
+      )}
     </Box>
   )
 }

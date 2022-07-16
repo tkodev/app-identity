@@ -1,4 +1,5 @@
 export * from './footer'
 export * from './header'
-export * from './section'
 export * from './main'
+export * from './render-markdown'
+export * from './render-sections'

@@ -17,7 +17,7 @@ const makeSx = createSx<NavMenuProps>((props, theme) => {
   return {
     root: {
       display: 'flex',
-      alignItems: 'center',
+      alignItems: flow === 'row' ? 'center' : 'normal',
       flexFlow: flow === 'row' ? 'row' : 'column'
     },
     navItem: {

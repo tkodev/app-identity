@@ -1,16 +1,16 @@
 import React from 'react'
 import { Entry } from 'contentful'
 import { Box } from '@mui/material'
-import { Section } from '~/components/organisms'
+import { Section } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
 import { CmsSection, CmsSectionGroup } from '~/conductors/types'
 
-type SectionsProps = {
+type RenderSectionsProps = {
   sectionGroup?: Entry<CmsSectionGroup> | null
   isLoading?: boolean
 }
 
-const makeSx = createSx<SectionsProps>(() => {
+const makeSx = createSx<RenderSectionsProps>(() => {
   return {
     root: {
       //
@@ -18,7 +18,7 @@ const makeSx = createSx<SectionsProps>(() => {
   }
 })
 
-const Sections: React.VFC<SectionsProps> = (props) => {
+const RenderSections: React.VFC<RenderSectionsProps> = (props) => {
   const { sectionGroup, isLoading } = props
   const { sections } = sectionGroup?.fields ?? {}
   const sx = makeSx(props)
@@ -30,14 +30,10 @@ const Sections: React.VFC<SectionsProps> = (props) => {
         if (contentType === 'section') {
           return <Section section={section as Entry<CmsSection>} sectionIndex={sectionIndex} key={section.sys.id} />
         }
-        if (contentType === 'sectionGroup') {
-          // todo: use section carousel instead of section group
-          return <Sections sectionGroup={section as Entry<CmsSectionGroup>} key={section.sys.id} />
-        }
       })}
       {isLoading && 'isLoading'}
     </Box>
   )
 }
 
-export { Sections }
+export { RenderSections }

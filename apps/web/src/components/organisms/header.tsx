@@ -2,9 +2,9 @@ import React from 'react'
 import { Entry } from 'contentful'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Box, Button, Grid, IconButton } from '@mui/material'
-import { Image, Splitter } from '~/components/atoms'
-import { HeaderBar, NavMenu, NavModal } from '~/components/molecules'
+import { AppBar, Box, Button, Grid, IconButton } from '@mui/material'
+import { Container, Image, Splitter } from '~/components/atoms'
+import { NavMenu, NavModal } from '~/components/molecules'
 import { createSx, useModalState } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
@@ -13,30 +13,38 @@ type HeaderProps = {
 }
 
 const makeSx = createSx<HeaderProps>((props, theme) => {
+  const { barHeight } = theme.options
+
   return {
-    gridContainer: {
-      height: '100%'
+    root: {
+      gridArea: 'header',
+      boxShadow: 'none',
+      background: theme.options.bgTint,
+      backdropFilter: 'blur(10px)'
     },
-    gridLogo: {
-      height: '100%',
-      display: 'flex',
-      alignItems: 'center'
+    container: {
+      height: barHeight,
+      display: 'grid',
+      gridTemplate: `
+        "logo menu" /
+        min-content 1fr
+      `,
+      placeItems: 'center end',
+      gap: 2,
+      py: 2
     },
-    gridMenu: {
-      height: '100%',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-end'
+    logo: {
+      gridArea: 'logo'
     },
-    mobile: {
-      height: '100%',
+    mobileMenu: {
+      gridArea: 'menu',
       display: { xs: 'flex', md: 'none' }
     },
-    desktop: {
-      height: '100%',
+    desktopMenu: {
+      gridArea: 'menu',
       display: { xs: 'none', md: 'flex' }
     },
-    navIcon: {
+    menuButton: {
       width: 36,
       height: 36,
       m: 1
@@ -50,33 +58,29 @@ const Header: React.FC<HeaderProps> = (props) => {
   const { modalState, handleModalState } = useModalState()
 
   return (
-    <>
-      <HeaderBar>
-        <Grid container sx={sx.gridContainer}>
-          <Grid item xs={2} sx={sx.gridLogo}>
-            <Button href="/#top">
-              <Image
-                src={site?.fields.logo.fields.file.url || ''}
-                alt={site?.fields.logo.fields.title || ''}
-                height="18px"
-                fit="contain"
-              />
-            </Button>
-          </Grid>
-          <Grid item xs={10} sx={sx.gridMenu}>
-            <Box sx={sx.mobile}>
-              <IconButton sx={sx.navIcon} onClick={handleModalState()} aria-label="Toggle Menu">
-                <FontAwesomeIcon icon={faBars} />
-              </IconButton>
-            </Box>
-            <Box sx={sx.desktop}>
-              <NavMenu navMenu={site?.fields.headerMenu} flow="row" />
-              <Splitter flow="row" />
-              <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
-            </Box>
-          </Grid>
-        </Grid>
-      </HeaderBar>
+    <AppBar position="fixed" component="header" sx={sx.root}>
+      <Container fixed sx={sx.container}>
+        <Box sx={sx.logo}>
+          <Button href="/#top">
+            <Image
+              src={site?.fields.logo.fields.file.url}
+              alt={site?.fields.logo.fields.title}
+              height="18px"
+              fit="contain"
+            />
+          </Button>
+        </Box>
+        <Box sx={sx.mobileMenu}>
+          <IconButton sx={sx.menuButton} onClick={handleModalState()} aria-label="Toggle Menu">
+            <FontAwesomeIcon icon={faBars} />
+          </IconButton>
+        </Box>
+        <Box sx={sx.desktopMenu}>
+          <NavMenu navMenu={site?.fields.headerMenu} flow="row" />
+          <Splitter flow="row" />
+          <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
+        </Box>
+      </Container>
       <NavModal
         open={modalState}
         onClose={handleModalState(false)}
@@ -87,7 +91,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         <Splitter flow="column" />
         <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
       </NavModal>
-    </>
+    </AppBar>
   )
 }
 

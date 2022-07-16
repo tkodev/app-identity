@@ -9,7 +9,7 @@ type MainProps = {
 const makeSx = createSx<MainProps>((props) => {
   return {
     root: {
-      gridRow: 2
+      gridArea: 'main'
     }
   }
 })
