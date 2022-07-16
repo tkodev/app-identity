@@ -16,16 +16,18 @@ const makeSx = createSx<SectionProps>((props, theme) => {
   const { bgImage, bgColor } = section?.fields ?? {}
   const { barHeight } = theme.options
 
-  const offset = `${parseInt(barHeight) + parseInt(theme.spacing(4))}px`
-  const bg = bgImage && `${theme.options.bgTint}, url("${bgImage?.fields.file.url}") center / cover no-repeat`
+  const isFirst = sectionIndex === 0
   const isSplit = section?.fields.variant === 'split'
+  const sectionPadding = isFirst ? `${parseInt(barHeight) + parseInt(theme.spacing(4))}px` : 4
+  const sectionHeight = isFirst ? '100vh' : `calc(100vh - ${barHeight})`
+  const sectionBg = bgImage && `${theme.options.bgTint}, url("${bgImage?.fields.file.url}") center / cover no-repeat`
 
   return {
     root: {
-      background: bg ?? bgColor
+      background: sectionBg ?? bgColor
     },
     container: {
-      minHeight: '100vh',
+      minHeight: sectionHeight,
       display: 'grid',
       gridTemplate: {
         xs: `
@@ -43,7 +45,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       },
       placeItems: 'center start',
       gap: 4,
-      pt: sectionIndex === 0 ? offset : 4,
+      pt: sectionPadding,
       pb: 4
     },
     intro: {
@@ -74,11 +76,11 @@ const makeSx = createSx<SectionProps>((props, theme) => {
 
 const Section: React.VFC<SectionProps> = (props) => {
   const { section } = props
-  const { title, desc, image, navs } = section?.fields ?? {}
+  const { alias, title, desc, image, navs } = section?.fields ?? {}
   const sx = makeSx(props)
 
   return (
-    <Box sx={sx.root}>
+    <Box sx={sx.root} id={alias}>
       <Container fixed sx={sx.container}>
         <Box sx={sx.intro}>
           <Typography variant="subtitle1" component="h2" sx={sx.title}>
