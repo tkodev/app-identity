@@ -30,7 +30,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       gridTemplate: {
         xs: `
           "intro" min-content
-          ${isSplit ? '"image" min-content' : ''}
+          "image" min-content
           "content" 1fr
           "outro" min-content
         `,
