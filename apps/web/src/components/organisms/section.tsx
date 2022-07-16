@@ -47,7 +47,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
       mb: 2
     },
     desc: {
-      mb: 2
+      mb: 4
     },
     image: {
       textAlign: 'center',
