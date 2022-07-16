@@ -67,7 +67,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
     },
     sectionFooter: {
       gridRow: 3,
-      paddingTop: 4
+      pt: 4
     }
   }
 })

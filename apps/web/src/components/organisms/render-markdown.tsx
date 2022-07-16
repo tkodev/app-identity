@@ -24,7 +24,7 @@ const RenderMarkdown: React.FC<RenderMarkdownProps> = (props) => {
           h6: ({ node, ...props }) => <Typography variant="h6" component="p" {...props} />,
           p: ({ node, ...props }) => <Typography variant="body1" component="p" {...props} />,
           code: ({ node, ...props }) => <Typography variant="body1" component="code" {...props} />,
-          hr: ({ node, ...props }) => <Divider sx={{ marginTop: 2, marginBottom: 2 }} {...props} />,
+          hr: ({ node, ...props }) => <Divider sx={{ my: 2 }} {...props} />,
           ul: ({ node, ordered, ...props }) => (
             <Typography variant="body1" component="ul" sx={{ paddingInlineStart: 2 }} {...props} />
           )

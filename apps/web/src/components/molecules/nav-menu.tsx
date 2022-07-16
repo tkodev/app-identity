@@ -24,10 +24,10 @@ const makeSx = createSx<NavMenuProps>((props, theme) => {
       m: 0.25
     },
     navIcon: {
-      fontSize: theme.typography.button.fontSize,
-      margin: 0.25,
       width: 32,
-      height: 32
+      height: 32,
+      fontSize: theme.typography.button.fontSize,
+      m: 0.25
     }
   }
 })
