@@ -22,7 +22,7 @@ const RenderMarkdown: React.FC<RenderMarkdownProps> = (props) => {
           h4: ({ node, ...rest }) => <Typography variant="h4" component="p" {...rest} />,
           h5: ({ node, ...rest }) => <Typography variant="h5" component="p" {...rest} />,
           h6: ({ node, ...rest }) => <Typography variant="h6" component="p" {...rest} />,
-          p: ({ node, ...rest }) => <Typography sx={{ mb: 2 }} variant="body1" component="p" gutterBottom {...rest} />,
+          p: ({ node, ...rest }) => <Typography variant="body1" component="p" gutterBottom {...rest} />,
           code: ({ node, ...rest }) => <Typography variant="body1" component="code" {...rest} />,
           hr: ({ node, ...rest }) => <Divider sx={{ my: 2 }} {...rest} />,
           ul: ({ node, ordered, ...rest }) => (
