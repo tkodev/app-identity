@@ -10,23 +10,18 @@ type CmsEntry<T = {}> = {
 
 // 01-02 - pages and sites
 type CmsSite = CmsEntry<{
-  logo: Asset
-  icon: Asset
   image: Asset
-  headerMenu: Entry<CmsNavMenu>
-  footerMenu: Entry<CmsNavMenu>
-  socialMenu: Entry<CmsNavMenu>
-  copyright: string
+  logoNav: Entry<CmsNav>
+  headerNavs: Entry<CmsNav>[]
+  footerNavs: Entry<CmsNav>[]
+  socialNavs: Entry<CmsNav>[]
 }>
 type CmsPage = CmsEntry<{
   image: Asset
-  sectionGroup: Entry<CmsSectionGroup>
+  sections: Entry<CmsSection>[]
 }>
 
-// 03-04 - nav menus and navs
-type CmsNavMenu = CmsEntry<{
-  navs: Entry<CmsNav>[]
-}>
+// 03-04 - navs
 type CmsNav = CmsEntry<{
   iconType?: IconPrefix
   icon?: IconName
@@ -34,16 +29,13 @@ type CmsNav = CmsEntry<{
   file?: Asset
 }>
 
-// 05-06 - section groups and sections
-type CmsSectionGroup = CmsEntry<{
-  sections: Entry<CmsSection | CmsSectionGroup>[]
-}>
+// 05-06 - sections
 type CmsSection = CmsEntry<{
   variant: 'hero' | 'split'
   bgImage: Asset
   bgColor: string
   image: Asset
-  navMenu: Entry<CmsNavMenu>
+  navs: Entry<CmsNav>[]
 }>
 
-export type { CmsEntry, CmsNav, CmsNavMenu, CmsSection, CmsSectionGroup, CmsPage, CmsSite }
+export type { CmsEntry, CmsNav, CmsSection, CmsPage, CmsSite }

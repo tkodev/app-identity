@@ -3,10 +3,10 @@ import { Entry } from 'contentful'
 import { Box } from '@mui/material'
 import { Section } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
-import { CmsSection, CmsSectionGroup } from '~/conductors/types'
+import { CmsSection } from '~/conductors/types'
 
 type RenderSectionsProps = {
-  sectionGroup?: Entry<CmsSectionGroup> | null
+  sections?: Entry<CmsSection>[] | null
   isLoading?: boolean
 }
 
@@ -19,8 +19,7 @@ const makeSx = createSx<RenderSectionsProps>(() => {
 })
 
 const RenderSections: React.VFC<RenderSectionsProps> = (props) => {
-  const { sectionGroup, isLoading } = props
-  const { sections } = sectionGroup?.fields ?? {}
+  const { sections, isLoading } = props
   const sx = makeSx(props)
 
   return (

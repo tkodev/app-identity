@@ -1,9 +1,8 @@
 import React from 'react'
 import { Entry } from 'contentful'
-import dayjs from 'dayjs'
 import { AppBar, Box, Button } from '@mui/material'
 import { Container, Image, Splitter } from '~/components/atoms'
-import { NavMenu } from '~/components/molecules'
+import { Navs } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
@@ -55,29 +54,26 @@ const Footer: React.FC<FooterProps> = (props) => {
   const { site } = props
   const sx = makeSx(props)
 
-  const year = dayjs().year().toString()
-  const copyright = site?.fields.copyright.replace('<year>', year)
-
   return (
     <AppBar position="static" component="footer" sx={sx.root}>
       <Container fixed sx={sx.container}>
         <Box sx={sx.logo}>
-          <Button href="/#top">
+          <Button href={site?.fields.logoNav.fields.path}>
             <Image
-              src={site?.fields.logo.fields.file.url}
-              alt={site?.fields.logo.fields.title}
+              src={site?.fields.logoNav.fields.file?.fields.file.url}
+              alt={site?.fields.logoNav.fields.title}
               height="18px"
               fit="contain"
             />
           </Button>
         </Box>
         <Box sx={sx.mobileMenu}>
-          <Button href="/#top">{copyright}</Button>
+          <Navs navs={site?.fields.footerNavs} flow="row" />
         </Box>
         <Box sx={sx.desktopMenu}>
-          <Button href="/#top">{copyright}</Button>
+          <Navs navs={site?.fields.footerNavs} flow="row" />
           <Splitter flow="row" />
-          <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
+          <Navs navs={site?.fields.socialNavs} flow="row" showIcons />
         </Box>
       </Container>
     </AppBar>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Entry } from 'contentful'
-import { Box, Button, Grid, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import { Container, Image } from '~/components/atoms'
 import { RenderMarkdown } from '~/components/organisms'
 import { createSx } from '~/conductors/hooks'
@@ -74,7 +74,7 @@ const makeSx = createSx<SectionProps>((props, theme) => {
 
 const Section: React.VFC<SectionProps> = (props) => {
   const { section } = props
-  const { title, desc, image, navMenu } = section?.fields ?? {}
+  const { title, desc, image, navs } = section?.fields ?? {}
   const sx = makeSx(props)
 
   return (
@@ -87,12 +87,11 @@ const Section: React.VFC<SectionProps> = (props) => {
         </Box>
         <Box sx={sx.content}>
           <RenderMarkdown sx={sx.contentDesc}>{desc}</RenderMarkdown>
-          {navMenu &&
-            navMenu.fields.navs.map((nav) => (
-              <Button variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
-                {nav.fields.title}
-              </Button>
-            ))}
+          {navs?.map((nav) => (
+            <Button variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
+              {nav.fields.title}
+            </Button>
+          ))}
         </Box>
         <Box sx={sx.image}>
           <Image

@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { AppBar, Box, Button, Grid, IconButton } from '@mui/material'
 import { Container, Image, Splitter } from '~/components/atoms'
-import { NavMenu, NavModal } from '~/components/molecules'
+import { NavModal, Navs } from '~/components/molecules'
 import { createSx, useModalState } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
@@ -61,10 +61,10 @@ const Header: React.FC<HeaderProps> = (props) => {
     <AppBar position="fixed" component="header" sx={sx.root}>
       <Container fixed sx={sx.container}>
         <Box sx={sx.logo}>
-          <Button href="/#top">
+          <Button href={site?.fields.logoNav.fields.path}>
             <Image
-              src={site?.fields.logo.fields.file.url}
-              alt={site?.fields.logo.fields.title}
+              src={site?.fields.logoNav.fields.file?.fields.file.url}
+              alt={site?.fields.logoNav.fields.title}
               height="18px"
               fit="contain"
             />
@@ -76,9 +76,9 @@ const Header: React.FC<HeaderProps> = (props) => {
           </IconButton>
         </Box>
         <Box sx={sx.desktopMenu}>
-          <NavMenu navMenu={site?.fields.headerMenu} flow="row" />
+          <Navs navs={site?.fields.headerNavs} flow="row" />
           <Splitter flow="row" />
-          <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
+          <Navs navs={site?.fields.socialNavs} flow="row" showIcons />
         </Box>
       </Container>
       <NavModal
@@ -87,9 +87,9 @@ const Header: React.FC<HeaderProps> = (props) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <NavMenu navMenu={site?.fields.headerMenu} flow="column" />
+        <Navs navs={site?.fields.headerNavs} flow="column" />
         <Splitter flow="column" />
-        <NavMenu navMenu={site?.fields.socialMenu} flow="row" showIcons />
+        <Navs navs={site?.fields.socialNavs} flow="row" showIcons />
       </NavModal>
     </AppBar>
   )

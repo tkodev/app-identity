@@ -28,7 +28,7 @@ const makeSx = createSx<PageProps>(() => {
 
 const Page: React.VFC<PageProps> = (props) => {
   const { page, site, isLoading } = props
-  const { title: pageTitle, desc: pageDesc, sectionGroup } = page?.fields ?? {}
+  const { title: pageTitle, desc: pageDesc, sections } = page?.fields ?? {}
   const { title: siteTitle, desc: siteDesc } = site?.fields ?? {}
   const sx = makeSx(props)
 
@@ -44,7 +44,7 @@ const Page: React.VFC<PageProps> = (props) => {
       )}
       <Header site={site} />
       <Main>
-        <RenderSections sectionGroup={sectionGroup} isLoading={isLoading} />
+        <RenderSections sections={sections} isLoading={isLoading} />
       </Main>
       <Footer site={site} />
     </Box>

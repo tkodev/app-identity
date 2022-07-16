@@ -1,5 +1,5 @@
+import dayjs from 'dayjs'
 import { round as _round } from 'lodash'
-import { map } from 'lodash'
 
 const ratioToPercentStr = (aspectRatio: string) => {
   const ratio =
@@ -40,4 +40,10 @@ const createCacheKey = (obj: Record<string, any>): string => {
   return `{${cacheKeys.join(',')}}`
 }
 
-export { ratioToPercentStr, keyObjBy, mapObjBy, createCacheKey }
+const replaceCurrentYear = (str: string) => {
+  const year = dayjs().year().toString()
+  const result = str.replace('<year>', year)
+  return result
+}
+
+export { ratioToPercentStr, keyObjBy, mapObjBy, createCacheKey, replaceCurrentYear }

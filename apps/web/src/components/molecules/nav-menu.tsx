@@ -3,15 +3,16 @@ import { Entry } from 'contentful'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Box, Button, IconButton } from '@mui/material'
 import { createSx } from '~/conductors/hooks'
-import { CmsNavMenu } from '~/conductors/types'
+import { CmsNav } from '~/conductors/types'
+import { replaceCurrentYear } from '~/conductors/utils/helpers'
 
-type NavMenuProps = {
-  navMenu?: Entry<CmsNavMenu> | null
+type NavsProps = {
+  navs?: Entry<CmsNav>[] | null
   flow: 'row' | 'column'
   showIcons?: boolean
 }
 
-const makeSx = createSx<NavMenuProps>((props, theme) => {
+const makeSx = createSx<NavsProps>((props, theme) => {
   const { flow } = props
 
   return {
@@ -32,13 +33,13 @@ const makeSx = createSx<NavMenuProps>((props, theme) => {
   }
 })
 
-const NavMenu: React.VFC<NavMenuProps> = (props) => {
-  const { navMenu, showIcons = false } = props
+const Navs: React.VFC<NavsProps> = (props) => {
+  const { navs, showIcons = false } = props
   const sx = makeSx(props)
 
   return (
     <Box sx={sx.root} component="nav">
-      {navMenu?.fields.navs.map((nav) => {
+      {navs?.map((nav) => {
         const { alias, title, iconType, icon, path, file } = nav.fields
         const renderIcon = showIcons && !!iconType && !!icon
         const href = file?.fields.file.url || path || ''
@@ -49,7 +50,7 @@ const NavMenu: React.VFC<NavMenuProps> = (props) => {
           </IconButton>
         ) : (
           <Button sx={sx.navItem} href={href} key={alias}>
-            {title}
+            {replaceCurrentYear(title)}
           </Button>
         )
       })}
@@ -57,4 +58,4 @@ const NavMenu: React.VFC<NavMenuProps> = (props) => {
   )
 }
 
-export { NavMenu }
+export { Navs }
