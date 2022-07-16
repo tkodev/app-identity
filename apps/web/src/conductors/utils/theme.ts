@@ -35,23 +35,23 @@ const theme = createTheme({
     },
     h2: {
       letterSpacing: 2,
-      lineHeight: 1
+      lineHeight: 1.1
     },
     h3: {
       letterSpacing: 2,
-      lineHeight: 1
+      lineHeight: 1.1
     },
     h4: {
       letterSpacing: 2,
-      lineHeight: 1
+      lineHeight: 1.1
     },
     h5: {
       letterSpacing: 2,
-      lineHeight: 1
+      lineHeight: 1.1
     },
     h6: {
       letterSpacing: 2,
-      lineHeight: 1
+      lineHeight: 1.1
     },
     subtitle1: {
       fontSize: 10,
