@@ -1,6 +1,6 @@
 FROM node:14-alpine as docker-install
 WORKDIR /dist
-COPY . ../../
+COPY . .
 RUN --mount=type=cache,target=/dist/.yarn/cache \
     npx turbo prune --scope=@tkodev/web && \
     cp -R .npmrc .yarn .yarnrc.yml tsconfig.json out/ && \

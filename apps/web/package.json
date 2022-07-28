@@ -9,8 +9,7 @@
     "start": "next start",
     "dev": "next dev",
     "lint": "next lint",
-    "reset": "rimraf ./node_modules",
-    "image": "docker build -t @tkodev/site-dev.tko.realtor ."
+    "reset": "rimraf ./node_modules"
   },
   "dependencies": {
     "@emotion/cache": "^11.7.1",

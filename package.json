@@ -18,7 +18,8 @@
     "start": "turbo run start --parallel",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "reset": "turbo run reset --parallel && rimraf ./node_modules"
+    "reset": "turbo run reset --parallel && rimraf ./node_modules",
+    "image": "docker build -t @tkodev/site-dev.tko.www ."
   },
   "devDependencies": {
     "husky": "^8.0.0",
