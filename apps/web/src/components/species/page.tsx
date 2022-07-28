@@ -7,8 +7,8 @@ import { createSx } from '~/conductors/hooks'
 import { CmsPage, CmsSite } from '~/conductors/types'
 
 type PageProps = {
-  page?: Entry<CmsPage> | null
-  site?: Entry<CmsSite> | null
+  page?: CmsPage | null
+  site?: CmsSite | null
   isLoading?: boolean
 }
 
