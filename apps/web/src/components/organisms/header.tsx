@@ -1,4 +1,5 @@
 import React from 'react'
+import { Entry } from 'contentful'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { AppBar, Box, Button, IconButton } from '@mui/material'
@@ -8,7 +9,7 @@ import { createSx, useModalState } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
 type HeaderProps = {
-  site?: CmsSite | null
+  site?: Entry<CmsSite> | null
 }
 
 const makeSx = createSx<HeaderProps>((props, theme) => {

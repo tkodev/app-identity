@@ -1,4 +1,5 @@
 import React from 'react'
+import { Entry } from 'contentful'
 import { Box, Button, Typography } from '@mui/material'
 import { Container, Image } from '~/components/atoms'
 import { RenderMarkdown } from '~/components/organisms'
@@ -6,7 +7,7 @@ import { createSx } from '~/conductors/hooks'
 import { CmsSection } from '~/conductors/types'
 
 type SectionProps = {
-  section?: CmsSection
+  section?: Entry<CmsSection>
   sectionIndex?: number
 }
 

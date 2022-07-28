@@ -1,4 +1,5 @@
 import React from 'react'
+import { Entry } from 'contentful'
 import { AppBar, Box, Button } from '@mui/material'
 import { Container, Image, Splitter } from '~/components/atoms'
 import { Navs } from '~/components/molecules'
@@ -6,7 +7,7 @@ import { createSx } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
 type FooterProps = {
-  site?: CmsSite | null
+  site?: Entry<CmsSite> | null
 }
 
 const makeSx = createSx<FooterProps>((props, theme) => {

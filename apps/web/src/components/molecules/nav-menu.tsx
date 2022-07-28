@@ -1,4 +1,5 @@
 import React from 'react'
+import { Entry } from 'contentful'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Box, Button, IconButton } from '@mui/material'
 import { createSx } from '~/conductors/hooks'
@@ -6,7 +7,7 @@ import { CmsNav } from '~/conductors/types'
 import { replaceCurrentYear } from '~/conductors/utils/helpers'
 
 type NavsProps = {
-  navs?: CmsNav[] | null
+  navs?: Entry<CmsNav>[] | null
   flow: 'row' | 'column'
   showIcons?: boolean
 }

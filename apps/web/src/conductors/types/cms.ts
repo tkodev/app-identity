@@ -1,90 +1,65 @@
-import { Asset, Entry } from 'contentful'
+import { Asset } from 'contentful'
+import { Entry } from 'contentful'
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types'
 
 // base template
-type CmsTemplate<CmsProps = {}> = {
+type CmsBase<CmsProps = {}> = {
   alias: string
   title: string
   desc: string
 } & CmsProps
-type CmsContentType<CmsType = string> = { sys: { contentType: { sys: { id: CmsType } } } }
-type CmsBase<CmsType = string, CmsProps = {}> = Entry<CmsTemplate<CmsProps>> & CmsContentType<CmsType>
 
 // core types
-type CmsSite = CmsBase<
-  'site',
-  {
-    image: Asset
-    logoNav: CmsNav
-    headerNavs: CmsNav[]
-    footerNavs: CmsNav[]
-    socialNavs: CmsNav[]
-  }
->
+type CmsSite = CmsBase<{
+  image: Asset
+  logoNav: Entry<CmsNav>
+  headerNavs: Entry<CmsNav>[]
+  footerNavs: Entry<CmsNav>[]
+  socialNavs: Entry<CmsNav>[]
+}>
 
 // page types
-type CmsPage = CmsBase<
-  'page',
-  {
-    image: Asset
-    sections: CmsSections
-  }
->
-type CmsProject = CmsBase<
-  'project',
-  {
-    image: Asset
-    sections: CmsSections
-  }
->
+type CmsPage = CmsBase<{
+  image: Asset
+  sections: CmsSections
+}>
+type CmsProject = CmsBase<{
+  image: Asset
+  sections: CmsSections
+}>
 
 // section types
-type CmsSections = Array<CmsSection | CmsSectionCarousel | CmsSectionExperience>
-type CmsSection = CmsBase<
-  'section',
-  {
-    variant: 'hero' | 'split'
-    bgImage: Asset
-    bgColor: string
-    image: Asset
-    navs?: CmsNav[]
-  }
->
-type CmsSectionCarousel = CmsBase<
-  'sectionCarousel',
-  {
-    sections: CmsSections
-  }
->
-type CmsSectionExperience = CmsBase<
-  'sectionExperience',
-  {
-    bgImage: Asset
-    bgColor: string
-    image: Asset
-    experiences: CmsExperience[]
-  }
->
+type CmsSections = Array<Entry<CmsSection> | Entry<CmsSectionCarousel> | Entry<CmsSectionExperience>>
+type CmsSection = CmsBase<{
+  variant: 'hero' | 'split'
+  bgImage: Asset
+  bgColor: string
+  image: Asset
+  navs?: Entry<CmsNav>[]
+}>
+type CmsSectionCarousel = CmsBase<{
+  sections: CmsSections
+}>
+type CmsSectionExperience = CmsBase<{
+  bgImage: Asset
+  bgColor: string
+  image: Asset
+  experiences: Entry<CmsExperience>[]
+}>
 
 // misc types
-type CmsNav = CmsBase<
-  'nav',
-  {
-    iconType?: IconPrefix
-    icon?: IconName
-    url?: string
-    file?: Asset
-  }
->
-type CmsExperience = CmsBase<
-  'experience',
-  {
-    company: string
-    startDate: string
-    endDate: string
-    url?: string
-  }
->
+type CmsNav = CmsBase<{
+  iconType?: IconPrefix
+  icon?: IconName
+  url?: string
+  file?: Asset
+}>
+type CmsExperience = CmsBase<{
+  company: string
+  startDate: string
+  endDate: string
+  url?: string
+}>
 
 export type {
   CmsBase,
