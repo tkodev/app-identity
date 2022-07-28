@@ -1,5 +1,4 @@
 import React from 'react'
-import { Entry } from 'contentful'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Box, Button, IconButton } from '@mui/material'
 import { createSx } from '~/conductors/hooks'
@@ -7,7 +6,7 @@ import { CmsNav } from '~/conductors/types'
 import { replaceCurrentYear } from '~/conductors/utils/helpers'
 
 type NavsProps = {
-  navs?: Entry<CmsNav>[] | null
+  navs?: CmsNav[] | null
   flow: 'row' | 'column'
   showIcons?: boolean
 }
@@ -40,9 +39,9 @@ const Navs: React.VFC<NavsProps> = (props) => {
   return (
     <Box sx={sx.root} component="nav">
       {navs?.map((nav) => {
-        const { alias, title, iconType, icon, path, file } = nav.fields
+        const { alias, title, iconType, icon, url, file } = nav.fields
         const renderIcon = showIcons && !!iconType && !!icon
-        const href = file?.fields.file.url || path || ''
+        const href = file?.fields.file.url || url || ''
 
         return renderIcon ? (
           <IconButton sx={sx.navIcon} href={href} key={alias} aria-label={title}>

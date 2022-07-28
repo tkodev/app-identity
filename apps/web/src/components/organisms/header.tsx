@@ -1,25 +1,24 @@
 import React from 'react'
-import { Entry } from 'contentful'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { AppBar, Box, Button, Grid, IconButton } from '@mui/material'
+import { AppBar, Box, Button, IconButton } from '@mui/material'
 import { Container, Image, Splitter } from '~/components/atoms'
 import { NavModal, Navs } from '~/components/molecules'
 import { createSx, useModalState } from '~/conductors/hooks'
 import { CmsSite } from '~/conductors/types'
 
 type HeaderProps = {
-  site?: Entry<CmsSite> | null
+  site?: CmsSite | null
 }
 
 const makeSx = createSx<HeaderProps>((props, theme) => {
-  const { barHeight } = theme.options
+  const { barHeight, bgTint } = theme.options
 
   return {
     root: {
       gridArea: 'header',
       boxShadow: 'none',
-      background: theme.options.bgTint,
+      background: bgTint,
       backdropFilter: 'blur(10px)'
     },
     container: {
@@ -61,7 +60,7 @@ const Header: React.FC<HeaderProps> = (props) => {
     <AppBar position="fixed" component="header" sx={sx.root}>
       <Container fixed sx={sx.container}>
         <Box sx={sx.logo}>
-          <Button href={site?.fields.logoNav.fields.path}>
+          <Button href={site?.fields.logoNav.fields.url}>
             <Image
               src={site?.fields.logoNav.fields.file?.fields.file.url}
               alt={site?.fields.logoNav.fields.title}

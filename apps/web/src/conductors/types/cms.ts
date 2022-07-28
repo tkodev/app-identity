@@ -1,41 +1,100 @@
 import { Asset, Entry } from 'contentful'
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types'
 
-// base
-type CmsEntry<T = {}> = {
+// base template
+type CmsTemplate<CmsProps = {}> = {
   alias: string
   title: string
   desc: string
-} & T
+} & CmsProps
+type CmsContentType<CmsType = string> = { sys: { contentType: { sys: { id: CmsType } } } }
+type CmsBase<CmsType = string, CmsProps = {}> = Entry<CmsTemplate<CmsProps>> & CmsContentType<CmsType>
 
-// 01-02 - pages and sites
-type CmsSite = CmsEntry<{
-  image: Asset
-  logoNav: Entry<CmsNav>
-  headerNavs: Entry<CmsNav>[]
-  footerNavs: Entry<CmsNav>[]
-  socialNavs: Entry<CmsNav>[]
-}>
-type CmsPage = CmsEntry<{
-  image: Asset
-  sections: Entry<CmsSection>[]
-}>
+// core types
+type CmsSite = CmsBase<
+  'site',
+  {
+    image: Asset
+    logoNav: CmsNav
+    headerNavs: CmsNav[]
+    footerNavs: CmsNav[]
+    socialNavs: CmsNav[]
+  }
+>
 
-// 03-04 - navs
-type CmsNav = CmsEntry<{
-  iconType?: IconPrefix
-  icon?: IconName
-  path?: string
-  file?: Asset
-}>
+// page types
+type CmsPage = CmsBase<
+  'page',
+  {
+    image: Asset
+    sections: CmsSections
+  }
+>
+type CmsProject = CmsBase<
+  'project',
+  {
+    image: Asset
+    sections: CmsSections
+  }
+>
 
-// 05-06 - sections
-type CmsSection = CmsEntry<{
-  variant: 'hero' | 'split'
-  bgImage: Asset
-  bgColor: string
-  image: Asset
-  navs: Entry<CmsNav>[]
-}>
+// section types
+type CmsSections = Array<CmsSection | CmsSectionCarousel | CmsSectionExperience>
+type CmsSection = CmsBase<
+  'section',
+  {
+    variant: 'hero' | 'split'
+    bgImage: Asset
+    bgColor: string
+    image: Asset
+    navs?: CmsNav[]
+  }
+>
+type CmsSectionCarousel = CmsBase<
+  'sectionCarousel',
+  {
+    sections: CmsSections
+  }
+>
+type CmsSectionExperience = CmsBase<
+  'sectionExperience',
+  {
+    bgImage: Asset
+    bgColor: string
+    image: Asset
+    experiences: CmsExperience[]
+  }
+>
 
-export type { CmsEntry, CmsNav, CmsSection, CmsPage, CmsSite }
+// misc types
+type CmsNav = CmsBase<
+  'nav',
+  {
+    iconType?: IconPrefix
+    icon?: IconName
+    url?: string
+    file?: Asset
+  }
+>
+type CmsExperience = CmsBase<
+  'experience',
+  {
+    company: string
+    startDate: string
+    endDate: string
+    url?: string
+  }
+>
+
+export type {
+  CmsBase,
+  CmsSite,
+  CmsPage,
+  CmsProject,
+  CmsSections,
+  CmsSection,
+  CmsSectionCarousel,
+  CmsSectionExperience,
+  CmsNav,
+  CmsExperience
+}

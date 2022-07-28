@@ -1,5 +1,4 @@
 import React from 'react'
-import { Entry } from 'contentful'
 import { Box, Button, Typography } from '@mui/material'
 import { Container, Image } from '~/components/atoms'
 import { RenderMarkdown } from '~/components/organisms'
@@ -7,7 +6,7 @@ import { createSx } from '~/conductors/hooks'
 import { CmsSection } from '~/conductors/types'
 
 type SectionProps = {
-  section?: Entry<CmsSection>
+  section?: CmsSection
   sectionIndex?: number
 }
 
@@ -90,7 +89,7 @@ const Section: React.VFC<SectionProps> = (props) => {
         <Box sx={sx.content}>
           <RenderMarkdown sx={sx.contentDesc}>{desc}</RenderMarkdown>
           {navs?.map((nav) => (
-            <Button variant="outlined" href={nav.fields.path} key={nav.fields.alias}>
+            <Button variant="outlined" href={nav.fields.url} key={nav.fields.alias}>
               {nav.fields.title}
             </Button>
           ))}

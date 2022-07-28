@@ -1,7 +1,7 @@
 import { QueryClient, useQuery } from 'react-query'
-import { axiosClient, createCacheKey } from '~/conductors/utils'
 import { EntryCollection } from 'contentful'
-import { CmsEntry } from '~/conductors/types'
+import { CmsBase } from '~/conductors/types'
+import { axiosClient, createCacheKey } from '~/conductors/utils'
 
 const QUERY_KEY_CMS_ENTRIES = 'cmsEntries'
 
@@ -14,7 +14,7 @@ type CmsEntriesRequest = {
 }
 type CmsEntriesResponse<T = any> = EntryCollection<T>
 
-const getCmsEntries = async <T = CmsEntry>(params: CmsEntriesRequest) => {
+const getCmsEntries = async <T = CmsBase>(params: CmsEntriesRequest) => {
   return axiosClient
     .get<CmsEntriesResponse<T>>(`/api/get-cms-entries`, {
       params
@@ -22,7 +22,7 @@ const getCmsEntries = async <T = CmsEntry>(params: CmsEntriesRequest) => {
     .then(({ data }) => data)
 }
 
-const useCmsEntries = <T = CmsEntry>(params: CmsEntriesRequest) => {
+const useCmsEntries = <T = CmsBase>(params: CmsEntriesRequest) => {
   const cacheKey = createCacheKey(params)
 
   return useQuery([QUERY_KEY_CMS_ENTRIES, cacheKey], () => {
@@ -30,7 +30,7 @@ const useCmsEntries = <T = CmsEntry>(params: CmsEntriesRequest) => {
   })
 }
 
-const ssrCmsEntries = <T = CmsEntry>(params: CmsEntriesRequest, queryClient: QueryClient) => {
+const ssrCmsEntries = <T = CmsBase>(params: CmsEntriesRequest, queryClient: QueryClient) => {
   const cacheKey = createCacheKey(params)
 
   return queryClient.prefetchQuery([QUERY_KEY_CMS_ENTRIES, cacheKey], () => {

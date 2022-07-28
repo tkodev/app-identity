@@ -1,5 +1,5 @@
 {
-  "name": "apps-toolkit",
+  "name": "@tkodev/site-dev.tko.www",
   "version": "0.0.0",
   "private": true,
   "workspaces": [

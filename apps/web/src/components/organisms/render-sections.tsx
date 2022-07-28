@@ -1,12 +1,11 @@
 import React from 'react'
-import { Entry } from 'contentful'
 import { Box } from '@mui/material'
 import { Section } from '~/components/molecules'
 import { createSx } from '~/conductors/hooks'
-import { CmsSection } from '~/conductors/types'
+import { CmsSection, CmsSectionCarousel, CmsSectionExperience, CmsSections } from '~/conductors/types'
 
 type RenderSectionsProps = {
-  sections?: Entry<CmsSection>[] | null
+  sections?: CmsSections | null
   isLoading?: boolean
 }
 
@@ -27,7 +26,13 @@ const RenderSections: React.VFC<RenderSectionsProps> = (props) => {
       {sections?.map((section, sectionIndex) => {
         const contentType = section.sys.contentType.sys.id
         if (contentType === 'section') {
-          return <Section section={section as Entry<CmsSection>} sectionIndex={sectionIndex} key={section.sys.id} />
+          return <Section section={section as CmsSection} sectionIndex={sectionIndex} key={section.sys.id} />
+        }
+        if (contentType === 'sectionCarousel') {
+          return <Section section={section as CmsSection} sectionIndex={sectionIndex} key={section.sys.id} />
+        }
+        if (contentType === 'sectionExperience') {
+          return <Section section={section as CmsSection} sectionIndex={sectionIndex} key={section.sys.id} />
         }
       })}
       {isLoading && 'isLoading'}

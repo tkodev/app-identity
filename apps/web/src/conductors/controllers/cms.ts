@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import { dotCase, snakeCase } from 'change-case'
 import { CmsEntriesRequest, CmsEntriesResponse } from '~/conductors/queries'
 import { cmsClient, keyObjBy, logClient, mapObjBy } from '~/conductors/utils'
-import { CONTENTFUL_ENTRIES_LIMIT, CONTENTFUL_HOST, CONTENTFUL_LOCALE, CONTENTFUL_MAX_DEPTH } from '~/conductors/utils/env'
+import { CONTENTFUL_ENTRIES_LIMIT, CONTENTFUL_LOCALE, CONTENTFUL_MAX_DEPTH } from '~/conductors/utils/env'
 
 const dotCasePrefixes = ['fields.']
 
@@ -26,7 +26,7 @@ const getCmsEntries = () => async (req: NextApiRequest, res: NextApiResponse) =>
     return res.json(response)
   } catch (err: any) {
     const code = err?.status || err?.sys?.id === 'NotFound' ? 404 : 500
-    logClient.error('getEntries controller', { code, err })
+    logClient.error('getCmsEntries controller', { code, err })
     return res.status(code).json({ error: `Unable to getEntries: ${JSON.stringify(req.query)}` })
   }
 }
