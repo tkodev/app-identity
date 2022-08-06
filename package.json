@@ -6,11 +6,10 @@
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "yarn@3.2.1",
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
+  "packageManager": "yarn@3.2.2",
   "scripts": {
     "postinstall": "husky install",
     "build": "turbo run build",
