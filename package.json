@@ -1,15 +1,16 @@
 {
-  "name": "@tkodev/site-dev.tko.www",
+  "name": "@tkodev/site-portfolio",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "engines": {
     "node": ">=16.0.0"
   },
   "packageManager": "yarn@3.2.2",
+  "workspaces": [
+    "apps/*",
+    "configs/*",
+    "packages/*"
+  ],
   "scripts": {
     "postinstall": "husky install",
     "build": "turbo run build",
@@ -17,7 +18,8 @@
     "start": "turbo run start --parallel",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "reset": "turbo run reset --parallel && rimraf ./node_modules"
+    "typecheck": "turbo run typecheck",
+    "reset": "turbo run reset --parallel"
   },
   "devDependencies": {
     "husky": "^8.0.0",

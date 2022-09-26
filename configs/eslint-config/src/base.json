@@ -16,15 +16,11 @@
         "trailingComma": "none",
         "printWidth": 125,
 
-        "importOrder": [
-          "^(react|next)(.*)$", 
-          "<THIRD_PARTY_MODULES>", 
-          "^@(.*)/(.*)$",
-          "^[~/]",
-          "^[./]"
-        ],
-        "importOrderSeparation": false,
-        "importOrderSortSpecifiers": true
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error"
       }
     ]
   }

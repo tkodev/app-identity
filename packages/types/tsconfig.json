@@ -1,0 +1,4 @@
+{
+  "extends": "@tkodev/ts-config/src/packages.json",
+  "include": ["."],
+}

@@ -2,22 +2,24 @@
   "name": "@tkodev/eslint-config",
   "version": "0.0.0",
   "private": true,
-  "files": [
-    "src/base.json"
-  ],
   "scripts": {
     "reset": "rimraf ./node_modules"
   },
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "7.28.0"
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "eslint": "^8.17.0",
     "prettier": "^2.5.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
   }
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Base Config",
+  "display": "Base Template",
   "compilerOptions": {
     "composite": false,
     "declaration": true,
@@ -14,7 +14,9 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true
-  },
-  "exclude": ["node_modules"]
+    "strict": true,
+    "allowJs": true,
+    "incremental": true,
+    "resolveJsonModule": true
+  }
 }

@@ -1,4 +1,4 @@
 module.exports = {
-  root: true,
-  extends: ['@tkodev/eslint-config/src/base.json']
+  extends: ['@tkodev/eslint-config/src/web.json'],
+  root: true
 }
