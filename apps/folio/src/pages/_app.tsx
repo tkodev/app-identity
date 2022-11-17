@@ -28,7 +28,7 @@ const NextApp = (props: NextAppProps) => {
   return (
     <CacheProvider value={emotionCache}>
       <QueryClientProvider client={queryClient}>
-        <Hydrate state={pageProps.dehydratedState}>
+        <Hydrate state={pageProps}>
           <Head>
             <meta name="viewport" content="initial-scale=1, width=device-width" />
           </Head>

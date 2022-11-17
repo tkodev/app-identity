@@ -3,6 +3,7 @@ import { Page } from '~/components/species'
 import { ssrCmsEntries, useCmsEntries } from '~/conductors/queries'
 import { CmsPage, CmsSite } from '~/conductors/types'
 import { ssrQueryClient } from '~/conductors/utils/query'
+import { formatName } from '@tkodev/utils/src/format'
 
 const siteParams = {
   contentType: 'site',
@@ -22,6 +23,8 @@ const HomePage: NextPage = () => {
   const site = sites?.items[0]
   const page = pages?.items[0]
   const isLoading = isSiteLoading || isPageLoading
+
+  return <div>{formatName('John')}</div>
 
   return <Page site={site} page={page} isLoading={isLoading} />
 }

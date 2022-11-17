@@ -1,5 +1,5 @@
 {
-  "extends": "@tkodev/ts-config/src/web.json",
+  "extends": "@tkodev/ts-config/src/next.json",
   "include": [".", "next-env.d.ts"],
   "compilerOptions": {
     "jsxImportSource": "@emotion/react",

@@ -19,7 +19,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
-    "reset": "turbo run reset --parallel"
+    "reset": "turbo run reset --parallel && rimraf ./node_modules"
   },
   "devDependencies": {
     "husky": "^8.0.0",
