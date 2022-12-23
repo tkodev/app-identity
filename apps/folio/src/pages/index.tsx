@@ -24,8 +24,6 @@ const HomePage: NextPage = () => {
   const page = pages?.items[0]
   const isLoading = isSiteLoading || isPageLoading
 
-  return <div>{formatName('John')}</div>
-
   return <Page site={site} page={page} isLoading={isLoading} />
 }
 
