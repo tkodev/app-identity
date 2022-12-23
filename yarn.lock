@@ -725,6 +725,7 @@ __metadata:
     eslint: ^8.9.0
     lodash: ^4.17.21
     next: ^12.1.0
+    next-compose-plugins: ^2.2.1
     next-connect: ^0.12.2
     next-transpile-modules: ^10.0.0
     react: ^17.0.2
@@ -3460,6 +3461,13 @@ __metadata:
   version: 1.4.0
   resolution: "natural-compare@npm:1.4.0"
   checksum: 23ad088b08f898fc9b53011d7bb78ec48e79de7627e01ab5518e806033861bef68d5b0cd0e2205c2f36690ac9571ff6bcb05eb777ced2eeda8d4ac5b44592c3d
+  languageName: node
+  linkType: hard
+
+"next-compose-plugins@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "next-compose-plugins@npm:2.2.1"
+  checksum: 771762fda2b12b81daf10431cbb494816cff96be02b44009692c6c0eefbacd62cbf51ddb93af8d3380ec00254c6a95d64d10f744d4b9ddadefc21efee7dc69fc
   languageName: node
   linkType: hard
 
