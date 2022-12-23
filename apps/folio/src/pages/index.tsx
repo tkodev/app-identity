@@ -29,7 +29,7 @@ const HomePage: NextPage = () => {
   return <Page site={site} page={page} isLoading={isLoading} />
 }
 
-const getServerSideProps = async () => {
+const getStaticProps = async () => {
   const dehydratedState = await ssrQueryClient(async (queryClient) => {
     await ssrCmsEntries<CmsSite>(siteParams, queryClient)
     await ssrCmsEntries<CmsPage>(pageParams, queryClient)
@@ -42,5 +42,5 @@ const getServerSideProps = async () => {
   }
 }
 
-export { getServerSideProps }
+export { getStaticProps }
 export default HomePage
