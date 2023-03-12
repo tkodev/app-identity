@@ -1,0 +1,43 @@
+{
+  "name": "@tkodev/next-js",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@7.2.1",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "test": "echo 'no tests'",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "reset": "rimraf ./node_modules"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.14",
+    "axios": "^1.3.2",
+    "change-case": "^4.1.2",
+    "dayjs": "^1.11.7",
+    "lodash": "^4.17.21",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@tkodev/eslint-config": "workspace:*",
+    "@tkodev/ts-config": "workspace:*",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.5",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.17.0",
+    "postcss": "^8.4.21",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  }
+}

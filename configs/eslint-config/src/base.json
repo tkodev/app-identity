@@ -1,8 +1,21 @@
 {
+  "$schema": "https://json.schemastore.org/eslintrc.json",
   "extends": ["next", "prettier"],
   "plugins": ["simple-import-sort", "import", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "parser": "espree",
+      "parserOptions": {
+        "ecmaVersion": 2020
+      }
+    }
+  ],
   "rules": {
     "@next/next/no-html-link-for-pages": "off",
+    "@next/next/no-img-element": "off",
+    "@next/next/no-page-custom-font": "off",
+
     "prefer-const": "error",
     
     "semi": ["off"],

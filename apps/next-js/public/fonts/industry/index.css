@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Industry';
+  src: url('industry-light.woff2') format('woff2'),
+      url('industry-light.woff') format('woff');
+  font-weight: thin;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Industry';
+  src: url('industry-light-italic.woff2') format('woff2'),
+      url('industry-light-italic.woff') format('woff');
+  font-weight: thin;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Industry';
+  src: url('industry-book.woff2') format('woff2'),
+      url('industry-book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Industry';
+  src: url('industry-book-italic.woff2') format('woff2'),
+      url('industry-book-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Industry';
+  src: url('industry-demi.woff2') format('woff2'),
+      url('industry-demi.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Industry';
+  src: url('industry-demi-italic.woff2') format('woff2'),
+      url('industry-demi-italic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}

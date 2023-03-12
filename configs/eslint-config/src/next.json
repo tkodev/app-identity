@@ -1,7 +1,4 @@
 {
-  "extends": ["./base.json"],
-  "rules": {
-    "@next/next/no-page-custom-font": "off",
-    "@next/next/no-img-element": "off"
-  }
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "extends": ["./base.json"]
 }
