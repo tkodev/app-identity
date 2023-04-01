@@ -1,16 +1,34 @@
 import { AppProps } from 'next/app'
 import { Montserrat } from 'next/font/google'
-import '~/styles/global.css'
+import { MantineProvider } from '@mantine/core'
+import Head from 'next/head'
 
 const font = Montserrat({
   subsets: ['latin']
 })
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = (props: AppProps) => {
+  const { Component, pageProps } = props
+
   return (
-    <div className={font.className}>
-      <Component {...pageProps} />
-    </div>
+    <>
+      <Head>
+        <title>Page title</title>
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+      </Head>
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          colorScheme: 'dark'
+        }}
+      >
+        <div className={font.className}>
+          <Component {...pageProps} />
+        </div>
+      </MantineProvider>
+    </>
   )
 }
 
