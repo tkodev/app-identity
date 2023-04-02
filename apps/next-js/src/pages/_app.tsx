@@ -1,34 +1,25 @@
 import { AppProps } from 'next/app'
-import { Montserrat } from 'next/font/google'
 import { MantineProvider } from '@mantine/core'
 import Head from 'next/head'
-
-const font = Montserrat({
-  subsets: ['latin']
-})
+import { Viewport } from '~/components/universals/viewport'
+import { Favicon } from '~/components/universals/favicon'
+import { Content } from '~/components/universals/content'
+import { tkodevFavicon } from '~/styles/favicons/tkodev'
+import { tkodevTheme } from '~/styles/themes/tkodev'
 
 const App = (props: AppProps) => {
   const { Component, pageProps } = props
 
   return (
-    <>
+    <MantineProvider withGlobalStyles withNormalizeCSS theme={tkodevTheme}>
       <Head>
-        <title>Page title</title>
-        <link rel="shortcut icon" href="/favicon.svg" />
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <Viewport scale={1} width="device-width" />
+        <Favicon favicon={tkodevFavicon} />
       </Head>
-      <MantineProvider
-        withGlobalStyles
-        withNormalizeCSS
-        theme={{
-          colorScheme: 'dark'
-        }}
-      >
-        <div className={font.className}>
-          <Component {...pageProps} />
-        </div>
-      </MantineProvider>
-    </>
+      <Content>
+        <Component {...pageProps} />
+      </Content>
+    </MantineProvider>
   )
 }
 
