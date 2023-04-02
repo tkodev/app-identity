@@ -1,8 +1,21 @@
-import Document from 'next/document'
+import { DocumentProps, Head, Html, Main, NextScript } from 'next/document'
 import { createGetInitialProps } from '@mantine/next'
+
+const Document = (props: DocumentProps) => {
+  const { styles } = props
+
+  return (
+    <Html lang="en">
+      <Head>{styles}</Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}
 
 const getInitialProps = createGetInitialProps()
 
-export default class _Document extends Document {
-  static getInitialProps = getInitialProps
-}
+export { getInitialProps }
+export default Document
