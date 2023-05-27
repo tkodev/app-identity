@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 
 const allianceNo2Font = localFont({
+  variable: '--font-alliance-no2',
   src: [
     {
       path: '../../../public/fonts/alliance-no2/alliance-no2-bold-italic.woff2',
@@ -25,4 +26,7 @@ const allianceNo2Font = localFont({
   ]
 })
 
-export { allianceNo2Font }
+const allianceNo2FontName = '--font-alliance-no2'
+const allianceNo2FontVariable = `${allianceNo2FontName}: ${allianceNo2Font.style.fontFamily};`
+
+export { allianceNo2Font, allianceNo2FontVariable }

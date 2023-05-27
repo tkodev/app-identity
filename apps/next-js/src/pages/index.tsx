@@ -1,12 +1,13 @@
 import { NextPage } from 'next'
 import { Layout } from '~/components/templates/layout'
+import { NextSeo } from '~/types/seo'
 
 type HomePageProps = {}
 
 const HomePage: NextPage<HomePageProps> = (props) => {
   const {} = props
 
-  const seo = {
+  const seo: NextSeo = {
     siteName: 'tkodev',
     pageName: 'homepage',
     pageDesc: 'homepage for tkodev',

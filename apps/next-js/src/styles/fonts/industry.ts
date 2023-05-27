@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 
 const industryFont = localFont({
+  variable: '--font-industry',
   src: [
     {
       path: '../../public/fonts/industry/industry-book-italic.woff2',
@@ -25,4 +26,7 @@ const industryFont = localFont({
   ]
 })
 
-export { industryFont }
+const industryFontName = '--font-industry'
+const industryFontVariable = `${industryFontName}: ${industryFont.style.fontFamily};`
+
+export { industryFont, industryFontVariable }

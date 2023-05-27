@@ -25,4 +25,7 @@ const allianceNo1Font = localFont({
   ]
 })
 
-export { allianceNo1Font }
+const allianceNo1FontName = '--font-alliance-no1'
+const allianceNo1FontVariable = `${allianceNo1FontName}: ${allianceNo1Font.style.fontFamily};`
+
+export { allianceNo1Font, allianceNo1FontVariable }

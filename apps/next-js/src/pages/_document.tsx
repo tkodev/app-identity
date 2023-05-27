@@ -1,12 +1,9 @@
-import { DocumentProps, Head, Html, Main, NextScript } from 'next/document'
-import { createGetInitialProps } from '@mantine/next'
+import { Html, Head, Main, NextScript } from 'next/document'
 
-const Document = (props: DocumentProps) => {
-  const { styles } = props
-
+const Document = () => {
   return (
     <Html lang="en">
-      <Head>{styles}</Head>
+      <Head />
       <body>
         <Main />
         <NextScript />
@@ -15,7 +12,4 @@ const Document = (props: DocumentProps) => {
   )
 }
 
-const getInitialProps = createGetInitialProps()
-
-export { getInitialProps }
 export default Document

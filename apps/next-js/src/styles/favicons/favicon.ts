@@ -1,4 +1,6 @@
-const tkodevFavicon = {
+import { NextFavicon } from '~/types/favicon'
+
+const favicon: NextFavicon = {
   themeColor: '#333333',
   configSrc: '/favicon/browserconfig.xml',
   manifestSrc: '/favicon/site.webmanifest',
@@ -9,4 +11,4 @@ const tkodevFavicon = {
   touchIcon: '/favicon/apple-touch-icon.png'
 }
 
-export { tkodevFavicon }
+export { favicon }

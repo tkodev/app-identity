@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 
 const carbonFont = localFont({
+  variable: '--font-carbon',
   src: [
     {
       path: '../../public/fonts/carbon/carbon-regular-italic.woff2',
@@ -25,4 +26,7 @@ const carbonFont = localFont({
   ]
 })
 
-export { carbonFont }
+const carbonFontName = '--font-carbon'
+const carbonFontVariable = `${carbonFontName}: ${carbonFont.style.fontFamily};`
+
+export { carbonFont, carbonFontVariable }
