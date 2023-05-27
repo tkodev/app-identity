@@ -17,12 +17,11 @@ This is a monorepo for tko.dev's portfolio app and it's support files, based on 
   - [Turborepo](https://turbo.build/repo/docs) for monorepo management.
 - App
   - [Next.js](https://nextjs.org/) for the fullstack web framework.
-  - [TypeScript](https://www.typescriptlang.org/) for static type checking.
   - [Tailwind CSS]([https](https://tailwindcss.com/)) for theme and styling.
   - [CVA](https://cva.style/docs) for component variants.
   - [Radix UI](https://www.radix-ui.com/) for primitive components.
 - Support
-  - [TypeScript](https://www.typescriptlang.org/) for strict types.
+  - [TypeScript](https://www.typescriptlang.org/) for strict type checking.
   - [ESLint](https://eslint.org/) for code linting and formatting.
 
 
