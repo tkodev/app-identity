@@ -26,7 +26,4 @@ const industryFont = localFont({
   ]
 })
 
-const industryFontName = '--font-industry'
-const industryFontVariable = `${industryFontName}: ${industryFont.style.fontFamily};`
-
-export { industryFont, industryFontVariable }
+export { industryFont }

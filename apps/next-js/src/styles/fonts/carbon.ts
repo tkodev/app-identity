@@ -26,7 +26,4 @@ const carbonFont = localFont({
   ]
 })
 
-const carbonFontName = '--font-carbon'
-const carbonFontVariable = `${carbonFontName}: ${carbonFont.style.fontFamily};`
-
-export { carbonFont, carbonFontVariable }
+export { carbonFont }

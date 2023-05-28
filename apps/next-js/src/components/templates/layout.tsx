@@ -4,7 +4,7 @@ import { Main } from '~/components/organisms/main'
 import { NextSeo } from '~/types/seo'
 import { Header } from '~/components/organisms/header'
 import { Footer } from '~/components/organisms/footer'
-import { Window } from '~/components/organisms/window'
+import { Window } from '~/components/atoms/window'
 
 type LayoutProps = {
   seo: NextSeo

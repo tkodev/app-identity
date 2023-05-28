@@ -1,11 +1,12 @@
 type WindowProps = {
+  className?: string
   children?: React.ReactNode
 }
 
 const Window: React.FC<WindowProps> = (props) => {
-  const { children } = props
+  const { className, children } = props
 
-  return <div>{children}</div>
+  return <div className={className}>{children}</div>
 }
 
 export { Window }
