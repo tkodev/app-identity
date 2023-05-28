@@ -16,7 +16,7 @@ const HomePage: NextPage<HomePageProps> = (props) => {
 
   return (
     <Layout seo={seo}>
-      <h1>HomePage</h1>
+      <p>test</p>
     </Layout>
   )
 }

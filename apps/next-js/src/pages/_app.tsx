@@ -14,7 +14,7 @@ const App = (props: AppProps) => {
   const { Component, pageProps } = props
 
   return (
-    <Window className={clsx(allianceNo1Font.variable, allianceNo2Font.variable)}>
+    <Window className={clsx(allianceNo1Font.variable, allianceNo2Font.variable, 'font-base')}>
       <Head>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <Favicon favicon={favicon} />

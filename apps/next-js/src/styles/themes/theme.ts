@@ -88,27 +88,33 @@ const theme = compactTheme({
     }
   },
   borderRadius: {
+    xs: '1px',
     sm: '4px',
     md: '8px',
     lg: '16px',
     xl: '32px',
     x2: '64px',
+    x3: '96px',
     none: '0px',
     full: '9999px'
   },
   spacing: {
+    xs: '1px',
     sm: '4px',
     md: '8px',
     lg: '16px',
     xl: '32px',
-    x2: '64px'
+    x2: '64px',
+    x3: '96px'
   },
   screens: {
-    sm: '480px',
+    xs: '480px',
+    sm: '640px',
     md: '768px',
     lg: '1024px',
     xl: '1280px',
-    x2: '1536px'
+    x2: '1536px',
+    x3: '2160px'
   }
 })
 
