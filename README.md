@@ -73,6 +73,7 @@ This is a monorepo for tko.dev's portfolio app and it's support files, based on 
   - Create a new branch based off `dev`, make file changes
   - Push changes to remote
   - See new deployments in vercel
+  - Merge changes from this branch to `dev`, via PR
 - Build production environment
   - Merge changes from `dev` to `main`
   - Push changes to remote
