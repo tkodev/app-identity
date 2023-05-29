@@ -41,7 +41,7 @@ This is a monorepo for tko.dev's portfolio app and it's support files, based on 
 - MacOS + Homebrew:
   - [Instructions](https://brew.sh/)
 - Node Version Manager: 
-  - `brew install fnm` or `brew install fnm`
+  - `brew install nvm` or `brew install fnm`
   - Ensure appropriate lines are copied to `~/.bash_profile` or `~/.zprofile`.
 - Node 18 + PNPM: 
   - `nvm use 18` or `fnm use 18`
