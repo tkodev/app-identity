@@ -1,5 +1,5 @@
 import { reduce, mapKeys } from 'lodash'
-import { TailwindTheme, Theme, FontSizeConfig } from '~/types/theme'
+import { TailwindTheme, Theme, FontSizeConfig } from '../types/theme'
 
 const compactTheme = (theme: Theme): TailwindTheme => {
   const { fontSizes = {}, ...rest } = theme

@@ -1,4 +1,4 @@
-import { compactTheme } from '../../utils/theme'
+import { compactTheme } from '../utils/theme'
 
 // theme docs: https://tailwindcss.com/docs/theme
 // theme defaults: https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/config.full.js
@@ -15,17 +15,17 @@ const theme = compactTheme({
   },
   fontSizes: {
     core: {
-      base: ['16px', { fontWeight: '400', lineHeight: '140%', letterSpacing: '0%' }],
-      mono: ['16px', { fontWeight: '400', lineHeight: '140%', letterSpacing: '0%' }]
+      base: ['16px', { fontWeight: '400', lineHeight: '140%', letterSpacing: '0.00em' }],
+      mono: ['16px', { fontWeight: '400', lineHeight: '140%', letterSpacing: '0.00em' }]
     },
     heading: {
-      h1: ['34px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }],
-      h2: ['24px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }],
-      h3: ['20px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }],
-      title: ['96px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }],
-      subtitle: ['48px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0%' }],
-      earmark: ['14px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '25%' }],
-      name: ['16px', { fontWeight: '700', lineHeight: '120%', letterSpacing: '25%' }]
+      h1: ['34px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0.00em' }],
+      h2: ['24px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0.00em' }],
+      h3: ['20px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0.00em' }],
+      title: ['96px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0.00em' }],
+      subtitle: ['48px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0.00em' }],
+      earmark: ['14px', { fontWeight: '400', lineHeight: '120%', letterSpacing: '0.25em' }],
+      name: ['16px', { fontWeight: '700', lineHeight: '120%', letterSpacing: '0.25em' }]
     }
   },
   colors: {
