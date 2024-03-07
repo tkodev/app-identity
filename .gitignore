@@ -4,8 +4,9 @@
 node_modules
 .pnp
 .pnp.js
+.yarn/install-state.gz
 
-# root lock file
+# lock files
 package-lock.json
 yarn-lock.json
 */pnpm-lock.yaml
@@ -16,8 +17,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# editor
+# ts
 *.tsbuildinfo
+next-env.d.ts
 
 # build
 .vercel/

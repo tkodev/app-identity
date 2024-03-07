@@ -1,80 +1,32 @@
-# app-tkodev - @tkodev/app-tkodev
+# app-tkodev
 
-## What's inside?
+This is tkodev's professional portfolio site.
 
-This is a monorepo for tko.dev's portfolio app and it's support files, based on PNPM and Turborepo.
+## Prerequisites
+- `node 20.x`
+- `pnpm 8.x`
 
+## Getting Started
 
-### Architecture
+- `pnpm install` install & init dependencies
+- `pnpm dev` run dev server
+- `pnpm build` build static site (used for deployment really)
 
-- General
-  - [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) for branch strategy.
-  - [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
-  - [Conventional Comments](https://conventionalcomments.org/) for PR review comments.
-- Monorepo
-  - [Node 18](https://nodejs.org/en/download/current) for latest node LTS.
-  - [PNPM](https://pnpm.io/workspaces) for monorepo workspaces.
-  - [Turborepo](https://turbo.build/repo/docs) for monorepo management.
-- App
-  - [Next.js](https://nextjs.org/) for the fullstack web framework.
-  - [Tailwind CSS](https://tailwindcss.com/) for theme and styling.
-  - [CVA](https://cva.style/docs) for component variants.
-  - [Radix UI](https://www.radix-ui.com/) for primitive components.
-- Support
-  - [TypeScript](https://www.typescriptlang.org/) for strict type checking.
-  - [ESLint](https://eslint.org/) for code linting and formatting.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Learn More
 
-### Directory
+To learn more about Next.js, take a look at the following resources:
 
-- `./apps/next-js`: tko.dev's portfolio app, based on Next.js.
-- `./designs/*`: logo and resume designs.
-- `./packages/*`: any shared packages between apps.
-- `./support/eslint-config`: `eslint` configs (includes `eslint-config-next` and `eslint-config-prettier`).
-- `./support/ts-config`: `typescript` configs for various app types.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Requirements
+## Deploy on Vercel
 
-- Contibuting Guide
-  - [Read This](./CONTRIBUTING.md)
-- MacOS + Homebrew:
-  - [Instructions](https://brew.sh/)
-- Node Version Manager: 
-  - `brew install nvm` or `brew install fnm`
-  - Ensure appropriate lines are copied to `~/.bash_profile` or `~/.zprofile`.
-- Node 18 + PNPM: 
-  - `nvm use 18` or `fnm use 18`
-  - `brew install pnpm`
-- VSCode Tailwind Autocomplete:
-  - [Install Plugin](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-  - [Copy Lines](https://cva.style/docs/installation#tailwind-css) 
-  - Ensure appropriate lines are copied to VSCode's `settings.json`.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-
-### Quick Start
-
-- Start dev enviroment:
-  - `pnpm install` to install all dependencies
-  - `pnpm run env-dev` to download development env files (if using vercel), otherwise request from team.
-  - `pnpm run dev` to start dev environments 
-- App lifecycle commands:
-  - `pnpm run build` to build all apps / packages locally 
-  - `pnpm run start` to start built app
-  - `pnpm run test` to run all tests
-  - `pnpm run lint` to run linter
-  - `pnpm run typecheck` to run type checker
-  - `pnpm run reset` to delete all `node_modules` folders
-
-
-## Release - Vercel
-
-- Build preview environment
-  - Create a new branch based off `dev`, make file changes
-  - Push changes to remote
-  - See new deployments in vercel
-  - Merge changes from this branch to `dev`, via PR
-- Build production environment
-  - Merge changes from `dev` to `main`
-  - Push changes to remote
-  - See new deployments in vercel
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
