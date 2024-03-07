@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "austenc.tailwind-docs",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "yoavbls.pretty-ts-errors",
+  ]
+}
