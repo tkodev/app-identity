@@ -1,14 +1,6 @@
-# Next.JS Tailwind Monorepo
+# Next.js Tailwind Turborepo
 
 This is tkodev's professional portfolio sites.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-tailwind
-```
 
 ## What's inside?
 
@@ -16,13 +8,24 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
+- `@repo/docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
+- `@repo/web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
+- `@repo/ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@repo/tailwind-config`: `tailwind` configs used throughout the monorepo
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+### Getting Started
+
+- `pnpm install` install & init dependencies
+- `pnpm dev` run dev commands in all modules
+- `pnpm build` build artifacts (used for deployment really)
+
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- You can start editing the page by modifying `apps/web/app/page.tsx`. The page auto-updates as you edit the file.
+- This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ### Building packages/ui
 
