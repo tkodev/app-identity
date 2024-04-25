@@ -1,6 +1,6 @@
-# Next.JS Tailwind TRPC Monorepo
+# Next.JS Tailwind Monorepo
 
-This is tkodev's professional portfolio site.
+This is tkodev's professional portfolio sites.
 
 ## Using this example
 
