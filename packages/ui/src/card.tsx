@@ -12,7 +12,7 @@ export function Card({
   return (
     <a
       className="flex flex-col ui-rounded-lg ui-border ui-border-transparent ui-px-5 ui-py-4 ui-transition-colors ui-border-neutral-700 hover:ui-bg-neutral-800/30"
-      href={`${href}"`}
+      href={`${href}`}
       rel="noopener noreferrer"
       target="_blank"
     >
