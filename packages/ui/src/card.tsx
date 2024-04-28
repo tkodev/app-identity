@@ -4,23 +4,21 @@ export function Card({
   title,
   children,
   href,
-  className,
 }: {
   title: string;
   children: ReactNode;
   href: string;
-  className?: string;
 }): JSX.Element {
   return (
     <a
-      className={`${className} ui-group ui-rounded-lg ui-border ui-border-transparent ui-px-5 ui-py-4 ui-transition-colors hover:ui-border-neutral-700 hover:ui-bg-neutral-800/30`}
+      className="flex flex-col ui-rounded-lg ui-border ui-border-transparent ui-px-5 ui-py-4 ui-transition-colors ui-border-neutral-700 hover:ui-bg-neutral-800/30"
       href={`${href}"`}
       rel="noopener noreferrer"
       target="_blank"
     >
       <h2 className="ui-mb-3 ui-text-2xl ui-font-semibold text-center">
         {title}{" "}
-        <span className="ui-inline-block ui-transition-transform group-hover:ui-translate-x-1 motion-reduce:ui-transform-none">
+        <span className="ui-inline-block">
           -&gt;
         </span>
       </h2>

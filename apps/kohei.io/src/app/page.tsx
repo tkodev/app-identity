@@ -75,7 +75,7 @@ function Page(): JSX.Element {
         </div>
       </div>
 
-      <div className="">
+      <div className="z-20 w-[200px]">
         {links.map(({ title, href, description }) => (
           <Card href={href} key={title} title={title}>
             {description}
