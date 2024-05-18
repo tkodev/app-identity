@@ -2,8 +2,12 @@
   "name": "@repo/typescript-config",
   "version": "0.0.0",
   "private": true,
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "clean": "rimraf ./node_modules"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.3.3"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@repo/typescript-config/src/next.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }]
+  },
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.mjs", "./**/*.json", "next-env.d.ts", ".next/types/**/*.ts"]
+}

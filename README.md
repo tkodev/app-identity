@@ -1,6 +1,6 @@
 # Next.js Tailwind Turborepo
 
-This is tkodev's professional portfolio sites.
+This is a portfolio monorepo for professionals.
 
 ## What's inside?
 
@@ -8,9 +8,8 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `@repo/docs`: a [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `@repo/web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
-- `@repo/ui`: a stub React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
+- `@repo/*`: [Next.js](https://nextjs.org/) apps with [Tailwind CSS](https://tailwindcss.com/)
+- `@repo/ui`: a React component library with [Tailwind CSS](https://tailwindcss.com/) shared by both `web` and `docs` applications
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/tailwind-config`: `tailwind` configs used throughout the monorepo
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo

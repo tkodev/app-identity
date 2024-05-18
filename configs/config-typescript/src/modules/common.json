@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Default",
+  "display": "Common",
   "compilerOptions": {
     "composite": false,
     "declaration": true,
@@ -20,5 +20,5 @@
     "strict": true,
     "strictNullChecks": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [".next/", "dist/", "public/", "build/", "out/", "node_modules/"]
 }

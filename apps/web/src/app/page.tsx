@@ -1,34 +1,33 @@
-import Image from "next/image";
-import { Card } from "@repo/ui/card";
+import Image from 'next/image'
+import { Card } from '@repo/ui/card'
 
-function Gradient({
+const Gradient = ({
   conic,
   className,
-  small,
+  small
 }: {
-  small?: boolean;
-  conic?: boolean;
-  className?: string;
-}): JSX.Element {
+  small?: boolean
+  conic?: boolean
+  className?: string
+}): JSX.Element => {
   return (
     <span
       className={`absolute mix-blend-normal will-change-[filter] rounded-[100%] ${
-        small ? "blur-[32px]" : "blur-[75px]"
-      } ${conic ? "bg-glow-conic" : ""} ${className}`}
+        small ? 'blur-[32px]' : 'blur-[75px]'
+      } ${conic ? 'bg-glow-conic' : ''} ${className ?? ''}`}
     />
-  );
+  )
 }
-
 
 const links = [
   {
-    title: "Instagram",
-    href: "https://www.instagram.com/kohei.io",
-    description: "My latest shots.",
+    title: 'Instagram',
+    href: 'https://www.instagram.com/kohei.io',
+    description: 'My latest shots.'
   }
-];
+]
 
-function Page(): JSX.Element {
+const Page = (): JSX.Element => {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-24">
       <div className="items-center justify-center w-full max-w-5xl font-mono text-sm lg:flex">
@@ -39,34 +38,17 @@ function Page(): JSX.Element {
 
       <div className="relative flex place-items-center ">
         <div className="font-sans w-auto py-16 flex justify-between gap-8 items-center flex-col relative">
-          <Gradient
-            className="top-[-350px] opacity-[0.15] w-[1000px] h-[1000px]"
-            conic
-          />
+          <Gradient className="top-[-350px] opacity-[0.15] w-[1000px] h-[1000px]" conic />
           <div className="flex items-center justify-center w-full">
             <div className="absolute min-w-[614px] min-h-[614px]">
-              <Image
-                alt="Circles"
-                height={614}
-                src="circles.svg"
-                width={614}
-              />
+              <Image alt="Circles" height={614} src="circles.svg" width={614} />
             </div>
             <div className="absolute flex items-center justify-center w-64 h-64">
-              <Gradient
-                className="opacity-90 w-[120px] h-[120px]"
-                conic
-                small
-              />
+              <Gradient className="opacity-90 w-[120px] h-[120px]" conic small />
             </div>
 
             <div className="z-10">
-             <Image
-                alt="Tony's Signature"
-                height={132}
-                src="/signature-dark@2x.png"
-                width={282}
-              />
+              <Image alt="Tony's Signature" height={132} src="/signature-dark@2x.png" width={282} />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-5 px-6 text-center lg:gap-6">
@@ -83,7 +65,7 @@ function Page(): JSX.Element {
         ))}
       </div>
     </main>
-  );
+  )
 }
 
 export default Page
