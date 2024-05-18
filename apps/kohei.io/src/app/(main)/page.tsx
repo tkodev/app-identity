@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Card } from '@repo/ui/src/components/card'
 import { cva, cn } from '@repo/ui/src/utils/cva'
-import { Gradient } from '../components/gradient'
+import { Gradient } from '../../components/gradient'
 
 const styles = {
   root: cva('flex flex-col items-center justify-center min-h-screen p-24'),
