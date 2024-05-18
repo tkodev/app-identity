@@ -13,6 +13,7 @@ coverage
 out/
 build
 .swc/
+*.tsbuildinfo
 
 # misc
 .DS_Store
