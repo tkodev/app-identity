@@ -1,11 +1,13 @@
-type LayoutProps = {
+import { Layout } from '@repo/kohei.io/components/templates/layout'
+
+type LayoutPageProps = {
   children: React.ReactNode
 }
 
-const Layout: React.FC<LayoutProps> = (props) => {
+const LayoutPage: React.FC<LayoutPageProps> = (props) => {
   const { children } = props
 
-  return <>{children}</>
+  return <Layout>{children}</Layout>
 }
 
-export default Layout
+export default LayoutPage

@@ -1,4 +1,4 @@
-import { Gradient } from '@repo/kohei.io/components/gradient'
+import { Gradient } from '@repo/kohei.io/components/atoms/gradient'
 import { links } from '@repo/kohei.io/constants/links'
 import { Card } from '@repo/ui/src/components/card'
 import { cva, cn } from '@repo/ui/src/utils/cva'
