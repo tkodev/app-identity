@@ -1,7 +1,12 @@
 /** @type {import("eslint").Linter.Config} */
 const config = {
   $schema: 'https://json.schemastore.org/eslintrc.json',
-  extends: ['./modules/common.js', './modules/prettier.js'].map(require.resolve)
+  extends: [
+    '@vercel/style-guide/eslint/next',
+    './modules/common.js',
+    './modules/prettier.js',
+    './modules/style.js'
+  ].map(require.resolve)
 }
 
 module.exports = config

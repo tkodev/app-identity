@@ -1,9 +1,11 @@
-import '../styles/globals.css'
-import '@repo/ui/src/styles.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Favicon } from '@repo/kohei.io/components/favicon'
+import { allianceNo1Font } from '@repo/kohei.io/fonts/alliance-no1'
+import { interFont } from '@repo/kohei.io/fonts/inter'
+import { cn } from '@repo/ui/src/utils/cva'
+
+import '@repo/kohei.io/styles/globals.css'
 
 const metadata: Metadata = {
   title: 'kohei.io',
@@ -19,7 +21,8 @@ const RootLayout: React.FC<RootLayoutProps> = (props) => {
 
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Favicon />
+      <body className={cn(interFont.className, allianceNo1Font)}>{children}</body>
     </html>
   )
 }

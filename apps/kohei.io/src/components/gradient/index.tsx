@@ -18,14 +18,15 @@ const styles = {
   })
 }
 
-type GradientProps = VariantProps<typeof styles.root> & {
-  className?: string
-}
+type GradientProps = React.HTMLAttributes<HTMLDivElement> &
+  VariantProps<typeof styles.root> & {
+    //
+  }
 
 const Gradient: React.FC<GradientProps> = (props) => {
-  const { small, conic, className } = props
+  const { small, conic, className, ...rest } = props
 
-  return <span className={cn(styles.root({ small, conic }), className)} />
+  return <span className={cn(styles.root({ small, conic }), className)} {...rest} />
 }
 
 export { Gradient }

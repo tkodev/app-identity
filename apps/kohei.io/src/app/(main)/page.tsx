@@ -1,7 +1,8 @@
-import Image from 'next/image'
+import { Gradient } from '@repo/kohei.io/components/gradient'
+import { links } from '@repo/kohei.io/constants/links'
 import { Card } from '@repo/ui/src/components/card'
 import { cva, cn } from '@repo/ui/src/utils/cva'
-import { Gradient } from '../../components/gradient'
+import Image from 'next/image'
 
 const styles = {
   root: cva('flex flex-col items-center justify-center min-h-screen p-24'),
@@ -21,14 +22,6 @@ const styles = {
   footer: cva('z-20 w-[200px]')
 }
 
-const links = [
-  {
-    title: 'Instagram',
-    href: 'https://www.instagram.com/kohei.io',
-    description: 'My latest shots.'
-  }
-]
-
 const Page: React.FC = () => {
   return (
     <main className={cn(styles.root())}>
@@ -41,14 +34,19 @@ const Page: React.FC = () => {
           <Gradient className={cn(styles.contentGradient())} conic />
           <div className={cn(styles.circleContainer())}>
             <div className={cn(styles.circle())}>
-              <Image alt="Circles" height={614} src="circles.svg" width={614} />
+              <Image alt="Circles" height={614} src="/images/circles.svg" width={614} />
             </div>
             <div className={cn(styles.gradientContainer())}>
               <Gradient className={cn(styles.gradient())} conic small />
             </div>
 
             <div className={cn(styles.signature())}>
-              <Image alt="Tony's Signature" height={132} src="/signature-dark@2x.png" width={282} />
+              <Image
+                alt="Tony's Signature"
+                height={132}
+                src="/images/signature-dark@2x.png"
+                width={282}
+              />
             </div>
           </div>
           <div className={cn(styles.desc())}>You&apos;ve made it this far. Follow me.</div>

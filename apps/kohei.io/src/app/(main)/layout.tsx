@@ -1,5 +1,3 @@
-'use client'
-
 type LayoutProps = {
   children: React.ReactNode
 }
