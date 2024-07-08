@@ -1,4 +1,4 @@
-import { Gradient } from '#src/components/atoms/gradient/index'
+import { Gradient } from '#src/components/atoms/gradient'
 import { links } from '#src/constants/links'
 import { cva, cn } from '#src/utils/theme'
 import { Card } from '@repo/ui/components/card'
