@@ -11,7 +11,7 @@ const AppProviders: React.FC<AppProvidersProps> = (props) => {
 
   return <ThemeProvider
     attribute="class"
-    defaultTheme="system"
+    defaultTheme="dark"
     enableSystem
     disableTransitionOnChange
   >
