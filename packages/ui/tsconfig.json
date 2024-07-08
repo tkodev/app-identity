@@ -1,11 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@repo/typescript-config/src/packages.json",
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.mjs", "./**/*.json"],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@repo/ui/*": ["src/*"]
-    }
-  }
+  "extends": "@repo/typescript-config/packages",
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.json"]
 }

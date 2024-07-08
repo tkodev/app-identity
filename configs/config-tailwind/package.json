@@ -2,11 +2,14 @@
   "name": "@repo/tailwind-config",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "clean": "rimraf ./node_modules"
+  "imports": {
+    "#src/*": ["./src/*.ts", "./src/*.js", "./src/*"]
   },
   "exports": {
-    ".": "./src/tailwind.config.ts"
+    "./*": ["./src/*.ts", "./src/*.js", "./src/*"]
+  },
+  "scripts": {
+    "clean": "rimraf ./node_modules"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

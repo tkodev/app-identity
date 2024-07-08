@@ -1,4 +1,4 @@
-import { Layout } from '@repo/kohei.io/components/templates/layout'
+import { Layout } from '#src/components/templates/layout'
 
 type LayoutPageProps = {
   children: React.ReactNode

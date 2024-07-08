@@ -2,9 +2,18 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
+  "imports": {
+    "#src/*": ["./src/*.ts", "./src/*.tsx", "./src/*.d.ts", "./src/*/index.ts", "./src/*/index.tsx", "./src/index.d.ts", "./src/*"]
+  },
+  "exports": {
+    "./*": {
+      "types": ["./src/*.ts", "./src/*.tsx", "./src/*.d.ts", "./src/*/index.ts", "./src/*/index.tsx", "./src/index.d.ts", "./src/*"],
+      "default": ["./src/*.ts", "./src/*.tsx", "./src/*.d.ts", "./src/*/index.ts", "./src/*/index.tsx", "./src/index.d.ts", "./dist/*"]
+    }
+  },
   "scripts": {
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
+    "dev": "tailwindcss -i ./src/themes/tailwind.css -o ./dist/themes/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/themes/tailwind.css -o ./dist/themes/tailwind.css",
     "lint": "eslint ./src/",
     "lint:fix": "pnpm lint --fix",
     "type:check": "tsc --noEmit",
@@ -26,10 +35,10 @@
     "autoprefixer": "^10.4.18",
     "eslint": "^8.57.0",
     "postcss": "^8.4.35",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.2",
     "react": "^18.2.0",
     "rimraf": "^5.0.7",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.5.3"
   }
 }

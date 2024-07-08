@@ -2,12 +2,18 @@
   "name": "@repo/typescript-config",
   "version": "0.0.0",
   "private": true,
+  "imports": {
+    "#src/*": ["./src/*.json", "./src/*"]
+  },
+  "exports": {
+    "./*": ["./src/*.json", "./src/*"]
+  },
   "scripts": {
     "clean": "rimraf ./node_modules"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "rimraf": "^5.0.7",
-    "typescript": "^5.3.3"
+    "typescript": "^5.5.3"
   }
 }

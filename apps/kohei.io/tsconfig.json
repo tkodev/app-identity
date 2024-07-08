@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@repo/typescript-config/src/next.json",
+  "extends": "@repo/typescript-config/next",
   "compilerOptions": {
-    "plugins": [{ "name": "next" }],
-    "baseUrl": ".",
-    "paths": {
-      "@repo/kohei.io/*": ["src/*"]
-    }
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.mjs", "./**/*.json", "next-env.d.ts", ".next/types/**/*.ts"]
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.mts", "./**/*.json", "next-env.d.ts", ".next/types/**/*.ts"]
 }

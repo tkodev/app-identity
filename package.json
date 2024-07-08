@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@8.9.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "dev": "turbo dev",
@@ -15,12 +15,7 @@
     "clean": "turbo clean && rimraf ./node_modules"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
     "rimraf": "^5.0.7",
-    "turbo": "latest",
-    "typescript": "^5.3.3"
+    "turbo": "latest"
   }
 }

@@ -1,4 +1,4 @@
-import { cva, cn, type VariantProps } from '@repo/ui/src/utils/cva'
+import { cva, cn, type VariantProps } from '#src/utils/theme'
 
 const styles = {
   root: cva('absolute mix-blend-normal will-change-[filter] rounded-[100%]', {

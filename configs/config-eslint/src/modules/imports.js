@@ -29,7 +29,7 @@ const config = {
             react: ['react', 'react-*']
           }
         },
-        'newlines-between': 'always'
+        'newlines-between': 'never'
       }
     ],
     'perfectionist/sort-exports': [

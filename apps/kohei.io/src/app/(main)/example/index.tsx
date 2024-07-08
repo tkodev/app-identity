@@ -1,4 +1,4 @@
-import { cva, cn } from '@repo/ui/src/utils/cva'
+import { cva, cn } from '#src/utils/theme'
 
 const styles = {
   root: cva('')

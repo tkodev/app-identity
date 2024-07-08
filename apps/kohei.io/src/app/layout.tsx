@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-
-import { Favicon } from '@repo/kohei.io/components/universals/favicon'
-import { allianceNo1Font } from '@repo/kohei.io/fonts/alliance-no1'
-import { interFont } from '@repo/kohei.io/fonts/inter'
-import { cn } from '@repo/ui/src/utils/cva'
-
-import '@repo/kohei.io/styles/globals.css'
+import { Favicon } from '#src/components/universals/favicon/index'
+import { allianceNo1Font } from '#src/fonts/alliance-no1'
+import { interFont } from '#src/fonts/inter'
+import { AppProviders } from '#src/providers/app'
+import { cn } from '@repo/ui/utils/theme'
+import '#src/themes/tailwind.css'
+import '@repo/ui/themes/tailwind.css'
 
 const metadata: Metadata = {
   title: 'kohei.io',
@@ -22,7 +22,9 @@ const LayoutPage: React.FC<LayoutPageProps> = (props) => {
   return (
     <html lang="en">
       <Favicon />
-      <body className={cn(interFont.className, allianceNo1Font)}>{children}</body>
+      <body className={cn(interFont.className, allianceNo1Font)}>
+        <AppProviders>{children}</AppProviders>
+      </body>
     </html>
   )
 }

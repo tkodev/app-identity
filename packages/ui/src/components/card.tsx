@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { cva, cn, type VariantProps } from '../utils/cva'
+import { cva, cn, type VariantProps } from '#src/utils/theme'
 
 const styles = {
   root: cva(

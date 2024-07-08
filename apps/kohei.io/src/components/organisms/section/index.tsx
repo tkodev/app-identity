@@ -16,9 +16,9 @@ const Example: React.FC<ExampleProps> = (props) => {
   const { className, children, ...rest } = props
 
   return (
-    <div className={cn(styles.root({ className }))} {...rest}>
+    <section className={cn(styles.root({ className }))} {...rest}>
       {children}
-    </div>
+    </section>
   )
 }
 

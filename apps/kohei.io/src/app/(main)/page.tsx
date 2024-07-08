@@ -1,7 +1,7 @@
-import { Gradient } from '@repo/kohei.io/components/atoms/gradient'
-import { links } from '@repo/kohei.io/constants/links'
-import { Card } from '@repo/ui/src/components/card'
-import { cva, cn } from '@repo/ui/src/utils/cva'
+import { Gradient } from '#src/components/atoms/gradient/index'
+import { links } from '#src/constants/links'
+import { cva, cn } from '#src/utils/theme'
+import { Card } from '@repo/ui/components/card'
 import Image from 'next/image'
 
 const styles = {
