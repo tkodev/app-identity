@@ -8,8 +8,8 @@ import '#src/themes/tailwind.css'
 import '@repo/ui/themes/tailwind.css'
 
 const metadata: Metadata = {
-  title: 'kohei.io',
-  description: "Tony Ko's Landing Page"
+  title: 'tko.dev',
+  description: "Tony Ko's Portfolio"
 }
 
 type LayoutPageProps = {

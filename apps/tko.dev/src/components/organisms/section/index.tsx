@@ -7,12 +7,12 @@ const styles = {
   })
 }
 
-type ExampleProps = React.HTMLAttributes<HTMLDivElement> &
+type SectionProps = React.HTMLAttributes<HTMLDivElement> &
   VariantProps<typeof styles.root> & {
     //
   }
 
-const Example: React.FC<ExampleProps> = (props) => {
+const Section: React.FC<SectionProps> = (props) => {
   const { className, children, ...rest } = props
 
   return (
@@ -22,4 +22,4 @@ const Example: React.FC<ExampleProps> = (props) => {
   )
 }
 
-export { Example }
+export { Section }
