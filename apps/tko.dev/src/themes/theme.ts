@@ -127,9 +127,9 @@ const colors = {
   },
   stroke: {
     neutral: {
-      high: 'var(--color-stroke-high)',
-      medium: 'var(--color-stroke-medium)',
-      low: 'var(--color-stroke-low)',
+      high: 'var(--color-stroke-neutral-high)',
+      medium: 'var(--color-stroke-neutral-medium)',
+      low: 'var(--color-stroke-neutral-low)',
     },
     button: {
       shaded: {
