@@ -1,9 +1,17 @@
 {
-  "name": "@repo/kohei.io",
+  "name": "@repo/tko.dev",
   "version": "0.0.0",
   "private": true,
   "imports": {
-    "#src/*": ["./src/*.ts", "./src/*.tsx", "./src/*.d.ts", "./src/*/index.ts", "./src/*/index.tsx", "./src/index.d.ts", "./src/*"]
+    "#src/*": [
+      "./src/*.ts",
+      "./src/*.tsx",
+      "./src/*.d.ts",
+      "./src/*/index.ts",
+      "./src/*/index.tsx",
+      "./src/index.d.ts",
+      "./src/*"
+    ]
   },
   "scripts": {
     "dev": "next dev --port 3000",
@@ -23,6 +31,7 @@
     "next-themes": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tailwind-gradient-mask-image": "^1.2.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },

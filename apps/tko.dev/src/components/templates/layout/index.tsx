@@ -20,8 +20,10 @@ const Layout: React.FC<LayoutProps> = (props) => {
 
   return (
     <div className={cn(styles.root({ className }))} {...rest}>
-      <Header>
+      <Header/>
+      <Main>
       {children}
+      </Main>
       <Footer/>
     </div>
   )

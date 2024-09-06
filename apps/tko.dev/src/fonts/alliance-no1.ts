@@ -22,7 +22,9 @@ const allianceNo1Font = localFont({
       weight: '700',
       style: 'italic'
     }
-  ]
+  ],
+  display: 'swap',
+  variable: '--font-alliance-no1'
 })
 
 export { allianceNo1Font }

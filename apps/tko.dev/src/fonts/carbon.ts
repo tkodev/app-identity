@@ -22,7 +22,9 @@ const carbonFont = localFont({
       weight: '700',
       style: 'italic'
     }
-  ]
+  ],
+  display: 'swap',
+  variable: '--font-carbon'
 })
 
 export { carbonFont }

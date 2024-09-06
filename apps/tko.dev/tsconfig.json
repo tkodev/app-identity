@@ -8,5 +8,5 @@
       }
     ]
   },
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.mts", "./**/*.json", "next-env.d.ts", ".next/types/**/*.ts"]
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.mts", "./**/*.json", "next-env.d.ts", "next-app.d.ts", ".next/types/**/*.ts"]
 }

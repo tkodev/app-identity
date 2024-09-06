@@ -12,8 +12,8 @@
     }
   },
   "scripts": {
-    "dev": "tailwindcss -i ./src/themes/tailwind.css -o ./dist/themes/tailwind.css --watch",
-    "build": "tailwindcss -i ./src/themes/tailwind.css -o ./dist/themes/tailwind.css",
+    "dev": "tailwindcss -i ./src/themes/theme.css -o ./dist/themes/theme.css --watch",
+    "build": "tailwindcss -i ./src/themes/theme.css -o ./dist/themes/theme.css",
     "lint": "eslint ./src/",
     "lint:fix": "pnpm lint --fix",
     "type:check": "tsc --noEmit",

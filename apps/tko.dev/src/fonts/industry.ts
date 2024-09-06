@@ -22,7 +22,9 @@ const industryFont = localFont({
       weight: '700',
       style: 'italic'
     }
-  ]
+  ],
+  display: 'swap',
+  variable: '--font-industry'
 })
 
 export { industryFont }
