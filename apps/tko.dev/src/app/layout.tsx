@@ -6,6 +6,8 @@ import { AppProviders } from '#src/providers/app'
 import { cn, cva } from '@repo/ui/utils/theme'
 import '#src/themes/theme.css'
 import '@repo/ui/themes/theme.css'
+import '@repo/ui/themes/theme-light.css'
+import '@repo/ui/themes/theme-dark.css'
 
 const styles = {
   html: cva('w-full h-full'),
