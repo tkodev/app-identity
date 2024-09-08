@@ -4,8 +4,8 @@
   "rsc": true,
   "tsx": true,
   "tailwind": {
-    "config": "./src/themes/theme.config.ts",
-    "css": "./src/themes/theme.css",
+    "config": "./src/themes/theme-shadcn.ts",
+    "css": "./src/themes/theme-shadcn.css",
     "baseColor": "neutral",
     "cssVariables": true,
     "prefix": ""

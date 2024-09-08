@@ -1,6 +1,6 @@
 
 import type { Config } from 'tailwindcss'
-import { themeConfig } from './src/themes/theme'
+import { themeConfig } from './src/themes/theme-custom'
 import sharedConfig from '@repo/tailwind-config/tailwind.config'
 
 const config: Config = {
