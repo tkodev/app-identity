@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Favicon } from '#src/components/universals/favicon'
+import { Favicon } from '#src/components/atoms/favicon'
 import { allianceNo1Font } from '#src/fonts/alliance-no1'
 import { interFont } from '#src/fonts/inter'
 import { AppProviders } from '#src/providers/app'
